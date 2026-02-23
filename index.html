@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Pulse — セットアップ中</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Noto Sans JP',sans-serif;background:#f8fafc;color:#0f172a;display:flex;align-items:center;justify-content:center;min-height:100vh}
+  .card{text-align:center;max-width:500px;padding:60px 40px;background:#fff;border-radius:20px;border:1px solid #e2e8f0;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+  .logo{font-size:2rem;font-weight:900;color:#4f46e5;margin-bottom:8px}
+  .sub{font-size:.9rem;color:#64748b;margin-bottom:32px}
+  .spinner{width:40px;height:40px;border:3px solid #e2e8f0;border-top-color:#4f46e5;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 24px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .status{font-size:.85rem;color:#475569;line-height:1.8}
+  .status strong{color:#4f46e5}
+  .hint{margin-top:24px;font-size:.75rem;color:#94a3b8;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">Tech Pulse</div>
+  <div class="sub">やさしいテック情報ダッシュボード</div>
+  <div class="spinner"></div>
+  <div class="status">
+    初回セットアップ中です。<br>
+    <strong>GitHub Actions</strong> が初回のニュース取得と<br>
+    ダッシュボード生成を行っています。<br><br>
+    通常 <strong>3〜5分</strong> で完了します。
+  </div>
+  <div class="hint">
+    このページは自動的にダッシュボードに置き換わります。<br>
+    しばらく待ってからリロードしてください。
+  </div>
+</div>
+</body>
+</html>
