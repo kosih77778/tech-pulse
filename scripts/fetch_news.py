@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Tech Pulse v3 - ニュース取得スクリプト（修正版）
-Gemini APIモデル名修正、エラーハンドリング強化、Reddit修正
+Tech Pulse v4 - ニュース取得スクリプト（Groq版）
+HN API, RSSフィードからニュースを取得し、
+Groq API (Llama 3.3 70B) でやさしい日本語解説を生成する
 """
 
 import json
@@ -19,15 +20,9 @@ JST = timezone(timedelta(hours=9))
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-
-# 複数モデルを試行（無料枠で使えるモデル優先）
-GEMINI_MODELS = [
-    "gemini-1.5-flash",
-    "gemini-1.5-flash-latest",
-    "gemini-2.0-flash",
-]
-GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+GROQ_MODEL = "llama-3.3-70b-versatile"
 
 MAX_PER_TAB = 6
 
@@ -76,17 +71,6 @@ FEEDS = {
     ],
 }
 
-# Reddit: 個別サブレディット（結合URLだとブロックされるため）
-REDDIT_SUBS = {
-    "ai": ["MachineLearning", "LocalLLaMA"],
-    "devtools": ["programming", "webdev"],
-    "data_dx": ["dataengineering"],
-    "cloud": ["aws"],
-    "security": ["netsec"],
-    "hardware": ["hardware"],
-    "funding": ["startups"],
-}
-
 TAG_KEYWORDS = {
     "ai": {"release": "新リリース", "model": "AIモデル", "agent": "エージェント", "benchmark": "ベンチマーク", "oss": "オープンソース", "policy": "規制・政策", "funding": "資金調達", "product": "製品"},
     "devtools": {"release": "新リリース", "framework": "フレームワーク", "oss": "オープンソース", "update": "アップデート", "tool": "ツール"},
@@ -96,36 +80,6 @@ TAG_KEYWORDS = {
     "hardware": {"chip": "チップ", "gpu": "GPU", "release": "新リリース", "benchmark": "ベンチマーク", "fab": "製造"},
     "funding": {"series": "資金調達", "ipo": "IPO", "ma": "M&A", "unicorn": "ユニコーン", "layoff": "レイオフ"},
 }
-
-
-# ─── Gemini API（モデル自動選択） ────────────────────────
-
-def find_working_model():
-    """利用可能なGeminiモデルを見つける"""
-    if not GEMINI_API_KEY:
-        print("  [ERROR] GEMINI_API_KEY が設定されていません")
-        return None
-
-    for model in GEMINI_MODELS:
-        try:
-            url = f"{GEMINI_BASE}/{model}:generateContent?key={GEMINI_API_KEY}"
-            resp = requests.post(
-                url,
-                json={"contents": [{"parts": [{"text": "Hello, respond with just OK"}]}]},
-                timeout=15
-            )
-            data = resp.json()
-            if "candidates" in data:
-                print(f"  [OK] 使用モデル: {model}")
-                return model
-            else:
-                error_msg = data.get("error", {}).get("message", str(data)[:200])
-                print(f"  [SKIP] {model}: {error_msg}")
-        except Exception as e:
-            print(f"  [SKIP] {model}: {e}")
-
-    print("  [ERROR] 利用可能なGeminiモデルが見つかりません")
-    return None
 
 
 # ─── ニュース取得関数 ─────────────────────────────────────
@@ -141,11 +95,9 @@ def fetch_rss(feed_info):
                 published = time.strftime("%Y-%m-%d %H:%M", entry.published_parsed)
             elif hasattr(entry, "updated_parsed") and entry.updated_parsed:
                 published = time.strftime("%Y-%m-%d %H:%M", entry.updated_parsed)
-
             summary = ""
             if hasattr(entry, "summary"):
                 summary = re.sub(r"<[^>]+>", "", entry.summary)[:800]
-
             articles.append({
                 "title": entry.get("title", "No title"),
                 "url": entry.get("link", ""),
@@ -210,41 +162,39 @@ def fetch_hn_comments(hn_id, limit=3):
         return []
 
 
-def fetch_reddit(subreddits, limit=5):
-    """個別サブレディットからホット記事を取得"""
-    articles = []
-    for sub in subreddits:
-        try:
-            url = f"https://www.reddit.com/r/{sub}/hot.json?limit={limit}"
-            headers = {"User-Agent": "Mozilla/5.0 (compatible; TechPulse/2.0; +https://github.com/kosih77778/tech-pulse)"}
-            resp = requests.get(url, timeout=10, headers=headers)
-            if resp.status_code != 200:
-                print(f"    [WARN] Reddit r/{sub}: status {resp.status_code}")
-                continue
-            data = resp.json()
-            for post in data.get("data", {}).get("children", []):
-                d = post["data"]
-                if d.get("stickied"):
-                    continue
-                articles.append({
-                    "title": d.get("title", ""),
-                    "url": d.get("url", ""),
-                    "score": d.get("score", 0),
-                    "comments": d.get("num_comments", 0),
-                    "subreddit": d.get("subreddit", ""),
-                    "published": datetime.fromtimestamp(d.get("created_utc", 0), tz=timezone.utc).strftime("%Y-%m-%d %H:%M"),
-                    "source": f"r/{d.get('subreddit', '')}",
-                    "icon": "Re",
-                })
-        except Exception as e:
-            print(f"    [WARN] Reddit r/{sub}: {e}")
-    return articles
+# ─── Groq API 解説生成 ───────────────────────────────────
+
+def call_groq(prompt):
+    """Groq APIを呼び出す"""
+    try:
+        resp = requests.post(
+            GROQ_URL,
+            headers={
+                "Authorization": f"Bearer {GROQ_API_KEY}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": GROQ_MODEL,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.4,
+                "max_tokens": 1000,
+            },
+            timeout=45
+        )
+        data = resp.json()
+        if "choices" in data and len(data["choices"]) > 0:
+            return data["choices"][0]["message"]["content"]
+        else:
+            error_msg = data.get("error", {}).get("message", str(data)[:200])
+            print(f"    [API Error] {error_msg}")
+            return None
+    except Exception as e:
+        print(f"    [WARN] Groq call failed: {e}")
+        return None
 
 
-# ─── Gemini API 解説生成 ─────────────────────────────────
-
-def generate_rich_explanation(title, summary, tab_id, model_name):
-    if not model_name:
+def generate_rich_explanation(title, summary, tab_id):
+    if not GROQ_API_KEY:
         return _fallback(title)
 
     available_tags = TAG_KEYWORDS.get(tab_id, TAG_KEYWORDS["ai"])
@@ -258,7 +208,7 @@ def generate_rich_explanation(title, summary, tab_id, model_name):
 
 必ず以下のJSON形式だけを返してください（マークダウンのコードブロック不要、JSON以外の文字を含めないで）:
 {{
-  "easy": "専門用語を使わず中学生にもわかるように4-6文で詳しく説明。具体的な数字や比較を入れる。ドル表記は円換算も併記（例：3億ドル（約450億円））。重要部分を強調。",
+  "easy": "専門用語を使わず中学生にもわかるように4-6文で詳しく説明。具体的な数字や比較を入れる。ドル表記は円換算も併記（例：3億ドル（約450億円））。",
   "why": "このニュースが重要な理由を2文で。業界への影響や今後の展望も含めて。",
   "glossary": [
     {{"term": "専門用語1", "definition": "その用語のやさしい説明を50文字以上で"}},
@@ -272,26 +222,11 @@ def generate_rich_explanation(title, summary, tab_id, model_name):
 impactは1-100の数値（90以上=業界を変える大ニュース、70-89=注目、50-69=一般、50未満=小ネタ）。
 glossaryは記事の専門用語を3個含めてください。"""
 
+    text = call_groq(prompt)
+    if not text:
+        return _fallback(title)
+
     try:
-        url = f"{GEMINI_BASE}/{model_name}:generateContent?key={GEMINI_API_KEY}"
-        resp = requests.post(
-            url,
-            json={
-                "contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {"temperature": 0.4, "maxOutputTokens": 1000}
-            },
-            timeout=45
-        )
-        data = resp.json()
-
-        if "candidates" not in data:
-            error_msg = data.get("error", {}).get("message", "unknown")
-            print(f"    [API Error] {error_msg[:100]}")
-            return _fallback(title)
-
-        text = data["candidates"][0]["content"]["parts"][0]["text"]
-
-        # JSONを抽出（```json ... ``` でラップされている場合も対応）
         text = re.sub(r"```json\s*", "", text)
         text = re.sub(r"```\s*$", "", text)
         json_match = re.search(r'\{[\s\S]*\}', text)
@@ -304,7 +239,6 @@ glossaryは記事の専門用語を3個含めてください。"""
                     tags_ja.append(available[t])
                 else:
                     tags_ja.append(t)
-
             return {
                 "easy": result.get("easy", ""),
                 "why": result.get("why", ""),
@@ -312,12 +246,10 @@ glossaryは記事の専門用語を3個含めてください。"""
                 "tags": tags_ja[:3],
                 "impact": min(100, max(1, int(result.get("impact", 50)))),
             }
-        else:
-            print(f"    [WARN] JSON parse failed")
-            return _fallback(title)
     except Exception as e:
-        print(f"    [WARN] Gemini call failed: {e}")
-        return _fallback(title)
+        print(f"    [WARN] JSON parse failed: {e}")
+
+    return _fallback(title)
 
 
 def _fallback(title):
@@ -330,8 +262,6 @@ def _fallback(title):
     }
 
 
-# ─── 速報判定 ────────────────────────────────────────────
-
 def detect_breaking(articles):
     breaking = []
     for a in articles:
@@ -339,7 +269,7 @@ def detect_breaking(articles):
         impact = a.get("impact", 50)
         if score > 300 or impact >= 85:
             breaking.append({
-                "text": a.get("title", ""),
+                "text": a.get("easy", a.get("title", "")),
                 "level": "red" if impact >= 90 else "orange" if impact >= 80 else "blue",
             })
     return breaking[:2]
@@ -349,19 +279,23 @@ def detect_breaking(articles):
 
 def main():
     print("=" * 60)
-    print("Tech Pulse v3 - ニュース取得開始")
+    print("Tech Pulse v4 (Groq) - ニュース取得開始")
     print(f"時刻: {datetime.now(JST).strftime('%Y-%m-%d %H:%M JST')}")
+    print(f"API: Groq ({GROQ_MODEL})")
+    print(f"APIキー: {'設定済み' if GROQ_API_KEY else '未設定'}")
     print("=" * 60)
 
-    # Geminiモデル検出
-    print("\n[0/4] Gemini API モデルを検出中...")
-    model_name = find_working_model()
-    if not model_name:
-        print("  [WARNING] Geminiが使えません。フォールバックテキストで続行します。")
+    # Groq API接続テスト
+    if GROQ_API_KEY:
+        print("\n[0/4] Groq API 接続テスト...")
+        test = call_groq("Say OK in one word.")
+        if test:
+            print(f"  [OK] Groq API 正常動作")
+        else:
+            print(f"  [ERROR] Groq API に接続できません")
 
     all_data = {}
 
-    # HNトップ記事
     print("\n[1/4] Hacker News トップ記事を取得中...")
     hn_articles = fetch_hn_top(25)
     print(f"  -> {len(hn_articles)} 件取得")
@@ -375,19 +309,12 @@ def main():
             tab_articles.extend(articles)
             print(f"  -> {feed['name']}: {len(articles)} 件")
 
-        if tab_id in REDDIT_SUBS:
-            subs = REDDIT_SUBS[tab_id]
-            print(f"  [Reddit] {', '.join(subs)} を取得中...")
-            reddit_articles = fetch_reddit(subs, limit=3)
-            tab_articles.extend(reddit_articles)
-            print(f"  -> Reddit: {len(reddit_articles)} 件")
-
         tab_articles.sort(key=lambda x: x.get("score", 0) + (1000 if x.get("published", "") > (datetime.now(timezone.utc) - timedelta(hours=24)).strftime("%Y-%m-%d") else 0), reverse=True)
         tab_articles = tab_articles[:MAX_PER_TAB]
 
-        print(f"  [Gemini] {len(tab_articles)} 件の解説を生成中...")
+        print(f"  [Groq] {len(tab_articles)} 件の解説を生成中...")
         for i, article in enumerate(tab_articles):
-            explanation = generate_rich_explanation(article["title"], article.get("summary", ""), tab_id, model_name)
+            explanation = generate_rich_explanation(article["title"], article.get("summary", ""), tab_id)
             article["easy"] = explanation["easy"]
             article["why"] = explanation["why"]
             article["glossary"] = explanation["glossary"]
@@ -399,8 +326,9 @@ def main():
             else:
                 article["reactions"] = []
 
-            if model_name and i < len(tab_articles) - 1:
-                time.sleep(5)
+            # Groqレート制限対策（30 req/min なので2秒間隔で十分）
+            if i < len(tab_articles) - 1:
+                time.sleep(2.5)
 
         all_data[tab_id] = tab_articles
 
@@ -409,16 +337,14 @@ def main():
     hn_for_ai = [a for a in hn_articles if any(kw in a["title"].lower() for kw in ai_kw)][:3]
     if hn_for_ai:
         for article in hn_for_ai:
-            explanation = generate_rich_explanation(article["title"], "", "ai", model_name)
+            explanation = generate_rich_explanation(article["title"], "", "ai")
             article.update(explanation)
             article["reactions"] = fetch_hn_comments(article["hn_id"], limit=3) if article.get("hn_id") else []
-            if model_name:
-                time.sleep(5)
+            time.sleep(2.5)
         existing = {a["title"] for a in all_data.get("ai", [])}
         new_hn = [a for a in hn_for_ai if a["title"] not in existing]
         all_data["ai"] = (all_data.get("ai", []) + new_hn)[:MAX_PER_TAB]
 
-    # 速報
     all_arts = []
     for arts in all_data.values():
         all_arts.extend(arts)
@@ -439,7 +365,6 @@ def main():
     total = sum(len(v) for v in all_data.values())
     print(f"\n{'=' * 60}")
     print(f"完了！合計 {total} 件（速報 {len(breaking)} 件）を保存")
-    print(f"使用モデル: {model_name or 'なし（フォールバック）'}")
     print(f"{'=' * 60}")
 
 
