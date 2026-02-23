@@ -1,21 +1,18 @@
-name: Update Tech Pulse Dashboard
+name: Update Tech Pulse
 
-# 毎日朝7時(日本時間)に自動実行 + 手動実行も可能
 on:
   schedule:
-    - cron: '0 22 * * *'  # UTC 22:00 = JST 07:00
-  workflow_dispatch:  # 手動実行ボタン
+    - cron: '0 22 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-dashboard:
+  update:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -23,20 +20,20 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests feedparser google-generativeai
+        run: pip install -r requirements.txt
 
       - name: Fetch news
         run: python scripts/fetch_news.py
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
-      - name: Generate dashboard HTML
+      - name: Generate HTML
         run: python scripts/generate_html.py
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html data/
-          git diff --staged --quiet || git commit -m "Auto-update: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git add -A
+          git diff --cached --quiet || git commit -m "Auto-update $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
