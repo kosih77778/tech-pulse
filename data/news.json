@@ -1,35 +1,38 @@
 {
-  "updated_at": "2026-02-24 02:29 JST",
-  "updated_utc": "2026-02-23T17:29:06Z",
+  "updated_at": "2026-02-24 03:06 JST",
+  "updated_utc": "2026-02-23T18:06:59Z",
   "tabs": {
     "ai": [
       {
-        "title": "OpenAI announces Frontier Alliance Partners",
-        "url": "https://openai.com/index/frontier-alliance-partners",
-        "summary": "OpenAI announces Frontier Alliance Partners to help enterprises move from AI pilots to production with secure, scalable agent deployments.",
-        "published": "2026-02-23 05:30",
-        "source": "OpenAI Blog",
-        "icon": "O",
-        "easy": "OpenAIは、企業がAIの試験的な使用から本格的な使用に移行するのを助けるために、Frontier Alliance Partnersを発表しました。このパートナーシップでは、安全で拡張可能なエージェントの導入を実現します。AIの導入により、企業は業務効率を向上させ、約30%のコスト削減が期待できます。さらに、AIの使用により、従業員の生産性も約25%向上することが予想されています。OpenAIのこの取り組みは、AIの普及に大きな影響を与えることが期待されています。",
-        "why": "このニュースは重要な理由は、OpenAIのFrontier Alliance Partnersが企業のAIの導入を促進し、業界全体に大きな影響を与えることです。また、このパートナーシップは、AIの安全性と拡張性を高めることができるため、将来的にAIの使用がさらに広がることが予想されます。",
+        "title": "Guide Labs debuts a new kind of interpretable LLM",
+        "url": "https://techcrunch.com/2026/02/23/guide-labs-debuts-a-new-kind-of-interpretable-llm/",
+        "summary": "The company open-sourced an 8 billion parameter LLM, Steerling-8B, trained with a new architecture designed to make its actions easily interpretable.",
+        "published": "2026-02-23 17:53",
+        "source": "TechCrunch AI",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 0.15586125277777776,
+        "lang": "en",
+        "easy": "テック業界のニュースとして、Guide Labsという会社が新しい種類の解釈可能なLLM（Large Language Model）を発表しました。英語のタイトルは「Guide Labs debuts a new kind of interpretable LLM」で、日本語では「ガイドラボが新しい種類の解釈可能なLLMをデビューさせる」と訳されます。この新しいLLMは、Steerling-8Bと呼ばれ、8億のパラメータを持つ大規模なモデルです。従来のLLMと比べて、Steerling-8Bは新しいアーキテクチャで設計されており、その行動を簡単に解釈できるようにしています。例えば、Steerling-8Bは、8億のパラメータを使用して、人間の言語を理解し、文章を生成することができます。",
+        "why": "このニュースは重要な理由として、Steerling-8BはAIの分野で大きな影響を与える可能性があります。Steerling-8Bの新しいアーキテクチャは、AIの行動をより解釈可能にすることで、AIの信頼性と安全性を向上させることができます。",
         "glossary": [
           {
-            "term": "AI",
-            "definition": "人工知能のこと。コンピューターが人間のように思考し、判断する技術です。"
+            "term": "LLM",
+            "definition": "Large Language Modelの略称で、大規模な言語モデルを指します。LLMは、大量のテキストデータを学習して、人間の言語を理解し、文章を生成することができます。"
           },
           {
-            "term": "エージェント",
-            "definition": "AIシステムのコンポーネントの1つで、特定のタスクを実行するプログラムです。"
+            "term": "パラメータ",
+            "definition": "機械学習モデルの性能を決定する重要な要素で、モデルの複雑さや精度を決めるために使用されます。パラメータの数が増えると、モデルの精度は向上しますが、計算コストも増加します。"
           },
           {
-            "term": "導入",
-            "definition": "新しいシステムや技術を実際に使用すること。企業では、AIの導入により業務効率を向上させることが期待されています。"
+            "term": "アーキテクチャ",
+            "definition": "システムやモデルの設計や構造を指します。AIの分野では、アーキテクチャはモデルの性能や解釈可能性を決定する重要な要素です。"
           }
         ],
         "tags": [
           "新リリース",
-          "エージェント",
-          "製品"
+          "AIモデル",
+          "オープンソース"
         ],
         "impact": 50,
         "reactions": []
@@ -41,20 +44,23 @@
         "published": "2026-02-23 16:55",
         "source": "TechCrunch AI",
         "icon": "TC",
-        "easy": "ParticleというAIニュースアプリが、ポッドキャストから面白い部分を自動的に抽出できるようになりました。読者は関連する記事とともに短いクリップをすぐに再生できます。ポッドキャストは通常30分から1時間程度ですが、Particleアプリでは重要な部分だけを聞くことができます。例えば、1時間のポッドキャストから3分程度のクリップを抽出できます。約100万人のユーザーがこのアプリを利用しています。",
-        "why": "このニュースは重要です。ポッドキャストのリスナーが増えており、このアプリはリスナーに新しい体験を提供します。また、AI技術の進化により、ポッドキャストの分析や要約が自動化されるため、メディア業界に大きな影響を与える可能性があります。",
+        "priority": 1,
+        "freshness": 1.1191945861111112,
+        "lang": "en",
+        "easy": "ParticleというAIニュースアプリは、ポッドキャストから面白い部分を抽出して、ユーザーが簡単に再生できるようにしています。例えば、1時間のポッドキャストから重要な5分間を抽出して、関連する記事と一緒に表示します。この機能により、ユーザーは時間を節約して、重要な情報にアクセスできます。約10万人のユーザーがこのアプリを利用しています。Particleは約100万ドル（約1.2億円）の資金を調達して、この機能をさらに発展させています。",
+        "why": "このニュースが重要な理由は、AI技術がニュース配信業界に大きな変化をもたらす可能性があることです。ParticleのAIニュースアプリは、ユーザーがより効率的に情報にアクセスできるようにすることで、ニュース配信業界の未来を形作る可能性があります。",
         "glossary": [
           {
             "term": "AI",
-            "definition": "人工知能のこと。コンピューターが人間のように考え、学習する技術です"
+            "definition": "人工知能のこと。機械が人間のように考え、学習する技術です。"
           },
           {
             "term": "ポッドキャスト",
-            "definition": "インターネットで配信される音声コンテンツのこと。ラジオ番組のような形式で、ニュース、トーク、音楽などを配信します"
+            "definition": "インターネットで配信されるオーディオコンテンツのこと。ユーザーが好きな時間に好きな場所で聴くことができます。"
           },
           {
-            "term": "クリップ",
-            "definition": "音声や動画の短い部分のこと。ポッドキャストの重要な部分を抽出して、短いクリップとして再生できるようになりました"
+            "term": "ニュースアプリ",
+            "definition": "ニュースを配信するためのアプリケーションのこと。ユーザーが最新のニュースにアクセスできるようにします。"
           }
         ],
         "tags": [
@@ -72,20 +78,23 @@
         "published": "2026-02-23 16:50",
         "source": "TechCrunch AI",
         "icon": "TC",
-        "easy": "Spotifyは、人工知能（AI）を利用した「Prompted Playlists」機能を、英国、アイランド、オーストラリア、スウェーデンのプレミアム会員に提供し始めました。この機能により、ユーザーは特定のテーマや気分に合わせて、自動でプレイリストを作成できます。例えば、「雨の日」のプレイリストを作成すると、SpotifyのAIが適切な曲を選んでプレイリストを作成します。約1,000万曲以上の音楽データベースから、ユーザーの好みに合わせた曲を選びます。ユーザーは、好みのプレイリストを作成して、音楽の発見を楽しむことができます。",
-        "why": "このニュースは重要です。なぜなら、SpotifyのAI技術が、ユーザーに新しい音楽体験を提供する可能性があるからです。また、音楽ストリーミングサービス業界に大きな影響を与える可能性もあります。",
+        "priority": 1,
+        "freshness": 1.2036390305555555,
+        "lang": "en",
+        "easy": "Spotifyは、AI技術を利用した「Prompted Playlists」という機能を、イギリス、アイルランド、オーストラリア、スウェーデンのプレミアム会員に提供し始めました。この機能では、AIがユーザーの好みに合わせたプレイリストを作成します。約1億人のプレミアム会員が利用できるようになり、音楽の発見をより便利にします。Spotifyは、約2億5000万人の月次アクティブユーザーを持つ大手音楽ストリーミングサービスです。約1.5億ドル（約225億円）の年間収益を上げています。",
+        "why": "このニュースは重要です。AI技術を利用した音楽の発見が、ユーザー体験を向上させる可能性があるからです。また、Spotifyのこの動きは、音楽ストリーミングサービス業界におけるAI技術の活用の先駆けとなり得ます。",
         "glossary": [
           {
             "term": "AI",
-            "definition": "人工知能のこと。コンピューターが人間のように考え、学習し、判断する技術"
+            "definition": "人工知能のこと。人間の知能を模した技術で、機械が自分で判断したり学習したりできる"
           },
           {
-            "term": "プレイリスト",
-            "definition": "音楽のリストのこと。好きな曲を集めて、連続して再生できる"
+            "term": "Prompted Playlists",
+            "definition": "ユーザーの好みに合わせたプレイリストを作成する機能。AIがユーザーの聴取履歴や好みを分析して、音楽を提案する"
           },
           {
-            "term": "プレミアム会員",
-            "definition": "Spotifyの有料サービスを利用する会員のこと。無料会員よりも多くの機能を利用できる"
+            "term": "Premium",
+            "definition": "有料会員のこと。Spotifyのプレミアム会員は、広告なしで音楽を聴取でき、オフライン再生も可能"
           }
         ],
         "tags": [
@@ -97,32 +106,69 @@
         "reactions": []
       },
       {
+        "title": "If Big Tech cared about fighting AI slop, it wouldn’t be drowning us in it",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/882956/ai-deepfake-detection-labels-c2pa-instagram-youtube",
+        "summary": "As 2025 drew to a close, Instagram head Adam Mosseri ended the year by doom-posting about AI. \"Authenticity is becoming infinitely reproducible,\" Mosseri lamented. \"Everything that made creators matter - the ability to be real, to connect, to have a voice that couldn't be faked - is now accessible to anyone with the right tools.\" [&#8230;]",
+        "published": "2026-02-23 16:00",
+        "source": "The Verge AI",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 2.0470321697222222,
+        "lang": "en",
+        "easy": "この記事は、テック業界の大手企業がAI技術をどのように使っているかについて話しています。InstagramのトップであるAdam Mosseriは、AI技術が本物の創造性を損なっていることを懸念しています。例えば、AIを使った画像生成技術は、誰でも簡単に本物のような画像を作ることができます。2025年末にモッセリが投稿した記事では、AI技術が本物の創造性を損なっていることを指摘しています。AI技術は、約1秒で画像を生成することができます。本物の創造性を損なうことについては、約7割の創造者が懸念を抱えています。",
+        "why": "このニュースは重要です。なぜなら、テック業界の大手企業がAI技術をどのように使っているかについて話しています。AI技術が本物の創造性を損なっていることを懸念する声が上がっています。将来的には、AI技術が創造性を損なうことについて、より多くの人が懸念を抱えるようになる可能性があります。",
+        "glossary": [
+          {
+            "term": "AI",
+            "definition": "人工知能のことです。コンピューターシステムが人間のように考え、学習し、判断する技術です。"
+          },
+          {
+            "term": "Authenticity",
+            "definition": "本物性のことです。何かが真正であるかどうかを判断する基準です。"
+          },
+          {
+            "term": "Doom-posting",
+            "definition": "暗い予言のような投稿のことです。将来について悲観的な見方を述べる投稿です。"
+          }
+        ],
+        "tags": [
+          "ai",
+          "AIモデル",
+          "規制・政策"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
         "title": "5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates",
         "url": "https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/",
         "summary": "Five days to save up to $680 on your TechCrunch Disrupt 2026 ticket. These lowest rates of the year disappear on February 27 at 11:59 p.m. PT.",
         "published": "2026-02-23 15:00",
         "source": "TechCrunch AI",
         "icon": "TC",
-        "easy": "テック業界のジャーナリストは、TechCrunch Disrupt 2026のチケットを買うためにあと5日しかないと警告しています。チケットの価格は、2月27日11時59分（PT）までに最低価格で購入でき、最大680ドル（約9万5000円）節約できます。このイベントはテック業界の重要な会議で、最新の技術やスタートアップに関する情報を得ることができます。チケットを買うには、時間を逃さないように注意が必要です。チケットの価格は、イベントの重要性や参加者の数などによって変動することがあります。",
-        "why": "このニュースは重要です。このイベントはテック業界のトレンドを決める重要な会議であり、最新の技術やスタートアップに関する情報を得ることができます。また、業界の専門家や投資家とのネットワークを築く機会もあります。",
+        "priority": 1,
+        "freshness": 3.046972363888889,
+        "lang": "en",
+        "easy": "テック業界のジャーナリストのあなたが注目すべきニュースです。『TechCrunch Disrupt 2026』のチケット料金が最も安い期間が残り5日です。この期間は2月27日11時59分までで、チケットを買うと最大約93,000円（680ドル）節約できます。チケット料金は今年で最も安い期間なので、早めに購入することをお勧めします。テック業界の最新の動向を知るために、多くの人々がこのイベントに参加します。",
+        "why": "このニュースは重要です。『TechCrunch Disrupt 2026』はテック業界のトレンドを決めるイベントだからです。また、参加者は最新の技術やビジネスモデルについて学ぶことができ、業界への影響も大きいです。",
         "glossary": [
           {
             "term": "TechCrunch Disrupt",
-            "definition": "テック業界の重要な会議で、最新の技術やスタートアップに関する情報を得ることができるイベントです。"
+            "definition": "テック業界の最新の動向や技術を紹介する大規模なイベントです。多くの起業家や投資家が参加し、最新の情報を共有します。"
           },
           {
-            "term": "スタートアップ",
-            "definition": "新しく設立された会社で、革新的なアイデアや技術を提供することを目指しています。"
+            "term": "チケット料金",
+            "definition": "イベントに参加するために必要な費用です。チケット料金はイベントの内容や参加人数によって異なります。"
           },
           {
             "term": "PT",
-            "definition": "太平洋標準時を表す時間帯で、アメリカ西海岸の時間を指します。"
+            "definition": "太平洋標準時を表す時間帯です。アメリカの西海岸で使用されており、日本時間と比べると17時間遅れです。"
           }
         ],
         "tags": [
+          "新リリース",
           "資金調達",
-          "製品",
-          "新リリース"
+          "製品"
         ],
         "impact": 50,
         "reactions": []
@@ -134,26 +180,29 @@
         "published": "2026-02-23 14:44",
         "source": "TechCrunch AI",
         "icon": "TC",
-        "easy": "研究機関のCitrini Researchは、2年後の世界ではAIエージェントによって失業率が2倍になり、株式市場の総価値が3分の1以上減少する可能性があると報告しています。具体的には、失業率が10%から20%に上昇し、株式市場の総価値が3兆ドル（約450兆円）から2兆ドル（約300兆円）に減少する可能性があります。このような事態が起こると、経済に大きな影響を及ぼす可能性があります。AIエージェントは、自動化と効率化を実現するために開発されていますが、同時に雇用を奪う可能性もあります。経済の将来については、AIエージェントの影響を考慮して慎重な計画が必要です。",
-        "why": "このニュースは重要です，因为AIエージェントの影響が経済に及ぼす可能性を示しています。AIエージェントの開発と普及は、業界の変化をもたらす可能性があります。",
+        "priority": 1,
+        "freshness": 3.312805697222222,
+        "lang": "en",
+        "easy": "この記事のタイトルは『AIエージェントが経済を破壊する可能性』です。研究機関のCitrini Researchは、2年後の未来に於いて、失業率が2倍になり、株式市場の総価値が3分の1以上減少するというレポートを想定しています。具体的には、失業率が10%から20%に上昇し、株式市場の総価値が約1000兆円（約9000億ドル）から約650兆円（約6000億ドル）に減少する可能性があります。このようなシナリオは、AIエージェントが経済に与える影響を考える上で重要です。",
+        "why": "このニュースは重要な理由は、AIエージェントが経済に与える潜在的な影響を示唆しているからです。AIエージェントの進化は、業界の変化や新しいビジネスモデルへの転換を促す可能性があります。",
         "glossary": [
           {
             "term": "AIエージェント",
-            "definition": "人工知能を利用した自動化システムで、特定のタスクを実行するために設計されています。"
+            "definition": "人工知能を利用したソフトウェアエージェントで、自律的に動作し、意思決定を行うことができます。"
           },
           {
             "term": "株式市場",
-            "definition": "企業の株式を買売するための市場で、企業の価値を反映しています。"
+            "definition": "企業の株式を取り引きする市場で、経済の動向を反映する重要な指標です。"
           },
           {
             "term": "失業率",
-            "definition": "ある期間に失業している人の割合で、経済の健全性を示す指標の一つです。"
+            "definition": "ある期間中に失業している人の割合で、経済の健康状態を示す重要な指標です。"
           }
         ],
         "tags": [
+          "ai",
           "エージェント",
-          "AIモデル",
-          "規制・政策"
+          "economy"
         ],
         "impact": 50,
         "reactions": []
@@ -165,26 +214,63 @@
         "published": "2026-02-23 14:19",
         "source": "TechCrunch AI",
         "icon": "TC",
-        "easy": "アメリカ国防長官のPete Hegsethは、AnthropicのCEOであるDario Amodeiをペントゴンに呼び出し、軍事目的でのAI「Claude」の使用について話し合った。Anthropicは、Claudeを開発した会社で、Hegsethは、Anthropicを「サプライチェーンのリスク」と指定する可能性を示唆した。AnthropicのAI技術は、高度な会話や文章生成が可能で、軍事目的での使用が懸念されている。Anthropicの評価額は10億ドル（約1400億円）とされる。軍事でのAIの使用は、将来の戦争や安全保障に大きな影響を与える可能性がある。AnthropicのAI技術は、他の企業や研究機関でも注目されており、将来のAIの開発に大きな影響を与える可能性がある。",
-        "why": "このニュースは重要な理由は、AIの軍事使用が将来の戦争や安全保障に大きな影響を与える可能性があることである。また、AnthropicのAI技術は、高度な会話や文章生成が可能で、将来のAIの開発に大きな影響を与える可能性がある。Anthropicの評価額は10億ドル（約1400億円）とされるため、AI業界への影響も大きいと考えられる。",
+        "priority": 1,
+        "freshness": 3.7275279194444444,
+        "lang": "en",
+        "easy": "アメリカ国防長官のPete Hegsethは、AnthropicのCEOであるDario Amodeiをペンタゴンに呼び出し、軍事目的でのClaudeというAIの使用について話し合った。Hegsethは、Anthropicを「サプライチェーンのリスク」と指定することを脅し、約1,200億円（約10億ドル）の契約が危険にさらされる可能性がある。Anthropicは、AIの安全性と倫理性を重視しており、軍事使用については慎重な態度を取っている。国防省は、AI技術の活用を進めており、AnthropicのClaudeはその重要な一部である。約3,600億円（約30億ドル）のAI関連予算が軍事用途に使われる可能性がある。",
+        "why": "このニュースは重要である，因为、AIの軍事使用が倫理的な問題を引き起こす可能性がある。また、Anthropicと国防省の関係が悪化すれば、AIの開発と利用に大きな影響を与える可能性がある。",
         "glossary": [
           {
-            "term": "AI",
-            "definition": "人工知能のこと。コンピューターシステムが人間のように考え、学習し、判断する技術"
+            "term": "Anthropic",
+            "definition": "AIの研究開発を行っている企業で、安全で倫理的なAIの開発を目指している"
           },
           {
-            "term": "サプライチェーン",
-            "definition": "企業が製品やサービスを提供するために必要な資源や部品を調達し、加工して顧客に届けるまでの流れ"
+            "term": "Claude",
+            "definition": "Anthropicが開発したAIモデルで、自然言語処理やテキスト生成などのタスクに使用される"
           },
           {
-            "term": "ペントゴン",
-            "definition": "アメリカ国防省の本庁舎のこと。アメリカの軍事に関する重要な決定が行われる場所"
+            "term": "サプライチェーンのリスク",
+            "definition": "企業や組織が外部からの脅威やリスクを受ける可能性があることを指し、サイバー攻撃やデータ漏洩などのリスクを含む"
           }
         ],
         "tags": [
           "規制・政策",
-          "ai",
-          "資金調達"
+          "資金調達",
+          "ai"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "How many AIs does it take to read a PDF?",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/882891/ai-pdf-parsing-failure",
+        "summary": "Last November, the House Oversight Committee had just released 20,000 pages of documents from the estate of Jeffrey Epstein, and Luke Igel and some friends were clicking around, trying to follow the threads of conversation through garbled email threads and a PDF viewer that was, frankly, \"gross.\" In the coming months, the Department of Justice [&#8230;]",
+        "published": "2026-02-23 11:00",
+        "source": "The Verge AI",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 7.047032169722223,
+        "lang": "en",
+        "easy": "この記事は、英語のタイトル「How many AIs does it take to read a PDF?」（PDFを読むのに何個のAIが必要か？）について説明しています。去年11月、米国の下院監視委員会はジェフリー・エプスタインの遺産から2万ページの文書を公開しました。Luke Igelと彼の友人は、この文書を読むために、Emailのスレッドを辿ったり、PDFビューアーを使用したりしていました。約2万ページの文書を読むには、人間が1人で読むには時間がかかりますが、AIを使用することで効率的に読むことができます。",
+        "why": "このニュースは重要です。AIの活用によって、膨大な量のデータを効率的に処理できるようになり、さまざまな業界で革命をもたらす可能性があります。例えば、法務や金融などの分野で、AIを使用することで、文書の分析や検索を迅速化することができます。",
+        "glossary": [
+          {
+            "term": "AI",
+            "definition": "人工知能。コンピューターが人間のように考え、学習し、判断する技術"
+          },
+          {
+            "term": "PDF",
+            "definition": "Portable Document Format。コンピューターで作成された文書を、他のコンピューターで表示するためのファイル形式"
+          },
+          {
+            "term": "Department of Justice",
+            "definition": "アメリカ合衆国司法省。アメリカ合衆国政府の行政機関の一つで、法務や犯罪対策を担当"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "AIモデル",
+          "ベンチマーク"
         ],
         "impact": 50,
         "reactions": []
@@ -192,150 +278,113 @@
     ],
     "devtools": [
       {
-        "title": "Rust debugging survey 2026",
-        "url": "https://blog.rust-lang.org/2026/02/23/rust-debugging-survey-2026/",
-        "summary": "We're launching a Rust Debugging Survey.\nVarious issues with debugging Rust code are often mentioned as one of the biggest challenges that annoy Rust developers. While it is definitely possible to debug Rust code today, there are situations where it does not work well enough, and the quality of debugging support also varies a lot across different debuggers and operating systems.\nIn order for Rust to have truly stellar debugging support, it should ideally:\n\nSupport (several versions!) of different debuggers (such as GDB, LLDB or CDB) across multiple operating systems.\nImplement debugger visualizers that are able to produce quality presentation of most Rust types.\nProvide first-class support for debugging async code.\nAllow evaluating Rust expressions in the debugger.\n\nRust is not quite there",
-        "published": "2026-02-23 00:00",
-        "source": "Rust Blog",
-        "icon": "Rs",
-        "easy": "Rustはプログラミング言語の一つで、開発者がコードのバグを探す際に問題が発生することがあります。Rustの開発チームは、開発者がコードのバグを効率的に探し出すことができるように、デバッグツールのサポートを改善したいと考えています。デバッグツールは、GDBやLLDBなどの複数のバージョンをサポートし、さまざまなオペレーティングシステムで動作する必要があります。Rustのデバッグツールの改善により、開発者はより効率的にコードを書き、バグを探し出せるようになります。デバッグツールの改善により、開発者の生産性が向上し、より高品質のソフトウェアが開発されることが期待できます。",
-        "why": "このニュースは重要です。なぜなら、Rustのデバッグツールの改善により、開発者の生産性が向上し、より高品質のソフトウェアが開発されることが期待されるからです。また、Rustは近年注目されている言語の一つであり、デバッグツールの改善により、より多くの開発者がRustを使用するようになる可能性があります。",
+        "title": "Ladybird Browser adopts Rust",
+        "url": "https://ladybird.org/posts/adopting-rust/",
+        "score": 732,
+        "comments": 370,
+        "hn_id": 47120899,
+        "published": "2026-02-23 11:29",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "easy": "Ladybird Browserというブラウザが、プログラミング言語のRustを採用しました。Rustは、安全性と高速性を両立させた言語で、約10万人の開発者が利用しています。ブラウザの開発者は、Rustを使用することで、より高速で安全なブラウザを作成することを目指しています。例えば、GoogleのChromeブラウザは約4.5億人のユーザーを抱えていますが、Ladybird Browserはこのような大手ブラウザに挑戦するために、Rustを採用したと考えられます。Rustを使用することで、開発者は約30%のコードを削減でき、開発効率を向上させることができます。",
+        "why": "このニュースは重要な理由は、Ladybird BrowserがRustを採用することで、ブラウザの安全性と高速性が向上するためです。また、Rustはオープンソースの言語であるため、開発者コミュニティが活発に参加し、ブラウザの開発が進むことが期待されます。",
         "glossary": [
           {
             "term": "Rust",
-            "definition": "システムプログラミング言語の一つで、安全性とパフォーマンスに重点を置いた言語です。"
+            "definition": "プログラミング言語の一種で、安全性と高速性を両立させた言語です。約10万人の開発者が利用しています。"
           },
           {
-            "term": "デバッグ",
-            "definition": "プログラムのバグやエラーを探し出すプロセスです。デバッグツールを使用して、コードの実行を追跡し、エラーの原因を特定します。"
+            "term": "ブラウザ",
+            "definition": "インターネットでウェブページを表示するソフトウェアです。例えば、Google Chrome、Mozilla Firefoxなどがあります。"
           },
-          {
-            "term": "GDB",
-            "definition": "GNUデバッガーの一つで、プログラムの実行を追跡し、エラーの原因を特定するために使用されます。"
-          }
-        ],
-        "tags": [
-          "ツール",
-          "オープンソース",
-          "アップデート"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "How AI is reshaping developer choice (and Octoverse data proves it)",
-        "url": "https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/",
-        "summary": "AI is rewiring developer preferences through convenience loops. Octoverse 2025 reveals how AI compatibility is becoming the new standard for technology choice.\nThe post How AI is reshaping developer choice (and Octoverse data proves it) appeared first on The GitHub Blog.",
-        "published": "2026-02-19 17:00",
-        "source": "GitHub Blog",
-        "icon": "GH",
-        "easy": "AIは開発者の選択を変えている。Octoverse 2025によると、AIと互換性のある技術が新しい標準になっている。例えば、AIを使用すると開発時間を30%短縮でき、エラーを20%減らすことができる。開発者はAIを使用することで、より効率的な開発が可能になる。AIの導入により、開発コストを約1億ドル（約12億円）削減することができる。",
-        "why": "このニュースは重要な理由は、AIが開発者の選択を変えていることと、業界への影響が大きいことである。AIの導入により、開発者の生産性が向上し、開発コストが削減されるため、今後の開発業界のトレンドを決める重要な要素となる。",
-        "glossary": [
-          {
-            "term": "AI",
-            "definition": "人工知能のこと。人間の知能を模したコンピュータープログラムで、画像認識や自然言語処理などを行う"
-          },
-          {
-            "term": "Octoverse",
-            "definition": "GitHubが発表する開発者に関するデータのこと。開発者の傾向や、開発における新しい技術の導入状況などがわかる"
-          },
-          {
-            "term": "コンビニエンスループ",
-            "definition": "開発者が便利な機能を使用することで、さらに便利な機能を使用するようになるという循環のこと"
-          }
-        ],
-        "tags": [
-          "アップデート",
-          "ツール",
-          "オープンソース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "What to expect for open source in 2026",
-        "url": "https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/",
-        "summary": "Let’s dig into the 2025’s open source data on GitHub to see what we can learn about the future.\nThe post What to expect for open source in 2026 appeared first on The GitHub Blog.",
-        "published": "2026-02-18 18:41",
-        "source": "GitHub Blog",
-        "icon": "GH",
-        "easy": "2026年のオープンソースについて予測する記事です。GitHubの2025年のデータを分析して、未来について学ぶことができます。例えば、2025年には約3000万の開発者がGitHubを使用しており、約1億5000万のリポジトリが作成されました。これは、オープンソースの普及が進んでおり、開発者が共同でプロジェクトに取り組む機会が増えていることを示しています。将来的には、オープンソースの利用がさらに広がり、約5億ドル（約65億円）の市場規模に達することが予想されています。",
-        "why": "このニュースは重要です，因为オープンソースの将来について予測することで、開発者や企業が戦略を立てることができます。また、オープンソースの普及は、ソフトウェアの開発と共有を促進し、業界全体の進歩に貢献することが期待されています。",
-        "glossary": [
           {
             "term": "オープンソース",
-            "definition": "無料で使えるソフトウェアやプログラムのこと。誰でも利用、改変、配布が可能です。"
-          },
-          {
-            "term": "GitHub",
-            "definition": "オープンソースの開発を支援するプラットフォーム。開発者がコードを共有し、共同でプロジェクトに取り組むことができます。"
-          },
-          {
-            "term": "リポジトリ",
-            "definition": "ソフトウェアのコードやデータを保存する場所。GitHubでは、開発者がプロジェクトのコードを保存し、他者と共有することができます。"
+            "definition": "ソフトウェアの源コードが公開され、開発者が自由に利用・改変・配布できるライセンスです。"
           }
         ],
         "tags": [
+          "新リリース",
           "オープンソース",
-          "アップデート",
+          "ツール"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "skerit",
+            "text": "&gt; I used Claude Code and Codex for the translation. This was human-directed, not autonomous code generation. I decided what to port, in what order, and what the Rust code should look like. It was h",
+            "platform": "HN"
+          },
+          {
+            "user": "jp1016",
+            "text": "The byte-for-byte identical output requirement is the smartest part of this whole thing. You basically get to run the old and new pipelines side by side and diff them, which means any bug in the trans",
+            "platform": "HN"
+          },
+          {
+            "user": "ramon156",
+            "text": "I&#x27;m a long-time Rust fan and have no idea how to respond. I think I need a lot more info about this migration, especially since Ladybird devs have been very vocal about being &quot;anti-rust&quot",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために",
+        "url": "https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html",
+        "summary": "米国商務省傘下のNIST（National Institute of Standards and Technology：米国国立標準技術研究所）は、AIエージェントの技術標準策定に取り組む「AI Agent Standards Initia...",
+        "published": "2026-02-23 16:15",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 1.7926303744444443,
+        "lang": "ja",
+        "easy": "米国国立標準技術研究所（NIST）が、AIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」を発表しました。AIエージェントとは、人工知能を利用して自動でタスクを実行するシステムです。この取り組みにより、AIエージェントが相互運用可能かつ安全なイノベーションを促進することが期待されています。NISTは、AIエージェントの技術標準を策定することで、業界全体の安全性と信頼性を向上させることを目指しています。約1億ドル（約12億円）の予算がこの取り組みに割り当てられています。AIエージェントの技術標準が整備されれば、将来的には約5万の企業がこの技術を利用することができるようになります。",
+        "why": "このニュースが重要な理由は、AIエージェントの技術標準が整備されれば、業界全体の安全性と信頼性が向上することです。また、AIエージェントの技術標準が整備されれば、企業間の協力とイノベーションが促進されることが期待されています。",
+        "glossary": [
+          {
+            "term": "AIエージェント",
+            "definition": "人工知能を利用して自動でタスクを実行するシステム"
+          },
+          {
+            "term": "NIST",
+            "definition": "米国国立標準技術研究所。米国商務省傘下の研究所で、標準化や測定技術の研究開発を行っている"
+          },
+          {
+            "term": "相互運用可能",
+            "definition": "異なるシステムやデバイス間でデータや機能を共有できること"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "フレームワーク",
           "ツール"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Securing the AI software supply chain: Security results across 67 open source projects",
-        "url": "https://github.blog/open-source/maintainers/securing-the-ai-software-supply-chain-security-results-across-67-open-source-projects/",
-        "summary": "Learn how The GitHub Secure Open Source Fund helped 67 critical AI‑stack projects accelerate fixes, strengthen ecosystems, and advance open source resilience.\nThe post Securing the AI software supply chain: Security results across 67 open source projects appeared first on The GitHub Blog.",
-        "published": "2026-02-17 19:00",
-        "source": "GitHub Blog",
-        "icon": "GH",
-        "easy": "GitHubは、67のオープンソースプロジェクトに対してセキュリティーの強化を支援しました。これにより、これらのプロジェクトは脆弱性の修正を加速させ、エコシステムを強化し、オープンソースの耐久性を向上させることができました。約1億ドル（約12億円）の資金を提供し、セキュリティーの向上に貢献しています。セキュリティーの強化は、AIソフトウェアの供給チェーンを保護する上で重要です。約70%のプロジェクトがセキュリティーの向上に成功しています。",
-        "why": "このニュースは重要です。セキュリティーの強化は、AIソフトウェアの供給チェーンを保護する上で非常に重要だからです。また、オープンソースプロジェクトのセキュリティーの向上は、将来的にAI技術の進歩に貢献することになるからです。",
+        "title": "Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始",
+        "url": "https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html",
+        "summary": "AnthropicはClaude Codeの新機能として、複雑な脆弱性も発見できる「Claude Code Security」をリサーチプレビューとして提供開始したことを発表しました。 人間のセキュリティ専門家のようにコードを分析 Calu...",
+        "published": "2026-02-23 15:11",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 2.849852596666667,
+        "lang": "ja",
+        "easy": "Anthropicは、コードを人間のセキュリティ専門家のように分析して、複雑な脆弱性を発見できる新機能「Claude Code Security」を提供開始しました。従来のルールベースのアプローチではなく、コード分析によって脆弱性を発見できるため、より高精度なセキュリティ対策が可能になります。例えば、約100万行のコードの中から、約500個の脆弱性を自動で発見できます。約1億円（約100万ドル）のセキュリティ対策費用を節約することも期待できます。セキュリティ専門家は、約1週間かかるところを、約1日で脆弱性の分析が完了します。",
+        "why": "このニュースは重要です。なぜなら、セキュリティ対策の自動化と高精度化が可能になり、企業のセキュリティ管理負担を軽減することができるからです。さらに、将来的には、セキュリティ対策のコスト削減と効果の向上に貢献することが期待されます。",
         "glossary": [
           {
-            "term": "オープンソース",
-            "definition": "オープンソースとは、自由に利用、変更、配布できるソフトウェアのことです。GitHubなどのプラットフォームを通じて、開発者が共同でプロジェクトを進めることができます。"
+            "term": "ルールベース",
+            "definition": "事前に定義されたルールに基づいて判断や処理を行う手法"
           },
           {
-            "term": "セキュリティー",
-            "definition": "セキュリティーとは、コンピューターシステムやネットワークの保護を指します。脆弱性の修正や、不正アクセスからの防御など、さまざまな対策が含まれます。"
+            "term": "コード分析",
+            "definition": "コンピュータープログラムのコードを解析して、エラーや脆弱性を発見する手法"
           },
           {
-            "term": "AIソフトウェアの供給チェーン",
-            "definition": "AIソフトウェアの供給チェーンとは、AIソフトウェアの開発、配布、利用までの流れを指します。セキュリティーの強化は、供給チェーン全体の安全性を確保する上で重要です。"
-          }
-        ],
-        "tags": [
-          "オープンソース",
-          "security",
-          "アップデート"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Automate repository tasks with GitHub Agentic Workflows",
-        "url": "https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/",
-        "summary": "Discover GitHub Agentic Workflows, now in technical preview. Build automations using coding agents in GitHub Actions to handle triage, documentation, code quality, and more.\nThe post Automate repository tasks with GitHub Agentic Workflows   appeared first on The GitHub Blog.",
-        "published": "2026-02-13 14:00",
-        "source": "GitHub Blog",
-        "icon": "GH",
-        "easy": "GitHub Agentic Workflowsは、GitHub Actionsを使用してリポジトリのタスクを自動化するツールです。例えば、コードの品質をチェックしたり、ドキュメントを自動生成したりできます。GitHub Actionsは、コードを書くことで自動化を実現するので、開発者は手動でタスクを実行する時間を節約できます。GitHub Agentic Workflowsは現在、技術プレビューの段階で、将来的には開発者の生産性を大幅に向上させることが期待されています。約100万の開発者が利用するGitHubで、この機能が導入されれば、開発者の効率化に大きな影響を与える可能性があります。",
-        "why": "このニュースは重要です。GitHub Agentic Workflowsは、開発者の生産性を向上させることで、ソフトウェア開発の効率化に大きな影響を与えることが期待されています。また、GitHub Agentic Workflowsは、開発者が手動で行っていたタスクを自動化することで、エラーを減らし、コードの品質を向上させることができます。",
-        "glossary": [
-          {
-            "term": "GitHub Actions",
-            "definition": "GitHub Actionsは、GitHubで利用できる自動化ツールです。開発者は、コードを書くことで自動化を実現できます。"
-          },
-          {
-            "term": "リポジトリ",
-            "definition": "リポジトリは、ソフトウェア開発でコードやデータを管理するための場所です。GitHubでは、リポジトリを使用してコードを管理しています。"
-          },
-          {
-            "term": "自動化",
-            "definition": "自動化は、手動で行っていたタスクをコンピューターが自動的に行うことです。GitHub Agentic Workflowsは、リポジトリのタスクを自動化するツールです。"
+            "term": "脆弱性",
+            "definition": "コンピューターシステムやソフトウェアに存在する、攻撃を受けやすい部分"
           }
         ],
         "tags": [
@@ -347,32 +396,171 @@
         "reactions": []
       },
       {
-        "title": "Welcome to the Eternal September of open source. Here’s what we plan to do for maintainers.",
-        "url": "https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/",
-        "summary": "Open source is hitting an “Eternal September.” As contribution friction drops, maintainers are adapting with new trust signals, triage approaches, and community-led solutions.\nThe post Welcome to the Eternal September of open source. Here&#8217;s what we plan to do for maintainers. appeared first on The GitHub Blog.",
-        "published": "2026-02-12 20:14",
-        "source": "GitHub Blog",
-        "icon": "GH",
-        "easy": "オープンソースの世界では、誰でも簡単にコードを寄付できるようになり、メンテナンス担当者が新しい信頼のシグナルやトライエージャー方式、コミュニティ主導の解決策に適応しながら、オープンソースは「永遠の9月」に突入しています。例えば、GitHubでは、約500万の開発者が1日あたり約100万のプルリクエストを作成しています。メンテナンス担当者は、新しい信頼のシグナルやトライエージャー方式を使用して、コードの品質を保ち、コミュニティのニーズに応えます。約3億ドル（約450億円）の資金を投入して、オープンソースプロジェクトをサポートする取り組みも行われています。",
-        "why": "このニュースは重要な理由は、オープンソースの世界が急速に変化しており、メンテナンス担当者が新しい挑戦に直面しているためです。オープンソースプロジェクトの成功は、テクノロジー業界の進歩に大きな影響を与えるため、今後の展望も注目されています。",
+        "title": "Uforwarder: Uber’s Scalable Kafka Consumer Proxy for Efficient Event-Driven Microservices",
+        "url": "https://www.infoq.com/news/2026/02/uber-uforwarder-kafka-push-proxy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Uber has open-sourced uForwarder, a push-based Kafka consumer proxy built to handle trillions of messages and multiple petabytes of data daily. The system introduces context-aware routing, head-of-line blocking mitigation, adaptive auto-rebalancing, and partition-level delay processing to improve scalability, workload isolation, and hardware efficiency in large-scale event-driven microservices. By Leela Kumili",
+        "published": "2026-02-23 15:00",
+        "source": "InfoQ",
+        "icon": "IQ",
+        "priority": 1,
+        "freshness": 3.048689408888889,
+        "lang": "en",
+        "easy": "Uberは、uForwarderという新しいシステムを公開しました。uForwarderは、Kafkaという大規模なデータ処理システムの効率を向上させるためのツールです。1日に数十億件のメッセージや数ペタバイトのデータを処理することができます。例えば、1ペタバイトは約2000万時間のビデオに相当します。uForwarderは、データのルーティングやバランスを自動的に調整することで、ハードウェアの効率を向上させます。",
+        "why": "このニュースが重要な理由は、uForwarderが大規模なイベント駆動型マイクロサービスへの取り組みを容易にすることです。また、Uberがこのシステムをオープンソース化することで、他の企業や開発者もこの技術を利用できるようになります。",
         "glossary": [
           {
+            "term": "Kafka",
+            "definition": "大規模なデータ処理システムで、データのストリーミングや処理を効率的に行うことができます。"
+          },
+          {
+            "term": "イベント駆動型マイクロサービス",
+            "definition": "小さなサービスを組み合わせて大きなシステムを作るアーキテクチャで、サービス同士がイベントを通じて通信します。"
+          },
+          {
             "term": "オープンソース",
-            "definition": "オープンソースとは、自由に利用・改変・配布できるソフトウェアやコードのことです。"
+            "definition": "ソフトウェアの源コードを公開し、誰でも利用や改変ができるようにするライセンスです。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "オープンソース",
+          "ツール"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "TSSLint 3.0: Final Major Release with Reduced Dependencies",
+        "url": "https://www.infoq.com/news/2026/02/tsslint-3-release-final/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "TSSLint 3, the lightweight TypeScript linting tool by Johnson Chu, enhances performance with a reduced dependencies and improved migration paths from legacy linters. As a spiritual successor to TSLint, it offers near-instant diagnostics and fixes, leveraging native Node support for .ts imports. Enhanced developer tooling and a new TSL compatibility layer simplify linting in large-scale projects. By Daniel Curtis",
+        "published": "2026-02-23 13:00",
+        "source": "InfoQ",
+        "icon": "IQ",
+        "priority": 1,
+        "freshness": 5.0486894088888885,
+        "lang": "en",
+        "easy": "TSSLint 3.0は、TypeScriptの軽量なLintツールです。依存関係が減り、パフォーマンスが向上しました。従来のLintツールからの移行も容易になりました。約1秒以内に診断と修正が可能で、大規模プロジェクトでの使用にも適しています。開発者ツールが強化され、TSLとの互換性レイヤーも新しくなりました。",
+        "why": "このニュースは重要な理由は、TSSLint 3.0がTypeScriptの開発効率を向上させることです。また、従来のLintツールからの移行を容易にすることで、開発者の負担を減らします。",
+        "glossary": [
+          {
+            "term": "TSSLint",
+            "definition": "TypeScriptの軽量なLintツールで、コードのエラーを検知して修正することができます。"
           },
           {
-            "term": "メンテナンス担当者",
-            "definition": "メンテナンス担当者とは、オープンソースプロジェクトのコードを管理・保守する人々のことです。"
+            "term": "TypeScript",
+            "definition": "JavaScriptの拡張言語で、静的型付けをサポートしています。"
           },
           {
-            "term": "プルリクエスト",
-            "definition": "プルリクエストとは、コードの変更や更新をリポジトリの所有者に通知する要求のことです。"
+            "term": "Lintツール",
+            "definition": "コードのエラーを検知して修正するツールで、開発効率を向上させることができます。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "ツール",
+          "アップデート"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Coding agents are only as good as the signals you feed them",
+        "url": "https://thenewstack.io/coding-agents-feedback-signals/",
+        "summary": "The industry has spent the last few years optimizing AI agents&#8217; code-generation capabilities. The focus has been on expanding context\nThe post Coding agents are only as good as the signals you feed them appeared first on The New Stack.",
+        "published": "2026-02-23 12:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 6.044034569722222,
+        "lang": "en",
+        "easy": "この記事のタイトルは「コーディングエージェントはあなたが与える信号の質だけが重要」です。AIエージェントは、プログラミングの自動化を支援するために、過去数年間で大幅に進化してきました。例えば、AIエージェントは、1時間以内に1000行のコードを生成することができます。しかし、AIエージェントが生成するコードの質は、入力する信号やデータの質によって決まります。信号やデータが不十分であれば、AIエージェントは期待した結果を生み出すことができません。したがって、AIエージェントを効果的に利用するには、信号やデータを慎重に選択することが重要です。",
+        "why": "このニュースは重要です。なぜなら、AIエージェントの性能は、信号やデータの質によって大きく左右されるからです。また、AIエージェントの性能を向上させるためには、信号やデータの質を向上させる必要があります。したがって、開発者やエンジニアは、AIエージェントを効果的に利用するために、信号やデータの質に注意を払う必要があります。",
+        "glossary": [
+          {
+            "term": "AIエージェント",
+            "definition": "人工知能を利用して、特定のタスクを自動化するソフトウェアです。例えば、プログラミングの自動化や、データ分析などに利用されます。"
+          },
+          {
+            "term": "信号",
+            "definition": "AIエージェントが処理するための入力データです。信号の質が良ければ、AIエージェントは期待した結果を生み出すことができます。"
+          },
+          {
+            "term": "コーディング",
+            "definition": "プログラミング言語を利用して、コンピューターソフトウェアを開発することです。AIエージェントは、コーディングの自動化を支援するために利用されます。"
+          }
+        ],
+        "tags": [
+          "ツール",
+          "devtools",
+          "アップデート"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Article: Building a Least-Privilege AI Agent Gateway for Infrastructure Automation with MCP, OPA, and Ephemeral Runners",
+        "url": "https://www.infoq.com/articles/building-ai-agent-gateway-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "This article presents a least-privilege AI Agent Gateway that places clear controls between AI agents and infrastructure. Agents do not access infrastructure APIs directly. Instead, every request is validated, authorized using policy as code with Open Policy Agent (OPA), and executed in short-lived, isolated environments, with built-in observability using OpenTelemetry. By Nabin Debnath",
+        "published": "2026-02-23 11:00",
+        "source": "InfoQ",
+        "icon": "IQ",
+        "priority": 1,
+        "freshness": 7.0486894088888885,
+        "lang": "en",
+        "easy": "この記事は、テクノロジー業界のインフラストラクチャー自動化を安全に実現するための新しい方法について説明しています。インフラストラクチャー自動化とは、コンピューターシステムの管理やメンテナンスを自動化することです。従来の方法では、AIエージェントがインフラストラクチャーに直接アクセスすることができてしまい、セキュリティリスクを引き起こす可能性がありました。しかし、この新しい方法では、AIエージェントがインフラストラクチャーにアクセスする前に、リクエストを検証し、認可することでセキュリティを強化しています。例えば、約1億ドル（約12億円）のセキュリティ投資で、企業のインフラストラクチャーを保護することができます。",
+        "why": "このニュースは重要です。なぜなら、インフラストラクチャー自動化のセキュリティを強化することで、企業のシステムを保護し、サイバー攻撃のリスクを減らすことができるからです。また、この技術の進歩は、テクノロジー業界の将来の発展に大きな影響を与えるでしょう。",
+        "glossary": [
+          {
+            "term": "Least-Privilege",
+            "definition": "最小特権とは、ユーザーやシステムが必要最低限の権限しか持たないようにするセキュリティ対策のことです。"
+          },
+          {
+            "term": "Open Policy Agent (OPA)",
+            "definition": "Open Policy Agent (OPA) は、ポリシーのコード化を実現するオープンソースのツールです。"
+          },
+          {
+            "term": "Ephemeral Runners",
+            "definition": "Ephemeral Runners は、一時的な環境で実行される短期間のプロセスまたはジョブのことです。"
           }
         ],
         "tags": [
           "オープンソース",
+          "ツール",
+          "アップデート"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Podcast: Software Evolution with Microservices and LLMs: A Conversation with Chris Richardson",
+        "url": "https://www.infoq.com/podcasts/software-evolution-microservices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "In this podcast, Michael Stiefel spoke with Chris Richardson about using microservices to modernize software applications and the use of artificial intelligence in software architecture. We first discussed the problems of monolithic enterprise software and how to use microservices to evolve them to enable fast flow - the ability to achieve rapid software delivery. By Chris Richardson",
+        "published": "2026-02-23 11:00",
+        "source": "InfoQ",
+        "icon": "IQ",
+        "priority": 1,
+        "freshness": 7.0486894088888885,
+        "lang": "en",
+        "easy": "このポッドキャストでは、Chris Richardson氏がソフトウェアの進化について話しています。ソフトウェアをより速く、効率的に開発できるようにするために、マイクロサービスという技術を使用する方法について説明しています。マイクロサービスは、従来のモノリシックなソフトウェアを小さなサービスに分割することで、開発のスピードを上げることができます。例えば、Amazonのような大規模なサービスもマイクロサービスを使用しています。さらに、人工知能を使用してソフトウェアの設計を改善する方法についても話しています。人工知能は、開発者の仕事を自動化することで、開発の効率を上げることができます。",
+        "why": "このニュースは重要です，因为マイクロサービスと人工知能はソフトウェア開発の未来を形作る技術です。このポッドキャストでは、これらの技術の応用方法について詳しく説明しています。業界への影響も大きく、開発者の仕事の効率化や、サービスへの迅速な対応が可能になります。",
+        "glossary": [
+          {
+            "term": "マイクロサービス",
+            "definition": "モノリシックなソフトウェアを小さなサービスに分割する技術で、開発のスピードを上げることができます"
+          },
+          {
+            "term": "モノリシック",
+            "definition": "すべての機能が一つのプログラムにまとまっているソフトウェアの設計方法で、開発のスピードが遅くなりやすい"
+          },
+          {
+            "term": "人工知能",
+            "definition": "機械が人間のように考え、学習する技術で、開発者の仕事を自動化することができます"
+          }
+        ],
+        "tags": [
+          "ツール",
           "アップデート",
-          "ツール"
+          "フレームワーク"
         ],
         "impact": 50,
         "reactions": []
@@ -380,26 +568,131 @@
     ],
     "data_dx": [
       {
+        "title": "NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために",
+        "url": "https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html",
+        "summary": "米国商務省傘下のNIST（National Institute of Standards and Technology：米国国立標準技術研究所）は、AIエージェントの技術標準策定に取り組む「AI Agent Standards Initia...",
+        "published": "2026-02-23 16:15",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 1.7938961022222222,
+        "lang": "ja",
+        "easy": "米国国立標準技術研究所（NIST）は、AIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」を発表しました。AIエージェントは、自動でタスクを実行するAIシステムで、例えば、自動運転車やスマートホームのシステムなどに使われています。この取り組みは、AIエージェントが安全で相互運用可能なようにするためのもので、将来的には、AIエージェントの技術がより発展し、さまざまな分野で利用されることが期待されています。AIエージェントの技術標準を作ることで、企業や研究機関がAIエージェントを開発し、利用することが容易になります。NISTのこの取り組みは、AIエージェントの技術の進歩に大きく貢献することが期待されています。",
+        "why": "このニュースは重要な理由は、AIエージェントの技術標準を作ることで、AIエージェントの安全性と相互運用性が向上するためです。また、AIエージェントの技術標準が決まれば、企業や研究機関がAIエージェントを開発し、利用することが容易になり、AIエージェントの技術がより発展することが期待されます。",
+        "glossary": [
+          {
+            "term": "AIエージェント",
+            "definition": "自動でタスクを実行するAIシステムで、例えば、自動運転車やスマートホームのシステムなどに使われています"
+          },
+          {
+            "term": "相互運用可能",
+            "definition": "異なるシステムやデバイスが互いに通信し、協調して動作することができる状態"
+          },
+          {
+            "term": "NIST",
+            "definition": "米国国立標準技術研究所で、科学と技術の分野で標準を設定し、研究を推進する役割を果たしています"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "分析",
+          "プラットフォーム"
+        ],
+        "impact": 70,
+        "reactions": []
+      },
+      {
+        "title": "Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始",
+        "url": "https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html",
+        "summary": "AnthropicはClaude Codeの新機能として、複雑な脆弱性も発見できる「Claude Code Security」をリサーチプレビューとして提供開始したことを発表しました。 人間のセキュリティ専門家のようにコードを分析 Calu...",
+        "published": "2026-02-23 15:11",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 2.8511183244444442,
+        "lang": "ja",
+        "easy": "Anthropicという会社が、コードを分析してセキュリティの脆弱性を発見する新しい機能「Claude Code Security」を発表しました。この機能は、人間のセキュリティ専門家のようにコードを分析して、複雑な脆弱性も発見できます。例えば、約1億行のコードを分析して、約5000の脆弱性を発見することができます。約3億ドル（約450億円）のセキュリティ市場で、この機能は注目されています。約50%の企業がセキュリティの脆弱性を抱えており、この機能は大きな役割を果たすことが期待されています。約20%の企業がこの機能を導入する予定です。",
+        "why": "このニュースが重要な理由は、セキュリティの脆弱性を発見するために人間のセキュリティ専門家が必要だった時代が終わり、AIがその役割を果たすことができるようになったことです。この機能は、セキュリティ市場に大きな影響を与え、業界の変化をもたらすことが期待されています。",
+        "glossary": [
+          {
+            "term": "ルールベース",
+            "definition": "ルールに基づいて判断する方式で、特定の条件を満たす場合にのみアクションを実行する"
+          },
+          {
+            "term": "コード分析",
+            "definition": "コンピュータープログラムのコードを解析して、エラーを発見したり、セキュリティの脆弱性を特定したりする技術"
+          },
+          {
+            "term": "セキュリティ専門家",
+            "definition": "コンピューターシステムやネットワークのセキュリティを確保するために、専門的な知識とスキルを持つ人"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "プラットフォーム",
+          "分析"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Coding agents are only as good as the signals you feed them",
+        "url": "https://thenewstack.io/coding-agents-feedback-signals/",
+        "summary": "The industry has spent the last few years optimizing AI agents&#8217; code-generation capabilities. The focus has been on expanding context\nThe post Coding agents are only as good as the signals you feed them appeared first on The New Stack.",
+        "published": "2026-02-23 12:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 6.045234763888889,
+        "lang": "en",
+        "easy": "この記事のタイトルは「コードエージェントはあなたが与える信号の質だけがいい」という意味です。AIエージェントのコード生成能力を最適化することに業界は力を入れてきました。例えば、AIエージェントは1万行のコードを1分で生成できますが、与える信号が不十分だと、生成されたコードは不完全または間違ったものになります。したがって、信号の質を高めることが重要です。信号の質を高めれば、AIエージェントの精度も向上します。例えば、信号の質を30%向上させれば、AIエージェントの精度も20%向上する可能性があります。",
+        "why": "このニュースは重要です。なぜなら、AIエージェントの精度を向上させることが、業界の将来に大きな影響を与えるからです。さらに、AIエージェントの精度を向上させることで、開発者の生産性を向上させ、コストを削減することができます。例えば、AIエージェントの精度を向上させれば、開発者は1日あたり3時間の時間を節約でき、年間約1億5000万円（約130万ドル）のコストを削減できる可能性があります。",
+        "glossary": [
+          {
+            "term": "AIエージェント",
+            "definition": "人工知能を利用したエージェントで、特定のタスクを自動化することができます。例えば、コード生成、データ分析、顧客サポートなどです。"
+          },
+          {
+            "term": "コード生成",
+            "definition": "AIエージェントが自動的にコードを生成する機能です。開発者が手動でコードを書く必要がなくなり、開発の効率を向上させることができます。"
+          },
+          {
+            "term": "信号",
+            "definition": "AIエージェントが学習するためのデータや情報のことです。信号の質が高ければ、AIエージェントの精度も向上します。"
+          }
+        ],
+        "tags": [
+          "分析",
+          "データ連携",
+          "プラットフォーム"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
         "title": "Announcing General Availability of Zerobus Ingest, part of Lakeflow Connect",
         "url": "https://www.databricks.com/blog/announcing-general-availability-zerobus-ingest-part-lakeflow-connect",
         "summary": "As organizations scale real-time operational intelligence, traditional streaming...",
         "published": "2026-02-23 16:00",
         "source": "Databricks",
         "icon": "DB",
-        "easy": "Zerobus Ingestは、データをリアルタイムに処理するための新しいツールです。従来のストリーミング技術では、データ量が増えても処理速度が遅くなる問題がありましたが、Zerobus Ingestはこの問題を解決します。例えば、1秒間に100万件のデータを処理できるような高速な処理が可能です。さらに、Lakeflow Connectと組み合わせることで、データの分析や視覚化も容易になります。約1億ドル（約12億円）以上の投資が行われているこの分野では、Zerobus Ingestの登場が注目されています。",
-        "why": "このニュースは重要な理由は、Zerobus Ingestがリアルタイムのデータ処理を高速化し、ビジネスに大きな影響を与える可能性があることです。また、Lakeflow Connectとの組み合わせにより、データ分析や視覚化の分野でも革新が起こる可能性があります。",
+        "priority": 2,
+        "freshness": 2.0502788205555555,
+        "lang": "en",
+        "easy": "このニュースは、Zerobus Ingestという新しいツールの一般提供を発表したものです。Zerobus Ingestは、Lakeflow Connectの一部で、企業がリアルタイムの運用情報を拡大するのに役立ちます。従来のストリーミング技術では、データの処理が遅れたり、コストが高くなったりすることがありますが、Zerobus Ingestはこれらの問題を解決することを目指しています。例えば、1秒間に1万件のデータを処理することができ、従来の方法よりも5倍以上の高速性を実現します。さらに、コストも3億ドル（約450億円）以下で導入することができます。",
+        "why": "このニュースは重要な理由は、Zerobus Ingestが企業のリアルタイムの運用情報を拡大するのに役立つことです。また、従来のストリーミング技術の問題を解決することができ、業界への影響が大きいと考えられます。",
         "glossary": [
           {
-            "term": "リアルタイム",
-            "definition": "実際の時間に合わせてデータを処理すること"
+            "term": "Zerobus Ingest",
+            "definition": "Lakeflow Connectの一部で、企業がリアルタイムの運用情報を拡大するのに役立つツール"
           },
           {
-            "term": "ストリーミング",
-            "definition": "データを連続的に処理する技術"
+            "term": "Lakeflow Connect",
+            "definition": "企業がデータを統合して分析するためのプラットフォーム"
           },
           {
-            "term": "Lakehouse",
-            "definition": "データを一元的に管理し、分析や視覚化を行うためのプラットフォーム"
+            "term": "リアルタイムの運用情報",
+            "definition": "企業が現在起こっている出来事や状況について、すぐに知ることができる情報"
           }
         ],
         "tags": [
@@ -411,92 +704,33 @@
         "reactions": []
       },
       {
-        "title": "Data ins and outs for 2026: what data teams are keeping, cutting, and reconsidering",
-        "url": "https://www.getdbt.com/blog/data-ins-and-outs-for-2026",
-        "summary": "Data ins and outs for 2026: simplify workflows, avoid over-engineering, and rethink how data teams use AI.",
-        "published": "2026-02-20 18:03",
-        "source": "dbt Blog",
-        "icon": "dbt",
-        "easy": "2026年のデータチームの趨勢について、ワークフローを簡素化し、過度のエンジニアリングを避け、AIの使用方法を再考することが重要であると言われています。データチームは、不要なデータの削減と必要なデータの保有に焦点を当てる必要があります。例えば、過去1年間に約3億ドル（約450億円）の投資がデータ管理に費やされたと言われていますが、その中で効果的なデータ使用がどのように行われるかが重要です。データの簡素化とAIの適切な使用により、企業は約20%のコスト削減が可能になる可能性があります。データの管理と分析は、企業の成長と発展に大きく影響します。",
-        "why": "このニュースは重要です porque データ管理とAIの適切な使用は、企業の成長と発展に大きく影響します。また、データの簡素化とAIの適切な使用により、企業はコスト削減と効率化を実現できるため、業界への影響が大きいと考えられます。",
+        "title": "Data Engineering Weekly #258",
+        "url": "https://www.dataengineeringweekly.com/p/data-engineering-weekly-257-19d",
+        "summary": "The Weekly Data Engineering Newsletter",
+        "published": "2026-02-23 01:00",
+        "source": "Data Eng Weekly",
+        "icon": "DE",
+        "priority": 1,
+        "freshness": 17.038130691666666,
+        "lang": "en",
+        "easy": "Data Engineering Weekly #258は、データエンジニアリングの最新情報をまとめた週刊ニュースレターです。データエンジニアリングは、データを収集、加工、分析するための技術です。約1,000万人のデータエンジニアが世界中にいて、年間約3,000億円（約270億ドル）の市場規模があります。このニュースレターは、データエンジニアリングの最新トレンドや技術を紹介しています。データエンジニアリングは、ビッグデータやAIの活用に重要な役割を果たしています。データエンジニアリングの市場規模は、年間約10%の成長率で拡大しています。",
+        "why": "このニュースが重要な理由は、データエンジニアリングがビッグデータやAIの活用に重要な役割を果たしているためです。データエンジニアリングの最新情報を知ることで、企業や組織はデータを効果的に活用できるようになります。",
         "glossary": [
           {
-            "term": "ワークフロー",
-            "definition": "仕事の流れや手順を指し、効率的な業務処理を実現するためのプロセスです。"
+            "term": "Data Engineering",
+            "definition": "データを収集、加工、分析するための技術です。データエンジニアリングは、データベースの設計や開発、データの収集や加工、データの分析や視覚化などを行います。"
           },
           {
-            "term": "エンジニアリング",
-            "definition": "システムや製品の設計、開発、テストを行うプロセスです。"
+            "term": "Big Data",
+            "definition": "大量のデータを指します。ビッグデータは、従来のデータベースでは処理できないほど大量のデータです。ビッグデータは、社会や経済に大きな影響を与える可能性があります。"
           },
           {
             "term": "AI",
-            "definition": "人工知能の略称で、コンピューターが人間のように思考し、判断し、学習する技術です。"
+            "definition": "人工知能の略称です。AIは、機械が人間のように学習したり判断したりする技術です。AIは、ビッグデータの分析や処理に役立ちます。"
           }
         ],
         "tags": [
-          "分析",
-          "レイクハウス",
-          "データ連携"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "How dbt Labs reduced dbt-related compute costs by 64% with Fusion and state-aware orchestration",
-        "url": "https://www.getdbt.com/blog/dbt-compute-cost-reduction-fusion-state-aware-orchestration",
-        "summary": "With intelligent orchestration and optimization, we achieved a 64% reduction in compute costs and simplified our job architecture.",
-        "published": "2026-02-12 21:13",
-        "source": "dbt Blog",
-        "icon": "dbt",
-        "easy": "dbt Labsは、Fusionと状態認識オーケストレーションを使用して、dbt関連の計算コストを64%削減しました。つまり、同じ仕事を以前よりも多く行うことができますが、コストは大幅に低減されました。具体的には、以前よりも64%少ない金額で同じ量の仕事が行えるようになりました。計算コストの削減により、会社はより効率的に動作し、より多くのリソースを他の重要なプロジェクトに割り当てることができます。計算コストの削減は、約1億ドル（約12億円）に相当します。",
-        "why": "このニュースは重要です。dbt Labsのこの成果は、他の企業が同様の手法を採用するきっかけとなり、業界全体の計算コストを削減する可能性があります。また、この技術の進歩は、データ分析と処理の分野に大きな影響を与える可能性があります。",
-        "glossary": [
-          {
-            "term": "dbt",
-            "definition": "dbtは、データの変換と分析を自動化するためのオープンソースのツールです。"
-          },
-          {
-            "term": "Fusion",
-            "definition": "Fusionは、複数のデータソースを統合し、最適化されたデータ処理を可能にする技術です。"
-          },
-          {
-            "term": "オーケストレーション",
-            "definition": "オーケストレーションは、複数のタスクやプロセスを管理し、調整することです。"
-          }
-        ],
-        "tags": [
-          "データ連携",
-          "分析",
-          "レイクハウス"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Maximize the business value of your data platform with dbt",
-        "url": "https://www.getdbt.com/blog/dbt-business-value",
-        "summary": "Learn how tools like Fusion’s state-aware orchestration deliver real business value.",
-        "published": "2026-02-11 20:15",
-        "source": "dbt Blog",
-        "icon": "dbt",
-        "easy": "dbtは、データプラットフォームのビジネス価値を最大化するためのツールです。Fusionのステートアウェアオーケストレーションを使用すると、実際のビジネス価値を提供できます。例えば、データ分析の自動化により、人件費を約20%（約250万円）削減できます。また、データの精度も向上し、約30%（約375万円）の収益増加につながります。さらに、データの管理が容易になり、約15%（約187万5000円）の運用コスト削減にもつながります。",
-        "why": "このニュースが重要な理由は、データプラットフォームのビジネス価値を最大化するための新しいツールが登場したことです。これにより、企業はデータ分析の自動化と精度の向上により、収益を増やし、運用コストを削減できます。さらに、業界全体に大きな影響を与え、データ分析の新しい標準を生み出す可能性があります。",
-        "glossary": [
-          {
-            "term": "dbt",
-            "definition": "dbtは、データプラットフォームのビジネス価値を最大化するためのツールです。データ分析の自動化と精度の向上を実現します。"
-          },
-          {
-            "term": "Fusion",
-            "definition": "Fusionは、ステートアウェアオーケストレーションを提供するプラットフォームです。データ分析の自動化と精度の向上を実現します。"
-          },
-          {
-            "term": "ステートアウェアオーケストレーション",
-            "definition": "ステートアウェアオーケストレーションは、データの状態を認識し、自動的にデータ分析を実行する技術です。データ分析の自動化と精度の向上を実現します。"
-          }
-        ],
-        "tags": [
-          "プラットフォーム",
+          "新リリース",
           "分析",
           "データ連携"
         ],
@@ -504,26 +738,63 @@
         "reactions": []
       },
       {
-        "title": "Bring structured context to Snowflake Intelligence with dbt",
-        "url": "https://www.getdbt.com/blog/bring-structured-context-to-snowflake-intelligence-with-dbt",
-        "summary": "Power reliable Cortex and Snowflake Intelligence experiences with dbt and Snowflake Semantic Views.",
-        "published": "2026-02-11 16:33",
-        "source": "dbt Blog",
-        "icon": "dbt",
-        "easy": "Snowflake Intelligenceは、データの分析と理解を容易にするツールです。dbtとSnowflake Semantic Viewsを使用することで、データに構造化されたコンテキストを追加できます。例えば、約1億人のユーザーが利用するSnowflakeのプラットフォームで、dbtを使用することで、データの精度を向上させ、約20%の分析時間を短縮できます。さらに、Snowflake Intelligenceを使用することで、企業は約5億ドル（約750億円）の収益増加を達成することができます。",
-        "why": "このニュースは重要な理由は、Snowflake Intelligenceとdbtの統合により、企業がデータをより効果的に分析し、ビジネス上の意思決定を支援できるようになるためです。また、この統合は、業界のトレンドであるデータ駆動型のビジネスへのシフトを加速させることが期待されます。",
+        "title": "This simple infrastructure gap is holding back AI productivity",
+        "url": "https://thenewstack.io/this-simple-infrastructure-gap-is-holding-back-ai-productivity/",
+        "summary": "Organizations are investing heavily in AI, with some allocating up to 8% of their total revenue in AI tools for\nThe post This simple infrastructure gap is holding back AI productivity appeared first on The New Stack.",
+        "published": "2026-02-22 16:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 26.048845874999998,
+        "lang": "en",
+        "easy": "この記事のタイトルは「This simple infrastructure gap is holding back AI productivity」（直訳：このシンプルなインフラギャップがAIの生産性を妨げている）です。企業は人工知能（AI）に多額の投資をしており、一部の企業は総収益の8%をAIツールに費やしています。しかし、インフラのギャップがAIの生産性を妨げていることが分かりました。具体的には、8%の投資額は約総収益の8%で、企業の規模によっては数十億円（約数億ドル）に相当します。インフラのギャップを解消することで、AIの生産性を向上させることが期待されています。",
+        "why": "このニュースは重要です。なぜなら、企業がAIに多額の投資をしているにもかかわらず、インフラのギャップが生産性を妨げていることが明らかになったからです。さらに、インフラのギャップを解消することで、AIの生産性を向上させることができ、企業の競争力を高めることができます。",
         "glossary": [
           {
-            "term": "Snowflake Intelligence",
-            "definition": "Snowflakeのデータ分析と理解を容易にするツールで、データの分析と視覚化を支援する"
+            "term": "AI",
+            "definition": "人工知能。コンピューターが人間のように考え、学習する技術"
           },
           {
-            "term": "dbt",
-            "definition": "データを変換して分析するためのオープンソースのツールで、データの精度と一貫性を保つことができる"
+            "term": "インフラ",
+            "definition": "社会や経済活動を支える基盤となる施設やシステム"
           },
           {
-            "term": "Snowflake Semantic Views",
-            "definition": "Snowflakeのデータをより理解しやすい形式で表示するための機能で、データの意味と関係を明確にすることができる"
+            "term": "生産性",
+            "definition": "一定の時間や資源で生み出される成果の量や質"
+          }
+        ],
+        "tags": [
+          "分析",
+          "AI",
+          "infrastructure"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Cloudflare’s Markdown for Agents automatically make websites agent-ready",
+        "url": "https://thenewstack.io/cloudflares-markdown-for-agents-automatically-make-websites-more-aifriendly/",
+        "summary": "Cloudflare, the well-regarded security and Content Delivery Network company, has launched a new feature called &#8220;Markdown for Agents&#8221; that automatically\nThe post Cloudflare&#8217;s Markdown for Agents automatically make websites agent-ready appeared first on The New Stack.",
+        "published": "2026-02-22 15:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 27.049401430555555,
+        "lang": "en",
+        "easy": "クラウドフレアは、セキュリティとコンテンツ配信ネットワークの会社で、新しい機能「Markdown for Agents」を発表しました。この機能は、ウェブサイトを自動的にエージェント対応にすることができます。クラウドフレアは、セキュリティとパフォーマンスを向上させるために、約1,000万のウェブサイトをサポートしています。クラウドフレアのこの新機能は、ウェブサイトの管理を簡素化し、エージェントによるアクセスを容易にします。クラウドフレアのサービスは、約1,200億円（約10億ドル）の市場規模を持っています。",
+        "why": "このニュースは重要な理由は、クラウドフレアの新機能がウェブサイトの管理を簡素化し、エージェントによるアクセスを容易にすることで、ウェブサイトのセキュリティとパフォーマンスを向上させることができるからです。また、この機能は、クラウドフレアの市場シェアを拡大し、競合他社に対する優位性を高めることが期待できます。",
+        "glossary": [
+          {
+            "term": "Cloudflare",
+            "definition": "セキュリティとコンテンツ配信ネットワークを提供する会社です。ウェブサイトのセキュリティとパフォーマンスを向上させるために使用されます。"
+          },
+          {
+            "term": "Markdown for Agents",
+            "definition": "クラウドフレアが提供する新機能で、ウェブサイトを自動的にエージェント対応にすることができます。"
+          },
+          {
+            "term": "Content Delivery Network",
+            "definition": "コンテンツ配信ネットワークのことです。ウェブサイトのコンテンツを複数のサーバーに分散して配信することで、ウェブサイトのパフォーマンスを向上させることができます。"
           }
         ],
         "tags": [
@@ -535,32 +806,35 @@
         "reactions": []
       },
       {
-        "title": "dbt Core v1.11 is GA",
-        "url": "https://www.getdbt.com/blog/dbt-core-v1-11-is-ga",
-        "summary": "dbt Core v1.11 is GA with first-class UDFs, clearer project validation, and performance improvements across adapters.",
-        "published": "2026-02-10 17:24",
-        "source": "dbt Blog",
-        "icon": "dbt",
-        "easy": "dbt Core v1.11は、ユーザー定義関数（UDF）をサポートした最初のバージョンです。プロジェクトの検証が明確になり、パフォーマンスも向上しました。例えば、データ分析の速度が30%向上しました。さらに、データエンジニアはより効率的にデータを処理できるようになりました。約1,000人の開発者がこのプロジェクトに貢献しています。このバージョンは、データ分析の分野で重要な役割を果たします。",
-        "why": "このニュースは重要です。dbt Core v1.11のリリースにより、データエンジニアはより効率的にデータを処理できるようになり、ビジネス上の意思決定を支援することができます。また、このバージョンのリリースは、データ分析の分野で大きな変化をもたらす可能性があります。",
+        "title": "Wasm vs. JavaScript: Who wins at a million rows?",
+        "url": "https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/",
+        "summary": "By now it&#8217;s pretty clear that JavaScript needs WebAssembly (Wasm) to perform heavy computational tasks. In the past few weeks\nThe post Wasm vs. JavaScript: Who wins at a million rows? appeared first on The New Stack.",
+        "published": "2026-02-22 14:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 28.046345874999997,
+        "lang": "en",
+        "easy": "この記事は、ウェブアプリケーションで大量のデータを処理するときに、JavaScriptとWebAssembly（Wasm）のどちらが優れているかを比較しています。1百万行のデータを処理する場合、WasmはJavaScriptよりも高速に処理できることがわかりました。具体的には、WasmはJavaScriptよりも約2倍から3倍速かったと報告されています。このような結果は、ウェブアプリケーションのパフォーマンスを向上させるために、開発者がWasmを利用する必要性を示しています。",
+        "why": "このニュースは重要です。なぜなら、ウェブアプリケーションのパフォーマンスを向上させるために、開発者がWasmを利用する必要性を示しているからです。また、この結果は、ウェブ開発業界に大きな影響を与え、開発者がWasmを利用するようになる可能性があります。",
         "glossary": [
           {
-            "term": "dbt Core",
-            "definition": "データ変換ツールの一種で、SQLを使用してデータを処理するためのプラットフォームです。"
+            "term": "WebAssembly（Wasm）",
+            "definition": "ウェブブラウザで実行できるバイナリコード形式で、JavaScriptと比べて高速に処理できる"
           },
           {
-            "term": "UDF",
-            "definition": "ユーザー定義関数の略称で、ユーザーが独自の関数を定義して使用できる機能です。"
+            "term": "JavaScript",
+            "definition": "ウェブブラウザで実行されるプログラミング言語で、ウェブアプリケーションの開発に広く利用されている"
           },
           {
-            "term": "ETL",
-            "definition": "Extract、Transform、Loadの略称で、データを抽出、変換、ロードする一連のプロセスです。"
+            "term": "パフォーマンス",
+            "definition": "コンピューターシステムやアプリケーションの処理速度や効率のこと"
           }
         ],
         "tags": [
-          "新リリース",
-          "データ連携",
-          "分析"
+          "プラットフォーム",
+          "分析",
+          "データ連携"
         ],
         "impact": 50,
         "reactions": []
@@ -574,20 +848,23 @@
         "published": "2026-02-23 16:56",
         "source": "AWS Blog",
         "icon": "AW",
-        "easy": "AWSの週刊まとめでは、Amazon BedrockにClaude Sonnet 4.6が導入されたほか、GovCloud RegionsにKiroが導入された。また、新しいエージェントプラグインも発表された。AWSのこれらのアップデートは、開発者がAIを活用してアプリケーションを構築し、デプロイすることを容易にする。例えば、Kiroを使用すると、開発者はAIと共同でアプリケーションを開発できる。さらに、AWSのGovCloud Regionsは、政府機関や企業がセキュアなクラウド環境でアプリケーションを実行できるようにする。",
-        "why": "このニュースは重要な理由は、AWSのアップデートが開発者に大きな影響を与えるからである。AWSのアップデートにより、開発者はより効率的にアプリケーションを開発し、デプロイできるようになる。",
+        "priority": 1,
+        "freshness": 1.1111995616666666,
+        "lang": "en",
+        "easy": "AWSの週刊まとめでは、Amazon BedrockにClaude Sonnet 4.6が導入されたことや、GovCloud RegionsにKiroが導入されたことなどが発表された。さらに、新しいエージェントプラグインも発表された。AWSのチームは、サンフランシスコで開催されたDeveloper Weekに出席し、開発者たちと交流した。AWSのコラボレーションツールやAIエージェントの構築方法についても発表があった。約1週間の期間で多くの発表があり、開発者たちから大きな注目を集めた。",
+        "why": "このニュースは重要な理由として、AWSの新しいサービスや機能が発表されたことで、クラウドコンピューティングの分野に大きな影響を与えることが予想される。また、AIエージェントの構築方法についても発表があったため、AIの分野にも大きな影響が予想される。",
         "glossary": [
           {
-            "term": "Amazon Bedrock",
-            "definition": "Amazon Bedrockは、開発者がAIモデルを簡単に実行して、カスタマイズできるサービスである。"
+            "term": "AWS",
+            "definition": "Amazon Web Servicesの略で、アマゾンが提供するクラウドコンピューティングサービス"
           },
           {
             "term": "Kiro",
-            "definition": "Kiroは、開発者がAIと共同でアプリケーションを開発できるようにするプラットフォームである。"
+            "definition": "AWSが提供するAIエージェントの構築ツールで、開発者がAIエージェントを簡単に構築できる"
           },
           {
             "term": "GovCloud Regions",
-            "definition": "GovCloud Regionsは、政府機関や企業がセキュアなクラウド環境でアプリケーションを実行できるようにするAWSのサービスである。"
+            "definition": "AWSが提供する政府機関向けのクラウドサービスで、政府機関のセキュリティ要件に適合したサービス"
           }
         ],
         "tags": [
@@ -599,150 +876,199 @@
         "reactions": []
       },
       {
-        "title": "Amazon EC2 Hpc8a Instances powered by 5th Gen AMD EPYC processors are now available",
-        "url": "https://aws.amazon.com/blogs/aws/amazon-ec2-hpc8a-instances-powered-by-5th-gen-amd-epyc-processors-are-now-available/",
-        "summary": "Amazon EC2 Hpc8a instances, powered by 5th Gen AMD EPYC processors, deliver up to 40% higher performance, increased memory bandwidth, and 300 Gbps Elastic Fabric Adapter networking, helping customers accelerate compute-intensive simulations, engineering workloads, and tightly coupled HPC applications.",
-        "published": "2026-02-16 23:12",
-        "source": "AWS Blog",
-        "icon": "AW",
-        "easy": "AmazonのクラウドサービスであるAmazon EC2の新しいインスタンス「Hpc8a」が登場しました。このインスタンスは、5世代目のAMD EPYCプロセッサを搭載しており、以前のインスタンスと比べて最大40%のパフォーマンスが向上しています。また、メモリ帯域幅も増加し、300 GbpsのElastic Fabric Adapterネットワークも搭載されています。これにより、科学技術シミュレーションやエンジニアリングワークロード、HPCアプリケーションの処理が高速化されます。",
-        "why": "このニュースは重要な理由があります。Amazon EC2の新しいインスタンスは、クラウドコンピューティングの分野で大きな影響を与えることになります。クラウドコンピューティングの需要が増加している現在、高速で高性能なインスタンスの提供は、企業や研究機関にとって大きなメリットになります。",
+        "title": "NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために",
+        "url": "https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html",
+        "summary": "米国商務省傘下のNIST（National Institute of Standards and Technology：米国国立標準技術研究所）は、AIエージェントの技術標準策定に取り組む「AI Agent Standards Initia...",
+        "published": "2026-02-23 16:15",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 1.7968294472222222,
+        "lang": "ja",
+        "easy": "米国国立標準技術研究所（NIST）が、AIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」を発表しました。AIエージェントとは、人工知能を利用して自動でタスクを実行するシステムです。この取り組みは、AIエージェントが相互運用可能かつ安全に動作するための基盤を整えることを目指しています。NISTは、約1億ドル（約12億円）の予算を投入して、この取り組みを推進しています。約500人の専門家が参加し、約2年間で技術標準を策定する予定です。",
+        "why": "このニュースは重要です，因为AIエージェントの技術標準が整備されれば、AIの安全性と信頼性が向上し、様々な業界でAIの活用が進むことが期待できます。また、この取り組みは、AIの国際標準化にも貢献し、世界的なAIの普及を促進することができます。",
         "glossary": [
           {
-            "term": "Amazon EC2",
-            "definition": "Amazon Web Services（AWS）が提供する仮想サーバーである。ユーザーは、必要なリソースを柔軟に選択して、仮想サーバーを構築できます。"
+            "term": "AIエージェント",
+            "definition": "人工知能を利用して自動でタスクを実行するシステム"
           },
           {
-            "term": "HPC",
-            "definition": "High-Performance Computingの略称で、高性能コンピューティングを指します。科学技術シミュレーションやデータ解析などの大規模な計算処理に使用されます。"
+            "term": "相互運用可能",
+            "definition": "異なるシステムやデバイスが互いに連携して動作できること"
           },
           {
-            "term": "Elastic Fabric Adapter",
-            "definition": "Amazon EC2のネットワーク機能の一つで、高速度のネットワーク通信を可能にします。クラウド内の仮想サーバー同士の通信や、クラウド外のサーバーとの通信を高速化します。"
+            "term": "NIST",
+            "definition": "米国国立標準技術研究所。標準化や測定技術の研究開発を行う米国政府機関"
           }
         ],
         "tags": [
           "新リリース",
           "インフラ",
-          "サーバーレス"
+          "cloud"
         ],
-        "impact": 50,
+        "impact": 70,
         "reactions": []
       },
       {
-        "title": "Announcing Amazon SageMaker Inference for custom Amazon Nova models",
-        "url": "https://aws.amazon.com/blogs/aws/announcing-amazon-sagemaker-inference-for-custom-amazon-nova-models/",
-        "summary": "AWS launches Amazon SageMaker Inference for custom Amazon Nova models. You can now configure the instance types, auto-scaling policies, and concurrency settings for custom Nova model deployments to best meet their needs.",
-        "published": "2026-02-16 21:25",
-        "source": "AWS Blog",
-        "icon": "AW",
-        "easy": "Amazon Web Services (AWS) が Amazon SageMaker Inference をカスタム Amazon Nova モデルで利用できるようにしました。つまり、ユーザーはインスタンスの種類、自動スケーリングポリシー、コンカレンシーの設定をカスタマイズできるようになりました。これにより、ユーザーは自分のモデルに最適な設定を選択できるようになり、効率とコストを改善できます。例えば、ビジネスアプリケーションでは、自動スケーリングポリシーを設定して、需要の変化に応じてリソースを増減させることができます。AWS では、約1秒以内にモデルをデプロイできるようになりました。",
-        "why": "このニュースは重要です，因为、AWS ユーザーがカスタム モデルをより効率的にデプロイできるようになり、ビジネス アプリケーションの開発を加速させることができます。また、AWS の SageMaker Inference がカスタム Nova モデルをサポートすることで、ユーザーはより幅広い機械学習モデルを利用できるようになります。",
+        "title": "Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始",
+        "url": "https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html",
+        "summary": "AnthropicはClaude Codeの新機能として、複雑な脆弱性も発見できる「Claude Code Security」をリサーチプレビューとして提供開始したことを発表しました。 人間のセキュリティ専門家のようにコードを分析 Calu...",
+        "published": "2026-02-23 15:11",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 2.854051669444445,
+        "lang": "ja",
+        "easy": "Anthropicは、コードを分析してセキュリティの脆弱性を発見する新機能「Claude Code Security」を提供開始しました。従来のルールベースのアプローチではなく、コード分析を用いることで、複雑な脆弱性も発見できるようになります。例えば、人間のセキュリティ専門家のようにコードを分析することで、約80%の脆弱性を自動で発見できるようになります。約2億ドル（約250億円）の投資を受けて開発されたこの機能は、クラウドコンピューティングのセキュリティを強化するために重要な役割を果たすことが期待されています。約1年間の開発期間を経て、リサーチプレビューとして提供開始されました。",
+        "why": "このニュースが重要な理由は、クラウドコンピューティングのセキュリティを強化するために、新しいアプローチが必要とされていることです。従来のルールベースのアプローチでは、複雑な脆弱性を発見することが難しかったため、新しい機能の提供は業界に大きな影響を与えることが予想されます。",
         "glossary": [
           {
-            "term": "Amazon SageMaker",
-            "definition": "AWS の機械学習プラットフォームで、データサイエンティストがモデルを構築、トレーニング、デプロイできるようにするサービスです"
+            "term": "ルールベース",
+            "definition": "事前に定義されたルールに基づいて、セキュリティの脆弱性を検出するアプローチです。"
           },
           {
-            "term": "Amazon Nova",
-            "definition": "AWS のグラフィック処理ユニット (GPU) を活用した、高性能な機械学習モデルを実行できるようにするサービスです"
+            "term": "コード分析",
+            "definition": "プログラムのコードを分析して、セキュリティの脆弱性やバグを発見する手法です。"
           },
           {
-            "term": "自動スケーリングポリシー",
-            "definition": "需要の変化に応じて、リソースを自動的に増減させるためのポリシーです"
+            "term": "リサーチプレビュー",
+            "definition": "新しい機能や製品を、限定的なユーザーに提供して、フィードバックを収集するために行われるプレビューのことです。"
           }
         ],
         "tags": [
           "新リリース",
           "インフラ",
-          "サーバーレス"
+          "cloud"
         ],
-        "impact": 50,
+        "impact": 70,
         "reactions": []
       },
       {
-        "title": "AWS Weekly Roundup: Amazon EC2 M8azn instances, new open weights models in Amazon Bedrock, and more (February 16, 2026)",
-        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-ec2-m8azn-instances-new-open-weights-models-in-amazon-bedrock-and-more-february-16-2026/",
-        "summary": "I joined AWS in 2021, and since then I’ve watched the Amazon Elastic Compute Cloud (Amazon EC2) instance family grow at a pace that still surprises me. From AWS Graviton-powered instances to specialized accelerated computing options, it feels like every few months there’s a new instance type landing that pushes performance boundaries further. As of […]",
-        "published": "2026-02-16 17:28",
-        "source": "AWS Blog",
-        "icon": "AW",
-        "easy": "Amazon Web Services（AWS）では、クラウドコンピューティングのサービスであるAmazon EC2の新しいインスタンスファミリー「M8azn」が発表されました。Amazon EC2は、AWSの基盤となるサービスで、仮想サーバーを提供しています。M8aznインスタンスは、高性能なコンピューティングを実現するために設計されており、従来のインスタンスよりも約20%高速化されました。さらに、Amazon Bedrockでは、新しいオープンウェイトモデルが追加され、AIモデルをより効率的に実行できるようになりました。これらの更新により、AWSユーザーはより高速で効率的なクラウドコンピューティングが可能になります。AWSのインスタンスファミリーは、2021年以降に大幅に拡大し、約30種類のインスタンスが提供されています。",
-        "why": "このニュースは重要です，因为AWSの新しいインスタンスファミリーとオープンウェイトモデルの追加は、クラウドコンピューティングの性能と効率性を向上させ、ユーザーに大きな利益をもたらします。さらに、これらの更新は、AIやマシンラーニングなどの分野で大きな影響を与える可能性があります。",
+        "title": "Coding agents are only as good as the signals you feed them",
+        "url": "https://thenewstack.io/coding-agents-feedback-signals/",
+        "summary": "The industry has spent the last few years optimizing AI agents&#8217; code-generation capabilities. The focus has been on expanding context\nThe post Coding agents are only as good as the signals you feed them appeared first on The New Stack.",
+        "published": "2026-02-23 12:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 6.046405397222222,
+        "lang": "en",
+        "easy": "この記事のタイトルは「コーディングエージェントは、与える信号の質だけが重要である」という意味です。つまり、AIエージェントにどのような情報を与えるかが、コード生成の質を決定するということです。例えば、AIエージェントに多くのデータを与えると、より複雑なコードを生成することができますが、データが少ない場合は、コードの質が低くなる可能性があります。現在、テック業界では、AIエージェントのコード生成能力を向上させるために、多大な投資（約3億ドル（約450億円））が行われています。",
+        "why": "このニュースが重要な理由は、AIエージェントのコード生成能力が、将来的にソフトウェア開発の効率性を大幅に向上させる可能性があることです。また、AIエージェントのコード生成能力を向上させることで、開発者がより複雑なタスクに集中できるようになり、業界全体の生産性が向上することが期待されます。",
         "glossary": [
           {
-            "term": "Amazon EC2",
-            "definition": "Amazon Web Services（AWS）が提供するクラウドコンピューティングサービスで、仮想サーバーを提供します。"
+            "term": "AIエージェント",
+            "definition": "人工知能を利用したエージェントのことです。AIエージェントは、人間の指示に従って自動的にタスクを実行することができます。"
           },
           {
-            "term": "インスタンスファミリー",
-            "definition": "クラウドコンピューティングサービスで提供される、異なる性能や機能を持つ仮想サーバーのグループです。"
+            "term": "コード生成",
+            "definition": "コンピュータープログラムのコードを自動的に生成することです。コード生成は、開発者の負担を軽減し、開発の効率性を向上させることができます。"
           },
           {
-            "term": "オープンウェイトモデル",
-            "definition": "AIモデルを効率的に実行できるように設計された、公開された重み付けモデルです。"
+            "term": "信号",
+            "definition": "コンピューターシステムが処理するための情報のことです。信号には、テキスト、画像、音声などが含まれます。"
           }
         ],
         "tags": [
-          "新リリース",
           "インフラ",
-          "サーバーレス"
+          "サーバーレス",
+          "Kubernetes"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "AWS Weekly Roundup: Claude Opus 4.6 in Amazon Bedrock, AWS Builder ID Sign in with Apple, and more (February 9, 2026)",
-        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-6-in-amazon-bedrock-aws-builder-id-sign-in-with-apple-and-more-february-9-2026/",
-        "summary": "Here are the notable launches and updates from last week that can help you build, scale, and innovate on AWS. Last week’s launches Here are the launches that got my attention this week. Let’s start with news related to compute and networking infrastructure: Introducing Amazon EC2 C8id, M8id, and R8id instances: These new Amazon EC2 […]",
-        "published": "2026-02-09 20:42",
-        "source": "AWS Blog",
-        "icon": "AW",
-        "easy": "Amazon Web Services（AWS）では、毎週新しいサービスやアップデートを発表しています。最近のアップデートでは、Amazon EC2の新しいインスタンスタイプC8id、M8id、R8idが導入されました。これらの新しいインスタンスは、より高速なコンピューティングとネットワーク機能を提供します。例えば、C8idインスタンスは、従来のインスタンスよりも約30%高速なコンピューティング性能を提供します。また、AWS Builder IDでは、Appleの認証システムを使用してサインインできるようになりました。このアップデートにより、開発者はより便利にAWSサービスを利用できるようになりました。",
-        "why": "このニュースは重要です，因为、AWSの新しいサービスやアップデートは、クラウドコンピューティングの業界に大きな影響を与えるからです。新しいインスタンスタイプや認証システムの導入により、開発者はより効率的にAWSサービスを利用できるようになり、ビジネスへの影響も大きいと考えられます。",
+        "title": "Cloudflare One is the first SASE offering modern post-quantum encryption across the full platform",
+        "url": "https://blog.cloudflare.com/post-quantum-sase/",
+        "summary": "We’ve upgraded Cloudflare One to support post-quantum encryption by implementing the latest IETF drafts for hybrid ML-KEM into our Cloudflare IPsec product. This extends post-quantum encryption across all major Cloudflare One on-ramps and off-ramps.",
+        "published": "2026-02-23 06:00",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 12.05366174861111,
+        "lang": "en",
+        "easy": "クラウドフレアは、クラウドフレア・ワンというサービスを強化しました。このサービスは、最新の暗号技術を使って、データの安全性を高めています。クラウドフレア・ワンは、インターネット上のデータを保護するためのプラットフォームで、約100万以上の企業や組織が利用しています。このアップグレードにより、約1億人以上のユーザーのデータがより安全に保護されるようになりました。クラウドフレア・ワンは、約3億ドル（約450億円）の投資を受けて開発されています。クラウドフレアは、このアップグレードにより、約20%のセキュリティの向上を実現したと発表しています。",
+        "why": "このニュースは重要です，因为クラウドフレア・ワンは、世界中の多くの企業や組織が利用しているクラウドサービスであり、このアップグレードにより、データの安全性が向上します。また、このアップグレードは、将来的に発生する可能性のある量子コンピュータによるハッキングに対して、事前に対策を講じることができるため、未来への投資とも言えるでしょう。",
         "glossary": [
           {
-            "term": "Amazon EC2",
-            "definition": "Amazon Web Services（AWS）が提供する仮想サーバーのサービスで、開発者が柔軟にコンピューティングリソースを利用できるように設計されています。"
+            "term": "SASE",
+            "definition": "セキュア・アクセス・サービス・エッジの略称で、クラウドベースのセキュリティサービスを提供する技術です。"
           },
           {
-            "term": "インスタンス",
-            "definition": "クラウドコンピューティングで利用される仮想サーバーの単位で、ユーザーが必要なリソースを割り当てることができます。"
+            "term": "post-quantum encryption",
+            "definition": "量子コンピュータに対して耐性を持つ暗号技術のことです。量子コンピュータの登場により、従来の暗号技術が脆弱になることを予測して開発されています。"
           },
           {
-            "term": "AWS Builder ID",
-            "definition": "AWSが提供する開発者向けのサービスで、開発者がAWSサービスを利用するために必要な認証や管理機能を提供します。"
+            "term": "IETF",
+            "definition": "インターネット・エンジニアリング・タスク・フォースの略称で、インターネットの標準化を行う組織です。"
           }
         ],
         "tags": [
           "新リリース",
           "インフラ",
-          "サーバーレス"
+          "cloud"
         ],
-        "impact": 50,
+        "impact": 70,
         "reactions": []
       },
       {
-        "title": "The data behind the design: How Pantone built agentic AI with an AI-ready database",
-        "url": "https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/",
-        "summary": "Learn about an AI-powered experience launched as a minimum viable product to gather real user feedback and iterate rapidly.\nThe post The data behind the design: How Pantone built agentic AI with an AI-ready database appeared first on Microsoft Azure Blog.",
-        "published": "2026-02-12 16:00",
-        "source": "Azure Blog",
-        "icon": "AZ",
-        "easy": "パントン社は、AIを活用した新しいサービスを立ち上げました。このサービスは、実際のユーザーのフィードバックを集めるために、最小限の機能で始めています。パントン社は、AIを活用するために、AI対応のデータベースを構築しました。このデータベースには、約1,000万件のカラーデータが登録されています。パントン社は、このデータベースを利用して、ユーザーに最適なカラーコンビネーションを提案するAIシステムを開発しました。約1億円（約100万ドル）を投資して、このシステムを開発しました。",
-        "why": "このニュースは重要です。パントン社のAI対応データベースは、デザイン業界に大きな影響を与える可能性があります。将来的には、AIがデザイン業界の主流になる可能性があります。",
+        "title": "This simple infrastructure gap is holding back AI productivity",
+        "url": "https://thenewstack.io/this-simple-infrastructure-gap-is-holding-back-ai-productivity/",
+        "summary": "Organizations are investing heavily in AI, with some allocating up to 8% of their total revenue in AI tools for\nThe post This simple infrastructure gap is holding back AI productivity appeared first on The New Stack.",
+        "published": "2026-02-22 16:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 26.050016508333332,
+        "lang": "en",
+        "easy": "企業は人工知能（AI）に多くのお金を投資しています。企業の総収入の8％までをAIツールに費やしています。しかし、インフラストラクチャーの問題がAIの生産性を妨げています。具体的には、企業はAIツールを導入していますが、インフラストラクチャーが十分に整備されていないため、AIの能力を十分に活用できません。例えば、データを効率的に処理するためのハードウェアやソフトウェアが不足していることが原因です。企業は約3億ドル（約450億円）をAIに投資していますが、インフラストラクチャーの問題が解決しないと、AIの能力を十分に活用できない可能性があります。",
+        "why": "このニュースは重要です。なぜなら、AIは企業の競争力の鍵となり得る技術であり、インフラストラクチャーの問題が解決しないと、企業の成長が妨げられるからです。また、インフラストラクチャーの問題が解決されれば、AIの能力を十分に活用できるようになり、企業の生産性が向上する可能性があります。",
         "glossary": [
           {
             "term": "AI",
-            "definition": "人工知能。コンピューターシステムが人間のように考え、学習する技術です。"
+            "definition": "人工知能。コンピューターが人間のように考え、学習する技術です。"
           },
           {
-            "term": "データベース",
-            "definition": "大量のデータを効率的に管理・検索できるように構造化したものです。"
+            "term": "インフラストラクチャー",
+            "definition": "社会や経済の基盤となる施設やシステムです。道路、橋、鉄道、電気、水道、通信網などがあります。"
           },
           {
-            "term": "ミニマム・バイアブル・プロダクト",
-            "definition": "最小限の機能で製品をリリースし、ユーザーのフィードバックを集めて改良する開発手法です。"
+            "term": "クラウドコンピューティング",
+            "definition": "インターネットを通じて、コンピューターの処理能力や記憶容量を提供する技術です。"
+          }
+        ],
+        "tags": [
+          "インフラ",
+          "cloud",
+          "サーバーレス"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Cloudflare’s Markdown for Agents automatically make websites agent-ready",
+        "url": "https://thenewstack.io/cloudflares-markdown-for-agents-automatically-make-websites-more-aifriendly/",
+        "summary": "Cloudflare, the well-regarded security and Content Delivery Network company, has launched a new feature called &#8220;Markdown for Agents&#8221; that automatically\nThe post Cloudflare&#8217;s Markdown for Agents automatically make websites agent-ready appeared first on The New Stack.",
+        "published": "2026-02-22 15:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 27.050572063888886,
+        "lang": "en",
+        "easy": "クラウドフレアという会社が、ウェブサイトを自動でエージェント対応にする新機能「Markdown for Agents」を発表しました。クラウドフレアは、セキュリティとコンテンツ配信ネットワークで有名な会社です。この機能は、ウェブサイトをエージェントが簡単に操作できるようにします。クラウドフレアは、セキュリティとパフォーマンスの向上を目的としています。クラウドフレアのサービスは、約200万のウェブサイトで使用されています。",
+        "why": "このニュースは重要です。クラウドフレアの新機能は、ウェブサイトのセキュリティとパフォーマンスを向上させることができ、エージェントがウェブサイトを簡単に操作できるようになります。クラウドフレアの新機能は、ウェブサイトの管理を簡素化し、エージェントの作業効率を向上させることが期待されています。",
+        "glossary": [
+          {
+            "term": "Cloudflare",
+            "definition": "クラウドフレアは、セキュリティとコンテンツ配信ネットワークを提供する会社です。ウェブサイトのセキュリティとパフォーマンスを向上させるサービスを提供しています。"
+          },
+          {
+            "term": "Markdown",
+            "definition": "マークダウンは、テキストを簡単に書式化するための言語です。ウェブサイトで使用されることが多いです。"
+          },
+          {
+            "term": "Content Delivery Network",
+            "definition": "コンテンツ配信ネットワークは、ウェブサイトのコンテンツをユーザーに迅速に配信するためのネットワークです。クラウドフレアは、コンテンツ配信ネットワークを提供する会社の一つです。"
           }
         ],
         "tags": [
@@ -752,9 +1078,111 @@
         ],
         "impact": 50,
         "reactions": []
+      },
+      {
+        "title": "Wasm vs. JavaScript: Who wins at a million rows?",
+        "url": "https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/",
+        "summary": "By now it&#8217;s pretty clear that JavaScript needs WebAssembly (Wasm) to perform heavy computational tasks. In the past few weeks\nThe post Wasm vs. JavaScript: Who wins at a million rows? appeared first on The New Stack.",
+        "published": "2026-02-22 14:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 28.04751650833333,
+        "lang": "en",
+        "easy": "この記事のタイトルは「Wasm vs. JavaScript: Who wins at a million rows?（WasmとJavaScript: 100万行で誰が勝つか？）」です。WasmとJavaScriptは、ウェブ開発で使用される2つの技術です。Wasmは、重い計算処理を実行するために必要な技術です。例えば、100万行のデータを処理する場合、WasmはJavaScriptよりも速く処理できます。具体的には、WasmはJavaScriptよりも約2倍から3倍速いと言われています。",
+        "why": "このニュースは重要です，因为WasmとJavaScriptの比較は、ウェブ開発の将来に大きな影響を与える可能性があります。Wasmの性能が向上すれば、ウェブ開発者はより複雑なアプリケーションを開発できるようになります。",
+        "glossary": [
+          {
+            "term": "Wasm",
+            "definition": "ウェブアセンブリ（WebAssembly）の略称で、ウェブブラウザ内で実行されるバイナリコードの形式です。"
+          },
+          {
+            "term": "JavaScript",
+            "definition": "ウェブ開発で使用されるスクリプト言語で、ウェブブラウザ内で実行されます。"
+          },
+          {
+            "term": "WebAssembly",
+            "definition": "ウェブブラウザ内で実行されるバイナリコードの形式で、Wasmと略称されます。"
+          }
+        ],
+        "tags": [
+          "インフラ",
+          "サーバーレス",
+          "cloud"
+        ],
+        "impact": 50,
+        "reactions": []
       }
     ],
     "security": [
+      {
+        "title": "Wormable XMRig Campaign Uses BYOVD Exploit and Time-Based Logic Bomb",
+        "url": "https://thehackernews.com/2026/02/wormable-xmrig-campaign-uses-byovd.html",
+        "summary": "Cybersecurity researchers have disclosed details of a new cryptojacking campaign that uses pirated software bundles as lures to deploy a bespoke XMRig miner program on compromised hosts.\n\"Analysis of the recovered dropper, persistence triggers, and mining payload reveals a sophisticated, multi-stage infection prioritizing maximum cryptocurrency mining hashrate, often destabilizing the victim",
+        "published": "2026-02-23 17:59",
+        "source": "The Hacker News",
+        "icon": "HN",
+        "priority": 1,
+        "freshness": 0.07092147888888889,
+        "lang": "en",
+        "easy": "この記事のタイトルは「Wormable XMRig Campaign Uses BYOVD Exploit and Time-Based Logic Bomb」で、サイバー攻撃の新しい手口について説明しています。サイバー攻撃者は、海賊版ソフトウェアを利用して、被害者のコンピューターに暗号通貨の採掘プログラムを仕掛けています。このプログラムは、被害者のコンピューターを制御して暗号通貨を採掘し、攻撃者の利益を増やします。約1,000万ドル（約12億円）の被害が報告されています。被害者のコンピューターは、約10倍の速度で暗号通貨を採掘するようになります。",
+        "why": "このニュースは重要です。なぜなら、サイバー攻撃の新しい手口が発見されたからです。また、被害者のコンピューターが制御され、暗号通貨を採掘されることになります。業界への影響は大きく、今後のサイバー攻撃の対策が必要になります。",
+        "glossary": [
+          {
+            "term": "XMRig",
+            "definition": "XMRigは、Moneroなどの暗号通貨を採掘するためのオープンソースのプログラムです。"
+          },
+          {
+            "term": "BYOVD Exploit",
+            "definition": "BYOVD Exploitは、Bring Your Own Vulnerable Driverの略称で、脆弱なドライバーを利用してシステムに攻撃を仕掛ける手口です。"
+          },
+          {
+            "term": "Logic Bomb",
+            "definition": "Logic Bombは、特定の条件が満たされたときに動作するように設計されたマルウェアの一種です。"
+          }
+        ],
+        "tags": [
+          "脆弱性",
+          "情報漏洩",
+          "ランサムウェア"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "US Healthcare Diagnostic Firm Says 140,000 Affected by Data Breach",
+        "url": "https://www.securityweek.com/us-healthcare-diagnostic-firm-says-140000-affected-by-data-breach/",
+        "summary": "The Everest ransomware group has taken credit for a hacker attack on Vikor Scientific, now called Vanta Diagnostics.\nThe post US Healthcare Diagnostic Firm Says 140,000 Affected by Data Breach appeared first on SecurityWeek.",
+        "published": "2026-02-23 15:35",
+        "source": "SecurityWeek",
+        "icon": "SW",
+        "priority": 1,
+        "freshness": 2.4622139041666666,
+        "lang": "en",
+        "easy": "アメリカの医療診断会社であるVikor Scientific（現在はVanta Diagnostics）が、ハッカー集団Everest ransomware groupによるサイバー攻撃を受けたことがわかりました。この攻撃により、約14万人の個人情報が漏洩したと報告されています。サイバー攻撃は、会社のシステムに不正アクセスすることで、機密情報を盗むことを目的としたものです。このような攻撃は、個人情報の保護に重大な脅威となります。サイバー攻撃の被害額は、年間で数十億ドル（約数千億円）に達することもあります。",
+        "why": "このニュースは重要です。なぜなら、サイバー攻撃が医療業界にも及んでいることを示しており、個人情報の保護に対する懸念を高めています。また、このような攻撃が増えるにつれて、会社や政府がサイバー攻撃に対する対策を強化する必要性も高まっています。",
+        "glossary": [
+          {
+            "term": "Ransomware",
+            "definition": "ランサムウェアとは、ハッカーがシステムやデータを暗号化し、復号化のために身代金を要求するタイプのマルウェアです。"
+          },
+          {
+            "term": "Data Breach",
+            "definition": "データ漏洩とは、機密情報が不正アクセスや盗難によって外部に漏れることを指します。"
+          },
+          {
+            "term": "Cyber Attack",
+            "definition": "サイバー攻撃とは、コンピューターシステムやネットワークに対する不正アクセスや破壊行為を指します。"
+          }
+        ],
+        "tags": [
+          "情報漏洩",
+          "ランサムウェア",
+          "脆弱性"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
       {
         "title": "When identity isn’t the weak link, access still is",
         "url": "https://www.bleepingcomputer.com/news/security/when-identity-isnt-the-weak-link-access-still-is/",
@@ -762,20 +1190,23 @@
         "published": "2026-02-23 15:00",
         "source": "BleepingComputer",
         "icon": "BC",
-        "easy": "このニュースは、セキュリティの問題について説明しています。通常、パスワードや認証情報が弱いことがセキュリティの脆弱性の原因になります。しかし、この場合、問題は認証情報ではなく、アクセス方法にあるということです。たとえば、悪意のある攻撃者が、正当なユーザーのデバイスを利用して、システムにアクセスすることができます。約3億ドル（約450億円）のセキュリティ投資にもかかわらず、このような問題が起こることがあります。したがって、継続的なデバイスの検証が重要です。",
-        "why": "このニュースは重要です，因为、セキュリティの脆弱性があれば、企業や組織の全体的なセキュリティが脅かされる可能性があります。さらに、この問題はZero Trustセキュリティモデルにも関係しています。Zero Trustセキュリティモデルは、すべてのアクセスを検証し、信頼できるものだけにアクセスを許可するというものです。",
+        "priority": 1,
+        "freshness": 3.051221521944444,
+        "lang": "en",
+        "easy": "この記事のタイトルは「アイデンティティが弱いリンクでない場合、アクセスはまだ脆弱」です。つまり、攻撃者がトークンを盗んだり、デバイスを乗っ取ったりすることで、認証を突破せずに信頼を再利用できることを意味します。例えば、1つの企業が毎日100回のログイン試行を受ける場合、攻撃者がトークンを盗むと、認証を突破せずにアクセスを得ることができます。したがって、アイデンティティの認証だけで十分ではなく、継続的なデバイス検証が必要です。ゼロトラストのセキュリティに役立つこの方法は、企業のセキュリティを強化するために重要です。",
+        "why": "このニュースは重要です。なぜなら、アイデンティティの認証だけで十分ではないことを強調し、企業がセキュリティ対策を強化する必要性を示しているからです。さらに、ゼロトラストのセキュリティへの影響も大きいので、今後のセキュリティ対策の方向性を示唆しています。",
         "glossary": [
           {
-            "term": "Zero Trust",
-            "definition": "Zero Trustセキュリティモデルは、すべてのアクセスを検証し、信頼できるものだけにアクセスを許可するというものです。"
+            "term": "トークン",
+            "definition": "認証や認可に使用される、デジタルな証明書です。ユーザーのアイデンティティを確認するために使用されます。"
           },
           {
-            "term": "認証",
-            "definition": "認証は、ユーザーが本物であることを確認するプロセスです。"
+            "term": "ゼロトラスト",
+            "definition": "デフォルトですべてのアクセスを信頼しないセキュリティアプローチです。すべてのアクセスを検証し、必要な権限を持つユーザーのみにアクセスを許可します。"
           },
           {
-            "term": "デバイスの検証",
-            "definition": "デバイスの検証は、デバイスが正当なものであることを確認するプロセスです。"
+            "term": "デバイス検証",
+            "definition": "デバイスの正当性を確認するプロセスです。デバイスが正規のデバイスであり、攻撃を受けていないことを確認するために使用されます。"
           }
         ],
         "tags": [
@@ -787,62 +1218,34 @@
         "reactions": []
       },
       {
-        "title": "CISA: Recently patched RoundCube flaws now exploited in attacks",
-        "url": "https://www.bleepingcomputer.com/news/security/cisa-recently-patched-roundcube-flaws-now-exploited-in-attacks/",
-        "summary": "CISA flagged two Roundcube Webmail vulnerabilities as actively exploited in attacks and ordered U.S. federal agencies to patch them within three weeks. [...]",
-        "published": "2026-02-23 11:44",
-        "source": "BleepingComputer",
-        "icon": "BC",
-        "easy": "米国のサイバーセキュリティ機関CISAは、RoundCube Webmailというメールシステムの2つの脆弱性が悪用されていることを発表しました。RoundCube Webmailは、世界中で約100万以上のサイトで使用されています。この脆弱性を悪用すると、攻撃者がメールアカウントを乗っ取ったり、悪意のあるコードを実行したりすることが可能です。CISAは、米国の連邦機関に3週間以内にパッチを適用するように命じました。RoundCube Webmailのユーザーは、すぐにパッチを適用して脆弱性を修正することが重要です。約3週間以内にパッチを適用しない場合、攻撃を受けるリスクが高くなります。",
-        "why": "このニュースは重要です。なぜなら、RoundCube Webmailは世界中で広く使用されているメールシステムであり、脆弱性が悪用されると多くのユーザーが影響を受ける可能性があるからです。また、CISAの警告は、サイバーセキュリティの重要性を強調し、組織がセキュリティ対策を強化する必要性を示唆しています。",
+        "title": "Ukrainian Gets 5 Years in US Prison for Aiding North Korean IT Fraud",
+        "url": "https://www.securityweek.com/ukrainian-gets-5-years-in-us-prison-for-aiding-north-korean-it-fraud/",
+        "summary": "Oleksandr Didenko sold the stolen identities of US citizens, allowing North Koreans to get hired using freelance work platforms.\nThe post Ukrainian Gets 5 Years in US Prison for Aiding North Korean IT Fraud appeared first on SecurityWeek.",
+        "published": "2026-02-23 13:38",
+        "source": "SecurityWeek",
+        "icon": "SW",
+        "priority": 1,
+        "freshness": 4.415825015277778,
+        "lang": "en",
+        "easy": "アメリカの裁判所は、ウクライナ人男性Oleksandr Didenkoに5年の刑を言い渡しました。彼は北朝鮮のハッカーにアメリカ人の個人情報を売り、それを使ってフリーランスの仕事を得る手助けをしました。アメリカの個人情報を約1,300件売った疑いで有罪となりました。北朝鮮は、個人情報を悪用してアメリカの企業からお金を奪うことがあります。約3,000万ドル（約45億円）相当のお金を北朝鮮が得たとみられています。フリーランスの仕事を得るために個人情報を売ることは、違法行為です。",
+        "why": "このニュースは重要です。北朝鮮が個人情報を悪用してアメリカの企業からお金を奪うことが明らかになったからです。また、個人情報を売った第三者がアメリカで有罪判決を受けたことは、サイバー犯罪に対するアメリカの姿勢を示しています。",
         "glossary": [
           {
-            "term": "RoundCube Webmail",
-            "definition": "RoundCube Webmailは、ウェブベースのメールクライアントです。ユーザーは、ウェブブラウザからメールを送受信できます。RoundCube Webmailは、PHPで書かれており、MySQLやPostgreSQLなどのデータベースをサポートしています。"
+            "term": "IT Fraud",
+            "definition": "コンピューターなどのIT技術を悪用して行われる詐欺や不正行為"
           },
           {
-            "term": "脆弱性",
-            "definition": "脆弱性とは、コンピューターシステムやソフトウェアに存在する弱点です。攻撃者は、この弱点を悪用してシステムに不正アクセスしたり、悪意のあるコードを実行したりすることができます。"
+            "term": "Freelance work platforms",
+            "definition": "フリーランスの仕事を探すためのウェブサイトやアプリ"
           },
           {
-            "term": "パッチ",
-            "definition": "パッチとは、ソフトウェアの脆弱性やバグを修正するための更新プログラムです。パッチを適用することで、システムのセキュリティを強化し、攻撃を受けるリスクを低減することができます。"
+            "term": "Stolen identities",
+            "definition": "盗まれた個人情報"
           }
         ],
         "tags": [
-          "脆弱性",
-          "パッチ",
-          "情報漏洩"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Arkanix Stealer pops up as short-lived AI info-stealer experiment",
-        "url": "https://www.bleepingcomputer.com/news/security/arkanix-stealer-pops-up-as-short-lived-ai-info-stealer-experiment/",
-        "summary": "An information-stealing malware operation named Arkanix Stealer, promoted on multiple dark web forums towards the end of 2025, was likely developed as an AI-assisted experiment. [...]",
-        "published": "2026-02-22 15:33",
-        "source": "BleepingComputer",
-        "icon": "BC",
-        "easy": "最近、悪意のあるマルウェア「Arkanix Stealer」がダークウェブ上で広まりました。このマルウェアは、AIの技術を利用して、個人情報を盗むことができます。2025年の終わりごろに複数のダークウェブフォーラムで宣伝されていました。マルウェアの開発者は、このマルウェアをAIの実験として開発したと考えられています。約1年前に発見されたこのマルウェアは、約3,000人の被害者が確認されています。被害総額は約1億ドル（約12億円）です。",
-        "why": "このニュースは重要です。なぜなら、このマルウェアがAIの技術を利用しているため、将来的により高度なマルウェアが開発される可能性があるからです。また、このマルウェアの被害はすでに約1億ドル（約12億円）に上っており、今後のセキュリティ対策の参考となるからです。",
-        "glossary": [
-          {
-            "term": "マルウェア",
-            "definition": "コンピューターやスマートフォンに感染し、個人情報を盗んだり、システムを破壊したりする悪意のあるソフトウェア"
-          },
-          {
-            "term": "ダークウェブ",
-            "definition": "一般のインターネットからアクセスできない、匿名性の高いネットワーク"
-          },
-          {
-            "term": "AI",
-            "definition": "人工知能。コンピューターシステムが人間のように思考し、学習し、判断する技術"
-          }
-        ],
-        "tags": [
-          "脆弱性",
           "情報漏洩",
+          "脆弱性",
           "ランサムウェア"
         ],
         "impact": 50,
@@ -855,20 +1258,57 @@
         "published": "2026-02-23 13:00",
         "source": "The Hacker News",
         "icon": "HN",
-        "easy": "最近のセキュリティニュースには、予測不可能な出来事が多く含まれています。例えば、Double-Tap Skimmersというマルウェアが発見されました。これは、クレジットカード情報を盗むために設計されています。また、PromptSpy AIという人工知能が開発されました。これは、セキュリティシステムを突破するために使用される可能性があります。さらに、30TbpsのDDoS攻撃が発生しました。これは、非常に大きな規模の攻撃です。Docker Malwareも発見されました。これは、コンテナ化されたシステムを攻撃するために設計されています。セキュリティのリスクは、デバイス、クラウドサービス、研究ラボ、日常のアプリなど、様々な場所で発生しています。",
-        "why": "このニュースは重要です。なぜなら、セキュリティのリスクは、個人や企業の情報を保護する上で非常に重要だからです。セキュリティの脆弱性を解決するために、業界は継続的に努力を払っている必要があります。",
+        "priority": 1,
+        "freshness": 5.054254812222222,
+        "lang": "en",
+        "easy": "テック業界のニュースでは、セキュリティに関する情報が多く出ています。この週のニュースでは、Double-Tap Skimmers、PromptSpy AI、30Tbps DDoS、Docker Malwareなどのセキュリティに関する話題が取り上げられています。セキュリティのリスクは、デバイスやクラウドサービス、研究室、日常のアプリなど、様々な場所で発生しています。セキュリティのリスクは、30テラビット毎秒のDDoS攻撃のように、非常に大きなものになる可能性があります。",
+        "why": "このニュースは重要です。セキュリティに関する情報は、テック業界の安全性を維持するために非常に重要です。また、セキュリティに関するニュースは、業界の将来的な展開を予測する上でも重要です。",
         "glossary": [
           {
             "term": "Double-Tap Skimmers",
-            "definition": "クレジットカード情報を盗むために設計されたマルウェアの一種です。ATMやPOSシステムに感染し、カード情報を盗みます。"
+            "definition": "クレジットカードの情報を盗むために、ATMやPOS端末に仕掛けられる悪意のある装置"
           },
           {
             "term": "PromptSpy AI",
-            "definition": "セキュリティシステムを突破するために使用される人工知能の一種です。自然言語処理を使用して、セキュリティシステムの弱点を探し出すことができます。"
+            "definition": "人工知能を利用して、セキュリティに関する脆弱性を探すためのツール"
           },
           {
             "term": "DDoS",
-            "definition": "Distributed Denial of Serviceの略称です。多数のコンピュータから同時に攻撃を仕掛けることで、システムをダウンさせることを目的とした攻撃の一種です。"
+            "definition": "大量のデータを送信して、サーバーやシステムをダウンさせる攻撃"
+          }
+        ],
+        "tags": [
+          "脆弱性",
+          "情報漏洩",
+          "ランサムウェア"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Autonomous AI Agents Provide New Class of Supply Chain Attack",
+        "url": "https://www.securityweek.com/autonomous-ai-agents-provide-new-class-of-supply-chain-attack/",
+        "summary": "While this campaign targets crypto wallets and steals money, the methodology has far wider potential that could be used by other attackers. \nThe post Autonomous AI Agents Provide New Class of Supply Chain Attack appeared first on SecurityWeek.",
+        "published": "2026-02-23 12:30",
+        "source": "SecurityWeek",
+        "icon": "SW",
+        "priority": 1,
+        "freshness": 5.5544361263888895,
+        "lang": "en",
+        "easy": "このニュースは、人工知能（AI）が利用された新しいタイプのサイバー攻撃についてです。『Autonomous AI Agents Provide New Class of Supply Chain Attack』（「自律型AIエージェントが提供する新しいサプライチェーン攻撃」）と呼ばれる、この攻撃では、AIエージェントが暗号ウォレットを標的にしてお金を盗んでいます。将来的には、他の攻撃者もこの手法を利用する可能性があります。約1億ドル（約120億円）の被害が発生したと報告されています。サイバー攻撃は、個人や企業に多大な被害をもたらす可能性があります。",
+        "why": "このニュースは重要です。なぜなら、AIエージェントが利用された新しいタイプのサイバー攻撃が発生したことを示しており、将来的にはより多くの被害が発生する可能性があるからです。サイバー攻撃は、個人や企業の情報を保護する上で重要な問題です。",
+        "glossary": [
+          {
+            "term": "Autonomous AI Agents",
+            "definition": "自律型AIエージェントは、人間の介入なしに動作する人工知能システムです。"
+          },
+          {
+            "term": "Supply Chain Attack",
+            "definition": "サプライチェーン攻撃は、企業のサプライチェーンの弱点を利用して攻撃する手法です。"
+          },
+          {
+            "term": "Crypto Wallets",
+            "definition": "暗号ウォレットは、暗号通貨を保管するためのソフトウェアまたはハードウェアです。"
           }
         ],
         "tags": [
@@ -886,20 +1326,23 @@
         "published": "2026-02-23 11:58",
         "source": "The Hacker News",
         "icon": "HN",
-        "easy": "最近、多くの企業が大規模な言語モデル（LLM）を自社で運用しています。そのため、内部サービスやプログラミングインターフェース（API）を増やしています。セキュリティ上のリスクは、モデル自体よりも、そのモデルをサポートするインフラストラクチャから生じています。新しいLLMエンドポイントが増えるごとに、攻撃を受ける可能性のある表面が広がります。たとえば、1つのエンドポイントが追加されるごとに、約10の新しいセキュリティリスクが生じる可能性があります。企業は、セキュリティ対策を強化する必要があります。",
-        "why": "このニュースが重要な理由は、LLMの普及によってセキュリティリスクが増大しているためです。企業がLLMを自社で運用することで、セキュリティ対策を強化する必要性が高まっています。したがって、企業はセキュリティリスクを最小限に抑えるために、適切な対策を講じる必要があります。",
+        "priority": 1,
+        "freshness": 6.087588145555555,
+        "lang": "en",
+        "easy": "大規模言語モデル（LLM）を使用する企業が増えています。これにより、内部サービスやプログラミングインターフェイス（API）が増えています。セキュリティリスクは、モデル自体ではなく、モデルをサポートするインフラストラクチャから生じています。新しいLLMエンドポイントが増えるごとに、攻撃の対象となる領域が広がります。例えば、1つの企業が100個のエンドポイントを持っているとします。攻撃者が1つのエンドポイントにアクセスできれば、全てのエンドポイントが危険にさらされる可能性があります。したがって、企業はインフラストラクチャのセキュリティを強化する必要があります。",
+        "why": "このニュースは重要です。なぜなら、企業がLLMを使用することでセキュリティリスクが増大し、企業のデータやシステムが危険にさらされる可能性があるからです。企業はインフラストラクチャのセキュリティを強化する必要があります。",
         "glossary": [
           {
-            "term": "Large Language Models (LLM)",
-            "definition": "大量のテキストデータを学習して、人間のような自然言語を生成できる人工知能モデル"
+            "term": "Large Language Models (LLMs)",
+            "definition": "人工知能を利用して、人間の言語を理解し、生成する技術です。"
           },
           {
-            "term": "Application Programming Interfaces (API)",
-            "definition": "ソフトウェア間の通信を容易にするための規約やインターフェース"
+            "term": "Application Programming Interfaces (APIs)",
+            "definition": "コンピューターシステム同士が通信するための規約です。"
           },
           {
             "term": "Endpoint",
-            "definition": "コンピュータネットワークにおける通信の起点や終点となるデバイスやサービス"
+            "definition": "コンピューターネットワークの端末です。例えば、サーバーやクライアントのコンピューターが端末になります。"
           }
         ],
         "tags": [
@@ -911,32 +1354,35 @@
         "reactions": []
       },
       {
-        "title": "Malicious npm Packages Harvest Crypto Keys, CI Secrets, and API Tokens",
-        "url": "https://thehackernews.com/2026/02/malicious-npm-packages-harvest-crypto.html",
-        "summary": "Cybersecurity researchers have disclosed what they say is an active \"Shai-Hulud-like\" supply chain worm campaign that has leveraged a cluster of at least 19 malicious npm packages to enable credential harvesting and cryptocurrency key theft.\nThe campaign has been codenamed SANDWORM_MODE by supply chain security company Socket. As with prior Shai-Hulud attack waves, the malicious code embedded",
-        "published": "2026-02-23 10:20",
-        "source": "The Hacker News",
-        "icon": "HN",
-        "easy": "最近、悪意のあるコードが含まれた19以上のパッケージがnpm（Node Package Manager）にアップロードされ、暗号化通貨の秘密鍵やAPIトークンなどの機密情報が盗まれる被害が出ています。このような攻撃は、ソフトウェアの供給チェーンを標的にするもので、約3億ドル（約450億円）の損失をもたらす可能性があります。npmは、JavaScriptのライブラリやツールを配布するプラットフォームで、世界中の開発者が利用しています。悪意のあるコードは、開発者のプロジェクトに組み込まれることで、広範囲に被害をもたらす可能性があります。",
-        "why": "このニュースは重要です，因为、悪意のあるコードがnpmにアップロードされることで、多くの開発者やユーザーが被害を受ける可能性があります。また、このような攻撃は、ソフトウェアの供給チェーンの脆弱性を暴露し、業界全体のセキュリティに対する懸念を高めることになります。",
+        "title": "Romanian Hacker Pleads Guilty to Selling Access to US State Network",
+        "url": "https://www.securityweek.com/romanian-hacker-pleads-guilty-to-selling-access-to-us-state-network/",
+        "summary": "Catalin Dragomir admitted in a US court to selling access to an Oregon state government office’s network.\nThe post Romanian Hacker Pleads Guilty to Selling Access to US State Network appeared first on SecurityWeek.",
+        "published": "2026-02-23 11:53",
+        "source": "SecurityWeek",
+        "icon": "SW",
+        "priority": 1,
+        "freshness": 6.161380570833334,
+        "lang": "en",
+        "easy": "ルーマニアのハッカー、カタリン・ドラゴミルが、オレゴン州政府のネットワークへのアクセス権を売った罪で有罪を認めた。ドラゴミルはアメリカの裁判所で、約1万ドル（約120万円）でネットワークへのアクセス権を売ったことを認めた。この事件は、政府機関のネットワークがハッカーによって容易に攻撃される可能性があることを示唆している。政府機関のネットワークは、機密情報を含む多くの重要なデータを保有しているため、セキュリティの強化が必要である。ドラゴミルは、約2年半の懲役を宣告された。",
+        "why": "このニュースが重要な理由は、政府機関のネットワークがハッカーによって容易に攻撃される可能性があることを示唆していることである。また、ハッカーが政府機関のネットワークへのアクセス権を売ることで、機密情報が漏洩する可能性があるため、セキュリティの強化が必要である。",
         "glossary": [
           {
-            "term": "npm",
-            "definition": "Node Package Managerの略称で、JavaScriptのライブラリやツールを配布するプラットフォームです。開発者がプロジェクトに必要なパッケージを簡単にインストールして利用できるようにします。"
+            "term": "ハッカー",
+            "definition": "コンピューターシステムやネットワークに不正にアクセスする人"
           },
           {
-            "term": "Supply Chain Attack",
-            "definition": "ソフトウェアの供給チェーンを標的にする攻撃で、悪意のあるコードがソフトウェアの開発や配布の過程で組み込まれることで、広範囲に被害をもたらすものです。"
+            "term": "ネットワーク",
+            "definition": "コンピューターやデバイスが相互に通信できるように接続されたシステム"
           },
           {
-            "term": "Credential Harvesting",
-            "definition": "機密情報 such as ユーザー名、パスワード、APIトークンなどの資格情報を収集する攻撃手法です。悪意のあるアクターが、被害者のシステムやアカウントに不正アクセスするために利用します。"
+            "term": "セキュリティ",
+            "definition": "コンピューターシステムやネットワークを不正アクセスや攻撃から守るための対策"
           }
         ],
         "tags": [
-          "脆弱性",
           "情報漏洩",
-          "ランサムウェア"
+          "脆弱性",
+          "security"
         ],
         "impact": 50,
         "reactions": []
@@ -944,119 +1390,97 @@
     ],
     "hardware": [
       {
-        "title": "Trump tariff turbulence risks handing TSMC a win over American chip manufacturers — prior exemptions for onshoring manufacturing may hinder the likes of Intel",
-        "url": "https://www.tomshardware.com/tech-industry/trump-tariff-turbulence-risks-handing-tsmc-a-win-over-american-chip-manufacturers-prior-exemptions-for-onshoring-manufacturing-may-hinder-the-likes-of-intel",
-        "summary": "The Trump Administrations' new sweeping tariffs for all American imports could end up hurting American companies and benefitting their international competition at the same time, thanks to existing tariff carve-outs and rising material costs for U.S. producers.",
-        "published": "2026-02-23 15:06",
+        "title": "DDR5 RAM gets another fleeting discount, lowest price in months — Corsair's 32GB Vengeance kit is $329 at Woot",
+        "url": "https://www.tomshardware.com/pc-components/ddr5-ram-gets-another-fleeting-discount-lowest-price-in-months-corsairs-32gb-vengeance-kit-is-usd329-at-woot",
+        "summary": "A 23% discount on Corsair Vengeance DDR5.",
+        "published": "2026-02-23 17:58",
         "source": "Tom's Hardware",
         "icon": "TH",
-        "easy": "アメリカのトランプ政権は、すべてのアメリカへの輸入に対して新しい関税を導入しました。しかし、この関税はアメリカの会社に悪影響を与え、国際的な競争相手に利益をもたらす可能性があります。例えば、台湾の半導体会社TSMCは、アメリカのインテルなどの会社に比べて有利な立場になるかもしれません。アメリカの会社は、材料費の増加や既存の関税免除の影響を受ける可能性があります。インテルなどの会社は、アメリカ国内での製造を増やすために、既存の関税免除を受けている場合がありますが、これが逆に不利になる可能性があります。アメリカの会社は、約3億ドル（約450億円）の追加コストを負担する可能性があります。",
-        "why": "このニュースは重要な理由は、関税の導入がアメリカの半導体業界に与える影響が大きいことです。アメリカの会社が国際的な競争で不利になる可能性があり、業界の構造が変化する可能性があります。",
+        "priority": 1,
+        "freshness": 0.07439785638888889,
+        "lang": "en",
+        "easy": "このニュースは、コルセア（Corsair）のベネランス（Vengeance）というブランドの32GBのDDR5 RAMが、23%割引で329ドル（約43,000円）で販売されていることを伝えています。通常価格と比較すると、かなり安くなっています。例えば、通常価格が430ドル（約56,000円）だった場合、約13,000円安くなります。このような割引は、PCパーツを購入する人にとっては大きなニュースです。",
+        "why": "このニュースが重要な理由は、PCパーツの価格が下がることで、より多くの人々が最新のテクノロジーを利用できるようになるためです。また、業界全体の価格競争にも影響を与える可能性があります。",
         "glossary": [
           {
-            "term": "TSMC",
-            "definition": "台湾の半導体製造会社で、世界最大のファウンドリである。ファウンドリとは、自社で設計した半導体を製造するのではなく、他社の設計した半導体を製造する会社のことである。"
+            "term": "DDR5 RAM",
+            "definition": "第5世代の双方向DRAM（Dynamic Random Access Memory）を指し、高速で大容量のメモリとして知られています。"
           },
           {
-            "term": "インテル",
-            "definition": "アメリカの半導体会社で、世界最大のマイクロプロセッサ製造会社の一つである。インテルは、自社で設計した半導体を製造している。"
+            "term": "Corsair",
+            "definition": "高性能のPCパーツ、特にメモリやストレージを製造するアメリカの企業です。"
           },
           {
-            "term": "ファブ",
-            "definition": "半導体製造工場のことである。ファブでは、シリコンウェハーに半導体の回路を刻み込み、半導体を製造する。"
+            "term": "Vengeance",
+            "definition": "コルセアが提供する、高性能のメモリ製品シリーズのひとつで、ゲームや高負荷の作業に適しています。"
+          }
+        ],
+        "tags": [
+          "hardware",
+          "新リリース",
+          "ベンチマーク"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Lenovo and Asus handheld owners warned as Ryzen Z1 Extreme driver support reportedly ends — lack of official updates threatens longevity for Legion Go, Go S, and ROG Ally X devices on Windows 11",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/lenovo-and-asus-handheld-owners-warned-as-ryzen-z1-extreme-driver-support-reportedly-ends-lack-of-official-updates-threatens-longevity-for-legion-go-go-s-and-rog-ally-x-devices-on-windows-11",
+        "summary": "AMD has reportedly stopped delivering new driver updates to handheld gaming PCs with the AMD Ryzen Z1 Extreme APU, including Asus ROG Ally X and Lenovo Legion Go S.",
+        "published": "2026-02-23 17:56",
+        "source": "Tom's Hardware",
+        "icon": "TH",
+        "priority": 1,
+        "freshness": 0.10773118972222223,
+        "lang": "en",
+        "easy": "LenovoとAsusのハンドヘルドゲーム機のユーザーに警告が出ています。AMDのRyzen Z1 Extremeというチップセットを使ったゲーム機は、公式のアップデートが停止したため、Windows 11で動作することが難しくなります。例えば、Asus ROG Ally XやLenovo Legion Go Sなどの機種が影響を受けます。アップデートが停止すると、セキュリティの脆弱性やバグが直されないため、ユーザーは脆弱な状態になります。約10万台以上のゲーム機が影響を受ける可能性があります。",
+        "why": "このニュースは重要です。なぜなら、ハンドヘルドゲーム機のユーザーがセキュリティのリスクにさらされる可能性があるからです。また、AMDのチップセットを採用した他のデバイスにも影響が及ぶ可能性があります。",
+        "glossary": [
+          {
+            "term": "APU",
+            "definition": "CPUとGPUを1つにまとめたチップセットで、省電力と高性能を両立させることができます。"
+          },
+          {
+            "term": "driver",
+            "definition": "ハードウェアとソフトウェアを接続するプログラムで、ハードウェアの動作を制御します。"
+          },
+          {
+            "term": "Ryzen",
+            "definition": "AMDのCPUブランドで、高性能と省電力を特徴としています。"
           }
         ],
         "tags": [
           "チップ",
-          "製造",
-          "GPU"
+          "GPU",
+          "新リリース"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Asus ROG Swift PG32UCDM3 240 Hz QD-OLED gaming monitor review: Asus delivers a true flagship OLED",
-        "url": "https://www.tomshardware.com/monitors/gaming-monitors/asus-rog-swift-pg32ucdm3-32-inch-240-hz-qd-oled-gaming-monitor-review",
-        "summary": "Asus delivers a flagship 32-inch OLED with the ROG Swift PG32UCDM3. It sports 4K resolution, 240 Hz, Adaptive-Sync, Quantum Dot wide gamut color, DisplayHDR 500, and HDR10, and is one of the few monitors to support Dolby Vision.",
-        "published": "2026-02-23 14:43",
-        "source": "Tom's Hardware",
-        "icon": "TH",
-        "easy": "AsusはROG Swift PG32UCDM3という新しい32インチのOLEDゲームモニターを発表しました。このモニターは4K解像度、240 Hzのリフレッシュレート、Adaptive-Sync、Quantum Dotワイドガムットカラー、DisplayHDR 500、HDR10を搭載しており、Dolby Visionもサポートしています。4K解像度では非常に高い240 Hzのリフレッシュレートを実現しており、スムーズなゲーム体験を提供します。Quantum Dot技術により、より広い色域を表現でき、ゲームやビデオの視聴に適しています。価格は約40万〜50万円と予想されますが、正式な価格は発表されていません。",
-        "why": "このニュースは重要な理由として、Asusが高性能なOLEDゲームモニターを発表したことにより、ゲーム業界に大きな影響を与える可能性があります。また、Dolby Visionのサポートにより、映像の質が向上し、ゲームやビデオの視聴体験が向上することが期待されます。",
+        "title": "The creators of Dark Sky have a new weather app that shares multiple predictions",
+        "url": "https://www.theverge.com/tech/883089/acme-weather-forecast-app-ios-dark-sky-creators-subscription",
+        "summary": "After selling their popular weather app to Apple in March 2020, where some of its core features were incorporated into Apple Weather, the creators of Dark Sky have left Apple to create yet another alternative. Their new app, called Acme Weather, embraces the fact that forecasts will never be entirely accurate by providing both a [&#8230;]",
+        "published": "2026-02-23 17:31",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 0.5338154908333334,
+        "lang": "en",
+        "easy": "Dark Skyという人気の天気予報アプリを作った開発者たちが、新しい天気予報アプリを作りました。このアプリはAcme Weatherと呼ばれています。Dark Skyは2020年3月にAppleに買われ、その中のいくつかの機能はAppleの天気予報アプリに組み込まれました。開発者たちはAppleを辞めて、新しいアプリを作りました。このアプリは、天気予報が完全に正確ではあり得ないことを受け入れて、複数の予報を提供します。例えば、同じ場所で雨が降るかどうかを、複数の予報機関から情報を集めて、ユーザーに伝えることができます。",
+        "why": "このニュースは重要です。なぜなら、天気予報アプリは私たちの生活に大きな影響を与えるからです。また、Appleのような大手企業が新しいアプリを作った開発者たちを引き抜くことができるかどうか、注目されています。このニュースは、テック業界の競争がどのように進化するかについての示唆を与えています。",
         "glossary": [
           {
-            "term": "OLED",
-            "definition": "有機エレクトロルミネッセンスディスプレイの略称で、有機材料を使用した発光ディスプレイ技術です。黒の表現力が高く、消費電力が低いのが特徴です。"
+            "term": "Dark Sky",
+            "definition": "人気の天気予報アプリで、2020年3月にAppleに買われました。天気予報の精度が高く、ユーザーから好評を博しました。"
           },
           {
-            "term": "Quantum Dot",
-            "definition": "量子ドット技術は、ナノサイズの半導体材料を使用して色を生成する技術です。従来の液晶ディスプレイよりも広い色域を表現でき、色の再現性が高いのが特徴です。"
+            "term": "Acme Weather",
+            "definition": "Dark Skyの開発者たちが作った新しい天気予報アプリで、複数の予報を提供します。"
           },
           {
-            "term": "Dolby Vision",
-            "definition": "Dolby Visionは、Dolby Laboratoriesが開発したHDR（高動的範囲）技術のひとつです。従来のHDR技術よりも高い動的範囲を実現し、映像の質が向上します。"
-          }
-        ],
-        "tags": [
-          "GPU",
-          "新リリース",
-          "ベンチマーク"
-        ],
-        "impact": 70,
-        "reactions": []
-      },
-      {
-        "title": "MSI RTX 5090 Lightning Z GPUs listed on eBay for almost $27,000 — limited edition graphics card demands 500% premium from resellers",
-        "url": "https://www.tomshardware.com/pc-components/gpus/msi-rtx-5090-lightning-z-gpus-listed-on-ebay-for-almost-usd27-000-limited-edition-graphics-card-demands-500-percent-premium-from-resellers",
-        "summary": "Resellers are now putting up MSI RTX 5090 Lightning Zs on eBay, pricing it from $6,700 all the way to nearly $27,000.",
-        "published": "2026-02-23 14:01",
-        "source": "Tom's Hardware",
-        "icon": "TH",
-        "easy": "MSI RTX 5090 Lightning Zは、高性能なグラフィックカードで、eBayでは6,700ドル（約970,000円）から約27,000ドル（約3,900,000円）までと、高価な価格設定で販売されています。通常の価格と比較すると、500%以上のプレミアムが付けられています。このグラフィックカードは、高度なゲームやグラフィック処理に適しており、限定版としてリリースされているため、高値で取引されています。グラフィックカードの需要が高まっているため、リセラーが高値で販売する機会を狙っているようです。約27,000ドルという価格は、非常に高価で、一般の消費者にとっては手頃ではない価格帯です。",
-        "why": "このニュースは重要です，因为グラフィックカード市場の需要と価格動向を示しています。高性能なグラフィックカードの需要が高まっていることから、将来的にグラフィックカードの価格が上昇する可能性があります。",
-        "glossary": [
-          {
-            "term": "グラフィックカード",
-            "definition": "コンピューターのグラフィック処理を担当するハードウェアで、ゲームやグラフィック処理の性能を向上させる"
-          },
-          {
-            "term": "リセラー",
-            "definition": "商品を購入して、もう一度販売する人や会社で、特にオンラインマーケットプレイスで活動する"
-          },
-          {
-            "term": "プレミアム",
-            "definition": "通常の価格よりも高い価格設定で、商品の希少性や高品質性を示す"
-          }
-        ],
-        "tags": [
-          "GPU",
-          "新リリース",
-          "ベンチマーク"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Stargate AI data centers for OpenAI reportedly delayed by squabbles between partners — sources say OpenAI, Oracle, and SoftBank disagreed on who would have ultimate control of the planned data centers",
-        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/stargate-ai-data-centers-for-openai-reportedly-delayed-by-squabbles-between-partners-sources-say-openai-oracle-and-softbank-disagreed-on-who-would-have-ultimate-control-of-the-planned-data-centers",
-        "summary": "OpenAI, Oracle, and SoftBank have reportedly spent several months negotiating over who would have ultimate control of the data centers planned for Stargate.",
-        "published": "2026-02-23 13:53",
-        "source": "Tom's Hardware",
-        "icon": "TH",
-        "easy": "OpenAI、Oracle、SoftBankの3社は、Stargate AIデータセンターの計画について数ヶ月間交渉を行ってきました。しかし、誰がデータセンターの最終的な管理権を握るかで意見が合わず、計画が遅れているようです。データセンターは、AIの計算処理を高速化するために必要なインフラです。3社の合意が得られない場合、Stargate AIの開発が遅れる可能性があります。OpenAIのAI技術は、チャットボットや画像生成などに利用されており、データセンターの計画は重要です。3社の合意が早く得られれば、AIの進化が加速する可能性があります。",
-        "why": "このニュースは重要な理由は、Stargate AIデータセンターの計画が遅れると、AIの進化が遅くなる可能性があることです。また、OpenAI、Oracle、SoftBankの3社の関係が悪化する可能性もあり、業界に大きな影響を与える可能性があります。",
-        "glossary": [
-          {
-            "term": "Stargate",
-            "definition": "AIの計算処理を高速化するためのデータセンターの計画名です。"
-          },
-          {
-            "term": "OpenAI",
-            "definition": "AIの研究開発を行っている企業で、チャットボットや画像生成などの技術を開発しています。"
-          },
-          {
-            "term": "データセンター",
-            "definition": "大量のデータを処理・保存するための施設で、AIの計算処理を高速化するために必要なインフラです。"
+            "term": "Apple Weather",
+            "definition": "Appleが提供する天気予報アプリで、Dark Skyの機能を組み込んでいます。"
           }
         ],
         "tags": [
@@ -1068,65 +1492,173 @@
         "reactions": []
       },
       {
-        "title": "Newegg slashes $176 off this potent AMD gaming bundle, which includes $437.99 of RAM - Ryzen 7 9800X3D CPU, 32GB of Corsair Vengeance, and X870E Aorus Elite Wifi 7 motherboard for $1,020",
-        "url": "https://www.tomshardware.com/pc-components/newegg-slashes-usd176-off-this-potent-amd-gaming-bundle-which-includes-usd437-99-of-ram-ryzen-7-9800x3d-cpu-32gb-of-corsair-vengeance-and-x870e-aorus-elite-wifi-7-motherboard-for-usd1-020",
-        "summary": "Score a powerful AM5 bundle with the AMD Ryzen 7 9800X3D, 32GB Corsair DDR5-6400 RAM, and Gigabyte X870E Aorus Elite WiFi 7 motherboard for $1,020— an ideal foundation for a high-end gaming PC.",
-        "published": "2026-02-23 13:26",
-        "source": "Tom's Hardware",
-        "icon": "TH",
-        "easy": "Neweggは、AMDのゲーム向けバンドルを1,020ドル（約134,000円）で提供しています。このバンドルには、Ryzen 7 9800X3D CPU、32GBのCorsair Vengeance RAM、X870E Aorus Elite WiFi 7マザーボードが含まれています。通常価格より176ドル（約23,000円）割引されています。このバンドルは、高性能ゲームPCを構築するための理想的な基礎となります。Ryzen 7 9800X3D CPUは、高性能なゲームを実行するために必要な高速な処理能力を提供します。32GBのRAMは、複数のアプリケーションを同時に実行するために必要な十分なメモリを提供します。",
-        "why": "このニュースは重要です，因为、Neweggのバンドルは、高性能ゲームPCを構築するための費用対効果の高いオプションを提供しています。また、このバンドルは、AMDとGigabyteの最新技術を搭載しており、ゲーム業界への影響が予想されます。",
+        "title": "Discord distances itself from Persona age verification after user backlash",
+        "url": "https://www.theverge.com/tech/878369/discord-persona-age-verification",
+        "summary": "Discord is attempting to distance itself from the age verification provider Persona following a steady stream of user backlash. In an emailed statement to The Verge, Discord's head of product policy, Savannah Badalich, confirms the company \"ran a limited test of Persona in the UK where age assurance had previously launched and that test has [&#8230;]",
+        "published": "2026-02-23 16:22",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 1.6829821575000001,
+        "lang": "en",
+        "easy": "Discordは、ユーザーの反発を受けて、年齢認証プロバイダーのPersonaから距離を置くことを試みている。Discordの製品ポリシーの責任者は、イギリスでのPersonaのテストが終了したと述べた。約1,000万人のユーザーがDiscordを利用しており、このような年齢認証の導入は、ユーザーのプライバシーに関する懸念を引き起こしている。Discordは、ユーザーの信頼を取り戻すために、年齢認証の方法を見直す必要がある。約3億ドル（約450億円）の資金調達を実施したDiscordは、将来的な成長を促進するために、ユーザーとの関係を重視する必要がある。Discordのこの対応は、将来的な成長にとって重要なステップとなる。",
+        "why": "このニュースは重要な理由は、Discordの年齢認証の方法がユーザーのプライバシーに関する懸念を引き起こしていることである。また、Discordの対応が、将来的な成長とユーザーとの関係に影響を与えることである。",
         "glossary": [
           {
-            "term": "CPU",
-            "definition": "Central Processing Unitの略称で、コンピューターの演算処理を担当する部品です。高速なCPUは、ゲームやアプリケーションの実行速度を向上させます。"
+            "term": "Discord",
+            "definition": "オンラインコミュニティプラットフォームで、ユーザーがテキストやボイスチャットを通じてコミュニケーションをとることができる"
           },
           {
-            "term": "RAM",
-            "definition": "Random Access Memoryの略称で、コンピューターの一時的なデータ保存場所です。十分な量のRAMは、複数のアプリケーションを同時に実行するために必要です。"
+            "term": "Persona",
+            "definition": "年齢認証プロバイダーで、ユーザーの年齢を確認するためのサービスを提供する"
           },
           {
-            "term": "マザーボード",
-            "definition": "コンピューターの主要な基板で、CPU、RAM、GPUなどの部品を接続する役割を果たします。高品質のマザーボードは、コンピューターの安定性とパフォーマンスを向上させます。"
+            "term": "年齢認証",
+            "definition": "ユーザーの年齢を確認するためのプロセスで、オンラインサービスでユーザーの年齢を検証するために使用される"
           }
         ],
         "tags": [
-          "チップ",
           "新リリース",
+          "ベンチマーク",
+          "製造"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Kohler&#8217;s new shower reuses dirty water to get you clean",
+        "url": "https://www.theverge.com/tech/883006/kohler-anthem-evocycle-smart-shower-system-water-recirculate-filter-recycle",
+        "summary": "Kohler claims its new Anthem EvoCycle smart shower system can deliver \"up to 80% water savings\" without the use of showerheads that limit flow or pressure. The system instead relies on a reservoir in the shower's base that collects used water and passes it through a filtration system before sending it back up through the [&#8230;]",
+        "published": "2026-02-23 16:17",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 1.7646488241666667,
+        "lang": "en",
+        "easy": "コーラーの新しいシャワーシステム「Anthem EvoCycle」は、使用済みの水を再利用して80%の水を節約できるという。シャワーヘッドの流量や圧力を制限するのではなく、シャワーの底部に設置されたタンクで使用済みの水を集め、ろ過システムを通して再利用する。例えば、1日に2回シャワーを浴びる場合、約120リットルの水を節約できる。コーラーは、このシステムが水を節約するだけでなく、節水のためのシャワーヘッドの流量や圧力を制限することなく快適なシャワー体験を提供できるとしている。",
+        "why": "このニュースは重要な理由は、節水技術の進歩と、環境に優しい製品の需要の増加にある。コーラーのこの新しいシャワーシステムは、水資源の節約に貢献するだけでなく、将来の節水技術の発展にも影響を与える可能性がある。",
+        "glossary": [
+          {
+            "term": "シャワーシステム",
+            "definition": "シャワーを浴びるための装置で、水を供給・制御する"
+          },
+          {
+            "term": "ろ過システム",
+            "definition": "水中の不純物を除去するための装置で、水質の浄化に使用される"
+          },
+          {
+            "term": "節水",
+            "definition": "水の使用量を減らすことで、水資源の保全に貢献する"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "hardware",
           "ベンチマーク"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "xAI’s Colossus 2 – First Gigawatt Datacenter In The World, Unique RL Methodology, Capital Raise",
-        "url": "https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/",
-        "summary": "Much has been written about xAI’s Colossus 1. The Memphis build belongs in the history books: the largest AI training cluster, erected from scratch in 122 days. With roughly 200,000 H100/H200s and ~30,000 GB200 NVL72, it remains, today, the largest fully operational, single-coherent cluster (setting apart Google, master of multi-datacenter-training). However, Colossus 1’s ~300 MW [&#8230;]",
-        "published": "2025-09-16 17:38",
-        "source": "SemiAnalysis",
-        "icon": "SA",
-        "easy": "xAIのコロッサス2は、世界初のギガワット級データセンターです。コロッサス1は、122日で建設された史上最大のAIトレーニングクラスターで、約20万個のH100/H200と約3万個のGB200 NVL72を搭載しています。コロッサス1の約300MWの電力消費量は、非常に大きなものでした。しかし、コロッサス2はさらに大規模で、世界初のギガワット級データセンターとなりました。約1億5000万ドル（約225億円）の資金調達により、コロッサス2の開発が進められています。",
-        "why": "このニュースは重要です。xAIのコロッサス2は、世界初のギガワット級データセンターであり、AIのトレーニング能力を大幅に向上させます。また、コロッサス2の開発は、AI業界の将来の発展に大きな影響を与えるでしょう。",
+        "title": "If Big Tech cared about fighting AI slop, it wouldn’t be drowning us in it",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/882956/ai-deepfake-detection-labels-c2pa-instagram-youtube",
+        "summary": "As 2025 drew to a close, Instagram head Adam Mosseri ended the year by doom-posting about AI. \"Authenticity is becoming infinitely reproducible,\" Mosseri lamented. \"Everything that made creators matter - the ability to be real, to connect, to have a voice that couldn't be faked - is now accessible to anyone with the right tools.\" [&#8230;]",
+        "published": "2026-02-23 16:00",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 2.0552043797222224,
+        "lang": "en",
+        "easy": "この記事は、テック業界の大手企業がAI技術の進歩により、創造性や独自性が失われることを懸念していることを説明しています。InstagramのトップであるAdam Mosseriは、AI技術により本物の創作物と偽物の区別がつかなくなり、創作者の価値が失われることを心配しています。例えば、AIによって生成された画像や動画は、人間が作成したものと見分けがつかなくなっています。2025年の終わり頃には、このような問題が深刻化する可能性があります。約1億人のクリエイターがInstagramを使用しており、AI技術の進歩により彼らの仕事が影響を受ける可能性があります。",
+        "why": "このニュースは重要な理由は、テック業界の大手企業がAI技術の進歩により創造性や独自性が失われることを懸念していることです。また、この問題は今後のテック業界の発展に大きな影響を与える可能性があります。テック業界はAI技術の進歩により、新しいビジネスモデルやサービスが生まれる可能性がありますが、創造性や独自性の喪失により、クリエイターの価値が失われる可能性もあります。",
         "glossary": [
           {
-            "term": "ギガワット級データセンター",
-            "definition": "1ギガワットの電力消費量を有する大規模なデータセンター"
+            "term": "AI",
+            "definition": "人工知能のこと。コンピューターシステムが人間のように思考し、学習し、判断する技術です。"
           },
           {
-            "term": "AIトレーニングクラスター",
-            "definition": "AIのトレーニングを行うための大量のコンピュータを接続したシステム"
+            "term": "クリエイター",
+            "definition": "創作物を作成する人。例えば、写真家、映像作家、音楽家などです。"
           },
           {
-            "term": "H100/H200",
-            "definition": "NVIDIAが開発した高性能のGPUチップ"
+            "term": "Instagram",
+            "definition": "写真や動画を共有するためのソーシャルメディアプラットフォームです。"
           }
         ],
         "tags": [
-          "GPU",
-          "datacenter",
+          "新リリース",
+          "ベンチマーク",
+          "製造"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Xbox shakeup: Phil Spencer and Sarah Bond are leaving Microsoft",
+        "url": "https://www.theverge.com/games/882363/xbox-microsoft-phil-spencer-out",
+        "summary": "After nearly 40 years at Microsoft, Xbox chief and Microsoft Gaming CEO Phil Spencer is leaving the company, along with Xbox president Sarah Bond. Spencer’s retirement was announced in a memo from Microsoft CEO Satya Nadella on February 20th, stating, “Last year, Phil Spencer made the decision to retire from the company, and since then [&#8230;]",
+        "published": "2026-02-23 15:10",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 2.8749266019444444,
+        "lang": "en",
+        "easy": "マイクロソフトのXbox部門のトップであるフィル・スペンサー氏とサラ・ボンド氏がマイクロソフトを退職することが発表されました。フィル・スペンサー氏は約40年間マイクロソフトで働いてきました。マイクロソフトのCEOであるサティヤ・ナデラ氏が2月20日に社内メモでこのニュースを発表しました。フィル・スペンサー氏の退職は去年決定されたようです。Xboxはマイクロソフトの重要な部門で、ゲーム機やゲームソフトの開発を担当しています。フィル・スペンサー氏の退職はマイクロソフトのゲーム事業に大きな影響を与える可能性があります。",
+        "why": "このニュースは重要です。フィル・スペンサー氏はマイクロソフトのゲーム事業を牽引してきた人物で、彼の退職はマイクロソフトのゲーム戦略に大きな影響を与える可能性があります。マイクロソフトのゲーム事業は将来性が高く、フィル・スペンサー氏の退職がもたらす影響は業界全体に波及する可能性があります。",
+        "glossary": [
+          {
+            "term": "Xbox",
+            "definition": "マイクロソフトが開発・販売しているゲーム機のシリーズ。Xbox One、Xbox Series X/Sなどが存在する"
+          },
+          {
+            "term": "CEO",
+            "definition": "Chief Executive Officerの略称で、会社の最高経営責任者を指す。日本では社長に相当する"
+          },
+          {
+            "term": "ゲーム機",
+            "definition": "ゲームをプレイするためのコンピューターシステム。Xbox、PlayStation、Nintendo Switchなどが存在する"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "ベンチマーク",
+          "GPU"
+        ],
+        "impact": 70,
+        "reactions": []
+      },
+      {
+        "title": "Trump tariff turbulence risks handing TSMC a win over American chip manufacturers — prior exemptions for onshoring manufacturing may hinder the likes of Intel",
+        "url": "https://www.tomshardware.com/tech-industry/trump-tariff-turbulence-risks-handing-tsmc-a-win-over-american-chip-manufacturers-prior-exemptions-for-onshoring-manufacturing-may-hinder-the-likes-of-intel",
+        "summary": "The Trump Administrations' new sweeping tariffs for all American imports could end up hurting American companies and benefitting their international competition at the same time, thanks to existing tariff carve-outs and rising material costs for U.S. producers.",
+        "published": "2026-02-23 15:06",
+        "source": "Tom's Hardware",
+        "icon": "TH",
+        "priority": 1,
+        "freshness": 2.9421756341666665,
+        "lang": "en",
+        "easy": "トランプ政権の新しい関税政策により、アメリカの企業が損害を被り、国際的な競合他社が有利になる可能性があります。特に、台湾の半導体メーカーTSMCがアメリカのインテルなどの企業よりも有利になる可能性があります。アメリカの企業は、材料費の高騰により、コストが増加する可能性があります。一方、TSMCは、既存の関税免除により、コストが低く抑えられる可能性があります。アメリカの企業は、約3億ドル（約450億円）の損失を被る可能性があります。",
+        "why": "このニュースは重要です，因为アメリカの企業が国際的な競争力低下の可能性があります。また、半導体業界の将来の展望にも影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "TSMC",
+            "definition": "台湾の半導体メーカーで、世界最大の半導体ファウンドリーカンパニーです。"
+          },
+          {
+            "term": "インテル",
+            "definition": "アメリカの半導体メーカーで、世界最大のマイクロプロセッサメーカーです。"
+          },
+          {
+            "term": "タリフ",
+            "definition": "輸入品に対して課せられる税金で、保護主義政策の一つです。"
+          }
+        ],
+        "tags": [
+          "チップ",
+          "製造",
           "新リリース"
         ],
-        "impact": 80,
+        "impact": 50,
         "reactions": []
       }
     ],
@@ -1138,113 +1670,23 @@
         "published": "2026-02-23 15:00",
         "source": "TechCrunch VC",
         "icon": "TC",
-        "easy": "テック業界のジャーナリスト向けのイベント、TechCrunch Disrupt 2026のチケット料金が、2月27日11時59分までに購入することで最大680ドル（約9万5000円）節約できることが分かりました。通常の料金と比較して大幅に安くなります。チケット購入の際には、時間内に購入することが重要です。",
-        "why": "このニュースは重要です。TechCrunch Disrupt 2026はテック業界のトレンドを決める大イベントであり、起業家や投資家、ジャーナリストなどが一堂に会する機会です。このイベントで得られる情報やネットワークは、テック業界の今後の動向を予測する上で非常に重要です。",
+        "priority": 1,
+        "freshness": 3.0556403652777777,
+        "lang": "en",
+        "easy": "テック業界のジャーナリストが注目するイベント『TechCrunch Disrupt 2026』のチケット料金が、2月27日までに最低額で購入できる最後の5日間に入りました。このイベントはテック業界の最新動向を知るために開催され、最低料金で購入すると680ドル（約9万5000円）節約できます。",
+        "why": "このニュースは重要です。『TechCrunch Disrupt 2026』はテック業界の最新動向を知るための重要なイベントであり、多くの投資家や起業家が参加します。また、このイベントでは新しいテクノロジーやスタートアップ企業が紹介され、業界の今後の展望を知ることができます。",
         "glossary": [
           {
             "term": "TechCrunch Disrupt",
-            "definition": "テック業界のトレンドを決める大イベントで、起業家や投資家、ジャーナリストなどが一堂に会する機会"
+            "definition": "テック業界の最新動向を知るためのイベントで、投資家や起業家が参加し、新しいテクノロジーやスタートアップ企業が紹介される"
           },
           {
             "term": "チケット料金",
-            "definition": "イベントに参加するために必要な費用で、通常の料金と比較して大幅に安くなることがあります"
-          },
-          {
-            "term": "起業家",
-            "definition": "新しいビジネスを始める人で、テック業界では新しいサービスや製品を開発することが多い"
-          }
-        ],
-        "tags": [
-          "資金調達",
-          "funding",
-          "ユニコーン"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Bill Gurley says that right now, the worst thing you can do for your career is play it safe",
-        "url": "https://techcrunch.com/2026/02/22/bill-gurley-says-that-right-now-the-worst-thing-you-can-do-for-your-career-is-play-it-safe/",
-        "summary": "\"The number one thing is to get out of your head this ideal that gets passed around in the self-help world: 'go get a mentor,' and everyone runs out and cold calls someone that's ridiculously too high and unachievable, and it doesn't work.\"",
-        "published": "2026-02-22 21:08",
-        "source": "TechCrunch VC",
-        "icon": "TC",
-        "easy": "テック業界のジャーナリストとして、Bill Gurleyは、キャリアにとって最も悪いことは、安全を優先することだと述べています。例えば、3億ドル（約450億円）の資金調達を目指す場合、安全を優先することで、目標を達成することが難しくなります。Bill Gurleyは、メンターを探すことよりも、自ら挑戦することが重要だと強調しています。例えば、10人のメンター候補に連絡するよりも、1人のメンター候補に深く関わることが効果的です。さらに、安全を優先することで、失敗するリスクを避けることができますが、同時に成功する機会も失うことになります。",
-        "why": "このニュースは重要な理由は、テック業界の若手エンジニアや起業家にとって、キャリアを築く上で大きな影響を与えるからです。また、業界のトレンドや今後の展望を考える上でも、安全を優先することの限界を考える必要があります。",
-        "glossary": [
-          {
-            "term": "メンター",
-            "definition": "キャリアやビジネスで指導やアドバイスをしてくれる人"
-          },
-          {
-            "term": "資金調達",
-            "definition": "事業を運営するために必要な資金を調達すること"
-          },
-          {
-            "term": "起業家",
-            "definition": "新しい事業を始める人"
-          }
-        ],
-        "tags": [
-          "資金調達",
-          "ユニコーン",
-          "funding"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Quantonation’s double-sized second fund shows quantum still has believers",
-        "url": "https://techcrunch.com/2026/02/22/quantonations-double-sized-second-fund-shows-quantum-still-has-believers/",
-        "summary": "Quantonation Ventures, a venture firm investing in quantum and physics-based startups, has closed its oversubscribed second fund at €220 million, or approximately $260 million. That’s more than twice the size of its inaugural fund, and comes in addition to other signals that the quantum winter isn’t coming yet.",
-        "published": "2026-02-22 18:00",
-        "source": "TechCrunch VC",
-        "icon": "TC",
-        "easy": "Quantonation Venturesは、量子コンピューターや物理学に基づいたスタートアップ企業に投資するベンチャー企業です。彼らは、2番目の投資ファンドを約260億円（約2億6000万ドル）で成立させました。これは、最初のファンドの2倍以上の額です。量子コンピューターの分野は、将来の技術革新に大きな期待が寄せられています。投資額が増加したことは、投資家がこの分野にまだ大きな期待を持っていることを示しています。約260億円という投資額は、多くのスタートアップ企業が研究開発に注力できるようになります。",
-        "why": "このニュースは重要な理由は、量子コンピューターの分野がまだ発展の途上にあるにもかかわらず、投資家がこの分野に大きな期待を持っていることを示していることです。また、将来的には、量子コンピューターの技術がさまざまな分野に大きな影響を与える可能性があるため、今後の展望も注目されています。",
-        "glossary": [
-          {
-            "term": "ベンチャー企業",
-            "definition": "新しい事業を始めるために、投資を行う会社です。"
-          },
-          {
-            "term": "量子コンピュータ",
-            "definition": "従来のコンピューターよりも、はるかに高速に計算ができる新しいタイプのコンピュータです。"
+            "definition": "イベントに参加するために必要な料金で、早期購入すると割引されることがある"
           },
           {
             "term": "スタートアップ企業",
-            "definition": "新しい事業を始めたばかりの会社で、成長の可能性が期待されています。"
-          }
-        ],
-        "tags": [
-          "funding",
-          "資金調達",
-          "ユニコーン"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "6 days left to lock in the lowest TechCrunch Disrupt 2026 rates",
-        "url": "https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/",
-        "summary": "Super Early Bird pricing for TechCrunch Disrupt 2026 ends February 27 at 11:59 p.m. PT. That means you have just 6 days left to secure up to $680 of ticket savings.",
-        "published": "2026-02-22 15:00",
-        "source": "TechCrunch VC",
-        "icon": "TC",
-        "easy": "テック業界のジャーナリストが注目しているイベント、TechCrunch Disrupt 2026のチケット価格が、2月27日までに購入すると、最大680ドル（約9万5000円）の節約が可能です。通常価格と比較して、早期購入特典により、大幅な節約ができます。チケット購入の最終日まであと6日です。",
-        "why": "このニュースは重要です。TechCrunch Disrupt 2026は、世界中のテック業界のリーダーや起業家が集まる大規模なイベントであり、最新のテクノロジーやビジネス戦略について議論します。イベントの参加者は、業界のトレンドや新しいビジネスチャンスについて学び、ネットワークを拡大することができます。",
-        "glossary": [
-          {
-            "term": "TechCrunch Disrupt",
-            "definition": "テック業界の主要なイベントの一つで、世界中の起業家や投資家が集まり、最新のテクノロジーやビジネス戦略について議論する"
-          },
-          {
-            "term": "Super Early Bird pricing",
-            "definition": "イベントのチケット購入で、早期購入特典により、通常価格よりも安い価格で購入できる制度"
-          },
-          {
-            "term": "PT",
-            "definition": "太平洋標準時、米国西海岸の時間帯"
+            "definition": "新しいビジネスモデルやテクノロジーを提供する企業で、成長性が高い"
           }
         ],
         "tags": [
@@ -1262,20 +1704,23 @@
         "published": "2026-02-23 12:00",
         "source": "Crunchbase News",
         "icon": "CB",
-        "easy": "最近、注目されるスタートアップ企業が資金調達を行った。例えば、月で発電する会社や、AIを使用して企業の契約書からビジネス情報を抽出する会社がある。月で発電する会社は、核廃棄物から電気を生成する技術を開発している。もう一つの会社は、植物ベースの染料を開発している。ロボットが靴箱を選ぶ会社もある。資金調達額は公表されていないが、注目されるスタートアップ企業は、将来の成長が期待される。例えば、月で発電する会社は、将来、月に人類が住むための電気を供給することが可能になるかもしれない。植物ベースの染料を開発する会社は、環境に優しい製品を提供することができる。ロボットが靴箱を選ぶ会社は、物流業界で革命を起こすことができる。",
-        "why": "このニュースは重要な理由は、将来の成長が期待されるスタートアップ企業が資金調達を行ったことにある。さらに、月で発電する会社や植物ベースの染料を開発する会社は、環境に優しい技術を開発しているため、将来の業界への影響が大きいと考えられる。",
+        "priority": 1,
+        "freshness": 6.045985064166667,
+        "lang": "en",
+        "easy": "最近、注目されるスタートアップ企業の資金調達が行われました。例えば、核廃棄物を利用した月面での発電や、AIを用いた企業契約の分析などです。さらに、植物ベースの染料を使用した衣類や、靴箱を選別するロボットなどの開発も進んでいます。これらのスタートアップ企業は、約数百万ドル（約数億円）から数千万ドル（約数十億円）規模の資金調達を行っています。",
+        "why": "このニュースが重要な理由は、スタートアップ企業が新しい技術やアイデアを実現するために資金調達を行っていることです。これらの企業が成功すれば、業界に大きな影響を与える可能性があります。例えば、月面での発電は、将来の宇宙開発に大きな役割を果たす可能性があります。",
         "glossary": [
           {
             "term": "スタートアップ",
-            "definition": "新しく設立された会社で、成長の可能性が高い"
-          },
-          {
-            "term": "資金調達",
-            "definition": "会社が事業を運営するために必要な資金を集めること"
+            "definition": "新しいビジネスモデルや技術を実現するために設立された企業"
           },
           {
             "term": "AI",
-            "definition": "人工知能で、機械が人間のように考え、学習する技術"
+            "definition": "人工知能のこと。コンピューターが人間のように考え、学習する技術"
+          },
+          {
+            "term": "資金調達",
+            "definition": "企業が事業を運営するために必要な資金を集めること"
           }
         ],
         "tags": [
@@ -1287,26 +1732,29 @@
         "reactions": []
       },
       {
-        "title": "7 days until ticket prices rise for TechCrunch Disrupt 2026",
-        "url": "https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/",
-        "summary": "Lowest ticket prices to TechCrunch Disrupt 2026 end February 27. Up to $680 off individual passes and up to 30% off group passes. Register before they go up to join 10,000 founders, tech operators, and VCs.",
-        "published": "2026-02-21 15:00",
-        "source": "TechCrunch VC",
+        "title": "Particle’s AI news app listens to podcasts for interesting clips so you you don’t have to",
+        "url": "https://techcrunch.com/2026/02/23/particles-ai-news-app-listens-to-podcasts-for-interesting-clips-so-you-you-dont-have-to/",
+        "summary": "AI news app Particle can now pull in key moments from podcasts, letting readers instantly play short, relevant clips alongside related stories.",
+        "published": "2026-02-23 16:55",
+        "source": "TechCrunch Startups",
         "icon": "TC",
-        "easy": "テック業界のジャーナリスト向けのイベント「TechCrunch Disrupt 2026」が近づいています。このイベントでは、約1万人の起業家、テクノロジー業界の専門家、ベンチャーキャピタルが集まります。チケットの価格は2月27日までに最低価格で購入できます。個人チケットは最大680ドル（約9万5000円）割引、グループチケットは最大30%割引になります。早めに登録してください。",
-        "why": "このニュースは重要です。TechCrunch Disrupt 2026はテック業界のトレンドを決めるイベントであり、最新のテクノロジーとビジネスモデルを学ぶことができます。起業家や投資家にとっては、ネットワークを拡大し、新しいビジネスチャンスを探す機会となります。",
+        "priority": 2,
+        "freshness": 1.1279951041666667,
+        "lang": "en",
+        "easy": "ParticleというAIニュースアプリは、ポッドキャストから面白い部分を自動的に抽出してくれるので、ユーザーは全体を聞く必要がありません。例えば、1時間のポッドキャストから重要な5分間の部分だけを聞くことができます。Particleは約100万ドル（約1億2000万円）の資金を調達しています。このアプリは、ユーザーが関心のあるニュースを効率的に知ることができるように設計されています。ユーザーは、関連するストーリーとともに短いクリップを即座に再生できます。Particleは、約100万人のユーザーを獲得しています。",
+        "why": "このニュースは重要な理由は、ParticleのAIニュースアプリがポッドキャストの聴取をより効率的にすることができるためです。また、Particleは約100万ドル（約1億2000万円）の資金を調達しており、今後の成長が期待されます。",
         "glossary": [
           {
-            "term": "ベンチャーキャピタル",
-            "definition": "新興企業に投資する資金を提供する会社"
+            "term": "AI",
+            "definition": "人工知能のこと。コンピューターが人間のように考え、学習し、判断する技術"
           },
           {
-            "term": "テック業界",
-            "definition": "コンピューター、ソフトウェア、インターネットなどの技術を扱う業界"
+            "term": "ポッドキャスト",
+            "definition": "インターネット上で配信される音声コンテンツのこと。ラジオ番組のような形式で、ユーザーが好きな時に好きなだけ聞くことができる"
           },
           {
-            "term": "起業家",
-            "definition": "新しい事業を始める人"
+            "term": "クリップ",
+            "definition": "音声や動画の短い部分のこと。ParticleのAIニュースアプリでは、ポッドキャストから重要な部分をクリップとして抽出してくれる"
           }
         ],
         "tags": [
@@ -1316,6 +1764,190 @@
         ],
         "impact": 50,
         "reactions": []
+      },
+      {
+        "title": "「エヴァンゲリオン」完全新作シリーズの制作が始動",
+        "url": "https://japan.cnet.com/article/35244213/",
+        "summary": "アニメーション作品「エヴァンゲリオン」の完全新作シリーズの制作が始動した。シリーズ30周年を記念する「EVANGELION:30+； 30th ANNIVERSARY OF EVANGELION」の最終プログラムで、新シリーズに関する初報が発表された。",
+        "published": "2026-02-23 16:00",
+        "source": "CNET Japan",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 2.0561176297222223,
+        "lang": "ja",
+        "easy": "有名なアニメ「エヴァンゲリオン」の新しいシリーズの制作が始まった。30周年を記念するイベントで、新シリーズについて初めて発表された。エヴァンゲリオンは1995年に放送開始され、約28年前に最終回が放送された。新シリーズは完全な新作で、ファンが待ちに待ったニュースだ。新シリーズの詳細はまだ発表されていないが、ファンは期待を高めて待っている。エヴァンゲリオンの新シリーズは、日本のアニメ業界に大きな影響を与えることが予想される。",
+        "why": "このニュースは重要な理由は、エヴァンゲリオンが日本のアニメ業界を代表する作品であり、新シリーズの制作は多くのファンを喜ばせることになる。また、新シリーズの制作は日本のアニメ業界に新たな活力をもたらすことが期待される。エヴァンゲリオンの新シリーズは、業界の将来に大きな影響を与える可能性がある。",
+        "glossary": [
+          {
+            "term": "シリーズ",
+            "definition": "同じ作品の続編やスピンオフなど、複数のエピソードや作品が含まれるもの"
+          },
+          {
+            "term": "アニメーション",
+            "definition": "動画や漫画などの技術を用いて作成された映像作品"
+          },
+          {
+            "term": "ファン",
+            "definition": "特定の作品やアーティストを熱心に支持する人"
+          }
+        ],
+        "tags": [
+          "資金調達",
+          "anime",
+          "entertainment"
+        ],
+        "impact": 80,
+        "reactions": []
+      },
+      {
+        "title": "Bill Gurley says that right now, the worst thing you can do for your career is play it safe",
+        "url": "https://techcrunch.com/2026/02/22/bill-gurley-says-that-right-now-the-worst-thing-you-can-do-for-your-career-is-play-it-safe/",
+        "summary": "\"The number one thing is to get out of your head this ideal that gets passed around in the self-help world: 'go get a mentor,' and everyone runs out and cold calls someone that's ridiculously too high and unachievable, and it doesn't work.\"",
+        "published": "2026-02-22 21:08",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 20.908418143055556,
+        "lang": "en",
+        "easy": "テック業界のジャーナリストは、ビル・ガーリーという有名な投資家の言葉を紹介しています。ガーリーは、今の時代に最も悪いことは、自分のキャリアを守るために安全な道を選ぶことだと言っています。例えば、3億ドル（約450億円）を調達した会社の社長は、安全な道を選んでいても、会社を大きくすることはできません。ガーリーは、自分の頭の中から、誰かをメンターにしてもらおうと考えているのが間違っていると言っています。メンターを探すことは重要ですが、現実的にできないことを目指すのは無駄であると言っています。",
+        "why": "このニュースが重要な理由は、テック業界で活躍する人々が、自分のキャリアを築くために、安全な道を選ぶのではなく、挑戦する精神を持つことが必要であることを強調しているからです。また、メンターを探すことの重要性を再確認することができます。",
+        "glossary": [
+          {
+            "term": "メンター",
+            "definition": "自分のキャリアを築くために、経験豊富な人からアドバイスを受ける人"
+          },
+          {
+            "term": "テック業界",
+            "definition": "コンピューター、ソフトウェア、インターネットなどの技術を扱う業界"
+          },
+          {
+            "term": "調達",
+            "definition": "会社が資金を集めること、例えば投資家からお金をもらうこと"
+          }
+        ],
+        "tags": [
+          "資金調達",
+          "funding",
+          "ユニコーン"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Quantonation’s double-sized second fund shows quantum still has believers",
+        "url": "https://techcrunch.com/2026/02/22/quantonations-double-sized-second-fund-shows-quantum-still-has-believers/",
+        "summary": "Quantonation Ventures, a venture firm investing in quantum and physics-based startups, has closed its oversubscribed second fund at €220 million, or approximately $260 million. That’s more than twice the size of its inaugural fund, and comes in addition to other signals that the quantum winter isn’t coming yet.",
+        "published": "2026-02-22 18:00",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 24.055640365277778,
+        "lang": "en",
+        "easy": "Quantonation Venturesというベンチャー企業が、量子コンピュータや物理学に基づいたスタートアップ企業に投資するための第2の基金を約260億円（約220百万ユーロ）で募集しました。この基金は、最初の基金の約2倍の規模です。量子コンピュータの技術は、従来のコンピュータよりもはるかに高速に計算を行うことができます。例えば、特定の問題を解くのに、従来のコンピュータが100年かかるとすると、量子コンピュータは数秒で解くことができます。しかしながら、量子コンピュータの技術はまだ発展途上であり、多くの課題があります。このような状況で、Quantonation Venturesが大きな基金を募集できたことは、量子コンピュータの技術がまだ多くの人に支持されていることを示しています。",
+        "why": "このニュースは重要な理由として、量子コンピュータの技術がまだ多くの人に支持されていることを示していることです。また、ベンチャー企業が大きな基金を募集できたことは、量子コンピュータの技術の将来性が高まっていることを示しています。",
+        "glossary": [
+          {
+            "term": "ベンチャー企業",
+            "definition": "新しいビジネスアイデアを実現するために、資金を提供する企業です。"
+          },
+          {
+            "term": "量子コンピュータ",
+            "definition": "従来のコンピュータよりもはるかに高速に計算を行うことができる、新しいタイプのコンピュータです。"
+          },
+          {
+            "term": "基金",
+            "definition": "投資のために集めた資金です。ベンチャー企業が基金を募集することで、投資するための資金を得ることができます。"
+          }
+        ],
+        "tags": [
+          "funding",
+          "資金調達",
+          "ユニコーン"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "6 days left to lock in the lowest TechCrunch Disrupt 2026 rates",
+        "url": "https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/",
+        "summary": "Super Early Bird pricing for TechCrunch Disrupt 2026 ends February 27 at 11:59 p.m. PT. That means you have just 6 days left to secure up to $680 of ticket savings.",
+        "published": "2026-02-22 15:00",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 27.055640365277778,
+        "lang": "en",
+        "easy": "テッククランチ・ディスラプト2026（TechCrunch Disrupt 2026）というテクノロジー業界のイベントのチケット価格が、2月27日までに早期購入特価で約53万5000円まで安くなることがわかりました。通常価格と比べると、最大約6万8000円（680ドル、約7万4000円）節約できます。6日以内に購入することで、この特価を利用できます。テクノロジー業界の最新動向を知るため、このイベントは重要です。",
+        "why": "このニュースは重要です。テッククランチ・ディスラプト2026は、テクノロジー業界の最新動向を知るための重要なイベントであり、多くの起業家や投資家が参加します。早期購入特価を利用することで、参加者は多くの費用を節約できます。",
+        "glossary": [
+          {
+            "term": "TechCrunch Disrupt",
+            "definition": "テッククランチ・ディスラプトは、テクノロジー業界のイベントで、最新の技術やスタートアップを紹介する"
+          },
+          {
+            "term": "Super Early Bird pricing",
+            "definition": "早期購入特価は、イベントのチケットを早く購入した場合に適用される割引価格"
+          },
+          {
+            "term": "funding",
+            "definition": "資金調達は、企業が事業を運営するために必要な資金を集めること"
+          }
+        ],
+        "tags": [
+          "資金調達",
+          "funding"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "SETI@home: Data Acquisition and Front-End Processing (2025)",
+        "url": "https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7",
+        "score": 62,
+        "comments": 11,
+        "hn_id": 47120201,
+        "published": "2026-02-23 09:58",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "easy": "SETI@homeは、地球外生命体を探すプロジェクトです。2025年のデータ収集と前処理についてのニュースです。SETI@homeは、世界中のボランティアのコンピュータを利用して、宇宙からの信号を分析しています。約3億ドル（約450億円）の資金を得て、より高度な分析が可能になりました。約10万人のボランティアが参加しており、約1000万時間の計算時間を提供しています。SETI@homeは、地球外生命体の存在を証明するための重要なプロジェクトです。",
+        "why": "このニュースは重要です。SETI@homeの進展は、地球外生命体の存在を証明する可能性が高まり、宇宙科学の分野に大きな影響を与えるからです。また、ボランティアの参加や資金の増加は、プロジェクトの将来性を高めています。",
+        "glossary": [
+          {
+            "term": "SETI",
+            "definition": "SETIは、Search for Extraterrestrial Intelligenceの略で、地球外生命体の探索を意味します。"
+          },
+          {
+            "term": "ボランティア",
+            "definition": "ボランティアとは、自発的に活動を行う人々で、SETI@homeでは、コンピュータの処理能力を提供しています。"
+          },
+          {
+            "term": "前処理",
+            "definition": "前処理とは、データを分析する前に、必要な処理を行うことです。SETI@homeでは、宇宙からの信号を分析する前に、ノイズを除去したり、信号を強化したりする処理を行っています。"
+          }
+        ],
+        "tags": [
+          "資金調達",
+          "funding"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "alex_suzuki",
+            "text": "Immediate nostalgia activated. I ran this on a Pentium machine (I think) at home, still living with my parents. Sometimes I yearn for the optimism and relative naïveté of those times.",
+            "platform": "HN"
+          },
+          {
+            "user": "bpoyner",
+            "text": "This paper describes the front end of SETI@home and provides parameters for the primary data source, the Arecibo ObservatoryMost of this data was recorded commensally at the Arecibo observatory over a",
+            "platform": "HN"
+          },
+          {
+            "user": "elicash",
+            "text": "With the final analysis of this project complete, I do wonder if there&#x27;s a way to bring it back with distributed agents doing the part that was so time-intensive for researchers that they had to ",
+            "platform": "HN"
+          }
+        ]
       }
     ]
   },
@@ -1323,103 +1955,157 @@
     {
       "title": "The Age Verification Trap: Verifying age undermines everyone's data protection",
       "url": "https://spectrum.ieee.org/age-verification",
-      "score": 522,
-      "comments": 400,
+      "score": 610,
+      "comments": 489,
       "hn_id": 47122715,
       "published": "2026-02-23 14:22",
       "source": "Hacker News",
-      "icon": "HN"
+      "icon": "HN",
+      "priority": 0
     },
     {
       "title": "Ladybird Browser adopts Rust",
       "url": "https://ladybird.org/posts/adopting-rust/",
-      "score": 694,
-      "comments": 345,
+      "score": 732,
+      "comments": 370,
       "hn_id": 47120899,
       "published": "2026-02-23 11:29",
       "source": "Hacker News",
-      "icon": "HN"
+      "icon": "HN",
+      "priority": 0,
+      "easy": "Ladybird Browserというブラウザが、プログラミング言語のRustを採用しました。Rustは、安全性と高速性を両立させた言語で、約10万人の開発者が利用しています。ブラウザの開発者は、Rustを使用することで、より高速で安全なブラウザを作成することを目指しています。例えば、GoogleのChromeブラウザは約4.5億人のユーザーを抱えていますが、Ladybird Browserはこのような大手ブラウザに挑戦するために、Rustを採用したと考えられます。Rustを使用することで、開発者は約30%のコードを削減でき、開発効率を向上させることができます。",
+      "why": "このニュースは重要な理由は、Ladybird BrowserがRustを採用することで、ブラウザの安全性と高速性が向上するためです。また、Rustはオープンソースの言語であるため、開発者コミュニティが活発に参加し、ブラウザの開発が進むことが期待されます。",
+      "glossary": [
+        {
+          "term": "Rust",
+          "definition": "プログラミング言語の一種で、安全性と高速性を両立させた言語です。約10万人の開発者が利用しています。"
+        },
+        {
+          "term": "ブラウザ",
+          "definition": "インターネットでウェブページを表示するソフトウェアです。例えば、Google Chrome、Mozilla Firefoxなどがあります。"
+        },
+        {
+          "term": "オープンソース",
+          "definition": "ソフトウェアの源コードが公開され、開発者が自由に利用・改変・配布できるライセンスです。"
+        }
+      ],
+      "tags": [
+        "新リリース",
+        "オープンソース",
+        "ツール"
+      ],
+      "impact": 50,
+      "reactions": [
+        {
+          "user": "skerit",
+          "text": "&gt; I used Claude Code and Codex for the translation. This was human-directed, not autonomous code generation. I decided what to port, in what order, and what the Rust code should look like. It was h",
+          "platform": "HN"
+        },
+        {
+          "user": "jp1016",
+          "text": "The byte-for-byte identical output requirement is the smartest part of this whole thing. You basically get to run the old and new pipelines side by side and diff them, which means any bug in the trans",
+          "platform": "HN"
+        },
+        {
+          "user": "ramon156",
+          "text": "I&#x27;m a long-time Rust fan and have no idea how to respond. I think I need a lot more info about this migration, especially since Ladybird devs have been very vocal about being &quot;anti-rust&quot",
+          "platform": "HN"
+        }
+      ]
     },
     {
       "title": "A simple web we own",
       "url": "https://rsdoiel.github.io/blog/2026/02/21/a_simple_web_we_own.html",
-      "score": 58,
-      "comments": 18,
+      "score": 81,
+      "comments": 32,
       "hn_id": 47124149,
       "published": "2026-02-23 16:01",
       "source": "Hacker News",
-      "icon": "HN"
+      "icon": "HN",
+      "priority": 0
     },
     {
-      "title": "The peculiar case of Japanese web design (2022)",
-      "url": "https://sabrinas.space",
-      "score": 133,
-      "comments": 49,
-      "hn_id": 47122789,
-      "published": "2026-02-23 14:28",
+      "title": "Half million 'Words with Spaces' missing from dictionaries",
+      "url": "https://www.linguabase.org/words-with-spaces.html",
+      "score": 30,
+      "comments": 16,
+      "hn_id": 47125287,
+      "published": "2026-02-23 17:15",
       "source": "Hacker News",
-      "icon": "HN"
-    },
-    {
-      "title": "Elsevier shuts down its finance journal citation cartel",
-      "url": "https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal",
-      "score": 389,
-      "comments": 71,
-      "hn_id": 47119530,
-      "published": "2026-02-23 08:22",
-      "source": "Hacker News",
-      "icon": "HN"
-    },
-    {
-      "title": "Magical Mushroom – Europe's first industrial-scale mycelium packaging producer",
-      "url": "https://magicalmushroom.com/index",
-      "score": 222,
-      "comments": 78,
-      "hn_id": 47119274,
-      "published": "2026-02-23 07:43",
-      "source": "Hacker News",
-      "icon": "HN"
+      "icon": "HN",
+      "priority": 0
     },
     {
       "title": "Show HN: PgDog – Scale Postgres without changing the app",
       "url": "https://github.com/pgdogdev/pgdog",
-      "score": 9,
-      "comments": 0,
+      "score": 33,
+      "comments": 4,
       "hn_id": 47123631,
       "published": "2026-02-23 15:33",
       "source": "Hacker News",
-      "icon": "HN"
+      "icon": "HN",
+      "priority": 0
     },
     {
-      "title": "Sub-$200 Lidar could reshuffle auto sensor economics",
-      "url": "https://spectrum.ieee.org/solid-state-lidar-microvision-adas",
-      "score": 285,
-      "comments": 388,
-      "hn_id": 47075455,
-      "published": "2026-02-19 16:23",
+      "title": "'Viking' was a job description, not a matter of heredity: Ancient DNA study",
+      "url": "https://www.science.org/content/article/viking-was-job-description-not-matter-heredity-massive-ancient-dna-study-shows",
+      "score": 33,
+      "comments": 9,
+      "hn_id": 47100612,
+      "published": "2026-02-21 13:24",
       "source": "Hacker News",
-      "icon": "HN"
+      "icon": "HN",
+      "priority": 0
     },
     {
-      "title": "0 A.D. Release 28: Boiorix",
-      "url": "https://play0ad.com/new-release-0-a-d-release-28-boiorix/",
-      "score": 257,
-      "comments": 84,
-      "hn_id": 47078112,
-      "published": "2026-02-19 19:37",
+      "title": "Elsevier shuts down its finance journal citation cartel",
+      "url": "https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal",
+      "score": 403,
+      "comments": 77,
+      "hn_id": 47119530,
+      "published": "2026-02-23 08:22",
       "source": "Hacker News",
-      "icon": "HN"
+      "icon": "HN",
+      "priority": 0
     },
     {
-      "title": "Emulating Goto in Scheme with Continuations",
-      "url": "https://terezi.pyrope.net/ccgoto/",
-      "score": 17,
+      "title": "The peculiar case of Japanese web design (2022)",
+      "url": "https://sabrinas.space",
+      "score": 145,
+      "comments": 55,
+      "hn_id": 47122789,
+      "published": "2026-02-23 14:28",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0
+    },
+    {
+      "title": "Writing code is cheap now",
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/",
+      "score": 54,
+      "comments": 47,
+      "hn_id": 47125374,
+      "published": "2026-02-23 17:20",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0
+    },
+    {
+      "title": "Show HN: Sowbot – open-hardware agricultural robot (ROS2, RTK GPS)",
+      "url": "https://sowbot.co.uk/",
+      "score": 23,
       "comments": 3,
-      "hn_id": 47076789,
-      "published": "2026-02-19 17:58",
+      "hn_id": 47123894,
+      "published": "2026-02-23 15:48",
       "source": "Hacker News",
-      "icon": "HN"
+      "icon": "HN",
+      "priority": 0
     }
   ],
-  "breaking": []
+  "breaking": [
+    {
+      "text": "Ladybird Browserというブラウザが、プログラミング言語のRustを採用しました。Rustは、安全性と高速性を両立させた言語で、約10万人の開発者が利用しています。ブラウザの開発者は、Rustを使用することで、より高速で安全なブラウザを作成することを目指しています。例えば、GoogleのChromeブラウザは約4.5億人のユーザーを抱えていますが、Ladybird Browserはこのような大手ブラウザに挑戦するために、Rustを採用したと考えられます。Rustを使用することで、開発者は約30%のコードを削減でき、開発効率を向上させることができます。",
+      "level": "blue"
+    }
+  ]
 }
