@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-Tech Pulse v2 - ニュース取得スクリプト（強化版）
-HN API, Reddit JSON, RSSフィードからニュースを取得し、
-Gemini APIで詳細な日本語解説・用語集・開発者反応を生成する
+Tech Pulse v3 - ニュース取得スクリプト（修正版）
+Gemini APIモデル名修正、エラーハンドリング強化、Reddit修正
 """
 
 import json
@@ -21,7 +20,14 @@ DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+
+# 複数モデルを試行（無料枠で使えるモデル優先）
+GEMINI_MODELS = [
+    "gemini-1.5-flash",
+    "gemini-1.5-flash-latest",
+    "gemini-2.0-flash",
+]
+GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
 
 MAX_PER_TAB = 6
 
@@ -70,17 +76,17 @@ FEEDS = {
     ],
 }
 
+# Reddit: 個別サブレディット（結合URLだとブロックされるため）
 REDDIT_SUBS = {
-    "ai": "MachineLearning+artificial+LocalLLaMA",
-    "devtools": "programming+webdev+devops",
-    "data_dx": "dataengineering+datascience",
-    "cloud": "aws+googlecloud+azure",
-    "security": "netsec+cybersecurity",
-    "hardware": "hardware+chipdesign",
-    "funding": "startups+venturecapital",
+    "ai": ["MachineLearning", "LocalLLaMA"],
+    "devtools": ["programming", "webdev"],
+    "data_dx": ["dataengineering"],
+    "cloud": ["aws"],
+    "security": ["netsec"],
+    "hardware": ["hardware"],
+    "funding": ["startups"],
 }
 
-# タグの日本語マッピング
 TAG_KEYWORDS = {
     "ai": {"release": "新リリース", "model": "AIモデル", "agent": "エージェント", "benchmark": "ベンチマーク", "oss": "オープンソース", "policy": "規制・政策", "funding": "資金調達", "product": "製品"},
     "devtools": {"release": "新リリース", "framework": "フレームワーク", "oss": "オープンソース", "update": "アップデート", "tool": "ツール"},
@@ -92,10 +98,39 @@ TAG_KEYWORDS = {
 }
 
 
+# ─── Gemini API（モデル自動選択） ────────────────────────
+
+def find_working_model():
+    """利用可能なGeminiモデルを見つける"""
+    if not GEMINI_API_KEY:
+        print("  [ERROR] GEMINI_API_KEY が設定されていません")
+        return None
+
+    for model in GEMINI_MODELS:
+        try:
+            url = f"{GEMINI_BASE}/{model}:generateContent?key={GEMINI_API_KEY}"
+            resp = requests.post(
+                url,
+                json={"contents": [{"parts": [{"text": "Hello, respond with just OK"}]}]},
+                timeout=15
+            )
+            data = resp.json()
+            if "candidates" in data:
+                print(f"  [OK] 使用モデル: {model}")
+                return model
+            else:
+                error_msg = data.get("error", {}).get("message", str(data)[:200])
+                print(f"  [SKIP] {model}: {error_msg}")
+        except Exception as e:
+            print(f"  [SKIP] {model}: {e}")
+
+    print("  [ERROR] 利用可能なGeminiモデルが見つかりません")
+    return None
+
+
 # ─── ニュース取得関数 ─────────────────────────────────────
 
 def fetch_rss(feed_info):
-    """RSSフィードから記事を取得"""
     try:
         resp = requests.get(feed_info["url"], timeout=15, headers={"User-Agent": "TechPulse/2.0"})
         feed = feedparser.parse(resp.text)
@@ -126,7 +161,6 @@ def fetch_rss(feed_info):
 
 
 def fetch_hn_top(limit=25):
-    """Hacker News トップ記事を取得"""
     try:
         ids = requests.get("https://hacker-news.firebaseio.com/v0/topstories.json", timeout=10).json()
         articles = []
@@ -154,7 +188,6 @@ def fetch_hn_top(limit=25):
 
 
 def fetch_hn_comments(hn_id, limit=3):
-    """HN記事のトップコメントを取得"""
     try:
         item = requests.get(f"https://hacker-news.firebaseio.com/v0/item/{hn_id}.json", timeout=5).json()
         kid_ids = item.get("kids", [])[:limit * 2]
@@ -167,11 +200,7 @@ def fetch_hn_comments(hn_id, limit=3):
                 text = kid.get("text", "")
                 text = re.sub(r"<[^>]+>", "", text)[:200]
                 if len(text) > 20:
-                    comments.append({
-                        "user": kid.get("by", "anon"),
-                        "text": text,
-                        "platform": "HN",
-                    })
+                    comments.append({"user": kid.get("by", "anon"), "text": text, "platform": "HN"})
                 if len(comments) >= limit:
                     break
             except Exception:
@@ -181,47 +210,45 @@ def fetch_hn_comments(hn_id, limit=3):
         return []
 
 
-def fetch_reddit(subreddit, limit=10):
-    """Redditサブレディットからホット記事を取得"""
-    try:
-        url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit={limit}"
-        resp = requests.get(url, timeout=10, headers={"User-Agent": "TechPulse/2.0"}).json()
-        articles = []
-        for post in resp.get("data", {}).get("children", []):
-            d = post["data"]
-            if d.get("stickied"):
+def fetch_reddit(subreddits, limit=5):
+    """個別サブレディットからホット記事を取得"""
+    articles = []
+    for sub in subreddits:
+        try:
+            url = f"https://www.reddit.com/r/{sub}/hot.json?limit={limit}"
+            headers = {"User-Agent": "Mozilla/5.0 (compatible; TechPulse/2.0; +https://github.com/kosih77778/tech-pulse)"}
+            resp = requests.get(url, timeout=10, headers=headers)
+            if resp.status_code != 200:
+                print(f"    [WARN] Reddit r/{sub}: status {resp.status_code}")
                 continue
-            articles.append({
-                "title": d.get("title", ""),
-                "url": d.get("url", ""),
-                "score": d.get("score", 0),
-                "comments": d.get("num_comments", 0),
-                "subreddit": d.get("subreddit", ""),
-                "published": datetime.fromtimestamp(d.get("created_utc", 0), tz=timezone.utc).strftime("%Y-%m-%d %H:%M"),
-                "source": f"r/{d.get('subreddit', '')}",
-                "icon": "Re",
-            })
-        return articles
-    except Exception as e:
-        print(f"  [WARN] Reddit failed: r/{subreddit}: {e}")
-        return []
+            data = resp.json()
+            for post in data.get("data", {}).get("children", []):
+                d = post["data"]
+                if d.get("stickied"):
+                    continue
+                articles.append({
+                    "title": d.get("title", ""),
+                    "url": d.get("url", ""),
+                    "score": d.get("score", 0),
+                    "comments": d.get("num_comments", 0),
+                    "subreddit": d.get("subreddit", ""),
+                    "published": datetime.fromtimestamp(d.get("created_utc", 0), tz=timezone.utc).strftime("%Y-%m-%d %H:%M"),
+                    "source": f"r/{d.get('subreddit', '')}",
+                    "icon": "Re",
+                })
+        except Exception as e:
+            print(f"    [WARN] Reddit r/{sub}: {e}")
+    return articles
 
 
-# ─── Gemini API 強化版 ──────────────────────────────────
+# ─── Gemini API 解説生成 ─────────────────────────────────
 
-def generate_rich_explanation(title, summary, tab_id):
-    """Geminiで詳細な解説・用語集・タグ・重要度を生成"""
-    if not GEMINI_API_KEY:
-        return {
-            "easy": f"「{title}」についてのニュースです。詳細は記事本文をご確認ください。",
-            "why": "テック業界の最新動向として注目されています。",
-            "glossary": [],
-            "tags": ["ニュース"],
-            "impact": 50,
-        }
+def generate_rich_explanation(title, summary, tab_id, model_name):
+    if not model_name:
+        return _fallback(title)
 
     available_tags = TAG_KEYWORDS.get(tab_id, TAG_KEYWORDS["ai"])
-    tags_str = "、".join([f'"{k}"({v})' for k, v in available_tags.items()])
+    tags_str = ", ".join([f'"{k}"' for k in available_tags.keys()])
 
     prompt = f"""あなたはテック業界のジャーナリストです。以下のニュースを日本語で詳しく解説してください。
 
@@ -229,25 +256,26 @@ def generate_rich_explanation(title, summary, tab_id):
 内容: {summary[:600]}
 カテゴリ: {tab_id}
 
-以下のJSON形式で返してください（JSONのみ、マークダウンのコードブロック不要）:
+必ず以下のJSON形式だけを返してください（マークダウンのコードブロック不要、JSON以外の文字を含めないで）:
 {{
-  "easy": "専門用語を使わず、中学生にもわかるように4-6文で詳しく説明。具体的な数字や比較を含めて。重要な部分は強調する。ドル表記は円換算も併記（例：3億ドル（約450億円））",
-  "why": "このニュースが重要な理由を2文で説明。業界への影響や、今後どうなりそうかも含めて。",
+  "easy": "専門用語を使わず中学生にもわかるように4-6文で詳しく説明。具体的な数字や比較を入れる。ドル表記は円換算も併記（例：3億ドル（約450億円））。重要部分を強調。",
+  "why": "このニュースが重要な理由を2文で。業界への影響や今後の展望も含めて。",
   "glossary": [
-    {{"term": "専門用語1", "definition": "その用語の意味を、例え話や具体例を使って50文字以上で丁寧に説明"}},
+    {{"term": "専門用語1", "definition": "その用語のやさしい説明を50文字以上で"}},
     {{"term": "専門用語2", "definition": "同上"}},
-    {{"term": "専門用語3", "definition": "同上"}},
-    {{"term": "専門用語4", "definition": "同上"}}
+    {{"term": "専門用語3", "definition": "同上"}}
   ],
-  "tags": ["該当するタグを2-3個選択: {tags_str}"],
-  "impact": 1から100の数値で重要度を判定（90以上=業界を変える大ニュース、70-89=注目ニュース、50-69=一般ニュース、50未満=小ネタ）
+  "tags": ["該当するものを2-3個: {tags_str}"],
+  "impact": 50
 }}
 
-glossaryには記事に出てくる専門用語を3-4個含めてください。一般の人が知らないような用語を優先的に選んでください。"""
+impactは1-100の数値（90以上=業界を変える大ニュース、70-89=注目、50-69=一般、50未満=小ネタ）。
+glossaryは記事の専門用語を3個含めてください。"""
 
     try:
+        url = f"{GEMINI_BASE}/{model_name}:generateContent?key={GEMINI_API_KEY}"
         resp = requests.post(
-            f"{GEMINI_URL}?key={GEMINI_API_KEY}",
+            url,
             json={
                 "contents": [{"parts": [{"text": prompt}]}],
                 "generationConfig": {"temperature": 0.4, "maxOutputTokens": 1000}
@@ -255,16 +283,25 @@ glossaryには記事に出てくる専門用語を3-4個含めてください。
             timeout=45
         )
         data = resp.json()
+
+        if "candidates" not in data:
+            error_msg = data.get("error", {}).get("message", "unknown")
+            print(f"    [API Error] {error_msg[:100]}")
+            return _fallback(title)
+
         text = data["candidates"][0]["content"]["parts"][0]["text"]
 
+        # JSONを抽出（```json ... ``` でラップされている場合も対応）
+        text = re.sub(r"```json\s*", "", text)
+        text = re.sub(r"```\s*$", "", text)
         json_match = re.search(r'\{[\s\S]*\}', text)
         if json_match:
             result = json.loads(json_match.group())
-            tags_raw = result.get("tags", [])
+            available = TAG_KEYWORDS.get(tab_id, {})
             tags_ja = []
-            for t in tags_raw:
-                if t in available_tags:
-                    tags_ja.append(available_tags[t])
+            for t in result.get("tags", []):
+                if t in available:
+                    tags_ja.append(available[t])
                 else:
                     tags_ja.append(t)
 
@@ -275,12 +312,18 @@ glossaryには記事に出てくる専門用語を3-4個含めてください。
                 "tags": tags_ja[:3],
                 "impact": min(100, max(1, int(result.get("impact", 50)))),
             }
+        else:
+            print(f"    [WARN] JSON parse failed")
+            return _fallback(title)
     except Exception as e:
-        print(f"  [WARN] Gemini failed: {e}")
+        print(f"    [WARN] Gemini call failed: {e}")
+        return _fallback(title)
 
+
+def _fallback(title):
     return {
-        "easy": f"「{title}」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
+        "easy": f"「{title}」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": ["ニュース"],
         "impact": 50,
@@ -290,7 +333,6 @@ glossaryには記事に出てくる専門用語を3-4個含めてください。
 # ─── 速報判定 ────────────────────────────────────────────
 
 def detect_breaking(articles):
-    """スコアや反応数が高い記事を速報として抽出"""
     breaking = []
     for a in articles:
         score = a.get("score", 0)
@@ -307,9 +349,15 @@ def detect_breaking(articles):
 
 def main():
     print("=" * 60)
-    print("Tech Pulse v2 - ニュース取得開始（強化版）")
+    print("Tech Pulse v3 - ニュース取得開始")
     print(f"時刻: {datetime.now(JST).strftime('%Y-%m-%d %H:%M JST')}")
     print("=" * 60)
+
+    # Geminiモデル検出
+    print("\n[0/4] Gemini API モデルを検出中...")
+    model_name = find_working_model()
+    if not model_name:
+        print("  [WARNING] Geminiが使えません。フォールバックテキストで続行します。")
 
     all_data = {}
 
@@ -328,61 +376,54 @@ def main():
             print(f"  -> {feed['name']}: {len(articles)} 件")
 
         if tab_id in REDDIT_SUBS:
-            print(f"  [Reddit] r/{REDDIT_SUBS[tab_id]} を取得中...")
-            reddit_articles = fetch_reddit(REDDIT_SUBS[tab_id], limit=5)
+            subs = REDDIT_SUBS[tab_id]
+            print(f"  [Reddit] {', '.join(subs)} を取得中...")
+            reddit_articles = fetch_reddit(subs, limit=3)
             tab_articles.extend(reddit_articles)
             print(f"  -> Reddit: {len(reddit_articles)} 件")
 
         tab_articles.sort(key=lambda x: x.get("score", 0) + (1000 if x.get("published", "") > (datetime.now(timezone.utc) - timedelta(hours=24)).strftime("%Y-%m-%d") else 0), reverse=True)
         tab_articles = tab_articles[:MAX_PER_TAB]
 
-        # Geminiで詳細解説を生成
         print(f"  [Gemini] {len(tab_articles)} 件の解説を生成中...")
         for i, article in enumerate(tab_articles):
-            explanation = generate_rich_explanation(article["title"], article.get("summary", ""), tab_id)
+            explanation = generate_rich_explanation(article["title"], article.get("summary", ""), tab_id, model_name)
             article["easy"] = explanation["easy"]
             article["why"] = explanation["why"]
             article["glossary"] = explanation["glossary"]
             article["tags"] = explanation["tags"]
             article["impact"] = explanation["impact"]
 
-            # HN記事なら開発者コメントも取得
             if article.get("hn_id"):
-                print(f"    [HN Comments] id={article['hn_id']}")
                 article["reactions"] = fetch_hn_comments(article["hn_id"], limit=3)
             else:
                 article["reactions"] = []
 
-            # API レート制限対策
-            if GEMINI_API_KEY and i < len(tab_articles) - 1:
+            if model_name and i < len(tab_articles) - 1:
                 time.sleep(5)
 
         all_data[tab_id] = tab_articles
 
-    # HN記事をAIタブに追加
-    ai_keywords = ["ai", "llm", "gpt", "claude", "gemini", "model", "neural", "ml", "openai", "anthropic", "deepseek", "transformer", "agent"]
-    hn_for_ai = [a for a in hn_articles if any(kw in a["title"].lower() for kw in ai_keywords)][:3]
+    # HN AI記事追加
+    ai_kw = ["ai", "llm", "gpt", "claude", "gemini", "model", "neural", "ml", "openai", "anthropic", "deepseek", "transformer", "agent"]
+    hn_for_ai = [a for a in hn_articles if any(kw in a["title"].lower() for kw in ai_kw)][:3]
     if hn_for_ai:
         for article in hn_for_ai:
-            explanation = generate_rich_explanation(article["title"], "", "ai")
+            explanation = generate_rich_explanation(article["title"], "", "ai", model_name)
             article.update(explanation)
-            if article.get("hn_id"):
-                article["reactions"] = fetch_hn_comments(article["hn_id"], limit=3)
-            else:
-                article["reactions"] = []
-            if GEMINI_API_KEY:
+            article["reactions"] = fetch_hn_comments(article["hn_id"], limit=3) if article.get("hn_id") else []
+            if model_name:
                 time.sleep(5)
-        existing_titles = {a["title"] for a in all_data.get("ai", [])}
-        new_hn = [a for a in hn_for_ai if a["title"] not in existing_titles]
+        existing = {a["title"] for a in all_data.get("ai", [])}
+        new_hn = [a for a in hn_for_ai if a["title"] not in existing]
         all_data["ai"] = (all_data.get("ai", []) + new_hn)[:MAX_PER_TAB]
 
-    # 速報検出
-    all_articles = []
-    for articles in all_data.values():
-        all_articles.extend(articles)
-    breaking = detect_breaking(all_articles)
+    # 速報
+    all_arts = []
+    for arts in all_data.values():
+        all_arts.extend(arts)
+    breaking = detect_breaking(all_arts)
 
-    # データ保存
     output = {
         "updated_at": datetime.now(JST).strftime("%Y-%m-%d %H:%M JST"),
         "updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -397,7 +438,8 @@ def main():
 
     total = sum(len(v) for v in all_data.values())
     print(f"\n{'=' * 60}")
-    print(f"完了！合計 {total} 件（速報 {len(breaking)} 件）を {output_path} に保存")
+    print(f"完了！合計 {total} 件（速報 {len(breaking)} 件）を保存")
+    print(f"使用モデル: {model_name or 'なし（フォールバック）'}")
     print(f"{'=' * 60}")
 
 
