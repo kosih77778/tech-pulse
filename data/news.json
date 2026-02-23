@@ -1,8 +1,24 @@
 {
-  "updated_at": "2026-02-24 00:44 JST",
-  "updated_utc": "2026-02-23T15:44:06Z",
+  "updated_at": "2026-02-24 01:14 JST",
+  "updated_utc": "2026-02-23T16:14:51Z",
   "tabs": {
     "ai": [
+      {
+        "title": "OpenAI announces Frontier Alliance Partners",
+        "url": "https://openai.com/index/frontier-alliance-partners",
+        "summary": "OpenAI announces Frontier Alliance Partners to help enterprises move from AI pilots to production with secure, scalable agent deployments.",
+        "published": "2026-02-23 05:30",
+        "source": "OpenAI Blog",
+        "icon": "O",
+        "easy": "「OpenAI announces Frontier Alliance Partners」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
       {
         "title": "5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates",
         "url": "https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/",
@@ -12,7 +28,12 @@
         "icon": "TC",
         "easy": "「5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "How AI agents could destroy the economy",
@@ -23,7 +44,12 @@
         "icon": "TC",
         "easy": "「How AI agents could destroy the economy」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Defense Secretary summons Anthropic’s Amodei over military use of Claude",
@@ -34,18 +60,12 @@
         "icon": "TC",
         "easy": "「Defense Secretary summons Anthropic’s Amodei over military use of Claude」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "OpenAI announces Frontier Alliance Partners",
-        "url": "https://openai.com/index/frontier-alliance-partners",
-        "summary": "OpenAI announces Frontier Alliance Partners to help enterprises move from AI pilots to production with secure, scalable agent deployments.",
-        "published": "2026-02-23 05:30",
-        "source": "OpenAI Blog",
-        "icon": "O",
-        "easy": "「OpenAI announces Frontier Alliance Partners」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "All the important news from the ongoing India AI Impact Summit",
@@ -56,7 +76,12 @@
         "icon": "TC",
         "easy": "「All the important news from the ongoing India AI Impact Summit」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "6 days left to lock in the lowest TechCrunch Disrupt 2026 rates",
@@ -67,32 +92,31 @@
         "icon": "TC",
         "easy": "「6 days left to lock in the lowest TechCrunch Disrupt 2026 rates」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Our First Proof submissions",
-        "url": "https://openai.com/index/first-proof-submissions",
-        "summary": "We share our AI model’s proof attempts for the First Proof math challenge, testing research-grade reasoning on expert-level problems.",
-        "published": "2026-02-20 14:30",
-        "source": "OpenAI Blog",
-        "icon": "O",
-        "easy": "「Our First Proof submissions」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
-        "url": "https://huggingface.co/blog/ggml-joins-hf",
-        "summary": "",
-        "published": "2026-02-20 00:00",
-        "source": "Hugging Face",
-        "icon": "HF",
-        "easy": "「GGML and llama.cpp join HF to ensure the long-term progress of Local AI」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       }
     ],
     "devtools": [
+      {
+        "title": "Rust debugging survey 2026",
+        "url": "https://blog.rust-lang.org/2026/02/23/rust-debugging-survey-2026/",
+        "summary": "We're launching a Rust Debugging Survey.\nVarious issues with debugging Rust code are often mentioned as one of the biggest challenges that annoy Rust developers. While it is definitely possible to debug Rust code today, there are situations where it does not work well enough, and the quality of debugging support also varies a lot across different debuggers and operating systems.\nIn order for Rust to have truly stellar debugging support, it should ideally:\n\nSupport (several versions!) of different debuggers (such as GDB, LLDB or CDB) across multiple operating systems.\nImplement debugger visualizers that are able to produce quality presentation of most Rust types.\nProvide first-class support for debugging async code.\nAllow evaluating Rust expressions in the debugger.\n\nRust is not quite there",
+        "published": "2026-02-23 00:00",
+        "source": "Rust Blog",
+        "icon": "Rs",
+        "easy": "「Rust debugging survey 2026」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
       {
         "title": "How AI is reshaping developer choice (and Octoverse data proves it)",
         "url": "https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/",
@@ -102,29 +126,12 @@
         "icon": "GH",
         "easy": "「How AI is reshaping developer choice (and Octoverse data proves it)」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "New HackerOne Signal Requirement for Vulnerability Reports",
-        "url": "https://nodejs.org/en/blog/announcements/hackerone-signal-requirement",
-        "summary": "",
-        "published": "2026-02-19 12:00",
-        "source": "Node.js Blog",
-        "icon": "NJ",
-        "easy": "「New HackerOne Signal Requirement for Vulnerability Reports」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Rust participates in Google Summer of Code 2026",
-        "url": "https://blog.rust-lang.org/2026/02/19/Rust-participates-in-GSoC-2026/",
-        "summary": "We are happy to announce that the Rust Project will again be participating in Google Summer of Code (GSoC) 2026, same as in the previous two years. If you're not eligible or interested in participating in GSoC, then most of this post likely isn't relevant to you; if you are, this should contain some useful information and links.\nGoogle Summer of Code (GSoC) is an annual global program organized by Google that aims to bring new contributors to the world of open-source. The program pairs organizat",
-        "published": "2026-02-19 00:00",
-        "source": "Rust Blog",
-        "icon": "Rs",
-        "easy": "「Rust participates in Google Summer of Code 2026」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "What to expect for open source in 2026",
@@ -135,18 +142,12 @@
         "icon": "GH",
         "easy": "「What to expect for open source in 2026」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "TFVC Remove Existing Obsolete Policies ASAP",
-        "url": "https://devblogs.microsoft.com/devops/tfvc-remove-existing-obsolete-policies-asap/",
-        "summary": "In April 2025, we announced the deprecation schedule for legacy TFVC check-in policies. This change was required due to limitations in how those policies were previously implemented and stored. The old policies have been marked as obsolete, and you can replace them by selecting the equivalent updated policy. We are currently in Phase II of [&#8230;]\nThe post TFVC Remove Existing Obsolete Policies ASAP appeared first on Azure DevOps Blog.",
-        "published": "2026-02-18 16:35",
-        "source": "Azure DevOps Blog",
-        "icon": "MS",
-        "easy": "「TFVC Remove Existing Obsolete Policies ASAP」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Securing the AI software supply chain: Security results across 67 open source projects",
@@ -157,18 +158,12 @@
         "icon": "GH",
         "easy": "「Securing the AI software supply chain: Security results across 67 open source projects」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Condensed views on Kanban and Sprint boards",
-        "url": "https://devblogs.microsoft.com/devops/condensed-views-on-kanban-and-sprint-boards/",
-        "summary": "One of the challenges teams face when working with large boards or displaying multiple fields on work item cards is limited screen space. This became even more noticeable with the rollout of the New Boards hub, which introduced additional spacing and padding for improved readability. While this enhances clarity, it can also reduce the number [&#8230;]\nThe post Condensed views on Kanban and Sprint boards appeared first on Azure DevOps Blog.",
-        "published": "2026-02-16 20:53",
-        "source": "Azure DevOps Blog",
-        "icon": "MS",
-        "easy": "「Condensed views on Kanban and Sprint boards」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Automate repository tasks with GitHub Agentic Workflows",
@@ -179,7 +174,28 @@
         "icon": "GH",
         "easy": "「Automate repository tasks with GitHub Agentic Workflows」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Welcome to the Eternal September of open source. Here’s what we plan to do for maintainers.",
+        "url": "https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/",
+        "summary": "Open source is hitting an “Eternal September.” As contribution friction drops, maintainers are adapting with new trust signals, triage approaches, and community-led solutions.\nThe post Welcome to the Eternal September of open source. Here&#8217;s what we plan to do for maintainers. appeared first on The GitHub Blog.",
+        "published": "2026-02-12 20:14",
+        "source": "GitHub Blog",
+        "icon": "GH",
+        "easy": "「Welcome to the Eternal September of open source. Here’s what we plan to do for maintainers.」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       }
     ],
     "data_dx": [
@@ -192,7 +208,76 @@
         "icon": "dbt",
         "easy": "「Data ins and outs for 2026: what data teams are keeping, cutting, and reconsidering」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "How dbt Labs reduced dbt-related compute costs by 64% with Fusion and state-aware orchestration",
+        "url": "https://www.getdbt.com/blog/dbt-compute-cost-reduction-fusion-state-aware-orchestration",
+        "summary": "With intelligent orchestration and optimization, we achieved a 64% reduction in compute costs and simplified our job architecture.",
+        "published": "2026-02-12 21:13",
+        "source": "dbt Blog",
+        "icon": "dbt",
+        "easy": "「How dbt Labs reduced dbt-related compute costs by 64% with Fusion and state-aware orchestration」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Maximize the business value of your data platform with dbt",
+        "url": "https://www.getdbt.com/blog/dbt-business-value",
+        "summary": "Learn how tools like Fusion’s state-aware orchestration deliver real business value.",
+        "published": "2026-02-11 20:15",
+        "source": "dbt Blog",
+        "icon": "dbt",
+        "easy": "「Maximize the business value of your data platform with dbt」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Bring structured context to Snowflake Intelligence with dbt",
+        "url": "https://www.getdbt.com/blog/bring-structured-context-to-snowflake-intelligence-with-dbt",
+        "summary": "Power reliable Cortex and Snowflake Intelligence experiences with dbt and Snowflake Semantic Views.",
+        "published": "2026-02-11 16:33",
+        "source": "dbt Blog",
+        "icon": "dbt",
+        "easy": "「Bring structured context to Snowflake Intelligence with dbt」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "dbt Core v1.11 is GA",
+        "url": "https://www.getdbt.com/blog/dbt-core-v1-11-is-ga",
+        "summary": "dbt Core v1.11 is GA with first-class UDFs, clearer project validation, and performance improvements across adapters.",
+        "published": "2026-02-10 17:24",
+        "source": "dbt Blog",
+        "icon": "dbt",
+        "easy": "「dbt Core v1.11 is GA」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "From AI projects to an operational capability",
@@ -203,131 +288,15 @@
         "icon": "DB",
         "easy": "「From AI projects to an operational capability」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Use Genie Everywhere with Enterprise OAuth",
-        "url": "https://www.databricks.com/blog/access-genie-everywhere",
-        "summary": "IntroDemocratizing data starts with making insights easy and secure to access. With...",
-        "published": "2026-02-19 18:50",
-        "source": "Databricks",
-        "icon": "DB",
-        "easy": "「Use Genie Everywhere with Enterprise OAuth」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Flexible Node Types Are Now Generally Available",
-        "url": "https://www.databricks.com/blog/flexible-node-types-are-now-generally-available",
-        "summary": "Securing specific compute capacity can be challenging, especially during high-traffic...",
-        "published": "2026-02-18 22:30",
-        "source": "Databricks",
-        "icon": "DB",
-        "easy": "「Flexible Node Types Are Now Generally Available」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "How CyberArk uses Apache Iceberg and Amazon Bedrock to deliver up to 4x support productivity",
-        "url": "https://aws.amazon.com/blogs/big-data/how-cyberark-uses-apache-iceberg-and-amazon-bedrock-to-deliver-up-to-4x-support-productivity/",
-        "summary": "CyberArk is a global leader in identity security. Centered on intelligent privilege controls, it provides comprehensive security for human, machine, and AI identities across business applications, distributed workforces, and hybrid cloud environments. In this post, we show you how CyberArk redesigned their support operations by combining Iceberg’s intelligent metadata management with AI-powered automation from Amazon Bedrock. You’ll learn how to simplify data processing flows, automate log parsi",
-        "published": "2026-02-18 20:17",
-        "source": "AWS Big Data",
-        "icon": "AW",
-        "easy": "「How CyberArk uses Apache Iceberg and Amazon Bedrock to deliver up to 4x support productivity」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Best practices for right-sizing Amazon OpenSearch Service domains",
-        "url": "https://aws.amazon.com/blogs/big-data/best-practices-for-right-sizing-amazon-opensearch-service-domains/",
-        "summary": "In this post, we guide you through the steps to determine if your OpenSearch Service domain is right-sized, using AWS tools and best practices to optimize your configuration for workloads like log analytics, search, vector search, or synthetic data testing.",
-        "published": "2026-02-18 20:16",
-        "source": "AWS Big Data",
-        "icon": "AW",
-        "easy": "「Best practices for right-sizing Amazon OpenSearch Service domains」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Predictive Optimization at Scale: A Year of Innovation and What’s Next",
-        "url": "https://www.databricks.com/blog/predictive-optimization-scale-year-innovation-and-whats-next",
-        "summary": "IntroductionThe most performant, cost-effective lakehouse is one that optimizes itself...",
-        "published": "2026-02-18 20:00",
-        "source": "Databricks",
-        "icon": "DB",
-        "easy": "「Predictive Optimization at Scale: A Year of Innovation and What’s Next」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Custom Agents now available on Databricks",
-        "url": "https://www.databricks.com/blog/custom-agents-now-available-databricks",
-        "summary": "Agent Bricks&nbsp;Custom Agents, formerly Agent Framework, is now available on Databricks....",
-        "published": "2026-02-18 16:04",
-        "source": "Databricks",
-        "icon": "DB",
-        "easy": "「Custom Agents now available on Databricks」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       }
     ],
     "cloud": [
-      {
-        "title": "Saving banks from technical debt: How Atruvia built secure, self-service infrastructure",
-        "url": "https://www.hashicorp.com/blog/saving-banks-from-technical-debt-how-atruvia-built-secure-self-service-infrastructure",
-        "summary": "Burdened by legacy IT, Atruvia rebuilt its digital core with HashiCorp, automating infrastructure, enforcing compliance, and slashing provisioning time from months to hours.",
-        "published": "2026-02-19 17:00",
-        "source": "HashiCorp",
-        "icon": "HC",
-        "easy": "「Saving banks from technical debt: How Atruvia built secure, self-service infrastructure」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "How Benchling saved 8,000 hours by changing how it used Terraform",
-        "url": "https://www.hashicorp.com/blog/how-benchling-saved-8000-hours-by-changing-how-it-used-terraform",
-        "summary": "Learn what Benchling did with 8K extra developer-hours after it changed how it managed infrastructure as code.",
-        "published": "2026-02-18 18:00",
-        "source": "HashiCorp",
-        "icon": "HC",
-        "easy": "「How Benchling saved 8,000 hours by changing how it used Terraform」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale",
-        "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
-        "summary": "Claude Sonnet 4.6 is available today in Microsoft Foundry, and it is designed for teams who want frontier performance across coding, agents, and professional work at scale.\nThe post Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale appeared first on Microsoft Azure Blog.",
-        "published": "2026-02-17 20:11",
-        "source": "Azure Blog",
-        "icon": "AZ",
-        "easy": "「Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "HCP Packer adds SBOM vulnerability scanning",
-        "url": "https://www.hashicorp.com/blog/hcp-packer-adds-sbom-vulnerability-scanning",
-        "summary": "You can now scan the components of your image SBOMs and check them against a known vulnerability database in HCP Packer.",
-        "published": "2026-02-17 18:45",
-        "source": "HashiCorp",
-        "icon": "HC",
-        "easy": "「HCP Packer adds SBOM vulnerability scanning」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Azure reliability, resiliency, and recoverability: Build continuity by design",
-        "url": "https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/",
-        "summary": "Modern cloud systems are expected to deliver more than uptime. Customers expect consistent performance, the ability to withstand disruption, and confidence that recovery is predictable and intentional.\nThe post Azure reliability, resiliency, and recoverability: Build continuity by design appeared first on Microsoft Azure Blog.",
-        "published": "2026-02-17 16:00",
-        "source": "Azure Blog",
-        "icon": "AZ",
-        "easy": "「Azure reliability, resiliency, and recoverability: Build continuity by design」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
       {
         "title": "Amazon EC2 Hpc8a Instances powered by 5th Gen AMD EPYC processors are now available",
         "url": "https://aws.amazon.com/blogs/aws/amazon-ec2-hpc8a-instances-powered-by-5th-gen-amd-epyc-processors-are-now-available/",
@@ -337,7 +306,12 @@
         "icon": "AW",
         "easy": "「Amazon EC2 Hpc8a Instances powered by 5th Gen AMD EPYC processors are now available」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Announcing Amazon SageMaker Inference for custom Amazon Nova models",
@@ -348,7 +322,12 @@
         "icon": "AW",
         "easy": "「Announcing Amazon SageMaker Inference for custom Amazon Nova models」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "AWS Weekly Roundup: Amazon EC2 M8azn instances, new open weights models in Amazon Bedrock, and more (February 16, 2026)",
@@ -359,7 +338,60 @@
         "icon": "AW",
         "easy": "「AWS Weekly Roundup: Amazon EC2 M8azn instances, new open weights models in Amazon Bedrock, and more (February 16, 2026)」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AWS Weekly Roundup: Claude Opus 4.6 in Amazon Bedrock, AWS Builder ID Sign in with Apple, and more (February 9, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-6-in-amazon-bedrock-aws-builder-id-sign-in-with-apple-and-more-february-9-2026/",
+        "summary": "Here are the notable launches and updates from last week that can help you build, scale, and innovate on AWS. Last week’s launches Here are the launches that got my attention this week. Let’s start with news related to compute and networking infrastructure: Introducing Amazon EC2 C8id, M8id, and R8id instances: These new Amazon EC2 […]",
+        "published": "2026-02-09 20:42",
+        "source": "AWS Blog",
+        "icon": "AW",
+        "easy": "「AWS Weekly Roundup: Claude Opus 4.6 in Amazon Bedrock, AWS Builder ID Sign in with Apple, and more (February 9, 2026)」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Amazon EC2 C8id, M8id, and R8id instances with up to 22.8 TB local NVMe storage are generally available",
+        "url": "https://aws.amazon.com/blogs/aws/amazon-ec2-c8id-m8id-and-r8id-instances-with-up-to-22-8-tb-local-nvme-storage-are-generally-available/",
+        "summary": "AWS launches Amazon EC2 C8id, M8id, and R8id instances backed by NVMe-based SSD block-level instance storage physically connected to the host server. These instances offer 3 times more vCPUs, memory, and local storage with up to 22.8TB of local NVMe-backed SSD block-level storage.",
+        "published": "2026-02-04 22:31",
+        "source": "AWS Blog",
+        "icon": "AW",
+        "easy": "「Amazon EC2 C8id, M8id, and R8id instances with up to 22.8 TB local NVMe storage are generally available」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Introducing Budget Bytes: Build powerful AI apps for under $25",
+        "url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
+        "summary": "Budget Bytes is a new series is designed to inspire developers to build affordable, production-quality AI applications on Azure with a budget of $25 or less.\nThe post Introducing Budget Bytes: Build powerful AI apps for under $25 appeared first on Microsoft Azure Blog.",
+        "published": "2026-02-19 17:02",
+        "source": "Azure Blog",
+        "icon": "AZ",
+        "easy": "「Introducing Budget Bytes: Build powerful AI apps for under $25」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       }
     ],
     "security": [
@@ -372,29 +404,12 @@
         "icon": "BC",
         "easy": "「When identity isn’t the weak link, access still is」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "⚡ Weekly Recap: Double-Tap Skimmers, PromptSpy AI, 30Tbps DDoS, Docker Malware & More",
-        "url": "https://thehackernews.com/2026/02/weekly-recap-double-tap-skimmers.html",
-        "summary": "Security news rarely moves in a straight line. This week, it feels more like a series of sharp turns, some happening quietly in the background, others playing out in public view. The details are different, but the pressure points are familiar.\nAcross devices, cloud services, research labs, and even everyday apps, the line between normal behavior and hidden risk keeps getting thinner. Tools",
-        "published": "2026-02-23 13:00",
-        "source": "The Hacker News",
-        "icon": "HN",
-        "easy": "「⚡ Weekly Recap: Double-Tap Skimmers, PromptSpy AI, 30Tbps DDoS, Docker Malware & More」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "How Exposed Endpoints Increase Risk Across LLM Infrastructure",
-        "url": "https://thehackernews.com/2026/02/how-exposed-endpoints-increase-risk.html",
-        "summary": "As more organizations run their own Large Language Models (LLMs), they are also deploying more internal services and Application Programming Interfaces (APIs) to support those models. Modern security risks are being introduced less from the models themselves and more from the infrastructure that serves, connects and automates the model. Each new LLM endpoint expands the attack surface, often in",
-        "published": "2026-02-23 11:58",
-        "source": "The Hacker News",
-        "icon": "HN",
-        "easy": "「How Exposed Endpoints Increase Risk Across LLM Infrastructure」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "CISA: Recently patched RoundCube flaws now exploited in attacks",
@@ -405,40 +420,12 @@
         "icon": "BC",
         "easy": "「CISA: Recently patched RoundCube flaws now exploited in attacks」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Malicious npm Packages Harvest Crypto Keys, CI Secrets, and API Tokens",
-        "url": "https://thehackernews.com/2026/02/malicious-npm-packages-harvest-crypto.html",
-        "summary": "Cybersecurity researchers have disclosed what they say is an active \"Shai-Hulud-like\" supply chain worm campaign that has leveraged a cluster of at least 19 malicious npm packages to enable credential harvesting and cryptocurrency key theft.\nThe campaign has been codenamed SANDWORM_MODE by supply chain security company Socket. As with prior Shai-Hulud attack waves, the malicious code embedded",
-        "published": "2026-02-23 10:20",
-        "source": "The Hacker News",
-        "icon": "HN",
-        "easy": "「Malicious npm Packages Harvest Crypto Keys, CI Secrets, and API Tokens」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "MuddyWater Targets MENA Organizations with GhostFetch, CHAR, and HTTP_VIP",
-        "url": "https://thehackernews.com/2026/02/muddywater-targets-mena-organizations.html",
-        "summary": "The Iranian hacking group known as MuddyWater (aka Earth Vetala, Mango Sandstorm, and MUDDYCOAST) has targeted several organizations and individuals mainly located across the Middle East and North Africa (MENA) region as part of a new campaign codenamed Operation Olalampo.\nThe activity, first observed on January 26, 2026, has resulted in the deployment of new malware families that share",
-        "published": "2026-02-23 07:25",
-        "source": "The Hacker News",
-        "icon": "HN",
-        "easy": "「MuddyWater Targets MENA Organizations with GhostFetch, CHAR, and HTTP_VIP」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Cloudflare One is the first SASE offering modern post-quantum encryption across the full platform",
-        "url": "https://blog.cloudflare.com/post-quantum-sase/",
-        "summary": "We’ve upgraded Cloudflare One to support post-quantum encryption by implementing the latest IETF drafts for hybrid ML-KEM into our Cloudflare IPsec product. This extends post-quantum encryption across all major Cloudflare One on-ramps and off-ramps.",
-        "published": "2026-02-23 06:00",
-        "source": "Cloudflare Blog",
-        "icon": "CF",
-        "easy": "「Cloudflare One is the first SASE offering modern post-quantum encryption across the full platform」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Arkanix Stealer pops up as short-lived AI info-stealer experiment",
@@ -449,7 +436,60 @@
         "icon": "BC",
         "easy": "「Arkanix Stealer pops up as short-lived AI info-stealer experiment」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "⚡ Weekly Recap: Double-Tap Skimmers, PromptSpy AI, 30Tbps DDoS, Docker Malware & More",
+        "url": "https://thehackernews.com/2026/02/weekly-recap-double-tap-skimmers.html",
+        "summary": "Security news rarely moves in a straight line. This week, it feels more like a series of sharp turns, some happening quietly in the background, others playing out in public view. The details are different, but the pressure points are familiar.\nAcross devices, cloud services, research labs, and even everyday apps, the line between normal behavior and hidden risk keeps getting thinner. Tools",
+        "published": "2026-02-23 13:00",
+        "source": "The Hacker News",
+        "icon": "HN",
+        "easy": "「⚡ Weekly Recap: Double-Tap Skimmers, PromptSpy AI, 30Tbps DDoS, Docker Malware & More」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "How Exposed Endpoints Increase Risk Across LLM Infrastructure",
+        "url": "https://thehackernews.com/2026/02/how-exposed-endpoints-increase-risk.html",
+        "summary": "As more organizations run their own Large Language Models (LLMs), they are also deploying more internal services and Application Programming Interfaces (APIs) to support those models. Modern security risks are being introduced less from the models themselves and more from the infrastructure that serves, connects and automates the model. Each new LLM endpoint expands the attack surface, often in",
+        "published": "2026-02-23 11:58",
+        "source": "The Hacker News",
+        "icon": "HN",
+        "easy": "「How Exposed Endpoints Increase Risk Across LLM Infrastructure」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Malicious npm Packages Harvest Crypto Keys, CI Secrets, and API Tokens",
+        "url": "https://thehackernews.com/2026/02/malicious-npm-packages-harvest-crypto.html",
+        "summary": "Cybersecurity researchers have disclosed what they say is an active \"Shai-Hulud-like\" supply chain worm campaign that has leveraged a cluster of at least 19 malicious npm packages to enable credential harvesting and cryptocurrency key theft.\nThe campaign has been codenamed SANDWORM_MODE by supply chain security company Socket. As with prior Shai-Hulud attack waves, the malicious code embedded",
+        "published": "2026-02-23 10:20",
+        "source": "The Hacker News",
+        "icon": "HN",
+        "easy": "「Malicious npm Packages Harvest Crypto Keys, CI Secrets, and API Tokens」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       }
     ],
     "hardware": [
@@ -462,7 +502,12 @@
         "icon": "TH",
         "easy": "「Trump tariff turbulence risks handing TSMC a win over American chip manufacturers — prior exemptions for onshoring manufacturing may hinder the likes of Intel」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Asus ROG Swift PG32UCDM3 240 Hz QD-OLED gaming monitor review: Asus delivers a true flagship OLED",
@@ -473,7 +518,12 @@
         "icon": "TH",
         "easy": "「Asus ROG Swift PG32UCDM3 240 Hz QD-OLED gaming monitor review: Asus delivers a true flagship OLED」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "MSI RTX 5090 Lightning Z GPUs listed on eBay for almost $27,000 — limited edition graphics card demands 500% premium from resellers",
@@ -484,7 +534,12 @@
         "icon": "TH",
         "easy": "「MSI RTX 5090 Lightning Z GPUs listed on eBay for almost $27,000 — limited edition graphics card demands 500% premium from resellers」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Stargate AI data centers for OpenAI reportedly delayed by squabbles between partners — sources say OpenAI, Oracle, and SoftBank disagreed on who would have ultimate control of the planned data centers",
@@ -495,7 +550,12 @@
         "icon": "TH",
         "easy": "「Stargate AI data centers for OpenAI reportedly delayed by squabbles between partners — sources say OpenAI, Oracle, and SoftBank disagreed on who would have ultimate control of the planned data centers」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Newegg slashes $176 off this potent AMD gaming bundle, which includes $437.99 of RAM - Ryzen 7 9800X3D CPU, 32GB of Corsair Vengeance, and X870E Aorus Elite Wifi 7 motherboard for $1,020",
@@ -506,7 +566,12 @@
         "icon": "TH",
         "easy": "「Newegg slashes $176 off this potent AMD gaming bundle, which includes $437.99 of RAM - Ryzen 7 9800X3D CPU, 32GB of Corsair Vengeance, and X870E Aorus Elite Wifi 7 motherboard for $1,020」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "xAI’s Colossus 2 – First Gigawatt Datacenter In The World, Unique RL Methodology, Capital Raise",
@@ -517,29 +582,12 @@
         "icon": "SA",
         "easy": "「xAI’s Colossus 2 – First Gigawatt Datacenter In The World, Unique RL Methodology, Capital Raise」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Another Giant Leap: The Rubin CPX Specialized Accelerator & Rack",
-        "url": "https://semianalysis.com/2025/09/10/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack/",
-        "summary": "Nvidia announced the Rubin CPX, a solution that is specifically designed to be optimized for the prefill phase, with the single-die Rubin CPX heavily emphasizing compute FLOPS over memory bandwidth. This is a game changer for inference, and its significance is surpassed only by the March 2024 announcement of the GB200 NVL72 Oberon rack-scale form [&#8230;]",
-        "published": "2025-09-10 19:57",
-        "source": "SemiAnalysis",
-        "icon": "SA",
-        "easy": "「Another Giant Leap: The Rubin CPX Specialized Accelerator & Rack」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "Huawei Ascend Production Ramp: Die Banks, TSMC Continued Production, HBM is The Bottleneck",
-        "url": "https://semianalysis.com/2025/09/08/huawei-ascend-production-ramp/",
-        "summary": "Compute is the lifeblood of AI. He who controls the spice controls the universe the compute will control the production of tokens and reap the benefits of AI. Without compute you do not have a seat at the table. The United States technology community is all in on compute and AI as the next platform [&#8230;]",
-        "published": "2025-09-08 09:54",
-        "source": "SemiAnalysis",
-        "icon": "SA",
-        "easy": "「Huawei Ascend Production Ramp: Die Banks, TSMC Continued Production, HBM is The Bottleneck」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       }
     ],
     "funding": [
@@ -552,18 +600,12 @@
         "icon": "TC",
         "easy": "「5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon",
-        "url": "https://news.crunchbase.com/venture/interesting-startup-deals-ai-robotics-energy-generation/",
-        "summary": "A host of interesting, under-the-radar recently funded startups caught our attention in the past month: one that’s developing nuclear-waste generated electricity on the moon, and another that aims to use AI to extract business intelligence from enterprise contracts. Let’s take a closer look.",
-        "published": "2026-02-23 12:00",
-        "source": "Crunchbase News",
-        "icon": "CB",
-        "easy": "「5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Bill Gurley says that right now, the worst thing you can do for your career is play it safe",
@@ -574,7 +616,12 @@
         "icon": "TC",
         "easy": "「Bill Gurley says that right now, the worst thing you can do for your career is play it safe」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Quantonation’s double-sized second fund shows quantum still has believers",
@@ -585,7 +632,12 @@
         "icon": "TC",
         "easy": "「Quantonation’s double-sized second fund shows quantum still has believers」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "6 days left to lock in the lowest TechCrunch Disrupt 2026 rates",
@@ -596,7 +648,28 @@
         "icon": "TC",
         "easy": "「6 days left to lock in the lowest TechCrunch Disrupt 2026 rates」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon",
+        "url": "https://news.crunchbase.com/venture/interesting-startup-deals-ai-robotics-energy-generation/",
+        "summary": "A host of interesting, under-the-radar recently funded startups caught our attention in the past month: one that’s developing nuclear-waste generated electricity on the moon, and another that aims to use AI to extract business intelligence from enterprise contracts. Let’s take a closer look.",
+        "published": "2026-02-23 12:00",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "easy": "「5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon」に関するニュースです。",
+        "why": "テック業界の最新動向です。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "7 days until ticket prices rise for TechCrunch Disrupt 2026",
@@ -607,29 +680,12 @@
         "icon": "TC",
         "easy": "「7 days until ticket prices rise for TechCrunch Disrupt 2026」に関するニュースです。",
         "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "The Week’s 10 Biggest Funding Rounds: World Labs Leads Another AI-Heavy Lineup",
-        "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-cloud-energy-ai-world-labs/",
-        "summary": "This week’s largest U.S. funding rounds once again featured an AI-heavy cohort, along with sizable financings around fintech and energy tech. By far the largest deal was a $1 billion financing for World Labs, developer of AI models that interact with the 3D world.",
-        "published": "2026-02-20 19:16",
-        "source": "Crunchbase News",
-        "icon": "CB",
-        "easy": "「The Week’s 10 Biggest Funding Rounds: World Labs Leads Another AI-Heavy Lineup」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
-      },
-      {
-        "title": "AI Seed Trends: More Multimedia, Backend Automation, Agentic Security, And Yes, Robots",
-        "url": "https://news.crunchbase.com/venture/data-ai-seed-trends-multimedia-automation-cybersecurity-robots/",
-        "summary": "Investors poured over $9 billion into global AI-focused seed rounds over the past six months, per Crunchbase data. Areas they favored include cybersecurity, multimedia AI, robotics and desk work automation.",
-        "published": "2026-02-20 12:00",
-        "source": "Crunchbase News",
-        "icon": "CB",
-        "easy": "「AI Seed Trends: More Multimedia, Backend Automation, Agentic Security, And Yes, Robots」に関するニュースです。",
-        "why": "テック業界の最新動向です。",
-        "glossary": []
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
       }
     ]
   },
@@ -637,8 +693,8 @@
     {
       "title": "The Age Verification Trap, Verifying age undermines everyone's data protection",
       "url": "https://spectrum.ieee.org/age-verification",
-      "score": 173,
-      "comments": 102,
+      "score": 277,
+      "comments": 221,
       "hn_id": 47122715,
       "published": "2026-02-23 14:22",
       "source": "Hacker News",
@@ -647,8 +703,8 @@
     {
       "title": "Ladybird Browser adopts Rust",
       "url": "https://ladybird.org/posts/adopting-rust/",
-      "score": 537,
-      "comments": 280,
+      "score": 586,
+      "comments": 300,
       "hn_id": 47120899,
       "published": "2026-02-23 11:29",
       "source": "Hacker News",
@@ -657,8 +713,8 @@
     {
       "title": "The peculiar case of Japanese web design",
       "url": "https://sabrinas.space",
-      "score": 60,
-      "comments": 14,
+      "score": 87,
+      "comments": 28,
       "hn_id": 47122789,
       "published": "2026-02-23 14:28",
       "source": "Hacker News",
@@ -667,8 +723,8 @@
     {
       "title": "Elsevier shuts down its finance journal citation cartel",
       "url": "https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal",
-      "score": 318,
-      "comments": 61,
+      "score": 342,
+      "comments": 62,
       "hn_id": 47119530,
       "published": "2026-02-23 08:22",
       "source": "Hacker News",
@@ -677,8 +733,8 @@
     {
       "title": "Sub-$200 Lidar could reshuffle auto sensor economics",
       "url": "https://spectrum.ieee.org/solid-state-lidar-microvision-adas",
-      "score": 240,
-      "comments": 315,
+      "score": 254,
+      "comments": 331,
       "hn_id": 47075455,
       "published": "2026-02-19 16:23",
       "source": "Hacker News",
@@ -687,18 +743,28 @@
     {
       "title": "Magical Mushroom – Europe's first industrial-scale mycelium packaging producer",
       "url": "https://magicalmushroom.com/index",
-      "score": 165,
-      "comments": 58,
+      "score": 181,
+      "comments": 63,
       "hn_id": 47119274,
       "published": "2026-02-23 07:43",
       "source": "Hacker News",
       "icon": "HN"
     },
     {
+      "title": "A simple web we own",
+      "url": "https://rsdoiel.github.io/blog/2026/02/21/a_simple_web_we_own.html",
+      "score": 3,
+      "comments": 0,
+      "hn_id": 47124149,
+      "published": "2026-02-23 16:01",
+      "source": "Hacker News",
+      "icon": "HN"
+    },
+    {
       "title": "I built Timeframe, our family e-paper dashboard",
       "url": "https://hawksley.org/2026/02/17/timeframe.html",
-      "score": 1327,
-      "comments": 321,
+      "score": 1345,
+      "comments": 323,
       "hn_id": 47113728,
       "published": "2026-02-22 19:12",
       "source": "Hacker News",
@@ -707,8 +773,8 @@
     {
       "title": "0 A.D. Release 28: Boiorix",
       "url": "https://play0ad.com/new-release-0-a-d-release-28-boiorix/",
-      "score": 222,
-      "comments": 73,
+      "score": 231,
+      "comments": 80,
       "hn_id": 47078112,
       "published": "2026-02-19 19:37",
       "source": "Hacker News",
@@ -717,22 +783,13 @@
     {
       "title": "femtolisp: A lightweight, robust, scheme-like Lisp implementation",
       "url": "https://github.com/JeffBezanson/femtolisp",
-      "score": 38,
-      "comments": 4,
+      "score": 43,
+      "comments": 7,
       "hn_id": 47121539,
       "published": "2026-02-23 12:38",
       "source": "Hacker News",
       "icon": "HN"
-    },
-    {
-      "title": "SETI@home: Data Acquisition and Front-End Processing (2025)",
-      "url": "https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7",
-      "score": 43,
-      "comments": 6,
-      "hn_id": 47120201,
-      "published": "2026-02-23 09:58",
-      "source": "Hacker News",
-      "icon": "HN"
     }
-  ]
+  ],
+  "breaking": []
 }
