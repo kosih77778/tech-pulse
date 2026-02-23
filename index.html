@@ -3,36 +3,1085 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Pulse — セットアップ中</title>
+<title>Tech Pulse — やさしいテック情報ダッシュボード</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+  :root{
+    --bg:#fff;--s1:#f8fafc;--s2:#f1f5f9;--bd:#e2e8f0;--bdh:#94a3b8;
+    --tx:#0f172a;--dim:#475569;--mut:#94a3b8;
+    --ac:#4f46e5;--ac2:#0284c7;--grn:#059669;--org:#d97706;--red:#dc2626;
+    --pur:#7c3aed;--pk:#db2777;--cy:#0891b2;--lm:#65a30d;
+  }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Noto Sans JP',sans-serif;background:#f8fafc;color:#0f172a;display:flex;align-items:center;justify-content:center;min-height:100vh}
-  .card{text-align:center;max-width:500px;padding:60px 40px;background:#fff;border-radius:20px;border:1px solid #e2e8f0;box-shadow:0 4px 20px rgba(0,0,0,.06)}
-  .logo{font-size:2rem;font-weight:900;color:#4f46e5;margin-bottom:8px}
-  .sub{font-size:.9rem;color:#64748b;margin-bottom:32px}
-  .spinner{width:40px;height:40px;border:3px solid #e2e8f0;border-top-color:#4f46e5;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 24px}
-  @keyframes spin{to{transform:rotate(360deg)}}
-  .status{font-size:.85rem;color:#475569;line-height:1.8}
-  .status strong{color:#4f46e5}
-  .hint{margin-top:24px;font-size:.75rem;color:#94a3b8;line-height:1.6}
+  body{font-family:'Noto Sans JP',-apple-system,sans-serif;background:var(--s1);color:var(--tx);line-height:1.7}
+  .topbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd);padding:0 20px;height:50px;display:flex;align-items:center;justify-content:space-between}
+  .topbar-l{display:flex;align-items:center;gap:10px}
+  .logo{font-size:1.1rem;font-weight:900;color:var(--ac)}
+  .logo-v{font-size:.6rem;color:var(--mut);background:var(--s2);padding:2px 8px;border-radius:4px;font-weight:600}
+  .topbar-r{display:flex;align-items:center;gap:10px}
+  .live{width:7px;height:7px;background:var(--grn);border-radius:50%;animation:bk 2s ease-in-out infinite}
+  @keyframes bk{0%,100%{opacity:1}50%{opacity:.3}}
+  .clock{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--dim)}
+  .updated{font-size:.62rem;color:var(--mut)}
+  .src-banner{background:var(--s2);border-bottom:1px solid var(--bd);padding:6px 20px;font-size:.68rem;color:var(--dim);overflow-x:auto;white-space:nowrap}
+  .tab-bar{display:flex;gap:0;overflow-x:auto;scrollbar-width:none;background:var(--bg);border-bottom:1px solid var(--bd)}
+  .tab-bar::-webkit-scrollbar{display:none}
+  .tab-btn{padding:11px 18px;border:none;background:transparent;color:var(--dim);font-size:.78rem;font-weight:600;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all .15s;font-family:'Noto Sans JP',sans-serif}
+  .tab-btn:hover{color:var(--tx);background:rgba(79,70,229,.03)}
+  .tab-btn.active{color:var(--ac);border-bottom-color:var(--ac);background:rgba(79,70,229,.04)}
+  .tab-content{display:none}
+  .tab-content.active{display:grid;grid-template-columns:1fr 340px;max-width:1440px;margin:0 auto}
+  .feed{background:var(--bg);border-right:1px solid var(--bd);overflow-y:auto}
+  .fi{padding:20px;border-bottom:1px solid var(--bd);transition:background .15s}
+  .fi:hover{background:rgba(79,70,229,.02)}
+  .fi-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .fi-av{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;color:#fff;flex-shrink:0}
+  .fi-src{font-size:.82rem;font-weight:700}.fi-sub{font-size:.65rem;color:var(--mut)}
+  .fi-time{font-size:.62rem;color:var(--mut);margin-left:auto;font-family:'JetBrains Mono',monospace}
+  .fi-body{margin-left:40px}
+  .fi-title{font-size:.92rem;font-weight:700;color:var(--tx);margin-bottom:6px;line-height:1.45}
+  .fi-title a{color:inherit;text-decoration:none}
+  .fi-title a:hover{color:var(--ac)}
+  .fi-easy{font-size:.82rem;color:var(--dim);line-height:1.7;margin-bottom:10px;padding:12px 16px;background:var(--s1);border-radius:10px;border-left:3px solid var(--ac)}
+  .fi-easy strong{color:var(--tx)}
+  .fi-why{font-size:.78rem;color:var(--ac);font-weight:600;margin-bottom:8px;padding:8px 12px;background:rgba(79,70,229,.04);border-radius:8px}
+  .fi-why::before{content:'\1f4a1 ';font-size:.85rem}
+  .glossary{margin-bottom:10px;display:flex;flex-wrap:wrap;gap:5px}
+  .gl-item{font-size:.65rem;padding:4px 10px;border-radius:6px;background:var(--s2);border:1px solid var(--bd);color:var(--dim);cursor:help;position:relative}
+  .gl-item:hover{background:var(--ac);color:#fff;border-color:var(--ac)}
+  .gl-item .gl-tip{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--tx);color:#fff;padding:10px 14px;border-radius:8px;font-size:.72rem;width:260px;line-height:1.5;z-index:50;box-shadow:0 4px 12px rgba(0,0,0,.15);font-weight:400}
+  .gl-item:hover .gl-tip{display:block}
+  .gl-item .gl-tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:var(--tx)}
+  .fi-source{font-size:.65rem;color:var(--mut);margin-bottom:6px}
+  .fi-source a{color:var(--ac2);text-decoration:none}.fi-source a:hover{text-decoration:underline}
+  .sidebar{background:var(--bg);overflow-y:auto;padding:0}
+  .sb-card{padding:16px 18px;border-bottom:1px solid var(--bd)}
+  .sb-title{font-size:.72rem;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px}
+  .hn-item{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid var(--s2);align-items:flex-start}
+  .hn-item:last-child{border:none}
+  .hn-rank{font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;color:var(--mut);min-width:18px;text-align:center;margin-top:2px}
+  .hn-content{flex:1}
+  .hn-title{font-size:.76rem;color:var(--tx);text-decoration:none;font-weight:500;line-height:1.4;display:block}
+  .hn-title:hover{color:var(--ac)}
+  .hn-score{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--org)}
+  @media(max-width:900px){
+    .tab-content.active{grid-template-columns:1fr}
+    .sidebar{display:none}
+    .sidebar.mob-open{display:block;position:fixed;top:50px;right:0;bottom:0;width:320px;background:var(--bg);z-index:99;border-left:1px solid var(--bd);overflow-y:auto;box-shadow:-4px 0 20px rgba(0,0,0,.08)}
+    .mob-tog{display:flex!important}
+    .fi-body{margin-left:0;margin-top:8px}
+    .tab-btn{padding:9px 12px;font-size:.72rem}
+    .src-banner{display:none}
+    .gl-item .gl-tip{width:200px;font-size:.68rem}
+  }
+  @media(min-width:901px){.mob-tog{display:none!important}}
+  .mob-tog{width:32px;height:32px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--dim);cursor:pointer;font-size:.9rem;align-items:center;justify-content:center}
+  ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--bd);border-radius:2px}
 </style>
 </head>
 <body>
-<div class="card">
-  <div class="logo">Tech Pulse</div>
-  <div class="sub">やさしいテック情報ダッシュボード</div>
-  <div class="spinner"></div>
-  <div class="status">
-    初回セットアップ中です。<br>
-    <strong>GitHub Actions</strong> が初回のニュース取得と<br>
-    ダッシュボード生成を行っています。<br><br>
-    通常 <strong>3〜5分</strong> で完了します。
+<div class="topbar">
+  <div class="topbar-l">
+    <div class="logo">Tech Pulse</div>
+    <span class="logo-v">わかりやすい版</span>
+    <span class="updated">最終更新: 2026-02-24 00:44 JST</span>
   </div>
-  <div class="hint">
-    このページは自動的にダッシュボードに置き換わります。<br>
-    しばらく待ってからリロードしてください。
+  <div class="topbar-r">
+    <div class="live"></div>
+    <div class="clock" id="clock"></div>
+    <button class="mob-tog" onclick="toggleSidebar()">☰</button>
   </div>
 </div>
+<div class="src-banner">
+  📡 データソース: RSS (各社公式ブログ) · Hacker News API · Reddit JSON · Gemini AI解説
+</div>
+<div class="tab-bar">
+<button class="tab-btn active" data-tab="ai">AI・LLM</button>
+<button class="tab-btn" data-tab="devtools">Dev Tools</button>
+<button class="tab-btn" data-tab="data_dx">Data / DX</button>
+<button class="tab-btn" data-tab="cloud">Cloud</button>
+<button class="tab-btn" data-tab="security">Security</button>
+<button class="tab-btn" data-tab="hardware">Hardware</button>
+<button class="tab-btn" data-tab="funding">Funding</button>
+</div>
+<div class="tab-content active" id="tab-ai">
+  <div class="feed"><div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch AI</div></div>
+    <div class="fi-time">2026-02-23 15:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/" target="_blank" rel="noopener">TechCrunch AI</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch AI</div></div>
+    <div class="fi-time">2026-02-23 14:44</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/how-ai-agents-could-destroy-the-economy/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">How AI agents could destroy the economy</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「How AI agents could destroy the economy」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcrunch.com/2026/02/23/how-ai-agents-could-destroy-the-economy/" target="_blank" rel="noopener">TechCrunch AI</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch AI</div></div>
+    <div class="fi-time">2026-02-23 14:19</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/defense-secretary-summons-anthropics-amodei-over-military-use-of-claude/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Defense Secretary summons Anthropic’s Amodei over military use of Claude</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Defense Secretary summons Anthropic’s Amodei over military use of Claude」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcrunch.com/2026/02/23/defense-secretary-summons-anthropics-amodei-over-military-use-of-claude/" target="_blank" rel="noopener">TechCrunch AI</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#10a37f">O</div>
+    <div><div class="fi-src">OpenAI Blog</div></div>
+    <div class="fi-time">2026-02-23 05:30</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">OpenAI announces Frontier Alliance Partners</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「OpenAI announces Frontier Alliance Partners」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener">OpenAI Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch AI</div></div>
+    <div class="fi-time">2026-02-22 17:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/22/all-the-important-news-from-the-ongoing-india-ai-summit/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">All the important news from the ongoing India AI Impact Summit</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「All the important news from the ongoing India AI Impact Summit」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcrunch.com/2026/02/22/all-the-important-news-from-the-ongoing-india-ai-summit/" target="_blank" rel="noopener">TechCrunch AI</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch AI</div></div>
+    <div class="fi-time">2026-02-22 15:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">6 days left to lock in the lowest TechCrunch Disrupt 2026 rates</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「6 days left to lock in the lowest TechCrunch Disrupt 2026 rates」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/" target="_blank" rel="noopener">TechCrunch AI</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#10a37f">O</div>
+    <div><div class="fi-src">OpenAI Blog</div></div>
+    <div class="fi-time">2026-02-20 14:30</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://openai.com/index/first-proof-submissions" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Our First Proof submissions</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Our First Proof submissions」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://openai.com/index/first-proof-submissions" target="_blank" rel="noopener">OpenAI Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ffd21e">HF</div>
+    <div><div class="fi-src">Hugging Face</div></div>
+    <div class="fi-time">2026-02-20 00:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://huggingface.co/blog/ggml-joins-hf" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">GGML and llama.cpp join HF to ensure the long-term progress of Local AI</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「GGML and llama.cpp join HF to ensure the long-term progress of Local AI」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://huggingface.co/blog/ggml-joins-hf" target="_blank" rel="noopener">Hugging Face</a></div>
+  </div>
+</div></div>
+  <div class="sidebar">
+    <div class="sb-card">
+      <div class="sb-title">🔥 Hacker News Top 10</div>
+      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap, Verifying age undermines everyone's data protection</a><span class="hn-score">▲173</span></div></div>
+<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird Browser adopts Rust</a><span class="hn-score">▲537</span></div></div>
+<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://sabrinas.space" target="_blank" rel="noopener" class="hn-title">The peculiar case of Japanese web design</a><span class="hn-score">▲60</span></div></div>
+<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal" target="_blank" rel="noopener" class="hn-title">Elsevier shuts down its finance journal citation cartel</a><span class="hn-score">▲318</span></div></div>
+<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/solid-state-lidar-microvision-adas" target="_blank" rel="noopener" class="hn-title">Sub-$200 Lidar could reshuffle auto sensor economics</a><span class="hn-score">▲240</span></div></div>
+<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://magicalmushroom.com/index" target="_blank" rel="noopener" class="hn-title">Magical Mushroom – Europe's first industrial-scale mycelium packaging producer</a><span class="hn-score">▲165</span></div></div>
+<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://hawksley.org/2026/02/17/timeframe.html" target="_blank" rel="noopener" class="hn-title">I built Timeframe, our family e-paper dashboard</a><span class="hn-score">▲1327</span></div></div>
+<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://play0ad.com/new-release-0-a-d-release-28-boiorix/" target="_blank" rel="noopener" class="hn-title">0 A.D. Release 28: Boiorix</a><span class="hn-score">▲222</span></div></div>
+<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://github.com/JeffBezanson/femtolisp" target="_blank" rel="noopener" class="hn-title">femtolisp: A lightweight, robust, scheme-like Lisp implementation</a><span class="hn-score">▲38</span></div></div>
+<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener" class="hn-title">SETI@home: Data Acquisition and Front-End Processing (2025)</a><span class="hn-score">▲43</span></div></div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">ℹ️ About</div>
+      <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
+        このダッシュボードは毎朝7時に自動更新されます。<br>
+        ニュースはRSS/HN/Redditから取得し、Gemini AIが日本語でやさしく解説しています。
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content" id="tab-devtools">
+  <div class="feed"><div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#333">GH</div>
+    <div><div class="fi-src">GitHub Blog</div></div>
+    <div class="fi-time">2026-02-19 17:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">How AI is reshaping developer choice (and Octoverse data proves it)</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「How AI is reshaping developer choice (and Octoverse data proves it)」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/" target="_blank" rel="noopener">GitHub Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">NJ</div>
+    <div><div class="fi-src">Node.js Blog</div></div>
+    <div class="fi-time">2026-02-19 12:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://nodejs.org/en/blog/announcements/hackerone-signal-requirement" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">New HackerOne Signal Requirement for Vulnerability Reports</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「New HackerOne Signal Requirement for Vulnerability Reports」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://nodejs.org/en/blog/announcements/hackerone-signal-requirement" target="_blank" rel="noopener">Node.js Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">Rs</div>
+    <div><div class="fi-src">Rust Blog</div></div>
+    <div class="fi-time">2026-02-19 00:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://blog.rust-lang.org/2026/02/19/Rust-participates-in-GSoC-2026/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Rust participates in Google Summer of Code 2026</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Rust participates in Google Summer of Code 2026」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://blog.rust-lang.org/2026/02/19/Rust-participates-in-GSoC-2026/" target="_blank" rel="noopener">Rust Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#333">GH</div>
+    <div><div class="fi-src">GitHub Blog</div></div>
+    <div class="fi-time">2026-02-18 18:41</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">What to expect for open source in 2026</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「What to expect for open source in 2026」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/" target="_blank" rel="noopener">GitHub Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">MS</div>
+    <div><div class="fi-src">Azure DevOps Blog</div></div>
+    <div class="fi-time">2026-02-18 16:35</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://devblogs.microsoft.com/devops/tfvc-remove-existing-obsolete-policies-asap/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">TFVC Remove Existing Obsolete Policies ASAP</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「TFVC Remove Existing Obsolete Policies ASAP」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://devblogs.microsoft.com/devops/tfvc-remove-existing-obsolete-policies-asap/" target="_blank" rel="noopener">Azure DevOps Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#333">GH</div>
+    <div><div class="fi-src">GitHub Blog</div></div>
+    <div class="fi-time">2026-02-17 19:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://github.blog/open-source/maintainers/securing-the-ai-software-supply-chain-security-results-across-67-open-source-projects/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Securing the AI software supply chain: Security results across 67 open source projects</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Securing the AI software supply chain: Security results across 67 open source projects」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://github.blog/open-source/maintainers/securing-the-ai-software-supply-chain-security-results-across-67-open-source-projects/" target="_blank" rel="noopener">GitHub Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">MS</div>
+    <div><div class="fi-src">Azure DevOps Blog</div></div>
+    <div class="fi-time">2026-02-16 20:53</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://devblogs.microsoft.com/devops/condensed-views-on-kanban-and-sprint-boards/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Condensed views on Kanban and Sprint boards</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Condensed views on Kanban and Sprint boards」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://devblogs.microsoft.com/devops/condensed-views-on-kanban-and-sprint-boards/" target="_blank" rel="noopener">Azure DevOps Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#333">GH</div>
+    <div><div class="fi-src">GitHub Blog</div></div>
+    <div class="fi-time">2026-02-13 14:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Automate repository tasks with GitHub Agentic Workflows</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Automate repository tasks with GitHub Agentic Workflows」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/" target="_blank" rel="noopener">GitHub Blog</a></div>
+  </div>
+</div></div>
+  <div class="sidebar">
+    <div class="sb-card">
+      <div class="sb-title">🔥 Hacker News Top 10</div>
+      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap, Verifying age undermines everyone's data protection</a><span class="hn-score">▲173</span></div></div>
+<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird Browser adopts Rust</a><span class="hn-score">▲537</span></div></div>
+<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://sabrinas.space" target="_blank" rel="noopener" class="hn-title">The peculiar case of Japanese web design</a><span class="hn-score">▲60</span></div></div>
+<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal" target="_blank" rel="noopener" class="hn-title">Elsevier shuts down its finance journal citation cartel</a><span class="hn-score">▲318</span></div></div>
+<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/solid-state-lidar-microvision-adas" target="_blank" rel="noopener" class="hn-title">Sub-$200 Lidar could reshuffle auto sensor economics</a><span class="hn-score">▲240</span></div></div>
+<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://magicalmushroom.com/index" target="_blank" rel="noopener" class="hn-title">Magical Mushroom – Europe's first industrial-scale mycelium packaging producer</a><span class="hn-score">▲165</span></div></div>
+<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://hawksley.org/2026/02/17/timeframe.html" target="_blank" rel="noopener" class="hn-title">I built Timeframe, our family e-paper dashboard</a><span class="hn-score">▲1327</span></div></div>
+<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://play0ad.com/new-release-0-a-d-release-28-boiorix/" target="_blank" rel="noopener" class="hn-title">0 A.D. Release 28: Boiorix</a><span class="hn-score">▲222</span></div></div>
+<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://github.com/JeffBezanson/femtolisp" target="_blank" rel="noopener" class="hn-title">femtolisp: A lightweight, robust, scheme-like Lisp implementation</a><span class="hn-score">▲38</span></div></div>
+<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener" class="hn-title">SETI@home: Data Acquisition and Front-End Processing (2025)</a><span class="hn-score">▲43</span></div></div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">ℹ️ About</div>
+      <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
+        このダッシュボードは毎朝7時に自動更新されます。<br>
+        ニュースはRSS/HN/Redditから取得し、Gemini AIが日本語でやさしく解説しています。
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content" id="tab-data_dx">
+  <div class="feed"><div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff694b">dbt</div>
+    <div><div class="fi-src">dbt Blog</div></div>
+    <div class="fi-time">2026-02-20 18:03</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.getdbt.com/blog/data-ins-and-outs-for-2026" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Data ins and outs for 2026: what data teams are keeping, cutting, and reconsidering</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Data ins and outs for 2026: what data teams are keeping, cutting, and reconsidering」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.getdbt.com/blog/data-ins-and-outs-for-2026" target="_blank" rel="noopener">dbt Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff3621">DB</div>
+    <div><div class="fi-src">Databricks</div></div>
+    <div class="fi-time">2026-02-19 23:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.databricks.com/blog/ai-projects-operational-capability" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">From AI projects to an operational capability</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「From AI projects to an operational capability」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.databricks.com/blog/ai-projects-operational-capability" target="_blank" rel="noopener">Databricks</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff3621">DB</div>
+    <div><div class="fi-src">Databricks</div></div>
+    <div class="fi-time">2026-02-19 18:50</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.databricks.com/blog/access-genie-everywhere" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Use Genie Everywhere with Enterprise OAuth</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Use Genie Everywhere with Enterprise OAuth」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.databricks.com/blog/access-genie-everywhere" target="_blank" rel="noopener">Databricks</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff3621">DB</div>
+    <div><div class="fi-src">Databricks</div></div>
+    <div class="fi-time">2026-02-18 22:30</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.databricks.com/blog/flexible-node-types-are-now-generally-available" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Flexible Node Types Are Now Generally Available</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Flexible Node Types Are Now Generally Available」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.databricks.com/blog/flexible-node-types-are-now-generally-available" target="_blank" rel="noopener">Databricks</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">AW</div>
+    <div><div class="fi-src">AWS Big Data</div></div>
+    <div class="fi-time">2026-02-18 20:17</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://aws.amazon.com/blogs/big-data/how-cyberark-uses-apache-iceberg-and-amazon-bedrock-to-deliver-up-to-4x-support-productivity/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">How CyberArk uses Apache Iceberg and Amazon Bedrock to deliver up to 4x support productivity</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「How CyberArk uses Apache Iceberg and Amazon Bedrock to deliver up to 4x support productivity」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://aws.amazon.com/blogs/big-data/how-cyberark-uses-apache-iceberg-and-amazon-bedrock-to-deliver-up-to-4x-support-productivity/" target="_blank" rel="noopener">AWS Big Data</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">AW</div>
+    <div><div class="fi-src">AWS Big Data</div></div>
+    <div class="fi-time">2026-02-18 20:16</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://aws.amazon.com/blogs/big-data/best-practices-for-right-sizing-amazon-opensearch-service-domains/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Best practices for right-sizing Amazon OpenSearch Service domains</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Best practices for right-sizing Amazon OpenSearch Service domains」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://aws.amazon.com/blogs/big-data/best-practices-for-right-sizing-amazon-opensearch-service-domains/" target="_blank" rel="noopener">AWS Big Data</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff3621">DB</div>
+    <div><div class="fi-src">Databricks</div></div>
+    <div class="fi-time">2026-02-18 20:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.databricks.com/blog/predictive-optimization-scale-year-innovation-and-whats-next" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Predictive Optimization at Scale: A Year of Innovation and What’s Next</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Predictive Optimization at Scale: A Year of Innovation and What’s Next」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.databricks.com/blog/predictive-optimization-scale-year-innovation-and-whats-next" target="_blank" rel="noopener">Databricks</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff3621">DB</div>
+    <div><div class="fi-src">Databricks</div></div>
+    <div class="fi-time">2026-02-18 16:04</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.databricks.com/blog/custom-agents-now-available-databricks" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Custom Agents now available on Databricks</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Custom Agents now available on Databricks」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.databricks.com/blog/custom-agents-now-available-databricks" target="_blank" rel="noopener">Databricks</a></div>
+  </div>
+</div></div>
+  <div class="sidebar">
+    <div class="sb-card">
+      <div class="sb-title">🔥 Hacker News Top 10</div>
+      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap, Verifying age undermines everyone's data protection</a><span class="hn-score">▲173</span></div></div>
+<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird Browser adopts Rust</a><span class="hn-score">▲537</span></div></div>
+<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://sabrinas.space" target="_blank" rel="noopener" class="hn-title">The peculiar case of Japanese web design</a><span class="hn-score">▲60</span></div></div>
+<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal" target="_blank" rel="noopener" class="hn-title">Elsevier shuts down its finance journal citation cartel</a><span class="hn-score">▲318</span></div></div>
+<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/solid-state-lidar-microvision-adas" target="_blank" rel="noopener" class="hn-title">Sub-$200 Lidar could reshuffle auto sensor economics</a><span class="hn-score">▲240</span></div></div>
+<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://magicalmushroom.com/index" target="_blank" rel="noopener" class="hn-title">Magical Mushroom – Europe's first industrial-scale mycelium packaging producer</a><span class="hn-score">▲165</span></div></div>
+<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://hawksley.org/2026/02/17/timeframe.html" target="_blank" rel="noopener" class="hn-title">I built Timeframe, our family e-paper dashboard</a><span class="hn-score">▲1327</span></div></div>
+<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://play0ad.com/new-release-0-a-d-release-28-boiorix/" target="_blank" rel="noopener" class="hn-title">0 A.D. Release 28: Boiorix</a><span class="hn-score">▲222</span></div></div>
+<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://github.com/JeffBezanson/femtolisp" target="_blank" rel="noopener" class="hn-title">femtolisp: A lightweight, robust, scheme-like Lisp implementation</a><span class="hn-score">▲38</span></div></div>
+<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener" class="hn-title">SETI@home: Data Acquisition and Front-End Processing (2025)</a><span class="hn-score">▲43</span></div></div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">ℹ️ About</div>
+      <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
+        このダッシュボードは毎朝7時に自動更新されます。<br>
+        ニュースはRSS/HN/Redditから取得し、Gemini AIが日本語でやさしく解説しています。
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content" id="tab-cloud">
+  <div class="feed"><div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">HC</div>
+    <div><div class="fi-src">HashiCorp</div></div>
+    <div class="fi-time">2026-02-19 17:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.hashicorp.com/blog/saving-banks-from-technical-debt-how-atruvia-built-secure-self-service-infrastructure" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Saving banks from technical debt: How Atruvia built secure, self-service infrastructure</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Saving banks from technical debt: How Atruvia built secure, self-service infrastructure」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.hashicorp.com/blog/saving-banks-from-technical-debt-how-atruvia-built-secure-self-service-infrastructure" target="_blank" rel="noopener">HashiCorp</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">HC</div>
+    <div><div class="fi-src">HashiCorp</div></div>
+    <div class="fi-time">2026-02-18 18:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.hashicorp.com/blog/how-benchling-saved-8000-hours-by-changing-how-it-used-terraform" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">How Benchling saved 8,000 hours by changing how it used Terraform</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「How Benchling saved 8,000 hours by changing how it used Terraform」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.hashicorp.com/blog/how-benchling-saved-8000-hours-by-changing-how-it-used-terraform" target="_blank" rel="noopener">HashiCorp</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0078d4">AZ</div>
+    <div><div class="fi-src">Azure Blog</div></div>
+    <div class="fi-time">2026-02-17 20:11</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873" target="_blank" rel="noopener">Azure Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">HC</div>
+    <div><div class="fi-src">HashiCorp</div></div>
+    <div class="fi-time">2026-02-17 18:45</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.hashicorp.com/blog/hcp-packer-adds-sbom-vulnerability-scanning" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">HCP Packer adds SBOM vulnerability scanning</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「HCP Packer adds SBOM vulnerability scanning」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.hashicorp.com/blog/hcp-packer-adds-sbom-vulnerability-scanning" target="_blank" rel="noopener">HashiCorp</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0078d4">AZ</div>
+    <div><div class="fi-src">Azure Blog</div></div>
+    <div class="fi-time">2026-02-17 16:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Azure reliability, resiliency, and recoverability: Build continuity by design</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Azure reliability, resiliency, and recoverability: Build continuity by design」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/" target="_blank" rel="noopener">Azure Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff9900">AW</div>
+    <div><div class="fi-src">AWS Blog</div></div>
+    <div class="fi-time">2026-02-16 23:12</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://aws.amazon.com/blogs/aws/amazon-ec2-hpc8a-instances-powered-by-5th-gen-amd-epyc-processors-are-now-available/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Amazon EC2 Hpc8a Instances powered by 5th Gen AMD EPYC processors are now available</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Amazon EC2 Hpc8a Instances powered by 5th Gen AMD EPYC processors are now available」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://aws.amazon.com/blogs/aws/amazon-ec2-hpc8a-instances-powered-by-5th-gen-amd-epyc-processors-are-now-available/" target="_blank" rel="noopener">AWS Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff9900">AW</div>
+    <div><div class="fi-src">AWS Blog</div></div>
+    <div class="fi-time">2026-02-16 21:25</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://aws.amazon.com/blogs/aws/announcing-amazon-sagemaker-inference-for-custom-amazon-nova-models/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Announcing Amazon SageMaker Inference for custom Amazon Nova models</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Announcing Amazon SageMaker Inference for custom Amazon Nova models」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://aws.amazon.com/blogs/aws/announcing-amazon-sagemaker-inference-for-custom-amazon-nova-models/" target="_blank" rel="noopener">AWS Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff9900">AW</div>
+    <div><div class="fi-src">AWS Blog</div></div>
+    <div class="fi-time">2026-02-16 17:28</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-ec2-m8azn-instances-new-open-weights-models-in-amazon-bedrock-and-more-february-16-2026/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">AWS Weekly Roundup: Amazon EC2 M8azn instances, new open weights models in Amazon Bedrock, and more (February 16, 2026)</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「AWS Weekly Roundup: Amazon EC2 M8azn instances, new open weights models in Amazon Bedrock, and more (February 16, 2026)」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-ec2-m8azn-instances-new-open-weights-models-in-amazon-bedrock-and-more-february-16-2026/" target="_blank" rel="noopener">AWS Blog</a></div>
+  </div>
+</div></div>
+  <div class="sidebar">
+    <div class="sb-card">
+      <div class="sb-title">🔥 Hacker News Top 10</div>
+      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap, Verifying age undermines everyone's data protection</a><span class="hn-score">▲173</span></div></div>
+<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird Browser adopts Rust</a><span class="hn-score">▲537</span></div></div>
+<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://sabrinas.space" target="_blank" rel="noopener" class="hn-title">The peculiar case of Japanese web design</a><span class="hn-score">▲60</span></div></div>
+<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal" target="_blank" rel="noopener" class="hn-title">Elsevier shuts down its finance journal citation cartel</a><span class="hn-score">▲318</span></div></div>
+<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/solid-state-lidar-microvision-adas" target="_blank" rel="noopener" class="hn-title">Sub-$200 Lidar could reshuffle auto sensor economics</a><span class="hn-score">▲240</span></div></div>
+<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://magicalmushroom.com/index" target="_blank" rel="noopener" class="hn-title">Magical Mushroom – Europe's first industrial-scale mycelium packaging producer</a><span class="hn-score">▲165</span></div></div>
+<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://hawksley.org/2026/02/17/timeframe.html" target="_blank" rel="noopener" class="hn-title">I built Timeframe, our family e-paper dashboard</a><span class="hn-score">▲1327</span></div></div>
+<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://play0ad.com/new-release-0-a-d-release-28-boiorix/" target="_blank" rel="noopener" class="hn-title">0 A.D. Release 28: Boiorix</a><span class="hn-score">▲222</span></div></div>
+<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://github.com/JeffBezanson/femtolisp" target="_blank" rel="noopener" class="hn-title">femtolisp: A lightweight, robust, scheme-like Lisp implementation</a><span class="hn-score">▲38</span></div></div>
+<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener" class="hn-title">SETI@home: Data Acquisition and Front-End Processing (2025)</a><span class="hn-score">▲43</span></div></div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">ℹ️ About</div>
+      <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
+        このダッシュボードは毎朝7時に自動更新されます。<br>
+        ニュースはRSS/HN/Redditから取得し、Gemini AIが日本語でやさしく解説しています。
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content" id="tab-security">
+  <div class="feed"><div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#236b8e">BC</div>
+    <div><div class="fi-src">BleepingComputer</div></div>
+    <div class="fi-time">2026-02-23 15:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.bleepingcomputer.com/news/security/when-identity-isnt-the-weak-link-access-still-is/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">When identity isn’t the weak link, access still is</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「When identity isn’t the weak link, access still is」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.bleepingcomputer.com/news/security/when-identity-isnt-the-weak-link-access-still-is/" target="_blank" rel="noopener">BleepingComputer</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">HN</div>
+    <div><div class="fi-src">The Hacker News</div></div>
+    <div class="fi-time">2026-02-23 13:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://thehackernews.com/2026/02/weekly-recap-double-tap-skimmers.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">⚡ Weekly Recap: Double-Tap Skimmers, PromptSpy AI, 30Tbps DDoS, Docker Malware &amp; More</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「⚡ Weekly Recap: Double-Tap Skimmers, PromptSpy AI, 30Tbps DDoS, Docker Malware &amp; More」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://thehackernews.com/2026/02/weekly-recap-double-tap-skimmers.html" target="_blank" rel="noopener">The Hacker News</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">HN</div>
+    <div><div class="fi-src">The Hacker News</div></div>
+    <div class="fi-time">2026-02-23 11:58</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://thehackernews.com/2026/02/how-exposed-endpoints-increase-risk.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">How Exposed Endpoints Increase Risk Across LLM Infrastructure</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「How Exposed Endpoints Increase Risk Across LLM Infrastructure」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://thehackernews.com/2026/02/how-exposed-endpoints-increase-risk.html" target="_blank" rel="noopener">The Hacker News</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#236b8e">BC</div>
+    <div><div class="fi-src">BleepingComputer</div></div>
+    <div class="fi-time">2026-02-23 11:44</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.bleepingcomputer.com/news/security/cisa-recently-patched-roundcube-flaws-now-exploited-in-attacks/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">CISA: Recently patched RoundCube flaws now exploited in attacks</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「CISA: Recently patched RoundCube flaws now exploited in attacks」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.bleepingcomputer.com/news/security/cisa-recently-patched-roundcube-flaws-now-exploited-in-attacks/" target="_blank" rel="noopener">BleepingComputer</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">HN</div>
+    <div><div class="fi-src">The Hacker News</div></div>
+    <div class="fi-time">2026-02-23 10:20</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://thehackernews.com/2026/02/malicious-npm-packages-harvest-crypto.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Malicious npm Packages Harvest Crypto Keys, CI Secrets, and API Tokens</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Malicious npm Packages Harvest Crypto Keys, CI Secrets, and API Tokens」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://thehackernews.com/2026/02/malicious-npm-packages-harvest-crypto.html" target="_blank" rel="noopener">The Hacker News</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">HN</div>
+    <div><div class="fi-src">The Hacker News</div></div>
+    <div class="fi-time">2026-02-23 07:25</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://thehackernews.com/2026/02/muddywater-targets-mena-organizations.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">MuddyWater Targets MENA Organizations with GhostFetch, CHAR, and HTTP_VIP</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「MuddyWater Targets MENA Organizations with GhostFetch, CHAR, and HTTP_VIP」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://thehackernews.com/2026/02/muddywater-targets-mena-organizations.html" target="_blank" rel="noopener">The Hacker News</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#f38020">CF</div>
+    <div><div class="fi-src">Cloudflare Blog</div></div>
+    <div class="fi-time">2026-02-23 06:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://blog.cloudflare.com/post-quantum-sase/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Cloudflare One is the first SASE offering modern post-quantum encryption across the full platform</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Cloudflare One is the first SASE offering modern post-quantum encryption across the full platform」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://blog.cloudflare.com/post-quantum-sase/" target="_blank" rel="noopener">Cloudflare Blog</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#236b8e">BC</div>
+    <div><div class="fi-src">BleepingComputer</div></div>
+    <div class="fi-time">2026-02-22 15:33</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.bleepingcomputer.com/news/security/arkanix-stealer-pops-up-as-short-lived-ai-info-stealer-experiment/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Arkanix Stealer pops up as short-lived AI info-stealer experiment</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Arkanix Stealer pops up as short-lived AI info-stealer experiment」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.bleepingcomputer.com/news/security/arkanix-stealer-pops-up-as-short-lived-ai-info-stealer-experiment/" target="_blank" rel="noopener">BleepingComputer</a></div>
+  </div>
+</div></div>
+  <div class="sidebar">
+    <div class="sb-card">
+      <div class="sb-title">🔥 Hacker News Top 10</div>
+      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap, Verifying age undermines everyone's data protection</a><span class="hn-score">▲173</span></div></div>
+<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird Browser adopts Rust</a><span class="hn-score">▲537</span></div></div>
+<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://sabrinas.space" target="_blank" rel="noopener" class="hn-title">The peculiar case of Japanese web design</a><span class="hn-score">▲60</span></div></div>
+<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal" target="_blank" rel="noopener" class="hn-title">Elsevier shuts down its finance journal citation cartel</a><span class="hn-score">▲318</span></div></div>
+<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/solid-state-lidar-microvision-adas" target="_blank" rel="noopener" class="hn-title">Sub-$200 Lidar could reshuffle auto sensor economics</a><span class="hn-score">▲240</span></div></div>
+<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://magicalmushroom.com/index" target="_blank" rel="noopener" class="hn-title">Magical Mushroom – Europe's first industrial-scale mycelium packaging producer</a><span class="hn-score">▲165</span></div></div>
+<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://hawksley.org/2026/02/17/timeframe.html" target="_blank" rel="noopener" class="hn-title">I built Timeframe, our family e-paper dashboard</a><span class="hn-score">▲1327</span></div></div>
+<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://play0ad.com/new-release-0-a-d-release-28-boiorix/" target="_blank" rel="noopener" class="hn-title">0 A.D. Release 28: Boiorix</a><span class="hn-score">▲222</span></div></div>
+<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://github.com/JeffBezanson/femtolisp" target="_blank" rel="noopener" class="hn-title">femtolisp: A lightweight, robust, scheme-like Lisp implementation</a><span class="hn-score">▲38</span></div></div>
+<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener" class="hn-title">SETI@home: Data Acquisition and Front-End Processing (2025)</a><span class="hn-score">▲43</span></div></div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">ℹ️ About</div>
+      <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
+        このダッシュボードは毎朝7時に自動更新されます。<br>
+        ニュースはRSS/HN/Redditから取得し、Gemini AIが日本語でやさしく解説しています。
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content" id="tab-hardware">
+  <div class="feed"><div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">TH</div>
+    <div><div class="fi-src">Tom's Hardware</div></div>
+    <div class="fi-time">2026-02-23 15:06</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.tomshardware.com/tech-industry/trump-tariff-turbulence-risks-handing-tsmc-a-win-over-american-chip-manufacturers-prior-exemptions-for-onshoring-manufacturing-may-hinder-the-likes-of-intel" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Trump tariff turbulence risks handing TSMC a win over American chip manufacturers — prior exemptions for onshoring manufacturing may hinder the likes of Intel</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Trump tariff turbulence risks handing TSMC a win over American chip manufacturers — prior exemptions for onshoring manufacturing may hinder the likes of Intel」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.tomshardware.com/tech-industry/trump-tariff-turbulence-risks-handing-tsmc-a-win-over-american-chip-manufacturers-prior-exemptions-for-onshoring-manufacturing-may-hinder-the-likes-of-intel" target="_blank" rel="noopener">Tom's Hardware</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">TH</div>
+    <div><div class="fi-src">Tom's Hardware</div></div>
+    <div class="fi-time">2026-02-23 14:43</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.tomshardware.com/monitors/gaming-monitors/asus-rog-swift-pg32ucdm3-32-inch-240-hz-qd-oled-gaming-monitor-review" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Asus ROG Swift PG32UCDM3 240 Hz QD-OLED gaming monitor review: Asus delivers a true flagship OLED</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Asus ROG Swift PG32UCDM3 240 Hz QD-OLED gaming monitor review: Asus delivers a true flagship OLED」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.tomshardware.com/monitors/gaming-monitors/asus-rog-swift-pg32ucdm3-32-inch-240-hz-qd-oled-gaming-monitor-review" target="_blank" rel="noopener">Tom's Hardware</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">TH</div>
+    <div><div class="fi-src">Tom's Hardware</div></div>
+    <div class="fi-time">2026-02-23 14:01</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.tomshardware.com/pc-components/gpus/msi-rtx-5090-lightning-z-gpus-listed-on-ebay-for-almost-usd27-000-limited-edition-graphics-card-demands-500-percent-premium-from-resellers" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">MSI RTX 5090 Lightning Z GPUs listed on eBay for almost $27,000 — limited edition graphics card demands 500% premium from resellers</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「MSI RTX 5090 Lightning Z GPUs listed on eBay for almost $27,000 — limited edition graphics card demands 500% premium from resellers」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.tomshardware.com/pc-components/gpus/msi-rtx-5090-lightning-z-gpus-listed-on-ebay-for-almost-usd27-000-limited-edition-graphics-card-demands-500-percent-premium-from-resellers" target="_blank" rel="noopener">Tom's Hardware</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">TH</div>
+    <div><div class="fi-src">Tom's Hardware</div></div>
+    <div class="fi-time">2026-02-23 13:53</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/stargate-ai-data-centers-for-openai-reportedly-delayed-by-squabbles-between-partners-sources-say-openai-oracle-and-softbank-disagreed-on-who-would-have-ultimate-control-of-the-planned-data-centers" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Stargate AI data centers for OpenAI reportedly delayed by squabbles between partners — sources say OpenAI, Oracle, and SoftBank disagreed on who would have ultimate control of the planned data centers</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Stargate AI data centers for OpenAI reportedly delayed by squabbles between partners — sources say OpenAI, Oracle, and SoftBank disagreed on who would have ultimate control of the planned data centers」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/stargate-ai-data-centers-for-openai-reportedly-delayed-by-squabbles-between-partners-sources-say-openai-oracle-and-softbank-disagreed-on-who-would-have-ultimate-control-of-the-planned-data-centers" target="_blank" rel="noopener">Tom's Hardware</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">TH</div>
+    <div><div class="fi-src">Tom's Hardware</div></div>
+    <div class="fi-time">2026-02-23 13:26</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.tomshardware.com/pc-components/newegg-slashes-usd176-off-this-potent-amd-gaming-bundle-which-includes-usd437-99-of-ram-ryzen-7-9800x3d-cpu-32gb-of-corsair-vengeance-and-x870e-aorus-elite-wifi-7-motherboard-for-usd1-020" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Newegg slashes $176 off this potent AMD gaming bundle, which includes $437.99 of RAM - Ryzen 7 9800X3D CPU, 32GB of Corsair Vengeance, and X870E Aorus Elite Wifi 7 motherboard for $1,020</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Newegg slashes $176 off this potent AMD gaming bundle, which includes $437.99 of RAM - Ryzen 7 9800X3D CPU, 32GB of Corsair Vengeance, and X870E Aorus Elite Wifi 7 motherboard for $1,020」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://www.tomshardware.com/pc-components/newegg-slashes-usd176-off-this-potent-amd-gaming-bundle-which-includes-usd437-99-of-ram-ryzen-7-9800x3d-cpu-32gb-of-corsair-vengeance-and-x870e-aorus-elite-wifi-7-motherboard-for-usd1-020" target="_blank" rel="noopener">Tom's Hardware</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">SA</div>
+    <div><div class="fi-src">SemiAnalysis</div></div>
+    <div class="fi-time">2025-09-16 17:38</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">xAI’s Colossus 2 – First Gigawatt Datacenter In The World, Unique RL Methodology, Capital Raise</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「xAI’s Colossus 2 – First Gigawatt Datacenter In The World, Unique RL Methodology, Capital Raise」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/" target="_blank" rel="noopener">SemiAnalysis</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">SA</div>
+    <div><div class="fi-src">SemiAnalysis</div></div>
+    <div class="fi-time">2025-09-10 19:57</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://semianalysis.com/2025/09/10/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Another Giant Leap: The Rubin CPX Specialized Accelerator &amp; Rack</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Another Giant Leap: The Rubin CPX Specialized Accelerator &amp; Rack」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://semianalysis.com/2025/09/10/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack/" target="_blank" rel="noopener">SemiAnalysis</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#64748b">SA</div>
+    <div><div class="fi-src">SemiAnalysis</div></div>
+    <div class="fi-time">2025-09-08 09:54</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://semianalysis.com/2025/09/08/huawei-ascend-production-ramp/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Huawei Ascend Production Ramp: Die Banks, TSMC Continued Production, HBM is The Bottleneck</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Huawei Ascend Production Ramp: Die Banks, TSMC Continued Production, HBM is The Bottleneck」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://semianalysis.com/2025/09/08/huawei-ascend-production-ramp/" target="_blank" rel="noopener">SemiAnalysis</a></div>
+  </div>
+</div></div>
+  <div class="sidebar">
+    <div class="sb-card">
+      <div class="sb-title">🔥 Hacker News Top 10</div>
+      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap, Verifying age undermines everyone's data protection</a><span class="hn-score">▲173</span></div></div>
+<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird Browser adopts Rust</a><span class="hn-score">▲537</span></div></div>
+<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://sabrinas.space" target="_blank" rel="noopener" class="hn-title">The peculiar case of Japanese web design</a><span class="hn-score">▲60</span></div></div>
+<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal" target="_blank" rel="noopener" class="hn-title">Elsevier shuts down its finance journal citation cartel</a><span class="hn-score">▲318</span></div></div>
+<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/solid-state-lidar-microvision-adas" target="_blank" rel="noopener" class="hn-title">Sub-$200 Lidar could reshuffle auto sensor economics</a><span class="hn-score">▲240</span></div></div>
+<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://magicalmushroom.com/index" target="_blank" rel="noopener" class="hn-title">Magical Mushroom – Europe's first industrial-scale mycelium packaging producer</a><span class="hn-score">▲165</span></div></div>
+<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://hawksley.org/2026/02/17/timeframe.html" target="_blank" rel="noopener" class="hn-title">I built Timeframe, our family e-paper dashboard</a><span class="hn-score">▲1327</span></div></div>
+<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://play0ad.com/new-release-0-a-d-release-28-boiorix/" target="_blank" rel="noopener" class="hn-title">0 A.D. Release 28: Boiorix</a><span class="hn-score">▲222</span></div></div>
+<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://github.com/JeffBezanson/femtolisp" target="_blank" rel="noopener" class="hn-title">femtolisp: A lightweight, robust, scheme-like Lisp implementation</a><span class="hn-score">▲38</span></div></div>
+<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener" class="hn-title">SETI@home: Data Acquisition and Front-End Processing (2025)</a><span class="hn-score">▲43</span></div></div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">ℹ️ About</div>
+      <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
+        このダッシュボードは毎朝7時に自動更新されます。<br>
+        ニュースはRSS/HN/Redditから取得し、Gemini AIが日本語でやさしく解説しています。
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content" id="tab-funding">
+  <div class="feed"><div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch VC</div></div>
+    <div class="fi-time">2026-02-23 15:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/" target="_blank" rel="noopener">TechCrunch VC</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0288ff">CB</div>
+    <div><div class="fi-src">Crunchbase News</div></div>
+    <div class="fi-time">2026-02-23 12:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://news.crunchbase.com/venture/interesting-startup-deals-ai-robotics-energy-generation/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://news.crunchbase.com/venture/interesting-startup-deals-ai-robotics-energy-generation/" target="_blank" rel="noopener">Crunchbase News</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch VC</div></div>
+    <div class="fi-time">2026-02-22 21:08</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/22/bill-gurley-says-that-right-now-the-worst-thing-you-can-do-for-your-career-is-play-it-safe/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Bill Gurley says that right now, the worst thing you can do for your career is play it safe</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Bill Gurley says that right now, the worst thing you can do for your career is play it safe」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcrunch.com/2026/02/22/bill-gurley-says-that-right-now-the-worst-thing-you-can-do-for-your-career-is-play-it-safe/" target="_blank" rel="noopener">TechCrunch VC</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch VC</div></div>
+    <div class="fi-time">2026-02-22 18:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/22/quantonations-double-sized-second-fund-shows-quantum-still-has-believers/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Quantonation’s double-sized second fund shows quantum still has believers</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「Quantonation’s double-sized second fund shows quantum still has believers」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcrunch.com/2026/02/22/quantonations-double-sized-second-fund-shows-quantum-still-has-believers/" target="_blank" rel="noopener">TechCrunch VC</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch VC</div></div>
+    <div class="fi-time">2026-02-22 15:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">6 days left to lock in the lowest TechCrunch Disrupt 2026 rates</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「6 days left to lock in the lowest TechCrunch Disrupt 2026 rates」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/" target="_blank" rel="noopener">TechCrunch VC</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch VC</div></div>
+    <div class="fi-time">2026-02-21 15:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">7 days until ticket prices rise for TechCrunch Disrupt 2026</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「7 days until ticket prices rise for TechCrunch Disrupt 2026」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/" target="_blank" rel="noopener">TechCrunch VC</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0288ff">CB</div>
+    <div><div class="fi-src">Crunchbase News</div></div>
+    <div class="fi-time">2026-02-20 19:16</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://news.crunchbase.com/venture/biggest-funding-rounds-cloud-energy-ai-world-labs/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">The Week’s 10 Biggest Funding Rounds: World Labs Leads Another AI-Heavy Lineup</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「The Week’s 10 Biggest Funding Rounds: World Labs Leads Another AI-Heavy Lineup」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://news.crunchbase.com/venture/biggest-funding-rounds-cloud-energy-ai-world-labs/" target="_blank" rel="noopener">Crunchbase News</a></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0288ff">CB</div>
+    <div><div class="fi-src">Crunchbase News</div></div>
+    <div class="fi-time">2026-02-20 12:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://news.crunchbase.com/venture/data-ai-seed-trends-multimedia-automation-cybersecurity-robots/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">AI Seed Trends: More Multimedia, Backend Automation, Agentic Security, And Yes, Robots</a></div>
+    <div class="fi-easy"><span class="emoji">🔰</span> <strong>ざっくり言うと：</strong>「AI Seed Trends: More Multimedia, Backend Automation, Agentic Security, And Yes, Robots」に関するニュースです。</div>
+    <div class="fi-why">テック業界の最新動向です。</div>
+    
+    <div class="fi-source">出典: <a href="https://news.crunchbase.com/venture/data-ai-seed-trends-multimedia-automation-cybersecurity-robots/" target="_blank" rel="noopener">Crunchbase News</a></div>
+  </div>
+</div></div>
+  <div class="sidebar">
+    <div class="sb-card">
+      <div class="sb-title">🔥 Hacker News Top 10</div>
+      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap, Verifying age undermines everyone's data protection</a><span class="hn-score">▲173</span></div></div>
+<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird Browser adopts Rust</a><span class="hn-score">▲537</span></div></div>
+<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://sabrinas.space" target="_blank" rel="noopener" class="hn-title">The peculiar case of Japanese web design</a><span class="hn-score">▲60</span></div></div>
+<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal" target="_blank" rel="noopener" class="hn-title">Elsevier shuts down its finance journal citation cartel</a><span class="hn-score">▲318</span></div></div>
+<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/solid-state-lidar-microvision-adas" target="_blank" rel="noopener" class="hn-title">Sub-$200 Lidar could reshuffle auto sensor economics</a><span class="hn-score">▲240</span></div></div>
+<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://magicalmushroom.com/index" target="_blank" rel="noopener" class="hn-title">Magical Mushroom – Europe's first industrial-scale mycelium packaging producer</a><span class="hn-score">▲165</span></div></div>
+<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://hawksley.org/2026/02/17/timeframe.html" target="_blank" rel="noopener" class="hn-title">I built Timeframe, our family e-paper dashboard</a><span class="hn-score">▲1327</span></div></div>
+<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://play0ad.com/new-release-0-a-d-release-28-boiorix/" target="_blank" rel="noopener" class="hn-title">0 A.D. Release 28: Boiorix</a><span class="hn-score">▲222</span></div></div>
+<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://github.com/JeffBezanson/femtolisp" target="_blank" rel="noopener" class="hn-title">femtolisp: A lightweight, robust, scheme-like Lisp implementation</a><span class="hn-score">▲38</span></div></div>
+<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener" class="hn-title">SETI@home: Data Acquisition and Front-End Processing (2025)</a><span class="hn-score">▲43</span></div></div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">ℹ️ About</div>
+      <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
+        このダッシュボードは毎朝7時に自動更新されます。<br>
+        ニュースはRSS/HN/Redditから取得し、Gemini AIが日本語でやさしく解説しています。
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    const tabId = btn.getAttribute('data-tab');
+    document.getElementById('tab-' + tabId).classList.add('active');
+  });
+});
+function updateClock() {
+  const now = new Date();
+  const jst = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+  document.getElementById('clock').textContent =
+    jst.getFullYear() + '/' +
+    String(jst.getMonth()+1).padStart(2,'0') + '/' +
+    String(jst.getDate()).padStart(2,'0') + ' ' +
+    String(jst.getHours()).padStart(2,'0') + ':' +
+    String(jst.getMinutes()).padStart(2,'0') + ':' +
+    String(jst.getSeconds()).padStart(2,'0') + ' JST';
+}
+updateClock();
+setInterval(updateClock, 1000);
+function toggleSidebar() {
+  document.querySelectorAll('.sidebar').forEach(s => s.classList.toggle('mob-open'));
+}
+</script>
 </body>
 </html>
