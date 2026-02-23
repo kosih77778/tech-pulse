@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Pulse — やさしいテック情報ダッシュボード</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+  :root{
+    --bg:#fff;--s1:#f8fafc;--s2:#f1f5f9;--bd:#e2e8f0;--bdh:#94a3b8;
+    --tx:#0f172a;--dim:#475569;--mut:#94a3b8;
+    --ac:#4f46e5;--ac2:#0284c7;--grn:#059669;--org:#d97706;--red:#dc2626;
+    --pur:#7c3aed;--pk:#db2777;--cy:#0891b2;--lm:#65a30d;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Noto Sans JP',-apple-system,sans-serif;background:var(--s1);color:var(--tx);line-height:1.7}
+  .topbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd);padding:0 20px;height:50px;display:flex;align-items:center;justify-content:space-between}
+  .topbar-l{display:flex;align-items:center;gap:10px}
+  .logo{font-size:1.1rem;font-weight:900;color:var(--ac)}
+  .logo-v{font-size:.6rem;color:var(--mut);background:var(--s2);padding:2px 8px;border-radius:4px;font-weight:600}
+  .topbar-r{display:flex;align-items:center;gap:10px}
+  .live{width:7px;height:7px;background:var(--grn);border-radius:50%;animation:bk 2s ease-in-out infinite}
+  @keyframes bk{0%,100%{opacity:1}50%{opacity:.3}}
+  .clock{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--dim)}
+  .updated{font-size:.62rem;color:var(--mut)}
+  .src-banner{background:var(--s2);border-bottom:1px solid var(--bd);padding:6px 20px;font-size:.68rem;color:var(--dim);overflow-x:auto;white-space:nowrap}
+  .tab-bar{display:flex;gap:0;overflow-x:auto;scrollbar-width:none;background:var(--bg);border-bottom:1px solid var(--bd)}
+  .tab-bar::-webkit-scrollbar{display:none}
+  .tab-btn{padding:11px 18px;border:none;background:transparent;color:var(--dim);font-size:.78rem;font-weight:600;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all .15s;font-family:'Noto Sans JP',sans-serif}
+  .tab-btn:hover{color:var(--tx);background:rgba(79,70,229,.03)}
+  .tab-btn.active{color:var(--ac);border-bottom-color:var(--ac);background:rgba(79,70,229,.04)}
+  .tab-content{display:none}
+  .tab-content.active{display:grid;grid-template-columns:1fr 340px;max-width:1440px;margin:0 auto}
+  .feed{background:var(--bg);border-right:1px solid var(--bd);overflow-y:auto}
+  .fi{padding:20px;border-bottom:1px solid var(--bd);transition:background .15s}
+  .fi:hover{background:rgba(79,70,229,.02)}
+  .fi-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .fi-av{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;color:#fff;flex-shrink:0}
+  .fi-src{font-size:.82rem;font-weight:700}.fi-sub{font-size:.65rem;color:var(--mut)}
+  .fi-time{font-size:.62rem;color:var(--mut);margin-left:auto;font-family:'JetBrains Mono',monospace}
+  .fi-body{margin-left:40px}
+  .fi-title{font-size:.92rem;font-weight:700;color:var(--tx);margin-bottom:6px;line-height:1.45}
+  .fi-title a{color:inherit;text-decoration:none}
+  .fi-title a:hover{color:var(--ac)}
+  .fi-easy{font-size:.82rem;color:var(--dim);line-height:1.7;margin-bottom:10px;padding:12px 16px;background:var(--s1);border-radius:10px;border-left:3px solid var(--ac)}
+  .fi-easy strong{color:var(--tx)}
+  .fi-why{font-size:.78rem;color:var(--ac);font-weight:600;margin-bottom:8px;padding:8px 12px;background:rgba(79,70,229,.04);border-radius:8px}
+  .fi-why::before{content:'\1f4a1 ';font-size:.85rem}
+  .glossary{margin-bottom:10px;display:flex;flex-wrap:wrap;gap:5px}
+  .gl-item{font-size:.65rem;padding:4px 10px;border-radius:6px;background:var(--s2);border:1px solid var(--bd);color:var(--dim);cursor:help;position:relative}
+  .gl-item:hover{background:var(--ac);color:#fff;border-color:var(--ac)}
+  .gl-item .gl-tip{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--tx);color:#fff;padding:10px 14px;border-radius:8px;font-size:.72rem;width:260px;line-height:1.5;z-index:50;box-shadow:0 4px 12px rgba(0,0,0,.15);font-weight:400}
+  .gl-item:hover .gl-tip{display:block}
+  .gl-item .gl-tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:var(--tx)}
+  .fi-source{font-size:.65rem;color:var(--mut);margin-bottom:6px}
+  .fi-source a{color:var(--ac2);text-decoration:none}.fi-source a:hover{text-decoration:underline}
+  .sidebar{background:var(--bg);overflow-y:auto;padding:0}
+  .sb-card{padding:16px 18px;border-bottom:1px solid var(--bd)}
+  .sb-title{font-size:.72rem;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px}
+  .hn-item{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid var(--s2);align-items:flex-start}
+  .hn-item:last-child{border:none}
+  .hn-rank{font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;color:var(--mut);min-width:18px;text-align:center;margin-top:2px}
+  .hn-content{flex:1}
+  .hn-title{font-size:.76rem;color:var(--tx);text-decoration:none;font-weight:500;line-height:1.4;display:block}
+  .hn-title:hover{color:var(--ac)}
+  .hn-score{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--org)}
+  @media(max-width:900px){
+    .tab-content.active{grid-template-columns:1fr}
+    .sidebar{display:none}
+    .sidebar.mob-open{display:block;position:fixed;top:50px;right:0;bottom:0;width:320px;background:var(--bg);z-index:99;border-left:1px solid var(--bd);overflow-y:auto;box-shadow:-4px 0 20px rgba(0,0,0,.08)}
+    .mob-tog{display:flex!important}
+    .fi-body{margin-left:0;margin-top:8px}
+    .tab-btn{padding:9px 12px;font-size:.72rem}
+    .src-banner{display:none}
+    .gl-item .gl-tip{width:200px;font-size:.68rem}
+  }
+  @media(min-width:901px){.mob-tog{display:none!important}}
+  .mob-tog{width:32px;height:32px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--dim);cursor:pointer;font-size:.9rem;align-items:center;justify-content:center}
+  ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--bd);border-radius:2px}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-l">
+    <div class="logo">Tech Pulse</div>
+    <span class="logo-v">わかりやすい版</span>
+    <span class="updated">最終更新: {{UPDATED_AT}}</span>
+  </div>
+  <div class="topbar-r">
+    <div class="live"></div>
+    <div class="clock" id="clock"></div>
+    <button class="mob-tog" onclick="toggleSidebar()">☰</button>
+  </div>
+</div>
+<div class="src-banner">
+  📡 データソース: RSS (各社公式ブログ) · Hacker News API · Reddit JSON · Gemini AI解説
+</div>
+<div class="tab-bar">
+{{TAB_BUTTONS}}
+</div>
+{{TAB_CONTENTS}}
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    const tabId = btn.getAttribute('data-tab');
+    document.getElementById('tab-' + tabId).classList.add('active');
+  });
+});
+function updateClock() {
+  const now = new Date();
+  const jst = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+  document.getElementById('clock').textContent =
+    jst.getFullYear() + '/' +
+    String(jst.getMonth()+1).padStart(2,'0') + '/' +
+    String(jst.getDate()).padStart(2,'0') + ' ' +
+    String(jst.getHours()).padStart(2,'0') + ':' +
+    String(jst.getMinutes()).padStart(2,'0') + ':' +
+    String(jst.getSeconds()).padStart(2,'0') + ' JST';
+}
+updateClock();
+setInterval(updateClock, 1000);
+function toggleSidebar() {
+  document.querySelectorAll('.sidebar').forEach(s => s.classList.toggle('mob-open'));
+}
+</script>
+</body>
+</html>
