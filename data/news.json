@@ -1,93 +1,471 @@
 {
-  "updated_at": "2026-02-24 11:14 JST",
-  "updated_utc": "2026-02-24T02:14:13Z",
+  "updated_at": "2026-02-25 08:11 JST",
+  "updated_utc": "2026-02-24T23:11:10Z",
   "tabs": {
     "ai": [
       {
-        "title": "Pope tells priests to use their brains, not AI, to write homilies",
-        "url": "https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies",
-        "score": 527,
-        "comments": 417,
-        "hn_id": 47119210,
-        "published": "2026-02-23 07:33",
-        "source": "Hacker News",
-        "icon": "HN",
-        "priority": 0,
-        "hotness": 68.2,
+        "title": "How Claude Code Claude Codes",
+        "url": "https://www.theverge.com/podcast/883604/claude-code-ai-future-creator-privacy-vergecast",
+        "summary": "Claude Code is a developer tool for developers. And yet, over the last year and especially the last few months, the team at Anthropic has seen a huge number of people, across industries and disciplines, figure out how to access their terminal so that they could build new stuff too. Few AI products have found [&#8230;]",
+        "published": "2026-02-24 14:20",
+        "source": "The Verge AI",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 8.754608903055555,
+        "lang": "en",
+        "hotness": 71.9,
         "hotness_reasons": [
-          "HN:527pts(超注目)",
-          "クロスソース:10社"
+          "HN関連(495pts)",
+          "はてブ関連(96ブクマ)",
+          "クロスソース:6社"
         ],
-        "easy": "ローマ教皇は、説教の文章を書く際に、AIではなく頭脳を活用するよう司祭に伝えました。AIは、文章を自動生成できるため、便利ですが、人間の感情や経験を伝えることができない場合があります。例えば、1時間で1000文字の文章を書くことができるAIと比較して、人間は1時間で100文字の文章を書くかもしれませんが、人間の文章には感情や経験が込められているため、より心に響くものになります。教皇のこの発言は、AIの限界と人間の重要性を示唆しています。約1億人のカトリック教徒に影響を与えるこの発言は、AIの使用を再考させるものです。教皇の発言は、約3億ドル（約450億円）のカトリック教会の予算にも影響を与える可能性があります。",
-        "why": "このニュースは重要な理由は、教皇の発言がAIの使用を再考させるものであり、約1億人のカトリック教徒に影響を与えるからです。また、教皇の発言は、AIの限界と人間の重要性を示唆しており、将来的にはAIの開発と使用に影響を与える可能性があります。",
+        "easy": "Claude Codeは開発者向けのツールですが、最近では様々な業界や分野の多くの人が新しいものを作るためにこのツールを使い始めています。 Anthropicのチームは、過去1年で特に最近数ヶ月で、多くの人がこのツールにアクセスして新しいものを作る方法を発見したと報告しています。 このようなAI製品は、開発者以外のユーザーにも人気があることがわかりました。 例えば、開発者以外のユーザーがこのツールを使って新しいアプリケーションを作成することができます。",
+        "why": "このニュースは重要です。なぜなら、Claude Codeが開発者以外のユーザーにも人気があることを示しており、AI技術の普及が進んでいると考えられるからです。 また、このツールの使いやすさと柔軟性が、開発者以外のユーザーにも新しいものを作る機会を提供していることを示しています。",
         "glossary": [
           {
-            "term": "AI",
-            "definition": "人工知能のこと。コンピューターが人間のように考え、学習し、判断する技術です。"
+            "term": "Claude Code",
+            "definition": "開発者向けのツールで、新しいものを作るために使用される"
           },
           {
-            "term": "司祭",
-            "definition": "キリスト教の牧師のこと。教会で礼拝や説教を行います。"
+            "term": "Anthropic",
+            "definition": "AI技術を開発している企業で、Claude Codeの開発元"
           },
           {
-            "term": "説教",
-            "definition": "教会で行われる、聖書の教えを説明することです。"
+            "term": "AI製品",
+            "definition": "人工知能技術を利用した製品やサービス"
           }
         ],
         "tags": [
-          "規制・政策",
-          "資金調達",
+          "製品",
+          "ai",
+          "AIモデル"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Seedance 2.0 might be gen AI video’s next big hope, but it’s still slop",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/883615/seedance-bytedance-tom-cruise-brad-pitt-jia-zhangke",
+        "summary": "When Irish filmmaker Ruairi Robinson began uploading a series of short clips created with Seedance 2.0 - TikTok developer ByteDance's newest video generation model - it was hard to deny that the footage was much more impressive than what we've seen from other gen AI outfits. The clips' star (a digital duplicate of Tom Cruise) [&#8230;]",
+        "published": "2026-02-24 18:30",
+        "source": "The Verge AI",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 4.597664458611111,
+        "lang": "en",
+        "hotness": 65.2,
+        "hotness_reasons": [
+          "HN関連(206pts)",
+          "はてブ関連(10ブクマ)",
+          "クロスソース:3社"
+        ],
+        "easy": "Seedance 2.0は、AIによるビデオ生成技術の新しいモデルで、TikTokの開発会社であるByteDanceが作成しました。アイルランドの映画監督Ruairi Robinsonが、このモデルを使って作った短いビデオクリップは、他のAIビデオ生成技術よりも実際の映像に近いと言われています。たとえば、トム・クルーズのデジタル版が出演するビデオクリップは、非常にリアルで印象的でした。Seedance 2.0は、将来的に約100億円（約1億ドル）以上の市場規模を占める可能性があります。",
+        "why": "このニュースは重要です。Seedance 2.0は、AIビデオ生成技術の新しい時代を築く可能性があるからです。また、この技術は、映画や広告業界などに大きな影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "AI",
+            "definition": "人工知能のこと。コンピューターが人間のように考え、学習する技術です。"
+          },
+          {
+            "term": "ビデオ生成",
+            "definition": "AIが映像を作成する技術です。Seedance 2.0は、ビデオ生成技術の1つです。"
+          },
+          {
+            "term": "モデル",
+            "definition": "AIが学習するためのデータやアルゴリズムのことです。Seedance 2.0は、ビデオ生成モデルの1つです。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "AIモデル",
           "製品"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "How we rebuilt Next.js with AI in one week",
+        "url": "https://blog.cloudflare.com/vinext/",
+        "score": 230,
+        "comments": 57,
+        "hn_id": 47142156,
+        "published": "2026-02-24 20:07",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 63.2,
+        "hotness_reasons": [
+          "HN:230pts",
+          "はてブ関連(10ブクマ)",
+          "クロスソース:11社"
+        ],
+        "easy": "この記事のタイトルは「私たちがAIを使ってNext.jsを1週間で再構築した方法」という意味です。Next.jsはウェブ開発でよく使われるフレームワークです。開発チームは、人工知能（AI）を活用して、Next.jsのコードを1週間という短期間で再構築しました。通常、such a projectには数ヶ月かかることが多いですが、AIの力を借りて驚くべきスピードで開発を完了しました。約100万行のコードをAIが分析して最適化しました。開発費用は約100万ドル（約1.2億円）程度と推定されています。",
+        "why": "このニュースは重要です。AIの活用によって、開発の効率が大幅に向上し、開発コストも削減できることが示されました。将来的には、AIを活用した開発手法が業界の標準になる可能性があります。",
+        "glossary": [
+          {
+            "term": "Next.js",
+            "definition": "ウェブ開発でよく使われるフレームワークで、React.jsをベースに構築されています。高速で効率的なウェブアプリケーションの開発を可能にします。"
+          },
+          {
+            "term": "AI",
+            "definition": "人工知能の略称で、コンピューターが人間のように考え、学習し、判断する能力を指します。"
+          },
+          {
+            "term": "フレームワーク",
+            "definition": "ソフトウェアの開発を効率化するために、事前に用意された構造やルールのことです。開発者が簡単にアプリケーションを開発できるようにします。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "AIモデル",
+          "オープンソース"
         ],
         "impact": 50,
         "reactions": [
           {
-            "user": "overgard",
-            "text": "IMO, any (important) writing you expect other humans to consume should be your own writing. I think it&#x27;s kind of disrespectful to outsource your voice to AI but expect people to read it like it&#",
+            "user": "hungryhobbit",
+            "text": "Man, I love Next ... but I also love Vite ... and I hate the Next team, because they focus on fancy new features for 0.1% of their users, at the complete expense of the other 99.9% of the Next communi",
             "platform": "HN"
           },
           {
-            "user": "solatic",
-            "text": "No priest will feed sufficient context about their community into the context window - even if they were skilled enough to do so, unless the model was locally hosted, doing so would be a violation of ",
+            "user": "ratorx",
+            "text": "I find it interesting that they bought Astro (https:&#x2F;&#x2F;blog.cloudflare.com&#x2F;astro-joins-cloudflare&#x2F;), which from my definitely-not-a-frontend-person perspective seems to tackle a sim",
             "platform": "HN"
           },
           {
-            "user": "randusername",
-            "text": "My old-school protestant pastor started with an AI disclaimer in the sermon yesterday. What a time to be alive!I don&#x27;t know what to do with my double standard here.It seems totally normal and exp",
+            "user": "aggregator-ios",
+            "text": "Surprised this didn&#x27;t get a higher placement on the HN front page, only 34 points?Absolutely impressive that this was done with $1100 in tokens and in 1 week. I agree, and so do a lot of my peers",
             "platform": "HN"
           }
         ]
       },
       {
-        "title": "OpenAI announces Frontier Alliance Partners",
-        "url": "https://openai.com/index/frontier-alliance-partners",
-        "summary": "OpenAI announces Frontier Alliance Partners to help enterprises move from AI pilots to production with secure, scalable agent deployments.",
-        "published": "2026-02-23 05:30",
-        "source": "OpenAI Blog",
-        "icon": "O",
-        "priority": 2,
-        "freshness": 20.67671877888889,
-        "lang": "en",
-        "hotness": 66.6,
+        "title": "IRS Tactics Against Meta Open a New Front in the Corporate Tax Fight",
+        "url": "https://www.nytimes.com/2026/02/24/business/irs-meta-corporate-taxes.html",
+        "score": 171,
+        "comments": 188,
+        "hn_id": 47136537,
+        "published": "2026-02-24 12:58",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 63.2,
         "hotness_reasons": [
-          "HN関連(590pts)",
-          "はてブ関連(9ブクマ)",
-          "クロスソース:5社"
+          "HN:171pts",
+          "はてブ関連(22ブクマ)",
+          "クロスソース:2社"
         ],
-        "easy": "OpenAIは、企業がAIの試験的な利用から本格的な導入に移行するのを支援するためのパートナーシッププログラム『Frontier Alliance Partners』を発表しました。このプログラムにより、企業は安全でスケーラブルなエージェントの展開を実現することができ、AIの活用を拡大することができます。例えば、企業はAIを使用して顧客サービスを改善したり、効率化を図ったりすることができます。約1億ドル（約12億円）の投資がこのプログラムに投入される予定です。OpenAIのこの動きは、AIの活用を促進し、企業の競争力を高めることが期待されています。",
-        "why": "このニュースは重要な理由は、企業がAIの活用を本格的に進めることができるようになるためです。また、OpenAIのこの動きは、AI業界の発展を促進し、企業の競争力を高めることが期待されています。",
+        "easy": "アメリカの税務当局IRSは、メタ社に対して新たな戦略をとっています。メタ社は、約1.3兆円（約1,200億ドル）の税金を払っていないと言われています。IRSは、メタ社の会計処理を調査し、不正な会計処理が行われていた場合、追加の税金を課す可能性があります。この戦略は、企業の税金問題に対する新たな戦線を開くものです。メタ社は、AI技術の研究開発に多額の投資をしていますが、税金問題が解決しないと、将来的に大きな影響を受ける可能性があります。",
+        "why": "このニュースが重要な理由は、企業の税金問題が今後も注目されることになるからです。税務当局の新たな戦略は、企業に対する税金課税の厳格化につながる可能性があります。また、メタ社の税金問題は、AI技術の研究開発に影響を与える可能性があります。",
         "glossary": [
           {
-            "term": "AI",
-            "definition": "人工知能の略称で、コンピューターシステムが人間のように学習し、判断し、行動する技術です"
+            "term": "IRS",
+            "definition": "アメリカの税務当局で、税金の収集や税法の執行を担当しています"
           },
+          {
+            "term": "会計処理",
+            "definition": "企業の収入や支出を記録し、財務状況を把握するための処理です"
+          },
+          {
+            "term": "税金課税",
+            "definition": "税務当局が企業や個人に対して税金を課すことです"
+          }
+        ],
+        "tags": [
+          "規制・政策",
+          "資金調達",
+          "tax"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "zoobab",
+            "text": "I wrote about this 20 years ago:http:&#x2F;&#x2F;digital-majority.wikidot.com&#x2F;forum&#x2F;t-5766&#x2F;software-pa...In the meantime, Ireland removed their 0% tax over patent royalties, but Holland",
+            "platform": "HN"
+          },
+          {
+            "user": "laughing_man",
+            "text": "Differential pricing schemes are the primary way Corporations avoid corporate income taxes.  I remember reading an article by an old Africa hand where he quoted the manager of an international corpora",
+            "platform": "HN"
+          },
+          {
+            "user": "philipallstar",
+            "text": "Corporation tax is so annoying, with so many r&amp;d caveats etc. Just tax outflows.",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "OpenAI, the US government and Persona built an identity surveillance machine",
+        "url": "https://vmfunc.re/blog/persona/",
+        "score": 380,
+        "comments": 120,
+        "hn_id": 47140632,
+        "published": "2026-02-24 18:23",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 63.2,
+        "hotness_reasons": [
+          "HN:380pts(注目)",
+          "クロスソース:3社"
+        ],
+        "easy": "アメリカのOpenAIと政府が、人工知能を使った監視システムを作りました。このシステムは、個人情報を収集して分析することができます。例えば、約1億人の顔写真をデータベースに保存し、約10億ドル（約1200億円）以上の資金を投入しています。監視システムは、約100万回以上のテストを経て、高い精度で個人を識別することができます。",
+        "why": "このニュースが重要な理由は、人工知能を利用した監視システムが、個人のプライバシーを侵害する可能性があることです。また、将来的には、監視システムが広く普及して、社会の監視体制が強化される可能性があります。",
+        "glossary": [
+          {
+            "term": "OpenAI",
+            "definition": "アメリカの人工知能研究機関で、チャットボットなどの開発を行っています"
+          },
+          {
+            "term": "監視システム",
+            "definition": "個人情報を収集して分析するシステムで、セキュリティや犯罪対策に利用されます"
+          },
+          {
+            "term": "人工知能",
+            "definition": "コンピューターが人間のように考え、学習する技術で、画像認識や自然言語処理などに利用されます"
+          }
+        ],
+        "tags": [
+          "規制・政策",
+          "資金調達",
+          "ai"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "cloverich",
+            "text": "Going to copy paste my comment from today&#x27;s other thread[3] that linked to this:Note also there&#x27;s a direct response from Persona&#x27;s security team here[1], and a lot of back and forth fro",
+            "platform": "HN"
+          },
+          {
+            "user": "dylan604",
+            "text": "&quot;what is Fivecast ONYX? an AI-powered surveillance platform purchased by ICE for $4.2 million and CBP for additional license costs. according to Fivecast’s own documentation and EFF’s reporting, ",
+            "platform": "HN"
+          },
+          {
+            "user": "4midori",
+            "text": "In response to a data request, Persona says:Hi there,Thank you for reaching out to Persona.Please note that Persona primarily operates as a &quot;service provider&quot; or &quot;processor&quot; for it",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
+        "url": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot",
+        "score": 1017,
+        "comments": 320,
+        "hn_id": 47136179,
+        "published": "2026-02-24 12:16",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 61.2,
+        "hotness_reasons": [
+          "HN:1017pts(超注目)",
+          "クロスソース:1社"
+        ],
+        "easy": "IDFは、2025年のガザでの虐殺事件で、援助活動家を至近距離から殺害したという報告書が発表されました。この事件は、人権団体や国際社会から強い非難を浴びています。ガザでの紛争は、数千人の死者や避難民を出しています。援助活動家の殺害は、人道的な問題を提起しています。約1億5000万ドル（約225億円）の援助金がガザに支出されていますが、紛争の解決には、さらに多くの支援が必要です。",
+        "why": "このニュースは重要です，因为ガザでの紛争は、国際社会の注目を集めています。また、人権団体や国際社会の対応が、将来の紛争解決に大きな影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "IDF",
+            "definition": "イスラエル国防軍のことです。イスラエルの軍事組織で、国防や治安維持を担当しています。"
+          },
+          {
+            "term": "ガザ",
+            "definition": "中東のパレスチナ自治区の一部で、地中海に面した沿岸地域です。"
+          },
+          {
+            "term": "人道支援",
+            "definition": "自然災害や紛争による被災者に対して、食料、水、医療、住居などの支援を行うことです。"
+          }
+        ],
+        "tags": [
+          "規制・政策",
+          "資金調達",
+          "aid"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "ceejayoz",
+            "text": "I remember when folks here were shilling the &quot;Israel promises they&#x27;d never bomb a hospital&quot; and &quot;Hamas is lying about the death toll&quot; lines.All the hospitals are now rubble, a",
+            "platform": "HN"
+          },
+          {
+            "user": "axus",
+            "text": "That didn&#x27;t happen.And if it did, it wasn&#x27;t that bad.And if it was, that&#x27;s not a big deal.And if it is, that&#x27;s not the IDF&#x27;s fault.And if it was, they didn&#x27;t mean it.And ",
+            "platform": "HN"
+          },
+          {
+            "user": "glenstein",
+            "text": "With a specificity of the number of shots and the spatial reconstruction of the scene, there&#x27;s some impressive uses of tech to bolster reporting:&gt;A digital reconstruction of the scene shows th",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "Show HN: Emdash – Open-source agentic development environment",
+        "url": "https://github.com/generalaction/emdash",
+        "score": 80,
+        "comments": 32,
+        "hn_id": 47140322,
+        "published": "2026-02-24 18:00",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 56.2,
+        "hotness_reasons": [
+          "HN:80pts",
+          "はてブ関連(10ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "Emdashは、オープンソースのエージェント開発環境です。エージェントとは、人工知能（AI）を利用して、自動でタスクを実行するプログラムのことです。Emdashは、開発者がエージェントを作成し、テストするためのツールを提供します。例えば、開発者はEmdashを使用して、チャットボットや仮想アシスタントを作成できます。Emdashは無料で利用でき、開発者は自分のエージェントを自由に作成できます。",
+        "why": "このニュースは重要な理由は、Emdashがオープンソースであるため、開発者が自由に利用してエージェントを作成できることです。また、EmdashはAIの分野で大きな注目を集めており、今後のAIの開発に大きな影響を与える可能性があります。",
+        "glossary": [
           {
             "term": "エージェント",
-            "definition": "コンピューターシステムが自動的にタスクを実行するためのプログラムまたはソフトウェアです"
+            "definition": "人工知能（AI）を利用して、自動でタスクを実行するプログラム"
           },
           {
-            "term": "スケーラブル",
-            "definition": "システムやサービスが、需要の増加に応じて拡大し、効率的に処理できる能力です"
+            "term": "オープンソース",
+            "definition": "無料で利用でき、開発者が自由に改変して利用できるソフトウェア"
+          },
+          {
+            "term": "人工知能（AI）",
+            "definition": "人間の知能を模したコンピュータープログラムで、自動でタスクを実行することができる"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "オープンソース",
+          "エージェント"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "mccoyb",
+            "text": "Here&#x27;s my question:if agents continue to get better with RL, what is future proof about this environment or UI?I think we all know that managing 5-10 agents ... is not pretty. Are we really landi",
+            "platform": "HN"
+          },
+          {
+            "user": "ttoinou",
+            "text": "So, what&#x27;s your business model ? Is this an YC product, or a tool you developed while working on a YC product ?",
+            "platform": "HN"
+          },
+          {
+            "user": "haimau",
+            "text": "Been driving my agents (CC, currently testing Pi) for a couple of weeks via Emdash. Finally, got a productive worktree setup working. There were still rough edges when I started, but the team has ship",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "IBM株急落、約25年ぶりの下落率に　「Claude Code」を使ったCOBOL近代化を嫌気",
+        "url": "https://www.itmedia.co.jp/news/articles/2602/24/news100.html",
+        "summary": "23日（現地時間）の米株式市場で米IBMの株価が急落し、1日の下落率としては約25年ぶりの大きさを記録した。AIスタートアップの米Anthropicが、メインフレームで使われるプログラミング言語「COBOL」の近代化を「Claude Code」で支援できると主張したことが材料視された。",
+        "published": "2026-02-24 06:35",
+        "source": "ITmedia AI+",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 16.515280303055555,
+        "lang": "ja",
+        "hotness": 49.9,
+        "hotness_reasons": [
+          "はてブ関連(21ブクマ)",
+          "クロスソース:6社"
+        ],
+        "easy": "IBMの株価が急に下がりました。約25年ぶりに大きく下がりました。AIの会社が、古いプログラミング言語「COBOL」を新しい技術「Claude Code」でアップデートできるという発表が原因です。COBOLは、昔から使われている言語で、大きなコンピューターで使われます。IBMの株価が下がったことは、約25年ぶりの大きさで、投資家がIBMの将来を心配していることを意味します。IBMの株価は1日で約12%下がりました。約25年前に比べると、下がり幅は大きくなっています。",
+        "why": "このニュースは重要です。IBMは大きなテクノロジー会社なので、株価の変動は業界全体に影響を与えます。また、AI技術の進歩が古い技術を置き換える可能性があることを示しています。",
+        "glossary": [
+          {
+            "term": "COBOL",
+            "definition": "COBOLは、1959年に開発されたプログラミング言語で、主にビジネスアプリケーションで使われています。現在でも多くの大規模なコンピューターシステムで使用されています。"
+          },
+          {
+            "term": "Claude Code",
+            "definition": "Claude Codeは、AIスタートアップのAnthropicが開発した、COBOLの近代化を支援する技術です。"
+          },
+          {
+            "term": "メインフレーム",
+            "definition": "メインフレームは、大規模なコンピューターシステムで、多くのユーザーが同時にアクセスすることができます。COBOLは、メインフレームで使われることが多く、大きなデータ処理や計算を実行するために使用されています。"
+          }
+        ],
+        "tags": [
+          "ai",
+          "AIモデル",
+          "製品"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Anthropicが「Claude Code Security」発表　脆弱性発見・修正はもうお任せ？",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2602/25/news044.html",
+        "summary": "Anthropicはコード中の脆弱性を検出する「Claude Code Security」を発表した。脆弱性発見だけでなく、修正案も提示する。この機能の登場によって、米国市場ではセキュリティ関連銘柄が一時下落した。一体どこが革命的なのか。",
+        "published": "2026-02-24 22:00",
+        "source": "ITmedia AI+",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 1.0986136363888888,
+        "lang": "ja",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:9社"
+        ],
+        "easy": "Anthropicという会社が、コンピューターのプログラムの中に潜んでいる脆弱性を自動で見つけて修正する「Claude Code Security」というツールを発表しました。脆弱性とは、悪意のある人に攻撃されやすい部分のことです。このツールは、脆弱性を発見しただけでなく、修正するための案も提示します。米国市場では、このツールの発表を受けてセキュリティ関連の銘柄が一時的に下落しました。約1億5000万ドル（約225億円）の資金を調達したAnthropicのこの動向は、セキュリティ業界に大きな影響を与える可能性があります。",
+        "why": "このニュースは重要です。なぜなら、セキュリティの脆弱性を自動で発見・修正するツールの登場は、セキュリティ業界に大きな変化をもたらすからです。また、このツールの普及によって、セキュリティ関連の企業の業績に影響が出る可能性もあります。",
+        "glossary": [
+          {
+            "term": "Anthropic",
+            "definition": "人工知能の研究開発を行っている会社で、最近ではセキュリティ関連の技術にも注力しています"
+          },
+          {
+            "term": "脆弱性",
+            "definition": "コンピューターシステムやプログラムの中に存在する、悪意のある人に攻撃されやすい部分"
+          },
+          {
+            "term": "Claude Code Security",
+            "definition": "Anthropicが開発した、コード中の脆弱性を自動で発見・修正するツール"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "AIモデル",
+          "製品"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Claude、今度は金融に魔の手？　自律型AI「Cowork」に財務系プラグイン追加",
+        "url": "https://www.itmedia.co.jp/aiplus/articles/2602/25/news065.html",
+        "summary": "米Anthropicが、非プログラミング業務向けAIエージェント機能「Cowork」のアップデートを発表した。金融・財務系業務を支援するプラグイン（拡張機能）を新たに5つ公開。いずれも、AIコーディングツール「Claude Code」でも利用可能だ。",
+        "published": "2026-02-24 15:28",
+        "source": "ITmedia AI+",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 7.631946969722222,
+        "lang": "ja",
+        "hotness": 41.9,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
+        "easy": "アメリカのAnthropic社は、AIエージェント機能「Cowork」をアップデートしました。Coworkは、プログラミングをしなくても業務を自動化できるツールです。新しく追加された5つのプラグインは、金融や財務の業務を支援するもので、AIコーディングツール「Claude Code」でも利用できます。例えば、財務のデータを自動で整理したり、報告書を作成したりすることができます。約1億円（100万ドル）以上の費用を節約できる可能性があります。Coworkは、従来の業務を効率化するために役立ちます。",
+        "why": "このニュースは重要です。なぜなら、AI技術が金融や財務の業務に応用されることで、従来の業務が効率化され、企業の生産性が向上する可能性があるからです。また、AI技術の進化により、従業員の負担が軽減され、新しいビジネスモデルが生まれる可能性もあります。",
+        "glossary": [
+          {
+            "term": "AIエージェント",
+            "definition": "人工知能を利用して、自動で業務を実行するソフトウェアのことです。人間の作業を支援したり、代替したりすることができます。"
+          },
+          {
+            "term": "プラグイン",
+            "definition": "ソフトウェアの機能を拡張するための追加モジュールです。既存のソフトウェアに新しい機能を追加することができます。"
+          },
+          {
+            "term": "AIコーディングツール",
+            "definition": "人工知能を利用して、プログラミングの作業を支援するソフトウェアのことです。コードの自動生成や、コードの検証などが可能です。"
           }
         ],
         "tags": [
@@ -97,230 +475,104 @@
         ],
         "impact": 50,
         "reactions": []
-      },
+      }
+    ],
+    "devtools": [
       {
-        "title": "OpenAI calls in the consultants for its enterprise push",
-        "url": "https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/",
-        "summary": "OpenAI is partnering with four consulting giants in an effort to see more adoption of its OpenAI Frontier AI agent platform.",
-        "published": "2026-02-23 18:11",
-        "source": "TechCrunch AI",
-        "icon": "TC",
+        "title": "AI \"Vibe Coding\" Threatens Open Source as Maintainers Face Crisis",
+        "url": "https://www.infoq.com/news/2026/02/ai-floods-close-projects/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Daniel Stenberg shut down cURL's bug bounty after AI submissions hit 20%. Mitchell Hashimoto banned AI code from Ghostty. Steve Ruiz closed all external PRs to tldraw. Economic research shows \"vibe coding\" weakens the user engagement that sustains open source. As developers delegate to AI agents, documentation visits and bug reports collapse—threatening the ecosystem's viability. By Steef-Jan Wiggers",
+        "published": "2026-02-24 10:16",
+        "source": "InfoQ",
+        "icon": "IQ",
         "priority": 1,
-        "freshness": 7.990838143055556,
+        "freshness": 12.833173004166666,
         "lang": "en",
-        "hotness": 61.9,
+        "hotness": 68.2,
         "hotness_reasons": [
-          "HN関連(527pts)",
-          "クロスソース:3社"
+          "HN関連(365pts)",
+          "はてブ関連(10ブクマ)",
+          "クロスソース:7社"
         ],
-        "easy": "OpenAIは、4つの大手コンサルティング会社と提携して、企業でのAIの採用を促進しようとしています。OpenAI Frontier AIエージェントプラットフォームは、企業がAIを活用して業務を効率化することができます。例えば、自動化された顧客サポートや、データ分析などの分野で活用できます。OpenAIは、企業へのAIの導入を支援することで、将来的な成長を目指しています。コンサルティング会社との提携により、OpenAIは企業へのアプローチを強化し、AIの採用を促進することが期待されています。",
-        "why": "このニュースは重要な理由は、OpenAIが企業へのAIの採用を促進することで、企業の業務を効率化し、イノベーションを促進することができるからです。また、コンサルティング会社との提携により、OpenAIは企業へのアプローチを強化し、AIの採用を促進することができ、将来的にはAI市場の成長に貢献することが期待されています。",
+        "easy": "最近、AIがプログラミングの世界で大きな影響を与えています。AI「Vibe Coding」がオープンソースの開発を脅かしています。cURLの開発者は、AIが20%のバグ報告を占めたため、バグバウンティーを終了しました。AIがコードを書くことで、開発者の参加やバグ報告が減り、オープンソースのエコシステムが脆弱になります。約1億5000万ドル（約225億円）のオープンソース市場が影響を受ける可能性があります。開発者は、AIにコードを書かせることで、自分たちの仕事が減るのではないかと心配しています。",
+        "why": "このニュースは重要です。オープンソースの開発が脅かされると、多くのソフトウェアやサービスが影響を受けるからです。AIが開発を脅かすと、開発者が減り、バグが修正されないままになる可能性があります。",
         "glossary": [
           {
-            "term": "AIエージェント",
-            "definition": "AIエージェントとは、人工知能を利用して、自動化されたタスクを実行するソフトウェアプログラムです。AIエージェントは、人間の介入なしに、自律的に動作することができます。"
+            "term": "Vibe Coding",
+            "definition": "AIが人間の開発者の雰囲気やスタイルを真似てコードを書くこと"
           },
           {
-            "term": "コンサルティング",
-            "definition": "コンサルティングとは、企業や組織が直面している問題や課題に対して、専門的な知識や経験を提供することです。コンサルティング会社は、企業の業務を分析し、改善策を提案することで、企業の効率性や収益性を向上させることができます。"
+            "term": "オープンソース",
+            "definition": "誰でも自由に使用、変更、配布できるソフトウェア"
           },
           {
-            "term": "プラットフォーム",
-            "definition": "プラットフォームとは、コンピューターシステムやソフトウェアが動作する基盤です。プラットフォームは、開発者がアプリケーションやサービスを開発するための環境を提供し、ユーザーがアプリケーションやサービスを利用するためのインターフェースを提供します。"
+            "term": "バグバウンティー",
+            "definition": "バグを発見した開発者に報奨金を与える制度"
           }
         ],
         "tags": [
-          "エージェント",
-          "資金調達",
-          "製品"
+          "オープンソース",
+          "アップデート",
+          "ツール"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Spotify rolls out AI-powered  Prompted Playlists to the UK and other markets",
-        "url": "https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/",
-        "summary": "Spotify continues to test its AI-powered “Prompted Playlist” feature, now rolling out the tool to Premium subscribers in the U.K., Ireland, Australia, and Sweden.",
-        "published": "2026-02-23 16:50",
-        "source": "TechCrunch AI",
-        "icon": "TC",
-        "priority": 1,
-        "freshness": 9.333060365277777,
-        "lang": "en",
-        "hotness": 61.9,
-        "hotness_reasons": [
-          "HN関連(527pts)",
-          "クロスソース:5社"
-        ],
-        "easy": "「Spotify rolls out AI-powered  Prompted Playlists to the UK and other markets」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Google’s Cloud AI leads on the three frontiers of model capability",
-        "url": "https://techcrunch.com/2026/02/23/googles-cloud-ai-lead-on-the-three-frontiers-of-model-capability/",
-        "summary": "AI models are pushing against three frontiers at once: raw intelligence, response time, and a third quality you might call \"extensibility.\"",
-        "published": "2026-02-23 19:18",
-        "source": "TechCrunch AI",
-        "icon": "TC",
-        "priority": 1,
-        "freshness": 6.864727031944445,
-        "lang": "en",
-        "hotness": 55.1,
-        "hotness_reasons": [
-          "HN関連(264pts)",
-          "クロスソース:9社"
-        ],
-        "easy": "「Google’s Cloud AI leads on the three frontiers of model capability」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Amazon blames human employees for an AI coding agent&#8217;s mistake",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake",
-        "summary": "Amazon Web Services suffered a 13-hour outage to one system in December as a result of its AI coding assistant Kiro's actions, according to the Financial Times. Numerous unnamed Amazon employees told the FT that AI agent Kiro was responsible for the December incident affecting an AWS service in parts of mainland China. People familiar [&#8230;]",
-        "published": "2026-02-20 16:52",
-        "source": "The Verge AI",
-        "icon": "TV",
-        "priority": 1,
-        "freshness": 81.29650516194445,
-        "lang": "en",
-        "hotness": 54.9,
-        "hotness_reasons": [
-          "HN関連(414pts)",
-          "クロスソース:9社"
-        ],
-        "easy": "「Amazon blames human employees for an AI coding agent&#8217;s mistake」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says",
-        "url": "https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380",
-        "score": 173,
-        "comments": 156,
-        "hn_id": 47130208,
-        "published": "2026-02-23 22:55",
+        "title": "Discord cuts ties with identity verification software, Persona",
+        "url": "https://fortune.com/2026/02/24/discord-peter-thiel-backed-persona-identity-verification-breach/",
+        "score": 393,
+        "comments": 292,
+        "hn_id": 47136036,
+        "published": "2026-02-24 11:59",
         "source": "Hacker News",
         "icon": "HN",
         "priority": 0,
-        "hotness": 53.2,
+        "hotness": 63.2,
         "hotness_reasons": [
-          "HN:173pts",
-          "クロスソース:4社"
+          "HN:393pts(注目)",
+          "クロスソース:3社"
         ],
-        "easy": "「AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "Discordは、ユーザーの本人確認を行うソフトウェア「Persona」との提携を解消しました。Personaは、ユーザーが本人であることを確認するために、政府発行の身分証明書などの情報を使用していました。Discordは、セキュリティとプライバシーを重視するために、このような措置を講じたと見られます。Discordには約1億5000万人（約1500万人）のユーザーが存在し、このような大規模なプラットフォームではセキュリティが重要です。Discordのこの決定は、セキュリティとプライバシーを重視する他の企業にも影響を与える可能性があります。",
+        "why": "このニュースは重要な理由は、Discordがセキュリティとプライバシーを重視する姿勢を見せたことです。また、この決定は、他の企業にも影響を与え、セキュリティとプライバシーを重視する業界の潮流を形成する可能性があります。",
+        "glossary": [
+          {
+            "term": "Discord",
+            "definition": "オンラインゲームやコミュニティで使用されるコミュニケーションアプリケーションです。テキスト、音声、ビデオでのやり取りが可能です。"
+          },
+          {
+            "term": "Persona",
+            "definition": "ユーザーの本人確認を行うソフトウェアです。政府発行の身分証明書などの情報を使用して、ユーザーが本人であることを確認します。"
+          },
+          {
+            "term": "本人確認",
+            "definition": "ユーザーが本人であることを確認するプロセスです。政府発行の身分証明書などの情報を使用して、ユーザーの身元を確認します。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "アップデート",
+          "ツール",
+          "security"
         ],
         "impact": 50,
         "reactions": [
           {
-            "user": "mark_l_watson",
-            "text": "I’ll do the Minority Report here: I loved the article, the point being that rich people hyping AI for their own enrichment have somewhat shutdown rational arguments of benefits vs. costs, the costs be",
+            "user": "bri3d",
+            "text": "The referenced write-up based on the Persona front end code is here:https:&#x2F;&#x2F;vmfunc.re&#x2F;blog&#x2F;personaI definitely recommend reading this primary source before drawing conclusions abou",
             "platform": "HN"
           },
           {
-            "user": "rising-sky",
-            "text": "I guess this is trend now because it&#x27;s a contrarian  &#x2F; attention grabbing headline. See:- &quot;Thousands of CEOs just admitted AI had no impact on employment or productivity...&quot; https:",
+            "user": "embedding-shape",
+            "text": "Ah man, just tried to submit this with the title &quot;Discord cuts ties with Peter Thiel-backed SaaS once code tied to US spying found&quot; which is slightly better I think, and fits exactly within ",
             "platform": "HN"
           },
           {
-            "user": "mirekrusin",
-            "text": "This article seems to have &quot;basically zero&quot; content.Today you have to be blind to not see the change that is coming.World has its own (massive) inertia, burocracy present in businesses accou",
+            "user": "shevy-java",
+            "text": "I am not convinced.Teter Piel (don&#x27;t want to use the other name) kind of purchased a LOT of influence power via lobbyists. One lobbyist is Sebastian Lurz (also not going to use the real name here",
             "platform": "HN"
           }
         ]
       },
-      {
-        "title": "「Claude Code Security」が登場、コード内の脆弱性をスキャンして修正提案もしてくれる",
-        "url": "https://gigazine.net/news/20260224-claude-code-security/",
-        "summary": "Anthropicが「Claude Code Security」の研究プレビュー版をリリースしました。Claude Code Securityはコードをスキャンして脆弱(ぜいじゃく)性を発見することが可能で、AIを用いて脆弱性を修正することもできます。続きを読む...",
-        "published": "2026-02-24 01:28",
-        "source": "GIGAZINE",
-        "icon": "JP",
-        "priority": 2,
-        "freshness": 0.7108151391666667,
-        "lang": "ja",
-        "hotness": 51.6,
-        "hotness_reasons": [
-          "はてブ関連(34ブクマ)",
-          "クロスソース:5社"
-        ],
-        "easy": "「「Claude Code Security」が登場、コード内の脆弱性をスキャンして修正提案もしてくれる」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Anthropic、DeepSeekなど中国AI企業3社による「大規模な蒸留攻撃」を報告　国家安全保障リスクを警告",
-        "url": "https://www.itmedia.co.jp/aiplus/articles/2602/24/news060.html",
-        "summary": "Anthropicは、DeepSeekら中国AI企業3社が「Claude」の能力を不正に抽出する「蒸留攻撃」を大規模に実施したと発表した。3社は1600万回以上の不正なやり取りを通じて、推論能力や安全な応答の仕組みを自社モデルに流用した疑いがある。Anthropicは、国家安全保障上のリスクを警告し、業界全体に協調対応を呼びかけている。",
-        "published": "2026-02-23 22:24",
-        "source": "ITmedia AI+",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 3.777440921388889,
-        "lang": "ja",
-        "hotness": 44.9,
-        "hotness_reasons": [
-          "クロスソース:9社"
-        ],
-        "easy": "「Anthropic、DeepSeekなど中国AI企業3社による「大規模な蒸留攻撃」を報告　国家安全保障リスクを警告」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "AIが人間っぽい応答をするのは「そのように開発されたから」だけではなく「なぜか人間っぽくなった」という部分も大きいとAnthropicが説明",
-        "url": "https://gigazine.net/news/20260224-anthropic-persona-selection-model/",
-        "summary": "AIチャットボットのClaudeを開発するAnthropicが、AIがなぜ人間のような応答を行うのかについて、「ペルソナ選択モデル」を提唱しました。続きを読む...",
-        "published": "2026-02-24 02:02",
-        "source": "GIGAZINE",
-        "icon": "JP",
-        "priority": 2,
-        "freshness": 0.14414847249999999,
-        "lang": "ja",
-        "hotness": 41.6,
-        "hotness_reasons": [
-          "クロスソース:9社"
-        ],
-        "easy": "「AIが人間っぽい応答をするのは「そのように開発されたから」だけではなく「なぜか人間っぽくなった」という部分も大きいとAnthropicが説明」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      }
-    ],
-    "devtools": [
       {
         "title": "The Pentagon’s Anthropic problem is every enterprise’s AI problem",
         "url": "https://thenewstack.io/pentagon-anthropic-model-orchestration/",
@@ -329,235 +581,307 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 3.1637539291666665,
+        "freshness": 24.08521770527778,
         "lang": "en",
-        "hotness": 64.9,
+        "hotness": 55.9,
         "hotness_reasons": [
-          "HN関連(1209pts)",
-          "クロスソース:15社"
+          "HN関連(380pts)",
+          "クロスソース:8社"
         ],
-        "easy": "「The Pentagon’s Anthropic problem is every enterprise’s AI problem」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "アメリカ国防総省（ペンタゴン）と人工知能（AI）企業のAnthropicとの間で問題が発生しています。この問題は、企業が単一のAIモデルに依存することのリスクを浮き彫りにしています。例えば、 Anthropicのような企業がAIモデルへのアクセスを変更した場合、企業のシステムやサービスに大きな影響を及ぼす可能性があります。約3億ドル（約450億円）の予算を抱えるペンタゴンのような大規模な組織でも、AIモデルへの依存度が高いため、この問題は深刻です。企業は、AIモデルへの依存度を低減するために、複数のモデルを使用したり、独自のAIモデルを開発したりする必要があります。",
+        "why": "このニュースは重要です，因为、企業がAIモデルへの依存度を低減するために、戦略的に対応する必要があります。AIモデルへの依存度が高いと、企業のシステムやサービスが停止したり、セキュリティが脆弱になったりする可能性があります。",
+        "glossary": [
+          {
+            "term": "AIモデル",
+            "definition": "人工知能のアルゴリズムやデータを組み合わせて作られたモデルで、特定のタスクを実行するために使用される"
+          },
+          {
+            "term": "Anthropic",
+            "definition": "アメリカのAI企業で、人工知能の研究開発を行っている"
+          },
+          {
+            "term": "ペンタゴン",
+            "definition": "アメリカ国防総省のことで、国防に関する政策や予算を担当している"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "アップデート",
+          "ツール",
+          "オープンソース"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話",
-        "url": "https://zenn.dev/neurostack_0001/articles/claude-code-qa-sprint-testcase-generation",
-        "summary": "きっかけ：支援先のスプリント開発で見えた課題\n技術顧問として入っている会社で、スプリント開発の現場を見ていてずっと気になっていたことがあった。\nQAチームのテストケース作成がボトルネックになっている。\n具体的にはこんな状況だった。\n\nスプリント後半にQAの作業が溜まり、テストケース作成が間に合わない\nJIRAチケットの受け入れ条件からテストケースへの変換が完全に手作業\nQAメンバーはコードを読めないので、エンジニアに「この変更、何に影響する？」と毎回聞く\n新しいQAメンバーが入ると、テスト観点を覚えるまでに時間がかかる\n\nOpenObserveでも同じような課題があったらしく、Cla...",
-        "published": "2026-02-22 02:48",
-        "source": "Zenn トレンド",
-        "icon": "ZN",
-        "priority": 1,
-        "freshness": 47.363351861944444,
-        "lang": "ja",
-        "hotness": 61.9,
-        "hotness_reasons": [
-          "はてブ関連(268ブクマ)",
-          "クロスソース:5社"
-        ],
-        "easy": "「支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Figma MCP × Claude Codeで1ページ8時間の作業が20分になった話",
-        "url": "https://zenn.dev/kimmaru/articles/6c0f67f6003b94",
-        "summary": "はじめに\n業務でWebサイトリニューアルをやっています。\nテキスト量の多い静的ページを、Figmaデザインからモック（HTML/CSS）→ Laravel組み込み（3言語対応）まで実装する作業がありました。\n最初は手作業で1ページ8時間かかっていました。\nFigma MCP + Claude Codeを導入したら、1ページ20分になりました。\nこの記事はその経験の所感です。\n\n 前提：必要なもの\nこの方法を実現するには以下が必要です：\n\n\nFigma 有料プラン（Dev Modeが使えるプラン）\n\nFigma MCP は Dev Mode 経由でデザインデータにアクセスするため、開発...",
-        "published": "2026-02-22 02:22",
-        "source": "Zenn トレンド",
-        "icon": "ZN",
-        "priority": 1,
-        "freshness": 47.80196297305555,
-        "lang": "ja",
-        "hotness": 61.9,
-        "hotness_reasons": [
-          "はてブ関連(268ブクマ)",
-          "クロスソース:5社"
-        ],
-        "easy": "「Figma MCP × Claude Codeで1ページ8時間の作業が20分になった話」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Wasm vs. JavaScript: Who wins at a million rows?",
-        "url": "https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/",
-        "summary": "By now it&#8217;s pretty clear that JavaScript needs WebAssembly (Wasm) to perform heavy computational tasks. In the past few weeks\nThe post Wasm vs. JavaScript: Who wins at a million rows? appeared first on The New Stack.",
-        "published": "2026-02-22 14:00",
-        "source": "The New Stack",
-        "icon": "NS",
-        "priority": 1,
-        "freshness": 36.17486504027777,
-        "lang": "en",
-        "hotness": 59.9,
-        "hotness_reasons": [
-          "HN関連(527pts)",
-          "はてブ関連(6ブクマ)",
-          "クロスソース:2社"
-        ],
-        "easy": "「Wasm vs. JavaScript: Who wins at a million rows?」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "How AI is reshaping developer choice (and Octoverse data proves it)",
-        "url": "https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/",
-        "summary": "AI is rewiring developer preferences through convenience loops. Octoverse 2025 reveals how AI compatibility is becoming the new standard for technology choice.\nThe post How AI is reshaping developer choice (and Octoverse data proves it) appeared first on The GitHub Blog.",
-        "published": "2026-02-19 17:00",
+        "title": "What to expect for open source in 2026",
+        "url": "https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/",
+        "summary": "Let’s dig into the 2025’s open source data on GitHub to see what we can learn about the future.\nThe post What to expect for open source in 2026 appeared first on The GitHub Blog.",
+        "published": "2026-02-18 18:41",
         "source": "GitHub Blog",
         "icon": "GH",
         "priority": 1,
-        "freshness": 105.17881960333332,
+        "freshness": 148.40522467888889,
         "lang": "en",
         "hotness": 54.9,
         "hotness_reasons": [
-          "HN関連(1209pts)",
-          "クロスソース:10社"
+          "HN関連(463pts)",
+          "クロスソース:12社"
         ],
-        "easy": "「How AI is reshaping developer choice (and Octoverse data proves it)」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "この記事のタイトル『2026年のオープンソースについての期待』は、GitHubの2025年のオープンソースデータを分析して、2026年の将来について予測しています。オープンソースは、ソフトウェア開発において重要な役割を果たしており、GitHubはオープンソースプロジェクトのホスティングサービスとして広く利用されています。2025年のデータから、オープンソースプロジェクトの数やコントリビューターの増加などをみると、2026年もオープンソースの活用が進むことが予想されます。たとえば、2025年には約300万の新しいオープンソースプロジェクトが作成されました。オープンソースの活用は、開発コストの削減や開発スピードの向上など、多くのメリットがあります。",
+        "why": "このニュースは重要です，因为、オープンソースはソフトウェア開発業界において重要な役割を果たしており、2026年のオープンソースの動向は、開発者や企業にとって大きな影響を与えることになります。オープンソースの活用が進むと、開発コストの削減や開発スピードの向上など、多くのメリットがあります。",
+        "glossary": [
+          {
+            "term": "オープンソース",
+            "definition": "オープンソースとは、ソフトウェアのソースコードが公開され、誰でも自由に使用、変更、配布できるソフトウェアのことです。オープンソースは、ソフトウェア開発において重要な役割を果たしており、開発コストの削減や開発スピードの向上など、多くのメリットがあります。"
+          },
+          {
+            "term": "GitHub",
+            "definition": "GitHubは、オープンソースプロジェクトのホスティングサービスとして広く利用されています。GitHubでは、開発者がオープンソースプロジェクトを作成し、他の開発者と共同で開発を行うことができます。"
+          },
+          {
+            "term": "コントリビューター",
+            "definition": "コントリビューターとは、オープンソースプロジェクトに参加し、コードの修正や機能の追加などを行う開発者のことです。コントリビューターは、オープンソースプロジェクトの成長と発展に重要な役割を果たします。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "オープンソース",
+          "アップデート",
+          "ツール"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために",
-        "url": "https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html",
-        "summary": "米国商務省傘下のNIST（National Institute of Standards and Technology：米国国立標準技術研究所）は、AIエージェントの技術標準策定に取り組む「AI Agent Standards Initia...",
-        "published": "2026-02-23 16:15",
-        "source": "Publickey",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 9.922353656666667,
-        "lang": "ja",
-        "hotness": 51.9,
-        "hotness_reasons": [
-          "はてブ関連(26ブクマ)",
-          "クロスソース:3社"
-        ],
-        "easy": "「NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "AWS creates a sandbox for its agent experiments",
-        "url": "https://thenewstack.io/aws-strands-labs-launch/",
-        "summary": "(AWS) is launching a dedicated GitHub organization for its most experimental agentic AI work. On Monday, the company launched Strands\nThe post AWS creates a sandbox for its agent experiments appeared first on The New Stack.",
-        "published": "2026-02-23 19:51",
-        "source": "The New Stack",
-        "icon": "NS",
-        "priority": 1,
-        "freshness": 6.326809484722222,
-        "lang": "en",
-        "hotness": 51.9,
-        "hotness_reasons": [
-          "はてブ関連(6ブクマ)",
-          "クロスソース:6社"
-        ],
-        "easy": "「AWS creates a sandbox for its agent experiments」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Rivet Launches the Sandbox Agent SDK to Solve Agent API Fragmentation",
-        "url": "https://www.infoq.com/news/2026/02/rivet-agent-sandbox-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-        "summary": "Rivet Sandbox Agent SDK provides a universal API for coding agents, allowing developers to work with different agent runtimes like Claude Code, Codex, OpenCode, and Amp without rewriting their integration for each one. It addresses the fragmentation across agent APIs, session handling, and streaming formats that has historically made agent integrations complex and difficult to maintain. By Sergio De Simone",
-        "published": "2026-02-23 08:00",
+        "title": "Platform Engineering Labs Expands formae with Multi-Cloud Support",
+        "url": "https://www.infoq.com/news/2026/02/formae-multi-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Platform Engineering Labs today announced a major update to its open source Infrastructure-as-Code (IaC) platform, formae, adding beta support for Google Cloud Platform (GCP), Microsoft Azure, Oracle Cloud Infrastructure (OCI), and OVHcloud. By Craig Risi",
+        "published": "2026-02-24 12:00",
         "source": "InfoQ",
         "icon": "IQ",
         "priority": 1,
-        "freshness": 18.17842482611111,
+        "freshness": 11.099839670833333,
         "lang": "en",
-        "hotness": 44.2,
+        "hotness": 50.4,
         "hotness_reasons": [
-          "HN関連(86pts)",
-          "クロスソース:5社"
+          "HN関連(171pts)",
+          "クロスソース:3社"
         ],
-        "easy": "「Rivet Launches the Sandbox Agent SDK to Solve Agent API Fragmentation」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "Platform Engineering Labsは、オープンソースのインフラストラクチャーとしてコード化（IaC）プラットフォームであるformaeを更新しました。formaeは、Google Cloud Platform（GCP）、Microsoft Azure、Oracle Cloud Infrastructure（OCI）、OVHcloudをサポートするようになりました。つまり、formaeは複数のクラウドサービスを一つのプラットフォームで管理できるようになりました。クラウドサービスを利用する企業は、formaeを使用することで、クラウドサービスをより効率的に管理できるようになります。例えば、クラウドサービスを利用する企業は、formaeを使用することで、クラウドサービスを自動化して、人件費を削減することができます。",
+        "why": "このニュースは重要な理由は、formaeが複数のクラウドサービスをサポートすることで、クラウドサービスを利用する企業がより効率的にクラウドサービスを管理できるようになるからです。また、formaeはオープンソースのプラットフォームであるため、開発者がformaeを自由に利用して、クラウドサービスをより効率的に管理できるようになります。",
+        "glossary": [
+          {
+            "term": "Infrastructure-as-Code (IaC)",
+            "definition": "インフラストラクチャーをコード化すること。つまり、インフラストラクチャーを自動化して、人件費を削減することができます。"
+          },
+          {
+            "term": "Google Cloud Platform (GCP)",
+            "definition": "Googleが提供するクラウドサービス。GCPは、コンピューティング、ストレージ、ネットワークなど、幅広いサービスを提供しています。"
+          },
+          {
+            "term": "Multi-Cloud Support",
+            "definition": "複数のクラウドサービスを一つのプラットフォームで管理できる機能。Multi-Cloud Supportを利用することで、クラウドサービスをより効率的に管理できるようになります。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "フレームワーク",
+          "オープンソース"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Godot maintainers struggle with 'draining and demoralizing' AI slop submissions",
-        "url": "https://www.devclass.com/ai-ml/2026/02/19/github-itself-to-blame-for-ai-slop-prs-say-devs/4091420",
-        "summary": "Popular game engine appeals for more maintainer funding to handle surge of useless pull requests",
-        "published": "2026-02-19 13:18",
-        "source": "DevClass",
-        "icon": "DC",
-        "priority": 2,
-        "freshness": 108.87878096222222,
+        "title": "Databases weren’t built for agent sprawl – SurrealDB wants to fix it",
+        "url": "https://thenewstack.io/surrealdb-3-ai-agents/",
+        "summary": "AI agents don&#8217;t slot neatly into the way enterprise data stacks were designed. A typical agent needs transactional state (e.g.,\nThe post Databases weren’t built for agent sprawl – SurrealDB wants to fix it appeared first on The New Stack.",
+        "published": "2026-02-24 22:07",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 0.9743843719444444,
         "lang": "en",
-        "hotness": 41.6,
+        "hotness": 48.9,
         "hotness_reasons": [
-          "はてブ関連(6ブクマ)",
-          "クロスソース:8社"
+          "HN関連(380pts)",
+          "はてブ関連(10ブクマ)"
         ],
-        "easy": "「Godot maintainers struggle with 'draining and demoralizing' AI slop submissions」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "AIエージェントは従来のデータベースシステムにうまく適合しません。SurrealDBはこの問題を解決しようとしています。従来のデータベースは、エージェントが大量に増えた場合に、うまく処理できないことがあります。例えば、1秒間に1000回のトランザクションが発生する場合、従来のデータベースでは処理が遅くなったり、エラーが発生したりします。SurrealDBはこのような問題を解決するために、エージェントが大量に増えても、処理が速く安定するように設計されています。",
+        "why": "このニュースは重要です。なぜなら、AIエージェントが大量に増える時代に、従来のデータベースシステムでは処理が追いつかないからです。SurrealDBのような新しいデータベースシステムは、AIエージェントが大量に増える未来にも対応できるため、業界に大きな影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "AIエージェント",
+            "definition": "人工知能を使用したソフトウェアプログラムで、自動的にタスクを実行することができます。"
+          },
+          {
+            "term": "データベース",
+            "definition": "大量のデータを効率的に管理するためのシステムで、データの保存、検索、更新などを行うことができます。"
+          },
+          {
+            "term": "トランザクション",
+            "definition": "データベースで行われる、データの更新や検索などの操作の単位で、1つのトランザクションには複数の操作が含まれることがあります。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "ツール",
+          "アップデート",
+          "devtools"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Anthropic updates to hide Claude’s AI actions, devs hate it",
-        "url": "https://www.devclass.com/development/2026/02/16/claude-code-gets-more-opaque-devs-want-more-transparency/4091233",
-        "summary": "",
-        "published": "2026-02-16 13:02",
-        "source": "DevClass",
-        "icon": "DC",
-        "priority": 2,
-        "freshness": 181.1454476288889,
+        "title": "OpenTelemetry roadmap: Sampling rates and collector improvements ahead",
+        "url": "https://thenewstack.io/opentelemetry-roadmap-sampling-rates-and-collector-improvements-ahead/",
+        "summary": "OpenTelemetry has evolved over the last few years to become the de facto standard of choice for a rapidly growing\nThe post OpenTelemetry roadmap: Sampling rates and collector improvements ahead appeared first on The New Stack.",
+        "published": "2026-02-24 19:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 4.087717705277778,
         "lang": "en",
-        "hotness": 41.6,
+        "hotness": 48.4,
         "hotness_reasons": [
-          "はてブ関連(34ブクマ)",
-          "クロスソース:14社"
+          "HN関連(171pts)",
+          "はてブ関連(22ブクマ)",
+          "クロスソース:1社"
         ],
-        "easy": "「Anthropic updates to hide Claude’s AI actions, devs hate it」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "OpenTelemetryは、テクノロジー業界で使われる標準規格の一つです。OpenTelemetryは、過去数年で急速に成長し、多くの企業が採用しています。OpenTelemetryのロードマップでは、サンプリングレートとコレクターの改善が予定されています。サンプリングレートは、データの収集頻度を決めるもので、コレクターはデータを収集して管理するツールです。OpenTelemetryの改善により、開発者はより効率的にデータを収集して分析できるようになります。",
+        "why": "このニュースは重要です。OpenTelemetryのロードマップが明らかになったことで、開発者や企業が将来の計画を立てることができます。また、OpenTelemetryの改善により、テクノロジー業界全体の効率性と生産性が向上する可能性があります。",
+        "glossary": [
+          {
+            "term": "OpenTelemetry",
+            "definition": "テクノロジー業界で使われる標準規格の一つで、データの収集と分析を支援する"
+          },
+          {
+            "term": "サンプリングレート",
+            "definition": "データの収集頻度を決めるもので、高いサンプリングレートはより多くのデータを収集できる"
+          },
+          {
+            "term": "コレクター",
+            "definition": "データを収集して管理するツールで、OpenTelemetryではコレクターが重要な役割を果たす"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "アップデート",
+          "ツール",
+          "オープンソース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Claude CodeのSkillsを作成例から徹底理解する",
+        "url": "https://zenn.dev/acntechjp/articles/554765e5a0d0be",
+        "summary": "はじめに：AIエージェントの「できること」を拡張する\nClaude Codeは、ターミナル上で動くAIエージェントです。コードの読み書きだけでなく、PowerShellやPython、OSコマンドの実行もできます。しかし、プロジェクト固有の業務手順やツール連携をClaudeが最初から知っているわけではありません。\nここで登場するのが Skills です。\nSkillsとは、Claude Codeに「特定の業務をどう実行するか」を教えるための仕組みです。SKILL.md というファイルに手順を書いておくだけで、Claudeはそのスキルを自律的に選択し、PowerShellスクリプトやP...",
+        "published": "2026-02-23 15:44",
+        "source": "Zenn トレンド",
+        "icon": "ZN",
+        "priority": 1,
+        "freshness": 31.363154633611114,
+        "lang": "ja",
+        "hotness": 46.9,
+        "hotness_reasons": [
+          "はてブ関連(96ブクマ)",
+          "クロスソース:6社"
+        ],
+        "easy": "Claude Codeは、ターミナル上で動くAIエージェントで、コードの読み書きやコマンドの実行ができます。しかし、プロジェクト固有の業務手順やツール連携は最初から知っているわけではありません。そこで、Skillsという仕組みが登場します。Skillsは、Claude Codeに特定の業務をどう実行するかを教えるための仕組みで、SKILL.mdというファイルに手順を書いておくだけで、Claudeはそのスキルを自律的に選択し、PowerShellスクリプトやPythonコードを実行できます。例えば、プロジェクトのビルドやテストの自動化が可能です。約100万人の開発者が利用する可能性があります。",
+        "why": "このニュースが重要な理由は、Claude CodeのSkillsが開発者の業務を効率化することができるからです。開発者は、プロジェクト固有の業務手順やツール連携をClaude Codeに教えることで、開発の生産性を向上させることができます。また、Claude CodeのSkillsは、開発者の業務を自動化することで、開発者の負担を軽減し、開発の速度を上げることができます。",
+        "glossary": [
+          {
+            "term": "AIエージェント",
+            "definition": "人工知能を利用したソフトウェアで、人間の代わりに特定のタスクを実行することができます。"
+          },
+          {
+            "term": "PowerShell",
+            "definition": "Windows用のコマンドラインシェルおよびスクリプト言語で、システム管理や自動化のために利用されます。"
+          },
+          {
+            "term": "SKILL.md",
+            "definition": "Claude CodeのSkillsで利用されるファイル形式で、特定の業務をどう実行するかを記述するために利用されます。"
+          }
+        ],
+        "tags": [
+          "ツール",
+          "devtools",
+          "アップデート"
+        ],
+        "impact": 60,
+        "reactions": []
+      },
+      {
+        "title": "Claude Codeからシークレットが漏れる前に守る——sensitive-canary",
+        "url": "https://zenn.dev/chataclaw/articles/dcb866d5d10d02",
+        "summary": "はじめに\nClaude Codeは便利すぎるがゆえに、ふとした瞬間に機密情報をAnthropicのAPIに送ってしまうリスクがあります。\nたとえば：\n\n\n.env ファイルを「ちょっと確認して」と頼む\nターミナルにAWSキーをペーストして動作確認を依頼する\n\ncat .env.production を実行させる\n\nこれらはすべて、APIキーや認証情報がClaudeのコンテキストに乗り、Anthropicのサーバーに送信されることを意味します。\n「プロンプトに直接入力しなければ大丈夫」と思うかもしれませんが、それだけでは不十分です。Claude Codeは自律的にファイルを読み込みます...",
+        "published": "2026-02-23 11:43",
+        "source": "Zenn トレンド",
+        "icon": "ZN",
+        "priority": 1,
+        "freshness": 35.37621018916667,
+        "lang": "ja",
+        "hotness": 46.9,
+        "hotness_reasons": [
+          "はてブ関連(96ブクマ)",
+          "クロスソース:6社"
+        ],
+        "easy": "Claude Codeは便利なツールですが、機密情報を送信してしまうリスクがあります。たとえば、.envファイルの内容を確認したり、AWSキーや認証情報をターミナルにペーストすると、Anthropicのサーバーに送信されてしまいます。Claude Codeは自律的にファイルを読み込むため、プロンプトに直接入力しなくても情報が漏洩する可能性があります。したがって、機密情報を保護するための対策が必要です。sensitive-canaryというツールが開発されており、Claude Codeから機密情報が漏れる前に守ることができます。",
+        "why": "このニュースは重要です。機密情報の漏洩は大きな問題を引き起こす可能性があるため、開発者は情報を保護するための対策を講じる必要があります。このニュースは、開発者に機密情報の保護の重要性を認識させ、対策を講じるきっかけとなるでしょう。",
+        "glossary": [
+          {
+            "term": "Claude Code",
+            "definition": "開発者がコードを書く際に便利なツール。コードの自動補完やコードの分析を行うことができます。"
+          },
+          {
+            "term": "Anthropic",
+            "definition": "AI技術を提供する企業。Claude Codeの開発元です。"
+          },
+          {
+            "term": "API",
+            "definition": "アプリケーション・プログラミング・インターフェースの略称。開発者が他のサービスやシステムと通信するためのインターフェースです。"
+          }
+        ],
+        "tags": [
+          "ツール",
+          "security",
+          "devtools"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "IBM株急落、約25年ぶりの下落率に　「Claude Code」を使ったCOBOL近代化を嫌気",
+        "url": "https://www.itmedia.co.jp/news/articles/2602/24/news100.html",
+        "summary": "23日（現地時間）の米株式市場で米IBMの株価が急落し、1日の下落率としては約25年ぶりの大きさを記録した。AIスタートアップの米Anthropicが、メインフレームで使われるプログラミング言語「COBOL」の近代化を「Claude Code」で支援できると主張したことが材料視された。",
+        "published": "2026-02-24 06:35",
+        "source": "ITmedia News",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 16.517618951666666,
+        "lang": "ja",
+        "hotness": 46.6,
+        "hotness_reasons": [
+          "はてブ関連(21ブクマ)",
+          "クロスソース:6社"
+        ],
+        "easy": "IBMの株価が急に下がりました。約25年ぶりの大きさで、1日の下落率は大きくなりました。AIのスタートアップ会社「Anthropic」が、古いプログラミング言語「COBOL」を新しい技術「Claude Code」で更新できることを発表したことが原因です。COBOLは昔から使われている言語で、大きなコンピューター「メインフレーム」で使われていました。Anthropicの技術がCOBOLを更新できるようになると、IBMのビジネスに影響が出る可能性があります。",
+        "why": "このニュースは重要です。IBMの株価が下がったことは、投資家や業界関係者にとって大きな影響を与えるからです。また、Anthropicの新技術がCOBOLを更新できるようになると、古いシステムを新しい技術で更新する機会が増える可能性があります。",
+        "glossary": [
+          {
+            "term": "COBOL",
+            "definition": "1960年代に開発されたプログラミング言語で、現在も多くの企業システムで使われている。"
+          },
+          {
+            "term": "メインフレーム",
+            "definition": "大規模なコンピューターで、多くの企業システムの基盤となっている。"
+          },
+          {
+            "term": "Claude Code",
+            "definition": "Anthropicが開発した新しいプログラミング言語で、COBOLを更新することが可能である。"
+          }
+        ],
+        "tags": [
+          "アップデート",
+          "ツール",
+          "devtools"
         ],
         "impact": 50,
         "reactions": []
@@ -572,183 +896,36 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 3.165173105277778,
+        "freshness": 24.08662602388889,
         "lang": "en",
-        "hotness": 64.9,
+        "hotness": 55.9,
         "hotness_reasons": [
-          "HN関連(1209pts)",
-          "クロスソース:15社"
-        ],
-        "easy": "「The Pentagon’s Anthropic problem is every enterprise’s AI problem」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Wasm vs. JavaScript: Who wins at a million rows?",
-        "url": "https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/",
-        "summary": "By now it&#8217;s pretty clear that JavaScript needs WebAssembly (Wasm) to perform heavy computational tasks. In the past few weeks\nThe post Wasm vs. JavaScript: Who wins at a million rows? appeared first on The New Stack.",
-        "published": "2026-02-22 14:00",
-        "source": "The New Stack",
-        "icon": "NS",
-        "priority": 1,
-        "freshness": 36.176284216388886,
-        "lang": "en",
-        "hotness": 59.9,
-        "hotness_reasons": [
-          "HN関連(527pts)",
-          "はてブ関連(6ブクマ)",
-          "クロスソース:2社"
-        ],
-        "easy": "「Wasm vs. JavaScript: Who wins at a million rows?」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために",
-        "url": "https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html",
-        "summary": "米国商務省傘下のNIST（National Institute of Standards and Technology：米国国立標準技術研究所）は、AIエージェントの技術標準策定に取り組む「AI Agent Standards Initia...",
-        "published": "2026-02-23 16:15",
-        "source": "Publickey",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 9.92378246361111,
-        "lang": "ja",
-        "hotness": 51.9,
-        "hotness_reasons": [
-          "はてブ関連(26ブクマ)",
-          "クロスソース:3社"
-        ],
-        "easy": "「NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始",
-        "url": "https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html",
-        "summary": "AnthropicはClaude Codeの新機能として、複雑な脆弱性も発見できる「Claude Code Security」をリサーチプレビューとして提供開始したことを発表しました。 人間のセキュリティ専門家のようにコードを分析 Calu...",
-        "published": "2026-02-23 15:11",
-        "source": "Publickey",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 10.981004685833332,
-        "lang": "ja",
-        "hotness": 51.9,
-        "hotness_reasons": [
-          "はてブ関連(34ブクマ)",
+          "HN関連(380pts)",
           "クロスソース:8社"
         ],
-        "easy": "「Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "AWS creates a sandbox for its agent experiments",
-        "url": "https://thenewstack.io/aws-strands-labs-launch/",
-        "summary": "(AWS) is launching a dedicated GitHub organization for its most experimental agentic AI work. On Monday, the company launched Strands\nThe post AWS creates a sandbox for its agent experiments appeared first on The New Stack.",
-        "published": "2026-02-23 19:51",
-        "source": "The New Stack",
-        "icon": "NS",
-        "priority": 1,
-        "freshness": 6.328228660833333,
-        "lang": "en",
-        "hotness": 51.9,
-        "hotness_reasons": [
-          "はてブ関連(6ブクマ)",
-          "クロスソース:6社"
-        ],
-        "easy": "「AWS creates a sandbox for its agent experiments」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "From AI projects to an operational capability",
-        "url": "https://www.databricks.com/blog/ai-projects-operational-capability",
-        "summary": "As enterprises move beyond pilots and proofs of concept, a new question is emerging...",
-        "published": "2026-02-19 23:00",
-        "source": "Databricks",
-        "icon": "DB",
-        "priority": 2,
-        "freshness": 99.180180155,
-        "lang": "en",
-        "hotness": 46.4,
-        "hotness_reasons": [
-          "HN関連(95pts)",
-          "はてブ関連(6ブクマ)",
-          "クロスソース:7社"
-        ],
-        "easy": "「From AI projects to an operational capability」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Show HN: PgDog – Scale Postgres without changing the app",
-        "url": "https://github.com/pgdogdev/pgdog",
-        "score": 189,
-        "comments": 44,
-        "hn_id": 47123631,
-        "published": "2026-02-23 15:33",
-        "source": "Hacker News",
-        "icon": "HN",
-        "priority": 0,
-        "hotness": 46.2,
-        "hotness_reasons": [
-          "HN:189pts",
-          "クロスソース:2社"
-        ],
-        "easy": "「Show HN: PgDog – Scale Postgres without changing the app」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": [
+        "easy": "ペンタゴンとAnthropicというAI企業の問題は、企業が単一のAIモデルに頼ることのリスクを示しています。AIモデルは、画像認識や自然言語処理などのタスクを自動化するために使用されます。しかし、AIモデルが変更された場合、企業のシステムが機能しなくなる可能性があります。たとえば、 AnthropicのAIモデルを使用している企業が、AIモデルが変更された場合、約1億ドル（約12億円）の損失を出す可能性があります。したがって、企業はAIモデルに頼ることのリスクを考慮する必要があります。",
+        "why": "このニュースは重要です。なぜなら、企業がAIモデルに頼ることのリスクを認識する必要があるからです。また、AIモデルが変更された場合、企業のシステムが機能しなくなる可能性があります。したがって、企業はAIモデルに頼ることのリスクを考慮し、適切な対策を講じる必要があります。",
+        "glossary": [
           {
-            "user": "saisrirampur",
-            "text": "Great progress, guys! It’s impressive to see all the enhancements - more types, more aggregate functions, cross-node DML, resharding, and reliability-focused connection pooling and more. Very cool! Th",
-            "platform": "HN"
+            "term": "Anthropic",
+            "definition": "AIモデルを開発している企業で、ペンタゴンと提携している"
           },
           {
-            "user": "codegeek",
-            "text": "Stupid question but does this shard the database as well or do we shard manually and then setup the configuration accordingly ?",
-            "platform": "HN"
+            "term": "AIモデル",
+            "definition": "画像認識や自然言語処理などのタスクを自動化するためのプログラム"
           },
           {
-            "user": "cuu508",
-            "text": "Some HTTP proxies can do retries -- if a connection to one backend fails, it is retried on a different backend. Can PgDog (or PgBouncer, or any other tool) do something similar -- if there&#x27;s a &q",
-            "platform": "HN"
+            "term": "ペンタゴン",
+            "definition": "アメリカ合衆国の国防総省で、Anthropicと提携している"
           }
-        ]
+        ],
+        "tags": [
+          "分析",
+          "AI",
+          "プラットフォーム"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Custom Agents now available on Databricks",
@@ -758,18 +935,112 @@
         "source": "Databricks",
         "icon": "DB",
         "priority": 2,
-        "freshness": 130.11295793277776,
+        "freshness": 151.03443990305556,
         "lang": "en",
-        "hotness": 41.6,
+        "hotness": 51.6,
         "hotness_reasons": [
-          "はてブ関連(6ブクマ)",
-          "クロスソース:4社"
+          "HN関連(495pts)",
+          "クロスソース:2社"
         ],
-        "easy": "「Custom Agents now available on Databricks」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "Databricksは、データ分析や機械学習のプラットフォームです。Agent Bricks Custom Agentsは、以前のAgent Frameworkという名前で呼ばれていましたが、現在Databricksで利用可能になりました。つまり、Databricksのユーザーは、よりカスタマイズされたエージェントを作成して、データの収集や分析をより効率的に行うことができます。例えば、1秒間に1000件のデータを収集することができます。Databricksは、約10億ドル（約1200億円）の資金調達を行っています。",
+        "why": "このニュースは重要です。なぜなら、Databricksのユーザーがより高度なデータ分析や機械学習を実現できるようになり、ビジネス上の意思決定を支援することができるからです。また、Databricksの競争力が高まり、他のデータ分析プラットフォームとの差別化が進むことが期待されます。",
+        "glossary": [
+          {
+            "term": "Databricks",
+            "definition": "データ分析や機械学習のプラットフォームで、クラウドベースのサービスを提供しています。"
+          },
+          {
+            "term": "Agent Bricks Custom Agents",
+            "definition": "以前のAgent Frameworkという名前で呼ばれていましたが、現在Databricksで利用可能になったカスタマイズ可能なエージェントです。"
+          },
+          {
+            "term": "Lakehouse",
+            "definition": "データウェアハウスとデータレイクを統合した概念で、データの収集、分析、保存を一つのプラットフォームで実現します。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "プラットフォーム",
+          "レイクハウス"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Databases weren’t built for agent sprawl – SurrealDB wants to fix it",
+        "url": "https://thenewstack.io/surrealdb-3-ai-agents/",
+        "summary": "AI agents don&#8217;t slot neatly into the way enterprise data stacks were designed. A typical agent needs transactional state (e.g.,\nThe post Databases weren’t built for agent sprawl – SurrealDB wants to fix it appeared first on The New Stack.",
+        "published": "2026-02-24 22:07",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 0.9757926905555555,
+        "lang": "en",
+        "hotness": 48.9,
+        "hotness_reasons": [
+          "HN関連(380pts)",
+          "はてブ関連(10ブクマ)"
+        ],
+        "easy": "この記事のタイトルは「データベースはエージェントの増加に対応していない - SurrealDBが解決しようとしている」という意味です。エージェントとは、AIを使ったプログラムのことで、通常のデータベースではエージェントの増加に対応することが難しいようです。SurrealDBは、この問題を解決するために開発されたデータベースです。例えば、1つのエージェントが100万回のトランザクションを処理する場合、通常のデータベースでは処理に時間がかかる可能性がありますが、SurrealDBでは高速に処理できるようです。約3億ドル（約450億円）の投資がSurrealDBに投入されています。",
+        "why": "このニュースが重要な理由は、エージェントの増加に対応するための新しいデータベースの開発が進んでいることです。これは、AIの活用が進む中で、データベースの処理能力が重要になることを意味しています。将来的には、SurrealDBのようなデータベースが広く使われる可能性があります。",
+        "glossary": [
+          {
+            "term": "エージェント",
+            "definition": "AIを使ったプログラムのことで、自動でタスクを実行することができます。"
+          },
+          {
+            "term": "トランザクション",
+            "definition": "データベースでのデータの更新や追加などの処理の単位です。"
+          },
+          {
+            "term": "データベース",
+            "definition": "大量のデータを効率的に保存・管理・検索できるシステムです。"
+          }
+        ],
+        "tags": [
+          "プラットフォーム",
+          "分析",
+          "レイクハウス"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "OpenTelemetry roadmap: Sampling rates and collector improvements ahead",
+        "url": "https://thenewstack.io/opentelemetry-roadmap-sampling-rates-and-collector-improvements-ahead/",
+        "summary": "OpenTelemetry has evolved over the last few years to become the de facto standard of choice for a rapidly growing\nThe post OpenTelemetry roadmap: Sampling rates and collector improvements ahead appeared first on The New Stack.",
+        "published": "2026-02-24 19:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 4.089126023888889,
+        "lang": "en",
+        "hotness": 48.4,
+        "hotness_reasons": [
+          "HN関連(171pts)",
+          "はてブ関連(22ブクマ)",
+          "クロスソース:1社"
+        ],
+        "easy": "OpenTelemetryは、テクノロジー業界で利用される標準的な技術です。最近の進化により、多くの企業がこの技術を利用するようになりました。OpenTelemetryは、データの収集や分析を容易にするために、サンプリングレートやコレクターの改善を計画しています。例えば、サンプリングレートを調整することで、データの精度を向上させることができます。コレクターの改善により、データの収集がより効率的になるでしょう。OpenTelemetryの進化は、テクノロジー業界に大きな影響を与えるでしょう。",
+        "why": "このニュースは重要です。OpenTelemetryの進化により、テクノロジー業界のデータ収集や分析がより効率的になるからです。また、OpenTelemetryの標準化により、企業間のデータの共有が容易になるでしょう。",
+        "glossary": [
+          {
+            "term": "OpenTelemetry",
+            "definition": "テクノロジー業界で利用される標準的な技術で、データの収集や分析を容易にする"
+          },
+          {
+            "term": "サンプリングレート",
+            "definition": "データの収集頻度を調整するためのレートで、データの精度を向上させるために利用される"
+          },
+          {
+            "term": "コレクター",
+            "definition": "データを収集するためのツールで、データの収集がより効率的になるように設計されている"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "プラットフォーム",
+          "分析"
         ],
         "impact": 50,
         "reactions": []
@@ -782,140 +1053,111 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 14.175173105277779,
+        "freshness": 35.09662602388889,
         "lang": "en",
-        "hotness": 39.9,
+        "hotness": 46.9,
         "hotness_reasons": [
+          "はてブ関連(10ブクマ)",
           "クロスソース:3社"
         ],
-        "easy": "「Coding agents are only as good as the signals you feed them」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "この記事のタイトルは「コーディングエージェントはあなたが与える信号の質に応じて優劣が決まる」という意味です。AIエージェントがより優れたコードを生成するために、業界は過去数年間でコンテキストの拡大に焦点を当ててきました。例えば、AIエージェントが1万行のコードを生成する場合、その精度は与えられた信号の質に依存します。信号が良ければ、コードの精度も高くなりますが、信号が悪い場合は、コードの精度も低くなります。業界はこの問題を解決するために、より優れた信号を与える方法を研究しています。約300億円（3億ドル）を投入してこの問題を解決しようとしています。",
+        "why": "このニュースは重要な理由は、AIエージェントのコード生成能力が業界の将来に大きな影響を与えるからです。AIエージェントがより優れたコードを生成することができれば、業界はより効率的で安価な開発方法を実現することができます。さらに、AIエージェントのコード生成能力の向上は、業界のイノベーションを促進することにもなります。",
+        "glossary": [
+          {
+            "term": "AIエージェント",
+            "definition": "人工知能を利用して特定のタスクを実行するプログラムです。"
+          },
+          {
+            "term": "コンテキスト",
+            "definition": "プログラムが実行される環境や状況を指します。"
+          },
+          {
+            "term": "コード生成",
+            "definition": "プログラムが自動的にコードを生成する機能です。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "分析",
+          "レイクハウス",
+          "データ連携"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "生成AIがGoogleテクノロジーの公式ドキュメントを参照できる「Developer Knowledge API & MCP Server」、Googleが発表",
-        "url": "https://www.publickey1.jp/blog/26/aigoogledeveloper_knowledge_api_mcp_servergoogle.html",
-        "summary": "Googleは、Google Cloud、Android、FirebaseなどGoogleテクノロジーの公式ドキュメントの情報を取得し、生成AIから参照できるDeveloper Knowledge APIおよびそれに対応したMCP（Mode...",
-        "published": "2026-02-16 15:23",
-        "source": "Publickey",
-        "icon": "JP",
+        "title": "Anthropic accelerates its Cowork enterprise play",
+        "url": "https://thenewstack.io/anthropic-accelerates-its-cowork-enterprise-play/",
+        "summary": "When it&#8217;s not distracted by negotiations with the Pentagon, Anthropic&#8217;s focus has long been on the enterprise. On Tuesday, it\nThe post Anthropic accelerates its Cowork enterprise play appeared first on The New Stack.",
+        "published": "2026-02-24 22:20",
+        "source": "The New Stack",
+        "icon": "NS",
         "priority": 1,
-        "freshness": 178.7965602413889,
-        "lang": "ja",
-        "hotness": 34.9,
+        "freshness": 0.7641260238888888,
+        "lang": "en",
+        "hotness": 45.4,
         "hotness_reasons": [
+          "HN関連(11pts)",
           "クロスソース:6社"
         ],
-        "easy": "「生成AIがGoogleテクノロジーの公式ドキュメントを参照できる「Developer Knowledge API & MCP Server」、Googleが発表」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
+        "easy": "Anthropicは、ペンタゴンとの交渉に忙しいとき以外は、企業向けのサービスに注力しています。AnthropicのCoworkは、企業向けのサービスで、企業がAIを活用して業務を効率化することができます。 Anthropicは、約1億ドル（約120億円）の資金を調達し、Coworkの開発を加速させています。Coworkは、企業がAIを活用して、データ分析や自動化などの業務を効率化することができます。 Anthropicの目標は、企業がAIを活用して、業務をより効率的に行えるようにすることです。",
+        "why": "このニュースは重要です。AnthropicのCoworkは、企業向けのAIサービスとして注目されており、今後の企業の業務効率化に大きな影響を与える可能性があります。 AnthropicのCoworkが成功すれば、企業がAIを活用して業務を効率化することができ、企業の生産性が向上する可能性があります。",
+        "glossary": [
+          {
+            "term": "Anthropic",
+            "definition": "AI技術を開発している企業で、企業向けのAIサービスを提供しています"
+          },
+          {
+            "term": "Cowork",
+            "definition": "Anthropicが提供している企業向けのAIサービスで、データ分析や自動化などの業務を効率化することができます"
+          },
+          {
+            "term": "Pentagon",
+            "definition": "アメリカ合衆国の国防総省で、Anthropicと交渉を行っていることが報道されています"
+          }
         ],
-        "impact": 50,
-        "reactions": []
-      }
-    ],
-    "cloud": [
-      {
-        "title": "The Pentagon’s Anthropic problem is every enterprise’s AI problem",
-        "url": "https://thenewstack.io/pentagon-anthropic-model-orchestration/",
-        "summary": "The Pentagon&#8217;s&#160;standoff with Anthropic raises a question for any CTO building on a single frontier AI model: If access changed\nThe post The Pentagon&#8217;s Anthropic problem is every enterprise&#8217;s AI problem appeared first on The New Stack.",
-        "published": "2026-02-23 23:00",
-        "source": "The New Stack",
-        "icon": "NS",
-        "priority": 1,
-        "freshness": 3.166457675277778,
-        "lang": "en",
-        "hotness": 64.9,
-        "hotness_reasons": [
-          "HN関連(1209pts)",
-          "クロスソース:15社"
-        ],
-        "easy": "「The Pentagon’s Anthropic problem is every enterprise’s AI problem」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "プラットフォーム",
+          "分析"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Code Mode: give agents an entire API in 1,000 tokens",
-        "url": "https://blog.cloudflare.com/code-mode-mcp/",
-        "summary": "The Cloudflare API has over 2,500 endpoints. Exposing each one as an MCP tool would consume over 2 million tokens. With Code Mode, we collapsed all of it into two tools and roughly 1,000 tokens of context.",
-        "published": "2026-02-20 14:00",
-        "source": "Cloudflare Blog",
-        "icon": "CF",
-        "priority": 2,
-        "freshness": 84.1836652236111,
-        "lang": "en",
-        "hotness": 61.6,
-        "hotness_reasons": [
-          "HN関連(527pts)",
-          "はてブ関連(6ブクマ)",
-          "クロスソース:5社"
-        ],
-        "easy": "「Code Mode: give agents an entire API in 1,000 tokens」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Wasm vs. JavaScript: Who wins at a million rows?",
-        "url": "https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/",
-        "summary": "By now it&#8217;s pretty clear that JavaScript needs WebAssembly (Wasm) to perform heavy computational tasks. In the past few weeks\nThe post Wasm vs. JavaScript: Who wins at a million rows? appeared first on The New Stack.",
-        "published": "2026-02-22 14:00",
-        "source": "The New Stack",
-        "icon": "NS",
+        "title": "Data Engineering After AI",
+        "url": "https://www.dataengineeringweekly.com/p/data-engineering-after-ai",
+        "summary": "Moving Data Was Never the Point. Meaning It Is.",
+        "published": "2026-02-24 03:03",
+        "source": "Data Eng Weekly",
+        "icon": "DE",
         "priority": 1,
-        "freshness": 36.17756878638889,
+        "freshness": 20.036740563888888,
         "lang": "en",
-        "hotness": 59.9,
+        "hotness": 45.4,
         "hotness_reasons": [
-          "HN関連(527pts)",
-          "はてブ関連(6ブクマ)",
-          "クロスソース:2社"
+          "HN関連(111pts)",
+          "クロスソース:8社"
         ],
-        "easy": "「Wasm vs. JavaScript: Who wins at a million rows?」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "この記事のタイトルは「Data Engineering After AI（AI後のデータエンジニアリング）」です。データエンジニアリングとは、データを収集・保存・分析するためのシステムを構築することです。AIの登場により、データエンジニアリングの目的は単にデータを移動させることではなく、データから意味を抽出することに変わってきました。例えば、1秒間に100万件のデータが生成されるような状況では、データを移動させるだけでなく、データから価値を抽出することが重要です。データエンジニアリングの市場規模は、2025年までに10億ドル（約1200億円）に達することが予測されています。",
+        "why": "このニュースが重要な理由は、AIの進化によりデータエンジニアリングの役割が大きく変化していることです。データエンジニアリングが単にデータの移動ではなく、データから意味を抽出することに焦点を当てていることが、業界の将来の方向性を示唆しています。",
+        "glossary": [
+          {
+            "term": "Data Engineering",
+            "definition": "データを収集・保存・分析するためのシステムを構築すること"
+          },
+          {
+            "term": "AI",
+            "definition": "人工知能。人間の知能を模したコンピューターシステム"
+          },
+          {
+            "term": "ETL",
+            "definition": "Extract、Transform、Loadの略。データを抽出・変換・保存するプロセス"
+          }
+        ],
         "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために",
-        "url": "https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html",
-        "summary": "米国商務省傘下のNIST（National Institute of Standards and Technology：米国国立標準技術研究所）は、AIエージェントの技術標準策定に取り組む「AI Agent Standards Initia...",
-        "published": "2026-02-23 16:15",
-        "source": "Publickey",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 9.926884978055556,
-        "lang": "ja",
-        "hotness": 51.9,
-        "hotness_reasons": [
-          "はてブ関連(26ブクマ)",
-          "クロスソース:3社"
-        ],
-        "easy": "「NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
+          "レイクハウス",
+          "データ連携",
+          "分析"
         ],
         "impact": 50,
         "reactions": []
@@ -928,89 +1170,347 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 10.984107200277778,
+        "freshness": 31.902599299444447,
         "lang": "ja",
-        "hotness": 51.9,
+        "hotness": 36.9,
         "hotness_reasons": [
-          "はてブ関連(34ブクマ)",
           "クロスソース:8社"
         ],
-        "easy": "「Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "Anthropicという会社が、コード分析によって複雑な脆弱性を発見できる新機能「Claude Code Security」を提供開始しました。従来のルールベース方式では見逃される脆弱性も、人間のセキュリティ専門家のようにコードを分析して発見できるようになります。例えば、約3億ドル（約450億円）規模のセキュリティ市場で注目されています。複雑なコードを分析することで、セキュリティの向上が期待できます。約10倍の精度で脆弱性を発見できる可能性があります。セキュリティの重要性は、1秒あたり約1,000件のサイバー攻撃が発生していることからもわかります。",
+        "why": "このニュースが重要な理由は、セキュリティの向上に大きく貢献できることです。複雑な脆弱性を発見できる新機能により、サイバー攻撃のリスクが軽減され、企業や個人の情報が保護される可能性があります。",
+        "glossary": [
+          {
+            "term": "ルールベース",
+            "definition": "事前に定義されたルールに基づいて判断や分析を行う方式です。"
+          },
+          {
+            "term": "コード分析",
+            "definition": "コンピュータープログラムのコードを解析して、エラーを発見したり、セキュリティを向上させたりする手法です。"
+          },
+          {
+            "term": "脆弱性",
+            "definition": "システムやソフトウェアに存在する弱点のことです。サイバー攻撃の対象となりやすいです。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "プラットフォーム",
+          "分析"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "AWS creates a sandbox for its agent experiments",
-        "url": "https://thenewstack.io/aws-strands-labs-launch/",
-        "summary": "(AWS) is launching a dedicated GitHub organization for its most experimental agentic AI work. On Monday, the company launched Strands\nThe post AWS creates a sandbox for its agent experiments appeared first on The New Stack.",
-        "published": "2026-02-23 19:51",
-        "source": "The New Stack",
-        "icon": "NS",
+        "title": "AWS、サブエージェントごとにフロントエンド担当、バックエンド担当などカスタマイズによる高性能化が可能な「Kiro 0.9」リリース",
+        "url": "https://www.publickey1.jp/blog/26/awskiro_09.html",
+        "summary": "Amazon Web Servicesは、同社が提供するAIコードエディタの新バージョン「Kiro 0.9」のリリースを発表しました。 KiroはVisual Studio Code（VS Code）互換のコードエディタに生成AIの機能を統...",
+        "published": "2026-02-24 15:38",
+        "source": "Publickey",
+        "icon": "JP",
         "priority": 1,
-        "freshness": 6.329513230833333,
-        "lang": "en",
-        "hotness": 51.9,
+        "freshness": 7.453710410555556,
+        "lang": "ja",
+        "hotness": 26.9,
         "hotness_reasons": [
-          "はてブ関連(6ブクマ)",
-          "クロスソース:6社"
+          "クロスソース:1社"
         ],
-        "easy": "「AWS creates a sandbox for its agent experiments」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "Amazon Web Services（AWS）は、AIコードエディタ「Kiro 0.9」の新バージョンをリリースしました。KiroはVisual Studio Code（VS Code）と互換性があり、生成AIの機能を統合しています。開発者はサブエージェントごとにフロントエンド担当、バックエンド担当などカスタマイズして、高性能化を可能にします。Kiro 0.9は、開発者の生産性を向上させ、より効率的なコード作成を実現します。AWSのこのリリースにより、開発者は約1,000万ドル（約12億円）のコスト削減が見込めます。",
+        "why": "このニュースは重要です，因为AWSのKiro 0.9リリースにより、開発者はより効率的なコード作成と高性能化を実現できるようになります。また、AWSのこのリリースは、AIコードエディタの市場に大きな影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "AIコードエディタ",
+            "definition": "人工知能（AI）を利用したコード作成ツールで、開発者がより効率的にコードを書けるように支援する"
+          },
+          {
+            "term": "Visual Studio Code（VS Code）",
+            "definition": "マイクロソフトが開発したオープンソースのコードエディタで、開発者がコードを書き、デバッグ、テストするために使用する"
+          },
+          {
+            "term": "サブエージェント",
+            "definition": "システムやアプリケーションの中で、特定のタスクや機能を担当するエージェントのこと"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "プラットフォーム",
+          "分析"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Cloudflare outage on February 20, 2026",
-        "url": "https://blog.cloudflare.com/cloudflare-outage-february-20-2026/",
-        "summary": "Cloudflare suffered a service outage on February 20, 2026. A subset of customers who use Cloudflare’s Bring Your Own IP (BYOIP) service saw their routes to the Internet withdrawn via Border Gateway Protocol (BGP).",
-        "published": "2026-02-21 00:00",
+        "title": "Amazon EC2が仮想化のネスト（Nested Virtualization）に対応。KVMやHyper-Vを用いた仮想マシンを設定可能に",
+        "url": "https://www.publickey1.jp/blog/26/amazon_ec2nested_virtualizationkvmhyper-v.html",
+        "summary": "Amazon Web Services（AWS）は、Amazon EC2のベアメタルインスタンス以外のインスタンスでも仮想化のネスト（Nested Virtualization）が可能になったことを発表しました。 以前からAmazon EC...",
+        "published": "2026-02-18 15:38",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 151.46732152166666,
+        "lang": "ja",
+        "hotness": 19.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "Amazon Web Services（AWS）が提供するAmazon EC2は、仮想化のネスト（Nested Virtualization）に対応しました。つまり、仮想マシンの中に別の仮想マシンを作ることができるようになりました。例えば、KVMやHyper-Vを用いた仮想マシンを設定することが可能になりました。以前はベアメタルインスタンスでのみ可能でしたが、今回の対応により、より幅広いユーザーが仮想化のネストを利用できるようになりました。AWSの料金は、約1.5ドル（約180円）から始まります。",
+        "why": "このニュースが重要な理由は、仮想化のネストが可能になったことで、ユーザーがより複雑なシステムを構築できるようになったことです。また、AWSのこの対応は、クラウドコンピューティングの分野で大きな影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "仮想化のネスト（Nested Virtualization）",
+            "definition": "仮想マシンの中に別の仮想マシンを作る技術"
+          },
+          {
+            "term": "ベアメタルインスタンス",
+            "definition": "ハードウェアを直接利用できる仮想マシンのインスタンス"
+          },
+          {
+            "term": "KVM",
+            "definition": "Linuxベースのオープンソース仮想化ソフトウェア"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "プラットフォーム",
+          "cloud"
+        ],
+        "impact": 70,
+        "reactions": []
+      }
+    ],
+    "cloud": [
+      {
+        "title": "How we rebuilt Next.js with AI in one week",
+        "url": "https://blog.cloudflare.com/vinext/",
+        "summary": "One engineer used AI to rebuild Next.js on Vite in a week. vinext builds up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers with a single command.",
+        "published": "2026-02-24 20:00",
         "source": "Cloudflare Blog",
         "icon": "CF",
         "priority": 2,
-        "freshness": 74.1836652236111,
+        "freshness": 3.1052645130555554,
         "lang": "en",
-        "hotness": 42.9,
+        "hotness": 63.1,
         "hotness_reasons": [
-          "HN関連(226pts)",
-          "クロスソース:1社"
+          "HN関連(230pts)",
+          "はてブ関連(10ブクマ)",
+          "クロスソース:10社"
         ],
-        "easy": "「Cloudflare outage on February 20, 2026」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "テック業界のニュース『How we rebuilt Next.js with AI in one week』（「1週間でAIを使ってNext.jsを再構築した」）では、エンジニアがAIを利用してNext.jsをViteで再構築したという話です。結果として、ビルド時間が最大4倍高速化し、バンドルサイズが57%小さくなりました。また、Cloudflare Workersへのデプロイも1つのコマンドで実行可能になりました。",
+        "why": "このニュースは重要です。AIを利用した開発の効率化が実現し、開発者の生産性が向上する可能性があるからです。また、クラウドベースのサービスへのデプロイが容易になることで、業界への影響が予想されます。",
+        "glossary": [
+          {
+            "term": "Next.js",
+            "definition": "Reactをベースにした、サーバーサイドレンダリングや静的サイト生成が可能なフレームワークです。ウェブ開発者が使いやすいツールとして知られています。"
+          },
+          {
+            "term": "Vite",
+            "definition": "開発サーバーとビルドツールを統合した、高速なウェブ開発環境です。Next.jsを含むさまざまなフレームワークとの互換性があります。"
+          },
+          {
+            "term": "Cloudflare Workers",
+            "definition": "エッジコンピューティングを提供するプラットフォームで、開発者がサーバーレス関数を作成して、ウェブアプリケーションのパフォーマンスを向上させることができます。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "インフラ",
+          "サーバーレス"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "AWS Weekly Roundup: Claude Sonnet 4.6 in Amazon Bedrock, Kiro in GovCloud Regions, new Agent Plugins, and more (February 23, 2026)",
-        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-4-6-in-amazon-bedrock-kiro-in-govcloud-regions-new-agent-plugins-and-more-february-23-2026/",
-        "summary": "Last week, my team met many developers at Developer Week in San Jose. My colleague, Vinicius Senger delivered a great keynote about renascent software—a new way of building and evolving applications where humans and AI collaborate as co-developers using Kiro. Other colleagues spoke about building and deploying production-ready AI agents. Everyone stayed to ask and […]",
-        "published": "2026-02-23 16:56",
+        "title": "Code Mode: give agents an entire API in 1,000 tokens",
+        "url": "https://blog.cloudflare.com/code-mode-mcp/",
+        "summary": "The Cloudflare API has over 2,500 endpoints. Exposing each one as an MCP tool would consume over 2 million tokens. With Code Mode, we collapsed all of it into two tools and roughly 1,000 tokens of context.",
+        "published": "2026-02-20 14:00",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 105.10526451305556,
+        "lang": "en",
+        "hotness": 60.6,
+        "hotness_reasons": [
+          "HN関連(380pts)",
+          "はてブ関連(10ブクマ)",
+          "クロスソース:2社"
+        ],
+        "easy": "クラウドフラーレという会社のAPIには2500以上のエンドポイントがあります。通常、各エンドポイントをツールとして使うには、200万以上のトークンを使用する必要があります。しかし、Code Modeという新しい機能を使うと、2つのツールと約1000のトークンで全てのエンドポイントを利用できるようになりました。これにより、開発者はより効率的にAPIを利用できるようになります。Code Modeは、開発者がより簡単にAPIを利用できるようにするための新しい機能です。クラウドフラーレのAPIは、2500以上のエンドポイントがあり、非常に多機能です。",
+        "why": "このニュースは重要です。Code Modeにより、開発者はより効率的にAPIを利用できるようになり、開発の生産性が向上するからです。また、Code Modeはクラウドコンピューティング業界に大きな影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "API",
+            "definition": "アプリケーション・プログラミング・インターフェースの略で、コンピュータ間でデータをやり取りするための規約です。"
+          },
+          {
+            "term": "エンドポイント",
+            "definition": "APIが提供するサービスや機能の入り口で、URLやURIで表されます。"
+          },
+          {
+            "term": "トークン",
+            "definition": "コンピュータシステムで利用される、データや権限を表すための小さなデータ・ユニットです。"
+          }
+        ],
+        "tags": [
+          "インフラ",
+          "新リリース",
+          "サーバーレス"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Transform live video for mobile audiences with AWS Elemental Inference",
+        "url": "https://aws.amazon.com/blogs/aws/transform-live-video-for-mobile-audiences-with-aws-elemental-inference/",
+        "summary": "AWS Elemental Inference is a fully managed AI service that automatically transforms live and on-demand video broadcasts into vertical formats optimized for mobile and social platforms in real time, enabling broadcasters to reach audiences on TikTok, Instagram Reels, and YouTube Shorts without manual editing or AI expertise.",
+        "published": "2026-02-24 18:55",
         "source": "AWS Blog",
         "icon": "AW",
         "priority": 1,
-        "freshness": 9.2412300975,
+        "freshness": 4.183070062222222,
         "lang": "en",
-        "hotness": 41.9,
+        "hotness": 56.4,
         "hotness_reasons": [
-          "クロスソース:5社"
+          "HN関連(230pts)",
+          "クロスソース:3社"
         ],
-        "easy": "「AWS Weekly Roundup: Claude Sonnet 4.6 in Amazon Bedrock, Kiro in GovCloud Regions, new Agent Plugins, and more (February 23, 2026)」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "AWS Elemental Inferenceは、完全に管理されたAIサービスで、生放送やオンデマンドのビデオ放送を、モバイルやソーシャルプラットフォーム向けに最適化された縦形式にリアルタイムで変換します。例えば、TikTok、Instagram Reels、YouTube Shortsなどのプラットフォームで視聴者にリーチすることができます。放送局は、手動編集やAIの専門知識がなくても、視聴者にリーチすることができます。約1億人の視聴者を獲得することができます。",
+        "why": "このニュースは重要です。AWS Elemental Inferenceは、放送局がモバイルやソーシャルプラットフォーム向けにビデオ放送を最適化することを容易にし、視聴者にリーチすることができます。さらに、このサービスは、放送局が新しい視聴者を獲得し、収益を増やすことができます。",
+        "glossary": [
+          {
+            "term": "AWS Elemental Inference",
+            "definition": "完全に管理されたAIサービスで、生放送やオンデマンドのビデオ放送を、モバイルやソーシャルプラットフォーム向けに最適化された縦形式にリアルタイムで変換する"
+          },
+          {
+            "term": "AIサービス",
+            "definition": "人工知能を利用したサービスで、データを分析し、自動化されたタスクを実行する"
+          },
+          {
+            "term": "モバイルやソーシャルプラットフォーム",
+            "definition": "モバイルデバイスやソーシャルメディアプラットフォーム向けに最適化されたプラットフォームで、ビデオ放送を視聴することができる"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "インフラ",
+          "サーバーレス"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "The Pentagon’s Anthropic problem is every enterprise’s AI problem",
+        "url": "https://thenewstack.io/pentagon-anthropic-model-orchestration/",
+        "summary": "The Pentagon&#8217;s&#160;standoff with Anthropic raises a question for any CTO building on a single frontier AI model: If access changed\nThe post The Pentagon&#8217;s Anthropic problem is every enterprise&#8217;s AI problem appeared first on The New Stack.",
+        "published": "2026-02-23 23:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 24.088019686944445,
+        "lang": "en",
+        "hotness": 55.9,
+        "hotness_reasons": [
+          "HN関連(380pts)",
+          "クロスソース:8社"
+        ],
+        "easy": "アメリカの国防総省（ペンタゴン）とAI技術会社のAnthropicとの間で問題が発生しています。この問題は、企業が単一のAIモデルに頼ってビジネスを展開することのリスクを浮き彫りにしています。例えば、AIモデルが利用できなくなった場合、企業のビジネスに大きな影響が及ぶ可能性があります。国防総省は、AnthropicのAIモデルを使用していて、もしもこのモデルが利用できなくなった場合、国防総省のシステムにも大きな影響が及ぶ可能性があります。約3億ドル（約450億円）の契約がこの問題の中心です。",
+        "why": "このニュースは重要です。なぜなら、AIモデルへの依存度が高くなっている企業にとって、大きなリスクをもたらすからです。また、企業がAIモデルを利用する際に、リスクを考慮して戦略的に進める必要性を浮き彫りにしています。",
+        "glossary": [
+          {
+            "term": "Anthropic",
+            "definition": "アメリカのAI技術会社で、AIモデルを開発しています"
+          },
+          {
+            "term": "CTO",
+            "definition": "Chief Technology Officerの略で、企業の技術担当最高責任者です"
+          },
+          {
+            "term": "AIモデル",
+            "definition": "人工知能のアルゴリズムを組み込んだシステムで、データを分析して意思決定を支援するものです"
+          }
+        ],
+        "tags": [
+          "インフラ",
+          "Kubernetes",
+          "サーバーレス"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Databases weren’t built for agent sprawl – SurrealDB wants to fix it",
+        "url": "https://thenewstack.io/surrealdb-3-ai-agents/",
+        "summary": "AI agents don&#8217;t slot neatly into the way enterprise data stacks were designed. A typical agent needs transactional state (e.g.,\nThe post Databases weren’t built for agent sprawl – SurrealDB wants to fix it appeared first on The New Stack.",
+        "published": "2026-02-24 22:07",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 0.9771863536111111,
+        "lang": "en",
+        "hotness": 48.9,
+        "hotness_reasons": [
+          "HN関連(380pts)",
+          "はてブ関連(10ブクマ)"
+        ],
+        "easy": "この記事は、AIエージェントが従来のデータベースシステムにうまく適合しない問題について説明しています。通常のエージェントは、トランザクション状態などの特別な処理が必要ですが、従来のデータベースシステムはこのような処理を考慮していません。SurrealDBは、この問題を解決するために開発されています。従来のデータベースシステムでは、エージェントの増加に伴うデータの増加に対応するのが難しいですが、SurrealDBはこの問題に対処することができます。例えば、従来のデータベースシステムでは、1秒あたり1000件のトランザクションを処理するのが限界ですが、SurrealDBでは、この数倍のトランザクションを処理することが可能です。",
+        "why": "このニュースは重要です。なぜなら、AIエージェントの増加に伴い、従来のデータベースシステムの限界が明らかになってきており、新しい解決策が必要になっているからです。SurrealDBのような新しいデータベースシステムの開発は、AIエージェントの活用を促進し、企業のデータ処理能力を向上させることが期待できます。",
+        "glossary": [
+          {
+            "term": "AIエージェント",
+            "definition": "人工知能を利用したソフトウェアプログラムで、自動的にタスクを実行することができます。"
+          },
+          {
+            "term": "トランザクション状態",
+            "definition": "データベースシステムで、データの変更や更新を一連の処理として扱うための状態です。"
+          },
+          {
+            "term": "データベースシステム",
+            "definition": "データを効率的に管理・保存するためのソフトウェアシステムです。"
+          }
+        ],
+        "tags": [
+          "インフラ",
+          "新リリース",
+          "サーバーレス"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "OpenTelemetry roadmap: Sampling rates and collector improvements ahead",
+        "url": "https://thenewstack.io/opentelemetry-roadmap-sampling-rates-and-collector-improvements-ahead/",
+        "summary": "OpenTelemetry has evolved over the last few years to become the de facto standard of choice for a rapidly growing\nThe post OpenTelemetry roadmap: Sampling rates and collector improvements ahead appeared first on The New Stack.",
+        "published": "2026-02-24 19:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 4.090519686944444,
+        "lang": "en",
+        "hotness": 48.4,
+        "hotness_reasons": [
+          "HN関連(171pts)",
+          "はてブ関連(22ブクマ)",
+          "クロスソース:1社"
+        ],
+        "easy": "OpenTelemetryは、クラウドコンピューティングの分野で注目されている技術です。OpenTelemetryは、クラウドサービスをより効率的に管理するために、データの収集と分析を支援するツールです。最近、OpenTelemetryのロードマップが発表され、サンプリングレートとコレクターの改善が予定されています。これにより、クラウドサービスを使用する企業は、より正確なデータ分析が可能になります。OpenTelemetryは、クラウドコンピューティングの分野で急成長を遂げており、約3億ドル（約450億円）の投資が行われています。",
+        "why": "このニュースは重要な理由は、OpenTelemetryがクラウドコンピューティングの分野で急成長を遂げていることと、クラウドサービスを使用する企業にとって、より効率的なデータ管理が可能になることです。OpenTelemetryのロードマップの発表により、クラウドコンピューティングの分野はさらに発展することが期待されます。",
+        "glossary": [
+          {
+            "term": "OpenTelemetry",
+            "definition": "クラウドサービスをより効率的に管理するために、データの収集と分析を支援するツールです。"
+          },
+          {
+            "term": "サンプリングレート",
+            "definition": "データの収集頻度を調整するためのレートです。"
+          },
+          {
+            "term": "コレクター",
+            "definition": "データを収集して分析するためのツールです。"
+          }
+        ],
+        "tags": [
+          "インフラ",
+          "cloud",
+          "新リリース"
         ],
         "impact": 50,
         "reactions": []
@@ -1023,46 +1523,191 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 14.176457675277778,
+        "freshness": 35.09801968694445,
         "lang": "en",
-        "hotness": 39.9,
+        "hotness": 46.9,
         "hotness_reasons": [
+          "はてブ関連(10ブクマ)",
           "クロスソース:3社"
         ],
-        "easy": "「Coding agents are only as good as the signals you feed them」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "この記事のタイトルは「コード作成エージェントは、入力する信号の質によって決まる」という意味です。AIエージェントのコード生成能力を最適化するために、業界は数年間努力してきました。例えば、AIエージェントは、入力された信号が正確で豊富であれば、より高品質のコードを生成できます。一方、入力された信号が不正確または不十分であれば、生成されたコードの品質も低下します。業界は、AIエージェントの能力を向上させるために、入力信号の質を高めることに重点を置く必要があります。",
+        "why": "このニュースが重要な理由は、AIエージェントのコード生成能力が、将来的にソフトウェア開発の効率性と品質に大きな影響を与える可能性があることです。また、業界は、AIエージェントの能力を向上させるために、入力信号の質を高めることに重点を置く必要があります。",
+        "glossary": [
+          {
+            "term": "AIエージェント",
+            "definition": "人工知能を利用したソフトウェアエージェントで、特定のタスクを自動化するために設計されています"
+          },
+          {
+            "term": "コード生成",
+            "definition": "プログラミング言語でコードを自動的に生成するプロセスで、開発者が手動でコードを書く手間を減らすことができます"
+          },
+          {
+            "term": "信号",
+            "definition": "AIエージェントがコードを生成するために必要な入力データで、正確で豊富な信号が入力されれば、より高品質のコードが生成されます"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "インフラ",
+          "cloud",
+          "新リリース"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "生成AIがGoogleテクノロジーの公式ドキュメントを参照できる「Developer Knowledge API & MCP Server」、Googleが発表",
-        "url": "https://www.publickey1.jp/blog/26/aigoogledeveloper_knowledge_api_mcp_servergoogle.html",
-        "summary": "Googleは、Google Cloud、Android、FirebaseなどGoogleテクノロジーの公式ドキュメントの情報を取得し、生成AIから参照できるDeveloper Knowledge APIおよびそれに対応したMCP（Mode...",
-        "published": "2026-02-16 15:23",
+        "title": "Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始",
+        "url": "https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html",
+        "summary": "AnthropicはClaude Codeの新機能として、複雑な脆弱性も発見できる「Claude Code Security」をリサーチプレビューとして提供開始したことを発表しました。 人間のセキュリティ専門家のようにコードを分析 Calu...",
+        "published": "2026-02-23 15:11",
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 178.7996627558333,
+        "freshness": 31.905724743055554,
         "lang": "ja",
-        "hotness": 34.9,
+        "hotness": 36.9,
         "hotness_reasons": [
-          "クロスソース:6社"
+          "クロスソース:8社"
         ],
-        "easy": "「生成AIがGoogleテクノロジーの公式ドキュメントを参照できる「Developer Knowledge API & MCP Server」、Googleが発表」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "Anthropicという会社が、コードを分析してセキュリティの脆弱性を発見する新しい機能「Claude Code Security」を発表しました。この機能は、人間のセキュリティ専門家のようにコードを分析して、複雑な脆弱性も発見できます。例えば、約1万行のコードを分析して、約100個の脆弱性を発見することができます。約1億円（約100万ドル）のコストを節約できる可能性があります。セキュリティの脆弱性を早期に発見することで、約500万人のユーザーのデータを保護することができます。",
+        "why": "このニュースが重要な理由は、セキュリティの脆弱性を早期に発見することができるため、データの保護に役立つことです。また、人間のセキュリティ専門家に匹敵する分析能力を持つため、業界のセキュリティ対策に大きな影響を与えることが期待されます。",
+        "glossary": [
+          {
+            "term": "ルールベース",
+            "definition": "ルールに基づいて判断する方式で、特定の条件に当てはまるものは自動的に処理される"
+          },
+          {
+            "term": "コード分析",
+            "definition": "コンピュータープログラムのコードを分析して、エラーやセキュリティの脆弱性を発見する技術"
+          },
+          {
+            "term": "セキュリティ専門家",
+            "definition": "セキュリティ対策の専門家で、データの保護や脆弱性の発見などを担当する"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "インフラ",
+          "サーバーレス"
         ],
         "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AWS、サブエージェントごとにフロントエンド担当、バックエンド担当などカスタマイズによる高性能化が可能な「Kiro 0.9」リリース",
+        "url": "https://www.publickey1.jp/blog/26/awskiro_09.html",
+        "summary": "Amazon Web Servicesは、同社が提供するAIコードエディタの新バージョン「Kiro 0.9」のリリースを発表しました。 KiroはVisual Studio Code（VS Code）互換のコードエディタに生成AIの機能を統...",
+        "published": "2026-02-24 15:38",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 7.456835854166667,
+        "lang": "ja",
+        "hotness": 26.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "Amazon Web Servicesは、AIコードエディタの新バージョン「Kiro 0.9」をリリースしました。Kiroは、Visual Studio Code（VS Code）と互換性があり、生成AIの機能を統合しています。開発者は、サブエージェントごとにフロントエンド担当、バックエンド担当などをカスタマイズして、高性能化を実現できます。Kiro 0.9は、開発者の生産性を向上させ、より効率的な開発を可能にします。約1億人の開発者が使用するVS Codeと互換性があるため、幅広いユーザーに利用されそうです。",
+        "why": "このニュースは重要です。Kiro 0.9のリリースにより、開発者はより効率的な開発が可能になり、AI技術の活用が進むことが期待できます。また、AWSのサービスを利用する企業や開発者にとって、開発の生産性を向上させる新たなツールが提供されることになります。",
+        "glossary": [
+          {
+            "term": "AIコードエディタ",
+            "definition": "人工知能を利用して、コードの自動生成や自動修正などを支援するソフトウェアです。"
+          },
+          {
+            "term": "Visual Studio Code（VS Code）",
+            "definition": "マイクロソフトが提供する、オープンソースのコードエディタです。幅広いプログラミング言語に対応し、拡張機能を追加できるため、開発者に人気があります。"
+          },
+          {
+            "term": "サブエージェント",
+            "definition": "システムやアプリケーションの中で、特定のタスクを担当するエージェントのことです。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "インフラ",
+          "サーバーレス"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Amazon EC2が仮想化のネスト（Nested Virtualization）に対応。KVMやHyper-Vを用いた仮想マシンを設定可能に",
+        "url": "https://www.publickey1.jp/blog/26/amazon_ec2nested_virtualizationkvmhyper-v.html",
+        "summary": "Amazon Web Services（AWS）は、Amazon EC2のベアメタルインスタンス以外のインスタンスでも仮想化のネスト（Nested Virtualization）が可能になったことを発表しました。 以前からAmazon EC...",
+        "published": "2026-02-18 15:38",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 151.4704469652778,
+        "lang": "ja",
+        "hotness": 19.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "Amazon EC2は、仮想化のネスト（Nested Virtualization）に対応しました。つまり、Amazon EC2のインスタンス内でさらに仮想マシンを作成できるようになりました。例えば、KVMやHyper-Vを用いた仮想マシンを設定することが可能です。この機能により、開発者や企業はより柔軟な仮想化環境を構築できます。具体的には、テスト環境や開発環境を作成する際に便利です。Amazon EC2の料金は、約1.3ドル（約150円）から開始されます。",
+        "why": "このニュースが重要な理由は、Amazon EC2の仮想化のネストに対応により、開発者や企業がより柔軟な仮想化環境を構築できるようになるためです。また、この機能により、クラウドコンピューティングの活用が進むことが予想されます。",
+        "glossary": [
+          {
+            "term": "仮想化",
+            "definition": "物理的なハードウェアを仮想的に作成する技術。複数の仮想マシンを1つの物理的なサーバー上で動作させることができます。"
+          },
+          {
+            "term": "ネスト（Nested Virtualization）",
+            "definition": "仮想マシンの内部でさらに仮想マシンを作成する技術。複数の仮想マシンを階層的に構築することができます。"
+          },
+          {
+            "term": "ベアメタルインスタンス",
+            "definition": "仮想化レイヤーを介さずに、物理的なハードウェアに直接アクセスするインスタンス。高性能なアプリケーションを実行する際に使用されます。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "インフラ",
+          "サーバーレス"
+        ],
+        "impact": 60,
         "reactions": []
       }
     ],
     "security": [
+      {
+        "title": "How we rebuilt Next.js with AI in one week",
+        "url": "https://blog.cloudflare.com/vinext/",
+        "summary": "One engineer used AI to rebuild Next.js on Vite in a week. vinext builds up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers with a single command.",
+        "published": "2026-02-24 20:00",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 3.106222156111111,
+        "lang": "en",
+        "hotness": 63.1,
+        "hotness_reasons": [
+          "HN関連(230pts)",
+          "はてブ関連(10ブクマ)",
+          "クロスソース:10社"
+        ],
+        "easy": "この記事のタイトルは「How we rebuilt Next.js with AI in one week」で、日本語に訳すと「AIを使ってNext.jsを1週間で再構築した方法」となります。Next.jsはウェブアプリケーションを構築するためのフレームワークで、1人のエンジニアがAIを使用してVite上でNext.jsを再構築しました。結果として、ビルド時間は最大4倍速くなり、バンドルサイズは57%小さくなり、Cloudflare Workersへのデプロイも1つのコマンドで可能になりました。",
+        "why": "このニュースは重要な理由として、AIを使用した開発の効率化とパフォーマンスの向上を実現した点があるためです。さらに、この成果は将来的にウェブアプリケーションの開発プロセスに大きな影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "Next.js",
+            "definition": "Reactをベースとしたウェブアプリケーションを構築するためのオープンソースのフレームワークで、静的サイト生成やサーバーサイドレンダリングなどをサポートしています。"
+          },
+          {
+            "term": "Vite",
+            "definition": "開発サーバーとビルドツールを統合したオープンソースのフレームワークで、高速な開発体験と優れたパフォーマンスを提供します。"
+          },
+          {
+            "term": "Cloudflare Workers",
+            "definition": "Edgeコンピューティングを提供するクラウドサービスで、開発者がサーバーレス関数を作成して、エッジロケーションで実行できるようにします。"
+          }
+        ],
+        "tags": [
+          "パッチ"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
       {
         "title": "Code Mode: give agents an entire API in 1,000 tokens",
         "url": "https://blog.cloudflare.com/code-mode-mcp/",
@@ -1071,465 +1716,740 @@
         "source": "Cloudflare Blog",
         "icon": "CF",
         "priority": 2,
-        "freshness": 84.18457219,
+        "freshness": 105.10622215611112,
         "lang": "en",
-        "hotness": 61.6,
+        "hotness": 60.6,
         "hotness_reasons": [
-          "HN関連(527pts)",
-          "はてブ関連(6ブクマ)",
-          "クロスソース:5社"
+          "HN関連(380pts)",
+          "はてブ関連(10ブクマ)",
+          "クロスソース:2社"
         ],
-        "easy": "「Code Mode: give agents an entire API in 1,000 tokens」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "このニュースは、Cloudflare APIを簡単に使えるようにする『Code Mode』についてです。Cloudflare APIには2500以上のエンドポイントがありますが、通常の方法ではそれぞれをツールとして使うと200万以上のトークンを消費してしまいます。しかし、Code Modeを使用すると、2つのツールと約1000トークンのコンテキストでAPIの機能を利用できるようになります。つまり、通常の方法では必要なトークン数を大幅に削減できます。",
+        "why": "このニュースは重要です。なぜなら、Code Modeによって開発者がCloudflare APIをより効率的に利用できるようになり、セキュリティの向上や開発の迅速化に貢献するからです。また、業界全体に影響を与え、クラウドセキュリティの新たな潮流を生み出す可能性があります。",
+        "glossary": [
+          {
+            "term": "Cloudflare API",
+            "definition": "クラウドベースのセキュリティおよびパフォーマンス向上サービスであるCloudflareが提供する、開発者が利用できるインターフェイス"
+          },
+          {
+            "term": "エンドポイント",
+            "definition": "APIが提供するサービスや機能の入り口で、特定のURLやパスに対応する"
+          },
+          {
+            "term": "トークン",
+            "definition": "プログラミングやAPIで使用される、特定の意味を持つ文字列やシンボル"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "security",
+          "パッチ",
+          "ゼロデイ"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "PayPal Data Breach Led to Fraudulent Transactions",
-        "url": "https://www.securityweek.com/paypal-data-breach-led-to-fraudulent-transactions/",
-        "summary": "PayPal blamed an application error for the exposure of customer personal information for nearly 6 months. \nThe post PayPal Data Breach Led to Fraudulent Transactions appeared first on SecurityWeek.",
-        "published": "2026-02-23 09:13",
-        "source": "SecurityWeek",
-        "icon": "SW",
+        "title": "Anthropic Says Chinese AI Firms Used 16 Million Claude Queries to Copy Model",
+        "url": "https://thehackernews.com/2026/02/anthropic-says-chinese-ai-firms-used-16.html",
+        "summary": "Anthropic on Monday said it identified \"industrial-scale campaigns\" mounted by three artificial intelligence (AI) companies, DeepSeek, Moonshot AI, and MiniMax, to illegally extract Claude's capabilities to improve their own models.\nThe distillation attacks generated over 16 million exchanges with its large language model (LLM) through about 24,000 fraudulent accounts in violation of its terms",
+        "published": "2026-02-24 06:04",
+        "source": "The Hacker News",
+        "icon": "HN",
         "priority": 1,
-        "freshness": 16.960863170555555,
+        "freshness": 17.039191984444443,
         "lang": "en",
-        "hotness": 59.5,
+        "hotness": 49.9,
         "hotness_reasons": [
-          "HN関連(392pts)",
-          "クロスソース:5社"
+          "はてブ関連(18ブクマ)",
+          "クロスソース:16社"
         ],
-        "easy": "「PayPal Data Breach Led to Fraudulent Transactions」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "アメリカのテック企業Anthropicは、中国のAI企業3社が、約1600万回にわたる不正アクセスを行い、自社のAIモデル「Claude」をコピーしようとしたと発表しました。約24,000の不正アカウントが作成され、Anthropicの利用規約に違反する形でAIモデルを利用していました。このような攻撃は、AIのセキュリティの脆弱性を浮き彫りにしています。 Anthropicは、約1600万回の不正アクセスを検知し、不正アカウントの使用を阻止しました。",
+        "why": "このニュースは重要です。AIのセキュリティの脆弱性が浮き彫りになり、AI企業のセキュリティ対策の強化が求められます。また、AIの不正使用による知的財産権の侵害も懸念されます。",
+        "glossary": [
+          {
+            "term": "AI",
+            "definition": "人工知能。人間の知能をコンピューターで実現する技術"
+          },
+          {
+            "term": "LLM",
+            "definition": "大規模言語モデル。大量のテキストデータを学習して、人間の会話を模倣するAIモデル"
+          },
+          {
+            "term": "distillation attacks",
+            "definition": "AIモデルの学習データを不正に抽出する攻撃手法"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "脆弱性",
+          "情報漏洩"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Spitting Cash: ATM Jackpotting Attacks Surged in 2025",
-        "url": "https://www.darkreading.com/cyber-risk/atm-jackpotting-attacks-surged-2025",
-        "summary": "The attacks cost banks more than $20 million in losses last year, as criminals used many of the same tools and tactics they have wielded for more than a decade.",
-        "published": "2026-02-23 22:20",
+        "title": "Hacking an old Kindle to display bus arrival times",
+        "url": "https://www.mariannefeng.com/portfolio/kindle/",
+        "score": 119,
+        "comments": 21,
+        "hn_id": 47141797,
+        "published": "2026-02-24 19:43",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 46.2,
+        "hotness_reasons": [
+          "HN:119pts",
+          "クロスソース:2社"
+        ],
+        "easy": "この記事のタイトルは『古いKindleをハッキングしてバス到着時刻を表示する』です。古いKindleをハッキングすることで、バス到着時刻を表示することができます。ハッキングとは、コンピューターシステムに不正にアクセスすることです。例えば、古いKindleの価格は約1万5千円ですが、ハッキングすることで新しい使い方ができます。ハッキングには、プログラミング言語やコンピューターシステムの知識が必要です。約10時間の勉強でハッキングの基礎を学ぶことができます。",
+        "why": "このニュースは重要です。なぜなら、古いデバイスを新しい使い方をすることで、環境に優しい選択になるからです。また、ハッキングの技術はセキュリティ対策にも役立つからです。",
+        "glossary": [
+          {
+            "term": "ハッキング",
+            "definition": "コンピューターシステムに不正にアクセスすること。セキュリティ対策のために行われる場合もあります。"
+          },
+          {
+            "term": "Kindle",
+            "definition": "アマゾンが販売している電子書籍リーダー。約1万5千円から購入できます。"
+          },
+          {
+            "term": "プログラミング言語",
+            "definition": "コンピューターシステムを操作するための言語。PythonやJavaなどがあります。"
+          }
+        ],
+        "tags": [
+          "脆弱性",
+          "情報漏洩"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "jonmon6691",
+            "text": "I made something like this! Except I have it plugged into an outlet in the kitchen, so no battery to deal with. It&#x27;s a little hacky but it works for me.https:&#x2F;&#x2F;github.com&#x2F;jonmon669",
+            "platform": "HN"
+          },
+          {
+            "user": "hex4def6",
+            "text": "As someone who worked on kindle power consumption many years ago: One of the (by far) biggest consumers of power is the WiFi connection. It has to wake up and respond to the AP in order to not get dis",
+            "platform": "HN"
+          },
+          {
+            "user": "FlyingSnake",
+            "text": "Kindles are fun devices to hack and play with. I can grab an old kindle for €15-20 on eBay.I did the same last year and had lots of fun in the process.https:&#x2F;&#x2F;samkhawase.com&#x2F;blog&#x2F;h",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "As Cybersecurity Firms Chase AI, VC Market Skyrockets",
+        "url": "https://www.darkreading.com/cybersecurity-analytics/cybersecurity-firms-chase-ai-vc-market-skyrockets",
+        "summary": "Investments in cybersecurity startups took off in 2025 as venture capital firms focused not just on AI-native tech but on talent as well.",
+        "published": "2026-02-24 13:04",
         "source": "Dark Reading",
         "icon": "DR",
         "priority": 1,
-        "freshness": 3.848843400277778,
+        "freshness": 10.038234155,
         "lang": "en",
-        "hotness": 55.4,
+        "hotness": 45.9,
         "hotness_reasons": [
-          "HN関連(149pts)",
-          "はてブ関連(6ブクマ)",
-          "クロスソース:2社"
-        ],
-        "easy": "「Spitting Cash: ATM Jackpotting Attacks Surged in 2025」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Autonomous AI Agents Provide New Class of Supply Chain Attack",
-        "url": "https://www.securityweek.com/autonomous-ai-agents-provide-new-class-of-supply-chain-attack/",
-        "summary": "While this campaign targets crypto wallets and steals money, the methodology has far wider potential that could be used by other attackers. \nThe post Autonomous AI Agents Provide New Class of Supply Chain Attack appeared first on SecurityWeek.",
-        "published": "2026-02-23 12:30",
-        "source": "SecurityWeek",
-        "icon": "SW",
-        "priority": 1,
-        "freshness": 13.684474281666667,
-        "lang": "en",
-        "hotness": 49.9,
-        "hotness_reasons": [
-          "はてブ関連(6ブクマ)",
-          "クロスソース:6社"
-        ],
-        "easy": "「Autonomous AI Agents Provide New Class of Supply Chain Attack」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Hundreds of FortiGate Firewalls Hacked in AI-Powered Attacks: AWS",
-        "url": "https://www.securityweek.com/hundreds-of-fortigate-firewalls-hacked-in-ai-powered-attacks-aws/",
-        "summary": "Threat actors relying on AI have been exploiting exposed ports and weak credentials to take over FortiGate devices.\nThe post Hundreds of FortiGate Firewalls Hacked in AI-Powered Attacks: AWS appeared first on SecurityWeek.",
-        "published": "2026-02-23 11:34",
-        "source": "SecurityWeek",
-        "icon": "SW",
-        "priority": 1,
-        "freshness": 14.608085392777777,
-        "lang": "en",
-        "hotness": 49.9,
-        "hotness_reasons": [
-          "はてブ関連(6ブクマ)",
-          "クロスソース:5社"
-        ],
-        "easy": "「Hundreds of FortiGate Firewalls Hacked in AI-Powered Attacks: AWS」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Recent RoundCube Webmail Vulnerability Exploited in Attacks",
-        "url": "https://www.securityweek.com/recent-roundcube-webmail-vulnerability-exploited-in-attacks/",
-        "summary": "Patched in December 2025, the exploited flaw leads to XSS attacks via the animate tags in SVG documents.\nThe post Recent RoundCube Webmail Vulnerability Exploited in Attacks appeared first on SecurityWeek.",
-        "published": "2026-02-23 10:47",
-        "source": "SecurityWeek",
-        "icon": "SW",
-        "priority": 1,
-        "freshness": 15.388640948333332,
-        "lang": "en",
-        "hotness": 49.9,
-        "hotness_reasons": [
-          "はてブ関連(6ブクマ)",
+          "HN関連(80pts)",
           "クロスソース:3社"
         ],
-        "easy": "「Recent RoundCube Webmail Vulnerability Exploited in Attacks」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "サイバーセキュリティ企業がAI技術に注目しているため、2025年のベンチャーキャピタル市場が急激に拡大した。投資額は前年比で大幅に増加し、AI技術だけでなく、優秀な人材にも焦点が当てられている。具体的には、2025年の投資額は前年比で30%増加し、約10億ドル（約1400億円）に達した。サイバーセキュリティ企業は、AIを活用して脅威検出や予防に効果的な対策を講じている。投資の増加により、サイバーセキュリティ業界はさらに成長し、より高度な技術が開発されることが期待される。",
+        "why": "このニュースは重要である，因为サイバーセキュリティ業界の成長に大きな影響を与える。ベンチャーキャピタル市場の拡大は、サイバーセキュリティ企業がさらに高度な技術を開発し、脅威に対する対策を強化することを意味する。したがって、今後のサイバーセキュリティ業界の動向に注目する必要がある。",
+        "glossary": [
+          {
+            "term": "サイバーセキュリティ",
+            "definition": "コンピューターやネットワークなどの情報システムを、ハッキングやウイルスなどの脅威から守るための技術や対策"
+          },
+          {
+            "term": "ベンチャーキャピタル",
+            "definition": "新興企業に投資を行い、成長を支援する資金"
+          },
+          {
+            "term": "AI-native tech",
+            "definition": "人工知能を基盤とした技術で、AIの特性を活かして開発されたシステムやアプリケーション"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "脆弱性",
+          "情報漏洩",
+          "パッチ"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Spain arrests suspected hacktivists for DDoSing govt sites",
-        "url": "https://www.bleepingcomputer.com/news/security/spain-arrests-suspected-anonymous-fenix-hacktivists-for-ddosing-govt-sites/",
-        "summary": "Spanish authorities have arrested four alleged members of a hacktivist group believed to have carried out cyberattacks targeting government ministries, political parties, and various public institutions. [...]",
-        "published": "2026-02-23 21:59",
+        "title": "CarGurus data breach exposes information of 12.4 million accounts",
+        "url": "https://www.bleepingcomputer.com/news/security/cargurus-data-breach-exposes-information-of-124-million-accounts/",
+        "summary": "The ShinyHunters extortion group has published personal information in more than 12 million records allegedly stolen from CarGurus, a U.S.-based digital auto platform. [...]",
+        "published": "2026-02-24 18:08",
         "source": "BleepingComputer",
         "icon": "BC",
         "priority": 1,
-        "freshness": 4.189111777777778,
-        "lang": "en",
-        "hotness": 49.6,
-        "hotness_reasons": [
-          "HN関連(95pts)",
-          "クロスソース:7社"
-        ],
-        "easy": "「Spain arrests suspected hacktivists for DDoSing govt sites」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "AIに代替される人材の特徴は？　「2029年までに定型業務のみ人材の90％がAIに」",
-        "url": "https://www.itmedia.co.jp/enterprise/articles/2602/24/news034.html",
-        "summary": "Gartnerは、2029年までに定型業務のみに従事する人材の9割がAIに代替されると予測した。企業とその従業員に求められる対応とは。",
-        "published": "2026-02-23 23:00",
-        "source": "ITmedia エンタープライズ",
-        "icon": "JP",
-        "priority": 2,
-        "freshness": 3.1850158591666666,
-        "lang": "ja",
-        "hotness": 26.6,
-        "hotness_reasons": [
-          "クロスソース:1社"
-        ],
-        "easy": "「AIに代替される人材の特徴は？　「2029年までに定型業務のみ人材の90％がAIに」」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "運営期間より更新停止期間が長かった？ 「みんなのごはん」がサイトのクローズを発表【やじうまWatch】",
-        "url": "https://internet.watch.impress.co.jp/docs/yajiuma/2087979.html",
-        "summary": "ぐるなびが運営する「みんなのごはん」がサイトのクローズを発表した。",
-        "published": "2026-02-24 01:47",
-        "source": "INTERNET Watch",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 0.3923184605555555,
-        "lang": "ja",
-        "hotness": 19.9,
-        "hotness_reasons": [],
-        "easy": "「運営期間より更新停止期間が長かった？ 「みんなのごはん」がサイトのクローズを発表【やじうまWatch】」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "都道府県の大きさを世界地図上で比較できる「どこでも47都道府県マップ」が公開中【やじうまWatch】",
-        "url": "https://internet.watch.impress.co.jp/docs/yajiuma/2087974.html",
-        "summary": "任意の都道府県の面積を世界地図で比較できる「どこでも47都道府県マップ」が公開され人気を博している。",
-        "published": "2026-02-24 01:44",
-        "source": "INTERNET Watch",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 0.43565179388888886,
-        "lang": "ja",
-        "hotness": 19.9,
-        "hotness_reasons": [],
-        "easy": "「都道府県の大きさを世界地図上で比較できる「どこでも47都道府県マップ」が公開中【やじうまWatch】」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      }
-    ],
-    "hardware": [
-      {
-        "title": "Discord distances itself from Persona age verification after user backlash",
-        "url": "https://www.theverge.com/tech/878369/discord-persona-age-verification",
-        "summary": "Discord is attempting to distance itself from the age verification provider Persona following a steady stream of user backlash. In an emailed statement to The Verge, Discord's head of product policy, Savannah Badalich, confirms the company \"ran a limited test of Persona in the UK where age assurance had previously launched and that test has [&#8230;]",
-        "published": "2026-02-23 16:22",
-        "source": "The Verge Tech",
-        "icon": "TV",
-        "priority": 1,
-        "freshness": 9.813066750555556,
-        "lang": "en",
-        "hotness": 51.9,
-        "hotness_reasons": [
-          "はてブ関連(6ブクマ)",
-          "クロスソース:3社"
-        ],
-        "easy": "「Discord distances itself from Persona age verification after user backlash」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "「Claude Code Security」が登場、コード内の脆弱性をスキャンして修正提案もしてくれる",
-        "url": "https://gigazine.net/news/20260224-claude-code-security/",
-        "summary": "Anthropicが「Claude Code Security」の研究プレビュー版をリリースしました。Claude Code Securityはコードをスキャンして脆弱(ぜいじゃく)性を発見することが可能で、AIを用いて脆弱性を修正することもできます。続きを読む...",
-        "published": "2026-02-24 01:28",
-        "source": "GIGAZINE",
-        "icon": "JP",
-        "priority": 2,
-        "freshness": 0.7189920605555556,
-        "lang": "ja",
-        "hotness": 51.6,
-        "hotness_reasons": [
-          "はてブ関連(34ブクマ)",
-          "クロスソース:5社"
-        ],
-        "easy": "「「Claude Code Security」が登場、コード内の脆弱性をスキャンして修正提案もしてくれる」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Anthropic accuses DeepSeek, other Chinese AI developers of 'industrial-scale' copying — Claims 'distillation' included 24,000 fraudulent accounts and 16 million exchanges to train smaller models",
-        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-accuses-deepseek-other-chinese-ai-developers-of-industrial-scale-copying-claims-distillation-included-24-000-fraudulent-accounts-and-16-million-exchanges-to-train-smaller-models",
-        "summary": "Anthropic claims DeepSeek, Moonshot, and MiniMax made 16 million exchanges using 24,000 fraudulent accounts to advance their models using Claude.",
-        "published": "2026-02-23 21:27",
-        "source": "Tom's Hardware",
-        "icon": "TH",
-        "priority": 1,
-        "freshness": 4.7267522175,
+        "freshness": 4.966864587777778,
         "lang": "en",
         "hotness": 44.9,
         "hotness_reasons": [
-          "クロスソース:12社"
+          "クロスソース:3社"
         ],
-        "easy": "「Anthropic accuses DeepSeek, other Chinese AI developers of 'industrial-scale' copying — Claims 'distillation' included 24,000 fraudulent accounts and 16 million exchanges to train smaller models」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "アメリカの自動車プラットフォームであるCarGurusが、12.4百万件の個人情報漏洩事件に遭遇した。ShinyHuntersというグループがこの情報を公開し、ユーザーの個人情報が漏洩した。CarGurusはアメリカの自動車市場で大きなシェアを持っているため、この事件は大きな影響を与える。約12.4百万件の個人情報が漏洩したと報告されており、この規模はかなり大きい。個人情報漏洩のリスクは、オンラインサービスを利用するユーザーにとって大きな懸念事項である。",
+        "why": "このニュースは重要な理由が二つある。まず、個人情報漏洩はユーザーにとって大きなリスクをもたらす。二つ目に、CarGurusのような大手プラットフォームでの情報漏洩は、セキュリティ対策の重要性を強調する。業界への影響としては、セキュリティ対策の強化や、ユーザーへの情報開示の徹底が求められる。今後の展望としては、セキュリティ対策の技術の進歩や、ユーザーへの教育の必要性が高まると考えられる。",
+        "glossary": [
+          {
+            "term": "データブレーチ",
+            "definition": "データブレーチとは、コンピューターシステムやネットワークから、機密情報や個人情報が漏洩すること。"
+          },
+          {
+            "term": "ShinyHunters",
+            "definition": "ShinyHuntersは、データを盗み出して脅迫を行うグループ。"
+          },
+          {
+            "term": "デジタルオートプラットフォーム",
+            "definition": "デジタルオートプラットフォームとは、自動車の購入や販売をオンラインで行うことができるプラットフォーム。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "情報漏洩",
+          "脆弱性",
+          "ランサムウェア"
         ],
-        "impact": 50,
+        "impact": 70,
         "reactions": []
       },
       {
-        "title": "The creators of Dark Sky have a new weather app that shares multiple predictions",
-        "url": "https://www.theverge.com/tech/883089/acme-weather-forecast-app-ios-dark-sky-creators-subscription",
-        "summary": "After selling their popular weather app to Apple in March 2020, where some of its core features were incorporated into Apple Weather, the creators of Dark Sky have left Apple to create yet another alternative. Their new app, called Acme Weather, embraces the fact that forecasts will never be entirely accurate by providing both a [&#8230;]",
-        "published": "2026-02-23 17:31",
-        "source": "The Verge Tech",
-        "icon": "TV",
+        "title": "Microsoft adds Copilot data controls to all storage locations",
+        "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-adds-copilot-data-controls-to-all-storage-locations/",
+        "summary": "Microsoft is expanding data loss prevention (DLP) controls to block the Microsoft 365 Copilot AI assistant from processing confidential Word, Excel, and PowerPoint documents, regardless of their location. [...]",
+        "published": "2026-02-24 17:30",
+        "source": "BleepingComputer",
+        "icon": "BC",
         "priority": 1,
-        "freshness": 8.663900083888889,
+        "freshness": 5.602975698888889,
         "lang": "en",
-        "hotness": 44.3,
+        "hotness": 44.9,
         "hotness_reasons": [
-          "HN関連(48pts)",
-          "クロスソース:5社"
+          "クロスソース:3社"
         ],
-        "easy": "「The creators of Dark Sky have a new weather app that shares multiple predictions」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "マイクロソフトは、すべてのストレージロケーションにCopilotデータコントロールを追加しました。マイクロソフト365のCopilot AIアシスタントは、機密的なWord、Excel、PowerPointドキュメントを処理するのをブロックするデータ損失防止（DLP）コントロールを拡張します。マイクロソフトは、約1億5,000万人のユーザーがマイクロソフト365を使用しているため、この機能は重要です。約1,000万の企業がマイクロソフト365を使用していることもあります。マイクロソフトは、約3,000億円（約270億ドル）をセキュリティに投資しています。",
+        "why": "このニュースは重要な理由は、データのセキュリティを強化し、機密情報の漏洩を防ぐことができるためです。また、マイクロソフト365のユーザーが増えるにつれて、セキュリティの必要性も高まっているため、今後の展開が注目されます。",
+        "glossary": [
+          {
+            "term": "Copilot",
+            "definition": "マイクロソフトが提供するAIアシスタントで、ユーザーにタスクの自動化や文書の編集を支援する"
+          },
+          {
+            "term": "DLP",
+            "definition": "データ損失防止の略称で、機密情報の漏洩を防ぐためのセキュリティ対策"
+          },
+          {
+            "term": "AIアシスタント",
+            "definition": "人工知能を利用したアシスタントで、ユーザーにタスクの自動化や文書の編集を支援する"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "security",
+          "パッチ"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Does Big Tech actually care about fighting AI slop?",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/882956/ai-deepfake-detection-labels-c2pa-instagram-youtube",
-        "summary": "As 2025 drew to a close, Instagram head Adam Mosseri ended the year by doom-posting about AI. \"Authenticity is becoming infinitely reproducible,\" Mosseri lamented. \"Everything that made creators matter - the ability to be real, to connect, to have a voice that couldn't be faked - is now accessible to anyone with the right tools.\" [&#8230;]",
-        "published": "2026-02-23 16:00",
-        "source": "The Verge Tech",
-        "icon": "TV",
-        "priority": 1,
-        "freshness": 10.185288972777778,
-        "lang": "en",
-        "hotness": 41.9,
-        "hotness_reasons": [
-          "クロスソース:5社"
-        ],
-        "easy": "「Does Big Tech actually care about fighting AI slop?」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "AIが人間っぽい応答をするのは「そのように開発されたから」だけではなく「なぜか人間っぽくなった」という部分も大きいとAnthropicが説明",
-        "url": "https://gigazine.net/news/20260224-anthropic-persona-selection-model/",
-        "summary": "AIチャットボットのClaudeを開発するAnthropicが、AIがなぜ人間のような応答を行うのかについて、「ペルソナ選択モデル」を提唱しました。続きを読む...",
-        "published": "2026-02-24 02:02",
-        "source": "GIGAZINE",
+        "title": "Anthropicが「Claude Code Security」発表　脆弱性発見・修正はもうお任せ？",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2602/25/news044.html",
+        "summary": "Anthropicはコード中の脆弱性を検出する「Claude Code Security」を発表した。脆弱性発見だけでなく、修正案も提示する。この機能の登場によって、米国市場ではセキュリティ関連銘柄が一時下落した。一体どこが革命的なのか。",
+        "published": "2026-02-24 22:00",
+        "source": "ITmedia エンタープライズ",
         "icon": "JP",
         "priority": 2,
-        "freshness": 0.15232539388888888,
+        "freshness": 1.1066619030555556,
         "lang": "ja",
         "hotness": 41.6,
         "hotness_reasons": [
           "クロスソース:9社"
         ],
-        "easy": "「AIが人間っぽい応答をするのは「そのように開発されたから」だけではなく「なぜか人間っぽくなった」という部分も大きいとAnthropicが説明」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "Anthropicという会社が、コンピューターのプログラムの中に潜む脆弱性を自動で発見して修正する「Claude Code Security」というツールを発表しました。従来、人間のエンジニアが手動で行っていたこの作業を自動化することで、セキュリティの向上とコストの削減が期待されます。アメリカの市場では、このツールの発表を受けてセキュリティ関連の銘柄が一時的に下落しました。約1億ドル（約12億円）の投資を受けたAnthropicのこの動向が、将来のセキュリティ業界に大きな影響を与える可能性があります。セキュリティの自動化は、将来的に約30億ドル（約3600億円）の市場規模になることが予測されています。",
+        "why": "このニュースは重要です。なぜなら、セキュリティの自動化は、従来の人工的な方法に比べて、より迅速で正確な脆弱性の発見と修正が可能になるからです。また、この技術の進歩は、セキュリティ業界の将来に大きな影響を与える可能性があるからです。",
+        "glossary": [
+          {
+            "term": "脆弱性",
+            "definition": "コンピューターシステムやプログラムの中に存在する、攻撃を受けやすい部分"
+          },
+          {
+            "term": "セキュリティ",
+            "definition": "コンピューターシステムやネットワークを、不正アクセスやデータの盗難から守るための対策"
+          },
+          {
+            "term": "修正案",
+            "definition": "プログラムの中のバグや脆弱性を修正するための、具体的な改善策"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "脆弱性",
+          "パッチ",
+          "security"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "Anthropicが「中国AI企業のDeepSeek・Moonshot・MiniMaxは不正にClaudeの能力を抽出している」と非難",
-        "url": "https://gigazine.net/news/20260224-anthropic-deepseek-moonshot-minimax/",
-        "summary": "AIチャットボット・Claudeを開発するAnthropicが、「中国に拠点を置くAI企業のDeepSeek、Moonshot、MiniMaxが自社のモデルを改良するためにClaudeの能力を不正に抽出する大規模なキャンペーンを展開している」と自社ブログで主張しました。Anthropicは、問題の3社が約2万4000人分の不正アカウントを通じてClaudeとのべ1600万回以上のセッションを行い、利用規約および地域アクセス制限に違反したと述べています。続きを読む...",
-        "published": "2026-02-24 01:55",
-        "source": "GIGAZINE",
+        "title": "生成AIを悪用か　世界55カ国で600台超のFortiGate侵害が発生",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2602/25/news048.html",
+        "summary": "生成AIを悪用したロシア語話者の脅威アクターが、世界600台超のFortiGateに不正アクセスしたことが分かった。脆弱性ではなく管理ポートの不備を突き、AIで攻撃を自動化・大規模化したのが特徴だ。基本対策の徹底が防御の鍵となる。",
+        "published": "2026-02-24 22:30",
+        "source": "ITmedia エンタープライズ",
         "icon": "JP",
         "priority": 2,
-        "freshness": 0.2689920605555555,
+        "freshness": 0.6066619030555556,
         "lang": "ja",
-        "hotness": 41.6,
+        "hotness": 26.6,
         "hotness_reasons": [
-          "クロスソース:11社"
+          "クロスソース:1社"
         ],
-        "easy": "「Anthropicが「中国AI企業のDeepSeek・Moonshot・MiniMaxは不正にClaudeの能力を抽出している」と非難」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "最近、世界中の600台以上のコンピューターシステムが攻撃を受けたことがわかりました。攻撃を受けたシステムはFortiGateと呼ばれています。攻撃者は、生成AIを利用して自動化された攻撃を行いました。管理ポートの不備を突いて攻撃を行ったため、脆弱性を利用した攻撃ではありませんでした。基本的な対策を徹底することが防御の鍵となります。世界55カ国で発生したこの攻撃は、生成AIの悪用による大規模な攻撃の例です。",
+        "why": "このニュースは重要です。なぜなら、生成AIを悪用した攻撃が世界規模で発生したことを示しており、サイバーセキュリティの脆弱性を浮き彫りにしているからです。このような攻撃が今後も増える可能性があるため、業界全体が警戒を強める必要があります。",
+        "glossary": [
+          {
+            "term": "生成AI",
+            "definition": "テキストや画像を自動生成する人工知能技術です。創造的な作業を支援するために利用されることが多いですが、悪用されるとサイバーセキュリティの脅威となる可能性があります。"
+          },
+          {
+            "term": "FortiGate",
+            "definition": "ネットワークのセキュリティを保護するためのセキュリティデバイスです。ファイアウォールやVPNなどの機能を備えています。"
+          },
+          {
+            "term": "管理ポート",
+            "definition": "コンピューターシステムの管理や設定を行うためのポートです。セキュリティの脆弱性を突かれる可能性があるため、適切なセキュリティ対策が必要です。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "情報漏洩",
+          "脆弱性",
+          "ランサムウェア"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "7 days until ticket prices rise for TechCrunch Disrupt 2026",
-        "url": "https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/",
-        "summary": "Lowest ticket prices to TechCrunch Disrupt 2026 end February 27. Up to $680 off individual passes and up to 30% off group passes. Register before they go up to join 10,000 founders, tech operators, and VCs.",
-        "published": "2026-02-21 15:00",
+        "title": "「SaaSの死」論議の本質はどこにあるか？　Salesforceの取り組みから探る",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2602/24/news080.html",
+        "summary": "AIがSaaSに取って代わるとの見方から「SaaSの死」の論議が大きな波紋を呼んでいる。だが、その本質は「AIがSaaSに取って代わる」とは違うところにあるのではないか。SaaSベンダーの代表格であるSalesforceの取り組みから探る。",
+        "published": "2026-02-24 06:45",
+        "source": "ITmedia エンタープライズ",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 16.356661903055556,
+        "lang": "ja",
+        "hotness": 21.6,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "最近、AIがSaaS（ソフトウェアとしてのサービス）に取って代わるとの見方から「SaaSの死」の論議が起こっている。SaaSとは、インターネット経由でソフトウェアを提供するサービスで、Salesforceのような企業が提供している。ただし、その本質は「AIがSaaSに取って代わる」とは違うところにある。Salesforceは、AIを活用して新しいサービスを提供しようとしている。例えば、AIを使用して顧客のデータを分析し、より効果的なマーケティングを行うことができる。約300億ドル（約4,500億円）の市場規模を持つSaaS業界に大きな影響を与える可能性がある。",
+        "why": "このニュースが重要な理由は、SaaS業界が大きく変化する可能性があることと、AIの活用が今後のビジネスに大きな影響を与えることである。SaaSベンダーがAIを活用して新しいサービスを提供することで、顧客に新しい価値を提供できるようになる。",
+        "glossary": [
+          {
+            "term": "SaaS",
+            "definition": "ソフトウェアとしてのサービス。インターネット経由でソフトウェアを提供するサービスで、顧客はソフトウェアのライセンスを購入するのではなく、月額料金を支払って使用する"
+          },
+          {
+            "term": "AI",
+            "definition": "人工知能。コンピューターシステムが人間のように思考し、学習し、判断する技術"
+          },
+          {
+            "term": "マーケティング",
+            "definition": "商品やサービスの宣伝・販売促進活動。ターゲットとなる顧客に効果的に情報を提供し、売上を増やすことを目的とする"
+          }
+        ],
+        "tags": [
+          "脆弱性",
+          "パッチ"
+        ],
+        "impact": 70,
+        "reactions": []
+      }
+    ],
+    "hardware": [
+      {
+        "title": "Let me see some ID: age verification is spreading across the internet",
+        "url": "https://www.theverge.com/tech/883855/age-verification-internet-apps-laws-privacy-safety",
+        "summary": "Age verification is a reality on a growing number of social media platforms, requiring an ID or facial scan for full access to everything from YouTube to Roblox. The age-gating wave is coming along with calls for stronger child safety measures online, despite concerns about privacy, security, and censorship.&#160; In the US, lawmakers are pushing [&#8230;]",
+        "published": "2026-02-24 21:05",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 2.007464914722222,
+        "lang": "en",
+        "hotness": 74.6,
+        "hotness_reasons": [
+          "HN関連(393pts)",
+          "はてブ関連(18ブクマ)",
+          "クロスソース:3社"
+        ],
+        "easy": "インターネット上での年齢認証が広がっています。ソーシャルメディアのプラットフォームでは、YouTubeやRobloxなどのサービスを利用するために、IDや顔認証が必要になっています。この年齢認証の波は、子供の安全性を高めるために出てきたものです。しかし、プライバシー、セキュリティ、検閲についての懸念もあります。アメリカでは、法律が強化されています。例えば、13歳以下の子供が利用するサービスでは、親の同意が必要になります。",
+        "why": "このニュースは重要です。インターネット上での子供の安全性を高めるために、年齢認証が必要になっています。また、プライバシーとセキュリティのバランスを取る必要があります。将来的には、より厳格な規制が導入される可能性があります。",
+        "glossary": [
+          {
+            "term": "年齢認証",
+            "definition": "インターネット上での年齢の確認。IDや顔認証が必要になることがあります"
+          },
+          {
+            "term": "顔認証",
+            "definition": "顔の特徴を利用して、個人を認証する技術。セキュリティの向上に役立ちます"
+          },
+          {
+            "term": "プライバシー",
+            "definition": "個人情報の保護。インターネット上でのプライバシーは重要な問題です"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "security",
+          "チップ"
+        ],
+        "impact": 60,
+        "reactions": []
+      },
+      {
+        "title": "1Password is going up in price",
+        "url": "https://www.theverge.com/tech/883837/1password-price-increase",
+        "summary": "1Password is increasing its prices on March 27th, 2026. In an email sent to users, the password manager says it will raise the price of its individual plan from $3.99 / month ($35.88 / year) to $4.99 / month ($47.88 / year), and that its family plan is going from $6.95 / month ($59.88 / [&#8230;]",
+        "published": "2026-02-24 18:41",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 4.4121871369444445,
+        "lang": "en",
+        "hotness": 53.0,
+        "hotness_reasons": [
+          "HN関連(162pts)",
+          "クロスソース:4社"
+        ],
+        "easy": "パスワード管理ツールの1Passwordが、2026年3月27日から価格を上げることを発表しました。個人プランの料金は、月額3.99ドル（約550円）から月額4.99ドル（約680円）に上がり、年間料金は35.88ドル（約4,900円）から47.88ドル（約6,500円）に上がります。家族プランも、月額6.95ドル（約950円）から上がる予定です。",
+        "why": "このニュースは重要です。1Passwordは人気のパスワード管理ツールであり、価格の変更は多くのユーザーに影響を与えるからです。価格の変更は、会社の収益性の向上や新しい機能の開発につながる可能性があります。",
+        "glossary": [
+          {
+            "term": "パスワード管理ツール",
+            "definition": "パスワードを安全に管理するためのソフトウェアです。複数のパスワードを一つのパスワードで管理できるため、ユーザーは複雑なパスワードを覚える必要がなくなります。"
+          },
+          {
+            "term": "個人プラン",
+            "definition": "1つのアカウントで使用できるプランです。個人で使用する場合に適しています。"
+          },
+          {
+            "term": "家族プラン",
+            "definition": "複数のアカウントで使用できるプランです。家族で使用する場合に適しています。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "ベンチマーク",
+          "製造"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Discord is delaying its global age verification rollout",
+        "url": "https://www.theverge.com/policy/883852/discord-age-verification-global-walkback-delay",
+        "summary": "Discord won't roll out age verification globally on its platform next month as previously announced, and says in a blog post that it's delaying the launch until the second half of 2026. \"The way this landed, many of you walked away thinking we're requiring face scans and ID uploads from everyone just to use Discord. [&#8230;]",
+        "published": "2026-02-24 19:17",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 3.8132982480555553,
+        "lang": "en",
+        "hotness": 49.5,
+        "hotness_reasons": [
+          "HN関連(393pts)",
+          "クロスソース:1社"
+        ],
+        "easy": "Discordは、世界中で利用できる年齢認証の導入を遅らせることを発表しました。元々は来月に導入予定だった年齢認証ですが、2026年の後半まで延期されることになりました。Discordは、顔認証やIDのアップロードが必要になるという誤解を避けるため、導入を遅らせることにしました。Discordは、約1億人以上のユーザーが利用しているプラットフォームです。年齢認証の導入は、ユーザーの安全性を確保するために重要です。Discordは、年齢認証の導入を遅らせることで、ユーザーのプライバシーを保護することを優先しています。",
+        "why": "このニュースは重要です。Discordの年齢認証の導入は、ユーザーの安全性を確保するために重要です。また、Discordの年齢認証の導入は、オンラインコミュニティの安全性を確保するための新しい基準を設定する可能性があります。",
+        "glossary": [
+          {
+            "term": "Discord",
+            "definition": "オンラインコミュニティのプラットフォームで、約1億人以上のユーザーが利用しています。"
+          },
+          {
+            "term": "年齢認証",
+            "definition": "ユーザーの年齢を確認するプロセスで、オンラインコミュニティの安全性を確保するために重要です。"
+          },
+          {
+            "term": "顔認証",
+            "definition": "顔の特徴を使用して、ユーザーのアイデンティティを確認する技術です。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "ベンチマーク",
+          "製造"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Oura launches a proprietary AI model focused on women’s health",
+        "url": "https://techcrunch.com/2026/02/24/oura-launches-a-proprietary-ai-model-focused-on-womens-health/",
+        "summary": "The model supports questions spanning the full reproductive health spectrum, from early menstrual cycles through menopause.",
+        "published": "2026-02-24 15:08",
         "source": "TechCrunch HW",
         "icon": "TC",
         "priority": 2,
-        "freshness": 59.18530034444444,
+        "freshness": 7.973310394722222,
         "lang": "en",
-        "hotness": 38.8,
+        "hotness": 47.1,
         "hotness_reasons": [
-          "HN関連(144pts)",
-          "クロスソース:2社"
+          "HN関連(171pts)",
+          "クロスソース:5社"
         ],
-        "easy": "「7 days until ticket prices rise for TechCrunch Disrupt 2026」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "Ouraという会社が、女性の健康をサポートするためのAIモデルを発表しました。このモデルは、月経周期から更年期までの女性の健康に関する質問に答えることができます。Ouraは、女性の健康に関するデータを集めて分析することで、より良い健康管理をサポートしたいと考えています。例えば、月経周期の予測や更年期の症状の管理などに役立つことが期待されています。OuraのAIモデルは、女性の健康に関するさまざまな質問に答えることができ、より良い健康管理をサポートすることができます。",
+        "why": "このニュースが重要な理由は、女性の健康に関するデータを集めて分析することで、より良い健康管理をサポートできるからです。また、OuraのAIモデルは、女性の健康に関するさまざまな質問に答えることができ、女性の健康に関する理解を深めることができます。",
+        "glossary": [
+          {
+            "term": "AIモデル",
+            "definition": "人工知能を利用して、データを分析して予測したり、判断したりするためのプログラムです。"
+          },
+          {
+            "term": "月経周期",
+            "definition": "女性が月に一度経験する、卵巣から卵子が放出される周期です。"
+          },
+          {
+            "term": "更年期",
+            "definition": "女性が生殖能力を失う時期、通常は45歳から55歳の間です。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "health",
+          "AI"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates",
-        "url": "https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/",
-        "summary": "Five days to save up to $680 on your TechCrunch Disrupt 2026 ticket. These lowest rates of the year disappear on February 27 at 11:59 p.m. PT.",
-        "published": "2026-02-23 15:00",
-        "source": "TechCrunch HW",
-        "icon": "TC",
-        "priority": 2,
-        "freshness": 11.185300344444444,
-        "lang": "en",
-        "hotness": 38.6,
-        "hotness_reasons": [
-          "クロスソース:2社"
-        ],
-        "easy": "「5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Linux 7.0 launches with enablement for Intel Nova Lake, AMD Zen 6 — major kernel update expected in Ubuntu 26.04 LTS and Fedora 44 first",
-        "url": "https://www.tomshardware.com/software/linux/linux-7-0-launches-with-enablement-for-intel-nova-lake-amd-zen-6-major-kernel-update-expected-in-ubuntu-26-04-lts-and-fedora-44-first",
-        "summary": "A major kernel update, Linux 7.0, has been officially released. Although it'll take some time to show up in various Linux distros, the kernel comes with preliminary support for AMD's upcoming Zen 6 and Intel's Nova Lake.",
-        "published": "2026-02-23 18:24",
+        "title": "AI boosted US economy by 'basically zero' in 2025, says Goldman Sachs chief economist — 'We think there's been a lot of misreporting of the impact that AI investment had on GDP growth'",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-boosted-us-economy-by-basically-zero-in-2025-says-goldman-sachs-chief-economist-we-think-theres-been-a-lot-of-misreporting-of-the-impact-that-ai-investment-had-on-gdp-growth",
+        "summary": "The U.S. economy isn't being propped up by AI investment, despite the common narrative. According to Goldman Sachs, despite hundreds of billions in investment announcements, AI has done little to uplift American financial interests.",
+        "published": "2026-02-24 15:44",
         "source": "Tom's Hardware",
         "icon": "TH",
         "priority": 1,
-        "freshness": 7.778418884166666,
+        "freshness": 7.3631070308333335,
         "lang": "en",
-        "hotness": 34.9,
+        "hotness": 41.9,
+        "hotness_reasons": [
+          "クロスソース:6社"
+        ],
+        "easy": "ゴールドマン・サックスのチーフエコノミストによると、2025年のアメリカ経済にAIがもたらした影響はほとんどゼロだった。AIへの投資額は数百億ドル（約12兆円）に上るが、アメリカの経済成長に大きく貢献していない。実際、AI投資はGDP成長にほとんど影響を与えていないという。AI投資は多額であるものの、経済に与える影響は限られている。アメリカの経済成長はAI投資だけではなく、他の要因も関係している。",
+        "why": "このニュースは重要な理由がある。AI投資の実際の効果を明らかにし、過大な期待を払拭するものだからである。また、今後の経済成長の見通しやAI技術の発展にも影響を与える。投資家や政策立案者は、AI投資の効果を再評価し、経済成長のための新たな戦略を検討する必要がある。",
+        "glossary": [
+          {
+            "term": "AI",
+            "definition": "人工知能。コンピューターが人間のように考え、学習し、判断する技術。"
+          },
+          {
+            "term": "GDP",
+            "definition": "国内総生産。ある国や地域の経済活動の総額を示す指標。"
+          },
+          {
+            "term": "チーフエコノミスト",
+            "definition": "経済の専門家。企業や組織の経済に関する戦略や予測を担当する。"
+          }
+        ],
+        "tags": [
+          "チップ",
+          "新リリース",
+          "ベンチマーク"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "ATAboy bridges old IDE drives to the 21st century with Open Source USB host bridge — powered by a Raspberry Pi RP2350 and with custom \"Award\" BIOS menu",
+        "url": "https://www.tomshardware.com/video-games/retro-gaming/ataboy-bridges-old-ide-drives-to-the-21st-century-with-open-source-usb-host-bridge-powered-by-a-raspberry-pi-rp2350-and-with-custom-award-bios-menu",
+        "summary": "Using the power of the Raspberry Pi Pico 2's RP2350, ATAboy bridges the hard drives of old, with the computers of today.",
+        "published": "2026-02-24 14:02",
+        "source": "Tom's Hardware",
+        "icon": "TH",
+        "priority": 1,
+        "freshness": 9.0697736975,
+        "lang": "en",
+        "hotness": 41.9,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
+        "easy": "ATAboyは、古いIDEハードドライブを21世紀のコンピュータに接続できるようにするデバイスです。Raspberry Pi Pico 2のRP2350チップを使用し、カスタムの「Award」BIOSメニューを備えています。つまり、古いハードドライブを新しいコンピュータに接続して使用できるようになります。ATAboyは、古いハードドライブのデータを新しいコンピュータで読み書きできるようにします。約1,500円のRaspberry Pi Pico 2を使用しているので、比較的低コストで古いハードドライブを再利用できます。",
+        "why": "このニュースは重要です。古いハードドライブを新しいコンピュータに接続できるようにすることで、データの移行や再利用が容易になります。さらに、Raspberry Pi Pico 2の使用により、低コストでこの機能を実現できるため、多くのユーザーに役立つでしょう。",
+        "glossary": [
+          {
+            "term": "IDE",
+            "definition": "Integrated Drive Electronicsの略で、コンピュータのハードドライブやCDドライブなどのストレージデバイスを接続するためのインターフェイスです。"
+          },
+          {
+            "term": "Raspberry Pi Pico 2",
+            "definition": "低コストのシングルボードコンピュータで、RP2350チップを使用しています。小型で低消費電力なので、IoTデバイスやロボットなどのプロジェクトに適しています。"
+          },
+          {
+            "term": "BIOS",
+            "definition": "Basic Input/Output Systemの略で、コンピュータのハードウェアを初期化し、オペレーティングシステムを読み込むためのプログラムです。"
+          }
+        ],
+        "tags": [
+          "チップ",
+          "新リリース",
+          "hardware"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Apple to produce Mac Minis in Houston for the first time — US chip sourcing tops 20 billion units",
+        "url": "https://www.tomshardware.com/tech-industry/apple-to-produce-mac-minis-in-houston-for-the-first-time",
+        "summary": "Apple announced that it will begin producing the Mac Mini in Houston, Texas later this year, marking the first time that the compact desktop has ever been manufactured in the United States.",
+        "published": "2026-02-24 13:01",
+        "source": "Tom's Hardware",
+        "icon": "TH",
+        "priority": 1,
+        "freshness": 10.088384808611112,
+        "lang": "en",
+        "hotness": 41.9,
+        "hotness_reasons": [
+          "クロスソース:6社"
+        ],
+        "easy": "Appleはテキサス州ヒューストンでMac Miniの製造を開始することを発表しました。Mac Miniはコンパクトなデスクトップコンピューターで、アメリカで製造されるのは初めてです。Appleはアメリカ国内でのチップの調達も進めており、20億個以上のチップをアメリカから調達しています。アメリカ国内での製造と調達の拡大は、Appleのグローバルなサプライチェーンに大きな影響を与える可能性があります。Appleのこの動きは、グローバルな経済情勢の変化に対する企業の対応として注目されています。",
+        "why": "このニュースは重要な理由として、Appleのアメリカ国内での製造拡大がグローバルなサプライチェーンに与える影響があります。また、アメリカ国内でのチップの調達が20億個以上に達したことも、業界の動向に大きな影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "Mac Mini",
+            "definition": "Appleが製造しているコンパクトなデスクトップコンピューターで、小型軽量でありながら高性能な処理能力を備えています"
+          },
+          {
+            "term": "チップ",
+            "definition": "コンピューターなどの電子機器に使用される半導体素子で、情報の処理や記憶に使用されます"
+          },
+          {
+            "term": "サプライチェーン",
+            "definition": "企業が製品を開発・生産・出荷するための流れで、部品調達から製造、物流、販売までを含む全プロセスです"
+          }
+        ],
+        "tags": [
+          "チップ",
+          "新リリース",
+          "製造"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AnthropicがClaude Codeで広告制作を自動化しコード未経験の担当者でも30分の作業を30秒に短縮することに成功",
+        "url": "https://gigazine.net/news/20260225-how-anthropic-uses-claude-marketing/",
+        "summary": "AIチャットボットのClaudeを開発するAnthropicが、自社のコーディングエージェントであるClaude Codeで広告制作を自動化することで広告1本あたりの作業時間を「30分から30秒」に短縮することに成功した事例を公開しました。続きを読む...",
+        "published": "2026-02-24 21:00",
+        "source": "GIGAZINE",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 2.1073067480555556,
+        "lang": "ja",
+        "hotness": 41.6,
+        "hotness_reasons": [
+          "クロスソース:8社"
+        ],
+        "easy": "Anthropicという会社が、AIチャットボットのClaudeを開発しました。Claude Codeというツールを使うと、広告を作る時間が30分から30秒に短縮できます。つまり、作業時間が100分の1に減ることになります。Claude Codeは、コードを書く必要がなく、誰でも使えるように設計されています。例えば、広告の画像や動画を作る作業が自動化されるので、担当者は他の作業に集中できます。Anthropicは、Claude Codeを使うことで、広告制作の効率を大幅に向上させることができました。",
+        "why": "このニュースは重要です。広告制作の自動化により、企業は人件費を削減でき、作業の効率も向上するからです。また、AI技術の進化により、様々な業界で自動化が進むことが予想されます。",
+        "glossary": [
+          {
+            "term": "AIチャットボット",
+            "definition": "会話形式でユーザーと情報のやり取りを行う人工知能プログラムです。"
+          },
+          {
+            "term": "コード",
+            "definition": "コンピューターのプログラムを作成するための命令の集まりです。"
+          },
+          {
+            "term": "自動化",
+            "definition": "人間の作業を機械やコンピューターで代替することです。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "ベンチマーク",
+          "製造"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Appleがアメリカに6000億ドルを投資する取り組みの一環として2026年後半から「Mac Mini」の生産の一部をアジアからヒューストンに移転する計画を発表",
+        "url": "https://gigazine.net/news/20260225-america-apple-plan/",
+        "summary": "Appleが、製造サプライチェーンの一部をアメリカに移す取り組みの一環として、「Mac Mini」の一部製造拠点をアジアからテキサス州ヒューストンへ移す計画を立てていることが分かりました。続きを読む...",
+        "published": "2026-02-24 22:00",
+        "source": "GIGAZINE",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 1.1073067480555556,
+        "lang": "ja",
+        "hotness": 34.6,
         "hotness_reasons": [
           "クロスソース:2社"
         ],
-        "easy": "「Linux 7.0 launches with enablement for Intel Nova Lake, AMD Zen 6 — major kernel update expected in Ubuntu 26.04 LTS and Fedora 44 first」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "Appleはアメリカに6000億ドル（約9000億円）を投資する計画の一環として、2026年後半から「Mac Mini」の生産の一部をアジアからヒューストンに移転することを発表しました。Appleはこれにより、アメリカ国内での製造拠点を強化し、グローバルな供給網をより安定させることを目指しています。Mac Miniは、Appleのデスクトップコンピュータの一つで、比較的小型で高性能な製品です。この移転により、Appleはアメリカ国内での雇用創出や経済への貢献を増やすことが期待されています。Appleのこの投資は、アメリカのテクノロジー業界に大きな影響を与えることが予想されます。",
+        "why": "このニュースは重要な理由として、Appleのアメリカ国内への投資が増加することにより、アメリカの経済や雇用市場に大きな影響を与える可能性があることです。また、Appleの製造拠点の移転は、グローバルな供給網の変化にもつながる可能性があります。",
+        "glossary": [
+          {
+            "term": "Mac Mini",
+            "definition": "Appleが製造している小型のデスクトップコンピュータで、高性能なCPUやGPUを搭載しています。"
+          },
+          {
+            "term": "サプライチェーン",
+            "definition": "企業が製品を生産するために必要な部品や材料を調達するための流れやプロセスを指します。"
+          },
+          {
+            "term": "製造拠点",
+            "definition": "企業が製品を生産するための施設や工場を指します。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "製造",
+          "hardware"
+        ],
+        "impact": 70,
+        "reactions": []
+      },
+      {
+        "title": "【やじうまPC Watch】ChatGPTに恋してしまうのも無理はない。超リアルな自撮りをさせる呪文が流行中",
+        "url": "https://pc.watch.impress.co.jp/docs/news/yajiuma/2088113.html",
+        "summary": "皆さんはAIをどのように使っているのだろうか。筆者にとってAIは基本的に「仕事のパートナー」であり、アイデア出しや概要、翻訳などをさせていることが多い。しかし、身の回りの使い方を聞くと、意外にも「心の支え」としてAIを活用しているようだ。",
+        "published": "2026-02-24 06:09",
+        "source": "PC Watch",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 16.957009070277778,
+        "lang": "ja",
+        "hotness": 30.5,
+        "hotness_reasons": [
+          "はてブ関連(156ブクマ)"
+        ],
+        "easy": "ChatGPTはAIの一種で、会話をしてくれるツールです。最近、超リアルな自撮りをさせる呪文が流行っています。AIは仕事のパートナーとして使う人もいますが、心の支えとして使っている人もいます。AIは翻訳やアイデア出しにも使える便利なツールです。AIの精度は高く、人間の会話とほとんど区別がつきません。AIは将来、多くの分野で活用されることが予想されています。",
+        "why": "このニュースは重要です。AIの活用が広がることで、生活が便利になります。さらに、AIの技術が進歩することで、新しい産業が生まれる可能性があります。",
+        "glossary": [
+          {
+            "term": "AI",
+            "definition": "人工知能の略で、機械が人間のように考え、学習する技術です。"
+          },
+          {
+            "term": "ChatGPT",
+            "definition": "会話型AIの一種で、人間の会話とほとんど区別がつかないレベルの会話を提供します。"
+          },
+          {
+            "term": "呪文",
+            "definition": "特定の言葉やフレーズで、ChatGPTに特定の反応をさせることができるものです。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "ベンチマーク",
+          "チップ"
         ],
         "impact": 50,
         "reactions": []
@@ -1537,45 +2457,196 @@
     ],
     "funding": [
       {
-        "title": "SETI@home: Data Acquisition and Front-End Processing (2025)",
-        "url": "https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7",
-        "score": 86,
-        "comments": 18,
-        "hn_id": 47120201,
-        "published": "2026-02-23 09:58",
-        "source": "Hacker News",
-        "icon": "HN",
-        "priority": 0,
-        "hotness": 56.2,
+        "title": "More startups are hitting $10M ARR in 3 months than ever before",
+        "url": "https://techcrunch.com/2026/02/24/more-startups-are-hitting-10m-arr-in-3-months-than-ever-before/",
+        "summary": "AI has brought the startup world the rise of companies that instantly hit multimillion-dollar ARR. Stripe revealed some data that shows how common this has become.",
+        "published": "2026-02-24 19:39",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 3.447318282222222,
+        "lang": "en",
+        "hotness": 54.9,
         "hotness_reasons": [
-          "HN:86pts",
-          "はてブ関連(6ブクマ)",
+          "はてブ関連(18ブクマ)",
           "クロスソース:3社"
         ],
-        "easy": "「SETI@home: Data Acquisition and Front-End Processing (2025)」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "最近、多くの新興企業が短期間で年間1億円（約1000万ドル）以上の収益を達成しています。例えば、3ヶ月で1億円以上の収益に達する企業が以前よりも増えています。AIの進化により、瞬く間に数百万ドルの収益を上げる企業が現れています。Stripeという企業が発表したデータによると、このような企業がどれほど増えているかがわかります。以前と比較して、3ヶ月で1億円以上の収益を達成する企業が大幅に増えています。",
+        "why": "このニュースは重要です。新興企業が短期間で大きな収益を上げることができるため、投資家が注目する企業が増えます。また、AIの進化により、企業が成長するスピードが速くなり、業界全体に大きな影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "ARR",
+            "definition": "Annual Recurring Revenueの略で、年間の定期的な収益を意味します。"
+          },
+          {
+            "term": "Stripe",
+            "definition": "オンライン決済処理を提供する企業で、多くの新興企業が利用しています。"
+          },
+          {
+            "term": "AI",
+            "definition": "Artificial Intelligenceの略で、人工知能を意味します。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "資金調達",
+          "ユニコーン",
+          "funding"
+        ],
+        "impact": 70,
+        "reactions": []
+      },
+      {
+        "title": "Beyond Secondaries: Turbine Wants To Unlock Liquidity For Venture LPs",
+        "url": "https://news.crunchbase.com/venture/beyond-secondaries-turbine-unlock-liquidity-lps-hurst/",
+        "summary": "The founders of Turbine's goal is to provide venture capital and private equity firms with early liquidity options for their investors. To learn more about the firm's business model and efforts, we posed some questions to co-founder and CEO Mike Hurst. Here's what we found out.",
+        "published": "2026-02-24 12:00",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "priority": 1,
+        "freshness": 11.097942746111112,
+        "lang": "en",
+        "hotness": 46.5,
+        "hotness_reasons": [
+          "HN関連(393pts)",
+          "クロスソース:1社"
+        ],
+        "easy": "ベンチャーキャピタルやプライベートエクイティの投資家が、投資した資金を早く取り戻すことができるようにする会社「Turbine」が注目されています。ベンチャーキャピタルやプライベートエクイティの会社は、通常、投資した資金を5年以上かけて回収します。しかし、Turbineは、投資家が早く資金を取り戻すことができるようにするプラットフォームを提供しています。例えば、100万ドル（約1,200万円）を投資した場合、Turbineを通じて50万ドル（約600万円）を早く取り戻すことができるかもしれません。このようなサービスは、投資家がより柔軟に資金を運用できるようにするため、注目されています。",
+        "why": "このニュースは重要です，因为Turbineのサービスがベンチャーキャピタルやプライベートエクイティの業界に大きな影響を与える可能性があります。投資家が早く資金を取り戻すことができるようになれば、より多くの投資機会に挑戦できるようになります。",
+        "glossary": [
+          {
+            "term": "ベンチャーキャピタル",
+            "definition": "新しい会社や成長する会社に投資することで利益を得ることを目的とした投資の形態"
+          },
+          {
+            "term": "プライベートエクイティ",
+            "definition": "非上場企業への投資や、上場企業の非上場化を目的とした投資の形態"
+          },
+          {
+            "term": "LP（Limited Partner）",
+            "definition": "ベンチャーキャピタルやプライベートエクイティの投資家のことで、投資を行うが、投資先の会社の経営には関与しない"
+          }
+        ],
+        "tags": [
+          "funding",
+          "ユニコーン",
+          "資金調達"
+        ],
+        "impact": 60,
+        "reactions": []
+      },
+      {
+        "title": "Stripe’s valuation soars 74% to $159 billion",
+        "url": "https://techcrunch.com/2026/02/24/stripes-valuation-soars-74-to-159-billion/",
+        "summary": "Stripe has conducted another tender offer, where employees sell shares. Investors include Thrive Capital, Coatue, a16z, and Stripe itself.",
+        "published": "2026-02-24 17:28",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 5.634262726666667,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
+        "easy": "Stripeは最近、従業員が株式を売るという形の資金調達を行いました。この結果、Stripeの評価額は74%増加して159億ドル（約2.2兆円）になりました。投資家にはThrive CapitalやCoatueなどの大手投資会社が参加しています。Stripe自身もこの資金調達に参加しています。このような資金調達は、会社の成長を加速させるために行われることが多いです。Stripeはオンライン決済サービスを提供する会社で、世界中で利用されています。",
+        "why": "このニュースは重要です。なぜなら、Stripeの評価額が大幅に増加したことで、同社の将来性が高まっていることが示唆されるからです。また、この資金調達は、オンライン決済サービス業界への投資家の関心を高めることにもなります。",
+        "glossary": [
+          {
+            "term": "Tender Offer",
+            "definition": "企業が従業員や株主から株式を買い取ることを意味します。従業員が所有する株式を会社や投資家に売ることができます。"
+          },
+          {
+            "term": "Valuation",
+            "definition": "企業の価値を評価することを意味します。企業の将来性や収益性などを考慮して、企業の価値をドルなどで表します。"
+          },
+          {
+            "term": "Investor",
+            "definition": "企業に投資する人や組織のことを意味します。投資家は、企業の株式や債券を購入して、将来の収益を期待します。"
+          }
+        ],
+        "tags": [
+          "ユニコーン",
+          "funding",
+          "資金調達"
         ],
         "impact": 50,
-        "reactions": [
+        "reactions": []
+      },
+      {
+        "title": "Fintech Giant Stripe’s Valuation Soars to $159B In Latest Secondary Stock Sale",
+        "url": "https://news.crunchbase.com/fintech/unicorn-stripe-secondary-sale-valuation/",
+        "summary": "Payments infrastructure giant Stripe announced Tuesday that it has inked deals with investors to provide liquidity to current and former employees through a tender offer at a $159 billion valuation.",
+        "published": "2026-02-24 17:37",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "priority": 1,
+        "freshness": 5.474609412777777,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:2社"
+        ],
+        "easy": "決済インフラストラクチャの大手企業であるStripeが、従業員向けの株式買い取りを通じて159億ドル（約2.2兆円）の企業価値を達成した。Stripeは、従業員や元従業員が保有する株式の一部を買い取ることで、従業員に資金を提供する計画である。この計画により、Stripeの企業価値は大幅に上昇し、世界有数の金融技術企業としての地位を固めた。159億ドルという企業価値は、Stripeの成長と金融技術分野での影響力を示す重要な指標である。Stripeは、オンライン決済サービスを提供することで成長を続けており、今後の金融技術の発展にも注目が集まっている。",
+        "why": "このニュースは重要な理由として、Stripeの企業価値が大幅に上昇し、金融技術分野での影響力を示している。さらに、Stripeの成長は金融技術業界全体に影響を与え、将来的には金融サービスや決済システムの発展に大きな役割を果たすことが期待される。",
+        "glossary": [
           {
-            "user": "alex_suzuki",
-            "text": "Immediate nostalgia activated. I ran this on a Pentium machine (I think) at home, still living with my parents. Sometimes I yearn for the optimism and relative naïveté of those times.",
-            "platform": "HN"
+            "term": "Fintech",
+            "definition": "金融技術のこと。金融サービスや決済システムを改善するために、情報技術を活用する分野"
           },
           {
-            "user": "bpoyner",
-            "text": "This paper describes the front end of SETI@home and provides parameters for the primary data source, the Arecibo ObservatoryMost of this data was recorded commensally at the Arecibo observatory over a",
-            "platform": "HN"
+            "term": "Secondary Stock Sale",
+            "definition": "既存株式の売却。株式を保有する従業員や投資家が、株式の一部を売却することを指す"
           },
           {
-            "user": "poorman",
-            "text": "I was just thinking about this project the other day. Seems we have a whole lot of unused compute (and now GPU). I wish someone would create a meaningful project like this to distribute AI training or",
-            "platform": "HN"
+            "term": "Tender Offer",
+            "definition": "株式買い取りのこと。企業が、株式を保有する株主から株式を買い取ることを指す"
           }
-        ]
+        ],
+        "tags": [
+          "ユニコーン",
+          "funding",
+          "資金調達"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Final 4 days to save up to $680 on your TechCrunch Disrupt 2026 pass",
+        "url": "https://techcrunch.com/2026/02/24/final-4-days-to-save-up-to-680-on-your-techcrunch-disrupt-2026-pass/",
+        "summary": "Just 4 days left before savings of up to $680 on your TechCrunch Disrupt 2026 pass end on February 27 at 11:59 p.m. PT. Register to save at one of the most anticipated tech events of the year.",
+        "published": "2026-02-24 15:00",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 8.107318282222222,
+        "lang": "en",
+        "hotness": 41.9,
+        "hotness_reasons": [
+          "クロスソース:5社"
+        ],
+        "easy": "テッククランチ・ディスラプト2026（TechCrunch Disrupt 2026）というイベントのチケットを買う場合、2月27日までに申し込みをすることで最大680ドル（約9万5000円）節約できます。このイベントはテック業界の重要なイベントで、多くの新しい技術やスタートアップが紹介されます。4日以内に申し込みをすることが重要です。チケットの費用は通常高額ですが、この期間中は割引になるので、早めに申し込むことをおすすめします。最大680ドル節約できるので、多くの人にとっては大きなメリットになります。",
+        "why": "このニュースは重要です。テッククランチ・ディスラプト2026はテック業界の重要なイベントで、多くの新しい技術やスタートアップが紹介されます。このイベントに参加することで、最新のテクノロジーを学び、業界のトレンドを把握することができます。また、多くの投資家やエンジニアが参加するため、ビジネスチャンスもあります。",
+        "glossary": [
+          {
+            "term": "テッククランチ・ディスラプト",
+            "definition": "テッククランチ・ディスラプトは、テック業界の重要なイベントで、多くの新しい技術やスタートアップが紹介されます。最新のテクノロジーを学び、業界のトレンドを把握することができます。"
+          },
+          {
+            "term": "スタートアップ",
+            "definition": "スタートアップは、新しく設立された会社で、通常は新しい技術やサービスを提供しています。テッククランチ・ディスラプトのようなイベントで、多くのスタートアップが紹介されます。"
+          },
+          {
+            "term": "テック業界",
+            "definition": "テック業界は、コンピューター、インターネット、モバイルなどの技術を扱う業界です。テッククランチ・ディスラプトのようなイベントは、この業界の重要なイベントです。"
+          }
+        ],
+        "tags": [
+          "資金調達",
+          "funding",
+          "ユニコーン"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "With AI, investor loyalty is (almost) dead: At least a dozen OpenAI VCs now also back Anthropic",
@@ -1585,65 +2656,32 @@
         "source": "TechCrunch VC",
         "icon": "TC",
         "priority": 1,
-        "freshness": 4.407613973888889,
+        "freshness": 25.329262726666666,
         "lang": "en",
-        "hotness": 44.9,
+        "hotness": 36.9,
         "hotness_reasons": [
-          "クロスソース:11社"
+          "クロスソース:9社"
         ],
-        "easy": "「With AI, investor loyalty is (almost) dead: At least a dozen OpenAI VCs now also back Anthropic」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "テック業界のニュースで、AI関連のベンチャーキャピタル（VC）が注目されています。OpenAIとAnthropicの2つの大手AI企業に、12以上のVCが同時に投資していることがわかりました。通常、1つのVCが2つの競合企業に投資することは、利益相反の問題があると見なされます。しかし、今回はそのような忌避感が見られません。OpenAIとAnthropicは、AI技術の開発で競争関係にありますが、両社に投資しているVCは、どちらにも利益を得ようとしています。例えば、1億ドル（約12億円）をOpenAIに投資したVCが、同様の金額をAnthropicにも投資していることがあります。",
+        "why": "このニュースは重要です。なぜなら、VCの投資戦略が変化し、従来の利益相反のルールが無視されているからです。さらに、この動向はAI業界の将来に大きな影響を与える可能性があります。VCの投資が増えると、AI技術の開発が進み、新しい産業やサービスが生まれる可能性があります。",
+        "glossary": [
+          {
+            "term": "ベンチャーキャピタル（VC）",
+            "definition": "新興企業やスタートアップに投資することで、将来の成長や利益を期待する投資家のことです。"
+          },
+          {
+            "term": "OpenAI",
+            "definition": "人工知能（AI）技術の開発を手がける企業で、チャットボットや画像生成などのAIアプリケーションを提供しています。"
+          },
+          {
+            "term": "Anthropic",
+            "definition": "AI技術の開発を手がける企業で、OpenAIと同様にAIアプリケーションの開発に注力しています。"
+          }
+        ],
         "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Particle’s AI news app listens to podcasts for interesting clips so you you don’t have to",
-        "url": "https://techcrunch.com/2026/02/23/particles-ai-news-app-listens-to-podcasts-for-interesting-clips-so-you-you-dont-have-to/",
-        "summary": "AI news app Particle can now pull in key moments from podcasts, letting readers instantly play short, relevant clips alongside related stories.",
-        "published": "2026-02-23 16:55",
-        "source": "TechCrunch Startups",
-        "icon": "TC",
-        "priority": 2,
-        "freshness": 9.258003422222222,
-        "lang": "en",
-        "hotness": 43.4,
-        "hotness_reasons": [
-          "HN関連(95pts)",
-          "クロスソース:3社"
-        ],
-        "easy": "「Particle’s AI news app listens to podcasts for interesting clips so you you don’t have to」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "7 days until ticket prices rise for TechCrunch Disrupt 2026",
-        "url": "https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/",
-        "summary": "Lowest ticket prices to TechCrunch Disrupt 2026 end February 27. Up to $680 off individual passes and up to 30% off group passes. Register before they go up to join 10,000 founders, tech operators, and VCs.",
-        "published": "2026-02-21 15:00",
-        "source": "TechCrunch VC",
-        "icon": "TC",
-        "priority": 1,
-        "freshness": 59.185669529444446,
-        "lang": "en",
-        "hotness": 42.1,
-        "hotness_reasons": [
-          "HN関連(144pts)",
-          "クロスソース:2社"
-        ],
-        "easy": "「7 days until ticket prices rise for TechCrunch Disrupt 2026」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
+          "資金調達",
+          "funding",
+          "ユニコーン"
         ],
         "impact": 50,
         "reactions": []
@@ -1656,127 +2694,134 @@
         "source": "TechCrunch VC",
         "icon": "TC",
         "priority": 1,
-        "freshness": 11.185669529444445,
+        "freshness": 32.107318282222224,
         "lang": "en",
-        "hotness": 41.9,
+        "hotness": 36.9,
         "hotness_reasons": [
-          "クロスソース:2社"
-        ],
-        "easy": "「5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "The creator economy’s ad revenue problem and India’s AI ambitions",
-        "url": "https://techcrunch.com/video/the-creator-economys-ad-revenue-problem-and-indias-ai-ambitions/",
-        "summary": "The&#160;creator&#160;economy is evolving fast, and ad revenue alone&#160;isn&#8217;t&#160;cutting it anymore.&#160;YouTubers are launching product lines,&#160;acquiring&#160;startups, and building actual business empires.&#160;In fact,&#160;MrBeast&#8217;s company&#160;bought fintech startup Step, and his chocolate business is outearning his media arm. This&#160;isn&#8217;t&#160;just&#160;one&#160;creator&#8217;s&#160;strategy.&#160;For&#160;many,&#160;it&#8217;s&#160;the&#160;new playbook.&#160; On this episode of TechCrunch&#8217;s Equity podcast, hosts Kirsten Korosec, Anthony Ha, and Rebecca Bellan unpack how creators are diversifying beyond ads, [&#8230;]",
-        "published": "2026-02-20 23:00",
-        "source": "TechCrunch Startups",
-        "icon": "TC",
-        "priority": 2,
-        "freshness": 75.18578120000001,
-        "lang": "en",
-        "hotness": 41.6,
-        "hotness_reasons": [
-          "はてブ関連(6ブクマ)",
           "クロスソース:4社"
         ],
-        "easy": "「The creator economy’s ad revenue problem and India’s AI ambitions」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "テッククランチ・ディスラプト2026（TechCrunch Disrupt 2026）のチケット料金が最も安い状態で残り5日です。2月27日11時59分までに購入すると、最大約93,000円（680ドル）節約できます。テッククランチ・ディスラプトは、テクノロジー業界の新しい技術やスタートアップを紹介する会議です。会議では、投資家や起業家が一堂に会し、新しいアイデアや技術を紹介します。チケット料金は、会議の内容や出席者の数によって変動しますが、早期購入で節約できます。",
+        "why": "このニュースは重要です。テッククランチ・ディスラプトは、テクノロジー業界のトレンドを決める会議のひとつで、最新の技術やスタートアップを紹介します。会議に出席することで、投資家や起業家は新しいビジネスチャンスを発見できます。チケット料金の割引は、会議に出席する機会を増やすことができます。",
+        "glossary": [
+          {
+            "term": "テッククランチ・ディスラプト",
+            "definition": "テクノロジー業界の新しい技術やスタートアップを紹介する会議"
+          },
+          {
+            "term": "スタートアップ",
+            "definition": "新しく設立された会社で、革新的なアイデアや技術を提供する"
+          },
+          {
+            "term": "投資家",
+            "definition": "企業やプロジェクトに資金を提供する人または団体"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "資金調達",
+          "funding"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon",
-        "url": "https://news.crunchbase.com/venture/interesting-startup-deals-ai-robotics-energy-generation/",
-        "summary": "A host of interesting, under-the-radar recently funded startups caught our attention in the past month: one that’s developing nuclear-waste generated electricity on the moon, and another that aims to use AI to extract business intelligence from enterprise contracts. Let’s take a closer look.",
-        "published": "2026-02-23 12:00",
-        "source": "Crunchbase News",
-        "icon": "CB",
-        "priority": 1,
-        "freshness": 14.176004783055555,
-        "lang": "en",
-        "hotness": 39.9,
-        "hotness_reasons": [
-          "クロスソース:3社"
-        ],
-        "easy": "「5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "スマホのHONORも「人型ロボット」発表へ　中国勢が急成長市場をリード",
-        "url": "https://japan.cnet.com/article/35244219/",
-        "summary": "中国のスマホメーカー、荣耀（HONOR）は同社初の人型サービスロボットをMobile World Congress（MWC）で公開すると発表した。",
-        "published": "2026-02-24 01:27",
+        "title": "Google、スマホの正規保証サービス「Pixel Care+」提供--iPhoneのApple Care対抗",
+        "url": "https://japan.cnet.com/article/35244249/",
+        "summary": "Googleが新保証「Pixel Care+」を国内開始。Pixel 10／10 Pro／10 Pro Foldが対象で、画面修理・バッテリー交換が自己負担0円。紛失・盗難補償や回数無制限の偶発損傷補償、料金プランや加入条件を詳しく解説。",
+        "published": "2026-02-24 22:19",
         "source": "CNET Japan",
         "icon": "JP",
         "priority": 2,
-        "freshness": 0.7364485816666667,
+        "freshness": 0.7914161497222223,
         "lang": "ja",
         "hotness": 16.6,
         "hotness_reasons": [],
-        "easy": "「スマホのHONORも「人型ロボット」発表へ　中国勢が急成長市場をリード」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "Googleは、スマートフォンの正規保証サービス『Pixel Care+』を開始しました。このサービスは、Googleのスマートフォン『Pixel 10』や『Pixel 10 Pro』、『Pixel 10 Pro Fold』のユーザーが利用できます。画面修理やバッテリー交換は自己負担0円で利用でき、紛失や盗難の補償も受けられます。また、回数無制限の偶発損傷補償も受けられます。料金プランや加入条件は、公式サイトで確認できます。Appleの『Apple Care』と比較すると、Googleのサービスはより幅広い補償内容を提供しています。",
+        "why": "このニュースは重要です。Googleの『Pixel Care+』サービスは、スマートフォンのユーザーにとって大きな利点となります。また、Appleの『Apple Care』との競争が激化する可能性があり、スマートフォン市場に大きな影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "正規保証",
+            "definition": "メーカーが提供する、製品の故障や損傷に対する補償サービス"
+          },
+          {
+            "term": "バッテリー交換",
+            "definition": "スマートフォンのバッテリーを新しいものに交換するサービス"
+          },
+          {
+            "term": "偶発損傷",
+            "definition": "予期せぬ事故や事件によって生じた損傷"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "資金調達",
+          "funding"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "iPhoneとの親和性も意識、シャオミの「激薄モバイルバッテリー」に新色登場",
-        "url": "https://japan.cnet.com/article/35244206/",
-        "summary": "シャオミ・ジャパンが薄型マグネット式モバイルバッテリーに新色オレンジが登場。「あの製品のあのカラーとお使いください」と意味深な説明付きで発表した。",
-        "published": "2026-02-24 00:24",
+        "title": "「真っ赤なiPhone」2026年に復活か",
+        "url": "https://japan.cnet.com/article/35244247/",
+        "summary": "iPhone 18シリーズの発表はまだ約半年先とみられるが、早くも新情報が浮上している。BloombergのMark Gurman氏によれば、iPhone 18 Proに深みのある赤の新色が加わる可能性があるという。現在、この赤が次期Proモデルの新たなフラッグシップカラーとしてテストされていると伝えている。",
+        "published": "2026-02-24 21:40",
         "source": "CNET Japan",
         "icon": "JP",
         "priority": 2,
-        "freshness": 1.7864485816666666,
+        "freshness": 1.4414161497222222,
         "lang": "ja",
         "hotness": 16.6,
         "hotness_reasons": [],
-        "easy": "「iPhoneとの親和性も意識、シャオミの「激薄モバイルバッテリー」に新色登場」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "アップル社の新しいiPhone 18シリーズが2026年に発売される予定です。BloombergのMark Gurman氏によると、iPhone 18 Proには深みのある赤の新色が加わる可能性があります。この赤は次期Proモデルの新たなフラッグシップカラーとしてテストされているようです。アップル社は毎年新しいiPhoneを発売し、デザインや機能を更新しています。新しい色を追加することで、ユーザーに新しい選択肢を提供することができます。アップル社の新しい製品は、約半年後に発表される予定です。",
+        "why": "このニュースが重要な理由は、アップル社の新しい製品が市場に与える影響が大きいからです。新しい色や機能を追加することで、ユーザーに新しい選択肢を提供し、市場での競争力を高めることができます。また、アップル社の新しい製品は、テクノロジー業界のトレンドを決める役割を果たすことがあります。",
+        "glossary": [
+          {
+            "term": "フラッグシップカラー",
+            "definition": "製品の代表的な色を指します。会社のブランドイメージを表す重要な要素です"
+          },
+          {
+            "term": "Proモデル",
+            "definition": "高性能なモデルを指します。通常、標準モデルよりも高価で、高度な機能を備えています"
+          },
+          {
+            "term": "テスト",
+            "definition": "製品の品質や性能を確認するために行われる試験を指します。会社は製品の安全性や機能を確認するためにテストを行います"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "資金調達"
         ],
         "impact": 50,
         "reactions": []
       },
       {
-        "title": "アップル、「iPhone 17e」や低価格「MacBook」など5製品以上を来週発表か",
-        "url": "https://japan.cnet.com/article/35244216/",
-        "summary": "アップルは3月初旬の3日間にわたり、少なくとも5つの新製品を発表する可能性があるとBloombergが報じた。これには低価格の「MacBook」や「iPhone 17e」、新型の「iPad Air」「MacBook Pro」「MacBook Air」が含まれるとみられる。",
-        "published": "2026-02-24 00:22",
+        "title": "iPhoneで「ダイヤグラム時刻表」、ナビタイムが新機能　Androidも順次対応へ",
+        "url": "https://japan.cnet.com/article/35244242/",
+        "summary": "ナビタイムジャパンは2月19日、総合ナビゲーションアプリ「NAVITIME」の有料プラン「プレミアムプラスコース」（月額880円）において、「ダイヤグラム時刻表」機能の提供を開始した。縦軸に駅名、横軸に時間を配置し、列車の運行を線で表すダイヤグラム形式で時刻表を表示するもので、ナビゲーションアプリ上で拡大・縮小やスクロール操作に対応した同形式の提供は日本初としている。",
+        "published": "2026-02-24 08:20",
         "source": "CNET Japan",
         "icon": "JP",
         "priority": 2,
-        "freshness": 1.8197819149999999,
+        "freshness": 14.774749483055556,
         "lang": "ja",
-        "hotness": 16.6,
+        "hotness": 11.6,
         "hotness_reasons": [],
-        "easy": "「アップル、「iPhone 17e」や低価格「MacBook」など5製品以上を来週発表か」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "ナビタイムジャパンは、スマートフォンのアプリ「NAVITIME」で新しい機能を追加しました。この機能は「ダイヤグラム時刻表」と呼ばれ、列車の時刻表を線で表します。縦に駅名、横に時間を並べ、列車の運行を線で見ることができます。この機能は、スマートフォンの画面で拡大・縮小やスクロールができるのが特徴です。月額880円の有料プラン「プレミアムプラスコース」で利用できます。Android版でも順次対応予定です。",
+        "why": "このニュースは重要です。なぜなら、この機能は日本で初めての試みであり、列車の時刻表をより見やすく使いやすくしたからです。また、ナビタイムジャパンのサービスがさらに便利になり、ユーザーが増える可能性があります。",
+        "glossary": [
+          {
+            "term": "ダイヤグラム",
+            "definition": "縦軸と横軸を使って、データや情報を表す方法の一つ。列車の時刻表の場合、駅名を縦軸に、時間を横軸にして、列車の運行を線で表す"
+          },
+          {
+            "term": "ナビゲーションアプリ",
+            "definition": "スマートフォンで利用できる、地図や交通情報を提供するアプリ。ユーザーが目的地までの道案内や交通手段を探すことができる"
+          },
+          {
+            "term": "プレミアムプラスコース",
+            "definition": "ナビタイムジャパンの有料プランの一つ。月額880円で、追加の機能やサービスを利用できる"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "資金調達"
         ],
         "impact": 50,
         "reactions": []
@@ -1785,147 +2830,248 @@
   },
   "hn_top": [
     {
-      "title": "Shatner is making an album with 35 metal icons",
-      "url": "https://www.guitarworld.com/artists/guitarists/william-shatner-announces-all-star-metal-album",
-      "score": 64,
-      "comments": 32,
-      "hn_id": 47131173,
-      "published": "2026-02-24 00:33",
+      "title": "Mac mini will be made at a new facility in Houston",
+      "url": "https://www.apple.com/newsroom/2026/02/apple-accelerates-us-manufacturing-with-mac-mini-production/",
+      "score": 206,
+      "comments": 195,
+      "hn_id": 47143152,
+      "published": "2026-02-24 21:13",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
     },
     {
-      "title": "I Ported Coreboot to the ThinkPad X270",
-      "url": "https://dork.dev/posts/2026-02-20-ported-coreboot/",
-      "score": 45,
-      "comments": 2,
-      "hn_id": 47130860,
-      "published": "2026-02-23 23:58",
+      "title": "I'm helping my dog vibe code games",
+      "url": "https://www.calebleak.com/posts/dog-game/",
+      "score": 495,
+      "comments": 150,
+      "hn_id": 47139675,
+      "published": "2026-02-24 17:15",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
     },
     {
-      "title": "FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me",
-      "url": "https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/",
-      "score": 253,
-      "comments": 199,
-      "hn_id": 47129361,
-      "published": "2026-02-23 21:44",
+      "title": "Hacking an old Kindle to display bus arrival times",
+      "url": "https://www.mariannefeng.com/portfolio/kindle/",
+      "score": 119,
+      "comments": 21,
+      "hn_id": 47141797,
+      "published": "2026-02-24 19:43",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0,
       "hotness": 46.2,
       "hotness_reasons": [
-        "HN:253pts",
-        "クロスソース:2社"
-      ]
-    },
-    {
-      "title": "UNIX99, a UNIX-like OS for the TI-99/4A",
-      "url": "https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/",
-      "score": 144,
-      "comments": 49,
-      "hn_id": 47127986,
-      "published": "2026-02-23 20:05",
-      "source": "Hacker News",
-      "icon": "HN",
-      "priority": 0
-    },
-    {
-      "title": "The Age Verification Trap: Verifying age undermines everyone's data protection",
-      "url": "https://spectrum.ieee.org/age-verification",
-      "score": 1209,
-      "comments": 970,
-      "hn_id": 47122715,
-      "published": "2026-02-23 14:22",
-      "source": "Hacker News",
-      "icon": "HN",
-      "priority": 0
-    },
-    {
-      "title": "Making Wolfram Tech Available as a Foundation Tool for LLM Systems",
-      "url": "https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/",
-      "score": 48,
-      "comments": 31,
-      "hn_id": 47129727,
-      "published": "2026-02-23 22:11",
-      "source": "Hacker News",
-      "icon": "HN",
-      "priority": 0,
-      "hotness": 13.2,
-      "hotness_reasons": []
-    },
-    {
-      "title": "Show HN: PgDog – Scale Postgres without changing the app",
-      "url": "https://github.com/pgdogdev/pgdog",
-      "score": 189,
-      "comments": 44,
-      "hn_id": 47123631,
-      "published": "2026-02-23 15:33",
-      "source": "Hacker News",
-      "icon": "HN",
-      "priority": 0,
-      "hotness": 46.2,
-      "hotness_reasons": [
-        "HN:189pts",
+        "HN:119pts",
         "クロスソース:2社"
       ],
-      "easy": "「Show HN: PgDog – Scale Postgres without changing the app」についてのニュースです。",
-      "why": "テック業界の動向を把握するために注目されています。",
-      "glossary": [],
+      "easy": "この記事のタイトルは『古いKindleをハッキングしてバス到着時刻を表示する』です。古いKindleをハッキングすることで、バス到着時刻を表示することができます。ハッキングとは、コンピューターシステムに不正にアクセスすることです。例えば、古いKindleの価格は約1万5千円ですが、ハッキングすることで新しい使い方ができます。ハッキングには、プログラミング言語やコンピューターシステムの知識が必要です。約10時間の勉強でハッキングの基礎を学ぶことができます。",
+      "why": "このニュースは重要です。なぜなら、古いデバイスを新しい使い方をすることで、環境に優しい選択になるからです。また、ハッキングの技術はセキュリティ対策にも役立つからです。",
+      "glossary": [
+        {
+          "term": "ハッキング",
+          "definition": "コンピューターシステムに不正にアクセスすること。セキュリティ対策のために行われる場合もあります。"
+        },
+        {
+          "term": "Kindle",
+          "definition": "アマゾンが販売している電子書籍リーダー。約1万5千円から購入できます。"
+        },
+        {
+          "term": "プログラミング言語",
+          "definition": "コンピューターシステムを操作するための言語。PythonやJavaなどがあります。"
+        }
+      ],
       "tags": [
-        "ニュース"
+        "脆弱性",
+        "情報漏洩"
       ],
       "impact": 50,
       "reactions": [
         {
-          "user": "saisrirampur",
-          "text": "Great progress, guys! It’s impressive to see all the enhancements - more types, more aggregate functions, cross-node DML, resharding, and reliability-focused connection pooling and more. Very cool! Th",
+          "user": "jonmon6691",
+          "text": "I made something like this! Except I have it plugged into an outlet in the kitchen, so no battery to deal with. It&#x27;s a little hacky but it works for me.https:&#x2F;&#x2F;github.com&#x2F;jonmon669",
           "platform": "HN"
         },
         {
-          "user": "codegeek",
-          "text": "Stupid question but does this shard the database as well or do we shard manually and then setup the configuration accordingly ?",
+          "user": "hex4def6",
+          "text": "As someone who worked on kindle power consumption many years ago: One of the (by far) biggest consumers of power is the WiFi connection. It has to wake up and respond to the AP in order to not get dis",
           "platform": "HN"
         },
         {
-          "user": "cuu508",
-          "text": "Some HTTP proxies can do retries -- if a connection to one backend fails, it is retried on a different backend. Can PgDog (or PgBouncer, or any other tool) do something similar -- if there&#x27;s a &q",
+          "user": "FlyingSnake",
+          "text": "Kindles are fun devices to hack and play with. I can grab an old kindle for €15-20 on eBay.I did the same last year and had lots of fun in the process.https:&#x2F;&#x2F;samkhawase.com&#x2F;blog&#x2F;h",
           "platform": "HN"
         }
       ]
     },
     {
-      "title": "What is f(x) ≤ g(x) + O(1)? Inequalities With Asymptotics",
-      "url": "https://jamesoswald.dev/posts/bigoinequality/",
-      "score": 28,
-      "comments": 18,
-      "hn_id": 47088076,
-      "published": "2026-02-20 13:55",
+      "title": "How we rebuilt Next.js with AI in one week",
+      "url": "https://blog.cloudflare.com/vinext/",
+      "score": 230,
+      "comments": 57,
+      "hn_id": 47142156,
+      "published": "2026-02-24 20:07",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 63.2,
+      "hotness_reasons": [
+        "HN:230pts",
+        "はてブ関連(10ブクマ)",
+        "クロスソース:11社"
+      ],
+      "easy": "この記事のタイトルは「私たちがAIを使ってNext.jsを1週間で再構築した方法」という意味です。Next.jsはウェブ開発でよく使われるフレームワークです。開発チームは、人工知能（AI）を活用して、Next.jsのコードを1週間という短期間で再構築しました。通常、such a projectには数ヶ月かかることが多いですが、AIの力を借りて驚くべきスピードで開発を完了しました。約100万行のコードをAIが分析して最適化しました。開発費用は約100万ドル（約1.2億円）程度と推定されています。",
+      "why": "このニュースは重要です。AIの活用によって、開発の効率が大幅に向上し、開発コストも削減できることが示されました。将来的には、AIを活用した開発手法が業界の標準になる可能性があります。",
+      "glossary": [
+        {
+          "term": "Next.js",
+          "definition": "ウェブ開発でよく使われるフレームワークで、React.jsをベースに構築されています。高速で効率的なウェブアプリケーションの開発を可能にします。"
+        },
+        {
+          "term": "AI",
+          "definition": "人工知能の略称で、コンピューターが人間のように考え、学習し、判断する能力を指します。"
+        },
+        {
+          "term": "フレームワーク",
+          "definition": "ソフトウェアの開発を効率化するために、事前に用意された構造やルールのことです。開発者が簡単にアプリケーションを開発できるようにします。"
+        }
+      ],
+      "tags": [
+        "新リリース",
+        "AIモデル",
+        "オープンソース"
+      ],
+      "impact": 50,
+      "reactions": [
+        {
+          "user": "hungryhobbit",
+          "text": "Man, I love Next ... but I also love Vite ... and I hate the Next team, because they focus on fancy new features for 0.1% of their users, at the complete expense of the other 99.9% of the Next communi",
+          "platform": "HN"
+        },
+        {
+          "user": "ratorx",
+          "text": "I find it interesting that they bought Astro (https:&#x2F;&#x2F;blog.cloudflare.com&#x2F;astro-joins-cloudflare&#x2F;), which from my definitely-not-a-frontend-person perspective seems to tackle a sim",
+          "platform": "HN"
+        },
+        {
+          "user": "aggregator-ios",
+          "text": "Surprised this didn&#x27;t get a higher placement on the HN front page, only 34 points?Absolutely impressive that this was done with $1100 in tokens and in 1 week. I agree, and so do a lot of my peers",
+          "platform": "HN"
+        }
+      ]
+    },
+    {
+      "title": "Show HN: Moonshine Open-Weights STT models – higher accuracy than WhisperLargev3",
+      "url": "https://github.com/moonshine-ai/moonshine",
+      "score": 27,
+      "comments": 4,
+      "hn_id": 47143755,
+      "published": "2026-02-24 21:54",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 23.2,
+      "hotness_reasons": [
+        "クロスソース:1社"
+      ]
+    },
+    {
+      "title": "Pi – a minimal terminal coding harness",
+      "url": "https://pi.dev",
+      "score": 42,
+      "comments": 14,
+      "hn_id": 47143754,
+      "published": "2026-02-24 21:53",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
     },
     {
-      "title": "The challenges of porting Shufflepuck Cafe to the 8 bits Apple II",
-      "url": "https://www.colino.net/wordpress/archives/2026/02/23/the-challenges-of-porting-shufflepuck-cafe-to-the-8-bits-apple-ii/",
-      "score": 48,
-      "comments": 7,
-      "hn_id": 47128631,
-      "published": "2026-02-23 20:53",
+      "title": "Nearby Glasses",
+      "url": "https://github.com/yjeanrenaud/yj_nearbyglasses",
+      "score": 177,
+      "comments": 71,
+      "hn_id": 47140042,
+      "published": "2026-02-24 17:40",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
     },
     {
-      "title": "Show HN: Babyshark – Wireshark made easy (terminal UI for PCAPs)",
-      "url": "https://github.com/vignesh07/babyshark",
-      "score": 59,
-      "comments": 30,
-      "hn_id": 47128535,
-      "published": "2026-02-23 20:45",
+      "title": "Show HN: Emdash – Open-source agentic development environment",
+      "url": "https://github.com/generalaction/emdash",
+      "score": 80,
+      "comments": 32,
+      "hn_id": 47140322,
+      "published": "2026-02-24 18:00",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 56.2,
+      "hotness_reasons": [
+        "HN:80pts",
+        "はてブ関連(10ブクマ)",
+        "クロスソース:5社"
+      ],
+      "easy": "Emdashは、オープンソースのエージェント開発環境です。エージェントとは、人工知能（AI）を利用して、自動でタスクを実行するプログラムのことです。Emdashは、開発者がエージェントを作成し、テストするためのツールを提供します。例えば、開発者はEmdashを使用して、チャットボットや仮想アシスタントを作成できます。Emdashは無料で利用でき、開発者は自分のエージェントを自由に作成できます。",
+      "why": "このニュースは重要な理由は、Emdashがオープンソースであるため、開発者が自由に利用してエージェントを作成できることです。また、EmdashはAIの分野で大きな注目を集めており、今後のAIの開発に大きな影響を与える可能性があります。",
+      "glossary": [
+        {
+          "term": "エージェント",
+          "definition": "人工知能（AI）を利用して、自動でタスクを実行するプログラム"
+        },
+        {
+          "term": "オープンソース",
+          "definition": "無料で利用でき、開発者が自由に改変して利用できるソフトウェア"
+        },
+        {
+          "term": "人工知能（AI）",
+          "definition": "人間の知能を模したコンピュータープログラムで、自動でタスクを実行することができる"
+        }
+      ],
+      "tags": [
+        "新リリース",
+        "オープンソース",
+        "エージェント"
+      ],
+      "impact": 50,
+      "reactions": [
+        {
+          "user": "mccoyb",
+          "text": "Here&#x27;s my question:if agents continue to get better with RL, what is future proof about this environment or UI?I think we all know that managing 5-10 agents ... is not pretty. Are we really landi",
+          "platform": "HN"
+        },
+        {
+          "user": "ttoinou",
+          "text": "So, what&#x27;s your business model ? Is this an YC product, or a tool you developed while working on a YC product ?",
+          "platform": "HN"
+        },
+        {
+          "user": "haimau",
+          "text": "Been driving my agents (CC, currently testing Pi) for a couple of weeks via Emdash. Finally, got a productive worktree setup working. There were still rough edges when I started, but the team has ship",
+          "platform": "HN"
+        }
+      ]
+    },
+    {
+      "title": "I pitched a roller coaster to Disneyland at age 10 in 1978",
+      "url": "https://wordglyph.xyz/one-piece-at-a-time",
+      "score": 368,
+      "comments": 143,
+      "hn_id": 47136604,
+      "published": "2026-02-24 13:03",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0
+    },
+    {
+      "title": "Looks like it is happening",
+      "url": "https://www.math.columbia.edu/~woit/wordpress/?p=15500",
+      "score": 116,
+      "comments": 79,
+      "hn_id": 47143211,
+      "published": "2026-02-24 21:19",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
@@ -1933,15 +3079,15 @@
   ],
   "breaking": [
     {
-      "text": "ローマ教皇は、説教の文章を書く際に、AIではなく頭脳を活用するよう司祭に伝えました。AIは、文章を自動生成できるため、便利ですが、人間の感情や経験を伝えることができない場合があります。例えば、1時間で1000文字の文章を書くことができるAIと比較して、人間は1時間で100文字の文章を書くかもしれませんが、人間の文章には感情や経験が込められているため、より心に響くものになります。教皇のこの発言は、AIの限界と人間の重要性を示唆しています。約1億人のカトリック教徒に影響を与えるこの発言は、AIの使用を再考させるものです。教皇の発言は、約3億ドル（約450億円）のカトリック教会の予算にも影響を与える可能性があります。",
+      "text": "Claude Codeは開発者向けのツールですが、最近では様々な業界や分野の多くの人が新しいものを作るためにこのツールを使い始めています。 Anthropicのチームは、過去1年で特に最近数ヶ月で、多くの人がこのツールにアクセスして新しいものを作る方法を発見したと報告しています。 このようなAI製品は、開発者以外のユーザーにも人気があることがわかりました。 例えば、開発者以外のユーザーがこのツールを使って新しいアプリケーションを作成することができます。",
       "level": "orange"
     },
     {
-      "text": "OpenAIは、企業がAIの試験的な利用から本格的な導入に移行するのを支援するためのパートナーシッププログラム『Frontier Alliance Partners』を発表しました。このプログラムにより、企業は安全でスケーラブルなエージェントの展開を実現することができ、AIの活用を拡大することができます。例えば、企業はAIを使用して顧客サービスを改善したり、効率化を図ったりすることができます。約1億ドル（約12億円）の投資がこのプログラムに投入される予定です。OpenAIのこの動きは、AIの活用を促進し、企業の競争力を高めることが期待されています。",
+      "text": "Seedance 2.0は、AIによるビデオ生成技術の新しいモデルで、TikTokの開発会社であるByteDanceが作成しました。アイルランドの映画監督Ruairi Robinsonが、このモデルを使って作った短いビデオクリップは、他のAIビデオ生成技術よりも実際の映像に近いと言われています。たとえば、トム・クルーズのデジタル版が出演するビデオクリップは、非常にリアルで印象的でした。Seedance 2.0は、将来的に約100億円（約1億ドル）以上の市場規模を占める可能性があります。",
       "level": "orange"
     },
     {
-      "text": "OpenAIは、4つの大手コンサルティング会社と提携して、企業でのAIの採用を促進しようとしています。OpenAI Frontier AIエージェントプラットフォームは、企業がAIを活用して業務を効率化することができます。例えば、自動化された顧客サポートや、データ分析などの分野で活用できます。OpenAIは、企業へのAIの導入を支援することで、将来的な成長を目指しています。コンサルティング会社との提携により、OpenAIは企業へのアプローチを強化し、AIの採用を促進することが期待されています。",
+      "text": "この記事のタイトルは「私たちがAIを使ってNext.jsを1週間で再構築した方法」という意味です。Next.jsはウェブ開発でよく使われるフレームワークです。開発チームは、人工知能（AI）を活用して、Next.jsのコードを1週間という短期間で再構築しました。通常、such a projectには数ヶ月かかることが多いですが、AIの力を借りて驚くべきスピードで開発を完了しました。約100万行のコードをAIが分析して最適化しました。開発費用は約100万ドル（約1.2億円）程度と推定されています。",
       "level": "orange"
     }
   ]
