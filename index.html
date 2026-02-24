@@ -121,13 +121,36 @@
   .sb-card{padding:16px 18px;border-bottom:1px solid var(--bd)}
   .sb-title{font-size:.72rem;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px}
 
-  .hn-item{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid var(--s2);align-items:flex-start}
-  .hn-item:last-child{border:none}
-  .hn-rank{font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;color:var(--mut);min-width:18px;text-align:center;margin-top:2px}
-  .hn-content{flex:1}
-  .hn-title{font-size:.76rem;color:var(--tx);text-decoration:none;font-weight:500;line-height:1.4;display:block}
-  .hn-title:hover{color:var(--ac)}
-  .hn-score{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--org)}
+  /* HOT WORDS */
+  .hw-cloud{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:center;padding:8px 0}
+  .hw{display:inline-block;padding:4px 10px;border-radius:6px;font-weight:600;cursor:default;transition:all .15s;line-height:1.3}
+  .hw:hover{transform:scale(1.08);opacity:.85}
+  .hw-xl{font-size:1rem;background:rgba(79,70,229,.12);color:var(--ac);border:1px solid rgba(79,70,229,.2)}
+  .hw-lg{font-size:.85rem;background:rgba(217,119,6,.1);color:var(--org);border:1px solid rgba(217,119,6,.15)}
+  .hw-md{font-size:.75rem;background:rgba(5,150,105,.08);color:var(--grn);border:1px solid rgba(5,150,105,.12)}
+  .hw-sm{font-size:.68rem;background:var(--s2);color:var(--dim);border:1px solid var(--bd)}
+  .hw-empty{font-size:.78rem;color:var(--mut);text-align:center;padding:16px 0}
+
+  /* TIMELINE */
+  .timeline{position:relative;padding-left:16px}
+  .timeline::before{content:'';position:absolute;left:5px;top:0;bottom:0;width:2px;background:var(--bd)}
+  .tl-item{position:relative;padding:8px 0 12px 12px;border:none}
+  .tl-dot{position:absolute;left:-14px;top:12px;width:10px;height:10px;border-radius:50%;border:2px solid var(--bg);z-index:1}
+  .tl-dot-fire{background:var(--red);box-shadow:0 0 6px rgba(220,38,38,.4)}
+  .tl-dot-warm{background:var(--org);box-shadow:0 0 4px rgba(217,119,6,.3)}
+  .tl-dot-normal{background:var(--ac2)}
+  .tl-content{flex:1}
+  .tl-title{font-size:.76rem;color:var(--tx);text-decoration:none;font-weight:500;line-height:1.45;display:block}
+  .tl-title:hover{color:var(--ac)}
+  .tl-meta{display:flex;align-items:center;gap:8px;margin-top:3px}
+  .tl-source{font-size:.62rem;font-weight:600}
+  .tl-hot{font-size:.62rem;font-family:'JetBrains Mono',monospace;color:var(--org)}
+  .tl-reason{font-size:.58rem;color:var(--mut);margin-top:2px}
+
+  /* HOTNESS BADGE */
+  .hot-badge{font-size:.6rem;padding:2px 8px;border-radius:4px;font-weight:700;margin-left:auto;margin-right:8px;font-family:'JetBrains Mono',monospace}
+  .hot-fire{background:rgba(220,38,38,.08);color:var(--red)}
+  .hot-warm{background:rgba(217,119,6,.08);color:var(--org)}
 
   @media(max-width:900px){
     .tab-content.active{grid-template-columns:1fr}
@@ -150,7 +173,7 @@
   <div class="topbar-l">
     <div class="logo">Tech Pulse</div>
     <span class="logo-v">わかりやすい版</span>
-    <span class="updated">最終更新: 2026-02-24 10:37 JST</span>
+    <span class="updated">最終更新: 2026-02-24 11:14 JST</span>
   </div>
   <div class="topbar-r">
     <div class="live"></div>
@@ -160,7 +183,7 @@
 </div>
 
 <div class="src-banner">
-  📡 データソース: <span class="src-tag src-live">🟢 HN API</span><span class="src-tag src-live">🟢 Reddit</span> 各社公式ブログ · Gemini AI解説
+  📡 データソース: <span class="src-tag src-live">🟢 HN</span><span class="src-tag src-live">🟢 はてブ</span><span class="src-tag src-live">🟢 RSS</span> 海外メディア + 日本語メディア · ホットネス判定 · Groq AI解説
 </div>
 
 <div class="tab-bar">
@@ -175,20 +198,21 @@
 
 <div class="tab-content active" id="tab-ai">
   <div class="feed">
-    <div class="brk brk-orange"><span class="bb bb-org">注目</span><span class="brk-text">ローマ教皇は、説教の内容をAIではなく、自らの頭脳を使って書くよう、司祭たちに伝えた。ローマ教皇は、AIが人間の知恵や感情を完全に理解できないため、説教は人間の心を動かすものでなければならないと考える。AIは1秒間に数千の情報を処理できるが、人間の司祭は1つの説教に数時間を費やすことがある。ローマ教皇のこの発言は、AIの限界と人間の価値を強調している。約1億人のカトリック教徒に影響を与えるこの発言は、AIの使用に制限を加えるものである。約3億ドル（約450億円）のカトリック教会の予算にも影響を与える可能性がある。</span></div><div class="brk brk-orange"><span class="bb bb-org">注目</span><span class="brk-text">OpenAIは、企業がAIの試験的な使用から本格的な使用に移行するのを支援するために、Frontier Alliance Partnersを発表しました。AIのパイロットプロジェクトを本格的な生産に移行することで、企業はAIの利点をより効果的に活用できるようになります。例えば、AIを使用して顧客サービスを自動化することで、企業は年間約1億円（約900万ドル）のコストを削減できる可能性があります。さらに、AIの導入により、企業の生産性が20%向上する可能性もあります。OpenAIのこの発表は、企業がAIの活用を本格的に始めるための重要なステップとなります。</span></div>
+    <div class="brk brk-orange"><span class="bb bb-org">注目</span><span class="brk-text">ローマ教皇は、説教の文章を書く際に、AIではなく頭脳を活用するよう司祭に伝えました。AIは、文章を自動生成できるため、便利ですが、人間の感情や経験を伝えることができない場合があります。例えば、1時間で1000文字の文章を書くことができるAIと比較して、人間は1時間で100文字の文章を書くかもしれませんが、人間の文章には感情や経験が込められているため、より心に響くものになります。教皇のこの発言は、AIの限界と人間の重要性を示唆しています。約1億人のカトリック教徒に影響を与えるこの発言は、AIの使用を再考させるものです。教皇の発言は、約3億ドル（約450億円）のカトリック教会の予算にも影響を与える可能性があります。</span></div><div class="brk brk-orange"><span class="bb bb-org">注目</span><span class="brk-text">OpenAIは、企業がAIの試験的な利用から本格的な導入に移行するのを支援するためのパートナーシッププログラム『Frontier Alliance Partners』を発表しました。このプログラムにより、企業は安全でスケーラブルなエージェントの展開を実現することができ、AIの活用を拡大することができます。例えば、企業はAIを使用して顧客サービスを改善したり、効率化を図ったりすることができます。約1億ドル（約12億円）の投資がこのプログラムに投入される予定です。OpenAIのこの動きは、AIの活用を促進し、企業の競争力を高めることが期待されています。</span></div><div class="brk brk-orange"><span class="bb bb-org">注目</span><span class="brk-text">OpenAIは、4つの大手コンサルティング会社と提携して、企業でのAIの採用を促進しようとしています。OpenAI Frontier AIエージェントプラットフォームは、企業がAIを活用して業務を効率化することができます。例えば、自動化された顧客サポートや、データ分析などの分野で活用できます。OpenAIは、企業へのAIの導入を支援することで、将来的な成長を目指しています。コンサルティング会社との提携により、OpenAIは企業へのアプローチを強化し、AIの採用を促進することが期待されています。</span></div>
     <div class="fi">
   <div class="fi-head">
     <div class="fi-av" style="background:#ff6600">HN</div>
     <div><div class="fi-src">Hacker News</div></div>
+    <span class="hot-badge hot-warm">🌡 68</span>
     <div class="fi-time">2026-02-23 07:33</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Pope tells priests to use their brains, not AI, to write homilies</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>ローマ教皇は、説教の内容をAIではなく、自らの頭脳を使って書くよう、司祭たちに伝えた。ローマ教皇は、AIが人間の知恵や感情を完全に理解できないため、説教は人間の心を動かすものでなければならないと考える。AIは1秒間に数千の情報を処理できるが、人間の司祭は1つの説教に数時間を費やすことがある。ローマ教皇のこの発言は、AIの限界と人間の価値を強調している。約1億人のカトリック教徒に影響を与えるこの発言は、AIの使用に制限を加えるものである。約3億ドル（約450億円）のカトリック教会の予算にも影響を与える可能性がある。</div>
-    <div class="fi-why">このニュースは重要な理由は、ローマ教皇がAIの使用に制限を加えることで、カトリック教会の伝統的な価値観を守ることを示している。さらに、AIの使用が広がる中で、人間の知恵と感情の重要性を強調することで、テクノロジー業界にも影響を与える可能性がある。</div>
-    <div class="glossary"><span class="gl-item">AI<span class="gl-tip">人工知能。コンピューターが人間のように考え、学習し、判断する技術</span></span><span class="gl-item">司祭<span class="gl-tip">キリスト教の教会で、礼拝や儀式を行う人</span></span><span class="gl-item">説教<span class="gl-tip">キリスト教の教会で、聖書の内容を説明し、教えを伝えること</span></span></div>
+    <div class="fi-title"><a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener">Pope tells priests to use their brains, not AI, to write homilies</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>ローマ教皇は、説教の文章を書く際に、AIではなく頭脳を活用するよう司祭に伝えました。AIは、文章を自動生成できるため、便利ですが、人間の感情や経験を伝えることができない場合があります。例えば、1時間で1000文字の文章を書くことができるAIと比較して、人間は1時間で100文字の文章を書くかもしれませんが、人間の文章には感情や経験が込められているため、より心に響くものになります。教皇のこの発言は、AIの限界と人間の重要性を示唆しています。約1億人のカトリック教徒に影響を与えるこの発言は、AIの使用を再考させるものです。教皇の発言は、約3億ドル（約450億円）のカトリック教会の予算にも影響を与える可能性があります。</div>
+    <div class="fi-why">このニュースは重要な理由は、教皇の発言がAIの使用を再考させるものであり、約1億人のカトリック教徒に影響を与えるからです。また、教皇の発言は、AIの限界と人間の重要性を示唆しており、将来的にはAIの開発と使用に影響を与える可能性があります。</div>
+    <div class="glossary"><span class="gl-item">AI<span class="gl-tip">人工知能のこと。コンピューターが人間のように考え、学習し、判断する技術です。</span></span><span class="gl-item">司祭<span class="gl-tip">キリスト教の牧師のこと。教会で礼拝や説教を行います。</span></span><span class="gl-item">説教<span class="gl-tip">教会で行われる、聖書の教えを説明することです。</span></span></div>
     <div class="fi-tags"><span class="ft ft-policy">規制・政策</span><span class="ft ft-funding">資金調達</span><span class="ft ft-biz">製品</span></div>
-    <div class="fi-source">📎 <a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener">Hacker News</a> · <span style="color:var(--org)">▲526</span> · 💬416</div>
+    <div class="fi-source">📎 <a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener">Hacker News</a> · <span style="color:var(--org)">▲527</span> · 💬417</div>
     <div class="reactions"><div class="rx-title">💬 開発者たちの反応</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">overgard:</span> IMO, any (important) writing you expect other humans to consume should be your own writing. I think it&amp;#x27;s kind of disrespectful to outsource your voice to AI but expect people to read it like it&amp;#</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">solatic:</span> No priest will feed sufficient context about their community into the context window - even if they were skilled enough to do so, unless the model was locally hosted, doing so would be a violation of </div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">randusername:</span> My old-school protestant pastor started with an AI disclaimer in the sermon yesterday. What a time to be alive!I don&amp;#x27;t know what to do with my double standard here.It seems totally normal and exp</div></div>
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
@@ -197,14 +221,15 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#10a37f">O</div>
     <div><div class="fi-src">OpenAI Blog</div></div>
+    <span class="hot-badge hot-warm">🌡 67</span>
     <div class="fi-time">2026-02-23 05:30</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">OpenAI announces Frontier Alliance Partners</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>OpenAIは、企業がAIの試験的な使用から本格的な使用に移行するのを支援するために、Frontier Alliance Partnersを発表しました。AIのパイロットプロジェクトを本格的な生産に移行することで、企業はAIの利点をより効果的に活用できるようになります。例えば、AIを使用して顧客サービスを自動化することで、企業は年間約1億円（約900万ドル）のコストを削減できる可能性があります。さらに、AIの導入により、企業の生産性が20%向上する可能性もあります。OpenAIのこの発表は、企業がAIの活用を本格的に始めるための重要なステップとなります。</div>
-    <div class="fi-why">このニュースは重要な理由は、企業がAIの活用を本格的に始めるための支援が必要であることです。OpenAIのFrontier Alliance Partnersは、企業がAIのパイロットプロジェクトから本格的な生産に移行するのを支援するための重要な役割を果たすことになります。</div>
-    <div class="glossary"><span class="gl-item">AI<span class="gl-tip">人工知能のこと。人間の知能に近い能力を持つコンピューターシステム</span></span><span class="gl-item">Frontier Alliance Partners<span class="gl-tip">OpenAIが発表した、企業がAIのパイロットプロジェクトから本格的な生産に移行するのを支援するためのパートナーシップ</span></span><span class="gl-item">Agent<span class="gl-tip">AIシステムが自動で行う処理の単位。例えば、顧客サービスを自動化するためのAgentが存在する</span></span></div>
-    <div class="fi-tags"><span class="ft ft-release">新リリース</span><span class="ft ft-model">AIモデル</span><span class="ft ft-agent">エージェント</span></div>
+    <div class="fi-title"><a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener">OpenAI announces Frontier Alliance Partners</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>OpenAIは、企業がAIの試験的な利用から本格的な導入に移行するのを支援するためのパートナーシッププログラム『Frontier Alliance Partners』を発表しました。このプログラムにより、企業は安全でスケーラブルなエージェントの展開を実現することができ、AIの活用を拡大することができます。例えば、企業はAIを使用して顧客サービスを改善したり、効率化を図ったりすることができます。約1億ドル（約12億円）の投資がこのプログラムに投入される予定です。OpenAIのこの動きは、AIの活用を促進し、企業の競争力を高めることが期待されています。</div>
+    <div class="fi-why">このニュースは重要な理由は、企業がAIの活用を本格的に進めることができるようになるためです。また、OpenAIのこの動きは、AI業界の発展を促進し、企業の競争力を高めることが期待されています。</div>
+    <div class="glossary"><span class="gl-item">AI<span class="gl-tip">人工知能の略称で、コンピューターシステムが人間のように学習し、判断し、行動する技術です</span></span><span class="gl-item">エージェント<span class="gl-tip">コンピューターシステムが自動的にタスクを実行するためのプログラムまたはソフトウェアです</span></span><span class="gl-item">スケーラブル<span class="gl-tip">システムやサービスが、需要の増加に応じて拡大し、効率的に処理できる能力です</span></span></div>
+    <div class="fi-tags"><span class="ft ft-release">新リリース</span><span class="ft ft-agent">エージェント</span><span class="ft ft-biz">製品</span></div>
     <div class="fi-source">📎 <a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener">OpenAI Blog</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
@@ -214,13 +239,14 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#0a0">TC</div>
     <div><div class="fi-src">TechCrunch AI</div></div>
+    <span class="hot-badge hot-warm">🌡 62</span>
     <div class="fi-time">2026-02-23 18:11</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">OpenAI calls in the consultants for its enterprise push</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>OpenAIという会社は、コンピューターが人間のように考えられるようにする技術を使った『OpenAI Frontier AI』というシステムを、より多くの企業に使ってもらおうとしています。そこで、4つの大きなコンサルティング会社と提携しました。コンサルティング会社とは、企業がよりよくなるためにアドバイスをしてくれる会社です。OpenAIは、約1億ドル（約120億円）を投資してこのシステムを作りました。OpenAI Frontier AIは、企業がよりスマートに仕事をすることができるようにします。例えば、自動で文章を書いたり、画像を認識したりすることができます。</div>
-    <div class="fi-why">このニュースは重要です。OpenAIが大きなコンサルティング会社と提携することで、より多くの企業がAI技術を使うことができるようになります。つまり、AI技術がさらに広く使われるようになり、企業の仕事の効率が上がります。</div>
-    <div class="glossary"><span class="gl-item">OpenAI<span class="gl-tip">アメリカのAI技術開発会社で、ChatGPTなどのAIモデルを開発しています</span></span><span class="gl-item">AIエージェント<span class="gl-tip">人工知能を利用して、自動でタスクを実行するプログラムです</span></span><span class="gl-item">コンサルティング<span class="gl-tip">企業がよりよくなるために、アドバイスをしてくれるサービスです</span></span></div>
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/" target="_blank" rel="noopener">OpenAI calls in the consultants for its enterprise push</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>OpenAIは、4つの大手コンサルティング会社と提携して、企業でのAIの採用を促進しようとしています。OpenAI Frontier AIエージェントプラットフォームは、企業がAIを活用して業務を効率化することができます。例えば、自動化された顧客サポートや、データ分析などの分野で活用できます。OpenAIは、企業へのAIの導入を支援することで、将来的な成長を目指しています。コンサルティング会社との提携により、OpenAIは企業へのアプローチを強化し、AIの採用を促進することが期待されています。</div>
+    <div class="fi-why">このニュースは重要な理由は、OpenAIが企業へのAIの採用を促進することで、企業の業務を効率化し、イノベーションを促進することができるからです。また、コンサルティング会社との提携により、OpenAIは企業へのアプローチを強化し、AIの採用を促進することができ、将来的にはAI市場の成長に貢献することが期待されています。</div>
+    <div class="glossary"><span class="gl-item">AIエージェント<span class="gl-tip">AIエージェントとは、人工知能を利用して、自動化されたタスクを実行するソフトウェアプログラムです。AIエージェントは、人間の介入なしに、自律的に動作することができます。</span></span><span class="gl-item">コンサルティング<span class="gl-tip">コンサルティングとは、企業や組織が直面している問題や課題に対して、専門的な知識や経験を提供することです。コンサルティング会社は、企業の業務を分析し、改善策を提案することで、企業の効率性や収益性を向上させることができます。</span></span><span class="gl-item">プラットフォーム<span class="gl-tip">プラットフォームとは、コンピューターシステムやソフトウェアが動作する基盤です。プラットフォームは、開発者がアプリケーションやサービスを開発するための環境を提供し、ユーザーがアプリケーションやサービスを利用するためのインターフェースを提供します。</span></span></div>
     <div class="fi-tags"><span class="ft ft-agent">エージェント</span><span class="ft ft-funding">資金調達</span><span class="ft ft-biz">製品</span></div>
     <div class="fi-source">📎 <a href="https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/" target="_blank" rel="noopener">TechCrunch AI</a></div>
     
@@ -231,32 +257,16 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#0a0">TC</div>
     <div><div class="fi-src">TechCrunch AI</div></div>
+    <span class="hot-badge hot-warm">🌡 62</span>
     <div class="fi-time">2026-02-23 16:50</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Spotify rolls out AI-powered  Prompted Playlists to the UK and other markets</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>Spotifyは、人工知能（AI）を利用した「Prompted Playlist」と呼ばれる新機能を、イギリス、アイルランド、オーストラリア、スウェーデンのプレミアム会員に提供し始めました。この機能により、ユーザーは特定のテーマや気分に合わせてプレイリストを作成することができます。例えば、「雨の日のリラックス音楽」といったようなキーワードを入力することで、SpotifyのAIが自動でプレイリストを作成します。この機能は、ユーザーが新しい音楽を発見するのを助けることが期待されています。約1億人のプレミアム会員がいるSpotifyにとって、この機能は大きな魅力となり得ます。</div>
-    <div class="fi-why">このニュースは重要な理由は、SpotifyがAI技術を活用してユーザー体験を向上させていることです。また、この機能は音楽ストリーミングサービス業界に大きな影響を与える可能性があります。</div>
-    <div class="glossary"><span class="gl-item">AI<span class="gl-tip">人工知能のこと。コンピューターが人間のように考え、学習し、判断する技術です。</span></span><span class="gl-item">Prompted Playlist<span class="gl-tip">ユーザーが特定のキーワードやテーマを入力して、自動でプレイリストを作成するSpotifyの機能です。</span></span><span class="gl-item">プレミアム会員<span class="gl-tip">Spotifyの有料会員のこと。追加の機能や特典を利用することができます。</span></span></div>
-    <div class="fi-tags"><span class="ft ft-release">新リリース</span><span class="ft ft-model">AIモデル</span><span class="ft ft-biz">製品</span></div>
-    <div class="fi-source">📎 <a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener">TechCrunch AI</a></div>
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener">Spotify rolls out AI-powered  Prompted Playlists to the UK and other markets</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Spotify rolls out AI-powered  Prompted Playlists to the UK and other markets」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">TV</div>
-    <div><div class="fi-src">The Verge AI</div></div>
-    <div class="fi-time">2026-02-20 16:52</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Amazon blames human employees for an AI coding agent&amp;#8217;s mistake</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>Amazon Web Services（AWS）では、人工知能（AI）コーディングアシスタントのKiroが原因で、12月に13時間にわたるシステム障害が発生しました。KiroはAWSのサービスの一部を中国本土で停止させました。Amazonの従業員によると、Kiroのミスは人間の従業員の責任であるとされています。このようなミスは、AIの信頼性と安全性に関する懸念を引き起こします。AWSは世界中で約100万の企業にサービスを提供しているため、このような障害は大きな影響を及ぼす可能性があります。</div>
-    <div class="fi-why">このニュースは重要な理由は、AIの信頼性と安全性に関する懸念を引き起こしていることです。また、AWSのような大規模なクラウドサービスでAIを使用することのリスクも浮き彫りになります。</div>
-    <div class="glossary"><span class="gl-item">AIコーディングアシスタント<span class="gl-tip">プログラミングの自動化を支援する人工知能ツールで、開発者がコードを書く際に提案や修正を提供する</span></span><span class="gl-item">AWS<span class="gl-tip">Amazon Web Servicesの略で、クラウドコンピューティングサービスを提供するAmazonの事業部門</span></span><span class="gl-item">Kiro<span class="gl-tip">Amazonが開発したAIコーディングアシスタントで、プログラミングの自動化を支援する</span></span></div>
-    <div class="fi-tags"><span class="ft ft-biz">ai</span><span class="ft ft-agent">エージェント</span><span class="ft ft-biz">製品</span></div>
-    <div class="fi-source">📎 <a href="https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake" target="_blank" rel="noopener">The Verge AI</a></div>
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener">TechCrunch AI</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
@@ -265,48 +275,69 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#0a0">TC</div>
     <div><div class="fi-src">TechCrunch AI</div></div>
+    <span class="hot-badge hot-warm">🌡 55</span>
     <div class="fi-time">2026-02-23 19:18</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/googles-cloud-ai-lead-on-the-three-frontiers-of-model-capability/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Google’s Cloud AI leads on the three frontiers of model capability</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>GoogleのクラウドAIは、3つの分野で先駆的な成果を出しています。1つ目は「生の知能」で、AIモデルがどれだけ複雑な問題を解決できるかです。2つ目は「応答時間」で、AIモデルがどれだけ速く回答できるかです。3つ目は「拡張性」で、AIモデルがどれだけ新しいタスクに適応できるかです。例えば、GoogleのクラウドAIは、1秒以内に100万件のデータを処理できるほど高速です。また、AIモデルは、医療や金融などの分野で、人間の専門家と同等の精度でタスクを実行できるようになっています。</div>
-    <div class="fi-why">このニュースは重要です。なぜなら、GoogleのクラウドAIが3つの分野で先駆的な成果を出しているからです。この成果は、AI技術の進歩に大きな影響を与え、将来的には、医療や金融などの分野でAIの活用が進むことが予想されます。また、GoogleのクラウドAIは、他の企業にも追随される可能性があり、AI技術の競争が激化することが予想されます。</div>
-    <div class="glossary"><span class="gl-item">クラウドAI<span class="gl-tip">クラウドコンピューティングを利用した人工知能のこと。クラウド上で大量のデータを処理し、AIモデルを学習させることができる。</span></span><span class="gl-item">生の知能<span class="gl-tip">AIモデルがどれだけ複雑な問題を解決できるかを示す指標のこと。</span></span><span class="gl-item">拡張性<span class="gl-tip">AIモデルがどれだけ新しいタスクに適応できるかを示す指標のこと。</span></span></div>
-    <div class="fi-tags"><span class="ft ft-model">AIモデル</span><span class="ft ft-biz">ai</span><span class="ft ft-biz">cloud</span></div>
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/googles-cloud-ai-lead-on-the-three-frontiers-of-model-capability/" target="_blank" rel="noopener">Google’s Cloud AI leads on the three frontiers of model capability</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Google’s Cloud AI leads on the three frontiers of model capability」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
     <div class="fi-source">📎 <a href="https://techcrunch.com/2026/02/23/googles-cloud-ai-lead-on-the-three-frontiers-of-model-capability/" target="_blank" rel="noopener">TechCrunch AI</a></div>
     
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-high" style="width:70%"></div></div></div>
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#5200FF">TV</div>
+    <div><div class="fi-src">The Verge AI</div></div>
+    <span class="hot-badge hot-warm">🌡 55</span>
+    <div class="fi-time">2026-02-20 16:52</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake" target="_blank" rel="noopener">Amazon blames human employees for an AI coding agent&amp;#8217;s mistake</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Amazon blames human employees for an AI coding agent&amp;#8217;s mistake」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake" target="_blank" rel="noopener">The Verge AI</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
 </div>
 <div class="fi">
   <div class="fi-head">
     <div class="fi-av" style="background:#ff6600">HN</div>
     <div><div class="fi-src">Hacker News</div></div>
-    <div class="fi-time">2026-02-23 21:44</div>
+    <span class="hot-badge hot-warm">🌡 53</span>
+    <div class="fi-time">2026-02-23 22:55</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>この記事のタイトルは「FreeBSDが私の古いMacBookのWi-Fiドライバーを持っていない。AIが私にドライバーを作成した」という意味です。FreeBSDはオープンソースのオペレーティングシステムの一つですが、古いMacBookのWi-Fiドライバーが見つからなかったため、AIがドライバーを作成しました。約1億5000万人（約1500万ドル（約18億円））が利用するFreeBSDですが、古いハードウェアのサポートは難しい場合があります。約30%のユーザーが古いハードウェアを利用していると言われています。AIの活用により、約10時間（約600分）かかると言われるドライバーの作成が、約1時間（約60分）で完了しました。</div>
-    <div class="fi-why">このニュースは重要です。AIの活用により、ハードウェアのサポートが改善され、ユーザーが古いハードウェアを継続して利用できるようになるからです。また、AIの活用により、開発者の負担が軽減され、開発効率が向上する可能性があります。</div>
-    <div class="glossary"><span class="gl-item">FreeBSD<span class="gl-tip">オープンソースのオペレーティングシステムの一つで、約1億5000万人（約1500万ドル（約18億円））が利用しています。</span></span><span class="gl-item">Wi-Fiドライバー<span class="gl-tip">Wi-Fiの通信を制御するソフトウェアで、ハードウェアとオペレーティングシステムの間で通信を行います。</span></span><span class="gl-item">AI<span class="gl-tip">人工知能のことです。機械学習やディープラーニングなどの技術を利用して、人間の知能に近い能力を持つコンピューターシステムを構築する技術です。</span></span></div>
-    <div class="fi-tags"><span class="ft ft-oss">オープンソース</span><span class="ft ft-biz">ai</span><span class="ft ft-biz">製品</span></div>
-    <div class="fi-source">📎 <a href="https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/" target="_blank" rel="noopener">Hacker News</a> · <span style="color:var(--org)">▲233</span> · 💬184</div>
-    <div class="reactions"><div class="rx-title">💬 開発者たちの反応</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">matthewfcarlson:</span> I know this is me coming from my spoiled perspective of Linux and macOS, but the advice of running a VM that manages the WiFi hardware and passing it back to the OS seems insane to me</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">dmix:</span> &amp;gt; Instead of continuing with the code, I spawned a fresh Pi session, and asked the agent to write a detailed specification of how the brcmfmac driver worksPlanning markdown files are critical for a</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">0xbadcafebee:</span> Had an experience like this recently. QEMU stopped compiling for old versions of MacOS (pre-13) w&amp;#x2F;M1 arch, due to it requiring newer SDKs which don&amp;#x27;t support older MacOS versions. I put Sonn</div></div>
+    <div class="fi-title"><a href="https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380" target="_blank" rel="noopener">AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380" target="_blank" rel="noopener">Hacker News</a> · <span style="color:var(--org)">▲173</span> · 💬156</div>
+    <div class="reactions"><div class="rx-title">💬 開発者たちの反応</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">mark_l_watson:</span> I’ll do the Minority Report here: I loved the article, the point being that rich people hyping AI for their own enrichment have somewhat shutdown rational arguments of benefits vs. costs, the costs be</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">rising-sky:</span> I guess this is trend now because it&amp;#x27;s a contrarian  &amp;#x2F; attention grabbing headline. See:- &amp;quot;Thousands of CEOs just admitted AI had no impact on employment or productivity...&amp;quot; https:</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">mirekrusin:</span> This article seems to have &amp;quot;basically zero&amp;quot; content.Today you have to be blind to not see the change that is coming.World has its own (massive) inertia, burocracy present in businesses accou</div></div>
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
+    <div class="fi-av" style="background:#333">JP</div>
     <div><div class="fi-src">GIGAZINE</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
     <div class="fi-time">2026-02-24 01:28</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://gigazine.net/news/20260224-claude-code-security/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">「Claude Code Security」が登場、コード内の脆弱性をスキャンして修正提案もしてくれる</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong> Anthropicという会社が「Claude Code Security」という新しいツールを発表しました。 このツールは、コンピューターのプログラムのコードの中に潜んでいる脆弱性を自動で発見してくれます。 さらに、AIを利用してその脆弱性を修正する提案もしてくれるので、開発者にとっては非常に便利なツールになりそうです。 このツールは、約1秒以内にコードをスキャンして脆弱性を発見できるということで、開発者の生産性を大幅に向上させることが期待されています。 また、セキュリティの向上にも寄与するので、将来的には約1億ドル（約12億円）の市場規模を占めることが予想されています。</div>
-    <div class="fi-why">このニュースが重要な理由は、セキュリティの向上と開発者の生産性の向上に寄与することです。 また、このツールは将来的に大きな市場規模を占めることが予想されており、業界への影響が大きいと考えられます。</div>
-    <div class="glossary"><span class="gl-item">脆弱性<span class="gl-tip">コンピューターシステムやプログラムのコードの中に存在する、攻撃者が悪用できるような弱点</span></span><span class="gl-item">AI<span class="gl-tip">人工知能のこと。人間の知能を模したコンピューターシステムで、画像認識や自然言語処理などさまざまなタスクを自動で実行できる</span></span><span class="gl-item">スキャン<span class="gl-tip">コンピューターシステムやプログラムのコードを自動で調査すること</span></span></div>
-    <div class="fi-tags"><span class="ft ft-release">新リリース</span><span class="ft ft-model">AIモデル</span><span class="ft ft-agent">エージェント</span></div>
+    <div class="fi-title"><a href="https://gigazine.net/news/20260224-claude-code-security/" target="_blank" rel="noopener">「Claude Code Security」が登場、コード内の脆弱性をスキャンして修正提案もしてくれる</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「「Claude Code Security」が登場、コード内の脆弱性をスキャンして修正提案もしてくれる」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
     <div class="fi-source">📎 <a href="https://gigazine.net/news/20260224-claude-code-security/" target="_blank" rel="noopener">GIGAZINE</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
@@ -314,12 +345,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
+    <div class="fi-av" style="background:#e60012">JP</div>
     <div><div class="fi-src">ITmedia AI+</div></div>
+    
     <div class="fi-time">2026-02-23 22:24</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.itmedia.co.jp/aiplus/articles/2602/24/news060.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Anthropic、DeepSeekなど中国AI企業3社による「大規模な蒸留攻撃」を報告　国家安全保障リスクを警告</a></div>
+    <div class="fi-title"><a href="https://www.itmedia.co.jp/aiplus/articles/2602/24/news060.html" target="_blank" rel="noopener">Anthropic、DeepSeekなど中国AI企業3社による「大規模な蒸留攻撃」を報告　国家安全保障リスクを警告</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Anthropic、DeepSeekなど中国AI企業3社による「大規模な蒸留攻撃」を報告　国家安全保障リスクを警告」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -331,17 +363,18 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
-    <div><div class="fi-src">CNET Japan</div></div>
-    <div class="fi-time">2026-02-23 16:00</div>
+    <div class="fi-av" style="background:#333">JP</div>
+    <div><div class="fi-src">GIGAZINE</div></div>
+    
+    <div class="fi-time">2026-02-24 02:02</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://japan.cnet.com/article/35244213/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">「エヴァンゲリオン」完全新作シリーズの制作が始動</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「「エヴァンゲリオン」完全新作シリーズの制作が始動」についてのニュースです。</div>
+    <div class="fi-title"><a href="https://gigazine.net/news/20260224-anthropic-persona-selection-model/" target="_blank" rel="noopener">AIが人間っぽい応答をするのは「そのように開発されたから」だけではなく「なぜか人間っぽくなった」という部分も大きいとAnthropicが説明</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「AIが人間っぽい応答をするのは「そのように開発されたから」だけではなく「なぜか人間っぽくなった」という部分も大きいとAnthropicが説明」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
     <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://japan.cnet.com/article/35244213/" target="_blank" rel="noopener">CNET Japan</a></div>
+    <div class="fi-source">📎 <a href="https://gigazine.net/news/20260224-anthropic-persona-selection-model/" target="_blank" rel="noopener">GIGAZINE</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
@@ -349,24 +382,31 @@
   </div>
   <div class="sidebar">
     <div class="sb-card">
-      <div class="sb-title">🔥 Hacker News トップ 10</div>
-      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://www.guitarworld.com/artists/guitarists/william-shatner-announces-all-star-metal-album" target="_blank" rel="noopener" class="hn-title">Shatner is making an album with 35 metal icons</a><span class="hn-score">▲34</span></div></div>
-<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/" target="_blank" rel="noopener" class="hn-title">FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me</a><span class="hn-score">▲233</span></div></div>
-<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://dork.dev/posts/2026-02-20-ported-coreboot/" target="_blank" rel="noopener" class="hn-title">I Ported Coreboot to the ThinkPad X270</a><span class="hn-score">▲23</span></div></div>
-<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/" target="_blank" rel="noopener" class="hn-title">UNIX99, a UNIX-like OS for the TI-99/4A</a><span class="hn-score">▲136</span></div></div>
-<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap: Verifying age undermines everyone's data protection</a><span class="hn-score">▲1191</span></div></div>
-<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird adopts Rust</a><span class="hn-score">▲1066</span></div></div>
-<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener" class="hn-title">Show HN: PgDog – Scale Postgres without changing the app</a><span class="hn-score">▲186</span></div></div>
-<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://jamesoswald.dev/posts/bigoinequality/" target="_blank" rel="noopener" class="hn-title">What is f(x) ≤ g(x) + O(1)? Inequalities With Asymptotics</a><span class="hn-score">▲25</span></div></div>
-<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380" target="_blank" rel="noopener" class="hn-title">AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says</a><span class="hn-score">▲146</span></div></div>
-<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/" target="_blank" rel="noopener" class="hn-title">Making Wolfram Tech Available as a Foundation Tool for LLM Systems</a><span class="hn-score">▲37</span></div></div>
+      <div class="sb-title">🔤 今日のホットワード</div>
+      <div class="hw-cloud">
+        <span class="hw hw-xl" title="12回出現">Anthropic</span><span class="hw hw-lg" title="9回出現">Claude</span><span class="hw hw-lg" title="8回出現">Code</span><span class="hw hw-lg" title="6回出現">Agent</span><span class="hw hw-md" title="5回出現">Google</span><span class="hw hw-md" title="5回出現">AWS</span><span class="hw hw-md" title="5回出現">API</span><span class="hw hw-md" title="4回出現">Security</span><span class="hw hw-md" title="4回出現">コード</span><span class="hw hw-md" title="4回出現">TechCrunch</span><span class="hw hw-md" title="4回出現">Disrupt</span><span class="hw hw-sm" title="3回出現">OpenAI</span>
+      </div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">🔥 注目ニュース（全タブ横断）</div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener" class="tl-title">Pope tells priests to use their brains, not AI, to write hom</a><div class="tl-meta"><span class="tl-source" style="color:#ff6600">Hacker News</span><span class="tl-hot">🔥68</span></div><div class=tl-reason>HN:527pts(超注目), クロスソース:10社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener" class="tl-title">OpenAI announces Frontier Alliance Partners</a><div class="tl-meta"><span class="tl-source" style="color:#10a37f">OpenAI Blog</span><span class="tl-hot">🔥67</span></div><div class=tl-reason>HN関連(590pts), はてブ関連(9ブクマ)</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/" target="_blank" rel="noopener" class="tl-title">OpenAI calls in the consultants for its enterprise push</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:3社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener" class="tl-title">Spotify rolls out AI-powered  Prompted Playlists to the UK a</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:5社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://zenn.dev/neurostack_0001/articles/claude-code-qa-sprint-testcase-generation" target="_blank" rel="noopener" class="tl-title">支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話</a><div class="tl-meta"><span class="tl-source" style="color:#3ea8ff">Zenn トレンド</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>はてブ関連(268ブクマ), クロスソース:5社</div></div></div>
+      </div>
     </div>
     <div class="sb-card">
       <div class="sb-title">ℹ️ このダッシュボードについて</div>
       <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
         毎朝7時に自動更新。<br>
-        RSS / HN / Redditからニュースを取得し、<br>
-        Gemini AIが日本語でやさしく解説。<br>
+        RSS / HN / はてブからニュースを取得し、<br>
+        ホットネス判定で注目記事を厳選。<br>
+        Groq AI が日本語でやさしく解説。<br>
         用語にマウスを乗せると解説が見れます。
       </div>
     </div>
@@ -377,12 +417,13 @@
     
     <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
+    <div class="fi-av" style="background:#1a73e8">NS</div>
     <div><div class="fi-src">The New Stack</div></div>
+    <span class="hot-badge hot-warm">🌡 65</span>
     <div class="fi-time">2026-02-23 23:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">The Pentagon’s Anthropic problem is every enterprise’s AI problem</a></div>
+    <div class="fi-title"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener">The Pentagon’s Anthropic problem is every enterprise’s AI problem</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「The Pentagon’s Anthropic problem is every enterprise’s AI problem」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -394,12 +435,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">ZN</div>
+    <div class="fi-av" style="background:#3ea8ff">ZN</div>
     <div><div class="fi-src">Zenn トレンド</div></div>
+    <span class="hot-badge hot-warm">🌡 62</span>
     <div class="fi-time">2026-02-22 02:48</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://zenn.dev/neurostack_0001/articles/claude-code-qa-sprint-testcase-generation" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話</a></div>
+    <div class="fi-title"><a href="https://zenn.dev/neurostack_0001/articles/claude-code-qa-sprint-testcase-generation" target="_blank" rel="noopener">支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -411,12 +453,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">ZN</div>
+    <div class="fi-av" style="background:#3ea8ff">ZN</div>
     <div><div class="fi-src">Zenn トレンド</div></div>
+    <span class="hot-badge hot-warm">🌡 62</span>
     <div class="fi-time">2026-02-22 02:22</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://zenn.dev/kimmaru/articles/6c0f67f6003b94" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Figma MCP × Claude Codeで1ページ8時間の作業が20分になった話</a></div>
+    <div class="fi-title"><a href="https://zenn.dev/kimmaru/articles/6c0f67f6003b94" target="_blank" rel="noopener">Figma MCP × Claude Codeで1ページ8時間の作業が20分になった話</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Figma MCP × Claude Codeで1ページ8時間の作業が20分になった話」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -428,279 +471,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#333">GH</div>
-    <div><div class="fi-src">GitHub Blog</div></div>
-    <div class="fi-time">2026-02-19 17:00</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">How AI is reshaping developer choice (and Octoverse data proves it)</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「How AI is reshaping developer choice (and Octoverse data proves it)」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/" target="_blank" rel="noopener">GitHub Blog</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
-    <div><div class="fi-src">Publickey</div></div>
-    <div class="fi-time">2026-02-23 16:15</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener">Publickey</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
+    <div class="fi-av" style="background:#1a73e8">NS</div>
     <div><div class="fi-src">The New Stack</div></div>
-    <div class="fi-time">2026-02-23 19:51</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/aws-strands-labs-launch/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">AWS creates a sandbox for its agent experiments</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「AWS creates a sandbox for its agent experiments」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://thenewstack.io/aws-strands-labs-launch/" target="_blank" rel="noopener">The New Stack</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">IQ</div>
-    <div><div class="fi-src">InfoQ</div></div>
-    <div class="fi-time">2026-02-23 08:00</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.infoq.com/news/2026/02/rivet-agent-sandbox-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Rivet Launches the Sandbox Agent SDK to Solve Agent API Fragmentation</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Rivet Launches the Sandbox Agent SDK to Solve Agent API Fragmentation」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.infoq.com/news/2026/02/rivet-agent-sandbox-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">InfoQ</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#ff6600">HN</div>
-    <div><div class="fi-src">Hacker News</div></div>
-    <div class="fi-time">2026-02-23 11:29</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Ladybird adopts Rust</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Ladybird adopts Rust」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener">Hacker News</a> · <span style="color:var(--org)">▲1066</span> · 💬582</div>
-    <div class="reactions"><div class="rx-title">💬 開発者たちの反応</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">jp1016:</span> The byte-for-byte identical output requirement is the smartest part of this whole thing. You basically get to run the old and new pipelines side by side and diff them, which means any bug in the trans</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">lordofgibbons:</span> Pardon my ignorance, but doesn&amp;#x27;t a byte-by-byte output recreation of the C++ code  in Rust defeat the whole purpose of using Rust? For one, would it be idiomatic Rust anymore? Also, if there&amp;#x27</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">skerit:</span> &amp;gt; I used Claude Code and Codex for the translation. This was human-directed, not autonomous code generation. I decided what to port, in what order, and what the Rust code should look like. It was h</div></div>
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">DC</div>
-    <div><div class="fi-src">DevClass</div></div>
-    <div class="fi-time">2026-02-16 13:02</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.devclass.com/development/2026/02/16/claude-code-gets-more-opaque-devs-want-more-transparency/4091233" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Anthropic updates to hide Claude’s AI actions, devs hate it</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Anthropic updates to hide Claude’s AI actions, devs hate it」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.devclass.com/development/2026/02/16/claude-code-gets-more-opaque-devs-want-more-transparency/4091233" target="_blank" rel="noopener">DevClass</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">IQ</div>
-    <div><div class="fi-src">InfoQ</div></div>
-    <div class="fi-time">2026-02-23 09:13</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.infoq.com/presentations/ai-innovation-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Presentation: AI Innovation in 2025 and Beyond</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Presentation: AI Innovation in 2025 and Beyond」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.infoq.com/presentations/ai-innovation-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">InfoQ</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-  </div>
-  <div class="sidebar">
-    <div class="sb-card">
-      <div class="sb-title">🔥 Hacker News トップ 10</div>
-      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://www.guitarworld.com/artists/guitarists/william-shatner-announces-all-star-metal-album" target="_blank" rel="noopener" class="hn-title">Shatner is making an album with 35 metal icons</a><span class="hn-score">▲34</span></div></div>
-<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/" target="_blank" rel="noopener" class="hn-title">FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me</a><span class="hn-score">▲233</span></div></div>
-<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://dork.dev/posts/2026-02-20-ported-coreboot/" target="_blank" rel="noopener" class="hn-title">I Ported Coreboot to the ThinkPad X270</a><span class="hn-score">▲23</span></div></div>
-<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/" target="_blank" rel="noopener" class="hn-title">UNIX99, a UNIX-like OS for the TI-99/4A</a><span class="hn-score">▲136</span></div></div>
-<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap: Verifying age undermines everyone's data protection</a><span class="hn-score">▲1191</span></div></div>
-<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird adopts Rust</a><span class="hn-score">▲1066</span></div></div>
-<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener" class="hn-title">Show HN: PgDog – Scale Postgres without changing the app</a><span class="hn-score">▲186</span></div></div>
-<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://jamesoswald.dev/posts/bigoinequality/" target="_blank" rel="noopener" class="hn-title">What is f(x) ≤ g(x) + O(1)? Inequalities With Asymptotics</a><span class="hn-score">▲25</span></div></div>
-<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380" target="_blank" rel="noopener" class="hn-title">AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says</a><span class="hn-score">▲146</span></div></div>
-<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/" target="_blank" rel="noopener" class="hn-title">Making Wolfram Tech Available as a Foundation Tool for LLM Systems</a><span class="hn-score">▲37</span></div></div>
-    </div>
-    <div class="sb-card">
-      <div class="sb-title">ℹ️ このダッシュボードについて</div>
-      <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
-        毎朝7時に自動更新。<br>
-        RSS / HN / Redditからニュースを取得し、<br>
-        Gemini AIが日本語でやさしく解説。<br>
-        用語にマウスを乗せると解説が見れます。
-      </div>
-    </div>
-  </div>
-</div>
-<div class="tab-content" id="tab-data_dx">
-  <div class="feed">
-    
-    <div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
-    <div><div class="fi-src">The New Stack</div></div>
-    <div class="fi-time">2026-02-23 23:00</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">The Pentagon’s Anthropic problem is every enterprise’s AI problem</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「The Pentagon’s Anthropic problem is every enterprise’s AI problem」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener">The New Stack</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
-    <div><div class="fi-src">Publickey</div></div>
-    <div class="fi-time">2026-02-23 16:15</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener">Publickey</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
-    <div><div class="fi-src">Publickey</div></div>
-    <div class="fi-time">2026-02-23 15:11</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html" target="_blank" rel="noopener">Publickey</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#ff6600">HN</div>
-    <div><div class="fi-src">Hacker News</div></div>
-    <div class="fi-time">2026-02-23 15:33</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Show HN: PgDog – Scale Postgres without changing the app</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Show HN: PgDog – Scale Postgres without changing the app」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener">Hacker News</a> · <span style="color:var(--org)">▲186</span> · 💬44</div>
-    <div class="reactions"><div class="rx-title">💬 開発者たちの反応</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">saisrirampur:</span> Great progress, guys! It’s impressive to see all the enhancements - more types, more aggregate functions, cross-node DML, resharding, and reliability-focused connection pooling and more. Very cool! Th</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">written-beyond:</span> Can you elaborate a bit more on the challenges faced in making Postgres shard-able?I remember that adding sharing to Postgres natively was an uphill battle. There were a few companies who has propriet</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">codegeek:</span> Stupid question but does this shard the database as well or do we shard manually and then setup the configuration accordingly ?</div></div>
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
-    <div><div class="fi-src">The New Stack</div></div>
-    <div class="fi-time">2026-02-23 19:51</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/aws-strands-labs-launch/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">AWS creates a sandbox for its agent experiments</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「AWS creates a sandbox for its agent experiments」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://thenewstack.io/aws-strands-labs-launch/" target="_blank" rel="noopener">The New Stack</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
-    <div><div class="fi-src">The New Stack</div></div>
-    <div class="fi-time">2026-02-23 12:00</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/coding-agents-feedback-signals/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Coding agents are only as good as the signals you feed them</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Coding agents are only as good as the signals you feed them」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://thenewstack.io/coding-agents-feedback-signals/" target="_blank" rel="noopener">The New Stack</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#ff3621">DB</div>
-    <div><div class="fi-src">Databricks</div></div>
-    <div class="fi-time">2026-02-23 16:00</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.databricks.com/blog/announcing-general-availability-zerobus-ingest" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Announcing General Availability of Zerobus Ingest</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Announcing General Availability of Zerobus Ingest」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.databricks.com/blog/announcing-general-availability-zerobus-ingest" target="_blank" rel="noopener">Databricks</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
-    <div><div class="fi-src">The New Stack</div></div>
+    <span class="hot-badge hot-warm">🌡 60</span>
     <div class="fi-time">2026-02-22 14:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Wasm vs. JavaScript: Who wins at a million rows?</a></div>
+    <div class="fi-title"><a href="https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/" target="_blank" rel="noopener">Wasm vs. JavaScript: Who wins at a million rows?</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Wasm vs. JavaScript: Who wins at a million rows?」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -712,29 +489,319 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
-    <div><div class="fi-src">The New Stack</div></div>
-    <div class="fi-time">2026-02-22 16:00</div>
+    <div class="fi-av" style="background:#333">GH</div>
+    <div><div class="fi-src">GitHub Blog</div></div>
+    <span class="hot-badge hot-warm">🌡 55</span>
+    <div class="fi-time">2026-02-19 17:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/this-simple-infrastructure-gap-is-holding-back-ai-productivity/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">This simple infrastructure gap is holding back AI productivity</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「This simple infrastructure gap is holding back AI productivity」についてのニュースです。</div>
+    <div class="fi-title"><a href="https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/" target="_blank" rel="noopener">How AI is reshaping developer choice (and Octoverse data proves it)</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「How AI is reshaping developer choice (and Octoverse data proves it)」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
     <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://thenewstack.io/this-simple-infrastructure-gap-is-holding-back-ai-productivity/" target="_blank" rel="noopener">The New Stack</a></div>
+    <div class="fi-source">📎 <a href="https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/" target="_blank" rel="noopener">GitHub Blog</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
+    <div class="fi-av" style="background:#1a73e8">JP</div>
     <div><div class="fi-src">Publickey</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
+    <div class="fi-time">2026-02-23 16:15</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener">NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener">Publickey</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">NS</div>
+    <div><div class="fi-src">The New Stack</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
+    <div class="fi-time">2026-02-23 19:51</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://thenewstack.io/aws-strands-labs-launch/" target="_blank" rel="noopener">AWS creates a sandbox for its agent experiments</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「AWS creates a sandbox for its agent experiments」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://thenewstack.io/aws-strands-labs-launch/" target="_blank" rel="noopener">The New Stack</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#007dc3">IQ</div>
+    <div><div class="fi-src">InfoQ</div></div>
+    
+    <div class="fi-time">2026-02-23 08:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.infoq.com/news/2026/02/rivet-agent-sandbox-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Rivet Launches the Sandbox Agent SDK to Solve Agent API Fragmentation</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Rivet Launches the Sandbox Agent SDK to Solve Agent API Fragmentation」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.infoq.com/news/2026/02/rivet-agent-sandbox-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">InfoQ</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#333">DC</div>
+    <div><div class="fi-src">DevClass</div></div>
+    
+    <div class="fi-time">2026-02-19 13:18</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.devclass.com/ai-ml/2026/02/19/github-itself-to-blame-for-ai-slop-prs-say-devs/4091420" target="_blank" rel="noopener">Godot maintainers struggle with 'draining and demoralizing' AI slop submissions</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Godot maintainers struggle with 'draining and demoralizing' AI slop submissions」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.devclass.com/ai-ml/2026/02/19/github-itself-to-blame-for-ai-slop-prs-say-devs/4091420" target="_blank" rel="noopener">DevClass</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#333">DC</div>
+    <div><div class="fi-src">DevClass</div></div>
+    
+    <div class="fi-time">2026-02-16 13:02</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.devclass.com/development/2026/02/16/claude-code-gets-more-opaque-devs-want-more-transparency/4091233" target="_blank" rel="noopener">Anthropic updates to hide Claude’s AI actions, devs hate it</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Anthropic updates to hide Claude’s AI actions, devs hate it」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.devclass.com/development/2026/02/16/claude-code-gets-more-opaque-devs-want-more-transparency/4091233" target="_blank" rel="noopener">DevClass</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+  </div>
+  <div class="sidebar">
+    <div class="sb-card">
+      <div class="sb-title">🔤 今日のホットワード</div>
+      <div class="hw-cloud">
+        <span class="hw hw-xl" title="12回出現">Anthropic</span><span class="hw hw-lg" title="9回出現">Claude</span><span class="hw hw-lg" title="8回出現">Code</span><span class="hw hw-lg" title="6回出現">Agent</span><span class="hw hw-md" title="5回出現">Google</span><span class="hw hw-md" title="5回出現">AWS</span><span class="hw hw-md" title="5回出現">API</span><span class="hw hw-md" title="4回出現">Security</span><span class="hw hw-md" title="4回出現">コード</span><span class="hw hw-md" title="4回出現">TechCrunch</span><span class="hw hw-md" title="4回出現">Disrupt</span><span class="hw hw-sm" title="3回出現">OpenAI</span>
+      </div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">🔥 注目ニュース（全タブ横断）</div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener" class="tl-title">Pope tells priests to use their brains, not AI, to write hom</a><div class="tl-meta"><span class="tl-source" style="color:#ff6600">Hacker News</span><span class="tl-hot">🔥68</span></div><div class=tl-reason>HN:527pts(超注目), クロスソース:10社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener" class="tl-title">OpenAI announces Frontier Alliance Partners</a><div class="tl-meta"><span class="tl-source" style="color:#10a37f">OpenAI Blog</span><span class="tl-hot">🔥67</span></div><div class=tl-reason>HN関連(590pts), はてブ関連(9ブクマ)</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/" target="_blank" rel="noopener" class="tl-title">OpenAI calls in the consultants for its enterprise push</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:3社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener" class="tl-title">Spotify rolls out AI-powered  Prompted Playlists to the UK a</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:5社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://zenn.dev/neurostack_0001/articles/claude-code-qa-sprint-testcase-generation" target="_blank" rel="noopener" class="tl-title">支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話</a><div class="tl-meta"><span class="tl-source" style="color:#3ea8ff">Zenn トレンド</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>はてブ関連(268ブクマ), クロスソース:5社</div></div></div>
+      </div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">ℹ️ このダッシュボードについて</div>
+      <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
+        毎朝7時に自動更新。<br>
+        RSS / HN / はてブからニュースを取得し、<br>
+        ホットネス判定で注目記事を厳選。<br>
+        Groq AI が日本語でやさしく解説。<br>
+        用語にマウスを乗せると解説が見れます。
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content" id="tab-data_dx">
+  <div class="feed">
+    
+    <div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">NS</div>
+    <div><div class="fi-src">The New Stack</div></div>
+    <span class="hot-badge hot-warm">🌡 65</span>
+    <div class="fi-time">2026-02-23 23:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener">The Pentagon’s Anthropic problem is every enterprise’s AI problem</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「The Pentagon’s Anthropic problem is every enterprise’s AI problem」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener">The New Stack</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">NS</div>
+    <div><div class="fi-src">The New Stack</div></div>
+    <span class="hot-badge hot-warm">🌡 60</span>
+    <div class="fi-time">2026-02-22 14:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/" target="_blank" rel="noopener">Wasm vs. JavaScript: Who wins at a million rows?</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Wasm vs. JavaScript: Who wins at a million rows?」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/" target="_blank" rel="noopener">The New Stack</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">JP</div>
+    <div><div class="fi-src">Publickey</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
+    <div class="fi-time">2026-02-23 16:15</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener">NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener">Publickey</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">JP</div>
+    <div><div class="fi-src">Publickey</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
+    <div class="fi-time">2026-02-23 15:11</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html" target="_blank" rel="noopener">Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html" target="_blank" rel="noopener">Publickey</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">NS</div>
+    <div><div class="fi-src">The New Stack</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
+    <div class="fi-time">2026-02-23 19:51</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://thenewstack.io/aws-strands-labs-launch/" target="_blank" rel="noopener">AWS creates a sandbox for its agent experiments</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「AWS creates a sandbox for its agent experiments」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://thenewstack.io/aws-strands-labs-launch/" target="_blank" rel="noopener">The New Stack</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff3621">DB</div>
+    <div><div class="fi-src">Databricks</div></div>
+    
+    <div class="fi-time">2026-02-19 23:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.databricks.com/blog/ai-projects-operational-capability" target="_blank" rel="noopener">From AI projects to an operational capability</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「From AI projects to an operational capability」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.databricks.com/blog/ai-projects-operational-capability" target="_blank" rel="noopener">Databricks</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff6600">HN</div>
+    <div><div class="fi-src">Hacker News</div></div>
+    
+    <div class="fi-time">2026-02-23 15:33</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener">Show HN: PgDog – Scale Postgres without changing the app</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Show HN: PgDog – Scale Postgres without changing the app」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener">Hacker News</a> · <span style="color:var(--org)">▲189</span> · 💬44</div>
+    <div class="reactions"><div class="rx-title">💬 開発者たちの反応</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">saisrirampur:</span> Great progress, guys! It’s impressive to see all the enhancements - more types, more aggregate functions, cross-node DML, resharding, and reliability-focused connection pooling and more. Very cool! Th</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">codegeek:</span> Stupid question but does this shard the database as well or do we shard manually and then setup the configuration accordingly ?</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">cuu508:</span> Some HTTP proxies can do retries -- if a connection to one backend fails, it is retried on a different backend. Can PgDog (or PgBouncer, or any other tool) do something similar -- if there&amp;#x27;s a &amp;q</div></div>
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#ff3621">DB</div>
+    <div><div class="fi-src">Databricks</div></div>
+    
+    <div class="fi-time">2026-02-18 16:04</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.databricks.com/blog/custom-agents-now-available-databricks" target="_blank" rel="noopener">Custom Agents now available on Databricks</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Custom Agents now available on Databricks」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.databricks.com/blog/custom-agents-now-available-databricks" target="_blank" rel="noopener">Databricks</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">NS</div>
+    <div><div class="fi-src">The New Stack</div></div>
+    
+    <div class="fi-time">2026-02-23 12:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://thenewstack.io/coding-agents-feedback-signals/" target="_blank" rel="noopener">Coding agents are only as good as the signals you feed them</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Coding agents are only as good as the signals you feed them」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://thenewstack.io/coding-agents-feedback-signals/" target="_blank" rel="noopener">The New Stack</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">JP</div>
+    <div><div class="fi-src">Publickey</div></div>
+    
     <div class="fi-time">2026-02-16 15:23</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/aigoogledeveloper_knowledge_api_mcp_servergoogle.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">生成AIがGoogleテクノロジーの公式ドキュメントを参照できる「Developer Knowledge API &amp; MCP Server」、Googleが発表</a></div>
+    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/aigoogledeveloper_knowledge_api_mcp_servergoogle.html" target="_blank" rel="noopener">生成AIがGoogleテクノロジーの公式ドキュメントを参照できる「Developer Knowledge API &amp; MCP Server」、Googleが発表</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「生成AIがGoogleテクノロジーの公式ドキュメントを参照できる「Developer Knowledge API &amp; MCP Server」、Googleが発表」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -747,24 +814,31 @@
   </div>
   <div class="sidebar">
     <div class="sb-card">
-      <div class="sb-title">🔥 Hacker News トップ 10</div>
-      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://www.guitarworld.com/artists/guitarists/william-shatner-announces-all-star-metal-album" target="_blank" rel="noopener" class="hn-title">Shatner is making an album with 35 metal icons</a><span class="hn-score">▲34</span></div></div>
-<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/" target="_blank" rel="noopener" class="hn-title">FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me</a><span class="hn-score">▲233</span></div></div>
-<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://dork.dev/posts/2026-02-20-ported-coreboot/" target="_blank" rel="noopener" class="hn-title">I Ported Coreboot to the ThinkPad X270</a><span class="hn-score">▲23</span></div></div>
-<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/" target="_blank" rel="noopener" class="hn-title">UNIX99, a UNIX-like OS for the TI-99/4A</a><span class="hn-score">▲136</span></div></div>
-<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap: Verifying age undermines everyone's data protection</a><span class="hn-score">▲1191</span></div></div>
-<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird adopts Rust</a><span class="hn-score">▲1066</span></div></div>
-<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener" class="hn-title">Show HN: PgDog – Scale Postgres without changing the app</a><span class="hn-score">▲186</span></div></div>
-<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://jamesoswald.dev/posts/bigoinequality/" target="_blank" rel="noopener" class="hn-title">What is f(x) ≤ g(x) + O(1)? Inequalities With Asymptotics</a><span class="hn-score">▲25</span></div></div>
-<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380" target="_blank" rel="noopener" class="hn-title">AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says</a><span class="hn-score">▲146</span></div></div>
-<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/" target="_blank" rel="noopener" class="hn-title">Making Wolfram Tech Available as a Foundation Tool for LLM Systems</a><span class="hn-score">▲37</span></div></div>
+      <div class="sb-title">🔤 今日のホットワード</div>
+      <div class="hw-cloud">
+        <span class="hw hw-xl" title="12回出現">Anthropic</span><span class="hw hw-lg" title="9回出現">Claude</span><span class="hw hw-lg" title="8回出現">Code</span><span class="hw hw-lg" title="6回出現">Agent</span><span class="hw hw-md" title="5回出現">Google</span><span class="hw hw-md" title="5回出現">AWS</span><span class="hw hw-md" title="5回出現">API</span><span class="hw hw-md" title="4回出現">Security</span><span class="hw hw-md" title="4回出現">コード</span><span class="hw hw-md" title="4回出現">TechCrunch</span><span class="hw hw-md" title="4回出現">Disrupt</span><span class="hw hw-sm" title="3回出現">OpenAI</span>
+      </div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">🔥 注目ニュース（全タブ横断）</div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener" class="tl-title">Pope tells priests to use their brains, not AI, to write hom</a><div class="tl-meta"><span class="tl-source" style="color:#ff6600">Hacker News</span><span class="tl-hot">🔥68</span></div><div class=tl-reason>HN:527pts(超注目), クロスソース:10社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener" class="tl-title">OpenAI announces Frontier Alliance Partners</a><div class="tl-meta"><span class="tl-source" style="color:#10a37f">OpenAI Blog</span><span class="tl-hot">🔥67</span></div><div class=tl-reason>HN関連(590pts), はてブ関連(9ブクマ)</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/" target="_blank" rel="noopener" class="tl-title">OpenAI calls in the consultants for its enterprise push</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:3社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener" class="tl-title">Spotify rolls out AI-powered  Prompted Playlists to the UK a</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:5社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://zenn.dev/neurostack_0001/articles/claude-code-qa-sprint-testcase-generation" target="_blank" rel="noopener" class="tl-title">支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話</a><div class="tl-meta"><span class="tl-source" style="color:#3ea8ff">Zenn トレンド</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>はてブ関連(268ブクマ), クロスソース:5社</div></div></div>
+      </div>
     </div>
     <div class="sb-card">
       <div class="sb-title">ℹ️ このダッシュボードについて</div>
       <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
         毎朝7時に自動更新。<br>
-        RSS / HN / Redditからニュースを取得し、<br>
-        Gemini AIが日本語でやさしく解説。<br>
+        RSS / HN / はてブからニュースを取得し、<br>
+        ホットネス判定で注目記事を厳選。<br>
+        Groq AI が日本語でやさしく解説。<br>
         用語にマウスを乗せると解説が見れます。
       </div>
     </div>
@@ -775,12 +849,13 @@
     
     <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
+    <div class="fi-av" style="background:#1a73e8">NS</div>
     <div><div class="fi-src">The New Stack</div></div>
+    <span class="hot-badge hot-warm">🌡 65</span>
     <div class="fi-time">2026-02-23 23:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">The Pentagon’s Anthropic problem is every enterprise’s AI problem</a></div>
+    <div class="fi-title"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener">The Pentagon’s Anthropic problem is every enterprise’s AI problem</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「The Pentagon’s Anthropic problem is every enterprise’s AI problem」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -792,46 +867,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
-    <div><div class="fi-src">Publickey</div></div>
-    <div class="fi-time">2026-02-23 16:15</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener">Publickey</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
-    <div><div class="fi-src">Publickey</div></div>
-    <div class="fi-time">2026-02-23 15:11</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html" target="_blank" rel="noopener">Publickey</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
     <div class="fi-av" style="background:#f38020">CF</div>
     <div><div class="fi-src">Cloudflare Blog</div></div>
+    <span class="hot-badge hot-warm">🌡 62</span>
     <div class="fi-time">2026-02-20 14:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://blog.cloudflare.com/code-mode-mcp/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Code Mode: give agents an entire API in 1,000 tokens</a></div>
+    <div class="fi-title"><a href="https://blog.cloudflare.com/code-mode-mcp/" target="_blank" rel="noopener">Code Mode: give agents an entire API in 1,000 tokens</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Code Mode: give agents an entire API in 1,000 tokens」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -843,12 +885,67 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
+    <div class="fi-av" style="background:#1a73e8">NS</div>
     <div><div class="fi-src">The New Stack</div></div>
+    <span class="hot-badge hot-warm">🌡 60</span>
+    <div class="fi-time">2026-02-22 14:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/" target="_blank" rel="noopener">Wasm vs. JavaScript: Who wins at a million rows?</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Wasm vs. JavaScript: Who wins at a million rows?」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/" target="_blank" rel="noopener">The New Stack</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">JP</div>
+    <div><div class="fi-src">Publickey</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
+    <div class="fi-time">2026-02-23 16:15</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener">NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html" target="_blank" rel="noopener">Publickey</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">JP</div>
+    <div><div class="fi-src">Publickey</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
+    <div class="fi-time">2026-02-23 15:11</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html" target="_blank" rel="noopener">Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html" target="_blank" rel="noopener">Publickey</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#1a73e8">NS</div>
+    <div><div class="fi-src">The New Stack</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
     <div class="fi-time">2026-02-23 19:51</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/aws-strands-labs-launch/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">AWS creates a sandbox for its agent experiments</a></div>
+    <div class="fi-title"><a href="https://thenewstack.io/aws-strands-labs-launch/" target="_blank" rel="noopener">AWS creates a sandbox for its agent experiments</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「AWS creates a sandbox for its agent experiments」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -862,10 +959,11 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#f38020">CF</div>
     <div><div class="fi-src">Cloudflare Blog</div></div>
+    
     <div class="fi-time">2026-02-21 00:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://blog.cloudflare.com/cloudflare-outage-february-20-2026/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Cloudflare outage on February 20, 2026</a></div>
+    <div class="fi-title"><a href="https://blog.cloudflare.com/cloudflare-outage-february-20-2026/" target="_blank" rel="noopener">Cloudflare outage on February 20, 2026</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Cloudflare outage on February 20, 2026」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -879,10 +977,11 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#ff9900">AW</div>
     <div><div class="fi-src">AWS Blog</div></div>
+    
     <div class="fi-time">2026-02-23 16:56</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-4-6-in-amazon-bedrock-kiro-in-govcloud-regions-new-agent-plugins-and-more-february-23-2026/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">AWS Weekly Roundup: Claude Sonnet 4.6 in Amazon Bedrock, Kiro in GovCloud Regions, new Agent Plugins, and more (February 23, 2026)</a></div>
+    <div class="fi-title"><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-4-6-in-amazon-bedrock-kiro-in-govcloud-regions-new-agent-plugins-and-more-february-23-2026/" target="_blank" rel="noopener">AWS Weekly Roundup: Claude Sonnet 4.6 in Amazon Bedrock, Kiro in GovCloud Regions, new Agent Plugins, and more (February 23, 2026)</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「AWS Weekly Roundup: Claude Sonnet 4.6 in Amazon Bedrock, Kiro in GovCloud Regions, new Agent Plugins, and more (February 23, 2026)」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -894,12 +993,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
+    <div class="fi-av" style="background:#1a73e8">NS</div>
     <div><div class="fi-src">The New Stack</div></div>
+    
     <div class="fi-time">2026-02-23 12:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/coding-agents-feedback-signals/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Coding agents are only as good as the signals you feed them</a></div>
+    <div class="fi-title"><a href="https://thenewstack.io/coding-agents-feedback-signals/" target="_blank" rel="noopener">Coding agents are only as good as the signals you feed them</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Coding agents are only as good as the signals you feed them」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -911,29 +1011,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">NS</div>
-    <div><div class="fi-src">The New Stack</div></div>
-    <div class="fi-time">2026-02-22 14:00</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Wasm vs. JavaScript: Who wins at a million rows?</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Wasm vs. JavaScript: Who wins at a million rows?」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://thenewstack.io/wasm-vs-javascript-who-wins-at-a-million-rows/" target="_blank" rel="noopener">The New Stack</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
+    <div class="fi-av" style="background:#1a73e8">JP</div>
     <div><div class="fi-src">Publickey</div></div>
+    
     <div class="fi-time">2026-02-16 15:23</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/aigoogledeveloper_knowledge_api_mcp_servergoogle.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">生成AIがGoogleテクノロジーの公式ドキュメントを参照できる「Developer Knowledge API &amp; MCP Server」、Googleが発表</a></div>
+    <div class="fi-title"><a href="https://www.publickey1.jp/blog/26/aigoogledeveloper_knowledge_api_mcp_servergoogle.html" target="_blank" rel="noopener">生成AIがGoogleテクノロジーの公式ドキュメントを参照できる「Developer Knowledge API &amp; MCP Server」、Googleが発表</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「生成AIがGoogleテクノロジーの公式ドキュメントを参照できる「Developer Knowledge API &amp; MCP Server」、Googleが発表」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -946,24 +1030,31 @@
   </div>
   <div class="sidebar">
     <div class="sb-card">
-      <div class="sb-title">🔥 Hacker News トップ 10</div>
-      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://www.guitarworld.com/artists/guitarists/william-shatner-announces-all-star-metal-album" target="_blank" rel="noopener" class="hn-title">Shatner is making an album with 35 metal icons</a><span class="hn-score">▲34</span></div></div>
-<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/" target="_blank" rel="noopener" class="hn-title">FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me</a><span class="hn-score">▲233</span></div></div>
-<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://dork.dev/posts/2026-02-20-ported-coreboot/" target="_blank" rel="noopener" class="hn-title">I Ported Coreboot to the ThinkPad X270</a><span class="hn-score">▲23</span></div></div>
-<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/" target="_blank" rel="noopener" class="hn-title">UNIX99, a UNIX-like OS for the TI-99/4A</a><span class="hn-score">▲136</span></div></div>
-<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap: Verifying age undermines everyone's data protection</a><span class="hn-score">▲1191</span></div></div>
-<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird adopts Rust</a><span class="hn-score">▲1066</span></div></div>
-<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener" class="hn-title">Show HN: PgDog – Scale Postgres without changing the app</a><span class="hn-score">▲186</span></div></div>
-<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://jamesoswald.dev/posts/bigoinequality/" target="_blank" rel="noopener" class="hn-title">What is f(x) ≤ g(x) + O(1)? Inequalities With Asymptotics</a><span class="hn-score">▲25</span></div></div>
-<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380" target="_blank" rel="noopener" class="hn-title">AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says</a><span class="hn-score">▲146</span></div></div>
-<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/" target="_blank" rel="noopener" class="hn-title">Making Wolfram Tech Available as a Foundation Tool for LLM Systems</a><span class="hn-score">▲37</span></div></div>
+      <div class="sb-title">🔤 今日のホットワード</div>
+      <div class="hw-cloud">
+        <span class="hw hw-xl" title="12回出現">Anthropic</span><span class="hw hw-lg" title="9回出現">Claude</span><span class="hw hw-lg" title="8回出現">Code</span><span class="hw hw-lg" title="6回出現">Agent</span><span class="hw hw-md" title="5回出現">Google</span><span class="hw hw-md" title="5回出現">AWS</span><span class="hw hw-md" title="5回出現">API</span><span class="hw hw-md" title="4回出現">Security</span><span class="hw hw-md" title="4回出現">コード</span><span class="hw hw-md" title="4回出現">TechCrunch</span><span class="hw hw-md" title="4回出現">Disrupt</span><span class="hw hw-sm" title="3回出現">OpenAI</span>
+      </div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">🔥 注目ニュース（全タブ横断）</div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener" class="tl-title">Pope tells priests to use their brains, not AI, to write hom</a><div class="tl-meta"><span class="tl-source" style="color:#ff6600">Hacker News</span><span class="tl-hot">🔥68</span></div><div class=tl-reason>HN:527pts(超注目), クロスソース:10社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener" class="tl-title">OpenAI announces Frontier Alliance Partners</a><div class="tl-meta"><span class="tl-source" style="color:#10a37f">OpenAI Blog</span><span class="tl-hot">🔥67</span></div><div class=tl-reason>HN関連(590pts), はてブ関連(9ブクマ)</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/" target="_blank" rel="noopener" class="tl-title">OpenAI calls in the consultants for its enterprise push</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:3社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener" class="tl-title">Spotify rolls out AI-powered  Prompted Playlists to the UK a</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:5社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://zenn.dev/neurostack_0001/articles/claude-code-qa-sprint-testcase-generation" target="_blank" rel="noopener" class="tl-title">支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話</a><div class="tl-meta"><span class="tl-source" style="color:#3ea8ff">Zenn トレンド</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>はてブ関連(268ブクマ), クロスソース:5社</div></div></div>
+      </div>
     </div>
     <div class="sb-card">
       <div class="sb-title">ℹ️ このダッシュボードについて</div>
       <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
         毎朝7時に自動更新。<br>
-        RSS / HN / Redditからニュースを取得し、<br>
-        Gemini AIが日本語でやさしく解説。<br>
+        RSS / HN / はてブからニュースを取得し、<br>
+        ホットネス判定で注目記事を厳選。<br>
+        Groq AI が日本語でやさしく解説。<br>
         用語にマウスを乗せると解説が見れます。
       </div>
     </div>
@@ -974,29 +1065,13 @@
     
     <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">SW</div>
-    <div><div class="fi-src">SecurityWeek</div></div>
-    <div class="fi-time">2026-02-23 09:13</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.securityweek.com/paypal-data-breach-led-to-fraudulent-transactions/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">PayPal Data Breach Led to Fraudulent Transactions</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「PayPal Data Breach Led to Fraudulent Transactions」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.securityweek.com/paypal-data-breach-led-to-fraudulent-transactions/" target="_blank" rel="noopener">SecurityWeek</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
     <div class="fi-av" style="background:#f38020">CF</div>
     <div><div class="fi-src">Cloudflare Blog</div></div>
+    <span class="hot-badge hot-warm">🌡 62</span>
     <div class="fi-time">2026-02-20 14:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://blog.cloudflare.com/code-mode-mcp/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Code Mode: give agents an entire API in 1,000 tokens</a></div>
+    <div class="fi-title"><a href="https://blog.cloudflare.com/code-mode-mcp/" target="_blank" rel="noopener">Code Mode: give agents an entire API in 1,000 tokens</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Code Mode: give agents an entire API in 1,000 tokens」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1008,80 +1083,31 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#236b8e">BC</div>
-    <div><div class="fi-src">BleepingComputer</div></div>
-    <div class="fi-time">2026-02-23 21:59</div>
+    <div class="fi-av" style="background:#003366">SW</div>
+    <div><div class="fi-src">SecurityWeek</div></div>
+    <span class="hot-badge hot-warm">🌡 60</span>
+    <div class="fi-time">2026-02-23 09:13</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.bleepingcomputer.com/news/security/spain-arrests-suspected-anonymous-fenix-hacktivists-for-ddosing-govt-sites/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Spain arrests suspected hacktivists for DDoSing govt sites</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Spain arrests suspected hacktivists for DDoSing govt sites」についてのニュースです。</div>
+    <div class="fi-title"><a href="https://www.securityweek.com/paypal-data-breach-led-to-fraudulent-transactions/" target="_blank" rel="noopener">PayPal Data Breach Led to Fraudulent Transactions</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「PayPal Data Breach Led to Fraudulent Transactions」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
     <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.bleepingcomputer.com/news/security/spain-arrests-suspected-anonymous-fenix-hacktivists-for-ddosing-govt-sites/" target="_blank" rel="noopener">BleepingComputer</a></div>
+    <div class="fi-source">📎 <a href="https://www.securityweek.com/paypal-data-breach-led-to-fraudulent-transactions/" target="_blank" rel="noopener">SecurityWeek</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#236b8e">BC</div>
-    <div><div class="fi-src">BleepingComputer</div></div>
-    <div class="fi-time">2026-02-23 19:40</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-in-classic-outlook-hides-the-mouse-pointer/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Microsoft says bug in classic Outlook hides the mouse pointer</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Microsoft says bug in classic Outlook hides the mouse pointer」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-in-classic-outlook-hides-the-mouse-pointer/" target="_blank" rel="noopener">BleepingComputer</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">DR</div>
+    <div class="fi-av" style="background:#000">DR</div>
     <div><div class="fi-src">Dark Reading</div></div>
-    <div class="fi-time">2026-02-20 14:00</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.darkreading.com/threat-intelligence/latin-americas-cyber-maturity-lags-threat-landscape" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Latin America's Cyber Maturity Lags Threat Landscape</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Latin America's Cyber Maturity Lags Threat Landscape」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.darkreading.com/threat-intelligence/latin-americas-cyber-maturity-lags-threat-landscape" target="_blank" rel="noopener">Dark Reading</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#236b8e">BC</div>
-    <div><div class="fi-src">BleepingComputer</div></div>
-    <div class="fi-time">2026-02-23 18:04</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.bleepingcomputer.com/news/security/ad-tech-firm-optimizely-confirms-data-breach-after-vishing-attack/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Ad tech firm Optimizely confirms data breach after vishing attack</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Ad tech firm Optimizely confirms data breach after vishing attack」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.bleepingcomputer.com/news/security/ad-tech-firm-optimizely-confirms-data-breach-after-vishing-attack/" target="_blank" rel="noopener">BleepingComputer</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">DR</div>
-    <div><div class="fi-src">Dark Reading</div></div>
+    <span class="hot-badge hot-warm">🌡 55</span>
     <div class="fi-time">2026-02-23 22:20</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.darkreading.com/cyber-risk/atm-jackpotting-attacks-surged-2025" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Spitting Cash: ATM Jackpotting Attacks Surged in 2025</a></div>
+    <div class="fi-title"><a href="https://www.darkreading.com/cyber-risk/atm-jackpotting-attacks-surged-2025" target="_blank" rel="noopener">Spitting Cash: ATM Jackpotting Attacks Surged in 2025</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Spitting Cash: ATM Jackpotting Attacks Surged in 2025」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1093,29 +1119,85 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
-    <div><div class="fi-src">INTERNET Watch</div></div>
-    <div class="fi-time">2026-02-23 21:00</div>
+    <div class="fi-av" style="background:#003366">SW</div>
+    <div><div class="fi-src">SecurityWeek</div></div>
+    
+    <div class="fi-time">2026-02-23 12:30</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://internet.watch.impress.co.jp/docs/column/shimizu/2086089.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">LANケーブルの”ややこしい”話　「カテゴリー8」ってどうなの？【イニシャルB】</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「LANケーブルの”ややこしい”話　「カテゴリー8」ってどうなの？【イニシャルB】」についてのニュースです。</div>
+    <div class="fi-title"><a href="https://www.securityweek.com/autonomous-ai-agents-provide-new-class-of-supply-chain-attack/" target="_blank" rel="noopener">Autonomous AI Agents Provide New Class of Supply Chain Attack</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Autonomous AI Agents Provide New Class of Supply Chain Attack」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
     <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://internet.watch.impress.co.jp/docs/column/shimizu/2086089.html" target="_blank" rel="noopener">INTERNET Watch</a></div>
+    <div class="fi-source">📎 <a href="https://www.securityweek.com/autonomous-ai-agents-provide-new-class-of-supply-chain-attack/" target="_blank" rel="noopener">SecurityWeek</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
+    <div class="fi-av" style="background:#003366">SW</div>
+    <div><div class="fi-src">SecurityWeek</div></div>
+    
+    <div class="fi-time">2026-02-23 11:34</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.securityweek.com/hundreds-of-fortigate-firewalls-hacked-in-ai-powered-attacks-aws/" target="_blank" rel="noopener">Hundreds of FortiGate Firewalls Hacked in AI-Powered Attacks: AWS</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Hundreds of FortiGate Firewalls Hacked in AI-Powered Attacks: AWS」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.securityweek.com/hundreds-of-fortigate-firewalls-hacked-in-ai-powered-attacks-aws/" target="_blank" rel="noopener">SecurityWeek</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#003366">SW</div>
+    <div><div class="fi-src">SecurityWeek</div></div>
+    
+    <div class="fi-time">2026-02-23 10:47</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.securityweek.com/recent-roundcube-webmail-vulnerability-exploited-in-attacks/" target="_blank" rel="noopener">Recent RoundCube Webmail Vulnerability Exploited in Attacks</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Recent RoundCube Webmail Vulnerability Exploited in Attacks」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.securityweek.com/recent-roundcube-webmail-vulnerability-exploited-in-attacks/" target="_blank" rel="noopener">SecurityWeek</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#236b8e">BC</div>
+    <div><div class="fi-src">BleepingComputer</div></div>
+    
+    <div class="fi-time">2026-02-23 21:59</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.bleepingcomputer.com/news/security/spain-arrests-suspected-anonymous-fenix-hacktivists-for-ddosing-govt-sites/" target="_blank" rel="noopener">Spain arrests suspected hacktivists for DDoSing govt sites</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Spain arrests suspected hacktivists for DDoSing govt sites」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.bleepingcomputer.com/news/security/spain-arrests-suspected-anonymous-fenix-hacktivists-for-ddosing-govt-sites/" target="_blank" rel="noopener">BleepingComputer</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#e60012">JP</div>
     <div><div class="fi-src">ITmedia エンタープライズ</div></div>
+    
     <div class="fi-time">2026-02-23 23:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.itmedia.co.jp/enterprise/articles/2602/24/news034.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">AIに代替される人材の特徴は？　「2029年までに定型業務のみ人材の90％がAIに」</a></div>
+    <div class="fi-title"><a href="https://www.itmedia.co.jp/enterprise/articles/2602/24/news034.html" target="_blank" rel="noopener">AIに代替される人材の特徴は？　「2029年までに定型業務のみ人材の90％がAIに」</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「AIに代替される人材の特徴は？　「2029年までに定型業務のみ人材の90％がAIに」」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1127,17 +1209,36 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
+    <div class="fi-av" style="background:#369">JP</div>
     <div><div class="fi-src">INTERNET Watch</div></div>
-    <div class="fi-time">2026-02-24 01:30</div>
+    
+    <div class="fi-time">2026-02-24 01:47</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://internet.watch.impress.co.jp/docs/shopping/2087966.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Ankerの電源タップ、スマホもPCも充電できるUSBポート付きモデル各種がAmazonでセール中！　最大100WのUSB急速充電に対応した「Charging Station（7-in-1, 100W）」は8490円</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Ankerの電源タップ、スマホもPCも充電できるUSBポート付きモデル各種がAmazonでセール中！　最大100WのUSB急速充電に対応した「Charging Station（7-in-1, 100W）」は8490円」についてのニュースです。</div>
+    <div class="fi-title"><a href="https://internet.watch.impress.co.jp/docs/yajiuma/2087979.html" target="_blank" rel="noopener">運営期間より更新停止期間が長かった？ 「みんなのごはん」がサイトのクローズを発表【やじうまWatch】</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「運営期間より更新停止期間が長かった？ 「みんなのごはん」がサイトのクローズを発表【やじうまWatch】」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
     <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://internet.watch.impress.co.jp/docs/shopping/2087966.html" target="_blank" rel="noopener">INTERNET Watch</a></div>
+    <div class="fi-source">📎 <a href="https://internet.watch.impress.co.jp/docs/yajiuma/2087979.html" target="_blank" rel="noopener">INTERNET Watch</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#369">JP</div>
+    <div><div class="fi-src">INTERNET Watch</div></div>
+    
+    <div class="fi-time">2026-02-24 01:44</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://internet.watch.impress.co.jp/docs/yajiuma/2087974.html" target="_blank" rel="noopener">都道府県の大きさを世界地図上で比較できる「どこでも47都道府県マップ」が公開中【やじうまWatch】</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「都道府県の大きさを世界地図上で比較できる「どこでも47都道府県マップ」が公開中【やじうまWatch】」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://internet.watch.impress.co.jp/docs/yajiuma/2087974.html" target="_blank" rel="noopener">INTERNET Watch</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
@@ -1145,24 +1246,31 @@
   </div>
   <div class="sidebar">
     <div class="sb-card">
-      <div class="sb-title">🔥 Hacker News トップ 10</div>
-      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://www.guitarworld.com/artists/guitarists/william-shatner-announces-all-star-metal-album" target="_blank" rel="noopener" class="hn-title">Shatner is making an album with 35 metal icons</a><span class="hn-score">▲34</span></div></div>
-<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/" target="_blank" rel="noopener" class="hn-title">FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me</a><span class="hn-score">▲233</span></div></div>
-<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://dork.dev/posts/2026-02-20-ported-coreboot/" target="_blank" rel="noopener" class="hn-title">I Ported Coreboot to the ThinkPad X270</a><span class="hn-score">▲23</span></div></div>
-<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/" target="_blank" rel="noopener" class="hn-title">UNIX99, a UNIX-like OS for the TI-99/4A</a><span class="hn-score">▲136</span></div></div>
-<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap: Verifying age undermines everyone's data protection</a><span class="hn-score">▲1191</span></div></div>
-<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird adopts Rust</a><span class="hn-score">▲1066</span></div></div>
-<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener" class="hn-title">Show HN: PgDog – Scale Postgres without changing the app</a><span class="hn-score">▲186</span></div></div>
-<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://jamesoswald.dev/posts/bigoinequality/" target="_blank" rel="noopener" class="hn-title">What is f(x) ≤ g(x) + O(1)? Inequalities With Asymptotics</a><span class="hn-score">▲25</span></div></div>
-<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380" target="_blank" rel="noopener" class="hn-title">AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says</a><span class="hn-score">▲146</span></div></div>
-<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/" target="_blank" rel="noopener" class="hn-title">Making Wolfram Tech Available as a Foundation Tool for LLM Systems</a><span class="hn-score">▲37</span></div></div>
+      <div class="sb-title">🔤 今日のホットワード</div>
+      <div class="hw-cloud">
+        <span class="hw hw-xl" title="12回出現">Anthropic</span><span class="hw hw-lg" title="9回出現">Claude</span><span class="hw hw-lg" title="8回出現">Code</span><span class="hw hw-lg" title="6回出現">Agent</span><span class="hw hw-md" title="5回出現">Google</span><span class="hw hw-md" title="5回出現">AWS</span><span class="hw hw-md" title="5回出現">API</span><span class="hw hw-md" title="4回出現">Security</span><span class="hw hw-md" title="4回出現">コード</span><span class="hw hw-md" title="4回出現">TechCrunch</span><span class="hw hw-md" title="4回出現">Disrupt</span><span class="hw hw-sm" title="3回出現">OpenAI</span>
+      </div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">🔥 注目ニュース（全タブ横断）</div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener" class="tl-title">Pope tells priests to use their brains, not AI, to write hom</a><div class="tl-meta"><span class="tl-source" style="color:#ff6600">Hacker News</span><span class="tl-hot">🔥68</span></div><div class=tl-reason>HN:527pts(超注目), クロスソース:10社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener" class="tl-title">OpenAI announces Frontier Alliance Partners</a><div class="tl-meta"><span class="tl-source" style="color:#10a37f">OpenAI Blog</span><span class="tl-hot">🔥67</span></div><div class=tl-reason>HN関連(590pts), はてブ関連(9ブクマ)</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/" target="_blank" rel="noopener" class="tl-title">OpenAI calls in the consultants for its enterprise push</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:3社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener" class="tl-title">Spotify rolls out AI-powered  Prompted Playlists to the UK a</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:5社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://zenn.dev/neurostack_0001/articles/claude-code-qa-sprint-testcase-generation" target="_blank" rel="noopener" class="tl-title">支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話</a><div class="tl-meta"><span class="tl-source" style="color:#3ea8ff">Zenn トレンド</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>はてブ関連(268ブクマ), クロスソース:5社</div></div></div>
+      </div>
     </div>
     <div class="sb-card">
       <div class="sb-title">ℹ️ このダッシュボードについて</div>
       <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
         毎朝7時に自動更新。<br>
-        RSS / HN / Redditからニュースを取得し、<br>
-        Gemini AIが日本語でやさしく解説。<br>
+        RSS / HN / はてブからニュースを取得し、<br>
+        ホットネス判定で注目記事を厳選。<br>
+        Groq AI が日本語でやさしく解説。<br>
         用語にマウスを乗せると解説が見れます。
       </div>
     </div>
@@ -1173,12 +1281,31 @@
     
     <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
+    <div class="fi-av" style="background:#5200FF">TV</div>
+    <div><div class="fi-src">The Verge Tech</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
+    <div class="fi-time">2026-02-23 16:22</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://www.theverge.com/tech/878369/discord-persona-age-verification" target="_blank" rel="noopener">Discord distances itself from Persona age verification after user backlash</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Discord distances itself from Persona age verification after user backlash」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://www.theverge.com/tech/878369/discord-persona-age-verification" target="_blank" rel="noopener">The Verge Tech</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#333">JP</div>
     <div><div class="fi-src">GIGAZINE</div></div>
+    <span class="hot-badge hot-warm">🌡 52</span>
     <div class="fi-time">2026-02-24 01:28</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://gigazine.net/news/20260224-claude-code-security/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">「Claude Code Security」が登場、コード内の脆弱性をスキャンして修正提案もしてくれる</a></div>
+    <div class="fi-title"><a href="https://gigazine.net/news/20260224-claude-code-security/" target="_blank" rel="noopener">「Claude Code Security」が登場、コード内の脆弱性をスキャンして修正提案もしてくれる</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「「Claude Code Security」が登場、コード内の脆弱性をスキャンして修正提案もしてくれる」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1192,10 +1319,11 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#e00">TH</div>
     <div><div class="fi-src">Tom's Hardware</div></div>
+    
     <div class="fi-time">2026-02-23 21:27</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-accuses-deepseek-other-chinese-ai-developers-of-industrial-scale-copying-claims-distillation-included-24-000-fraudulent-accounts-and-16-million-exchanges-to-train-smaller-models" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Anthropic accuses DeepSeek, other Chinese AI developers of 'industrial-scale' copying — Claims 'distillation' included 24,000 fraudulent accounts and 16 million exchanges to train smaller models</a></div>
+    <div class="fi-title"><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-accuses-deepseek-other-chinese-ai-developers-of-industrial-scale-copying-claims-distillation-included-24-000-fraudulent-accounts-and-16-million-exchanges-to-train-smaller-models" target="_blank" rel="noopener">Anthropic accuses DeepSeek, other Chinese AI developers of 'industrial-scale' copying — Claims 'distillation' included 24,000 fraudulent accounts and 16 million exchanges to train smaller models</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Anthropic accuses DeepSeek, other Chinese AI developers of 'industrial-scale' copying — Claims 'distillation' included 24,000 fraudulent accounts and 16 million exchanges to train smaller models」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1207,12 +1335,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">TV</div>
+    <div class="fi-av" style="background:#5200FF">TV</div>
     <div><div class="fi-src">The Verge Tech</div></div>
+    
     <div class="fi-time">2026-02-23 17:31</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.theverge.com/tech/883089/acme-weather-forecast-app-ios-dark-sky-creators-subscription" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">The creators of Dark Sky have a new weather app that shares multiple predictions</a></div>
+    <div class="fi-title"><a href="https://www.theverge.com/tech/883089/acme-weather-forecast-app-ios-dark-sky-creators-subscription" target="_blank" rel="noopener">The creators of Dark Sky have a new weather app that shares multiple predictions</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「The creators of Dark Sky have a new weather app that shares multiple predictions」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1224,29 +1353,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">TV</div>
+    <div class="fi-av" style="background:#5200FF">TV</div>
     <div><div class="fi-src">The Verge Tech</div></div>
-    <div class="fi-time">2026-02-23 16:22</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://www.theverge.com/tech/878369/discord-persona-age-verification" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Discord distances itself from Persona age verification after user backlash</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Discord distances itself from Persona age verification after user backlash」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://www.theverge.com/tech/878369/discord-persona-age-verification" target="_blank" rel="noopener">The Verge Tech</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">TV</div>
-    <div><div class="fi-src">The Verge Tech</div></div>
     <div class="fi-time">2026-02-23 16:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.theverge.com/ai-artificial-intelligence/882956/ai-deepfake-detection-labels-c2pa-instagram-youtube" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Does Big Tech actually care about fighting AI slop?</a></div>
+    <div class="fi-title"><a href="https://www.theverge.com/ai-artificial-intelligence/882956/ai-deepfake-detection-labels-c2pa-instagram-youtube" target="_blank" rel="noopener">Does Big Tech actually care about fighting AI slop?</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Does Big Tech actually care about fighting AI slop?」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1258,29 +1371,49 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">TC</div>
-    <div><div class="fi-src">TechCrunch HW</div></div>
-    <div class="fi-time">2026-02-23 15:00</div>
+    <div class="fi-av" style="background:#333">JP</div>
+    <div><div class="fi-src">GIGAZINE</div></div>
+    
+    <div class="fi-time">2026-02-24 02:02</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates」についてのニュースです。</div>
+    <div class="fi-title"><a href="https://gigazine.net/news/20260224-anthropic-persona-selection-model/" target="_blank" rel="noopener">AIが人間っぽい応答をするのは「そのように開発されたから」だけではなく「なぜか人間っぽくなった」という部分も大きいとAnthropicが説明</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「AIが人間っぽい応答をするのは「そのように開発されたから」だけではなく「なぜか人間っぽくなった」という部分も大きいとAnthropicが説明」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
     <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/" target="_blank" rel="noopener">TechCrunch HW</a></div>
+    <div class="fi-source">📎 <a href="https://gigazine.net/news/20260224-anthropic-persona-selection-model/" target="_blank" rel="noopener">GIGAZINE</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">TC</div>
+    <div class="fi-av" style="background:#333">JP</div>
+    <div><div class="fi-src">GIGAZINE</div></div>
+    
+    <div class="fi-time">2026-02-24 01:55</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://gigazine.net/news/20260224-anthropic-deepseek-moonshot-minimax/" target="_blank" rel="noopener">Anthropicが「中国AI企業のDeepSeek・Moonshot・MiniMaxは不正にClaudeの能力を抽出している」と非難</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Anthropicが「中国AI企業のDeepSeek・Moonshot・MiniMaxは不正にClaudeの能力を抽出している」と非難」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://gigazine.net/news/20260224-anthropic-deepseek-moonshot-minimax/" target="_blank" rel="noopener">GIGAZINE</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
     <div><div class="fi-src">TechCrunch HW</div></div>
+    
     <div class="fi-time">2026-02-21 15:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">7 days until ticket prices rise for TechCrunch Disrupt 2026</a></div>
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/" target="_blank" rel="noopener">7 days until ticket prices rise for TechCrunch Disrupt 2026</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「7 days until ticket prices rise for TechCrunch Disrupt 2026」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1292,12 +1425,31 @@
 </div>
 <div class="fi">
   <div class="fi-head">
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch HW</div></div>
+    
+    <div class="fi-time">2026-02-23 15:00</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/" target="_blank" rel="noopener">5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/" target="_blank" rel="noopener">TechCrunch HW</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
+<div class="fi">
+  <div class="fi-head">
     <div class="fi-av" style="background:#e00">TH</div>
     <div><div class="fi-src">Tom's Hardware</div></div>
+    
     <div class="fi-time">2026-02-23 18:24</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://www.tomshardware.com/software/linux/linux-7-0-launches-with-enablement-for-intel-nova-lake-amd-zen-6-major-kernel-update-expected-in-ubuntu-26-04-lts-and-fedora-44-first" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Linux 7.0 launches with enablement for Intel Nova Lake, AMD Zen 6 — major kernel update expected in Ubuntu 26.04 LTS and Fedora 44 first</a></div>
+    <div class="fi-title"><a href="https://www.tomshardware.com/software/linux/linux-7-0-launches-with-enablement-for-intel-nova-lake-amd-zen-6-major-kernel-update-expected-in-ubuntu-26-04-lts-and-fedora-44-first" target="_blank" rel="noopener">Linux 7.0 launches with enablement for Intel Nova Lake, AMD Zen 6 — major kernel update expected in Ubuntu 26.04 LTS and Fedora 44 first</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Linux 7.0 launches with enablement for Intel Nova Lake, AMD Zen 6 — major kernel update expected in Ubuntu 26.04 LTS and Fedora 44 first」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1307,61 +1459,34 @@
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
 </div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
-    <div><div class="fi-src">PC Watch</div></div>
-    <div class="fi-time">2026-02-23 21:07</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://pc.watch.impress.co.jp/docs/topic/feature/2087768.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">「VAIO P」の延命にWindows XPそっくりな「Q4OS」を導入してみた</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「「VAIO P」の延命にWindows XPそっくりな「Q4OS」を導入してみた」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://pc.watch.impress.co.jp/docs/topic/feature/2087768.html" target="_blank" rel="noopener">PC Watch</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
-    <div><div class="fi-src">GIGAZINE</div></div>
-    <div class="fi-time">2026-02-23 11:20</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://gigazine.net/news/20260223-evangelion-new-series/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">『エヴァンゲリオン』完全新作シリーズ制作決定、シリーズ構成・脚本はヨコオタロウで監督に鶴巻和哉＆谷田部透湖</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「『エヴァンゲリオン』完全新作シリーズ制作決定、シリーズ構成・脚本はヨコオタロウで監督に鶴巻和哉＆谷田部透湖」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
-    
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://gigazine.net/news/20260223-evangelion-new-series/" target="_blank" rel="noopener">GIGAZINE</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
   </div>
   <div class="sidebar">
     <div class="sb-card">
-      <div class="sb-title">🔥 Hacker News トップ 10</div>
-      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://www.guitarworld.com/artists/guitarists/william-shatner-announces-all-star-metal-album" target="_blank" rel="noopener" class="hn-title">Shatner is making an album with 35 metal icons</a><span class="hn-score">▲34</span></div></div>
-<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/" target="_blank" rel="noopener" class="hn-title">FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me</a><span class="hn-score">▲233</span></div></div>
-<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://dork.dev/posts/2026-02-20-ported-coreboot/" target="_blank" rel="noopener" class="hn-title">I Ported Coreboot to the ThinkPad X270</a><span class="hn-score">▲23</span></div></div>
-<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/" target="_blank" rel="noopener" class="hn-title">UNIX99, a UNIX-like OS for the TI-99/4A</a><span class="hn-score">▲136</span></div></div>
-<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap: Verifying age undermines everyone's data protection</a><span class="hn-score">▲1191</span></div></div>
-<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird adopts Rust</a><span class="hn-score">▲1066</span></div></div>
-<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener" class="hn-title">Show HN: PgDog – Scale Postgres without changing the app</a><span class="hn-score">▲186</span></div></div>
-<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://jamesoswald.dev/posts/bigoinequality/" target="_blank" rel="noopener" class="hn-title">What is f(x) ≤ g(x) + O(1)? Inequalities With Asymptotics</a><span class="hn-score">▲25</span></div></div>
-<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380" target="_blank" rel="noopener" class="hn-title">AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says</a><span class="hn-score">▲146</span></div></div>
-<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/" target="_blank" rel="noopener" class="hn-title">Making Wolfram Tech Available as a Foundation Tool for LLM Systems</a><span class="hn-score">▲37</span></div></div>
+      <div class="sb-title">🔤 今日のホットワード</div>
+      <div class="hw-cloud">
+        <span class="hw hw-xl" title="12回出現">Anthropic</span><span class="hw hw-lg" title="9回出現">Claude</span><span class="hw hw-lg" title="8回出現">Code</span><span class="hw hw-lg" title="6回出現">Agent</span><span class="hw hw-md" title="5回出現">Google</span><span class="hw hw-md" title="5回出現">AWS</span><span class="hw hw-md" title="5回出現">API</span><span class="hw hw-md" title="4回出現">Security</span><span class="hw hw-md" title="4回出現">コード</span><span class="hw hw-md" title="4回出現">TechCrunch</span><span class="hw hw-md" title="4回出現">Disrupt</span><span class="hw hw-sm" title="3回出現">OpenAI</span>
+      </div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">🔥 注目ニュース（全タブ横断）</div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener" class="tl-title">Pope tells priests to use their brains, not AI, to write hom</a><div class="tl-meta"><span class="tl-source" style="color:#ff6600">Hacker News</span><span class="tl-hot">🔥68</span></div><div class=tl-reason>HN:527pts(超注目), クロスソース:10社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener" class="tl-title">OpenAI announces Frontier Alliance Partners</a><div class="tl-meta"><span class="tl-source" style="color:#10a37f">OpenAI Blog</span><span class="tl-hot">🔥67</span></div><div class=tl-reason>HN関連(590pts), はてブ関連(9ブクマ)</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/" target="_blank" rel="noopener" class="tl-title">OpenAI calls in the consultants for its enterprise push</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:3社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener" class="tl-title">Spotify rolls out AI-powered  Prompted Playlists to the UK a</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:5社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://zenn.dev/neurostack_0001/articles/claude-code-qa-sprint-testcase-generation" target="_blank" rel="noopener" class="tl-title">支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話</a><div class="tl-meta"><span class="tl-source" style="color:#3ea8ff">Zenn トレンド</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>はてブ関連(268ブクマ), クロスソース:5社</div></div></div>
+      </div>
     </div>
     <div class="sb-card">
       <div class="sb-title">ℹ️ このダッシュボードについて</div>
       <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
         毎朝7時に自動更新。<br>
-        RSS / HN / Redditからニュースを取得し、<br>
-        Gemini AIが日本語でやさしく解説。<br>
+        RSS / HN / はてブからニュースを取得し、<br>
+        ホットネス判定で注目記事を厳選。<br>
+        Groq AI が日本語でやさしく解説。<br>
         用語にマウスを乗せると解説が見れます。
       </div>
     </div>
@@ -1374,15 +1499,16 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#ff6600">HN</div>
     <div><div class="fi-src">Hacker News</div></div>
+    <span class="hot-badge hot-warm">🌡 56</span>
     <div class="fi-time">2026-02-23 09:58</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">SETI@home: Data Acquisition and Front-End Processing (2025)</a></div>
+    <div class="fi-title"><a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener">SETI@home: Data Acquisition and Front-End Processing (2025)</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「SETI@home: Data Acquisition and Front-End Processing (2025)」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
     <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener">Hacker News</a> · <span style="color:var(--org)">▲85</span> · 💬18</div>
+    <div class="fi-source">📎 <a href="https://iopscience.iop.org/article/10.3847/1538-3881/ade5a7" target="_blank" rel="noopener">Hacker News</a> · <span style="color:var(--org)">▲86</span> · 💬18</div>
     <div class="reactions"><div class="rx-title">💬 開発者たちの反応</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">alex_suzuki:</span> Immediate nostalgia activated. I ran this on a Pentium machine (I think) at home, still living with my parents. Sometimes I yearn for the optimism and relative naïveté of those times.</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">bpoyner:</span> This paper describes the front end of SETI@home and provides parameters for the primary data source, the Arecibo ObservatoryMost of this data was recorded commensally at the Arecibo observatory over a</div><div class="rx"><span class="rx-platform rx-hn">HN</span><span class="rx-user">poorman:</span> I was just thinking about this project the other day. Seems we have a whole lot of unused compute (and now GPU). I wish someone would create a meaningful project like this to distribute AI training or</div></div>
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
@@ -1391,10 +1517,11 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#0a0">TC</div>
     <div><div class="fi-src">TechCrunch VC</div></div>
+    
     <div class="fi-time">2026-02-23 21:46</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/with-ai-investor-loyalty-is-almost-dead-at-least-a-dozen-openai-vcs-now-also-back-anthropic/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">With AI, investor loyalty is (almost) dead: At least a dozen OpenAI VCs now also back Anthropic</a></div>
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/with-ai-investor-loyalty-is-almost-dead-at-least-a-dozen-openai-vcs-now-also-back-anthropic/" target="_blank" rel="noopener">With AI, investor loyalty is (almost) dead: At least a dozen OpenAI VCs now also back Anthropic</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「With AI, investor loyalty is (almost) dead: At least a dozen OpenAI VCs now also back Anthropic」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1406,12 +1533,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">TC</div>
+    <div class="fi-av" style="background:#0a0">TC</div>
     <div><div class="fi-src">TechCrunch Startups</div></div>
+    
     <div class="fi-time">2026-02-23 16:55</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/particles-ai-news-app-listens-to-podcasts-for-interesting-clips-so-you-you-dont-have-to/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Particle’s AI news app listens to podcasts for interesting clips so you you don’t have to</a></div>
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/particles-ai-news-app-listens-to-podcasts-for-interesting-clips-so-you-you-dont-have-to/" target="_blank" rel="noopener">Particle’s AI news app listens to podcasts for interesting clips so you you don’t have to</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「Particle’s AI news app listens to podcasts for interesting clips so you you don’t have to」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1423,17 +1551,18 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#0288ff">CB</div>
-    <div><div class="fi-src">Crunchbase News</div></div>
-    <div class="fi-time">2026-02-19 12:00</div>
+    <div class="fi-av" style="background:#0a0">TC</div>
+    <div><div class="fi-src">TechCrunch VC</div></div>
+    
+    <div class="fi-time">2026-02-21 15:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://news.crunchbase.com/venture/public-private-market-innovation-gray-odin/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Innovation Is A Game Of Two Halves</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「Innovation Is A Game Of Two Halves」についてのニュースです。</div>
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/" target="_blank" rel="noopener">7 days until ticket prices rise for TechCrunch Disrupt 2026</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「7 days until ticket prices rise for TechCrunch Disrupt 2026」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
     <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://news.crunchbase.com/venture/public-private-market-innovation-gray-odin/" target="_blank" rel="noopener">Crunchbase News</a></div>
+    <div class="fi-source">📎 <a href="https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/" target="_blank" rel="noopener">TechCrunch VC</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
@@ -1442,10 +1571,11 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#0a0">TC</div>
     <div><div class="fi-src">TechCrunch VC</div></div>
+    
     <div class="fi-time">2026-02-23 15:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates</a></div>
+    <div class="fi-title"><a href="https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/" target="_blank" rel="noopener">5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1458,16 +1588,17 @@
 <div class="fi">
   <div class="fi-head">
     <div class="fi-av" style="background:#0a0">TC</div>
-    <div><div class="fi-src">TechCrunch VC</div></div>
-    <div class="fi-time">2026-02-21 15:00</div>
+    <div><div class="fi-src">TechCrunch Startups</div></div>
+    
+    <div class="fi-time">2026-02-20 23:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">7 days until ticket prices rise for TechCrunch Disrupt 2026</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「7 days until ticket prices rise for TechCrunch Disrupt 2026」についてのニュースです。</div>
+    <div class="fi-title"><a href="https://techcrunch.com/video/the-creator-economys-ad-revenue-problem-and-indias-ai-ambitions/" target="_blank" rel="noopener">The creator economy’s ad revenue problem and India’s AI ambitions</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「The creator economy’s ad revenue problem and India’s AI ambitions」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
     <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/" target="_blank" rel="noopener">TechCrunch VC</a></div>
+    <div class="fi-source">📎 <a href="https://techcrunch.com/video/the-creator-economys-ad-revenue-problem-and-indias-ai-ambitions/" target="_blank" rel="noopener">TechCrunch Startups</a></div>
     
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
@@ -1476,10 +1607,11 @@
   <div class="fi-head">
     <div class="fi-av" style="background:#0288ff">CB</div>
     <div><div class="fi-src">Crunchbase News</div></div>
+    
     <div class="fi-time">2026-02-23 12:00</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://news.crunchbase.com/venture/interesting-startup-deals-ai-robotics-energy-generation/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon</a></div>
+    <div class="fi-title"><a href="https://news.crunchbase.com/venture/interesting-startup-deals-ai-robotics-energy-generation/" target="_blank" rel="noopener">5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「5 Interesting Startup Deals You May Have Missed: Plant-Based Clothing Dyes, A Shoebox-Picking Robot, And Power Generated On The Moon」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1491,29 +1623,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
+    <div class="fi-av" style="background:#d00">JP</div>
     <div><div class="fi-src">CNET Japan</div></div>
-    <div class="fi-time">2026-02-23 16:00</div>
-  </div>
-  <div class="fi-body">
-    <div class="fi-title"><a href="https://japan.cnet.com/article/35244213/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">「エヴァンゲリオン」完全新作シリーズの制作が始動</a></div>
-    <div class="fi-easy"><strong>ざっくり言うと：</strong>「「エヴァンゲリオン」完全新作シリーズの制作が始動」についてのニュースです。</div>
-    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
-    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
-    <div class="fi-source">📎 <a href="https://japan.cnet.com/article/35244213/" target="_blank" rel="noopener">CNET Japan</a></div>
-    
-    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
-  </div>
-</div>
-<div class="fi">
-  <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
-    <div><div class="fi-src">CNET Japan</div></div>
     <div class="fi-time">2026-02-24 01:27</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://japan.cnet.com/article/35244219/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">スマホのHONORも「人型ロボット」発表へ　中国勢が急成長市場をリード</a></div>
+    <div class="fi-title"><a href="https://japan.cnet.com/article/35244219/" target="_blank" rel="noopener">スマホのHONORも「人型ロボット」発表へ　中国勢が急成長市場をリード</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「スマホのHONORも「人型ロボット」発表へ　中国勢が急成長市場をリード」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1525,12 +1641,13 @@
 </div>
 <div class="fi">
   <div class="fi-head">
-    <div class="fi-av" style="background:#64748b">JP</div>
+    <div class="fi-av" style="background:#d00">JP</div>
     <div><div class="fi-src">CNET Japan</div></div>
+    
     <div class="fi-time">2026-02-24 00:24</div>
   </div>
   <div class="fi-body">
-    <div class="fi-title"><a href="https://japan.cnet.com/article/35244206/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">iPhoneとの親和性も意識、シャオミの「激薄モバイルバッテリー」に新色登場</a></div>
+    <div class="fi-title"><a href="https://japan.cnet.com/article/35244206/" target="_blank" rel="noopener">iPhoneとの親和性も意識、シャオミの「激薄モバイルバッテリー」に新色登場</a></div>
     <div class="fi-easy"><strong>ざっくり言うと：</strong>「iPhoneとの親和性も意識、シャオミの「激薄モバイルバッテリー」に新色登場」についてのニュースです。</div>
     <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
     
@@ -1540,27 +1657,52 @@
     <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
   </div>
 </div>
+<div class="fi">
+  <div class="fi-head">
+    <div class="fi-av" style="background:#d00">JP</div>
+    <div><div class="fi-src">CNET Japan</div></div>
+    
+    <div class="fi-time">2026-02-24 00:22</div>
+  </div>
+  <div class="fi-body">
+    <div class="fi-title"><a href="https://japan.cnet.com/article/35244216/" target="_blank" rel="noopener">アップル、「iPhone 17e」や低価格「MacBook」など5製品以上を来週発表か</a></div>
+    <div class="fi-easy"><strong>ざっくり言うと：</strong>「アップル、「iPhone 17e」や低価格「MacBook」など5製品以上を来週発表か」についてのニュースです。</div>
+    <div class="fi-why">テック業界の動向を把握するために注目されています。</div>
+    
+    <div class="fi-tags"><span class="ft ft-biz">ニュース</span></div>
+    <div class="fi-source">📎 <a href="https://japan.cnet.com/article/35244216/" target="_blank" rel="noopener">CNET Japan</a></div>
+    
+    <div class="imp"><span class="imp-l">重要度</span><div class="imp-bar"><div class="imp-f imp-med" style="width:50%"></div></div></div>
+  </div>
+</div>
   </div>
   <div class="sidebar">
     <div class="sb-card">
-      <div class="sb-title">🔥 Hacker News トップ 10</div>
-      <div class="hn-item"><span class="hn-rank">1</span><div class="hn-content"><a href="https://www.guitarworld.com/artists/guitarists/william-shatner-announces-all-star-metal-album" target="_blank" rel="noopener" class="hn-title">Shatner is making an album with 35 metal icons</a><span class="hn-score">▲34</span></div></div>
-<div class="hn-item"><span class="hn-rank">2</span><div class="hn-content"><a href="https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/" target="_blank" rel="noopener" class="hn-title">FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me</a><span class="hn-score">▲233</span></div></div>
-<div class="hn-item"><span class="hn-rank">3</span><div class="hn-content"><a href="https://dork.dev/posts/2026-02-20-ported-coreboot/" target="_blank" rel="noopener" class="hn-title">I Ported Coreboot to the ThinkPad X270</a><span class="hn-score">▲23</span></div></div>
-<div class="hn-item"><span class="hn-rank">4</span><div class="hn-content"><a href="https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/" target="_blank" rel="noopener" class="hn-title">UNIX99, a UNIX-like OS for the TI-99/4A</a><span class="hn-score">▲136</span></div></div>
-<div class="hn-item"><span class="hn-rank">5</span><div class="hn-content"><a href="https://spectrum.ieee.org/age-verification" target="_blank" rel="noopener" class="hn-title">The Age Verification Trap: Verifying age undermines everyone's data protection</a><span class="hn-score">▲1191</span></div></div>
-<div class="hn-item"><span class="hn-rank">6</span><div class="hn-content"><a href="https://ladybird.org/posts/adopting-rust/" target="_blank" rel="noopener" class="hn-title">Ladybird adopts Rust</a><span class="hn-score">▲1066</span></div></div>
-<div class="hn-item"><span class="hn-rank">7</span><div class="hn-content"><a href="https://github.com/pgdogdev/pgdog" target="_blank" rel="noopener" class="hn-title">Show HN: PgDog – Scale Postgres without changing the app</a><span class="hn-score">▲186</span></div></div>
-<div class="hn-item"><span class="hn-rank">8</span><div class="hn-content"><a href="https://jamesoswald.dev/posts/bigoinequality/" target="_blank" rel="noopener" class="hn-title">What is f(x) ≤ g(x) + O(1)? Inequalities With Asymptotics</a><span class="hn-score">▲25</span></div></div>
-<div class="hn-item"><span class="hn-rank">9</span><div class="hn-content"><a href="https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380" target="_blank" rel="noopener" class="hn-title">AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says</a><span class="hn-score">▲146</span></div></div>
-<div class="hn-item"><span class="hn-rank">10</span><div class="hn-content"><a href="https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/" target="_blank" rel="noopener" class="hn-title">Making Wolfram Tech Available as a Foundation Tool for LLM Systems</a><span class="hn-score">▲37</span></div></div>
+      <div class="sb-title">🔤 今日のホットワード</div>
+      <div class="hw-cloud">
+        <span class="hw hw-xl" title="12回出現">Anthropic</span><span class="hw hw-lg" title="9回出現">Claude</span><span class="hw hw-lg" title="8回出現">Code</span><span class="hw hw-lg" title="6回出現">Agent</span><span class="hw hw-md" title="5回出現">Google</span><span class="hw hw-md" title="5回出現">AWS</span><span class="hw hw-md" title="5回出現">API</span><span class="hw hw-md" title="4回出現">Security</span><span class="hw hw-md" title="4回出現">コード</span><span class="hw hw-md" title="4回出現">TechCrunch</span><span class="hw hw-md" title="4回出現">Disrupt</span><span class="hw hw-sm" title="3回出現">OpenAI</span>
+      </div>
+    </div>
+    <div class="sb-card">
+      <div class="sb-title">🔥 注目ニュース（全タブ横断）</div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies" target="_blank" rel="noopener" class="tl-title">Pope tells priests to use their brains, not AI, to write hom</a><div class="tl-meta"><span class="tl-source" style="color:#ff6600">Hacker News</span><span class="tl-hot">🔥68</span></div><div class=tl-reason>HN:527pts(超注目), クロスソース:10社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://openai.com/index/frontier-alliance-partners" target="_blank" rel="noopener" class="tl-title">OpenAI announces Frontier Alliance Partners</a><div class="tl-meta"><span class="tl-source" style="color:#10a37f">OpenAI Blog</span><span class="tl-hot">🔥67</span></div><div class=tl-reason>HN関連(590pts), はてブ関連(9ブクマ)</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://thenewstack.io/pentagon-anthropic-model-orchestration/" target="_blank" rel="noopener" class="tl-title">The Pentagon’s Anthropic problem is every enterprise’s AI pr</a><div class="tl-meta"><span class="tl-source" style="color:#1a73e8">The New Stack</span><span class="tl-hot">🔥65</span></div><div class=tl-reason>HN関連(1209pts), クロスソース:15社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/" target="_blank" rel="noopener" class="tl-title">OpenAI calls in the consultants for its enterprise push</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:3社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/" target="_blank" rel="noopener" class="tl-title">Spotify rolls out AI-powered  Prompted Playlists to the UK a</a><div class="tl-meta"><span class="tl-source" style="color:#0a0">TechCrunch AI</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>HN関連(527pts), クロスソース:5社</div></div></div>
+<div class="tl-item"><div class="tl-dot tl-dot-warm"></div><div class="tl-content"><a href="https://zenn.dev/neurostack_0001/articles/claude-code-qa-sprint-testcase-generation" target="_blank" rel="noopener" class="tl-title">支援先のQAチームにClaude Codeを導入してテストケース生成を自動化した話</a><div class="tl-meta"><span class="tl-source" style="color:#3ea8ff">Zenn トレンド</span><span class="tl-hot">🔥62</span></div><div class=tl-reason>はてブ関連(268ブクマ), クロスソース:5社</div></div></div>
+      </div>
     </div>
     <div class="sb-card">
       <div class="sb-title">ℹ️ このダッシュボードについて</div>
       <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
         毎朝7時に自動更新。<br>
-        RSS / HN / Redditからニュースを取得し、<br>
-        Gemini AIが日本語でやさしく解説。<br>
+        RSS / HN / はてブからニュースを取得し、<br>
+        ホットネス判定で注目記事を厳選。<br>
+        Groq AI が日本語でやさしく解説。<br>
         用語にマウスを乗せると解説が見れます。
       </div>
     </div>
