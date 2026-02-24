@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Tech Pulse v5 - ニュース取得スクリプト（Groq版・ソース強化＋日本語メディア）
-Hacker News全タブ振り分け + 海外速報メディア + 日本語メディア + 企業ブログ
+Tech Pulse v6 - ニュース取得スクリプト（Groq版・ホットネス判定付き）
+HN + はてブ + クロスソース検出で「本当にホットな記事」を厳選
+Zenn, Qiita, はてブホットエントリーを追加
 Groq API (Llama 3.3 70B) でやさしい日本語解説を生成する
 """
 
@@ -11,6 +12,8 @@ import time
 import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from collections import Counter
+from difflib import SequenceMatcher
 
 import requests
 import feedparser
@@ -24,10 +27,9 @@ GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
 
-MAX_PER_TAB = 8
+MAX_PER_TAB = 10
 
 # ─── RSSフィード定義（タブ別） ───────────────────────────
-# ★ 速報系ニュースメディア + 企業ブログのバランス型
 FEEDS = {
     "ai": [
         # --- 海外速報系メディア ---
@@ -60,6 +62,9 @@ FEEDS = {
         {"url": "https://www.publickey1.jp/atom.xml", "name": "Publickey", "icon": "JP", "priority": 1, "lang": "ja"},
         {"url": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml", "name": "ITmedia News", "icon": "JP", "priority": 2, "lang": "ja"},
         {"url": "https://japan.zdnet.com/rss/index.rdf", "name": "ZDNet Japan", "icon": "JP", "priority": 2, "lang": "ja"},
+        # --- エンジニアコミュニティ ---
+        {"url": "https://zenn.dev/feed", "name": "Zenn トレンド", "icon": "ZN", "priority": 1, "lang": "ja"},
+        {"url": "https://qiita.com/popular-items/feed.atom", "name": "Qiita 人気", "icon": "QT", "priority": 1, "lang": "ja"},
     ],
     "data_dx": [
         # --- 海外速報系 ---
@@ -88,7 +93,7 @@ FEEDS = {
         {"url": "https://cloud.watch.impress.co.jp/data/rss/1.0/cw/feed.rdf", "name": "クラウドWatch", "icon": "JP", "priority": 1, "lang": "ja"},
     ],
     "security": [
-        # --- 海外速報系（セキュリティは速報が命） ---
+        # --- 海外速報系 ---
         {"url": "https://krebsonsecurity.com/feed/", "name": "Krebs on Security", "icon": "KS", "priority": 1},
         {"url": "https://www.bleepingcomputer.com/feed/", "name": "BleepingComputer", "icon": "BC", "priority": 1},
         {"url": "https://thehackernews.com/feeds/posts/default", "name": "The Hacker News", "icon": "HN", "priority": 1},
@@ -122,6 +127,9 @@ FEEDS = {
     ],
 }
 
+# はてなブックマーク ホットエントリー（テクノロジー）- タブ横断のホットネス判定用
+HATENA_HOTENTRY_URL = "https://b.hatena.ne.jp/hotentry/it.rss"
+
 # ─── HN記事のタブ振り分けキーワード ──────────────────────
 HN_TAB_KEYWORDS = {
     "ai": ["ai", "llm", "gpt", "claude", "gemini", "model", "neural", "ml", "openai", "anthropic",
@@ -140,7 +148,7 @@ HN_TAB_KEYWORDS = {
                  "security", "privacy", "ddos"],
     "hardware": ["chip", "gpu", "cpu", "nvidia", "amd", "intel", "apple silicon", "arm",
                  "semiconductor", "fab", "tsmc", "memory", "ssd", "hardware", "quantum",
-                 "chip", "processor", "tpu"],
+                 "processor", "tpu"],
     "funding": ["funding", "raised", "series a", "series b", "series c", "ipo", "acquisition",
                 "acquired", "valuation", "unicorn", "startup", "venture", "investment", "layoff"],
 }
@@ -156,11 +164,155 @@ TAG_KEYWORDS = {
 }
 
 
+# ─── ホットネス判定エンジン ────────────────────────────────
+
+def fetch_hatena_hotentry():
+    """はてブのテクノロジーホットエントリーを取得（ホットさの温度計）"""
+    try:
+        resp = requests.get(HATENA_HOTENTRY_URL, timeout=15, headers={"User-Agent": "TechPulse/4.0"})
+        feed = feedparser.parse(resp.text)
+        entries = []
+        for entry in feed.entries[:30]:
+            bookmarks = 0
+            # はてブRSSにはブックマーク数が含まれる場合がある
+            if hasattr(entry, "hatena_bookmarkcount"):
+                bookmarks = int(entry.hatena_bookmarkcount)
+            entries.append({
+                "title": entry.get("title", ""),
+                "url": entry.get("link", ""),
+                "bookmarks": bookmarks,
+            })
+        return entries
+    except Exception as e:
+        print(f"  [WARN] はてブ取得失敗: {e}")
+        return []
+
+
+def normalize_title(title):
+    """タイトルを正規化して比較しやすくする"""
+    t = title.lower().strip()
+    t = re.sub(r'[^\w\s]', '', t)
+    t = re.sub(r'\s+', ' ', t)
+    return t
+
+
+def title_similarity(t1, t2):
+    """2つのタイトルの類似度を計算（0-1）"""
+    n1 = normalize_title(t1)
+    n2 = normalize_title(t2)
+    return SequenceMatcher(None, n1, n2).ratio()
+
+
+def extract_key_phrases(title):
+    """タイトルからキーフレーズを抽出"""
+    # 固有名詞やキーワードを抽出
+    words = re.findall(r'[A-Z][a-zA-Z]+|[a-z]{4,}', title)
+    return set(w.lower() for w in words)
+
+
+def calc_hotness(article, hn_titles, hatena_titles, all_rss_titles):
+    """
+    記事のホットネススコアを計算（0-100）
+
+    構成要素:
+    1. HNスコア（HN記事の場合）: 最大30点
+    2. はてブ関連度: 最大25点
+    3. クロスソース検出: 最大25点
+    4. 鮮度: 最大10点
+    5. ソース優先度: 最大10点
+    """
+    score = 0.0
+    reasons = []
+
+    title = article.get("title", "")
+
+    # 1. HNスコア（HN記事のupvote数）
+    hn_score = article.get("score", 0)
+    if hn_score > 0:
+        if hn_score >= 500:
+            score += 30
+            reasons.append(f"HN:{hn_score}pts(超注目)")
+        elif hn_score >= 300:
+            score += 25
+            reasons.append(f"HN:{hn_score}pts(注目)")
+        elif hn_score >= 100:
+            score += 15
+            reasons.append(f"HN:{hn_score}pts")
+        elif hn_score >= 50:
+            score += 8
+            reasons.append(f"HN:{hn_score}pts")
+    else:
+        # HN記事でなくても、HNで似たタイトルの記事がある場合ボーナス
+        for hn_t in hn_titles:
+            sim = title_similarity(title, hn_t["title"])
+            if sim > 0.4:
+                hn_pts = min(hn_t.get("score", 0) / 20, 20)
+                score += hn_pts
+                reasons.append(f"HN関連({hn_t['score']}pts)")
+                break
+
+    # 2. はてブ関連度（はてブホットエントリーに類似タイトルがある場合）
+    for hb in hatena_titles:
+        sim = title_similarity(title, hb["title"])
+        if sim > 0.35:
+            bm = hb.get("bookmarks", 50)
+            hatena_pts = min(bm / 10, 25)
+            score += max(hatena_pts, 10)  # 最低10点
+            reasons.append(f"はてブ関連({bm}ブクマ)")
+            break
+        # URLが一致する場合も
+        if article.get("url") and hb.get("url") and article["url"] == hb["url"]:
+            score += 25
+            reasons.append("はてブHot")
+            break
+
+    # 3. クロスソース検出（複数メディアが同じ話題を報じている）
+    key_phrases = extract_key_phrases(title)
+    cross_count = 0
+    cross_sources = set()
+    for other in all_rss_titles:
+        if other["source"] == article.get("source"):
+            continue
+        other_phrases = extract_key_phrases(other["title"])
+        overlap = key_phrases & other_phrases
+        if len(overlap) >= 2 or title_similarity(title, other["title"]) > 0.4:
+            cross_count += 1
+            cross_sources.add(other["source"])
+    if cross_count >= 3:
+        score += 25
+        reasons.append(f"クロスソース:{len(cross_sources)}社")
+    elif cross_count >= 2:
+        score += 18
+        reasons.append(f"クロスソース:{len(cross_sources)}社")
+    elif cross_count >= 1:
+        score += 10
+        reasons.append(f"クロスソース:{len(cross_sources)}社")
+
+    # 4. 鮮度（新しいほど高い）
+    freshness_hours = article.get("freshness", 48)
+    if freshness_hours < 6:
+        score += 10
+    elif freshness_hours < 12:
+        score += 7
+    elif freshness_hours < 24:
+        score += 5
+    elif freshness_hours < 48:
+        score += 2
+
+    # 5. ソース優先度
+    priority = article.get("priority", 3)
+    score += max(0, (4 - priority) * 3.3)  # priority 1 = 10点, 2 = 6.6点, 3 = 3.3点
+
+    article["hotness"] = round(min(score, 100), 1)
+    article["hotness_reasons"] = reasons
+    return article
+
+
 # ─── ニュース取得関数 ─────────────────────────────────────
 
 def fetch_rss(feed_info):
     try:
-        resp = requests.get(feed_info["url"], timeout=15, headers={"User-Agent": "TechPulse/3.0"})
+        resp = requests.get(feed_info["url"], timeout=15, headers={"User-Agent": "TechPulse/4.0"})
         feed = feedparser.parse(resp.text)
         articles = []
         now = datetime.now(timezone.utc)
@@ -198,8 +350,8 @@ def fetch_rss(feed_info):
         return []
 
 
-def fetch_hn_top(limit=30):
-    """HNトップ記事を取得（多めに取得して各タブに振り分ける）"""
+def fetch_hn_top(limit=50):
+    """HNトップ記事を取得（ホットネス判定用に多めに取得）"""
     try:
         ids = requests.get("https://hacker-news.firebaseio.com/v0/topstories.json", timeout=10).json()
         articles = []
@@ -208,9 +360,8 @@ def fetch_hn_top(limit=30):
                 item = requests.get(f"https://hacker-news.firebaseio.com/v0/item/{item_id}.json", timeout=5).json()
                 if not item or item.get("type") != "story":
                     continue
-                title = item.get("title", "")
                 articles.append({
-                    "title": title,
+                    "title": item.get("title", ""),
                     "url": item.get("url", f"https://news.ycombinator.com/item?id={item_id}"),
                     "score": item.get("score", 0),
                     "comments": item.get("descendants", 0),
@@ -218,7 +369,7 @@ def fetch_hn_top(limit=30):
                     "published": datetime.fromtimestamp(item.get("time", 0), tz=timezone.utc).strftime("%Y-%m-%d %H:%M"),
                     "source": "Hacker News",
                     "icon": "HN",
-                    "priority": 0,  # HNはスコアで重み付けするので最高優先度
+                    "priority": 0,
                 })
             except Exception:
                 continue
@@ -267,7 +418,6 @@ def fetch_hn_comments(hn_id, limit=3):
 # ─── Groq API 解説生成 ───────────────────────────────────
 
 def call_groq(prompt):
-    """Groq APIを呼び出す"""
     try:
         resp = requests.post(
             GROQ_URL,
@@ -373,31 +523,20 @@ def _fallback(title):
 def detect_breaking(articles):
     breaking = []
     for a in articles:
-        score = a.get("score", 0)
-        impact = a.get("impact", 50)
-        if score > 300 or impact >= 85:
+        hotness = a.get("hotness", 0)
+        if hotness >= 60:
             breaking.append({
                 "text": a.get("easy", a.get("title", "")),
-                "level": "red" if impact >= 90 else "orange" if impact >= 80 else "blue",
+                "level": "red" if hotness >= 80 else "orange" if hotness >= 60 else "blue",
             })
     return breaking[:3]
-
-
-def smart_sort(articles):
-    """スコア・鮮度・優先度を総合的にスコアリングして並び替え"""
-    def calc_score(a):
-        hn_score = min(a.get("score", 0) / 100, 5)  # HN点数（最大5点）
-        freshness = max(0, 5 - a.get("freshness", 48) / 12)  # 鮮度（最大5点、12時間で1点減）
-        priority = max(0, 4 - a.get("priority", 3))  # ソース優先度（最大3点）
-        return hn_score + freshness + priority
-    return sorted(articles, key=calc_score, reverse=True)
 
 
 # ─── メイン処理 ─────────────────────────────────────────
 
 def main():
     print("=" * 60)
-    print("Tech Pulse v5 (Groq) - ニュース取得開始")
+    print("Tech Pulse v6 (Groq) - ホットネス判定付きニュース取得")
     print(f"時刻: {datetime.now(JST).strftime('%Y-%m-%d %H:%M JST')}")
     print(f"API: Groq ({GROQ_MODEL})")
     print(f"APIキー: {'設定済み' if GROQ_API_KEY else '未設定'}")
@@ -405,20 +544,25 @@ def main():
 
     # Groq API接続テスト
     if GROQ_API_KEY:
-        print("\n[0/4] Groq API 接続テスト...")
+        print("\n[0/5] Groq API 接続テスト...")
         test = call_groq("Say OK in one word.")
         if test:
             print(f"  [OK] Groq API 正常動作")
         else:
             print(f"  [ERROR] Groq API に接続できません")
 
-    all_data = {}
+    # ── Step 1: ホットネスの温度計を取得 ──
+    print("\n[1/5] ホットネス判定データ取得中...")
 
-    # ── HN記事取得＆全タブ振り分け ──
-    print("\n[1/4] Hacker News トップ30記事を取得・振り分け中...")
-    hn_articles = fetch_hn_top(30)
-    print(f"  -> {len(hn_articles)} 件取得")
+    # HN トップ50（グローバルのホットさ）
+    hn_articles = fetch_hn_top(50)
+    print(f"  -> Hacker News: {len(hn_articles)} 件")
 
+    # はてブ ホットエントリー（日本のホットさ）
+    hatena_entries = fetch_hatena_hotentry()
+    print(f"  -> はてブHot: {len(hatena_entries)} 件")
+
+    # HNをタブ別に振り分け
     hn_by_tab = {tab: [] for tab in FEEDS.keys()}
     hn_unclassified = []
     for article in hn_articles:
@@ -429,11 +573,15 @@ def main():
             hn_unclassified.append(article)
 
     for tab, articles in hn_by_tab.items():
-        print(f"  -> {tab}: {len(articles)} 件")
-    print(f"  -> 未分類: {len(hn_unclassified)} 件")
+        if articles:
+            print(f"  -> HN→{tab}: {len(articles)} 件")
+    print(f"  -> HN未分類: {len(hn_unclassified)} 件")
 
-    # ── 各タブのRSS取得 ──
-    print("\n[2/4] RSSフィード取得中...")
+    # ── Step 2: 全RSSフィード取得 ──
+    print("\n[2/5] RSSフィード取得中...")
+    all_rss_global = []  # クロスソース検出用の全記事リスト
+    tab_raw_articles = {}
+
     for tab_id, feeds in FEEDS.items():
         print(f"\n  [{tab_id}] {len(feeds)} ソースから取得中...")
         tab_articles = []
@@ -441,10 +589,11 @@ def main():
         for feed in feeds:
             articles = fetch_rss(feed)
             tab_articles.extend(articles)
+            all_rss_global.extend(articles)
             if articles:
                 print(f"    -> {feed['name']}: {len(articles)} 件")
             else:
-                print(f"    -> {feed['name']}: 0 件 (スキップ)")
+                print(f"    -> {feed['name']}: 0 件")
 
         # HN記事をこのタブに追加
         hn_for_tab = hn_by_tab.get(tab_id, [])
@@ -461,16 +610,43 @@ def main():
                 seen_titles.add(title_key)
                 unique_articles.append(a)
 
-        # スマートソートで上位を選択
-        sorted_articles = smart_sort(unique_articles)
-        tab_articles = sorted_articles[:MAX_PER_TAB]
+        tab_raw_articles[tab_id] = unique_articles
+        print(f"    => 候補: {len(unique_articles)} 件")
 
-        all_data[tab_id] = tab_articles
-        print(f"    => 最終: {len(tab_articles)} 件")
+    # ── Step 3: ホットネス判定＆記事選定 ──
+    print("\n[3/5] ホットネス判定中...")
+    all_data = {}
 
-    # ── Groq解説生成 ──
+    for tab_id, articles in tab_raw_articles.items():
+        # 全記事のホットネスを計算
+        for article in articles:
+            calc_hotness(article, hn_articles, hatena_entries, all_rss_global)
+
+        # ホットネス順にソート
+        sorted_articles = sorted(articles, key=lambda a: a.get("hotness", 0), reverse=True)
+
+        # 日本語記事を最低3件確保
+        ja_articles = [a for a in sorted_articles if a.get("lang") == "ja"]
+        en_articles = [a for a in sorted_articles if a.get("lang") != "ja"]
+
+        ja_pick = ja_articles[:min(3, len(ja_articles))]
+        remaining = MAX_PER_TAB - len(ja_pick)
+        en_pick = en_articles[:remaining]
+
+        # 最終的にホットネス順で並べ替え
+        final = sorted(ja_pick + en_pick, key=lambda a: a.get("hotness", 0), reverse=True)
+        all_data[tab_id] = final
+
+        # ホットネス上位をログ表示
+        ja_count = len([a for a in final if a.get("lang") == "ja"])
+        print(f"  [{tab_id}] {len(final)} 件（日本語 {ja_count} 件）")
+        for a in final[:3]:
+            reasons = ", ".join(a.get("hotness_reasons", [])[:2])
+            print(f"    🔥{a['hotness']:.0f} | {a['title'][:50]}... [{reasons}]")
+
+    # ── Step 4: Groq解説生成 ──
     total_articles = sum(len(v) for v in all_data.values())
-    print(f"\n[3/4] Groq API で {total_articles} 件の解説を生成中...")
+    print(f"\n[4/5] Groq API で {total_articles} 件の解説を生成中...")
     api_calls = 0
     for tab_id, articles in all_data.items():
         print(f"  [{tab_id}] {len(articles)} 件...")
@@ -495,8 +671,8 @@ def main():
 
         print(f"    -> 完了 (API {api_calls} 回)")
 
-    # ── 速報検出 ──
-    print("\n[4/4] 速報検出・データ保存中...")
+    # ── Step 5: 速報検出＆保存 ──
+    print("\n[5/5] 速報検出・データ保存中...")
     all_arts = []
     for arts in all_data.values():
         all_arts.extend(arts)
@@ -522,7 +698,8 @@ def main():
     print(f"ソース統計:")
     for tab, arts in all_data.items():
         sources = set(a["source"] for a in arts)
-        print(f"  {tab}: {len(arts)} 件 from {', '.join(sources)}")
+        avg_hot = sum(a.get("hotness", 0) for a in arts) / len(arts) if arts else 0
+        print(f"  {tab}: {len(arts)} 件 (平均ホットネス {avg_hot:.0f}) from {', '.join(sources)}")
     print(f"API呼び出し: {api_calls} 回")
     print(f"{'=' * 60}")
 
