@@ -25,7 +25,9 @@ DATA_DIR.mkdir(exist_ok=True)
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_MODEL_LARGE = "llama-3.3-70b-versatile"  # 高品質（トークン上限: 10万/日）
+GROQ_MODEL_SMALL = "llama-3.1-8b-instant"     # 軽量（トークン上限: 大幅に高い）
+TOP_N_USE_LARGE = 3  # 各タブ上位N件のみ70Bモデルを使用
 
 MAX_PER_TAB = 10
 
@@ -417,7 +419,9 @@ def fetch_hn_comments(hn_id, limit=3):
 
 # ─── Groq API 解説生成 ───────────────────────────────────
 
-def call_groq(prompt):
+def call_groq(prompt, model=None):
+    """Groq APIを呼び出す（モデル指定可能）"""
+    use_model = model or GROQ_MODEL_SMALL
     try:
         resp = requests.post(
             GROQ_URL,
@@ -426,7 +430,7 @@ def call_groq(prompt):
                 "Content-Type": "application/json",
             },
             json={
-                "model": GROQ_MODEL,
+                "model": use_model,
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": 0.4,
                 "max_tokens": 1000,
@@ -439,16 +443,21 @@ def call_groq(prompt):
         else:
             error_msg = data.get("error", {}).get("message", str(data)[:200])
             print(f"    [API Error] {error_msg}")
+            # 70Bで失敗したら8Bにフォールバック
+            if use_model == GROQ_MODEL_LARGE and "rate limit" in error_msg.lower():
+                print(f"    [FALLBACK] 8Bモデルで再試行...")
+                return call_groq(prompt, model=GROQ_MODEL_SMALL)
             return None
     except Exception as e:
         print(f"    [WARN] Groq call failed: {e}")
         return None
 
 
-def generate_rich_explanation(title, summary, tab_id, is_japanese=False):
+def generate_rich_explanation(title, summary, tab_id, is_japanese=False, use_large_model=False):
     if not GROQ_API_KEY:
         return _fallback(title)
 
+    model = GROQ_MODEL_LARGE if use_large_model else GROQ_MODEL_SMALL
     available_tags = TAG_KEYWORDS.get(tab_id, TAG_KEYWORDS["ai"])
     tags_str = ", ".join([f'"{k}"' for k in available_tags.keys()])
 
@@ -467,7 +476,7 @@ def generate_rich_explanation(title, summary, tab_id, is_japanese=False):
 必ず以下のJSON形式だけを返してください（マークダウンのコードブロック不要、JSON以外の文字を含めないで）:
 {{
   "easy": "専門用語を使わず中学生にもわかるように4-6文で詳しく説明。具体的な数字や比較を入れる。ドル表記は円換算も併記（例：3億ドル（約450億円））。",
-  "why": "このニュースが重要な理由を2文で。業界への影響や今後の展望も含めて。",
+  "why": "重要ポイントを1-2文で簡潔に。「このニュースは重要です」のような前置きは不要。いきなり具体的な理由・影響・今後の展望を書く。",
   "glossary": [
     {{"term": "専門用語1", "definition": "その用語のやさしい説明を50文字以上で"}},
     {{"term": "専門用語2", "definition": "同上"}},
@@ -480,7 +489,7 @@ def generate_rich_explanation(title, summary, tab_id, is_japanese=False):
 impactは1-100の数値（90以上=業界を変える大ニュース、70-89=注目、50-69=一般、50未満=小ネタ）。
 glossaryは記事の専門用語を3個含めてください。"""
 
-    text = call_groq(prompt)
+    text = call_groq(prompt, model=model)
     if not text:
         return _fallback(title)
 
@@ -538,16 +547,17 @@ def main():
     print("=" * 60)
     print("Tech Pulse v6 (Groq) - ホットネス判定付きニュース取得")
     print(f"時刻: {datetime.now(JST).strftime('%Y-%m-%d %H:%M JST')}")
-    print(f"API: Groq ({GROQ_MODEL})")
+    print(f"API: Groq ({GROQ_MODEL_LARGE} + {GROQ_MODEL_SMALL})")
     print(f"APIキー: {'設定済み' if GROQ_API_KEY else '未設定'}")
     print("=" * 60)
 
     # Groq API接続テスト
     if GROQ_API_KEY:
         print("\n[0/5] Groq API 接続テスト...")
-        test = call_groq("Say OK in one word.")
+        test = call_groq("Say OK in one word.", model=GROQ_MODEL_SMALL)
         if test:
             print(f"  [OK] Groq API 正常動作")
+            print(f"  モデル戦略: 上位{TOP_N_USE_LARGE}件→70B, 残り→8B")
         else:
             print(f"  [ERROR] Groq API に接続できません")
 
@@ -613,9 +623,11 @@ def main():
         tab_raw_articles[tab_id] = unique_articles
         print(f"    => 候補: {len(unique_articles)} 件")
 
-    # ── Step 3: ホットネス判定＆記事選定 ──
+    # ── Step 3: ホットネス判定＆記事選定（タブ横断の重複除去付き） ──
     print("\n[3/5] ホットネス判定中...")
     all_data = {}
+    global_seen_urls = set()     # タブ横断でURL重複を除去
+    global_seen_titles = set()   # タブ横断でタイトル重複を除去
 
     for tab_id, articles in tab_raw_articles.items():
         # 全記事のホットネスを計算
@@ -625,9 +637,20 @@ def main():
         # ホットネス順にソート
         sorted_articles = sorted(articles, key=lambda a: a.get("hotness", 0), reverse=True)
 
+        # 他タブで既に選ばれた記事を除外（タブ横断重複除去）
+        deduped = []
+        for a in sorted_articles:
+            url_key = a.get("url", "").split("?")[0].rstrip("/")  # クエリパラメータ除去
+            title_key = re.sub(r'\W+', '', a["title"].lower())[:60]
+            if url_key and url_key in global_seen_urls:
+                continue
+            if title_key in global_seen_titles:
+                continue
+            deduped.append(a)
+
         # 日本語記事を最低3件確保
-        ja_articles = [a for a in sorted_articles if a.get("lang") == "ja"]
-        en_articles = [a for a in sorted_articles if a.get("lang") != "ja"]
+        ja_articles = [a for a in deduped if a.get("lang") == "ja"]
+        en_articles = [a for a in deduped if a.get("lang") != "ja"]
 
         ja_pick = ja_articles[:min(3, len(ja_articles))]
         remaining = MAX_PER_TAB - len(ja_pick)
@@ -637,6 +660,14 @@ def main():
         final = sorted(ja_pick + en_pick, key=lambda a: a.get("hotness", 0), reverse=True)
         all_data[tab_id] = final
 
+        # 選ばれた記事をグローバル重複チェックに登録
+        for a in final:
+            url_key = a.get("url", "").split("?")[0].rstrip("/")
+            title_key = re.sub(r'\W+', '', a["title"].lower())[:60]
+            if url_key:
+                global_seen_urls.add(url_key)
+            global_seen_titles.add(title_key)
+
         # ホットネス上位をログ表示
         ja_count = len([a for a in final if a.get("lang") == "ja"])
         print(f"  [{tab_id}] {len(final)} 件（日本語 {ja_count} 件）")
@@ -644,15 +675,22 @@ def main():
             reasons = ", ".join(a.get("hotness_reasons", [])[:2])
             print(f"    🔥{a['hotness']:.0f} | {a['title'][:50]}... [{reasons}]")
 
-    # ── Step 4: Groq解説生成 ──
+    # ── Step 4: Groq解説生成（モデル使い分け） ──
     total_articles = sum(len(v) for v in all_data.values())
+    large_count = min(TOP_N_USE_LARGE, MAX_PER_TAB) * len(all_data)
+    small_count = total_articles - large_count
     print(f"\n[4/5] Groq API で {total_articles} 件の解説を生成中...")
-    api_calls = 0
+    print(f"  70B: {large_count} 件, 8B: {small_count} 件（トークン節約）")
+    api_calls_large = 0
+    api_calls_small = 0
     for tab_id, articles in all_data.items():
         print(f"  [{tab_id}] {len(articles)} 件...")
         for i, article in enumerate(articles):
             is_ja = article.get("lang") == "ja"
-            explanation = generate_rich_explanation(article["title"], article.get("summary", ""), tab_id, is_japanese=is_ja)
+            # ホットネス上位N件のみ70Bモデル、残りは8Bモデル
+            use_large = i < TOP_N_USE_LARGE
+            model_label = "70B" if use_large else "8B"
+            explanation = generate_rich_explanation(article["title"], article.get("summary", ""), tab_id, is_japanese=is_ja, use_large_model=use_large)
             article["easy"] = explanation["easy"]
             article["why"] = explanation["why"]
             article["glossary"] = explanation["glossary"]
@@ -664,12 +702,15 @@ def main():
             else:
                 article["reactions"] = []
 
-            api_calls += 1
+            if use_large:
+                api_calls_large += 1
+            else:
+                api_calls_small += 1
             # Groqレート制限対策（30 req/min = 2秒間隔）
             if i < len(articles) - 1:
                 time.sleep(2.5)
 
-        print(f"    -> 完了 (API {api_calls} 回)")
+        print(f"    -> 完了 (70B: {api_calls_large}, 8B: {api_calls_small})")
 
     # ── Step 5: 速報検出＆保存 ──
     print("\n[5/5] 速報検出・データ保存中...")
@@ -700,7 +741,7 @@ def main():
         sources = set(a["source"] for a in arts)
         avg_hot = sum(a.get("hotness", 0) for a in arts) / len(arts) if arts else 0
         print(f"  {tab}: {len(arts)} 件 (平均ホットネス {avg_hot:.0f}) from {', '.join(sources)}")
-    print(f"API呼び出し: {api_calls} 回")
+    print(f"API呼び出し: 70B={api_calls_large}回, 8B={api_calls_small}回, 計{api_calls_large + api_calls_small}回")
     print(f"{'=' * 60}")
 
 
