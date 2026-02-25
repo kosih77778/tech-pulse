@@ -733,9 +733,72 @@ def main():
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
+    # ── アーカイブ保存 ──
+    print("\n  アーカイブ保存中...")
+    archive_dir = DATA_DIR / "archive"
+    archive_dir.mkdir(exist_ok=True)
+    date_str = datetime.now(JST).strftime("%Y-%m-%d")
+
+    # 日付別アーカイブ保存
+    archive_path = archive_dir / f"{date_str}.json"
+    with open(archive_path, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
+    print(f"  -> アーカイブ保存: {archive_path}")
+
+    # 検索インデックス更新（過去分含む全記事の軽量インデックス）
+    search_index_path = archive_dir / "search_index.json"
+    existing_index = []
+    if search_index_path.exists():
+        try:
+            with open(search_index_path, "r", encoding="utf-8") as f:
+                existing_index = json.load(f)
+        except Exception:
+            existing_index = []
+
+    existing_urls = {item.get("u", "") for item in existing_index}
+
+    new_count = 0
+    for tab_id, articles in all_data.items():
+        for a in articles:
+            url = a.get("url", "")
+            if url and url not in existing_urls:
+                existing_index.append({
+                    "t": a.get("title", ""),
+                    "u": url,
+                    "s": a.get("source", ""),
+                    "p": a.get("published", ""),
+                    "d": date_str,
+                    "tab": tab_id,
+                    "e": a.get("easy", "")[:150],
+                    "h": round(a.get("hotness", 0)),
+                })
+                existing_urls.add(url)
+                new_count += 1
+
+    with open(search_index_path, "w", encoding="utf-8") as f:
+        json.dump(existing_index, f, ensure_ascii=False)
+    print(f"  -> 検索インデックス: {new_count}件追加 (合計{len(existing_index)}件)")
+
+    # 利用可能日付リスト更新
+    dates_path = archive_dir / "dates.json"
+    existing_dates = []
+    if dates_path.exists():
+        try:
+            with open(dates_path, "r", encoding="utf-8") as f:
+                existing_dates = json.load(f)
+        except Exception:
+            existing_dates = []
+    if date_str not in existing_dates:
+        existing_dates.append(date_str)
+        existing_dates.sort(reverse=True)
+    with open(dates_path, "w", encoding="utf-8") as f:
+        json.dump(existing_dates, f)
+    print(f"  -> 利用可能日付: {len(existing_dates)}日分")
+
     total = sum(len(v) for v in all_data.values())
     print(f"\n{'=' * 60}")
     print(f"完了！合計 {total} 件（速報 {len(breaking)} 件）を保存")
+    print(f"アーカイブ: {date_str} | 検索インデックス: {len(existing_index)}件")
     print(f"ソース統計:")
     for tab, arts in all_data.items():
         sources = set(a["source"] for a in arts)
