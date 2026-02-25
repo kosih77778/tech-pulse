@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-Tech Pulse v3 - HTML生成スクリプト
-サイドバー: ホットワード + 速報タイムライン
-HNランキング廃止、ホットネス対応
+Tech Pulse v4 - HTML生成スクリプト
+TOPページ追加、サイドバー簡素化、未来的デザイン
 """
 
 import json
@@ -16,7 +15,7 @@ DATA_DIR = Path("data")
 TEMPLATE_PATH = Path("templates/dashboard.html")
 OUTPUT_PATH = Path("index.html")
 
-TABS = [
+CATEGORY_TABS = [
     {"id": "ai", "label": "AI・LLM", "emoji": "\U0001f9e0"},
     {"id": "devtools", "label": "Dev Tools", "emoji": "\u26a1"},
     {"id": "data_dx", "label": "Data / DX", "emoji": "\U0001f5c4\ufe0f"},
@@ -71,7 +70,6 @@ TAG_COLORS = {
     "料金": "ft-biz", "製造": "ft-hw",
 }
 
-# ホットワード抽出時に無視するストップワード
 STOP_WORDS = {
     "the", "a", "an", "and", "or", "but", "in", "on", "at", "to", "for",
     "of", "with", "by", "from", "up", "about", "into", "over", "after",
@@ -178,13 +176,15 @@ def build_article(article):
     if url and url != "#":
         source_html = f'<div class="fi-source">📎 <a href="{url}" target="_blank" rel="noopener">{source}</a>{score_html}</div>'
 
+    # 「解説」ラベル（旧: ざっくり言うと）
     easy_html = ""
     if easy:
-        easy_html = f'<div class="fi-easy"><strong>ざっくり言うと：</strong>{easy}</div>'
+        easy_html = f'<div class="fi-easy"><strong>解説：</strong>{easy}</div>'
 
+    # 「重要ポイント」ラベル（旧: このニュースは重要です）
     why_html = ""
     if why:
-        why_html = f'<div class="fi-why">{why}</div>'
+        why_html = f'<div class="fi-why">💎 <strong>重要ポイント：</strong>{why}</div>'
 
     impact_class = get_impact_class(impact)
 
@@ -208,36 +208,19 @@ def build_article(article):
 </div>"""
 
 
-def build_breaking(breaking_list):
-    if not breaking_list:
-        return ""
-    items = []
-    level_map = {"red": ("bb-red", "brk-red", "速報"), "orange": ("bb-org", "brk-orange", "注目"), "blue": ("bb-blue", "brk-blue", "注目")}
-    for b in breaking_list[:3]:
-        lvl = b.get("level", "blue")
-        bb, brk, label = level_map.get(lvl, level_map["blue"])
-        text = esc(b.get("text", ""))
-        items.append(f'<div class="brk {brk}"><span class="bb {bb}">{label}</span><span class="brk-text">{text}</span></div>')
-    return "".join(items)
-
-
 def extract_hot_words(all_articles):
     """全記事のタイトルからホットワードを抽出"""
     word_count = Counter()
     for a in all_articles:
         title = a.get("title", "")
-        # 英語のキーワード（大文字始まり or 全大文字）
         en_words = re.findall(r'[A-Z][a-zA-Z]{2,}|[A-Z]{2,}', title)
         for w in en_words:
             wl = w.lower()
             if wl not in STOP_WORDS and len(wl) >= 3:
                 word_count[w] += 1
-        # 日本語のキーワード（カタカナ語）
         ja_words = re.findall(r'[\u30A0-\u30FF]{3,}', title)
         for w in ja_words:
             word_count[w] += 1
-
-    # 2回以上出現したワードのみ
     hot_words = [(word, count) for word, count in word_count.most_common(20) if count >= 2]
     return hot_words[:12]
 
@@ -249,7 +232,6 @@ def build_hotwords_html(hot_words):
     items = []
     max_count = hot_words[0][1] if hot_words else 1
     for word, count in hot_words:
-        # 出現回数に応じてサイズを変える
         ratio = count / max_count
         if ratio >= 0.8:
             size_class = "hw-xl"
@@ -263,51 +245,59 @@ def build_hotwords_html(hot_words):
     return "".join(items)
 
 
-def build_breaking_timeline(all_articles):
-    """ホットネス上位の記事をタイムラインで表示（タブ横断）"""
-    # ホットネス上位の記事を抽出
-    hot_articles = sorted(all_articles, key=lambda a: a.get("hotness", 0), reverse=True)
-    top_articles = hot_articles[:8]
+def build_top_page(all_articles, hot_words):
+    """TOPページ: 全ニュースのダイジェスト（ぱっと見で概要把握）"""
+    hotwords_html = build_hotwords_html(hot_words)
 
-    if not top_articles:
-        return '<div class="hw-empty">データ収集中...</div>'
+    # ホットネス上位15件を表示
+    sorted_arts = sorted(all_articles, key=lambda a: a.get("hotness", 0), reverse=True)
+    top_arts = sorted_arts[:15]
 
-    items = []
-    # タブIDから日本語ラベルへの変換
-    tab_labels = {t["id"]: t["emoji"] + " " + t["label"] for t in TABS}
+    tab_map = {t["id"]: f'{t["emoji"]} {t["label"]}' for t in CATEGORY_TABS}
 
-    for a in top_articles:
-        title = esc(a.get("title", ""))[:60]
-        url = a.get("url", "#")
+    cards = []
+    for a in top_arts:
+        title = esc(a.get("title", ""))
         source = esc(a.get("source", ""))
+        url = a.get("url", "#")
+        easy = esc(a.get("easy", ""))
+        if len(easy) > 120:
+            easy = easy[:117] + "..."
         hotness = a.get("hotness", 0)
         color = get_color(a.get("source", ""))
         published = a.get("published", "")[:10]
+        tab_id = a.get("_tab", "")
+        tab_label = tab_map.get(tab_id, "")
 
-        # ホットネスに応じた色
-        if hotness >= 70:
-            dot_class = "tl-dot-fire"
-        elif hotness >= 50:
-            dot_class = "tl-dot-warm"
-        else:
-            dot_class = "tl-dot-normal"
+        hot_class = "top-fire" if hotness >= 70 else "top-warm" if hotness >= 50 else "top-normal"
+        hot_icon = "\U0001f525" if hotness >= 70 else "\U0001f321" if hotness >= 50 else "\U0001f4f0"
 
-        reasons = a.get("hotness_reasons", [])
-        reason_text = esc(", ".join(reasons[:2])) if reasons else ""
-
-        items.append(
-            f'<div class="tl-item">'
-            f'<div class="tl-dot {dot_class}"></div>'
-            f'<div class="tl-content">'
-            f'<a href="{url}" target="_blank" rel="noopener" class="tl-title">{title}</a>'
-            f'<div class="tl-meta">'
-            f'<span class="tl-source" style="color:{color}">{source}</span>'
-            f'<span class="tl-hot">🔥{hotness:.0f}</span>'
+        cards.append(
+            f'<a href="{url}" target="_blank" rel="noopener" class="top-card">'
+            f'<div class="top-accent" style="background:{color}"></div>'
+            f'<div class="top-body">'
+            f'<div class="top-head">'
+            f'<span class="top-cat">{tab_label}</span>'
+            f'<span class="top-hot {hot_class}">{hot_icon}{hotness:.0f}</span>'
             f'</div>'
-            f'{"<div class=tl-reason>" + reason_text + "</div>" if reason_text else ""}'
-            f'</div></div>'
+            f'<div class="top-title">{title}</div>'
+            f'<div class="top-summary">{easy}</div>'
+            f'<div class="top-meta">'
+            f'<span class="top-source" style="color:{color}">{source}</span>'
+            f'<span class="top-time">{published}</span>'
+            f'</div>'
+            f'</div></a>'
         )
-    return "\n".join(items)
+
+    return (
+        f'<div class="top-page">'
+        f'<div class="top-hw-section">'
+        f'<div class="top-hw-label">Today\'s Hot Words</div>'
+        f'<div class="hw-cloud">{hotwords_html}</div>'
+        f'</div>'
+        f'<div class="top-grid">{"".join(cards)}</div>'
+        f'</div>'
+    )
 
 
 def generate_html():
@@ -321,72 +311,53 @@ def generate_html():
 
     updated_at = data.get("updated_at", "不明")
     tabs_data = data.get("tabs", {})
-    breaking = data.get("breaking", [])
 
     with open(TEMPLATE_PATH, "r", encoding="utf-8") as f:
         template = f.read()
 
-    # 全記事を集めてホットワード＆タイムライン生成
+    # 全記事を集める（タブ情報付き）
     all_articles = []
-    for tab_articles in tabs_data.values():
-        all_articles.extend(tab_articles)
+    for tab_id, tab_articles in tabs_data.items():
+        for a in tab_articles:
+            a["_tab"] = tab_id
+            all_articles.append(a)
 
     hot_words = extract_hot_words(all_articles)
     hotwords_html = build_hotwords_html(hot_words)
-    timeline_html = build_breaking_timeline(all_articles)
 
-    # タブボタン
-    tab_buttons = []
-    for i, tab in enumerate(TABS):
-        active = " active" if i == 0 else ""
+    # タブボタン（TOPが最初・デフォルトactive）
+    tab_buttons = ['<button class="tab-btn active" data-tab="top">\U0001f3e0 Top</button>']
+    for tab in CATEGORY_TABS:
         tab_buttons.append(
-            f'<button class="tab-btn{active}" data-tab="{tab["id"]}">{tab["emoji"]} {tab["label"]}</button>'
+            f'<button class="tab-btn" data-tab="{tab["id"]}">{tab["emoji"]} {tab["label"]}</button>'
         )
     tab_buttons_html = "\n".join(tab_buttons)
 
-    # タブコンテンツ
-    tab_contents = []
-    for i, tab in enumerate(TABS):
-        active = " active" if i == 0 else ""
+    # TOPページ
+    top_html = build_top_page(all_articles, hot_words)
+    tab_contents = [f'<div class="tab-content active" id="tab-top">{top_html}</div>']
+
+    # カテゴリタブ
+    for tab in CATEGORY_TABS:
         articles = tabs_data.get(tab["id"], [])
-
-        # 速報は最初のタブだけ
-        breaking_html = build_breaking(breaking) if i == 0 else ""
-
         articles_html = "\n".join(build_article(a) for a in articles)
         if not articles:
             articles_html = '<div class="fi" style="text-align:center;padding:40px;color:var(--mut)">このカテゴリの記事はまだありません</div>'
 
-        tab_contents.append(f"""<div class="tab-content{active}" id="tab-{tab['id']}">
+        tab_contents.append(f"""<div class="tab-content" id="tab-{tab['id']}">
   <div class="feed">
-    {breaking_html}
     {articles_html}
   </div>
   <div class="sidebar">
     <div class="sb-card">
-      <div class="sb-title">🔤 今日のホットワード</div>
+      <div class="sb-title">\U0001f524 今日のホットワード</div>
       <div class="hw-cloud">
         {hotwords_html}
       </div>
     </div>
-    <div class="sb-card">
-      <div class="sb-title">🔥 注目ニュース（全タブ横断）</div>
-      <div class="timeline">
-        {timeline_html}
-      </div>
-    </div>
-    <div class="sb-card">
-      <div class="sb-title">ℹ️ このダッシュボードについて</div>
-      <div style="font-size:.78rem;color:var(--dim);line-height:1.6">
-        毎朝7時に自動更新。<br>
-        RSS / HN / はてブからニュースを取得し、<br>
-        ホットネス判定で注目記事を厳選。<br>
-        Groq AI が日本語でやさしく解説。<br>
-        用語にマウスを乗せると解説が見れます。
-      </div>
-    </div>
   </div>
 </div>""")
+
     tab_contents_html = "\n".join(tab_contents)
 
     html = template
@@ -399,7 +370,8 @@ def generate_html():
 
     print(f"Dashboard generated: {OUTPUT_PATH}")
     print(f"Updated at: {updated_at}")
-    print(f"Hot words: {len(hot_words)} | Timeline: {min(8, len(all_articles))} articles")
+    print(f"Hot words: {len(hot_words)} | Total articles: {len(all_articles)}")
+    print(f"Top page: {min(15, len(all_articles))} articles shown")
 
 
 if __name__ == "__main__":
