@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Dive #001 | AIが"動く"時代</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg: #fafafa;
+    --surface: #ffffff;
+    --elevated: #f3f4f6;
+    --accent: #4f46e5;
+    --accent-light: #6366f1;
+    --orange: #ea580c;
+    --cyan: #0891b2;
+    --green: #16a34a;
+    --text: #1a1a2e;
+    --text-sub: #555570;
+    --text-dim: #9090a0;
+    --border: #e5e5ec;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter','Noto Serif JP',sans-serif; background:var(--bg); color:var(--text); line-height:1.85; -webkit-font-smoothing:antialiased; }
+
+  .wrap { max-width:720px; margin:0 auto; padding:24px; }
+
+  .top { display:flex; justify-content:space-between; align-items:center; font-size:11px; color:var(--text-dim); margin-bottom:8px; }
+  .top .series { font-family:'JetBrains Mono',monospace; color:var(--accent); font-weight:600; letter-spacing:2px; text-transform:uppercase; }
+
+  .hero { padding:32px 0 28px; border-bottom:1px solid var(--border); margin-bottom:32px; }
+  .cat { display:inline-block; font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--orange); background:rgba(234,88,12,0.08); padding:3px 10px; border-radius:4px; margin-bottom:16px; }
+  .hero h1 { font-family:'Noto Serif JP',serif; font-size:32px; font-weight:700; line-height:1.4; margin-bottom:12px; }
+  .hero .sub { font-size:16px; color:var(--text-sub); }
+  .meta { display:flex; gap:16px; margin-top:16px; font-size:11px; color:var(--text-dim); }
+
+  .talk { margin-bottom:28px; }
+  .talk .speaker { font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px; letter-spacing:0.5px; }
+  .talk p { font-size:15px; color:var(--text); line-height:2; margin-bottom:12px; }
+
+  .callout { background:var(--elevated); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; padding:16px 20px; margin:20px 0; font-size:14px; color:var(--text-sub); line-height:1.8; }
+  .callout strong { color:var(--text); }
+
+  .data { display:flex; align-items:center; gap:16px; background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px 20px; margin:20px 0; }
+  .data .num { font-family:'JetBrains Mono',monospace; font-size:30px; font-weight:800; color:var(--accent); min-width:80px; text-align:center; }
+  .data .desc { font-size:13px; color:var(--text-sub); line-height:1.6; }
+
+  .players { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin:20px 0; }
+  .pl { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:12px; text-align:center; }
+  .pl .name { font-weight:700; font-size:13px; }
+  .pl .det { font-size:10px; color:var(--text-dim); margin-top:4px; line-height:1.4; }
+
+  .sowhat { background:linear-gradient(135deg,rgba(79,70,229,0.05),rgba(8,145,178,0.05)); border:1px solid rgba(79,70,229,0.15); border-radius:12px; padding:24px; margin:28px 0; }
+  .sowhat h3 { font-size:15px; font-weight:700; color:var(--accent); margin-bottom:12px; }
+  .sowhat p { font-size:14px; line-height:1.9; margin-bottom:10px; }
+  .sowhat p:last-child { margin-bottom:0; }
+
+  .footer { border-top:1px solid var(--border); padding-top:20px; margin-top:32px; display:flex; justify-content:space-between; font-size:11px; color:var(--text-dim); }
+  .next { background:var(--elevated); border-radius:6px; padding:6px 12px; }
+  .next span { color:var(--cyan); font-weight:600; }
+
+  @media(max-width:600px){ .hero h1{font-size:24px;} .players{grid-template-columns:1fr;} .data{flex-direction:column;text-align:center;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top">
+  <div class="series">Deep Dive #001</div>
+  <div>2026-03-02</div>
+</div>
+
+<div class="hero">
+  <div class="cat">AI &times; Robotics</div>
+  <h1>AIが「考える」から「動く」に変わった日</h1>
+  <div class="sub">Large Action Models &#8212; なぜ今、ロボットが急に賢くなったのか</div>
+  <div class="meta">
+    <span>&#128214; 約5分</span>
+    <span>&#127793; Phase 1 / Issue 001</span>
+  </div>
+</div>
+
+<div class="talk">
+  <div class="speaker">&#9889; OPEN</div>
+  <p>masa、今日ヤバいネタ見つけた。ロボットが食洗機を自分で回し始めた。しかも人間ノータッチで。</p>
+</div>
+
+<div class="talk">
+  <div class="speaker">&#128270; 何が起きてるのか</div>
+  <p>ChatGPT以来、AIって「文章を書くもの」だったよね。でも2026年、その前提が崩れてきてる。AIがキーボードの向こう側から飛び出して、<strong>物理世界で実際に動き始めた</strong>。</p>
+  <p>鍵になってるのが<strong>VLA（Vision-Language-Action）モデル</strong>。「見て・理解して・動く」を1つのAIでやる技術。業界では「Large Action Models」とも呼ばれてて、LLMの次のパラダイムとして一気に注目が集まってる。</p>
+</div>
+
+<div class="callout">
+  <strong>LLM</strong> = テキスト入力 &#8594; テキスト出力<br>
+  <strong>VLA</strong> = 映像＋テキスト入力 &#8594; <strong>物理的な動作</strong>を出力<br><br>
+  AIの出力が「言葉」から「行動」に変わった。これが革命的な違い。
+</div>
+
+<div class="talk">
+  <div class="speaker">&#129302; Figure 02の「61手」</div>
+  <p>一番わかりやすい事例がFigure AI社のデモ。ヒューマノイドロボットが食洗機から食器を出して、キッチン内の所定の場所に並べて、また戻して食洗機を起動する &#8212; これを<strong>完全自律</strong>でやった。</p>
+</div>
+
+<div class="data">
+  <div class="num">61</div>
+  <div class="desc">連続自律動作の数。歩行・認識・把持・配置・ドア操作まで、人間の介入ゼロ。ヒューマノイド史上最長・最複雑な自律タスク。</div>
+</div>
+
+<div class="talk">
+  <p>驚くのは、手だけじゃなく<strong>身体全体を道具として使った</strong>こと。引き出しを腰で閉めて、食洗機のドアを足で持ち上げた。人間が無意識にやってる動きを、AIが勝手に学んでる。</p>
+  <p>しかもFigure社は24時間365日稼働を達成済み。バッテリーが減ると自分でドックに行って、充電済みの別ロボットと交代する。「疲れない工場」がもう現実になってる。</p>
+</div>
+
+<div class="talk">
+  <div class="speaker">&#128308; NVIDIAの仕掛け</div>
+  <p>この流れを裏で加速させてるのがNVIDIA。<strong>Isaac GR00T N1.6</strong>っていうヒューマノイド専用の基盤モデルを、しかもオープンソースで出した。TechCrunchは「ロボティクスのAndroid」と呼んでる。</p>
+  <p>NVIDIAはGPUで「AI学習のインフラ」を支配した。次は<strong>「AI行動のインフラ」</strong>を押さえようとしてる。モデル＋チップ＋シミュレーション環境をセットで提供して、どのロボットメーカーもNVIDIAの上に乗る構図を作ろうとしてる。GPUの再現だね。</p>
+</div>
+
+<div class="talk">
+  <div class="speaker">&#128202; 学会も一色</div>
+  <p>学術界も同じ。トップ学会ICLR 2026ではVLA関連の論文が<strong>164本</strong>出た。2024年にはほぼゼロだった分野が、2年でメインストリームに。</p>
+  <p>中国のAnt Group（アリペイの親会社）は<strong>LingBot-VLA</strong>を発表。20,000時間分のロボット操作データで学習して、9種類の異なるロボットで動く。「1つの脳で、どんな身体でも動かせる」方向に向かってる。</p>
+</div>
+
+<div class="players">
+  <div class="pl"><div class="name">NVIDIA</div><div class="det">GR00T N1.6<br>ロボットのAndroid</div></div>
+  <div class="pl"><div class="name">Figure AI</div><div class="det">Helix 02 / Figure 03<br>24/7自律稼働</div></div>
+  <div class="pl"><div class="name">DeepMind</div><div class="det">RT-2 / Gemini Robotics<br>VLAの先駆者</div></div>
+  <div class="pl"><div class="name">Ant Group</div><div class="det">LingBot-VLA<br>20,000h学習データ</div></div>
+  <div class="pl"><div class="name">Tesla</div><div class="det">Optimus<br>量産型ヒューマノイド</div></div>
+  <div class="pl"><div class="name">Boston Dynamics</div><div class="det">Atlas (Electric)<br>老舗の電動化</div></div>
+</div>
+
+<div class="talk">
+  <div class="speaker">&#128161; なぜ「今」なのか</div>
+  <p><strong>1. Foundation Modelの汎用化</strong> &#8212; LLMの「大規模学習→微調整」パラダイムがロボットに移植された。1モデルで複数タスク対応、開発コスト激減。</p>
+  <p><strong>2. Sim-to-Real</strong> &#8212; シミュレーション上で訓練して現実に一発適応。実機なしでロボットを育てられるようになった。</p>
+  <p><strong>3. World Models</strong> &#8212; ロボットが「次に何が起きるか」を内部予測しながら動く。未知の環境への適応力が飛躍的に上がった。</p>
+</div>
+
+<div class="sowhat">
+  <h3>&#128293; So What? &#8212; で、何が重要なの</h3>
+  <p><strong>労働市場</strong> &#8212; ホワイトカラーの次に、物流・製造・家事がAIの射程に入る。Figure 03の量産目標は年12,000台。10年後には桁が変わってる。</p>
+  <p><strong>投資テーマ</strong> &#8212; 「AI銘柄」の意味が変わる。ソフトだけじゃなく、アクチュエータ、センサー、バッテリーへ裾野拡大。NVIDIAのロボティクス戦略はGPU制覇の再現。</p>
+  <p><strong>日本</strong> &#8212; 超高齢社会×人手不足の日本にとって、汎用ヒューマノイドは「移民政策に代わる解」になりうる。ファナック、安川電機がVLA時代にどう動くかが鍵。</p>
+</div>
+
+<div class="talk">
+  <div class="speaker">&#128172; CLOSING</div>
+  <p>ロボットが食洗機を回せるようになった。次はコンビニの棚卸し？介護の寝返り補助？</p>
+  <p>VLAの進化速度は2023年のLLMを思い出す。あの頃「AIが文章書けるなんて」と驚いてた僕らは、2年後にはそれを当たり前に使ってる。同じことが物理世界でも起きようとしてる。</p>
+</div>
+
+<div class="footer">
+  <div><strong>Deep Dive</strong> by masa &times; Claude &nbsp;|&nbsp; Phase 1</div>
+  <div class="next">Next: <span>#002 &#8212; リクエスト歓迎</span></div>
+</div>
+
+</div>
+</body>
+</html>
