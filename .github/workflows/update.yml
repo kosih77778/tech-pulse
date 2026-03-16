@@ -27,6 +27,12 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
+      - name: Generate AI Tools trends
+        run: python scripts/generate_ai_tools.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        continue-on-error: true
+
       - name: Generate HTML
         run: python scripts/generate_html.py
 

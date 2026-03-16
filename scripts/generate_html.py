@@ -300,6 +300,93 @@ def build_top_page(all_articles, hot_words):
     )
 
 
+def build_ai_tools_page():
+    """AI Toolsタブ: カテゴリ別ツールカード"""
+    config_path = DATA_DIR / "ai-tools-config.json"
+    trends_path = DATA_DIR / "ai-tools-trends.json"
+
+    if not config_path.exists():
+        return '<div class="ait-page"><div style="text-align:center;padding:40px;color:var(--mut)">AI Toolsの設定ファイルがありません</div></div>'
+
+    with open(config_path, "r", encoding="utf-8") as f:
+        config = json.load(f)
+
+    # トレンドデータ読み込み（初回実行時は存在しない場合あり）
+    trends_map = {}
+    cat_trends = {}
+    generated_at = ""
+    if trends_path.exists():
+        with open(trends_path, "r", encoding="utf-8") as f:
+            trends = json.load(f)
+        generated_at = trends.get("generated_at", "")
+        for cat in trends.get("categories", []):
+            cat_id = cat.get("id", "")
+            cat_trends[cat_id] = cat.get("trend_summary", "")
+            trends_map[cat_id] = {}
+            for tool in cat.get("tools", []):
+                trends_map[cat_id][tool["name"]] = tool
+
+    sections = []
+    for cat in config["categories"]:
+        cat_id = cat["id"]
+        cat_name = esc(cat["name"])
+        cat_emoji = cat.get("emoji", "")
+        cat_color = cat.get("color", "var(--ac)")
+        summary = esc(cat_trends.get(cat_id, ""))
+
+        summary_html = ""
+        if summary:
+            summary_html = f'<div class="ait-cat-trend">{summary}</div>'
+
+        cards = []
+        for tool in cat["tools"]:
+            t_name = tool["name"]
+            t_url = tool.get("url", "#")
+            t_icon = esc(tool.get("icon", "?"))
+
+            t_data = trends_map.get(cat_id, {}).get(t_name, {})
+            t_trend = esc(t_data.get("trend", "トレンド情報を取得中..."))
+            t_momentum = t_data.get("momentum", "stable")
+            t_highlights = t_data.get("highlights", [])
+
+            momentum_class = f"ait-{t_momentum}" if t_momentum in ("up", "stable", "down") else "ait-stable"
+            momentum_label = {"up": "\U0001f4c8 勢いあり", "stable": "\u27a1\ufe0f 安定", "down": "\U0001f4c9 低調"}.get(t_momentum, "\u27a1\ufe0f 安定")
+
+            hl_html = ""
+            if t_highlights:
+                hl_items = "".join(f'<span class="ait-hl">{esc(h)}</span>' for h in t_highlights[:3])
+                hl_html = f'<div class="ait-highlights">{hl_items}</div>'
+
+            cards.append(
+                f'<div class="ait-card">'
+                f'<div class="ait-card-head">'
+                f'<div class="ait-av" style="background:{cat_color}">{t_icon}</div>'
+                f'<div class="ait-name"><a href="{t_url}" target="_blank" rel="noopener">{esc(t_name)}</a></div>'
+                f'<span class="ait-momentum {momentum_class}">{momentum_label}</span>'
+                f'</div>'
+                f'<div class="ait-trend">{t_trend}</div>'
+                f'{hl_html}'
+                f'</div>'
+            )
+
+        sections.append(
+            f'<div class="ait-section">'
+            f'<div class="ait-cat-head">'
+            f'<span class="ait-cat-emoji">{cat_emoji}</span>'
+            f'<span class="ait-cat-name">{cat_name}</span>'
+            f'</div>'
+            f'{summary_html}'
+            f'<div class="ait-grid">{"".join(cards)}</div>'
+            f'</div>'
+        )
+
+    updated_html = ""
+    if generated_at:
+        updated_html = f'<div class="ait-updated">トレンド更新: {esc(generated_at)}</div>'
+
+    return f'<div class="ait-page">{"".join(sections)}{updated_html}</div>'
+
+
 def generate_html():
     news_path = DATA_DIR / "news.json"
     if not news_path.exists():
@@ -331,6 +418,7 @@ def generate_html():
         tab_buttons.append(
             f'<button class="tab-btn" data-tab="{tab["id"]}">{tab["emoji"]} {tab["label"]}</button>'
         )
+    tab_buttons.append('<button class="tab-btn" data-tab="aitools">\U0001f9f0 AI Tools</button>')
     tab_buttons_html = "\n".join(tab_buttons)
 
     # TOPページ
@@ -357,6 +445,10 @@ def generate_html():
     </div>
   </div>
 </div>""")
+
+    # AI Toolsタブ
+    ai_tools_html = build_ai_tools_page()
+    tab_contents.append(f'<div class="tab-content" id="tab-aitools">{ai_tools_html}</div>')
 
     tab_contents_html = "\n".join(tab_contents)
 

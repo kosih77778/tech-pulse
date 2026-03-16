@@ -1,0 +1,62 @@
+{
+  "categories": [
+    {
+      "id": "ai-search",
+      "name": "AI検索／調査",
+      "emoji": "\ud83d\udd0d",
+      "color": "#0ea5e9",
+      "tools": [
+        {"name": "Genspark", "url": "https://www.genspark.ai/", "icon": "GS"}
+      ]
+    },
+    {
+      "id": "ai-agent",
+      "name": "汎用AIエージェント",
+      "emoji": "\ud83e\udd16",
+      "color": "#8b5cf6",
+      "tools": [
+        {"name": "OpenClaw", "url": "https://www.openclaw.com/", "icon": "OC"},
+        {"name": "Antigravity", "url": "https://www.antigravity.so/", "icon": "AG"}
+      ]
+    },
+    {
+      "id": "ai-chat",
+      "name": "汎用AIチャット",
+      "emoji": "\ud83d\udcac",
+      "color": "#10b981",
+      "tools": [
+        {"name": "ChatGPT", "url": "https://chatgpt.com/", "icon": "GP"},
+        {"name": "Gemini", "url": "https://gemini.google.com/", "icon": "Gm"}
+      ]
+    },
+    {
+      "id": "ai-ide",
+      "name": "AIネイティブIDE",
+      "emoji": "\ud83d\udda5\ufe0f",
+      "color": "#5b4fef",
+      "tools": [
+        {"name": "Cursor", "url": "https://www.cursor.com/", "icon": "Cu"}
+      ]
+    },
+    {
+      "id": "ai-coding-agent",
+      "name": "AIコーディングエージェント",
+      "emoji": "\u26a1",
+      "color": "#f59e0b",
+      "tools": [
+        {"name": "Claude Code", "url": "https://docs.anthropic.com/en/docs/claude-code", "icon": "CC"},
+        {"name": "Codex", "url": "https://openai.com/index/introducing-codex/", "icon": "Cx"}
+      ]
+    },
+    {
+      "id": "ide-ext",
+      "name": "IDE拡張／補完",
+      "emoji": "\ud83e\udde9",
+      "color": "#ec4899",
+      "tools": [
+        {"name": "GitHub Copilot", "url": "https://github.com/features/copilot", "icon": "CP"},
+        {"name": "VS Code (+Copilot)", "url": "https://code.visualstudio.com/", "icon": "VS"}
+      ]
+    }
+  ]
+}
