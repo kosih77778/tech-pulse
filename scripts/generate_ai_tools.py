@@ -7,11 +7,17 @@ data/ai-tools-trends.json に出力する。
 import os
 import sys
 import json
+import time
 import datetime
 import google.generativeai as genai
 
 CONFIG_PATH = "data/ai-tools-config.json"
 OUTPUT_PATH = "data/ai-tools-trends.json"
+
+# deepdive.yml が gemini-2.0-flash を使うため、こちらは lite で分離
+MODELS = ["gemini-2.0-flash-lite", "gemini-2.0-flash"]
+MAX_RETRIES = 3
+RETRY_DELAY = 60  # seconds
 
 api_key = os.environ.get("GEMINI_API_KEY", "")
 if not api_key:
@@ -19,7 +25,6 @@ if not api_key:
     sys.exit(1)
 
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-2.0-flash")
 
 today = datetime.date.today().isoformat()
 
@@ -74,13 +79,30 @@ prompt = f"""あなたはAIツールの最新動向に精通したテクノロ�
 カテゴリIDは以下の順序で出力: {", ".join(cat_ids)}
 """
 
-try:
-    print(f"Calling Gemini API (model: gemini-2.0-flash)...")
-    response = model.generate_content(prompt)
-    text = response.text.strip()
-    print(f"Gemini response received ({len(text)} chars)")
-except Exception as e:
-    print(f"ERROR: Gemini API call failed: {e}")
+text = None
+for model_name in MODELS:
+    model = genai.GenerativeModel(model_name)
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            print(f"Calling Gemini API (model: {model_name}, attempt {attempt}/{MAX_RETRIES})...")
+            response = model.generate_content(prompt)
+            text = response.text.strip()
+            print(f"Gemini response received ({len(text)} chars)")
+            break
+        except Exception as e:
+            err_str = str(e)
+            if "429" in err_str and attempt < MAX_RETRIES:
+                print(f"Rate limited. Waiting {RETRY_DELAY}s before retry...")
+                time.sleep(RETRY_DELAY)
+            else:
+                print(f"ERROR with {model_name}: {e}")
+                break
+    if text:
+        break
+    print(f"Trying next model...")
+
+if not text:
+    print("ERROR: All models failed")
     sys.exit(1)
 
 # コードフェンス除去

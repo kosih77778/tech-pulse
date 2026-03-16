@@ -2,7 +2,7 @@ name: Update Tech Pulse
 
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '10 22 * * *'  # JST 7:10 (deepdive.yml は 22:00 = JST 7:00)
   workflow_dispatch:
 
 permissions:
