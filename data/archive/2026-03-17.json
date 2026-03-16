@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-03-17 02:04 JST",
-  "updated_utc": "2026-03-16T17:04:13Z",
+  "updated_at": "2026-03-17 02:37 JST",
+  "updated_utc": "2026-03-16T17:37:39Z",
   "tabs": {
     "ai": [
       {
         "title": "How I write software with LLMs",
         "url": "https://www.stavros.io/posts/how-i-write-software-with-llms/",
-        "score": 405,
-        "comments": 378,
+        "score": 412,
+        "comments": 391,
         "hn_id": 47394022,
         "published": "2026-03-16 01:24",
         "source": "Hacker News",
@@ -15,29 +15,29 @@
         "priority": 0,
         "hotness": 63.2,
         "hotness_reasons": [
-          "HN:405pts(注目)",
+          "HN:412pts(注目)",
           "クロスソース:6社"
         ],
-        "easy": "この記事のタイトルは「LLMsを使用してソフトウェアを書く方法」という意味です。LLMsとは、大規模な言語モデルを指します。ソフトウェア開発者がLLMsを使用して、コードを自動生成したり、バグを検出することができます。例えば、1万行のコードを手動で書く代わりに、LLMsを使用して数時間で自動生成することが可能です。開発者の生産性を向上させるため、約3億ドル（約450億円）の投資がLLMsの研究に注がれています。",
-        "why": "LLMsを使用することで、開発者はより効率的にソフトウェアを開発でき、エラーを減らすことができます。さらに、LLMsは開発者の仕事を支援することで、より複雑なソフトウェアの開発が可能になります。",
+        "easy": "この記事のタイトルは「LLMsを使用してソフトウェアを書く方法」です。LLMsとは、人工知能の一種で、自然言語処理を実行するための大規模言語モデルです。開発者はLLMsを使用して、ソフトウェアの開発を自動化し、効率化することができます。例えば、LLMsはコードの自動生成、バグの検出、コードの最適化などに使用できます。約3億ドル（約450億円）の投資が行われているこの分野は、将来、ソフトウェア開発業界を変える可能性があります。",
+        "why": "LLMsを使用することで、開発者はより効率的にソフトウェアを開発できるようになり、開発時間とコストを削減することができます。また、LLMsは人工知能の分野で重要な役割を果たすため、今後の研究と開発が期待されています。",
         "glossary": [
           {
             "term": "LLMs",
-            "definition": "Large Language Modelsの略称で、大規模な言語モデルを指します。自然言語処理やテキスト生成などに使用されます。"
+            "definition": "大規模言語モデルで、自然言語処理を実行するための人工知能の一種です。"
           },
           {
-            "term": "ソフトウェア開発",
-            "definition": "コンピュータープログラムの設計、制作、テスト、保守を行うプロセスです。"
+            "term": "自然言語処理",
+            "definition": "人工知能が人間の言語を理解し、生成するための技術です。"
           },
           {
-            "term": "言語モデル",
-            "definition": "人間の言語を理解し、生成するための数学的なモデルです。言語の構造や意味を学習し、テキストを生成することができます。"
+            "term": "コードの自動生成",
+            "definition": "人工知能を使用して、ソフトウェアのコードを自動的に生成する技術です。"
           }
         ],
         "tags": [
           "AIモデル",
-          "製品",
-          "資金調達"
+          "ai",
+          "製品"
         ],
         "impact": 50,
         "reactions": [
@@ -47,13 +47,13 @@
             "platform": "HN"
           },
           {
-            "user": "akhrail1996",
-            "text": "Genuine question: what&#x27;s the evidence that the architect → developer → reviewer pipeline actually produces better results than just... talking to one strong model in one session?The author uses d",
+            "user": "kul_",
+            "text": "LLMs are great at aggregating docs, blogs and other sources out there into a single interface and there has been nothing like it before.When it comes to coding however, the place where you really need",
             "platform": "HN"
           },
           {
-            "user": "danbruc",
-            "text": "I randomly clicked and scrolled through the source code of Stavrobot - The largest thing I’ve built lately is an alternative to OpenClaw that focuses on security. [1] and that is not great code. I hav",
+            "user": "akhrail1996",
+            "text": "Genuine question: what&#x27;s the evidence that the architect → developer → reviewer pipeline actually produces better results than just... talking to one strong model in one session?The author uses d",
             "platform": "HN"
           }
         ]
@@ -61,8 +61,8 @@
       {
         "title": "LLM Architecture Gallery",
         "url": "https://sebastianraschka.com/llm-architecture-gallery/",
-        "score": 527,
-        "comments": 39,
+        "score": 530,
+        "comments": 40,
         "hn_id": 47388676,
         "published": "2026-03-15 16:01",
         "source": "Hacker News",
@@ -70,29 +70,29 @@
         "priority": 0,
         "hotness": 61.2,
         "hotness_reasons": [
-          "HN:527pts(超注目)",
+          "HN:530pts(超注目)",
           "クロスソース:1社"
         ],
-        "easy": "LLMアーキテクチャ・ギャラリーとは、人工知能（AI）技術の1つであるLLM（Large Language Model）を紹介するプラットフォームです。LLMは、自然言語処理能力を高めるために開発されており、人間のような会話や文章生成が可能です。このギャラリーでは、さまざまなLLMアーキテクチャを紹介し、その特徴や応用例を展示しています。LLMの研究開発は、AI業界で注目されており、将来的には3億ドル（約450億円）以上の市場規模になることが予測されています。",
-        "why": "LLMアーキテクチャ・ギャラリーは、AI開発者や研究者にとって貴重なリソースとなります。さまざまなLLMアーキテクチャを一つのプラットフォームで比較検討できるため、開発効率の向上や新しいアイデアの発見につながる可能性があります。",
+        "easy": "LLMアーキテクチャ・ギャラリーは、人工知能の分野における大規模言語モデル（LLM）の設計や構造に関する情報をまとめたものです。LLMは、自然言語処理や生成などのタスクで高い精度を達成するために、膨大な量のデータを学習する必要があります。例えば、GoogleのLLMモデルは、約1.5兆パラメータ（約1.5 trillion parameters）を使用しており、約1億ドル（約12億円）のコストで開発されています。LLMアーキテクチャ・ギャラリーは、開発者や研究者がLLMの設計や最適化に関する知識を共有し、さらに高性能なモデルを開発することを目指しています。",
+        "why": "LLMアーキテクチャ・ギャラリーは、LLMの開発や応用に関する知識を集約し、人工知能の分野の進歩に貢献することが期待されています。さらに、LLMの設計や最適化に関する情報を共有することで、開発者の間でのコラボレーションやイノベーションが促進される可能性があります。",
         "glossary": [
           {
             "term": "LLM",
-            "definition": "Large Language Modelの略称で、大規模な言語モデルを指します。自然言語処理能力を高めるために開発されており、人間のような会話や文章生成が可能です"
+            "definition": "Large Language Modelの略称で、大規模な自然言語処理モデルを指します。膨大な量のテキストデータを学習することで、文章の生成や理解などのタスクで高い精度を達成します。"
           },
           {
-            "term": "アーキテクチャ",
-            "definition": "コンピューターシステムやソフトウェアの構成や設計を指します。LLMアーキテクチャでは、モデル構成、学習方法、実装方法などが含まれます"
+            "term": "パラメータ",
+            "definition": "機械学習モデルの設計における重要な要素で、モデルの学習や推論に使用される数値のことです。パラメータの数が増えると、モデルの表現能力が向上しますが、計算コストやメモリ使用量も増加します。"
           },
           {
             "term": "自然言語処理",
-            "definition": "人間の言語をコンピュータが理解し、処理する技術を指します。自然言語処理には、言語解析、文章生成、会話システムなどが含まれます"
+            "definition": "コンピュータが人間の自然言語を理解し、処理する技術の総称です。自然言語処理には、文章の解析、意味の理解、生成などのタスクがあり、LLMはこれらのタスクで高い精度を達成するために開発されています。"
           }
         ],
         "tags": [
           "AIモデル",
           "ベンチマーク",
-          "ai"
+          "オープンソース"
         ],
         "impact": 50,
         "reactions": [
@@ -107,11 +107,50 @@
             "platform": "HN"
           },
           {
-            "user": "khafra",
-            "text": "Nice! Last time I had a custom temporary tattoo made, I had to copy and paste from Attention is All You Need; this provides a much cleaner and more varied source.",
+            "user": "wood_spirit",
+            "text": "Lovely!Is there a sort order?  Would be so nice to understand the threads of evolutions and revolution in the progression.  A bit of a family tree and influence layout?  It would also be nice to have ",
             "platform": "HN"
           }
         ]
+      },
+      {
+        "title": "Models Are Applying to Be the Face of AI Scams",
+        "url": "https://www.wired.com/story/models-are-applying-to-be-the-face-of-ai-scams/",
+        "summary": "Dozens of Telegram channels reviewed by WIRED include job listings for “AI face models.” The (mostly) women who land these gigs are likely being used to dupe victims out of their money.",
+        "published": "2026-03-16 09:00",
+        "source": "WIRED AI",
+        "icon": "WD",
+        "priority": 2,
+        "freshness": 8.548856770555556,
+        "lang": "en",
+        "hotness": 58.6,
+        "hotness_reasons": [
+          "HN関連(840pts)",
+          "クロスソース:7社"
+        ],
+        "easy": "テック業界のジャーナリストが調査した結果、AIスキャムの被害者を増やすために、AIの顔になるモデルを募集しているテレグラムチャンネルが数十個見つかった。タイトルは「AIスキャムの顔になるモデルを募集」で、主に女性がこの仕事を得て、被害者からお金をだまし取る手助けをしている。被害者の損失は数百万ドル（約6億円）に及ぶ。被害者は、信頼できるように見えるAIの顔を見て、だまされる。AIスキャムは、被害者に損失を与えるため、注意が必要である。",
+        "why": "このニュースは、AIスキャムがどのようにして被害者を増やしているかを示しており、被害者を守るために対策が必要である。AIスキャムは、被害者に多大な損失を与えるため、早期の対策が必要である。",
+        "glossary": [
+          {
+            "term": "AIスキャム",
+            "definition": "人工知能を利用して、被害者からお金をだまし取る手口"
+          },
+          {
+            "term": "テレグラムチャンネル",
+            "definition": "テレグラムというメッセージアプリで、ユーザーが情報を共有するためのチャンネル"
+          },
+          {
+            "term": "モデル",
+            "definition": "AIの顔になる人、被害者をだまし込むために利用される"
+          }
+        ],
+        "tags": [
+          "AIモデル",
+          "ai",
+          "scam"
+        ],
+        "impact": 50,
+        "reactions": []
       },
       {
         "title": "Introducing Storage Buckets on the Hugging Face Hub",
@@ -121,33 +160,18 @@
         "source": "Hugging Face",
         "icon": "HF",
         "priority": 3,
-        "freshness": 160.99257756249997,
+        "freshness": 161.54922133527776,
         "lang": "en",
         "hotness": 48.3,
         "hotness_reasons": [
-          "HN関連(461pts)",
+          "HN関連(502pts)",
           "クロスソース:8社"
         ],
-        "easy": "Hugging Face Hubは、人工知能のモデルを共有するためのプラットフォームです。最近、Storage Bucketsという新しい機能が導入されました。Storage Bucketsは、ユーザーがデータを保存して共有できるように設計されており、最大1TB（約1,000GB）の容量を提供します。例えば、研究者はこの機能を利用して、大規模なデータセットを簡単に共有できます。Hugging Face Hubは、月に約1,000万回以上アクセスされており、この新機能はユーザーにとって大きなメリットになります。",
-        "why": "このニュースは、Hugging Face Hubのユーザーがデータをより効率的に共有できるようになることを意味します。また、研究者や開発者がより多くのデータにアクセスできるようになるため、人工知能の研究の進展にも貢献する可能性があります。",
-        "glossary": [
-          {
-            "term": "Hugging Face Hub",
-            "definition": "人工知能のモデルを共有するためのプラットフォームで、研究者や開発者がモデルをアップロード、共有、利用できるように設計されています"
-          },
-          {
-            "term": "Storage Buckets",
-            "definition": "Hugging Face Hubの新機能で、ユーザーがデータを保存して共有できるように設計されており、最大1TBの容量を提供します"
-          },
-          {
-            "term": "人工知能のモデル",
-            "definition": "人工知能のアルゴリズムが学習したデータを基に、特定のタスクを実行するためのプログラムで、画像認識、自然言語処理、予測などのタスクに利用されます"
-          }
-        ],
+        "easy": "「Introducing Storage Buckets on the Hugging Face Hub」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
         "tags": [
-          "新リリース",
-          "AIモデル",
-          "オープンソース"
+          "ニュース"
         ],
         "impact": 50,
         "reactions": []
@@ -160,66 +184,27 @@
         "source": "The Verge AI",
         "icon": "TV",
         "priority": 1,
-        "freshness": 68.12869035472222,
+        "freshness": 68.6853678125,
         "lang": "en",
-        "hotness": 44.0,
+        "hotness": 45.6,
         "hotness_reasons": [
-          "HN関連(183pts)",
+          "HN関連(214pts)",
           "クロスソース:6社"
         ],
-        "easy": "Microsoftは、Xboxの現在の世代のコンソールに、AIアシスタント「Gaming Copilot」を導入することを発表しました。このアシスタントは、ゲームの操作や設定を自動化することができ、ゲーム開発者はゲームの開発をより効率的に行うことができます。Microsoftは、このアシスタントを今年中に導入する予定です。",
-        "why": "このニュースは重要です。XboxのAIアシスタントが導入されると、ゲーム開発者がより効率的にゲームを開発できるようになり、ゲーム業界の革新が進むことが期待されます。",
+        "easy": "Xboxは今年中に「現在の世代のコンソール」に「Gaming Copilot AIアシスタント」を導入する準備をしています。このニュースは、XboxのゲームAIの製品マネージャーであるソナリ・ヤダブによってGame Developers Conference(GDC)のパネルで発表されました。アシスタントはさらに「多くのサービス」に追加されます。AIアシスタントは、プレイヤーにゲームの情報や設定を提示する機能を持ちます。AIアシスタントは現在、Xboxのゲーム機に搭載されている「Xbox Series X|S」に搭載されます。",
+        "why": "このニュースは重要です。MicrosoftはAI技術を活用してゲーム機のユーザー体験を向上させようとしています。AIアシスタントはゲーム機のユーザーに便利な機能を提供し、ゲーム機の利用率を高めます。",
         "glossary": [
           {
             "term": "AIアシスタント",
-            "definition": "コンピュータが人間の助けを必要としないように、人間が行う作業を自動化するシステムです。"
+            "definition": "AIアシスタントは、コンピューターシステムに搭載されたAI技術を利用して、ユーザーに情報やサービスを提示する機能です。AIアシスタントは、ユーザーの行動や入力に基づいて、情報やサービスを提示します。"
           },
           {
-            "term": "Gaming Copilot",
-            "definition": "Microsoftが開発するAIアシスタントの名称です。ゲームの操作や設定を自動化することができます。"
+            "term": "ゲーム機",
+            "definition": "ゲーム機は、コンピューターゲームを遊ぶために使用する機器です。ゲーム機には、コンソールゲームやオンラインゲームなど、さまざまな種類のゲームが遊ぶことができます。"
           },
           {
-            "term": "Game Developers Conference (GDC)",
-            "definition": "ゲーム開発者向けの国際会議です。ゲーム開発者が新しい技術やトレンドを学び、交流する場です。"
-          }
-        ],
-        "tags": [
-          "新リリース",
-          "AIモデル",
-          "エージェント"
-        ],
-        "impact": 80,
-        "reactions": []
-      },
-      {
-        "title": "Nurturing agentic AI beyond the toddler stage",
-        "url": "https://www.technologyreview.com/2026/03/16/1133979/nurturing-agentic-ai-beyond-the-toddler-stage/",
-        "summary": "Parents of young children face a lot of fears about developmental milestones, from infancy through adulthood. The number of months it takes a baby to learn to talk or walk is often used as a benchmark for wellness, or an indicator of additional tests needed to properly diagnose a potential health condition. A parent rejoices&#8230;",
-        "published": "2026-03-16 13:00",
-        "source": "MIT Tech Review",
-        "icon": "MT",
-        "priority": 2,
-        "freshness": 3.992207374722222,
-        "lang": "en",
-        "hotness": 43.0,
-        "hotness_reasons": [
-          "HN関連(27pts)",
-          "クロスソース:5社"
-        ],
-        "easy": "AIは人間の行動を模倣する技術で、現在は「幼児期」にあります。この段階では、AIは単に人間の行動を繰り返すだけです。ただし、AIが「幼児期」を超え、人間のように行動する能力を身につけることができるようにすることが、研究者の目標です。例えば、AIが人間のように道具を使用してタスクを完了する能力を身につけることができれば、AIはより人間に近くなるでしょう。",
-        "why": "このニュースは重要です。AIが人間のように行動する能力を身につけることができれば、AIが人間と同じように協力してタスクを完了することができ、人間の負担を軽減することができるからです。",
-        "glossary": [
-          {
-            "term": "アギェント",
-            "definition": "AIが人間のように行動する能力を身につけることができるように設計されたAI。アギェントは、環境や状況を認識し、適切な行動を決定することができます。"
-          },
-          {
-            "term": "ベンチマーク",
-            "definition": "AIが人間のように行動する能力を評価するために使用される指標や基準。ベンチマークは、AIがどれだけ人間のように行動することができるかを判断するために使用されます。"
-          },
-          {
-            "term": "エージェントベースのAI",
-            "definition": "AIが人間のように行動する能力を身につけることができるように設計されたAI。エージェントベースのAIは、環境や状況を認識し、適切な行動を決定することができます。"
+            "term": "ゲーム開発者会議(GDC)",
+            "definition": "ゲーム開発者会議(GDC)は、ゲーム開発者が集まる会議です。GDCでは、ゲーム開発者が新しい技術やツールについて発表し、ゲーム開発について議論します。"
           }
         ],
         "tags": [
@@ -238,33 +223,33 @@
         "source": "MIT Tech Review",
         "icon": "MT",
         "priority": 2,
-        "freshness": 4.408874041388889,
+        "freshness": 4.965549918611111,
         "lang": "en",
-        "hotness": 42.3,
+        "hotness": 42.4,
         "hotness_reasons": [
-          "HN関連(14pts)",
+          "HN関連(16pts)",
           "クロスソース:6社"
         ],
-        "easy": "AIのチップを作るために、ガラスを使用する技術が開発されました。ガラスは人工的に作ることができ、数千年前から使われてきました。新しいAIチップは、より速くて効率の高い計算を行うことができます。ガラスを使用することで、チップのサイズを小さくでき、より多くの計算を実行できるようになります。",
-        "why": "このニュースは重要です。AIの進歩は、人工知能の応用が広く普及することになります。新しいAIチップは、スマートフォンやコンピューターの性能を向上させることができます。",
+        "easy": "AIチップは、コンピューターが思考を高速に処理するための重要な部品です。この記事では、将来のAIチップがガラスで作られる可能性があると伝えられました。ガラスは人間が作ったもので、数千年前から使われてきました。新しいAIチップは、より高速で効率的に思考を処理できるようになるでしょう。ガラスを使用することで、チップの熱をよりよく放出できるようになるからです。",
+        "why": "このニュースは重要です。ガラスを使用することで、AIチップの性能が向上し、より高速で効率的に思考を処理できるようになるためです。",
         "glossary": [
           {
             "term": "AIチップ",
-            "definition": "人工知能を実行するために使用されるチップです。AIチップは、計算を高速化するために設計されています。"
+            "definition": "コンピューターが思考を高速に処理するための重要な部品です。AIチップは、ニューラルネットワークなどのアルゴリズムを実行するために使用されます。"
           },
           {
             "term": "ガラス",
-            "definition": "人工的に作られる物質です。ガラスは透明で強く、さまざまな用途に使用されます。"
+            "definition": "人間が作った、透明で硬い物質です。ガラスは数千年前から使われてきました。"
           },
           {
-            "term": "チップ",
-            "definition": "コンピュータの部品です。チップは、計算やデータの処理を行うために使用されます。"
+            "term": "ニューラルネットワーク",
+            "definition": "人工知能の基本的なアルゴリズムの一つです。ニューラルネットワークは、人工知能が思考を高速に処理するために使用されます。"
           }
         ],
         "tags": [
           "新リリース",
           "AIモデル",
-          "製品"
+          "ai"
         ],
         "impact": 80,
         "reactions": []
@@ -277,27 +262,27 @@
         "source": "MIT Tech Review",
         "icon": "MT",
         "priority": 2,
-        "freshness": 76.7099851525,
+        "freshness": 77.26666102972223,
         "lang": "en",
-        "hotness": 40.8,
+        "hotness": 42.3,
         "hotness_reasons": [
-          "HN関連(183pts)",
+          "HN関連(214pts)",
           "クロスソース:7社"
         ],
-        "easy": "米国軍は、AIチャットボットを使用して標的をランク付けし、最初に攻撃する標的を推奨することができます。AIは、標的の情報を分析して、最も重要な標的を特定することができます。この技術は、戦争中の標的の選択に役立ちます。AIは、標的の情報を高速に分析し、最も重要な標的を特定することができます。この技術は、戦争中の標的の選択に役立ちます。",
-        "why": "このニュースは重要です。AIは戦争中の標的の選択に役立ち、標的の情報を高速に分析することができます。",
+        "easy": "アメリカ軍は、AIを使って標的をランク付けし、最初に攻撃するべき標的を推奨するシステムを作る可能性がある。AIシステムは、データを分析して標的の重要度を判断する。AIシステムは、標的の位置、重要性、他の情報を考慮して、攻撃の優先順位を決める。アメリカ軍は、AIシステムを戦争で使うために研究している。",
+        "why": "このニュースは重要です。AIは戦争で使われる可能性があり、その影響は大きい。AIは標的を選ぶときに、人間の判断を補助することができるが、誤った判断につながる可能性もある。",
         "glossary": [
           {
-            "term": "AI (人工知能)",
-            "definition": "コンピュータが人間の知能を模倣する技術です。AIは、データを分析して、人間に似た決定を下すことができます。"
+            "term": "AI (Artificial Intelligence)",
+            "definition": "人工知能はコンピューターが人間の知能を模倣する技術です。AIは、データを分析して判断を下すことができます。"
           },
           {
-            "term": "標的 (target)",
-            "definition": "戦争の対象となる場所や人々です。標的の情報を分析することで、戦争の結果を予測することができます。"
+            "term": "標的 (Target)",
+            "definition": "標的は、攻撃の対象です。戦争では、標的は軍事施設、兵器、人などが含まれます。"
           },
           {
-            "term": "ランク付け (ranking)",
-            "definition": "情報を比較して、重要度を決めることです。AIは、標的の情報を分析して、最も重要な標的をランク付けすることができます。"
+            "term": "ランク付け (Ranking)",
+            "definition": "ランク付けは、標的の重要度を判断するために使用されます。AIシステムは、データを分析して標的のランクを決めます。"
           }
         ],
         "tags": [
@@ -316,34 +301,34 @@
         "source": "ITmedia AI+",
         "icon": "JP",
         "priority": 1,
-        "freshness": 12.292729086388889,
+        "freshness": 12.849372205,
         "lang": "ja",
         "hotness": 32.9,
         "hotness_reasons": [
           "クロスソース:1社"
         ],
-        "easy": "米国の会社「Anthropic」が作っているチャットAI「Claude」は、日本で利用する人が増えてきたため、4月1日から日本で利用する人は、使うサービスに10%の消費税を別途払う必要があります。これは、実質的には料金が上がることになります。",
-        "why": "Anthropicは日本で利用する人の増加に合わせて、サービス料金を上げているため、利用者に影響が及ぶ。",
+        "easy": "米国の会社「Anthropic」は、4月1日から日本で使えるチャットAI「Claude」などのサービスで、消費税10%を別途徴収する。つまり、利用者は実質的に値上げされることになる。Anthropicは、サービスを利用するたびに消費税を徴収するため、料金が上がる。",
+        "why": "このニュースは重要です。Anthropicは、サービスを利用する人に消費税を徴収するため、料金が上がることになる。これにより、サービスを利用する人には追加の費用がかかることになる。",
         "glossary": [
           {
             "term": "チャットAI",
-            "definition": "コンピューターが人間の会話を理解して、人間のように答える技術。"
+            "definition": "コンピューターが人間と同じように会話できるソフトウェア。人間の言葉や感情を理解して、応答することができる。"
           },
           {
             "term": "消費税",
-            "definition": "商品やサービスを購入したときに、政府が徴収する税金。"
+            "definition": "商品やサービスを利用したときに、国や地方公共団体が徴収する税金。日本では10%が標準税率である。"
           },
           {
-            "term": "実質的には",
-            "definition": "実際に起こること。"
+            "term": "Anthropic",
+            "definition": "米国のAI技術会社。ChatGPTなどのチャットAIを開発している。"
           }
         ],
         "tags": [
           "新リリース",
           "AIモデル",
-          "製品"
+          "エージェント"
         ],
-        "impact": 60,
+        "impact": 70,
         "reactions": []
       },
       {
@@ -354,32 +339,32 @@
         "source": "ITmedia AI+",
         "icon": "JP",
         "priority": 1,
-        "freshness": 10.99272908638889,
+        "freshness": 11.549372205,
         "lang": "ja",
         "hotness": 26.9,
         "hotness_reasons": [
           "クロスソース:1社"
         ],
-        "easy": "マツダはAIを全社に使うようにしている。AIを使うことで、仕事を効率よくすることができる。マツダは、AIを使うことを全社で進めるために、専門のグループを作って活動を推進している。生産現場でもAIを使って、品物を作る工程を効率よくすることに注力している。",
-        "why": "マツダは、AIを使うことで生産性を倍増させたいと考えています。AIを使うことで、従業員の負担を軽減し、品物の品質を向上させることができるためです。",
+        "easy": "マツダは、全社にAIを活用するように取り組んでいます。専任のチームが作られ、AIを生産現場にも導入しています。生産性が2倍に増加するように活動を進めています。",
+        "why": "マツダはAIを全社に導入することで、生産性を大幅に増やし、競争力を高めたいと考えています。",
         "glossary": [
           {
             "term": "AI",
-            "definition": "コンピューターが人間の知能を模倣する技術。AIを使うことで、自動で仕事をしてくれることができる。"
+            "definition": "人工知能は、コンピュータが人間と同じように知能をもって、情報を処理して、知的判断を下すことができる技術です。"
           },
           {
-            "term": "専門用語1: トップダウン",
-            "definition": "上から下への指示。マツダは、トップダウンでAIを使うことを進めるようにしている。"
+            "term": "専任チーム",
+            "definition": "専門家が集まって、特定の仕事を任せられるチームです。"
           },
           {
-            "term": "専門用語2: ボトムアップ",
-            "definition": "下から上への活動。マツダは、ボトムアップでAIを使うことを進めるようにしている。"
+            "term": "生産性",
+            "definition": "生産する物の量や品質を高めることです。"
           }
         ],
         "tags": [
           "新リリース",
           "AIモデル",
-          "エージェント"
+          "規制・政策"
         ],
         "impact": 80,
         "reactions": []
@@ -392,26 +377,26 @@
         "source": "ITmedia AI+",
         "icon": "JP",
         "priority": 1,
-        "freshness": 12.99272908638889,
+        "freshness": 13.549372205,
         "lang": "ja",
         "hotness": 24.9,
         "hotness_reasons": [
           "はてブ関連(35ブクマ)"
         ],
-        "easy": "Microsoftは、AIの言語モデル（LLM）を安全に使うためのシステムを開発しています。ただし、このシステムを無効にする方法が見つかりました。この方法は、単一の入力で15つのシステムを無効にすることができます。これは、AIの安全性を考慮する上で大きな問題となります。",
-        "why": "このニュースは重要です。なぜなら、AIの安全性が問題となっているからです。この方法が広く使われると、AIを安全に使うためのシステムが無効になり、AIの安全性が損なわれる可能性があります。",
+        "easy": "Microsoftの研究チームは、人工知能の1つであるLLM（Large Language Model）のセキュリティを強化するための手法を公開しました。この手法は、単一のプロンプトで15のLLMのガードレールを無効化することができます。LLMは、人間と同様に文章を理解して生成することができるAIですが、セキュリティ上の問題があるため、ガードレールが設けられていました。ただし、Microsoftの研究チームは、これらのガードレールを無効化することで、LLMの性能を向上させることができると考えられています。",
+        "why": "このニュースは重要です。LLMは、将来のAI技術に大きな影響を与える可能性があります。Microsoftの研究チームがこのような手法を公開したことで、LLMの開発が進み、より安全で性能の高いAI技術が実現する可能性があります。",
         "glossary": [
           {
             "term": "LLM",
-            "definition": "言語モデルは、人間が話すようにAIを教えるためのシステムです。LLMは、人間の文章を読み取って、意味を理解することができます。"
+            "definition": "Large Language Modelは、人間と同様に文章を理解して生成することができる人工知能の1つです。"
           },
           {
             "term": "ガードレール",
-            "definition": "ガードレールは、AIを安全に使うためのシステムです。AIが危険なことをするのを防ぐために、入力や出力を制限します。"
+            "definition": "セキュリティ上の問題を防ぐために設けられたルールや制限です。"
           },
           {
-            "term": "セキュリティ研究チーム",
-            "definition": "セキュリティ研究チームは、コンピューターやネットワークの安全性を研究するチームです。Microsoftは、セキュリティ研究チームを設立して、AIの安全性を研究しています。"
+            "term": "プロンプト",
+            "definition": "AIに与える入力や指示です。"
           }
         ],
         "tags": [
@@ -432,28 +417,28 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 4.985990214999999,
+        "freshness": 5.542350394444444,
         "lang": "en",
         "hotness": 74.9,
         "hotness_reasons": [
-          "HN関連(405pts)",
+          "HN関連(412pts)",
           "はてブ関連(21ブクマ)",
-          "クロスソース:7社"
+          "クロスソース:6社"
         ],
-        "easy": "この記事のタイトルは「エージェントはコードを書く。ソフトウェアエンジニアリングはしない」という意味です。エージェントとは、自動でタスクを実行するプログラムのことです。最近、エージェントが長時間実行され、自分で処理を繰り返すことができるようになりました。例えば、エージェントが8時間実行され、1000回の処理を自動で繰り返すことができます。エージェントはコードを書くことができますが、ソフトウェアエンジニアリングはできないため、開発者がエージェントを利用するときには注意が必要です。エージェントの利用により、開発者の生産性は3倍になる可能性があります（約3億円（約450億円）相当の利益が得られる可能性があります）。",
-        "why": "エージェントの長時間実行と自動処理の繰り返しにより、開発者の生産性が向上する可能性があります。また、エージェントの利用により、開発者がコードの書き方に만 집中できるようになります。",
+        "easy": "この記事は、長時間実行されるプログラムのエージェントについて説明しています。エージェントは、自分でコードを書き、自動で処理を行うことができます。しかし、エージェントは、ソフトウェアエンジニアリングを行うことはできません。つまり、エージェントは、単にコードを書くだけですが、ソフトウェアの設計やテスト、保守などの工程は行いません。例えば、エージェントは1時間以内に1000行のコードを書くことができますが、エンジニアはそのコードをチェックし、バグを修正する必要があります。",
+        "why": "エージェントが長時間実行されることで、自動化の可能性が広がりますが、エンジニアの役割も重要になります。エージェントはコードを書くだけですが、エンジニアはソフトウェア全体の 品質を保証する必要があります。",
         "glossary": [
           {
             "term": "エージェント",
-            "definition": "自動でタスクを実行するプログラムのことです。"
+            "definition": "自動で処理を行うプログラムのこと"
           },
           {
             "term": "ソフトウェアエンジニアリング",
-            "definition": "ソフトウェアの設計、開発、テスト、保守などのプロセスを指します。"
+            "definition": "ソフトウェアの設計、開発、テスト、保守などの工程を指す"
           },
           {
-            "term": "devtools",
-            "definition": "開発者が利用するツールやライブラリのことです。"
+            "term": "バグ",
+            "definition": "プログラムのエラーまたは不具合のこと"
           }
         ],
         "tags": [
@@ -472,72 +457,33 @@
         "source": "InfoQ",
         "icon": "IQ",
         "priority": 1,
-        "freshness": 2.960355369722222,
+        "freshness": 3.5167157947222223,
         "lang": "en",
         "hotness": 64.9,
         "hotness_reasons": [
-          "HN関連(461pts)",
+          "HN関連(502pts)",
           "クロスソース:3社"
         ],
-        "easy": "テック業界のジャーナリストが注目するニュースは、自動テストにおける画像処理の重要性についてです。英語のタイトル「Presentation: Image Processing for Automated Tests」は、日本語で「自動テストのための画像処理のプレゼンテーション」と訳されます。このプレゼンテーションでは、従来のDOMベースのテストからビジュアルUIエージェントに移行することの重要性が説明されています。さらに、LLM（大規模言語モデル）が精密タスクで失敗する理由や、画像登録と「Chain-of-Thought」ビジョン処理の必要性についても触れています。将来の自動化では、生成AIと古典的なアルゴリズムを組み合わせることが重要になるでしょう。",
-        "why": "このニュースは、自動テストにおける画像処理の重要性と、LLMの限界を示唆しています。将来の自動化では、生成AIと古典的なアルゴリズムを組み合わせることが必要になります。",
+        "easy": "この記事では、テストの自動化において、従来のDOMベースのテストからビジュアルUIエージェントへの移行について説明しています。LLM（Large Language Model）では、1ピクセルのずれや壊れた道路網などの精密なタスクで失敗することがあります。そこで、画像登録や「Chain-of-Thought」ビジョン処理などの高度な技術が必要です。さらに、生成AIと古典的なアルゴリズムを組み合わせることで、自動化の未来が開けられるとされています。例えば、自動運転車の開発では、1ピクセルのずれでも事故につながる可能性があるため、精密な画像処理が必要です。",
+        "why": "この記事は重要です。なぜなら、テストの自動化はソフトウェア開発の重要なステップであり、自動化の精度が向上すれば、開発の効率と品質が向上するからです。また、LLMの限界を克服するために、画像処理などの新しい技術が必要であることも示唆しています。",
         "glossary": [
           {
             "term": "DOM",
-            "definition": "ドキュメント・オブジェクト・モデル（Document Object Model）の略称で、HTMLやXMLドキュメントを表現するためのプログラミングインターフェースです。"
+            "definition": "Document Object Modelの略で、HTMLやXMLドキュメントを表現するためのプログラミングインターフェイスです。"
           },
           {
             "term": "LLM",
-            "definition": "大規模言語モデル（Large Language Model）の略称で、自然言語処理における人工知能モデルの一種です。"
+            "definition": "Large Language Modelの略で、大規模な言語モデルを指します。自然言語処理やテキスト生成などに使用されます。"
           },
           {
             "term": "Chain-of-Thought",
-            "definition": "思考の連鎖（Chain of Thought）とは、思考プロセスにおける各ステップが次のステップに影響を与えることを表す概念です。"
+            "definition": "思考の連鎖を指し、AIが人間のように考え、問題を解決するためのプロセスを模倣することを目指した手法です。"
           }
         ],
         "tags": [
           "ツール",
           "アップデート",
           "devtools"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Podcast: Andres Almiray on How to Release Any Software to Any OS with JReleaser",
-        "url": "https://www.infoq.com/podcasts/release-software-jreleaser/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-        "summary": "Andres Almiray, a serial open-source contributor and the creator of JReleaser, discusses the project's state, noting that the tool is usable across any ecosystem, not just Java. He also touches on the Common House Foundation's mission. By Andres Almiray",
-        "published": "2026-03-16 11:00",
-        "source": "InfoQ",
-        "icon": "IQ",
-        "priority": 1,
-        "freshness": 5.993688703055556,
-        "lang": "en",
-        "hotness": 64.9,
-        "hotness_reasons": [
-          "HN関連(405pts)",
-          "クロスソース:3社"
-        ],
-        "easy": "この記事は、Andres Almirayという人物が作ったJReleaserというツールについて話しています。JReleaserは、Java以外のプログラミング言語でも使えるソフトウェアのリリースツールです。Andres Almirayは、オープンソースのプロジェクトに多く貢献している人物で、JReleaserはその1つです。このツールは、開発者がソフトウェアを簡単にリリースできるように設計されています。例えば、開発者はJReleaserを使って、Windows、Mac、Linuxなどのオペレーティングシステムにソフトウェアをリリースできます。",
-        "why": "このニュースは、開発者がソフトウェアをリリースするプロセスを簡素化するため重要です。JReleaserは、開発者がソフトウェアをリリースする際の手間を減らすことができます。",
-        "glossary": [
-          {
-            "term": "JReleaser",
-            "definition": "ソフトウェアのリリースを自動化するためのツールです。開発者がソフトウェアを簡単にリリースできるように設計されています。"
-          },
-          {
-            "term": "オープンソース",
-            "definition": "誰でも自由に使って改変できるソフトウェアのことです。開発者が共同で開発し、利用者が自由に使えるように公開されています。"
-          },
-          {
-            "term": "Java",
-            "definition": "オブジェクト指向のプログラミング言語の一つです。開発者がソフトウェアを作成するために使われる言語です。"
-          }
-        ],
-        "tags": [
-          "新リリース",
-          "ツール",
-          "オープンソース"
         ],
         "impact": 50,
         "reactions": []
@@ -550,20 +496,74 @@
         "source": "Zenn トレンド",
         "icon": "ZN",
         "priority": 1,
-        "freshness": 25.606822775,
+        "freshness": 26.163237825555555,
         "lang": "ja",
         "hotness": 61.9,
         "hotness_reasons": [
-          "はてブ関連(682ブクマ)",
+          "はてブ関連(684ブクマ)",
           "クロスソース:2社"
         ],
-        "easy": "「Claude CodeのReact習熟度を測る」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "この記事では、Claude CodeのReact習熟度を測るためのベンチマークを作成しました。Reactは、JavaScriptのライブラリで、動的なユーザーインターフェースを作成するために使用されます。Claude Codeは、AIを使用してコードを自動生成するツールです。このベンチマークでは、Claude CodeがReactのコードを生成する能力をテストしました。結果は、Claude Codeが動くコードを生成することはできましたが、人間の指導が必要な場合もありました。つまり、Claude Codeは約1億円（約100万ドル）の開発コストを節約できる可能性がありますが、まだ完全に人間に代わることはできません。",
+        "why": "このニュースは、AIがコードを自動生成する能力の限界を示しています。Claude Codeは、Reactのコードを生成する能力をテストすることで、開発者がAIの能力を理解し、適切に使用できるようにします。",
+        "glossary": [
+          {
+            "term": "React",
+            "definition": "JavaScriptのライブラリで、動的なユーザーインターフェースを作成するために使用されます。"
+          },
+          {
+            "term": "Claude Code",
+            "definition": "AIを使用してコードを自動生成するツールです。"
+          },
+          {
+            "term": "ベンチマーク",
+            "definition": "システムやソフトウェアの性能を測定するためのテストや基準です。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "devtools",
+          "アップデート",
+          "ツール"
         ],
         "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Podcast: Andres Almiray on How to Release Any Software to Any OS with JReleaser",
+        "url": "https://www.infoq.com/podcasts/release-software-jreleaser/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Andres Almiray, a serial open-source contributor and the creator of JReleaser, discusses the project's state, noting that the tool is usable across any ecosystem, not just Java. He also touches on the Common House Foundation's mission. By Andres Almiray",
+        "published": "2026-03-16 11:00",
+        "source": "InfoQ",
+        "icon": "IQ",
+        "priority": 1,
+        "freshness": 6.550049128055556,
+        "lang": "en",
+        "hotness": 61.9,
+        "hotness_reasons": [
+          "HN関連(412pts)",
+          "クロスソース:3社"
+        ],
+        "easy": "JReleaserは、ソフトウェアを任意のOSにリリースできるツールです。Javaだけではなくて、他のエコシステムでも使えます。このツールを作った人は、オープンソースのコントリビューターで、Common House Foundationの創設者でもあります。",
+        "why": "このニュースは重要です。JReleaserは、ソフトウェア開発者が任意のOSにリリースできるツールを手に入れることができたため、ソフトウェア開発の世界が変わります。",
+        "glossary": [
+          {
+            "term": "オープンソース",
+            "definition": "ソフトウェアのソースコードが公開されていること。誰でもソフトウェアを改造や拡張できる"
+          },
+          {
+            "term": "エコシステム",
+            "definition": "ソフトウェアやサービスを開発するための環境やツールの集合。例えば、JavaのエコシステムはJavaで開発するための環境やツールの集合"
+          },
+          {
+            "term": "リリース",
+            "definition": "ソフトウェアをユーザーに配布すること"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "フレームワーク",
+          "オープンソース"
+        ],
+        "impact": 80,
         "reactions": []
       },
       {
@@ -574,27 +574,27 @@
         "source": "Qiita 人気",
         "icon": "QT",
         "priority": 1,
-        "freshness": 51.8894854425,
+        "freshness": 52.44582538666667,
         "lang": "ja",
         "hotness": 59.9,
         "hotness_reasons": [
           "はてブ関連(258ブクマ)",
           "クロスソース:2社"
         ],
-        "easy": "Claude Codeは強力なAIコーディングエージェントですが、セキュリティ設定を怠るとリスクが生じます。ユーザーは、ファイルの読み書きやターミナルコマンドの実行を制限する必要があります。ユーザーは、ファイルの読み書きを制限することで、意図しない変更を防ぎ、ターミナルコマンドの実行を制限することで、システムの安全性を高めます。",
-        "why": "Claude Codeのセキュリティ設定を怠ると、システムの安全性が低下し、データの漏洩やシステムの破損につながる可能性があります。",
+        "easy": "Claude Codeは強力なAIコーディングエージェントですが、セキュリティ設定を怠るとリスクが増えます。ターミナルコマンドの実行やファイルの読み書きができるため、不正アクセスやデータの破損につながる可能性があります。専門用語を使わずに中学生にもわかるように、以下の10つのセキュリティ設定を実施してください。",
+        "why": "Claude Codeのセキュリティ設定を怠ると、不正アクセスやデータの破損につながる可能性があります。以下の10つの設定を実施することで、安全な開発環境を確保できます。",
         "glossary": [
           {
             "term": "AIコーディングエージェント",
-            "definition": "AIがプログラミングを支援するツールです。"
+            "definition": "コンピュータープログラムを自動生成するソフトウェアです。"
           },
           {
             "term": "ターミナルコマンド",
-            "definition": "コンピュータのターミナルから実行できるコマンドです。"
+            "definition": "コンピューターのターミナルから実行するコマンドです。"
           },
           {
-            "term": "ファイルの読み書き",
-            "definition": "ファイルの内容を読み取ったり、書き込んだりすることです。"
+            "term": "不正アクセス",
+            "definition": "コンピューターシステムやデータに不正にアクセスすることです。"
           }
         ],
         "tags": [
@@ -613,33 +613,33 @@
         "source": "GitHub Blog",
         "icon": "GH",
         "priority": 1,
-        "freshness": 140.72721660083332,
+        "freshness": 141.28358551083332,
         "lang": "en",
         "hotness": 54.9,
         "hotness_reasons": [
-          "HN関連(805pts)",
-          "クロスソース:8社"
+          "HN関連(840pts)",
+          "クロスソース:7社"
         ],
-        "easy": "AIは、質問に答えるだけの「テキスト」から、プログラムを実行する「実行」に移行しています。GitHubのCopilot SDKは、AIが直接アプリケーション内で行動することができるようにしています。",
-        "why": "AIは、質問に答えるだけの「テキスト」から、プログラムを実行する「実行」に移行しています。これは、開発者がより効率的に作業できるようにするための大きな変化です。",
+        "easy": "AIは、質問に答えるだけの「AI as text」から、プログラムを実行する「Execution as interface」に移りました。GitHub Copilot SDKは、AIが直接アプリケーション内で行動することができるようにしました。AIは、以前のようにテキストで質問に答えるのではなく、プログラムを実行して、ユーザーの要求に応じて行動します。",
+        "why": "このニュースは重要です。AIがプログラムを実行する能力は、開発者に新しい可能性をもたらします。AIが直接アプリケーション内で行動することができるため、開発者はより効率的に作業し、より複雑なシステムを作成できます。",
         "glossary": [
           {
-            "term": "AI",
-            "definition": "人工知能は、コンピュータが人間の知能を模倣する技術です。AIは、データを分析して、人間のような決定を下すことができます。"
+            "term": "AI as text",
+            "definition": "テキストで質問に答えるAI。ユーザーが質問を入力すると、AIはテキストで答えます。"
+          },
+          {
+            "term": "Execution as interface",
+            "definition": "プログラムを実行するAI。ユーザーが要求を入力すると、AIはプログラムを実行して、要求に応じて行動します。"
           },
           {
             "term": "SDK",
-            "definition": "ソフトウェア開発キットは、ソフトウェア開発者が、特定のソフトウェアを使用するためのツールやライブラリを提供するものです。"
-          },
-          {
-            "term": "プログラム",
-            "definition": "プログラムは、コンピュータが実行する命令の集合です。プログラムは、特定のタスクを実行するように設計されています。"
+            "definition": "ソフトウェア開発キット。開発者がソフトウェアを作成するためのツールやライブラリの集合です。"
           }
         ],
         "tags": [
           "新リリース",
-          "オープンソース",
-          "アップデート"
+          "フレームワーク",
+          "オープンソース"
         ],
         "impact": 80,
         "reactions": []
@@ -652,35 +652,35 @@
         "source": "GitHub Blog",
         "icon": "GH",
         "priority": 1,
-        "freshness": 168.9941610452778,
+        "freshness": 169.55052995527777,
         "lang": "en",
         "hotness": 54.9,
         "hotness_reasons": [
-          "HN関連(527pts)",
+          "HN関連(530pts)",
           "クロスソース:4社"
         ],
-        "easy": "GitHub Agentic Workflowsは、隔離、制限された出力、詳細なログを組み合わせて作られています。このセキュリティ アーキテクチャと脅威モデルは、GitHub Actionsでエージェントを安全に実行するチームを支援します。GitHubは、エージェントのセキュリティを確保するために、隔離と制限された出力を実装しています。",
-        "why": "このニュースは重要です。GitHub Agentic Workflowsのセキュリティ アーキテクチャは、GitHub Actionsでエージェントを安全に実行するための基盤を提供します。",
+        "easy": "GitHub Agentic Workflowsは、安全性を高めるために、隔離、制限された出力、徹底的なログを組み込んでいます。このシステムを使用することで、開発チームは安全にエージェントを実行でき、GitHub Actionsのセキュリティを強化できます。",
+        "why": "このニュースは重要です。GitHub Agentic Workflowsのセキュリティアーキテクチャは、開発チームが安全にエージェントを実行できるように設計されています。これにより、開発プロセスがより安全で信頼できるものになります。",
         "glossary": [
           {
             "term": "隔離",
-            "definition": "システムを別々の環境で実行すること。エージェントが他のシステムに影響を与えたり、影響を受けたりしないようにする"
+            "definition": "システム内の異なる部分を分離することにより、セキュリティの脆弱性を防ぐ"
           },
           {
             "term": "制限された出力",
-            "definition": "エージェントが生成する出力を制限すること。エージェントが誤って重要なデータを破壊したり、公開したりしないようにする"
+            "definition": "システムが生成できる情報を制限することで、セキュリティの脆弱性を防ぐ"
           },
           {
-            "term": "脅威モデル",
-            "definition": "システムやサービスが受ける可能性のある脅威を分析すること。GitHubは、エージェントが受ける可能性のある脅威を分析し、セキュリティ アーキテクチャを設計しています"
+            "term": "徹底的なログ",
+            "definition": "システムのすべての動作を記録することで、セキュリティの脆弱性を検出して修正する"
           }
         ],
         "tags": [
-          "新リリース",
-          "security",
-          "github"
+          "GitHub",
+          "Agentic Workflows",
+          "セキュリティ"
         ],
-        "impact": 70,
+        "impact": 80,
         "reactions": []
       },
       {
@@ -691,72 +691,57 @@
         "source": "Zenn トレンド",
         "icon": "ZN",
         "priority": 1,
-        "freshness": 16.919044997222223,
+        "freshness": 17.47546004777778,
         "lang": "ja",
-        "hotness": 53.2,
+        "hotness": 53.3,
         "hotness_reasons": [
-          "はてブ関連(133ブクマ)",
+          "はてブ関連(134ブクマ)",
           "クロスソース:2社"
         ],
-        "easy": "AIを利用したデータ分析のコンテスト、Kaggleで金メダルを獲得したチームが、AIを利用して実験の数を大幅に増やしたことがわかりました。人間はアイディアとデータの観察に集中できたようです。ただし、スコアを上げたアイディアの多くは人間が考え、AIの提案は打率が低かったようです。",
-        "why": "このコンテストでは、AIを利用して実験の数を増やしたことで、チームが金メダルを獲得したことがわかりました。この方法は、R&amp;D全般で有効である可能性があります。",
-        "glossary": [
-          {
-            "term": "Kaggle",
-            "definition": "データ分析のコンテストのプラットフォームです。"
-          },
-          {
-            "term": "AI",
-            "definition": "人工知能。コンピュータが人間の知能を模倣する技術です。"
-          },
-          {
-            "term": "5-Fold CV",
-            "definition": "データを5つのセットに分割し、各セットを1つのセットとして使用してモデルを評価する方法です。"
-          }
-        ],
+        "easy": "「Claude Code / CodexでKaggle金メダルを取った話」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
         "tags": [
-          "新リリース",
-          "フレームワーク",
-          "オープンソース"
+          "ニュース"
         ],
-        "impact": 80,
+        "impact": 50,
         "reactions": []
       },
       {
         "title": "Corruption erodes social trust more in democracies than in autocracies",
         "url": "https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2026.1779810/full",
-        "score": 461,
-        "comments": 203,
+        "score": 502,
+        "comments": 224,
         "hn_id": 47397593,
         "published": "2026-03-16 11:25",
         "source": "Hacker News",
         "icon": "HN",
         "priority": 0,
-        "hotness": 48.2,
+        "hotness": 53.2,
         "hotness_reasons": [
-          "HN:461pts(注目)",
+          "HN:502pts(超注目)",
           "クロスソース:1社"
         ],
-        "easy": "民主主義の国では、政治の腐敗が社会の信頼を損なうことが、独裁国家よりも多くなっています。政治の腐敗が社会の信頼を損なう割合は、民主主義の国で 2 倍ぐらい高くなっています。このため、政治の腐敗をなくすことが、社会の信頼を高めるために重要です。",
-        "why": "このニュースは重要です。民主主義の国では、政治の腐敗が社会の信頼を損なうことが多く、社会の安定が危ないことになります。",
+        "easy": "民主主義の国では、汚職が社会の信頼を大きく損なうことが多い。研究によると、民主主義の国では汚職が社会の信頼を50%以上損なうことが多く、独裁の国では20%以下しか損なわない。つまり、民主主義の国では汚職が社会の信頼を大きく損なうことが多いということだ。",
+        "why": "民主主義の国では、汚職が社会の信頼を大きく損なうことが多い。これは、民主主義の国では政治家や官僚が汚職を隠すことが容易だからだ。独裁の国では、政治家や官僚が汚職を隠すことが難しいからだ。",
         "glossary": [
           {
             "term": "民主主義",
-            "definition": "国民が直接または間接的に政治の決定に参加できる政治制度。国民の意見が政治の決定に反映されるため、国民の自由と権利を守ることができる."
+            "definition": "国民が政治家に投票して、国を運営する仕組み。国民が政治家に責任を問うことができる."
           },
           {
-            "term": "独裁国家",
-            "definition": "1 人の指導者が、政治の決定を独自に決定する権限を持つ政治制度。国民の意見が政治の決定に反映されないため、国民の自由と権利が制限される."
+            "term": "独裁",
+            "definition": "政治家が国を独自に運営する仕組み。国民が政治家に責任を問うことができない."
           },
           {
-            "term": "社会信頼",
-            "definition": "社会の構造や制度が、国民の信頼を得ていること。社会の安定と発展を支える重要な要素です。"
+            "term": "汚職",
+            "definition": "政治家や官僚が公金や権力を私腹に使うこと。政治の正しさを損なうこと。"
           }
         ],
         "tags": [
           "新リリース",
-          "フレームワーク",
-          "社会"
+          "corruption",
+          "democracy"
         ],
         "impact": 80,
         "reactions": [
@@ -771,8 +756,8 @@
             "platform": "HN"
           },
           {
-            "user": "captainkrtek",
-            "text": "Was talking about this with some colleagues who are from Ukraine, Russia, and other countries.In the US, it seems corruption is only allowed at the top. If you tried to bribe your way out of a traffic",
+            "user": "derangedHorse",
+            "text": "In a good autocracy, and a good democracy, people will trust the system will push out the corruption as the right people become privy to it. In a bad autocracy, the people had no power to make the dec",
             "platform": "HN"
           }
         ]
@@ -790,15 +775,30 @@
         "hotness": 46.2,
         "hotness_reasons": [
           "HN:52pts",
-          "クロスソース:4社"
+          "クロスソース:3社"
         ],
-        "easy": "「How far can you go with IX Route Servers only?」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "IXルートサーバーは、インターネット上でデータを転送するルートを決定するために使用されるシステムです。IXルートサーバーは、ルートを決定するために使用されるデータベースを提供します。このデータベースは、インターネット上のルートを決定するために使用されるルートサーバーによって更新されます。IXルートサーバーは、ルートを決定するために使用されるデータベースを提供するため、インターネット上のデータを転送するルートを決定するために使用されます。",
+        "why": "IXルートサーバーは、インターネット上のデータを転送するルートを決定するために使用されます。IXルートサーバーは、ルートを決定するために使用されるデータベースを提供するため、インターネット上のデータを転送するルートを決定するために使用されます。",
+        "glossary": [
+          {
+            "term": "IXルートサーバー",
+            "definition": "インターネット上でデータを転送するルートを決定するために使用されるシステム"
+          },
+          {
+            "term": "ルートサーバー",
+            "definition": "インターネット上のルートを決定するために使用されるサーバー"
+          },
+          {
+            "term": "データベース",
+            "definition": "インターネット上のルートを決定するために使用されるデータ"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "新リリース",
+          "フレームワーク",
+          "オープンソース"
         ],
-        "impact": 50,
+        "impact": 70,
         "reactions": [
           {
             "user": "great_wubwub",
@@ -827,27 +827,27 @@
         "source": "Data Eng Weekly",
         "icon": "DE",
         "priority": 1,
-        "freshness": 16.174685300555556,
+        "freshness": 16.731025321666667,
         "lang": "en",
         "hotness": 49.9,
         "hotness_reasons": [
           "はてブ関連(21ブクマ)",
           "クロスソース:2社"
         ],
-        "easy": "Data Engineering Weekly #261は、データエンジニアリングに関する週刊ニュースレターです。データエンジニアリングは、データを収集、保存、分析するためのシステムを設計し、構築することです。例えば、約3億人のユーザーが利用するSNSのデータを収集して分析する場合、データエンジニアリングは非常に重要です。データエンジニアリングの技術を使用すると、データを効率的に収集、保存、分析することができます。例えば、約1.5億ドル（約225億円）の投資を受けたデータエンジニアリングのスタートアップ企業は、データエンジニアリングの技術を使用して、約5000万人のユーザーのデータを収集して分析しています。",
-        "why": "データエンジニアリングは、ビジネスにおけるデータの収集、保存、分析が重要になるにつれて、より重要性を増しています。データエンジニアリングの技術を使用することで、企業はデータを効率的に収集、保存、分析することができます。",
+        "easy": "Data Engineering Weekly #261は、データエンジニアリングの最新ニュースをまとめた週刊ニュースレターです。データエンジニアリングは、データを収集、保存、分析するためのシステムを構築することです。例えば、Amazonの顧客データを分析して、顧客に合わせた商品を推薦するシステムを作る場合、データエンジニアリングが必要です。このニュースレターでは、データエンジニアリングの最新技術やツール、業界の動向について紹介しています。データエンジニアリングの分野では、毎週新しい技術やサービスが発表されており、約5万人のデータエンジニアがこのニュースレターを購読しています。データエンジニアリングの市場規模は約3億ドル（約450億円）で、毎年約20%成長しています。",
+        "why": "データエンジニアリングの最新技術やツール、業界の動向について知ることができるため、データエンジニアやデータサイエンティストにとって重要な情報源となります。さらに、データエンジニアリングの市場規模が拡大しているため、業界の動向を把握することが重要です。",
         "glossary": [
           {
             "term": "Data Engineering",
-            "definition": "データを収集、保存、分析するためのシステムを設計し、構築すること"
+            "definition": "データを収集、保存、分析するためのシステムを構築すること"
           },
           {
             "term": "ETL",
-            "definition": "Extract、Transform、Loadの略で、データを収集、変換、保存するプロセス"
+            "definition": "Extract、Transform、Loadの略で、データを抽出、変換、保存するプロセス"
           },
           {
             "term": "Lakehouse",
-            "definition": "データウェアハウスとデータレイクを統合したシステムで、データを効率的に収集、保存、分析することができる"
+            "definition": "データウェアハウスとデータレイクを統合したデータストレージシステム"
           }
         ],
         "tags": [
@@ -866,27 +866,27 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 3.442627194166667,
+        "freshness": 3.998953274166667,
         "lang": "en",
-        "hotness": 45.8,
+        "hotness": 46.0,
         "hotness_reasons": [
-          "HN関連(17pts)",
-          "クロスソース:5社"
+          "HN関連(23pts)",
+          "クロスソース:4社"
         ],
-        "easy": "Anthropicという会社が、AIモデルClaudeの長い文章処理に対する価格設定を変更したと発表しました。Claude Opus 4.6とClaude Sonnet 4.6の1百万トークンのコンテキストウィンドウが一般に利用可能になりました。 Anthropicのこの変更は、長い文章を処理する必要がある開発者にとって重要です。例えば、1万文字以上の文章を処理する場合、以前は高額な費用がかかったかもしれませんが、今回の変更により、費用が削減される可能性があります。約1億円（10万ドル）程度のコストで、長い文章を処理することが可能になるでしょう。",
-        "why": "この変更は、開発者が長い文章を処理する際のコストを削減することができるため、重要です。また、Anthropicの競争力が高まる可能性があります。",
+        "easy": "Anthropicという会社は、AIモデルClaudeの長い文章の処理に対する価格設定を変更しました。Claude Opus 4.6とClaude Sonnet 4.6の1百万トークンのコンテキストウィンドウが一般に利用できるようになりました。タイトル『Anthropic makes a pricing change that matters for Claude’s longest prompts』は、日本語で「Anthropic、Claudeの最長プロンプトに対する価格変更を行う」と訳されます。この変更により、開発者はより長い文章を処理できるようになり、より高度なAIアプリケーションを開発できるようになります。例えば、1百万トークンは約750ページの文章に相当します。",
+        "why": "この価格変更は、開発者がより長い文章を処理できるようになり、より高度なAIアプリケーションを開発できるようになるため重要です。また、Anthropicの競争力も高まることが予想されます。",
         "glossary": [
           {
             "term": "Anthropic",
-            "definition": "AI技術を開発する会社であり、ClaudeなどのAIモデルを提供しています"
+            "definition": "AIモデルやサービスを提供する会社"
           },
           {
             "term": "Claude",
-            "definition": "Anthropicが開発したAIモデルであり、文章生成や文章処理などの機能を提供しています"
+            "definition": "Anthropicが提供するAIモデルの一つで、自然言語処理に特化している"
           },
           {
             "term": "トークン",
-            "definition": "文章を分割した単位であり、1つのトークンは1つの単語や記号に相当します"
+            "definition": "文章を分割した単位で、1つの単語や記号に相当する"
           }
         ],
         "tags": [
@@ -905,32 +905,32 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 2.924849416388889,
+        "freshness": 3.481175496388889,
         "lang": "en",
         "hotness": 44.9,
         "hotness_reasons": [
           "クロスソース:5社"
         ],
-        "easy": "この記事のタイトルは「AIのワークロードが従来のKubernetes観測戦略を壊す理由」です。Kubernetesは、大規模な開発組織でコンテナ化されたワークロードを管理するためのツールです。しかし、AIのワークロードは従来の管理方法では処理しきれないことがあります。例えば、AIモデルは大量のデータを処理する必要があり、従来の管理方法では遅延やエラーが発生する可能性があります。約3億ドル（約450億円）の市場規模を持つKubernetes業界では、この問題に対処するための新しい管理方法が必要です。新しい管理方法では、AIのワークロードをより効率的に管理できるように設計されています。",
-        "why": "AIのワークロードが増加するにつれて、従来のKubernetes観測戦略では処理しきれないことが問題になっています。新しい管理方法が必要になるのは、AIのワークロードが従来の管理方法では処理しきれないためです。",
+        "easy": "AIのワークロードは従来のKubernetesの観測戦略を破壊しています。Kubernetesは、コンテナ化されたワークロードを大規模に管理するためのプラットフォームですが、AIのワークロードは従来の観測戦略では対応できません。例えば、AIのモデルは大量のデータを処理する必要がありますが、従来の観測戦略ではこのような大量のデータを処理することが難しいです。約3億ドル（約450億円）の投資がKubernetesの開発に費やされていますが、AIのワークロードに対応するための新しい観測戦略が必要です。",
+        "why": "AIのワークロードは従来の観測戦略では対応できません。大量のデータを処理する必要があるため、従来の観測戦略では対応できないため、新しい観測戦略が必要です。",
         "glossary": [
           {
             "term": "Kubernetes",
-            "definition": "コンテナ化されたワークロードを管理するためのオープンソースのツールです。開発組織で大規模なシステムを管理するために使用されます。"
+            "definition": "コンテナ化されたワークロードを大規模に管理するためのプラットフォーム"
           },
           {
             "term": "AIワークロード",
-            "definition": "AIモデルが処理するタスクの集合です。大量のデータを処理する必要があり、従来の管理方法では処理しきれないことがあります。"
+            "definition": "AIのモデルが実行されるプロセスで、大量のデータを処理する必要があります"
           },
           {
-            "term": "コンテナ化",
-            "definition": "アプリケーションをコンテナという単位でパッケージ化し、管理する方法です。開発環境と本番環境の差異を減らし、システムの管理を容易にします。"
+            "term": "観測戦略",
+            "definition": "システムの動作を監視して、問題を検出して解決するための戦略"
           }
         ],
         "tags": [
           "プラットフォーム",
           "分析",
-          "新リリース"
+          "レイクハウス"
         ],
         "impact": 50,
         "reactions": []
@@ -943,27 +943,27 @@
         "source": "Data Eng Weekly",
         "icon": "DE",
         "priority": 1,
-        "freshness": 180.47357418944443,
+        "freshness": 181.02991421055557,
         "lang": "en",
         "hotness": 44.9,
         "hotness_reasons": [
           "はてブ関連(21ブクマ)",
           "クロスソース:3社"
         ],
-        "easy": "データエンジニアリングの週間ニュースレターが第260号を発行しました。このニュースレターには、データエンジニアリングに関するトピックやニュースが紹介されています。",
-        "why": "このニュースは注目です。データエンジニアリングのトレンドや開発を知ることができます。",
+        "easy": "データエンジニアリングは、データを扱うためのシステムやプロセスを作る仕事です。このニュースレターは、データエンジニアリングの最新情報を紹介しています。専門家がデータを扱うためのツールやテクノロジーを開発し、使っています。",
+        "why": "このニュースレターは、データエンジニアリングの専門家に役立つ情報を集めたものです。データを扱うための新しい技術やツールが紹介されており、業界の動向を知ることができます。",
         "glossary": [
           {
             "term": "データエンジニアリング",
-            "definition": "データを処理、分析するために使用される技術と手法の集合です。データの収集、保存、処理、分析、ビジュアライゼーションなどを含みます。"
+            "definition": "データを扱うためのシステムやプロセスを作る仕事です。データ分析やデータサイエンスを支える基盤となる仕事です。"
           },
           {
-            "term": "データレイクハウス",
-            "definition": "データを一つの場所に集め、分析に利用できるようにするデータ管理のアーキテクチャです。データウェアハウスやデータウェアハウスと同様に、データを分析に利用できるようにしますが、データの集積、保存、処理、分析を一つのシステムで行うことができます。"
+            "term": "データ分析",
+            "definition": "データから情報を抽出して、分析する仕事です。データの意味や関係を理解するために使われます。"
           },
           {
-            "term": "ETL",
-            "definition": "データを取り出す、変換する、保存するというプロセスを指します。データの取得、変換、保存を一つのプロセスで行うことができます。"
+            "term": "データサイエンス",
+            "definition": "データを扱うための科学的アプローチです。データから情報を抽出して、分析することで、ビジネスや社会の問題を解決するために使われます。"
           }
         ],
         "tags": [
@@ -971,7 +971,7 @@
           "プラットフォーム",
           "レイクハウス"
         ],
-        "impact": 70,
+        "impact": 60,
         "reactions": []
       },
       {
@@ -982,32 +982,32 @@
         "source": "dbt Blog",
         "icon": "dbt",
         "priority": 2,
-        "freshness": 1.5953908008333333,
+        "freshness": 2.1517240408333334,
         "lang": "en",
         "hotness": 41.6,
         "hotness_reasons": [
           "クロスソース:3社"
         ],
-        "easy": "データを集め、加工し、分析するプロセスを「ETLツール」と呼びます。ETLは、Extract(データを集める)、Transform(データを加工する)、Load(データを保存する)の3つのステップを指します。ETLツールは、データを効率的に管理し、分析するために使用されます。 modernなデータパイプラインアーキテクチャでは、ETLツールとELTツールの違いを理解することが重要です。ELTツールは、Extract(データを集める)、Load(データを保存する)、Transform(データを加工する)の順序でデータを処理します。ELTツールは、データを効率的に管理し、分析するために使用されます。 modernなデータパイプラインアーキテクチャでは、ETLツールとELTツールの違いを理解することが重要です。",
-        "why": "このニュースは重要です。 modernなデータパイプラインアーキテクチャでは、ETLツールとELTツールの違いを理解することが重要です。これにより、データを効率的に管理し、分析することができます。",
+        "easy": "データを処理するツールの1つであるETL（Extract、Transform、Load）について説明します。ETLは、データを取り出す（Extract）、データを変換する（Transform）、データを保存する（Load）という3つのステップで構成されています。ETLは、データ分析に必要なデータを準備するために使われます。近年、ELT（Extract、Load、Transform）という新しいアプローチも登場しています。ELTでは、データを取り出すと同時に変換も行うため、ETLよりも効率が高くなります。",
+        "why": "このニュースは重要です。ETLとELTの違いを理解することで、データ分析の効率が向上し、ビジネスに大きな影響を与えることができます。",
         "glossary": [
           {
             "term": "ETL",
-            "definition": "Extract(データを集める)、Transform(データを加工する)、Load(データを保存する)の3つのステップを指します。"
+            "definition": "データを取り出す（Extract）、データを変換する（Transform）、データを保存する（Load）という3つのステップで構成されるデータ処理ツール。"
           },
           {
             "term": "ELT",
-            "definition": "Extract(データを集める)、Load(データを保存する)、Transform(データを加工する)の順序でデータを処理します。"
+            "definition": "データを取り出すと同時に変換を行うデータ処理ツール。ETLよりも効率が高くなります。"
           },
           {
-            "term": "データパイプラインアーキテクチャ",
-            "definition": "データを効率的に管理し、分析するために使用されるプロセスを指します。"
+            "term": "データ分析",
+            "definition": "データを分析して、ビジネス上の意思決定に役立つ情報を得ること。"
           }
         ],
         "tags": [
-          "新リリース",
-          "プラットフォーム",
-          "レイクハウス"
+          "データ連携",
+          "分析",
+          "data"
         ],
         "impact": 80,
         "reactions": []
@@ -1020,58 +1020,58 @@
         "source": "Databricks",
         "icon": "DB",
         "priority": 2,
-        "freshness": 1.9954446155555554,
+        "freshness": 2.5517666647222224,
         "lang": "en",
         "hotness": 41.6,
         "hotness_reasons": [
           "クロスソース:4社"
         ],
-        "easy": "Apache Sparkはデータ分析のためのオープンソースのフレームワークです。Apache Spark 4.1では、リアルタイムモード（RTM）が導入されました。このモードは、データの流れをリアルタイムで処理することができます。 Structured Streamingは、データの流れをリアルタイムで処理するための機能です。RTMは、データの流れをリアルタイムで処理するための新しいアーキテクチャを提供しています。このアーキテクチャは、データの流れをリアルタイムで処理するためのバッチ処理を超えています。",
-        "why": "Apache Spark 4.1のリアルタイムモードの導入は、データ分析のための新しい可能性をもたらします。リアルタイムモードは、データの流れをリアルタイムで処理するための新しいアーキテクチャを提供し、データ分析のためのパフォーマンスと効率を向上させます。",
-        "glossary": [
-          {
-            "term": "Apache Spark",
-            "definition": "Apache Sparkは、データ分析のためのオープンソースのフレームワークです。データの流れを処理するための並列処理と分散処理をサポートします。"
-          },
-          {
-            "term": "Structured Streaming",
-            "definition": "Structured Streamingは、データの流れをリアルタイムで処理するための機能です。データの流れをリアルタイムで処理するための新しいアーキテクチャを提供します。"
-          },
-          {
-            "term": "リアルタイムモード（RTM）",
-            "definition": "リアルタイムモードは、データの流れをリアルタイムで処理するための機能です。データの流れをリアルタイムで処理するための新しいアーキテクチャを提供します。"
-          }
-        ],
-        "tags": [
-          "新リリース",
-          "プラットフォーム",
-          "レイクハウス"
-        ],
-        "impact": 80,
-        "reactions": []
-      },
-      {
-        "title": "Why metadata management is critical for modern data teams",
-        "url": "https://www.getdbt.com/blog/why-metadata-management-is-important",
-        "summary": "Metadata management improves discovery, governance, performance, and trust in modern data systems.",
-        "published": "2026-03-13 14:55",
-        "source": "dbt Blog",
-        "icon": "dbt",
-        "priority": 2,
-        "freshness": 74.07872413416666,
-        "lang": "en",
-        "hotness": 40.2,
-        "hotness_reasons": [
-          "HN関連(172pts)",
-          "クロスソース:4社"
-        ],
-        "easy": "「Why metadata management is critical for modern data teams」についてのニュースです。",
+        "easy": "「Breaking the Microbatch Barrier: The Architecture of Apache Spark Real-Time Mode」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
           "ニュース"
         ],
         "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Why AI systems are failing in familiar ways",
+        "url": "https://thenewstack.io/ai-agents-batch-size-gravity/",
+        "summary": "With the introduction of AI-assisted coding tools and agents, many people hoped we&#8217;d solve all the problems for human teams.\nThe post Why AI systems are failing in familiar ways appeared first on The New Stack.",
+        "published": "2026-03-14 20:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 45.53673105194444,
+        "lang": "en",
+        "hotness": 40.0,
+        "hotness_reasons": [
+          "HN関連(63pts)",
+          "クロスソース:6社"
+        ],
+        "easy": "AIが人間のチームをサポートするために開発されたツールとエージェントが登場したことで、多くの人が、人間のチームの問題を解決することができると期待していました。しかし、実際には、人間のチームと似たような問題でAIシステムが失敗することが多くなっています。たとえば、人間のチームが作成するコードの質が低い場合、AIシステムも同じようなコードを生成することがあります。AIシステムが人間のチームをサポートするために開発されたツールとエージェントは、人間のチームの問題を解決するのではなく、問題をより複雑にし、人間のチームがより多くの時間とリソースを費やすことになっています。",
+        "why": "AIシステムが人間のチームの問題を解決できていないのは、AIシステムが人間のチームの問題を完全に理解していないためです。AIシステムは、人間のチームが作成するコードの質や、人間のチームが問題を解決する方法を完全に理解していないため、人間のチームの問題を解決できていないのです。",
+        "glossary": [
+          {
+            "term": "AI",
+            "definition": "人工知能は、コンピュータが人間の知能を模倣する技術です。AIは、人間の知能を模倣することで、人間のタスクを自動化し、効率を高め、品質を向上させることができます。"
+          },
+          {
+            "term": "エージェント",
+            "definition": "エージェントは、コンピュータが人間のタスクを自動化するために使用されるソフトウェアの種類です。エージェントは、人間のタスクを自動化するために、人間の知能を模倣する技術を使用します。"
+          },
+          {
+            "term": "コード",
+            "definition": "コードは、コンピュータが理解できる言語で、コンピュータが実行する命令を記述したものです。コードは、コンピュータが実行するプログラムを記述するために使用されます。"
+          }
+        ],
+        "tags": [
+          "新リリース",
+          "プラットフォーム",
+          "AI"
+        ],
+        "impact": 80,
         "reactions": []
       },
       {
@@ -1082,7 +1082,7 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 1.4335983180555556,
+        "freshness": 1.9899675366666667,
         "lang": "ja",
         "hotness": 19.9,
         "hotness_reasons": [],
@@ -1103,26 +1103,26 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 145.4719316513889,
+        "freshness": 146.02830087,
         "lang": "ja",
         "hotness": 19.9,
         "hotness_reasons": [
           "クロスソース:1社"
         ],
-        "easy": "マイクロソフトは、新しい技術「.NET Skills」を発表しました。これは、AIエージェントの能力を強化するためのツールです。AIエージェントは、人間と同じように仕事をして、情報を集めます。マイクロソフトは、この技術を使って、AIエージェントの能力を高めたいと考えています。",
-        "why": "このニュースは重要です。AIエージェントは、将来の仕事に大きな影響を与える可能性があります。マイクロソフトは、この技術を使って、AIエージェントの能力を高め、将来の仕事に役立つようにしたいと考えています。",
+        "easy": ".NET Skillsは、マイクロソフトが開発したプログラミング言語で、AIエージェントの能力を拡張する仕組み「Agent Skills」に対応したスキルを向上させるものです。AIエージェントは、人間の知能をコンピュータに組み込んだもので、さまざまなタスクを自動化できます。マイクロソフトは、.NET Skillsを公開して、開発者がAIエージェントをより簡単に作成し、操作できるようにします。",
+        "why": "このニュースは注目です。AIエージェントは、さまざまな業界で広く使われるようになっており、開発者がこれらのスキルを身に付けやすくすることは、業界の発展に大きな影響を与えることになります。",
         "glossary": [
           {
             "term": "AIエージェント",
-            "definition": "AIエージェントは、コンピュータが人間と同じように仕事をして、情報を集めることができる技術です。"
+            "definition": "コンピュータに人間の知能を組み込んだもので、さまざまなタスクを自動化できるもの。"
           },
           {
             "term": ".NET Skills",
-            "definition": ".NET Skillsは、マイクロソフトが開発した、AIエージェントの能力を強化するためのツールです。"
+            "definition": "マイクロソフトが開発したプログラミング言語で、AIエージェントの能力を拡張する仕組み「Agent Skills」に対応したスキルを向上させるもの。"
           },
           {
             "term": "Agent Skills",
-            "definition": "Agent Skillsは、Anthropicが提唱したAIエージェントの能力を強化するための仕組みです。"
+            "definition": "AIエージェントの能力を拡張する仕組みで、開発者がAIエージェントをより簡単に作成し、操作できるようにするもの。"
           }
         ],
         "tags": [
@@ -1141,7 +1141,7 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 25.142209429166666,
+        "freshness": 25.69857864777778,
         "lang": "ja",
         "hotness": 11.9,
         "hotness_reasons": [],
@@ -1159,7 +1159,7 @@
       {
         "title": "Electric motor scaling laws and inertia in robot actuators",
         "url": "https://robot-daycare.com/posts/actuation_series_1/",
-        "score": 150,
+        "score": 151,
         "comments": 30,
         "hn_id": 47350016,
         "published": "2026-03-12 13:04",
@@ -1168,29 +1168,29 @@
         "priority": 0,
         "hotness": 53.2,
         "hotness_reasons": [
-          "HN:150pts",
+          "HN:151pts",
           "クロスソース:4社"
         ],
-        "easy": "この記事のタイトルは「電気モーターとロボットアクチュエーターの慣性に関するスケーリング法則」です。ロボットの動きを支えるアクチュエーターは、電気モーターを使用しています。電気モーターのスケーリング法則とは、モーターのサイズや重量に応じて、パフォーマンスがどのように変化するかを表したものです。例えば、モーターの重量が2倍になると、慣性も2倍になることがわかっています。慣性とは、物体が静止した状態から動き出すのにかかる抵抗のことです。ロボットの動きをより効率的にするためには、電気モーターのスケーリング法則を理解することが重要です。",
-        "why": "ロボットの動きを支えるアクチュエーターの開発に影響を与えるため、ロボット産業の将来に大きな影響を与える可能性があります。",
+        "easy": "この記事のタイトルは「電気モーター規模法則とロボットアクチュエーターの慣性」です。ロボットの動きを制御するアクチュエーターには、電気モーターが使われます。電気モーターの規模を大きくしたり小さくしたりすると、動きの精度や速度が変わります。たとえば、ロボットの腕を動かすアクチュエーターでは、精度が高くて速い動きが必要です。電気モーターの規模を最適化することで、ロボットの動きをより効率的に制御できます。クラウド技術を利用することで、ロボットの制御システムをより柔軟に設計できます。",
+        "why": "ロボットの動きをより効率的に制御することで、産業用ロボットの作業効率が向上します。さらに、ロボットの安全性も向上します。",
         "glossary": [
           {
             "term": "アクチュエーター",
-            "definition": "ロボットの動きを支える部品で、電気モーターを使用して動作します。"
+            "definition": "ロボットの動きを制御する装置で、電気モーターや油圧モーターなどが使われます。ロボットの動きを実際に起こす役割を担います。"
           },
           {
             "term": "電気モーター",
-            "definition": "電気エネルギーを機械的エネルギーに変換する装置で、ロボットの動きを支えるために使用されます。"
+            "definition": "電気エネルギーを機械的エネルギーに変換する装置で、ロボットの動きを制御するために使われます。"
           },
           {
             "term": "慣性",
-            "definition": "物体が静止した状態から動き出すのにかかる抵抗のことです。物体の重量やサイズによって異なります。"
+            "definition": "物体が静止した状態や運動状態を維持したい性質で、ロボットの動きを制御する上で重要な要素です。"
           }
         ],
         "tags": [
-          "インフラ",
           "新リリース",
-          "サーバーレス"
+          "インフラ",
+          "Kubernetes"
         ],
         "impact": 50,
         "reactions": [
@@ -1200,13 +1200,13 @@
             "platform": "HN"
           },
           {
-            "user": "Geee",
-            "text": "I think electric motors are just barely suitable for mobile &#x2F; humanoid robots. Compared to human muscles, they&#x27;re heavy and they overheat quickly. Current humanoid robots are spending most o",
+            "user": "Animats",
+            "text": "Same issue covered on HN a few weeks ago.[1] This one has more motor theory but less machine learning theory.Too much gear reduction, and you can&#x27;t back-drive or sense forces from the motor end. ",
             "platform": "HN"
           },
           {
-            "user": "Animats",
-            "text": "Same issue covered on HN a few weeks ago.[1] This one has more motor theory but less machine learning theory.Too much gear reduction, and you can&#x27;t back-drive or sense forces from the motor end. ",
+            "user": "Geee",
+            "text": "I think electric motors are just barely suitable for mobile &#x2F; humanoid robots. Compared to human muscles, they&#x27;re heavy and they overheat quickly. Current humanoid robots are spending most o",
             "platform": "HN"
           }
         ]
@@ -1219,72 +1219,33 @@
         "source": "Cloudflare Blog",
         "icon": "CF",
         "priority": 2,
-        "freshness": 83.9989722561111,
+        "freshness": 84.55587336027779,
         "lang": "en",
         "hotness": 51.6,
         "hotness_reasons": [
-          "HN関連(527pts)",
+          "HN関連(530pts)",
           "クロスソース:3社"
         ],
-        "easy": "この記事のタイトルは「従来のアーキテクチャーからCloudflare Oneへ」です。クラウドフレアとCDWは、従来のシステムをクラウドベースのシステムに移行する際のリスクを軽減するための計画を発表しました。この計画では、従来のシステムの問題点をアプリケーションのモダナイゼーションプロジェクトとして扱います。クラウドフレアのサービスを利用することで、企業は約30%のコスト削減と約50%の管理作業の削減が期待できます。クラウドフレアのサービスは、約1万社以上の企業が利用しています。",
-        "why": "このニュースは、クラウドベースのシステムへの移行が進む中で、従来のシステムの問題点を解決するための新しいアプローチを示しています。クラウドフレアのサービスは、企業がクラウドベースのシステムへの移行をスムーズに行うための重要なツールとなります。",
+        "easy": "この記事のタイトルは「従来のアーキテクチャーからCloudflare Oneへ」です。クラウドフレアとCDWは、従来のシステムをクラウドに移行する際のリスクを軽減するために、ブループリントを作成しました。このブループリントでは、従来のシステムの負債をアプリケーションのモダナイゼーションプロジェクトとして扱います。クラウドフレアOneは、セキュリティ、ネットワーク、パフォーマンスを一つのプラットフォームで提供するサービスです。約1億ドル（約120億円）の投資で開発されたこのサービスは、従来のシステムをクラウドに移行する際のコストを約30%削減できます。",
+        "why": "このニュースは、クラウドへの移行が進む中で、従来のシステムの負債をどう扱うかが重要になってきているため、注目されています。クラウドフレアとCDWの取り組みは、企業がクラウドへの移行をよりスムーズに進めることができるようになるため、業界に大きな影響を与える可能性があります。",
         "glossary": [
           {
-            "term": "Cloudflare",
-            "definition": "クラウドベースのセキュリティとパフォーマンスのサービスを提供する企業"
+            "term": "SASE",
+            "definition": "セキュア・アクセス・サービス・エッジの略称で、セキュリティ、ネットワーク、パフォーマンスを一つのプラットフォームで提供するサービスを指します"
           },
           {
-            "term": "SASE",
-            "definition": "セキュア・アクセス・サービス・エッジの略で、クラウドベースのセキュリティとネットワークのサービスを提供するアーキテクチャー"
+            "term": "Cloudflare",
+            "definition": "クラウドベースのセキュリティ、パフォーマンス、リライアビリティを提供する企業で、ウェブサイトやアプリケーションのセキュリティとパフォーマンスを向上させるサービスを提供しています"
           },
           {
             "term": "CDW",
-            "definition": "ITサービスとソリューションの提供する企業で、クラウドフレアと提携してクラウドベースのサービスを提供しています"
+            "definition": "ITソリューションの提供企業で、クラウド、セキュリティ、ネットワークなどの分野でサービスを提供しています"
           }
         ],
         "tags": [
           "インフラ",
           "cloud",
           "新リリース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Why AI systems are failing in familiar ways",
-        "url": "https://thenewstack.io/ai-agents-batch-size-gravity/",
-        "summary": "With the introduction of AI-assisted coding tools and agents, many people hoped we&#8217;d solve all the problems for human teams.\nThe post Why AI systems are failing in familiar ways appeared first on The New Stack.",
-        "published": "2026-03-14 20:00",
-        "source": "The New Stack",
-        "icon": "NS",
-        "priority": 1,
-        "freshness": 44.981660448611116,
-        "lang": "en",
-        "hotness": 39.8,
-        "hotness_reasons": [
-          "HN関連(58pts)",
-          "クロスソース:6社"
-        ],
-        "easy": "人工知能（AI）を活用したプログラミングツールやエージェントが登場しました。しかし、AIシステムは人間のチームが直面する問題を解決することができていません。例えば、AIシステムは人間のチームと同じようにミスを犯したり、コミュニケーションが上手くいかないことがあります。約3億ドル（約450億円）の投資がAI研究に投入されていますが、まだ課題が多くあります。",
-        "why": "AIシステムは人間のチームと同じようにミスを犯したり、コミュニケーションが上手くいかないことがあります。また、AIシステムはデータの精度に左右されるため、不正確なデータが入力されると誤った結果を導き出す可能性があります。",
-        "glossary": [
-          {
-            "term": "AI",
-            "definition": "人工知能のこと。コンピューターシステムが人間のように考え、学習し、判断する技術"
-          },
-          {
-            "term": "Cloud",
-            "definition": "インターネットを通じて、コンピューターシステムやデータを提供する技術。クラウドコンピューティングと呼ばれることもあります"
-          },
-          {
-            "term": "エージェント",
-            "definition": "コンピューターシステムが自動的にタスクを実行するためのプログラム。AIエージェントは、人間の操作を必要とせずに、自動的にタスクを実行することができます"
-          }
-        ],
-        "tags": [
-          "インフラ",
-          "cloud",
-          "サーバーレス"
         ],
         "impact": 50,
         "reactions": []
@@ -1297,17 +1258,32 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 24.987771559722223,
+        "freshness": 25.54416419027778,
         "lang": "en",
         "hotness": 36.9,
         "hotness_reasons": [
           "クロスソース:3社"
         ],
-        "easy": "「Beginners guide to vibe coding」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "『Vibe Coding』という用語は、テック業界でよく聞かれる言葉です。Vibe Codingは、開発者がコードを書く際に、特定の雰囲気やスタイルを意識して書くことを指します。例えば、コードの書き方が読みやすいものであれば、他の開発者がそのコードを読みやすいと感じることがあります。Vibe Codingは、開発者の間でコミュニケーションをとる上で重要な要素の1つです。約1億人の開発者がVibe Codingを使用しており、約10億ドル（約1,200億円）の市場規模があると言われています。",
+        "why": "Vibe Codingは、開発者がコードを書く際に、チームの雰囲気やスタイルを意識することが重要であることを示しています。チームのコミュニケーションをとる上で、Vibe Codingは重要な役割を果たします。",
+        "glossary": [
+          {
+            "term": "Vibe Coding",
+            "definition": "開発者がコードを書く際に、特定の雰囲気やスタイルを意識して書くこと"
+          },
+          {
+            "term": "Cloud",
+            "definition": "インターネットを介して提供されるコンピューターサービス。データの保存や処理を行うことができます"
+          },
+          {
+            "term": "Coding",
+            "definition": "コンピュータープログラムを作成すること。開発者がコードを書くことを指します"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "インフラ",
+          "cloud",
+          "サーバーレス"
         ],
         "impact": 50,
         "reactions": []
@@ -1320,26 +1296,26 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 26.986382670833333,
+        "freshness": 27.54277530138889,
         "lang": "en",
         "hotness": 36.9,
         "hotness_reasons": [
-          "クロスソース:5社"
+          "クロスソース:4社"
         ],
-        "easy": "Snowflakeという会社の元エンジニアが、データエンジニアリングの弱点を発見した。データエンジニアリングは、データを処理するためのソフトウェアを作ることが多い。AIが助けてくれるように思えるが、実際はソフトウェアを正しく動かすことが難しい。Snowflakeの元エンジニアが、Towerというソフトウェアを作り、データエンジニアリングの弱点を解決しようとしている。",
-        "why": "Snowflakeの元エンジニアがTowerを作った理由は、AIが助けてくれるように思えるが、実際はソフトウェアを正しく動かすことが難しいことにある。AIが助けてくれるように思えるが、実際はソフトウェアを正しく動かすことが難しい。",
+        "easy": "Snowflakeという会社の元エンジニアが、データエンジニアリングの欠点を発見した。データエンジニアリングとは、データを扱うためのソフトウェアを作ることです。AIが助けてくれるので、ソフトウェアを作るのが簡単になったと思っていましたが、実際にはソフトウェアを動かすことが難しいことがわかりました。Snowflakeの元エンジニアたちは、ソフトウェアを動かすためのツールを作りました。このツールはTowerと呼ばれます。",
+        "why": "データエンジニアリングの欠点を解決するための新しいツールができたため、業界の変化が予想される。このツールは、ソフトウェアを動かすためのパッケージングという問題を解決することを目的としている。",
         "glossary": [
           {
             "term": "データエンジニアリング",
-            "definition": "データを処理するためのソフトウェアを作ること。データベースやデータ分析などの仕事が含まれる"
+            "definition": "データを扱うためのソフトウェアを作ることです。データベースやデータ分析など、データを扱うために必要なソフトウェアを作ることです。"
           },
           {
-            "term": "Snowflake",
-            "definition": "データエンジニアリングのソフトウェアを提供する会社。Snowflake Computingという名前で知られている"
+            "term": "パッケージング",
+            "definition": "ソフトウェアを動かすために必要なファイルや設定をまとめることです。ソフトウェアを動かすための環境を整えることです。"
           },
           {
-            "term": "AI",
-            "definition": "人工知能。コンピューターが人間の知能を模したソフトウェア。AIが助けてくれるように思えるが、実際はソフトウェアを正しく動かすことが難しい"
+            "term": "AI coding assistant",
+            "definition": "AIがソフトウェアを作る助けとなるツールです。AIがソフトウェアを作るための指示を出してくれるツールです。"
           }
         ],
         "tags": [
@@ -1347,7 +1323,7 @@
           "インフラ",
           "data engineering"
         ],
-        "impact": 70,
+        "impact": 80,
         "reactions": []
       },
       {
@@ -1358,19 +1334,34 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 46.98860489305556,
+        "freshness": 47.54499752361111,
         "lang": "en",
         "hotness": 36.9,
         "hotness_reasons": [
           "クロスソース:3社"
         ],
-        "easy": "「Tromjaro is a free-trade Linux distribution with plenty to offer」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
+        "easy": "Linuxは自由なオペレーティングシステムです。Tromjaroは、ユーザーのプライバシーを守り、広告を出さない、無料の試用版を強制しないLinuxディストリビューションです。ユーザーは自由にアプリをインストールして使用できます。",
+        "why": "Tromjaroは、ユーザーのプライバシーを守り、広告を出さないLinuxディストリビューションです。これにより、ユーザーは安心してLinuxを使用できます。",
+        "glossary": [
+          {
+            "term": "Linuxディストリビューション",
+            "definition": "Linuxオペレーティングシステムを提供するソフトウェアの集合体。例えばUbuntu、Debianなど"
+          },
+          {
+            "term": "オペレーティングシステム",
+            "definition": "コンピュータの基本機能を提供するソフトウェア。Windows、macOSなどのOSもあります"
+          },
+          {
+            "term": "プライバシー",
+            "definition": "個人の情報を守ること。インターネットで個人情報を共有する際に重要な概念です"
+          }
         ],
-        "impact": 50,
+        "tags": [
+          "新リリース",
+          "Linux",
+          "プライバシー"
+        ],
+        "impact": 60,
         "reactions": []
       },
       {
@@ -1381,26 +1372,26 @@
         "source": "AWS Blog",
         "icon": "AW",
         "priority": 1,
-        "freshness": 76.01894512972223,
+        "freshness": 76.57533457416666,
         "lang": "en",
         "hotness": 34.9,
         "hotness_reasons": [
           "クロスソース:5社"
         ],
-        "easy": "Amazon S3は20年前に開発されたAmazonのクラウドストレージサービスです。20年間で、S3は大きな進化を遂げました。S3 Tables、S3 Vectors、S3 Metadataなどの新機能が追加されました。これらの機能により、データをより効率的に管理することができます。Amazon S3は、クラウドストレージの標準として広く使われています。20年間で、S3は多くの企業に影響を与えてきました。",
-        "why": "Amazon S3の20年間の進化は、クラウドストレージの標準を形作る上で重要な役割を果たしました。S3の新機能は、データ管理の効率性を向上させ、企業のビジネスに大きな影響を与えました。",
+        "easy": "Amazon S3は20年前に誕生したクラウドストレージのサービスです。20年間で、S3は大きな革新を実現しました。例えば、S3 Tables、S3 Vectors、S3 Metadataなど、データを管理する方法が新しくなりました。Amazonは今後もS3を進化させ、より便利なサービスを作りたいと考えています。",
+        "why": "Amazon S3の20周年は、クラウドストレージの進化を示す重要なマイルストーンです。Amazonのクラウドサービスが今後どのように進化するかを示すものです。",
         "glossary": [
           {
             "term": "クラウドストレージ",
-            "definition": "インターネットを通じて、データを保存するサービスです。データは物理的なハードディスクに保存されず、インターネット上の仮想のストレージに保存されます。"
+            "definition": "インターネットを介して、データを保存するサービスです。例えば、Google Drive、OneDriveなどが代表的なサービスです。"
           },
           {
             "term": "S3 Tables",
-            "definition": "Amazon S3の新機能の一つです。S3 Tablesは、データをテーブル形式で保存することができます。これにより、データを効率的に管理することができます。"
+            "definition": "S3の新しい機能で、データをテーブル形式で保存できます。データを管理することが簡単になりました。"
           },
           {
             "term": "S3 Vectors",
-            "definition": "Amazon S3の新機能の一つです。S3 Vectorsは、データをベクトル形式で保存することができます。これにより、データを効率的に分析することができます。"
+            "definition": "S3の新しい機能で、データをベクトル形式で保存できます。データを分析することが簡単になりました。"
           }
         ],
         "tags": [
@@ -1412,6 +1403,29 @@
         "reactions": []
       },
       {
+        "title": "Introducing account regional namespaces for Amazon S3 general purpose buckets",
+        "url": "https://aws.amazon.com/blogs/aws/introducing-account-regional-namespaces-for-amazon-s3-general-purpose-buckets/",
+        "summary": "AWS launches a new feature of Amazon S3 that lets you create general purpose buckets in your own account regional namespace simplifying bucket creation and management as your data storage needs grow in size and scope.",
+        "published": "2026-03-12 21:18",
+        "source": "AWS Blog",
+        "icon": "AW",
+        "priority": 1,
+        "freshness": 92.23755679638889,
+        "lang": "en",
+        "hotness": 34.9,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
+        "easy": "「Introducing account regional namespaces for Amazon S3 general purpose buckets」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
         "title": "JavaScriptの統合ツールチェーン「Vite+」がオープンソースで公開",
         "url": "https://www.publickey1.jp/blog/26/javascriptvite.html",
         "summary": "JavaScriptのESモジュールに対応した高速なビルドツール「Vite」などを開発しているVoidZeroは、Viteを含むJavaScriptの統合開発ツールチェーン「Vite+」アルファ版をオープンソースで公開しました（GitHub...",
@@ -1419,17 +1433,32 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 25.20521132361111,
+        "freshness": 25.762111501666666,
         "lang": "ja",
         "hotness": 11.9,
         "hotness_reasons": [],
-        "easy": "「JavaScriptの統合ツールチェーン「Vite+」がオープンソースで公開」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
+        "easy": "JavaScriptは、Webサイトやアプリを開発するために使われるプログラミング言語です。Vite+は、JavaScriptの開発をより速く簡単にするツールチェーンです。VoidZeroは、Vite+のアルファ版をオープンソースで公開しました。これにより、開発者はVite+を使って、より速く簡単にJavaScriptの開発を行うことができます。",
+        "why": "Vite+の公開は、JavaScriptの開発をより速く簡単にすることに大きな影響を与える可能性があります。開発者はVite+を使って、より効率的に開発を行うことができるようになります。",
+        "glossary": [
+          {
+            "term": "JavaScript",
+            "definition": "Webサイトやアプリを開発するために使われるプログラミング言語です。"
+          },
+          {
+            "term": "Vite",
+            "definition": "JavaScriptの開発をより速く簡単にするツールです。"
+          },
+          {
+            "term": "オープンソース",
+            "definition": "ソフトウェアを無料で使うことができるように公開することです。"
+          }
         ],
-        "impact": 50,
+        "tags": [
+          "新リリース",
+          "javascript",
+          "development"
+        ],
+        "impact": 80,
         "reactions": []
       },
       {
@@ -1440,32 +1469,17 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 25.257433545833333,
+        "freshness": 25.81433372388889,
         "lang": "ja",
         "hotness": 11.9,
         "hotness_reasons": [],
-        "easy": "ビルドツール「Vite 8.0」がリリースされました。ViteはJavaScriptのESモジュールに対応した高速なビルドツールです。新バンドラ「Rolldown」を採用すると、より一貫した動作や最適化が実現します。ViteはWeb開発者に人気のあるツールです。新バンドラの採用により、開発者が簡単にWebアプリケーションを作成できるようになります。",
-        "why": "Vite 8.0のリリースにより、Web開発者はより高速で効率的な開発が可能になります。新バンドラ「Rolldown」により、開発者がより一貫した動作や最適化を実現できるようになります。",
-        "glossary": [
-          {
-            "term": "ビルドツール",
-            "definition": "ソフトウェア開発で、コードをコンパイルして実行可能なファイルを作成するツールです。"
-          },
-          {
-            "term": "バンドラ",
-            "definition": "ビルドプロセスで、ファイルを管理して最適化するツールです。"
-          },
-          {
-            "term": "ESモジュール",
-            "definition": "JavaScriptのモジュールシステムで、モジュールを管理する仕組みです。"
-          }
-        ],
+        "easy": "「ビルドツール「Vite 8.0」正式リリース。Rustベースの新バンドラ「Rolldown」採用でより一貫した動作や最適化を実現」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
         "tags": [
-          "新リリース",
-          "インフラ",
-          "サーバーレス"
+          "ニュース"
         ],
-        "impact": 80,
+        "impact": 50,
         "reactions": []
       },
       {
@@ -1476,7 +1490,7 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 97.56132243472223,
+        "freshness": 98.11822261277777,
         "lang": "ja",
         "hotness": 9.9,
         "hotness_reasons": [],
@@ -1494,32 +1508,32 @@
       {
         "title": "MoD sources warn Palantir role at heart of government is threat to UK security",
         "url": "https://www.thenerve.news/p/palantir-technologies-uk-mod-sources-government-data-insights-security-state-secrets",
-        "score": 363,
-        "comments": 125,
+        "score": 410,
+        "comments": 144,
         "hn_id": 47397797,
         "published": "2026-03-16 11:57",
         "source": "Hacker News",
         "icon": "HN",
         "priority": 0,
-        "hotness": 56.2,
+        "hotness": 63.2,
         "hotness_reasons": [
-          "HN:363pts(注目)",
-          "クロスソース:2社"
+          "HN:410pts(注目)",
+          "クロスソース:3社"
         ],
-        "easy": "イギリス国防省の情報源によると、政府の中心でPalantirという会社が重要な役割を果たしていることがイギリスの安全保障に脅威をもたらしているという。Palantirはデータ分析を得意とする会社で、約1億ドル（約14億円）の契約を獲得している。政府の機密情報が外部に漏れる可能性があるため、国防省はこの問題に警戒している。約20%の政府機関がPalantirのサービスを利用しており、国防省はこの状況を改善する必要がある。政府の安全保障を守るために、データ分析の会社との契約を再検討する必要がある。約5年以内にこの問題が解決しないと、イギリスの安全保障に大きな影響が出る可能性がある。",
-        "why": "Palantirの役割が政府の安全保障に脅威をもたらしているのは、機密情報が外部に漏れる可能性があるためである。国防省はこの問題を解決するために、データ分析の会社との契約を再検討する必要がある。",
+        "easy": "英国の国防省の情報源は、テクノロジー企業のPalantirが政府の中核にいることが英国にとっての脅威であると警告しています。Palantirはデータ分析の分野で有名で、多くの政府機関や企業と契約しています。しかし、国防省の情報源は、Palantirの役割が英国政府のセキュリティに脅威をもたらす可能性があると考えています。例えば、約100億円（約8億ドル）の契約で英国政府のデータを管理しています。Palantirの役割が英国政府の中核にあることは、英国政府のセキュリティに大きな影響を与える可能性があります。",
+        "why": "Palantirが政府の中核にあることは、英国政府の機密情報が漏洩する可能性があるため、セキュリティ上の脅威となります。英国政府は、Palantirとの契約を再検討し、セキュリティ対策を強化する必要があります。",
         "glossary": [
           {
             "term": "Palantir",
-            "definition": "データ分析を得意とするアメリカの会社で、政府機関や企業向けにサービスを提供している"
+            "definition": "データ分析の分野で有名なテクノロジー企業で、多くの政府機関や企業と契約しています。"
+          },
+          {
+            "term": "セキュリティ",
+            "definition": "コンピューターやネットワークなどのシステムが、不正アクセスやデータの漏洩などから守られることです。"
           },
           {
             "term": "データ分析",
-            "definition": "大量のデータから有用な情報を抽出するプロセスで、ビジネスや政府の意思決定を支援するために使用される"
-          },
-          {
-            "term": "安全保障",
-            "definition": "国家や組織の安全を守るための措置や対策で、物理的・サイバー的な脅威から守ることを目的とする"
+            "definition": "大量のデータを解析して、有用な情報を抽出するプロセスです。"
           }
         ],
         "tags": [
@@ -1540,8 +1554,8 @@
             "platform": "HN"
           },
           {
-            "user": "spot5010",
-            "text": "I feel like there’s a lesson to be learnt by reading Lord of the Rings and seeing what happens to Saruman and Denethor.",
+            "user": "tablets",
+            "text": "Related meeting launching today about Palantir and the NHS - https:&#x2F;&#x2F;www.medact.org&#x2F;event&#x2F;briefing-launch-the-risks-of-pa...",
             "platform": "HN"
           }
         ]
@@ -1554,27 +1568,27 @@
         "source": "Krebs on Security",
         "icon": "KS",
         "priority": 1,
-        "freshness": 185.40427077305554,
+        "freshness": 185.96123994694443,
         "lang": "en",
-        "hotness": 53.0,
+        "hotness": 54.9,
         "hotness_reasons": [
-          "HN関連(363pts)",
+          "HN関連(410pts)",
           "クロスソース:11社"
         ],
-        "easy": "AIアシスタントは、ユーザーのコンピューター、ファイル、オンラインサービスにアクセスして、ほぼすべてのタスクを自動化できるプログラムです。開発者やIT従業員に人気があります。しかし、最近のニュースでは、これらの強力なツールが組織のセキュリティ優先事項を急速に変え、データとコード、信頼できる同僚と内部脅威、ハッカーと初心者プログラマーの境界線を曖昧にしていることがわかります。セキュリティの目標を変えているのは、AIアシスタントの力と柔軟性です。約10億ドルの市場規模（約1,200億円）を持つAIアシスタント市場は、2025年までに約50億ドルの市場規模（約6,000億円）に成長すると予測されています。",
-        "why": "AIアシスタントの普及により、組織のセキュリティ対策が大幅に変化する可能性があります。AIアシスタントのセキュリティリスクを軽減するために、組織は新しいセキュリティ対策を講じる必要があります。",
+        "easy": "AIアシスタントとは、ユーザーのコンピューター、ファイル、オンラインサービスにアクセスできるプログラムで、ほぼすべてのタスクを自動化できます。AIアシスタントの使用が増えているため、組織のセキュリティ優先順位が変わり、データとコードの区別が曖昧になり、信頼できる同僚と内部脅威、ハッカーと初心者プログラマーの区別も曖昧になります。AIアシスタントは、約3億ドル（約450億円）の市場規模を持ち、将来はさらに成長することが予想されています。AIアシスタントの使用により、セキュリティのリスクも増大し、約50%の組織がAIアシスタント関連のセキュリティ問題に直面しています。したがって、組織はAIアシスタントの使用を慎重に検討し、セキュリティ対策を講じる必要があります。",
+        "why": "AIアシスタントの使用が増えるにつれて、セキュリティのリスクも増大し、組織はセキュリティ優先順位を再検討する必要があります。AIアシスタントの使用により、データとコードの区別が曖昧になり、信頼できる同僚と内部脅威、ハッカーと初心者プログラマーの区別も曖昧になります。",
         "glossary": [
           {
             "term": "AIアシスタント",
-            "definition": "ユーザーのコンピューター、ファイル、オンラインサービスにアクセスして、ほぼすべてのタスクを自動化できるプログラム"
+            "definition": "ユーザーのコンピューター、ファイル、オンラインサービスにアクセスできるプログラムで、ほぼすべてのタスクを自動化できます"
           },
           {
-            "term": "インサイダー脅威",
-            "definition": "組織内部からのセキュリティ脅威、例えば社員が機密情報を漏らすなど"
+            "term": "内部脅威",
+            "definition": "組織内部からのセキュリティ脅威で、従業員や契約者などの内部者が組織のセキュリティを侵害すること"
           },
           {
-            "term": "ゼロデイ脆弱性",
-            "definition": "セキュリティ脆弱性が公表された瞬間に、すでに悪用可能な状態になっている脆弱性"
+            "term": "ハッカー",
+            "definition": "コンピューターシステムやネットワークに不正アクセスする人で、セキュリティの脆弱性を利用してデータを盗んだり、システムを破壊したりします"
           }
         ],
         "tags": [
@@ -1593,33 +1607,33 @@
         "source": "The Hacker News",
         "icon": "HN",
         "priority": 1,
-        "freshness": 5.032775647777778,
+        "freshness": 5.589736660833333,
         "lang": "en",
-        "hotness": 47.9,
+        "hotness": 48.0,
         "hotness_reasons": [
-          "HN関連(60pts)",
+          "HN関連(62pts)",
           "クロスソース:9社"
         ],
-        "easy": "セキュリティの検証は、複雑な組織では非常に重要です。セキュリティの検証ツールは、組織のセキュリティの状態を確認するために使用されます。例えば、BASツールやペネトレーションテストツール、脆弱性スキャナーや攻撃面管理プラットフォームなどがあります。これらのツールはそれぞれ、セキュリティの状態の一部を示します。しかし、これらのツールが互いに話し合うことはありません。したがって、セキュリティの検証は、より能動的で統合されたアプローチが必要です。約1億円（10万ドル）を費やすことで、セキュリティの検証を強化できます。",
-        "why": "セキュリティの検証は、組織のセキュリティを強化するために不可欠です。セキュリティの検証ツールが互いに話し合うことで、セキュリティの状態をより正確に把握できます。",
+        "easy": "テック業界のニュースである「Why Security Validation Is Becoming Agentic（セキュリティ検証がアジェンシーになる理由）」では、複雑な組織のセキュリティ検証ツールについて説明しています。セキュリティ検証ツールには、BASツールや脆弱性スキャナなどが含まれます。これらのツールはそれぞれ異なる情報を提供しますが、互いに連携して情報を共有することができません。たとえば、1つのツールで検出された脆弱性は他のツールで検出されない可能性があります。セキュリティ検証ツールの連携性を高めることで、組織のセキュリティを強化することができます。",
+        "why": "セキュリティ検証ツールの連携性が重要なのは、複数のツールを使用してセキュリティを強化することができるためです。また、セキュリティ検証ツールの連携性を高めることで、セキュリティインシデントのリスクを低減することができます。",
         "glossary": [
           {
             "term": "BASツール",
-            "definition": "脆弱性を自動的に検出するツールです。BASは、脆弱性を検出するために使用されるソフトウェアツールの一種です。"
+            "definition": "BASツールは、脆弱性を検出するために使用されるセキュリティ検証ツールの一種です。BASは、Breach and Attack Simulationの略称で、攻撃シミュレーションを実行して脆弱性を検出します。"
           },
           {
-            "term": "ペネトレーションテスト",
-            "definition": "システムやネットワークのセキュリティをテストするために、模擬的な攻撃を実行する手法です。"
+            "term": "pentest",
+            "definition": "ペネトレーションテスト（pentest）は、システムやネットワークのセキュリティをテストするために使用される手法の一種です。ペネトレーションテストでは、シミュレートされた攻撃を実行してシステムやネットワークの脆弱性を検出します。"
           },
           {
-            "term": "脆弱性スキャナー",
-            "definition": "システムやネットワークの脆弱性を自動的に検出するツールです。"
+            "term": "脆弱性スキャナ",
+            "definition": "脆弱性スキャナは、システムやネットワークの脆弱性を検出するために使用されるツールの一種です。脆弱性スキャナは、システムやネットワークをスキャンして脆弱性を検出します。"
           }
         ],
         "tags": [
           "脆弱性",
-          "パッチ",
-          "ゼロデイ"
+          "情報漏洩",
+          "パッチ"
         ],
         "impact": 50,
         "reactions": []
@@ -1632,26 +1646,26 @@
         "source": "BleepingComputer",
         "icon": "BC",
         "priority": 1,
-        "freshness": 2.9795773355555557,
+        "freshness": 3.536545729722222,
         "lang": "en",
         "hotness": 44.9,
         "hotness_reasons": [
-          "クロスソース:6社"
+          "クロスソース:5社"
         ],
-        "easy": "AIは、ITの監視なしに、新しいAIツールを採用する従業員によって、SaaS環境に静かに広がっています。Nudge Securityは、セキュリティチームがAIアプリを発見し、使用を監視し、リスクのあるAI活動を統制する方法を説明しています。AIは、従業員が仕事を簡単にするために使用するソフトウェアに組み込まれていることが多く、セキュリティ上のリスクをもたらします。AIをセキュリティ上のリスクから保護するには、ITが従業員にAIツールの使用を許可する前に、セキュリティ上のリスクを評価する必要があります。",
-        "why": "このニュースは重要です。AIは、セキュリティ上のリスクをもたらす可能性があり、ITが従業員のAIツールの使用を許可する前に、セキュリティ上のリスクを評価する必要があります。",
+        "easy": "AIツールは、会社のシステムに無許可で入っていることがあります。IT部門がこれらのツールを監視することができず、セキュリティのリスクが生じています。Nudge Securityは、これらのAIツールを発見し、使用を監視し、リスクのあるAIの活動を規制する方法を説明しています。",
+        "why": "このニュースは重要です。AIツールが無許可で入っている場合、データの漏洩やサイバー攻撃のリスクが高まります。IT部門がこれらのツールを監視することができなければ、セキュリティの脆弱性が生じる可能性があります。",
         "glossary": [
           {
-            "term": "SaaS",
-            "definition": "ソフトウェアの提供方法の一つで、インターネット経由でソフトウェアを利用できるように提供するサービスです。例えば、GoogleドライブやMicrosoft Office 365はSaaSです。"
+            "term": "Shadow AI",
+            "definition": "AIツールが無許可で入っていること。IT部門がこれらのツールを監視していないため、セキュリティのリスクが生じる可能性があります。"
           },
           {
-            "term": "AI",
-            "definition": "人工知能の略で、コンピュータが人間のように知能をもったように動作する技術です。AIは、データを分析し、パターンを認識し、決定を下すことができます。"
+            "term": "SaaS",
+            "definition": "ソフトウェアのサービス型。ユーザーがインターネットを通じてソフトウェアを使用できるようにするサービスです。"
           },
           {
             "term": "IT",
-            "definition": "情報技術の略で、コンピューターや通信機器を管理することです。ITは、ビジネスや組織の情報システムを運営するために必要な技術と手順を指します。"
+            "definition": "情報技術。コンピューターや通信網を含む、情報を処理する技術のこと。"
           }
         ],
         "tags": [
@@ -1670,26 +1684,26 @@
         "source": "The Hacker News",
         "icon": "HN",
         "priority": 1,
-        "freshness": 2.716108981111111,
+        "freshness": 3.2730699941666668,
         "lang": "en",
         "hotness": 44.9,
         "hotness_reasons": [
-          "クロスソース:9社"
+          "クロスソース:8社"
         ],
-        "easy": "Google Chromeの脆弱性が見つかり、悪質なサイトにアクセスすると、ユーザーの情報が盗まれる恐れがあります。さらに、ルーターのBOTネットワークが発見され、ユーザーのデータが流出する可能性があります。Amazon Web Services (AWS) のデータベースが侵害され、重要な情報が流出しています。また、AIの不正利用が問題になっています。",
-        "why": "これらの脆弱性や侵害は、ユーザーの情報やデータの流出につながる可能性があります。業界では、セキュリティ対策を強化する必要があります。",
+        "easy": "この週のセキュリティニュースは、Google Chromeの脆弱性、ルーターのBOTネットワーク、AWSのデータ漏洩、AIの不正使用など、複数の問題が発生しました。Chromeの脆弱性は、攻撃者がユーザーの個人情報を取得できることを意味します。また、ルーターのBOTネットワークは、攻撃者がルーターやネットワークを制御できることを意味します。AWSのデータ漏洩は、攻撃者がAWSのデータを取得できることを意味します。AIの不正使用は、AIが不正な目的で使用されていることを意味します。",
+        "why": "このニュースは重要です。なぜなら、ユーザーの個人情報やルーターやネットワークの安全性が懸念されるからです。また、AWSのデータ漏洩は、企業や組織のデータの安全性が懸念されるからです。",
         "glossary": [
           {
             "term": "BOTネットワーク",
-            "definition": "コンピューターシステムを制御するために使用される、複数のコンピューターシステムを組み合わせたシステムです。BOTネットワークは、悪質な活動を行うために使用されることがあります。"
+            "definition": "BOTネットワークとは、コンピューターやデバイスを遠隔操作するために使用されるネットワークです。BOTネットワークは、攻撃者がルーターやネットワークを制御できることを意味します。"
+          },
+          {
+            "term": "AWS",
+            "definition": "AWSとは、Amazon Web Servicesの略称です。AWSは、クラウドコンピューティングやストレージなどのサービスを提供するクラウドプロバイダーです。"
           },
           {
             "term": "ゼロデイ攻撃",
-            "definition": "セキュリティ上の脆弱性を利用して、攻撃者がシステムにアクセスできるようにする攻撃方法です。ゼロデイ攻撃は、システムのセキュリティ対策が十分でない場合に発生する可能性があります。"
-          },
-          {
-            "term": "AIの不正利用",
-            "definition": "AIを悪質な目的で使用することです。AIは、自動化されたタスクを実行することができますが、不正利用の場合、危害や損害を与える可能性があります。"
+            "definition": "ゼロデイ攻撃とは、ソフトウェアの脆弱性が公開された直後に攻撃者が攻撃を開始することを意味します。ゼロデイ攻撃は、攻撃者がソフトウェアの脆弱性を利用してユーザーの個人情報を取得できることを意味します。"
           }
         ],
         "tags": [
@@ -1708,32 +1722,32 @@
         "source": "SecurityWeek",
         "icon": "SW",
         "priority": 1,
-        "freshness": 4.1296689594444445,
+        "freshness": 4.686611149166666,
         "lang": "en",
         "hotness": 44.9,
         "hotness_reasons": [
           "クロスソース:2社"
         ],
-        "easy": "中国のサイバー攻撃グループが、アジアの軍隊を標的とした長期的なスパイ活動を行ったことが明らかになりました。このグループは、自作のツールを使用し、侵害された環境に長期間潜伏していました。中国のグループは、複数の国を標的としていたようです。攻撃は、数か月にわたって行われていました。グループは、軍隊の機密情報を盗み出し、中国の利益を守るための情報を集めようとしていました。",
-        "why": "このニュースは重要です。中国のサイバー攻撃グループが軍隊を標的としたスパイ活動を行ったことが明らかになりました。これにより、軍隊の機密情報が漏洩した可能性があります。また、中国のサイバー攻撃グループが長期的なスパイ活動を行うことが明らかになりました。",
+        "easy": "中国の政府が支援するハッカーが、数か月間活動を休止しながら、東アジアの軍隊を標的にしたスパイ活動を行った。ハッカーは独自のツールを使用し、侵入した環境内で静かに活動していた。中国のハッカーは、世界中の軍隊を標的にしており、これは大きな問題となっている。",
+        "why": "このニュースは重要です。中国のハッカーが軍隊を標的にしたことは、軍事情報の盗難や国家の安全保障に影響を与える可能性があるためです。",
         "glossary": [
           {
-            "term": "サイバー攻撃",
-            "definition": "コンピューターやネットワークを侵害し、情報を盗み出す行為。"
+            "term": "ハッカー",
+            "definition": "コンピューターやネットワークに侵入し、情報を盗み取ったり、システムを破壊したりする人。"
           },
           {
             "term": "スパイ活動",
-            "definition": "外国に情報を収集するために、秘密裏に活動する行為。"
+            "definition": "他国の機密情報を盗み取る活動。"
           },
           {
-            "term": "サイバー攻撃グループ",
-            "definition": "サイバー攻撃を行うために、組織化されたグループ。"
+            "term": "環境",
+            "definition": "コンピューターやネットワークのシステムのこと。"
           }
         ],
         "tags": [
           "脆弱性",
           "情報漏洩",
-          "ゼロデイ"
+          "パッチ"
         ],
         "impact": 80,
         "reactions": []
@@ -1746,11 +1760,11 @@
         "source": "Dark Reading",
         "icon": "DR",
         "priority": 1,
-        "freshness": 75.65015894055556,
+        "freshness": 76.20710301861111,
         "lang": "en",
-        "hotness": 43.8,
+        "hotness": 44.1,
         "hotness_reasons": [
-          "HN関連(178pts)",
+          "HN関連(184pts)",
           "クロスソース:6社"
         ],
         "easy": "「Most Google Cloud Attacks Start With Bug Exploitation」についてのニュースです。",
@@ -1770,34 +1784,34 @@
         "source": "INTERNET Watch",
         "icon": "JP",
         "priority": 1,
-        "freshness": 15.499980082777778,
+        "freshness": 16.05688383,
         "lang": "ja",
         "hotness": 39.9,
         "hotness_reasons": [
           "クロスソース:3社"
         ],
-        "easy": "Appleのワイヤレスイヤホン「AirPods」がAmazonでセール中です。アクティブノイズキャンセリングなしのモデルは1万7080円で買うことができます。これは通常の価格より安い価格です。AirPodsは人気のイヤホンですが、価格が安くなると人気をさらに高めます。",
-        "why": "このニュースは重要です。Appleの人気製品が安くなると、消費者が買い物を増やす可能性があり、業界の流れが変わります。",
+        "easy": "Appleのワイヤレスイヤホン「AirPods」がAmazonでセール中です。通常の価格は高かったですが、今は1万7080円で買うことができます。Apple製品のセールはAmazonで行われています。AirPodsは完全ワイヤレスイヤホンで、イヤホンとイヤバンドが一体化しています。ワイヤレスイヤホンは音質が良く、使いやすいです。",
+        "why": "このニュースは重要です。Apple製品がAmazonでセールされていることは、Appleの製品が人気があることを示しています。また、ワイヤレスイヤホンが人気があることもわかります。",
         "glossary": [
           {
             "term": "ワイヤレスイヤホン",
-            "definition": "イヤホンをイヤークラップに収納する必要がなく、Bluetoothでスマートフォンなどと接続して音楽を聴くことができるイヤホンです。"
+            "definition": "イヤホンにイヤバンドがついており、イヤバンドに電池が入っているため、イヤホンとイヤバンドが分離できません。"
           },
           {
-            "term": "アクティブノイズキャンセリング",
-            "definition": "イヤホンが周囲の雑音を検知してキャンセルする技術です。雑音を消すことができるため、集中して音楽を聴くことができます。"
+            "term": "ワイヤレス",
+            "definition": "電線がなく、電気を送るために空気を利用する技術です。"
           },
           {
             "term": "セール",
-            "definition": "特定の期間に限り、商品の価格を安くする販売方法です。"
+            "definition": "製品の価格を下げて、買う人が増えるようにする行為です。"
           }
         ],
         "tags": [
-          "sale",
-          "apple",
-          "airpods"
+          "アプリ",
+          "デバイス",
+          "セール"
         ],
-        "impact": 70,
+        "impact": 50,
         "reactions": []
       },
       {
@@ -1808,11 +1822,11 @@
         "source": "INTERNET Watch",
         "icon": "JP",
         "priority": 1,
-        "freshness": 13.339980082777778,
+        "freshness": 13.89688383,
         "lang": "ja",
-        "hotness": 26.5,
+        "hotness": 26.9,
         "hotness_reasons": [
-          "はてブ関連(116ブクマ)"
+          "はてブ関連(120ブクマ)"
         ],
         "easy": "「全Windowsユーザー待望？ セットアップ時にユーザーフォルダー名をカスタマイズする機能が実装へ【やじうまWatch】」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
@@ -1831,7 +1845,7 @@
         "source": "INTERNET Watch",
         "icon": "JP",
         "priority": 1,
-        "freshness": 17.99998008277778,
+        "freshness": 18.556883829999997,
         "lang": "ja",
         "hotness": 24.9,
         "hotness_reasons": [
@@ -1856,73 +1870,35 @@
         "source": "The Verge Tech",
         "icon": "TV",
         "priority": 1,
-        "freshness": 21.40162305277778,
+        "freshness": 21.958200566944445,
         "lang": "en",
-        "hotness": 45.2,
+        "hotness": 45.4,
         "hotness_reasons": [
-          "HN関連(107pts)",
+          "HN関連(110pts)",
           "クロスソース:5社"
         ],
-        "easy": "Aether OSは、ブラウザ内で動作するコンピュータで、AT Protocolに特化しています。ブラウザ上でデスクトップ環境を提供し、Blueskyアカウントやパブリックレコードに直接接続します。42種類のアプリケーションを提供しており、テキスト編集、タスク管理、ソーシャルメディアなどをカバーしています。チップチューンの作成用のトラッカーもあります。",
-        "why": "Aether OSは、ブラウザ内でフルなデスクトップ環境を提供することで、ユーザーに新しいコンピューティング体験を提供します。AT Protocolとの統合により、ユーザーはBlueskyアカウントやパブリックレコードに直接アクセスできます。",
+        "easy": "Aether OSは、ブラウザ内で動作するコンピュータで、AT Protocolと直接接続します。つまり、Blueskyアカウントや他のパブリックレコードに接続できます。42種類のアプリが提供され、テキスト編集、タスク管理、ソーシャルメディアなどをカバーしています。チップチューンを作成するための簡単なトラッカーもあります。ブラウザ内で動作するため、コンピュータのハードウェアに依存せず、どこからでもアクセスできます。",
+        "why": "Aether OSは、ブラウザ内でフルなデスクトップ環境を提供することで、ユーザーがより便利に作業やコミュニケーションを行えるようにします。また、AT Protocolと接続することで、Blueskyアカウントなどのサービスとの連携も可能になります。",
         "glossary": [
           {
             "term": "AT Protocol",
-            "definition": "分散型ソーシャルネットワークプロトコルで、Blueskyアカウントやパブリックレコードを管理します"
+            "definition": "Bluesky社が開発した分散型ソーシャルネットワークプロトコルで、ユーザーが自分のデータを管理し、サーバー間で情報を共有できるように設計されています"
           },
           {
             "term": "Bluesky",
-            "definition": "分散型ソーシャルネットワークプラットフォームで、ユーザーがコンテンツを共有して交流することができます"
+            "definition": "分散型ソーシャルネットワークプラットフォームで、ユーザーが自分のデータを管理し、サーバー間で情報を共有できるように設計されています"
           },
           {
             "term": "チップチューン",
-            "definition": "古いビデオゲームのサウンドトラックのような音楽で、簡単な音を組み合わせて作成します"
+            "definition": "古いコンピューターやビデオゲーム機の音を使用して作成される音楽の一種で、8ビットや16ビットの音色を特徴とします"
           }
         ],
         "tags": [
           "新リリース",
           "browser",
-          "os"
+          "チップ"
         ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Intel's roadmaps examined  — 14A, Nova Lake, Diamond Rapids & AI accelerator push",
-        "url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-chip-roadmap-2026-2028",
-        "summary": "Intel's CPU roadmap is unlike any the company has published in recent years, because its manufacturing ambitions and its product launches have to succeed simultaneously.",
-        "published": "2026-03-16 14:29",
-        "source": "Tom's Hardware",
-        "icon": "TH",
-        "priority": 1,
-        "freshness": 2.504668466388889,
-        "lang": "en",
-        "hotness": 44.9,
-        "hotness_reasons": [
-          "クロスソース:3社"
-        ],
-        "easy": "インテルの新しいCPUロードマップは、会社がこれまでに発表したものとは異なります。インテルは、14A、Nova Lake、Diamond Rapidsなどの新しいプロセッサを開発中で、AIアクセラレータの推進も計画しています。インテルの目標は、製造技術と製品の発売を同時に成功させることです。インテルの新しいプロセッサは、より高速でエネルギー効率の高い性能を提供することを目指しています。インテルのロードマップは、会社の将来の製品開発と技術革新を示唆しています。",
-        "why": "インテルの新しいロードマップは、会社の将来の成長と競争力を左右する重要な要素です。インテルが新しいプロセッサを成功裏に開発して発売することができれば、市場での競争力を強化することができます。",
-        "glossary": [
-          {
-            "term": "CPU",
-            "definition": "中央処理装置、コンピュータの脳とも呼ばれ、計算処理や制御を行う部品です"
-          },
-          {
-            "term": "AIアクセラレータ",
-            "definition": "人工知能の計算処理を高速化するためのハードウェアです、ディープラーニングや自然言語処理などのタスクを効率的に実行することができます"
-          },
-          {
-            "term": "ロードマップ",
-            "definition": "会社の将来の製品開発や技術革新の計画を示す図表や文書です、目標や目標達成のためのステップを示しています"
-          }
-        ],
-        "tags": [
-          "チップ",
-          "新リリース",
-          "ベンチマーク"
-        ],
-        "impact": 50,
+        "impact": 60,
         "reactions": []
       },
       {
@@ -1933,26 +1909,26 @@
         "source": "The Verge Tech",
         "icon": "TV",
         "priority": 1,
-        "freshness": 3.4919008305555552,
+        "freshness": 4.048478344722223,
         "lang": "en",
         "hotness": 44.9,
         "hotness_reasons": [
           "クロスソース:3社"
         ],
-        "easy": "アップルは新しいヘッドフォン『AirPods Max 2』を発表しました。価格は549ドル（約73,000円）からで、ノイズキャンセリング機能や音質が向上しています。新しいチップ『H2』が搭載されており、AIを使用した同時通訳機能などが追加されています。この機能は、会話をリアルタイムで好きな言語に翻訳することができます。アップルはこのヘッドフォンを高音質とノイズキャンセリングの両方を実現した製品として紹介しています。",
-        "why": "このニュースは重要です。アップルが新しいヘッドフォンを発表したことで、音質とノイズキャンセリングの両方を求めるユーザーに新しい選択肢が提供されます。また、同時通訳機能の追加は、国際的なコミュニケーションに新しい可能性をもたらします。",
+        "easy": "Appleは新しいヘッドフォン『AirPods Max 2』を発表しました。このヘッドフォンは549ドル（約73,000円）からで、ノイズキャンセル機能やサウンドの品質が向上しています。新しいチップ『H2』が搭載されており、AIを使用したリアルタイムの翻訳機能など、新しい機能が追加されています。ノイズキャンセル機能は、周囲の音をより効果的に遮断することができます。サウンドの品質も向上しており、よりリアルな音質を楽しむことができます。",
+        "why": "このニュースは重要です。新しいヘッドフォンは、高品質のサウンドと先進的な機能を提供し、音楽やポッドキャストのファンにとって魅力的な選択肢となるからです。また、AIを使用したリアルタイムの翻訳機能は、国際的なコミュニケーションを容易にすることができ、ビジネスや旅行などで活用される可能性があります。",
         "glossary": [
           {
-            "term": "ノイズキャンセリング",
-            "definition": "外部からの雑音をキャンセルする技術で、ヘッドフォンなどに使用されています。"
+            "term": "ノイズキャンセル",
+            "definition": "ノイズキャンセルは、ヘッドフォンなどの音響機器が周囲の不必要な音を減らす技術です。マイクロフォンが周囲の音を拾い、逆の位相の音を出してノイズを打ち消すことで効果を発揮します。"
           },
           {
             "term": "H2チップ",
-            "definition": "アップルが開発した新しいチップで、AIを使用した同時通訳機能などを実現しています。"
+            "definition": "H2チップは、Appleが開発した新しいチップで、AirPods Max 2に搭載されています。このチップは、AIを使用したリアルタイムの翻訳機能や、高品質のサウンドを提供することができます。"
           },
           {
-            "term": "同時通訳",
-            "definition": "会話をリアルタイムで好きな言語に翻訳する機能で、国際的なコミュニケーションに役立ちます。"
+            "term": "AI",
+            "definition": "AI（Artificial Intelligence）は、人工知能の略称です。AIは、コンピューターが人間のように考え、学習し、判断する技術です。AIを使用したリアルタイムの翻訳機能は、会話の内容を即座に翻訳することができます。"
           }
         ],
         "tags": [
@@ -1960,7 +1936,7 @@
           "hardware",
           "チップ"
         ],
-        "impact": 50,
+        "impact": 70,
         "reactions": []
       },
       {
@@ -1971,34 +1947,34 @@
         "source": "The Verge Tech",
         "icon": "TV",
         "priority": 1,
-        "freshness": 5.000789719444445,
+        "freshness": 5.557367233611111,
         "lang": "en",
         "hotness": 44.9,
         "hotness_reasons": [
           "クロスソース:4社"
         ],
-        "easy": "Spigenは、AppleのMacintoshの古いデスクトップコンピュータをモチーフにしたケースを発売しました。このケースは、AppleのAirPods Pro 3を古いデスクトップコンピュータに似せています。Spigenは、Macintoshの古いデスクトップコンピュータをモチーフにしたケースを以前にも発売していたので、AirPods Pro 3も古いデスクトップコンピュータに似せることができました。",
-        "why": "このニュースは注目です。SpigenはAppleのAirPods Pro 3を古いデスクトップコンピュータに似せるケースを発売したため、Appleのファンやデザインの愛好家が注目しています。",
+        "easy": "Spigenという会社は、Appleの古いコンピューターであるMacintosh 128KやApple Lisaを模したケースをiPhone 17 ProとPro Max用に発売しました。これに続いて、同社はAirPods Pro 3用のケースを発売しました。このケースは、古いMacintoshマウスを模したデザインになっています。AirPods Pro 3の価格は約3万5千円ですが、このケースの価格は約2千円と比較的安価です。Spigenのケースは、レトロファンやAppleファンに人気です。",
+        "why": "このニュースは、テックファンが古いApple製品を懐かしく思い出せる製品が登場したことを示しています。Spigenのケースは、Appleのデザインを再現しており、ファンにとって魅力的です。",
         "glossary": [
           {
-            "term": "デスクトップコンピュータ",
-            "definition": "家で使うコンピュータ。古くはデスクトップ上に置いて使うコンピュータを指します。"
+            "term": "AirPods Pro 3",
+            "definition": "Appleが発売した最新のワイヤレスイヤホンで、高音質と長時間のバッテリー駆動を実現しています"
           },
           {
-            "term": "モチーフ",
-            "definition": "物の形やデザインを他の物に合わせること。"
+            "term": "Macintosh 128K",
+            "definition": "Appleが1984年に発売した初のMacintoshコンピューターで、128KBのRAMを搭載していました"
           },
           {
-            "term": "ケース",
-            "definition": "携帯電話やエアポッドなどの保護ケース。"
+            "term": "Apple Lisa",
+            "definition": "Appleが1983年に発売したコンピューターで、グラフィカルユーザーインターフェースを初めて導入しました"
           }
         ],
         "tags": [
           "新リリース",
-          "design",
-          "Apple"
+          "hardware",
+          "design"
         ],
-        "impact": 70,
+        "impact": 50,
         "reactions": []
       },
       {
@@ -2009,31 +1985,69 @@
         "source": "TechCrunch HW",
         "icon": "TC",
         "priority": 2,
-        "freshness": 2.786918881111111,
+        "freshness": 3.3436531627777777,
         "lang": "en",
         "hotness": 41.6,
         "hotness_reasons": [
           "クロスソース:3社"
         ],
-        "easy": "アップルは新しいヘッドホーン「AirPods Max 2」を Quietにリリースしました。このヘッドホーンは、前作よりも音の質が良くなり、ノイズキャンセル機能が強化されました。価格は549ドル（約62,000円）です。",
-        "why": "アップルは新しいヘッドホーンをリリースし、ノイズキャンセル機能と音の質を強化しました。これは、ヘッドホーンの技術の進歩を示す大きなニュースです。",
+        "easy": "アップルは新しいヘッドホーン「AirPods Max 2」を発表しました。価格は54,900円（約$549）で、より良い音質とノイズキャンセル機能、ライブトランスレーション、H2チップなどが搭載されています。AirPods Max 2は、より良いサウンドと機能を提供するため、AirPods Maxの後継モデルです。",
+        "why": "アップルは新しいヘッドホーンを発表し、より良い音質と機能を提供するため、ユーザーに大きな利点をもたらす可能性があります。",
         "glossary": [
           {
-            "term": "ノイズキャンセル",
-            "definition": "ヘッドホーンが外部の雑音を消す機能です。ヘッドホーンの内側に小さなマイクがついています。マイクが外部の雑音を検出し、それをヘッドホーンのスピーカーで反対の音を出して、雑音を消します。"
-          },
-          {
             "term": "H2チップ",
-            "definition": "アップルが開発したチップです。ヘッドホーンの機能を操作する役割を担っています。"
+            "definition": "アップルが開発したチップで、音質と機能を向上させることができます。"
           },
           {
-            "term": "Live Translation",
-            "definition": "ヘッドホーンが実況中継で言語を翻訳する機能です。ヘッドホーンが外部の雑音を検出し、それを翻訳してヘッドホーンのスピーカーで出します。"
+            "term": "ライブトランスレーション",
+            "definition": "ヘッドホーンを通してのリアルタイムの翻訳機能です。"
+          },
+          {
+            "term": "ノイズキャンセル",
+            "definition": "ヘッドホーンが周囲の雑音を消去して、静かな環境を作る機能です。"
           }
         ],
         "tags": [
           "チップ",
           "新リリース"
+        ],
+        "impact": 70,
+        "reactions": []
+      },
+      {
+        "title": "Intel's roadmaps examined  — 14A, Nova Lake, Diamond Rapids & AI accelerator push",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-chip-roadmap-2026-2028",
+        "summary": "Intel's CPU roadmap is unlike any the company has published in recent years, because its manufacturing ambitions and its product launches have to succeed simultaneously.",
+        "published": "2026-03-16 14:29",
+        "source": "Tom's Hardware",
+        "icon": "TH",
+        "priority": 1,
+        "freshness": 3.0615227094444446,
+        "lang": "en",
+        "hotness": 37.9,
+        "hotness_reasons": [
+          "クロスソース:2社"
+        ],
+        "easy": "インテルは、最近のように CPU の製造と製品のリリースを同時に成功させる必要があるため、CPU のロードマップは今まででは異なるものになりました。インテルは新しい製造プロセスと製品を同時にリリースする予定です。このロードマップでは、14A、Nova Lake、Diamond Rapids、AI アクセラレータの開発が含まれています。",
+        "why": "インテルは新しい製造プロセスと製品を同時にリリースするため、製造と製品の両方が成功する必要があります。これは、インテルが競合他社と比べて大きなチャンスとリスクを冒すことになります。",
+        "glossary": [
+          {
+            "term": "CPU",
+            "definition": "CPUは、コンピュータの脳のような働きをする部品です。計算や処理を実行する主な部品です。"
+          },
+          {
+            "term": "ロードマップ",
+            "definition": "ロードマップは、製品の開発やリリースの計画や予定を示す図表です。"
+          },
+          {
+            "term": "AI アクセラレータ",
+            "definition": "AI アクセラレータは、AI の計算を高速化するための専用のチップです。"
+          }
+        ],
+        "tags": [
+          "チップ",
+          "新リリース",
+          "ベンチマーク"
         ],
         "impact": 80,
         "reactions": []
@@ -2046,32 +2060,32 @@
         "source": "The Verge Tech",
         "icon": "TV",
         "priority": 1,
-        "freshness": 2.0007897194444446,
+        "freshness": 2.557367233611111,
         "lang": "en",
         "hotness": 37.9,
         "hotness_reasons": [
           "クロスソース:2社"
         ],
-        "easy": "YahooのCEOであるJim Lanzone氏は、ウェブのホームページを再生することを目指しています。Yahooは、長い間前にGoogleと協力して検索機能を提供していましたが、現在ではYahooのウェブサイトは使われていない状況です。Jim氏は、Yahooのウェブサイトを再生するために、新しいアイデアや技術を導入することを目指しています。Yahooは、ウェブサイトの使いやすさや、ユーザーに情報を提供する方法を改善することを目指しています。",
-        "why": "Yahooのウェブサイトは、長い間前にGoogleと協力して検索機能を提供していたが、現在では使われていない状況です。Jim氏は、新しいアイデアや技術を導入して、ウェブサイトを再生することを目指しています。",
+        "easy": "YahooのCEOであるジム・ランゾン氏は、ウェブのホームページを再生するために取り組んでいます。Yahooは長い間Googleの検索ボックスを使用してきましたが、現在はそれが機能していません。ランゾン氏は、Yahooのホームページを再生するために新しい戦略を立てています。",
+        "why": "Yahooのホームページを再生するため、ランゾン氏は新しい戦略を立てています。これは、Yahooの存続を決定するものです。",
         "glossary": [
           {
             "term": "ホームページ",
-            "definition": "インターネット上で、ユーザーが最初に訪れるページ。YahooのウェブサイトやGoogleのウェブサイトなどがホームページです。"
+            "definition": "ウェブサイトの最初のページ。ユーザーがウェブサイトにアクセスしたときに表示されるページです。"
           },
           {
-            "term": "検索機能",
-            "definition": "ユーザーが検索キーワードを入力して、インターネット上の情報を探す機能。GoogleやYahooのウェブサイトで利用できます。"
+            "term": "検索ボックス",
+            "definition": "ウェブサイトで検索するためのボックス。ユーザーが検索キーワードを入力して検索結果を表示します。"
           },
           {
-            "term": "ウェブサイト",
-            "definition": "インターネット上で、ユーザーがアクセスできる情報やサービスを提供する場所。YahooのウェブサイトやGoogleのウェブサイトなどがウェブサイトです。"
+            "term": "CEO",
+            "definition": "最高経営責任者。会社の最高責任者であり、経営を責任を持って行います。"
           }
         ],
         "tags": [
+          "Yahoo",
           "ウェブ",
-          "ホームページ",
-          "検索機能"
+          "ホームページ"
         ],
         "impact": 70,
         "reactions": []
@@ -2084,17 +2098,32 @@
         "source": "The Verge Tech",
         "icon": "TV",
         "priority": 1,
-        "freshness": 2.0757897194444443,
+        "freshness": 2.6323672336111112,
         "lang": "en",
         "hotness": 37.9,
         "hotness_reasons": [
           "クロスソース:2社"
         ],
-        "easy": "「This chair gives half-worn clothes a home」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
+        "easy": "服が少し使われても、床や机に置くのは嫌なものです。そんな人たちに役立つ新しい椅子が登場しました。『Laundry Chair』は、YouTuberのSimone Giertzさんが開発したものです。この椅子は、服を置く場所としても使えるので、家の中で使うことができます。価格は約10ドル（約1,000円）で、Kickstarterのキャンペーンで購入できます。",
+        "why": "この椅子は、家の中で服を置く場所としても使えるので、家事の手間を減らすことができます。また、服を整理することができ、家の中の整理整頓も容易になります。",
+        "glossary": [
+          {
+            "term": "YouTuber",
+            "definition": "YouTubeで動画を投稿し、視聴者に情報を提供する人です。"
+          },
+          {
+            "term": "Kickstarter",
+            "definition": "新しい製品やサービスを開発するために、金銭的な支援を募るウェブサイトです。"
+          },
+          {
+            "term": "キャンペーン",
+            "definition": "特定の目標を達成するために、一定期間中に行う活動や宣伝活動です。"
+          }
+        ],
         "tags": [
-          "ニュース"
+          "chair",
+          "laundry",
+          "kickstarter"
         ],
         "impact": 50,
         "reactions": []
@@ -2107,34 +2136,19 @@
         "source": "PC Watch",
         "icon": "JP",
         "priority": 1,
-        "freshness": 8.32389191,
+        "freshness": 8.880595431666666,
         "lang": "ja",
         "hotness": 34.9,
         "hotness_reasons": [
           "クロスソース:1社"
         ],
-        "easy": "Googleは、コンピューターで使うブラウザ「Chrome」の新しいバージョンを出します。この新しいバージョンは、ARM64というチップを使ったLinuxを使うデバイスで使うことができます。2026年第2四半期には、この新しいバージョンが提供される予定です。Googleは、DGX Sparkというものと一緒に使うことも考えています。",
-        "why": "このニュースは重要です。なぜなら、Googleは世界で最も使うブラウザ「Chrome」をリリースすることになるからです。この新しいバージョンは、ARM64チップを使ったデバイスで使うことができるので、スマートフォンやタブレットなど、さまざまなデバイスで使うことができます。",
-        "glossary": [
-          {
-            "term": "ARM64",
-            "definition": "ARM64は、ARMというチップの64ビット版です。チップはコンピューターの処理の中心です。ARM64は、スマートフォンやタブレットなど、モバイルデバイスでよく使われます。"
-          },
-          {
-            "term": "Linux",
-            "definition": "Linuxは、コンピューターのオペレーティングシステムです。オペレーティングシステムは、コンピューターの基本的な機能を提供します。Linuxは、オープンソースで開発されており、さまざまなデバイスで使うことができます。"
-          },
-          {
-            "term": "DGX Spark",
-            "definition": "DGX Sparkは、Googleが開発した、高性能コンピューターのシステムです。DGX Sparkは、AIや機械学習などの高性能計算を実行するために使われます。"
-          }
-        ],
+        "easy": "「Google、ARM64 Linux版「Chrome」提供へ。DGX Spark対応も視野」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
         "tags": [
-          "チップ",
-          "GPU",
-          "新リリース"
+          "ニュース"
         ],
-        "impact": 80,
+        "impact": 50,
         "reactions": []
       },
       {
@@ -2145,7 +2159,7 @@
         "source": "PC Watch",
         "icon": "JP",
         "priority": 1,
-        "freshness": 8.929169687777778,
+        "freshness": 9.485873209444446,
         "lang": "ja",
         "hotness": 26.9,
         "hotness_reasons": [
@@ -2168,61 +2182,37 @@
         "source": "PC Watch",
         "icon": "JP",
         "priority": 1,
-        "freshness": 13.42139191,
+        "freshness": 13.978095431666667,
         "lang": "ja",
         "hotness": 24.9,
         "hotness_reasons": [
           "はてブ関連(13ブクマ)"
         ],
-        "easy": "「2月のWindows UpdateでMIDI機器に不具合が生じる可能性。回避策は？」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
+        "easy": "Windows Updateはコンピュータのソフトウェアを更新する機能ですが、2026年1月から2月にかけてのアップデートで、MIDI機器の動作に支障が生じる可能性があります。MIDI機器は音楽の演奏や編曲に使われるデバイスですが、不具合が生じると音楽の演奏ができなくなるため、音楽家や音楽制作会社などに影響を与える可能性があります。Microsoftは回避策として、MIDI機器を使用する場合はWindows Updateを適用しないように推奨しています。",
+        "why": "このニュースは重要です。MIDI機器は音楽の演奏や編曲に使われるデバイスですが、不具合が生じると音楽の演奏ができなくなるため、音楽家や音楽制作会社などに影響を与える可能性があります。",
+        "glossary": [
+          {
+            "term": "MIDI",
+            "definition": "MIDIは、音楽の演奏や編曲に使われるデバイスのための通信規格です。MIDI機器は、キーボード、ドラムマシン、シンセサイザーなどに使われます。"
+          },
+          {
+            "term": "Windows Update",
+            "definition": "Windows Updateは、Microsoftが提供するWindowsオペレーティングシステムのソフトウェアを更新する機能です。Windows Updateは、セキュリティの強化や性能の向上などを目的として、定期的にアップデートが行われます。"
+          },
+          {
+            "term": "KB5074105",
+            "definition": "KB5074105は、Microsoftが2026年1月から2月にかけて展開したWindows Updateのバージョン番号です。"
+          }
         ],
-        "impact": 50,
+        "tags": [
+          "新リリース",
+          "ベンチマーク"
+        ],
+        "impact": 60,
         "reactions": []
       }
     ],
     "funding": [
-      {
-        "title": "Antonio Gracias says he’s longing for ‘proentropic’ startups — those that are built to survive chaos",
-        "url": "https://techcrunch.com/2026/03/16/antonio-gracias-says-hes-loomg-for-proentropic-startups-those-that-are-built-to-survive-chaos/",
-        "summary": "Antonio Gracias talks at the Upfront Summit in LA about the future of technology.",
-        "published": "2026-03-16 15:57",
-        "source": "TechCrunch VC",
-        "icon": "TC",
-        "priority": 1,
-        "freshness": 1.0507025302777777,
-        "lang": "en",
-        "hotness": 44.9,
-        "hotness_reasons": [
-          "クロスソース:2社"
-        ],
-        "easy": "テック業界のジャーナリストは、Antonio Graciasという人物が、LAで行われたUpfront Summitという会議で話したことを紹介しています。Antonio Graciasは、テクノロジー業界の将来について話し、特に「proentropic」という言葉を使って、混沌の中で生き残ることができるスタートアップ企業について語りました。proentropicという言葉は、混沌の中で生存できるものを指します。Antonio Graciasは、将来のテクノロジー業界では、混沌の中で生き残ることができるスタートアップ企業が重要になると考えているようです。約1億ドル（約12億円）の資金調達を行っている企業もありますが、Antonio Graciasは、単に多くの資金を調達したからといって成功するわけではないと強調しています。",
-        "why": "このニュースは、テクノロジー業界の将来の方向性を示唆しているため重要です。Antonio Graciasの言葉は、スタートアップ企業や投資家にとって、将来のテクノロジー業界での成功の鍵を握っている可能性があります。",
-        "glossary": [
-          {
-            "term": "proentropic",
-            "definition": "混沌の中で生存できるものを指す言葉です。proentropicなスタートアップ企業とは、混沌な状況の中で生き残ることができる企業のことです。"
-          },
-          {
-            "term": "スタートアップ",
-            "definition": "新しく設立された企業のことです。通常、イノベーションや成長を目指す企業がスタートアップと呼ばれます。"
-          },
-          {
-            "term": "資金調達",
-            "definition": "企業が事業を運営するために必要な資金を調達することです。約1億ドル（約12億円）の資金調達を行っている企業もあります。"
-          }
-        ],
-        "tags": [
-          "資金調達",
-          "funding",
-          "ユニコーン"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
       {
         "title": "Khosla’s Ethan Choi On AI, Founder-First Investing And The Fate Of Entry-Level Jobs",
         "url": "https://news.crunchbase.com/venture/founder-first-investing-ai-khosla-choi/",
@@ -2231,27 +2221,27 @@
         "source": "Crunchbase News",
         "icon": "CB",
         "priority": 1,
-        "freshness": 125.99413401666666,
+        "freshness": 126.55072704444444,
         "lang": "en",
-        "hotness": 44.0,
+        "hotness": 45.6,
         "hotness_reasons": [
-          "HN関連(183pts)",
-          "クロスソース:7社"
+          "HN関連(214pts)",
+          "クロスソース:6社"
         ],
-        "easy": "Khosla VenturesのパートナーであるEthan Choiは、最近のインタビューでAIの影響について話しました。彼は、AIの進化により、入社後の初級職が減少する可能性があると考えています。例えば、AIがデータ分析や会計などのタスクを自動化することで、初級職の仕事が減少する可能性があります。Ethan Choiは、投資の哲学を変え、成長段階ではなく、どの段階でも投資することを目指しています。Khosla Venturesは、約120億ドル（約1.8兆円）の資産を管理しています。",
-        "why": "Ethan Choiの発言は重要です。彼は、AIの進化が仕事の市場に大きな影響を与える可能性があると考えています。さらに、彼の投資哲学の変化は、ベンチャーキャピタル業界に大きな影響を与える可能性があります。",
+        "easy": "Khosla VenturesのパートナーであるEthan Choiは、最近のインタビューでAIの影響について話しました。彼は、AIの進化により、初級職が減少する可能性があると考えています。例えば、AIがデータ分析や会計などのタスクを自動化することで、初級職の仕事が減る可能性があります。Ethan Choiは、投資の哲学を変え、成長段階の投資から、どの段階でも投資することを目指しています。約3億ドル（約450億円）の資金を管理するKhosla Venturesは、AIやテクノロジー分野のスタートアップに投資しています。",
+        "why": "Ethan Choiの発言は、AIが雇用市場に与える影響について考えるきっかけとなります。AIの進化が初級職に与える影響や、投資の哲学の変化がテクノロジー業界に与える影響について注目しています。",
         "glossary": [
           {
-            "term": "Khosla Ventures",
-            "definition": "ベンチャーキャピタル会社で、テクノロジー企業への投資を行っている"
-          },
-          {
             "term": "AI",
-            "definition": "人工知能で、コンピューターが人間のように考え、学習する技術"
+            "definition": "人工知能のこと。人間の知能を模倣するコンピューターシステムで、画像認識や自然言語処理などを実行することができます。"
           },
           {
-            "term": "stage-agnostic",
-            "definition": "成長段階に依存しない投資戦略で、どの段階の企業でも投資する"
+            "term": "Founder-First Investing",
+            "definition": "起業家を優先する投資哲学のこと。起業家のビジョンや情熱に焦点を当て、起業家がビジネスを成長させることを支援します。"
+          },
+          {
+            "term": "Stage-Agnostic",
+            "definition": "どの段階でも投資することを目指す投資哲学のこと。成長段階や初期段階に関係なく、起業家やビジネスの潜在性に焦点を当てて投資します。"
           }
         ],
         "tags": [
@@ -2270,26 +2260,26 @@
         "source": "TechCrunch Startups",
         "icon": "TC",
         "priority": 2,
-        "freshness": 3.955049303888889,
+        "freshness": 4.511611858611111,
         "lang": "en",
         "hotness": 41.6,
         "hotness_reasons": [
           "クロスソース:3社"
         ],
-        "easy": "ウォルマートが支援するPhonePeは、世界的な経済不安により、株式公開（IPO）を一時的に延期しました。PhonePeはインドの主要なデジタル決済プラットフォームで、タイガーグローバルやマイクロソフトなどが投資しています。IPOを延期することで、投資家たちは期待していた大規模な資金調達イベントが遅れることになります。PhonePeのIPOは、インドのテック業界にとって大きな出来事で、投資家や市場に大きな影響を与える可能性があります。PhonePeのIPOの延期は、世界的な経済不安がテック業界に与える影響を示すものです。",
-        "why": "PhonePeのIPO延期は、世界的な経済不安がテック業界の投資家や企業に与える影響を示すものです。また、インドのデジタル決済市場の成長や将来性についても疑問を生じさせます。",
+        "easy": "ウォルマートが支援するPhonePeは、世界的な経済不安により、株式公開（IPO）を延期した。PhonePeはインドで人気のあるモバイル決済サービスで、投資家にはTiger Globalやマイクロソフトが含まれる。IPOを延期することで、投資家は予定していた資金の引き出しが遅れることになる。PhonePeのIPOは数十億ドル（約数千億円）規模と予想されていた。世界的な経済不安は、企業のIPO計画に大きな影響を与えている。PhonePeのIPO延期は、世界的な経済情勢が企業の戦略に与える影響を示す例である。",
+        "why": "PhonePeのIPO延期は、世界的な経済不安が企業の株式市場への影響を示す重要な事例である。投資家や企業は、世界的な経済情勢の変化に応じて戦略を調整する必要がある。",
         "glossary": [
           {
             "term": "IPO",
-            "definition": "株式公開のこと。会社が株式を一般に公開し、資金を調達する方法です。"
+            "definition": "株式公開のこと。会社が株式を一般に売り出し、株式市場に上場すること。"
           },
           {
-            "term": "デジタル決済",
-            "definition": "オンラインやモバイルで行われる決済のこと。カードや現金を使わずに、スマートフォンやコンピューターで支払いを行うことができます。"
+            "term": "Tiger Global",
+            "definition": "アメリカの投資会社。ベンチャーキャピタルとして多くのスタートアップ企業に投資している。"
           },
           {
-            "term": "テック業界",
-            "definition": "技術関連の業界のこと。ソフトウェア、ハードウェア、インターネットなどの分野を指します。"
+            "term": "マイクロソフト",
+            "definition": "アメリカのソフトウェア会社。WindowsやOfficeなどの有名なソフトウェアを開発している。"
           }
         ],
         "tags": [
@@ -2308,73 +2298,35 @@
         "source": "TechCrunch Startups",
         "icon": "TC",
         "priority": 2,
-        "freshness": 69.3650493038889,
+        "freshness": 69.92161185861112,
         "lang": "en",
-        "hotness": 40.5,
+        "hotness": 40.8,
         "hotness_reasons": [
-          "HN関連(178pts)",
-          "クロスソース:11社"
+          "HN関連(184pts)",
+          "クロスソース:10社"
         ],
-        "easy": "AI業界では、毎年多くのニュースが流れていて、例えば大きな買収や独立開発者の成功、世間の反応、そして危険な契約交渉などがあります。この記事では、今年のAI業界の最大のニュースを紹介しています。",
-        "why": "このニュースは重要です。AI業界は毎年大きく変化しており、このニュースを知ることで、AIの将来についての予想を立てることができます。",
+        "easy": "今年のAI業界の大きなニュースを紹介します。AI業界は、新しい技術の開発や企業の買収、独立系開発者の成功、世論の反発、危険な契約交渉など、毎日新しいニュースが生まれています。例えば、2022年には、AI関連の企業が約1,500億ドル（約22兆円）以上の資金調達を行いました。また、AIを利用した新しいサービスや製品も多く登場しています。AI技術の進化は、さまざまな業界に大きな影響を与えています。",
+        "why": "AI技術の進化は、さまざまな業界に大きな影響を与え、将来的には多くの仕事が自動化される可能性があります。また、AI技術の安全性と倫理性も重要な問題となっています。",
         "glossary": [
           {
             "term": "AI",
-            "definition": "人工知能は、コンピューターが人間のように知能を持ち、学習や判断を行う技術です。"
+            "definition": "人工知能のこと。コンピューターが人間のように考え、学習する技術"
           },
           {
-            "term": "アクイジション",
-            "definition": "企業が他の企業を買収することです。"
+            "term": "Acquisitions",
+            "definition": "企業の買収のこと。企業が他の企業を買収して、事業を拡大すること"
           },
           {
-            "term": "インディー開発者",
-            "definition": "小さな開発チームや個人開発者が、ゲームやアプリなどを作成することです。"
+            "term": "Indie developer",
+            "definition": "独立系開発者のこと。個人や小規模なチームが、独自のアイデアで製品やサービスを開発すること"
           }
         ],
         "tags": [
           "資金調達",
-          "IPO",
+          "funding",
           "M&A"
         ],
-        "impact": 80,
-        "reactions": []
-      },
-      {
-        "title": "The billionaires made a promise — now some want out",
-        "url": "https://techcrunch.com/2026/03/15/the-billionaires-made-a-promise-now-some-want-out/",
-        "summary": "An increasing number of billionaires are turning away from Bill Gates and Warren Buffett's Giving Pledge as wealth once again concentrates at the top.",
-        "published": "2026-03-16 04:40",
-        "source": "TechCrunch VC",
-        "icon": "TC",
-        "priority": 1,
-        "freshness": 12.327924752500001,
-        "lang": "en",
-        "hotness": 39.9,
-        "hotness_reasons": [
-          "クロスソース:5社"
-        ],
-        "easy": "ビル・ゲイツやワーナー・バフェットが作った「ギビング・プレジャー」は、富を多く持っている人に寄付することを誓う運動です。最近は、この運動から退出する人が増えています。富は再び、最も富む人たちに集中しています。",
-        "why": "ギビング・プレジャーは、富を多く持っている人に寄付することを誓う運動ですが、最近はこの運動から退出する人が増えています。これは、富が再び最も富む人たちに集中しているためです。",
-        "glossary": [
-          {
-            "term": "ギビング・プレジャー",
-            "definition": "富を多く持っている人に寄付することを誓う運動です。ビル・ゲイツやワーナー・バフェットが作りました。"
-          },
-          {
-            "term": "富の集中度",
-            "definition": "富が最も富む人たちに集中している度合いです。"
-          },
-          {
-            "term": "億万長者",
-            "definition": "富が1億ドル以上の人のことです。"
-          }
-        ],
-        "tags": [
-          "シリーズ",
-          "寄付",
-          "富の集中"
-        ],
-        "impact": 80,
+        "impact": 50,
         "reactions": []
       },
       {
@@ -2382,55 +2334,115 @@
         "url": "https://techcrunch.com/2026/03/15/google-and-accel-cut-through-wrappers-in-4000-ai-startup-pitches-to-pick-five-tied-to-india/",
         "summary": "Google and Accel say about 70% of AI startup pitches tied to India were \"wrappers\" as they reviewed more than 4,000 applications for their Atoms cohort.",
         "published": "2026-03-16 00:30",
-        "source": "TechCrunch VC",
+        "source": "TechCrunch Startups",
         "icon": "TC",
-        "priority": 1,
-        "freshness": 16.501258085833335,
+        "priority": 2,
+        "freshness": 17.0580007475,
         "lang": "en",
-        "hotness": 39.9,
+        "hotness": 36.6,
         "hotness_reasons": [
-          "クロスソース:6社"
+          "クロスソース:5社"
         ],
-        "easy": "GoogleとAccelは、インドのAIスタートアップの応募を調査した結果、70%が「AIラッパー」であると発表しました。ラッパーとは、AIを利用したものの本質的な技術がなく、ただAIをラッピングしたようなものです。4,000件以上の応募の中から、5つのスタートアップが選ばれました。",
-        "why": "このニュースは注目です。GoogleとAccelが発表した結果は、インドのAIスタートアップの質の低下を示唆しています。また、AIラッパーが増えていることは、実際のAI技術の進歩に影響を与える可能性があります。",
+        "easy": "GoogleとAccelは、インドでAIを利用したスタートアップの申し込みを調査した結果、70%が「AIラッパー」ということになりました。ラッパーとは、すでに存在するサービスや製品にAIを付加するだけのサービスを指します。GoogleとAccelは、4,000件以上の申し込みの中から5つのスタートアップに投資することになりました。",
+        "why": "このニュースは注目です。なぜなら、AIスタートアップの多くが実際には新しいアイデアではなかったからです。GoogleとAccelは、AIを利用した新しいアイデアのスタートアップを探しているので、このニュースは注目されることになります。",
         "glossary": [
           {
             "term": "AIラッパー",
-            "definition": "AIラッパーとは、AIを利用したものの本質的な技術がなく、ただAIをラッピングしたようなものです。つまり、AIを利用したものの実際の技術力が低いものです。"
+            "definition": "すでに存在するサービスや製品にAIを付加するだけのサービスです。新しいアイデアではありません。"
+          },
+          {
+            "term": "スタートアップ",
+            "definition": "新しいビジネスを始めるために資金を集める会社です。"
           },
           {
             "term": "インプット",
-            "definition": "インプットとは、コンピュータに与える入力です。例えば、キーボードやマウスを使用して入力することがあります。"
-          },
-          {
-            "term": "コーホート",
-            "definition": "コーホートとは、同期のグループです。GoogleとAccelは、Atomsコーホートという名称で選ばれたスタートアップを発表しました。"
+            "definition": "投資を受けることです。"
           }
         ],
         "tags": [
-          "資金調達",
-          "ユニコーン",
-          "レイオフ"
+          "funding",
+          "startup",
+          "AI"
         ],
         "impact": 80,
         "reactions": []
       },
       {
-        "title": "The $32B acquisition that one VC is calling the ‘Deal of the Decade’",
-        "url": "https://techcrunch.com/video/the-32b-acquisition-that-one-vc-is-calling-the-deal-of-the-decade/",
-        "summary": "According to Index Ventures Partner Shardul Shah, cybersecurity startup Wiz sits “at the center of three tailwinds: AI, cloud, and security spend.” Those tailwinds powered what just became the largest venture-backed acquisition in history — Google&#8217;s $32 billion deal, finalized after a declined 2024 offer, antitrust review on both sides of the Atlantic, and an [&#8230;]",
-        "published": "2026-03-13 16:20",
-        "source": "TechCrunch VC",
-        "icon": "TC",
+        "title": "The Week’s 10 Biggest Funding Rounds: AI, Robotics And E-Commerce Top The Ranks",
+        "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-robotics-ecommerce-quince/",
+        "summary": "Busy week, big checks, lots of AI and robotics. That, in ultra-brief synopsis form, characterized the general startup fundraising environment this week. Notably, the two largest global rounds were U.K.- and Paris-based. In the U.S., meanwhile, an e-commerce platform, an AI networking developer, and an industrial automation startup each picked up $500 million.",
+        "published": "2026-03-13 18:20",
+        "source": "Crunchbase News",
+        "icon": "CB",
         "priority": 1,
-        "freshness": 72.6615358636111,
+        "freshness": 71.21739371111111,
         "lang": "en",
-        "hotness": 35.3,
+        "hotness": 34.9,
         "hotness_reasons": [
-          "HN関連(8pts)",
-          "クロスソース:3社"
+          "クロスソース:5社"
         ],
-        "easy": "「The $32B acquisition that one VC is calling the ‘Deal of the Decade’」についてのニュースです。",
+        "easy": "この週は、AIやロボット関連のスタートアップが大金を集めたというニュースが多く出た。特に、英国とパリを拠点とする2つのスタートアップが、世界最大の資金調達を達成した。アメリカでは、eコマースプラットフォーム、AIネットワーキング開発者、産業自動化スタートアップがそれぞれ5000万ドルを集めた。",
+        "why": "このニュースは重要です。AIやロボット関連のスタートアップが大金を集めたことは、技術の進歩と革新を示唆しており、将来の産業革命の兆しです。",
+        "glossary": [
+          {
+            "term": "AI",
+            "definition": "人工知能は、コンピュータが人間の知能を模倣して、学習、思考、判断を行う技術です。例えば、画像認識、自然言語処理、予測分析などが行えます。"
+          },
+          {
+            "term": "ロボット",
+            "definition": "ロボットは、人間の体を模倣した機械で、自動化、産業、医療、サービスなど幅広い分野で活用されています。"
+          },
+          {
+            "term": "eコマース",
+            "definition": "eコマースは、インターネットを利用して商品やサービスを販売するビジネスモデルです。オンラインショップ、電子商取引、デジタルマーケティングなどが含まれます。"
+          }
+        ],
+        "tags": [
+          "資金調達",
+          "ユニコーン",
+          "funding"
+        ],
+        "impact": 80,
+        "reactions": []
+      },
+      {
+        "title": "5 Interesting Startup Deals You May Have Missed: Blood-Drawing Robots, Inboxes For AI Agents, Franchised Defense Manufacturing, And More",
+        "url": "https://news.crunchbase.com/venture/interesting-startup-deals-robots-ai-agent-inboxes-defense-space-tech/",
+        "summary": "A whole host of under-the-radar startups have drawn investor checks lately. Among those that most piqued our interest: A phlebotomy robot, a company that aims to revive precision manufacturing in the U.S. and Europe with a small-business franchise model, and a health beverage made from seaweed.",
+        "published": "2026-03-13 11:00",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "priority": 1,
+        "freshness": 78.55794926666665,
+        "lang": "en",
+        "hotness": 34.9,
+        "hotness_reasons": [
+          "クロスソース:9社"
+        ],
+        "easy": "「5 Interesting Startup Deals You May Have Missed: Blood-Drawing Robots, Inboxes For AI Agents, Franchised Defense Manufacturing, And More」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "From Hype To Outcomes: How VCs Recalibrate Around Agentic AI",
+        "url": "https://news.crunchbase.com/venture/hype-outcomes-vcs-recalibrate-agentic-ai-kapre-snowflake/",
+        "summary": "Investors are prioritizing startups that demonstrate real production usage, measurable outcomes and revenue — focusing less on flashy demos and more on proven business impact, writes guest author Harsha Kapre, head of Snowflake Ventures.",
+        "published": "2026-03-11 13:00",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "priority": 1,
+        "freshness": 124.5448937111111,
+        "lang": "en",
+        "hotness": 34.9,
+        "hotness_reasons": [
+          "クロスソース:7社"
+        ],
+        "easy": "「From Hype To Outcomes: How VCs Recalibrate Around Agentic AI」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -2447,11 +2459,11 @@
         "source": "CNET Japan",
         "icon": "JP",
         "priority": 2,
-        "freshness": 9.835146349722221,
+        "freshness": 10.3919519625,
         "lang": "ja",
-        "hotness": 23.7,
+        "hotness": 24.4,
         "hotness_reasons": [
-          "はてブ関連(101ブクマ)"
+          "はてブ関連(108ブクマ)"
         ],
         "easy": "「ネットの流行語「ギュられる」とは　AI失業を覚悟するSNS民たち」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
@@ -2470,19 +2482,32 @@
         "source": "CNET Japan",
         "icon": "JP",
         "priority": 2,
-        "freshness": 10.418479683055555,
+        "freshness": 10.975285295833334,
         "lang": "ja",
         "hotness": 23.6,
         "hotness_reasons": [
           "クロスソース:1社"
         ],
-        "easy": "「Claude、日本で実質値上げ　10%の消費税を別途徴収　4月から」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
+        "easy": "米の会社「Anthropic」は、AIを作って売っている「Claude」を日本で使う人が増えたため、4月から10%の消費税を別途徴収することにした。日本の法律に従って、適切な税金を徴収するための準備をしていて、4月から徴収を始める予定だ。",
+        "why": "このニュースは注目です。AIを売っている会社が税金を徴収する方法を変えたため、業界に影響が生まれる可能性があります。",
+        "glossary": [
+          {
+            "term": "AI",
+            "definition": "人工知能の略。コンピューターが人間の知能を模倣して、情報を処理する技術です。"
+          },
+          {
+            "term": "消費税",
+            "definition": "品物やサービスを買ったときに、税金として徴収される税金です。"
+          },
+          {
+            "term": "適格請求書発行事業者",
+            "definition": "税金を徴収するための請求書を発行することができる会社や団体です。"
+          }
         ],
-        "impact": 50,
+        "tags": [
+          "funding"
+        ],
+        "impact": 70,
         "reactions": []
       },
       {
@@ -2493,34 +2518,19 @@
         "source": "CNET Japan",
         "icon": "JP",
         "priority": 2,
-        "freshness": 15.918479683055555,
+        "freshness": 16.475285295833334,
         "lang": "ja",
         "hotness": 21.6,
         "hotness_reasons": [
           "クロスソース:1社"
         ],
-        "easy": "メタは、次世代のAIモデル「アボカド」を5月以降にリリースすることを延期したと言われています。アボカドは、従来のAIモデルと比べて、より高度な認識能力を持つと言われています。メタは、競合他社に追いつくことができず、延期を決定したと考えられています。5月以降のリリース日はまだ決まっていません。",
-        "why": "メタは、次世代のAIモデル「アボカド」をリリースすることを延期したため、業界では注目されています。アボカドの開発が遅れたことで、競合他社に先んじられる可能性があります。",
-        "glossary": [
-          {
-            "term": "AIモデル",
-            "definition": "AIモデルは、コンピューターがデータを分析して、特定のタスクを実行するためのプログラムです。AIモデルは、画像認識、自然言語処理、予測など、さまざまなタスクに使用されます。"
-          },
-          {
-            "term": "次世代",
-            "definition": "次世代は、現在のものよりも新しい、より高度なものを指します。次世代のAIモデルは、従来のAIモデルよりも高度な認識能力を持つと言われています。"
-          },
-          {
-            "term": "延期",
-            "definition": "延期は、予定されていた日程よりも遅く実行することを指します。メタは、アボカドのリリースを延期したため、業界では注目されています。"
-          }
-        ],
+        "easy": "「Metaの次世代AI「アボカド」、競合に追いつけず延期か」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
         "tags": [
-          "資金調達",
-          "ai",
-          "tech"
+          "ニュース"
         ],
-        "impact": 80,
+        "impact": 50,
         "reactions": []
       }
     ]
@@ -2529,38 +2539,38 @@
     {
       "title": "Corruption erodes social trust more in democracies than in autocracies",
       "url": "https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2026.1779810/full",
-      "score": 461,
-      "comments": 203,
+      "score": 502,
+      "comments": 224,
       "hn_id": 47397593,
       "published": "2026-03-16 11:25",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0,
-      "hotness": 48.2,
+      "hotness": 53.2,
       "hotness_reasons": [
-        "HN:461pts(注目)",
+        "HN:502pts(超注目)",
         "クロスソース:1社"
       ],
-      "easy": "民主主義の国では、政治の腐敗が社会の信頼を損なうことが、独裁国家よりも多くなっています。政治の腐敗が社会の信頼を損なう割合は、民主主義の国で 2 倍ぐらい高くなっています。このため、政治の腐敗をなくすことが、社会の信頼を高めるために重要です。",
-      "why": "このニュースは重要です。民主主義の国では、政治の腐敗が社会の信頼を損なうことが多く、社会の安定が危ないことになります。",
+      "easy": "民主主義の国では、汚職が社会の信頼を大きく損なうことが多い。研究によると、民主主義の国では汚職が社会の信頼を50%以上損なうことが多く、独裁の国では20%以下しか損なわない。つまり、民主主義の国では汚職が社会の信頼を大きく損なうことが多いということだ。",
+      "why": "民主主義の国では、汚職が社会の信頼を大きく損なうことが多い。これは、民主主義の国では政治家や官僚が汚職を隠すことが容易だからだ。独裁の国では、政治家や官僚が汚職を隠すことが難しいからだ。",
       "glossary": [
         {
           "term": "民主主義",
-          "definition": "国民が直接または間接的に政治の決定に参加できる政治制度。国民の意見が政治の決定に反映されるため、国民の自由と権利を守ることができる."
+          "definition": "国民が政治家に投票して、国を運営する仕組み。国民が政治家に責任を問うことができる."
         },
         {
-          "term": "独裁国家",
-          "definition": "1 人の指導者が、政治の決定を独自に決定する権限を持つ政治制度。国民の意見が政治の決定に反映されないため、国民の自由と権利が制限される."
+          "term": "独裁",
+          "definition": "政治家が国を独自に運営する仕組み。国民が政治家に責任を問うことができない."
         },
         {
-          "term": "社会信頼",
-          "definition": "社会の構造や制度が、国民の信頼を得ていること。社会の安定と発展を支える重要な要素です。"
+          "term": "汚職",
+          "definition": "政治家や官僚が公金や権力を私腹に使うこと。政治の正しさを損なうこと。"
         }
       ],
       "tags": [
         "新リリース",
-        "フレームワーク",
-        "社会"
+        "corruption",
+        "democracy"
       ],
       "impact": 80,
       "reactions": [
@@ -2575,8 +2585,8 @@
           "platform": "HN"
         },
         {
-          "user": "captainkrtek",
-          "text": "Was talking about this with some colleagues who are from Ukraine, Russia, and other countries.In the US, it seems corruption is only allowed at the top. If you tried to bribe your way out of a traffic",
+          "user": "derangedHorse",
+          "text": "In a good autocracy, and a good democracy, people will trust the system will push out the corruption as the right people become privy to it. In a bad autocracy, the people had no power to make the dec",
           "platform": "HN"
         }
       ]
@@ -2584,32 +2594,32 @@
     {
       "title": "MoD sources warn Palantir role at heart of government is threat to UK security",
       "url": "https://www.thenerve.news/p/palantir-technologies-uk-mod-sources-government-data-insights-security-state-secrets",
-      "score": 363,
-      "comments": 125,
+      "score": 410,
+      "comments": 144,
       "hn_id": 47397797,
       "published": "2026-03-16 11:57",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0,
-      "hotness": 56.2,
+      "hotness": 63.2,
       "hotness_reasons": [
-        "HN:363pts(注目)",
-        "クロスソース:2社"
+        "HN:410pts(注目)",
+        "クロスソース:3社"
       ],
-      "easy": "イギリス国防省の情報源によると、政府の中心でPalantirという会社が重要な役割を果たしていることがイギリスの安全保障に脅威をもたらしているという。Palantirはデータ分析を得意とする会社で、約1億ドル（約14億円）の契約を獲得している。政府の機密情報が外部に漏れる可能性があるため、国防省はこの問題に警戒している。約20%の政府機関がPalantirのサービスを利用しており、国防省はこの状況を改善する必要がある。政府の安全保障を守るために、データ分析の会社との契約を再検討する必要がある。約5年以内にこの問題が解決しないと、イギリスの安全保障に大きな影響が出る可能性がある。",
-      "why": "Palantirの役割が政府の安全保障に脅威をもたらしているのは、機密情報が外部に漏れる可能性があるためである。国防省はこの問題を解決するために、データ分析の会社との契約を再検討する必要がある。",
+      "easy": "英国の国防省の情報源は、テクノロジー企業のPalantirが政府の中核にいることが英国にとっての脅威であると警告しています。Palantirはデータ分析の分野で有名で、多くの政府機関や企業と契約しています。しかし、国防省の情報源は、Palantirの役割が英国政府のセキュリティに脅威をもたらす可能性があると考えています。例えば、約100億円（約8億ドル）の契約で英国政府のデータを管理しています。Palantirの役割が英国政府の中核にあることは、英国政府のセキュリティに大きな影響を与える可能性があります。",
+      "why": "Palantirが政府の中核にあることは、英国政府の機密情報が漏洩する可能性があるため、セキュリティ上の脅威となります。英国政府は、Palantirとの契約を再検討し、セキュリティ対策を強化する必要があります。",
       "glossary": [
         {
           "term": "Palantir",
-          "definition": "データ分析を得意とするアメリカの会社で、政府機関や企業向けにサービスを提供している"
+          "definition": "データ分析の分野で有名なテクノロジー企業で、多くの政府機関や企業と契約しています。"
+        },
+        {
+          "term": "セキュリティ",
+          "definition": "コンピューターやネットワークなどのシステムが、不正アクセスやデータの漏洩などから守られることです。"
         },
         {
           "term": "データ分析",
-          "definition": "大量のデータから有用な情報を抽出するプロセスで、ビジネスや政府の意思決定を支援するために使用される"
-        },
-        {
-          "term": "安全保障",
-          "definition": "国家や組織の安全を守るための措置や対策で、物理的・サイバー的な脅威から守ることを目的とする"
+          "definition": "大量のデータを解析して、有用な情報を抽出するプロセスです。"
         }
       ],
       "tags": [
@@ -2630,28 +2640,17 @@
           "platform": "HN"
         },
         {
-          "user": "spot5010",
-          "text": "I feel like there’s a lesson to be learnt by reading Lord of the Rings and seeing what happens to Saruman and Denethor.",
+          "user": "tablets",
+          "text": "Related meeting launching today about Palantir and the NHS - https:&#x2F;&#x2F;www.medact.org&#x2F;event&#x2F;briefing-launch-the-risks-of-pa...",
           "platform": "HN"
         }
       ]
     },
     {
-      "title": "US Job Market Visualizer – Andrej Karpathy",
-      "url": "https://karpathy.ai/jobs/",
-      "score": 128,
-      "comments": 79,
-      "hn_id": 47400060,
-      "published": "2026-03-16 15:10",
-      "source": "Hacker News",
-      "icon": "HN",
-      "priority": 0
-    },
-    {
       "title": "My Journey to a reliable and enjoyable locally hosted voice assistant",
       "url": "https://community.home-assistant.io/t/my-journey-to-a-reliable-and-enjoyable-locally-hosted-voice-assistant/944860",
-      "score": 135,
-      "comments": 39,
+      "score": 155,
+      "comments": 44,
       "hn_id": 47398534,
       "published": "2026-03-16 13:09",
       "source": "Hacker News",
@@ -2661,8 +2660,8 @@
     {
       "title": "Launch HN: Voygr (YC W26) – A better maps API for agents and AI apps",
       "url": "https://news.ycombinator.com/item?id=47401042",
-      "score": 12,
-      "comments": 4,
+      "score": 21,
+      "comments": 8,
       "hn_id": 47401042,
       "published": "2026-03-16 16:21",
       "source": "Hacker News",
@@ -2670,13 +2669,13 @@
       "priority": 0,
       "hotness": 38.2,
       "hotness_reasons": [
-        "クロスソース:10社"
+        "クロスソース:9社"
       ]
     },
     {
       "title": "I Love FreeBSD",
       "url": "https://it-notes.dragas.net/2026/03/16/why-i-love-freebsd/",
-      "score": 143,
+      "score": 174,
       "comments": 64,
       "hn_id": 47397574,
       "published": "2026-03-16 11:23",
@@ -2685,10 +2684,21 @@
       "priority": 0
     },
     {
+      "title": "US Job Market Visualizer – Andrej Karpathy",
+      "url": "https://karpathy.ai/jobs/",
+      "score": 177,
+      "comments": 151,
+      "hn_id": 47400060,
+      "published": "2026-03-16 15:10",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0
+    },
+    {
       "title": "Cert Authorities Check for DNSSEC from Today",
       "url": "https://www.grepular.com/Cert_Authorities_Check_for_DNSSEC_From_Today",
-      "score": 15,
-      "comments": 8,
+      "score": 29,
+      "comments": 20,
       "hn_id": 47392510,
       "published": "2026-03-15 22:10",
       "source": "Hacker News",
@@ -2702,8 +2712,8 @@
     {
       "title": "Canada's bill C-22 mandates mass metadata surveillance",
       "url": "https://www.michaelgeist.ca/2026/03/a-tale-of-two-bills-lawful-access-returns-with-changes-to-warrantless-access-but-dangerous-backdoor-surveillance-risks-remains/",
-      "score": 925,
-      "comments": 290,
+      "score": 938,
+      "comments": 295,
       "hn_id": 47392084,
       "published": "2026-03-15 21:22",
       "source": "Hacker News",
@@ -2713,8 +2723,8 @@
     {
       "title": "Even Faster Asin() Was Staring Right at Me",
       "url": "https://16bpp.net/blog/post/even-faster-asin-was-staring-right-at-me/",
-      "score": 58,
-      "comments": 27,
+      "score": 63,
+      "comments": 31,
       "hn_id": 47398080,
       "published": "2026-03-16 12:30",
       "source": "Hacker News",
@@ -2722,30 +2732,33 @@
       "priority": 0
     },
     {
-      "title": "Show HN: Hackerbrief – Top posts on Hacker News summarized daily",
-      "url": "https://hackerbrief.vercel.app/",
-      "score": 48,
-      "comments": 35,
-      "hn_id": 47398441,
-      "published": "2026-03-16 13:01",
+      "title": "Lazycut: A simple terminal video trimmer using FFmpeg",
+      "url": "https://github.com/emin-ozata/lazycut",
+      "score": 73,
+      "comments": 26,
+      "hn_id": 47397857,
+      "published": "2026-03-16 12:05",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0,
-      "hotness": 13.2,
-      "hotness_reasons": []
+      "hotness": 31.2,
+      "hotness_reasons": [
+        "HN:73pts",
+        "クロスソース:1社"
+      ]
     }
   ],
   "breaking": [
     {
-      "text": "この記事のタイトルは「LLMsを使用してソフトウェアを書く方法」という意味です。LLMsとは、大規模な言語モデルを指します。ソフトウェア開発者がLLMsを使用して、コードを自動生成したり、バグを検出することができます。例えば、1万行のコードを手動で書く代わりに、LLMsを使用して数時間で自動生成することが可能です。開発者の生産性を向上させるため、約3億ドル（約450億円）の投資がLLMsの研究に注がれています。",
+      "text": "この記事のタイトルは「LLMsを使用してソフトウェアを書く方法」です。LLMsとは、人工知能の一種で、自然言語処理を実行するための大規模言語モデルです。開発者はLLMsを使用して、ソフトウェアの開発を自動化し、効率化することができます。例えば、LLMsはコードの自動生成、バグの検出、コードの最適化などに使用できます。約3億ドル（約450億円）の投資が行われているこの分野は、将来、ソフトウェア開発業界を変える可能性があります。",
       "level": "orange"
     },
     {
-      "text": "LLMアーキテクチャ・ギャラリーとは、人工知能（AI）技術の1つであるLLM（Large Language Model）を紹介するプラットフォームです。LLMは、自然言語処理能力を高めるために開発されており、人間のような会話や文章生成が可能です。このギャラリーでは、さまざまなLLMアーキテクチャを紹介し、その特徴や応用例を展示しています。LLMの研究開発は、AI業界で注目されており、将来的には3億ドル（約450億円）以上の市場規模になることが予測されています。",
+      "text": "LLMアーキテクチャ・ギャラリーは、人工知能の分野における大規模言語モデル（LLM）の設計や構造に関する情報をまとめたものです。LLMは、自然言語処理や生成などのタスクで高い精度を達成するために、膨大な量のデータを学習する必要があります。例えば、GoogleのLLMモデルは、約1.5兆パラメータ（約1.5 trillion parameters）を使用しており、約1億ドル（約12億円）のコストで開発されています。LLMアーキテクチャ・ギャラリーは、開発者や研究者がLLMの設計や最適化に関する知識を共有し、さらに高性能なモデルを開発することを目指しています。",
       "level": "orange"
     },
     {
-      "text": "この記事のタイトルは「エージェントはコードを書く。ソフトウェアエンジニアリングはしない」という意味です。エージェントとは、自動でタスクを実行するプログラムのことです。最近、エージェントが長時間実行され、自分で処理を繰り返すことができるようになりました。例えば、エージェントが8時間実行され、1000回の処理を自動で繰り返すことができます。エージェントはコードを書くことができますが、ソフトウェアエンジニアリングはできないため、開発者がエージェントを利用するときには注意が必要です。エージェントの利用により、開発者の生産性は3倍になる可能性があります（約3億円（約450億円）相当の利益が得られる可能性があります）。",
+      "text": "この記事は、長時間実行されるプログラムのエージェントについて説明しています。エージェントは、自分でコードを書き、自動で処理を行うことができます。しかし、エージェントは、ソフトウェアエンジニアリングを行うことはできません。つまり、エージェントは、単にコードを書くだけですが、ソフトウェアの設計やテスト、保守などの工程は行いません。例えば、エージェントは1時間以内に1000行のコードを書くことができますが、エンジニアはそのコードをチェックし、バグを修正する必要があります。",
       "level": "orange"
     }
   ]
