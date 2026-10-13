@@ -1,24 +1,250 @@
 {
-  "updated_at": "2026-10-12 10:21 JST",
-  "updated_utc": "2026-10-12T01:21:02Z",
+  "updated_at": "2026-10-13 12:04 JST",
+  "updated_utc": "2026-10-13T03:04:38Z",
   "tabs": {
     "ai": [
       {
-        "title": "I paid people to try and follow my README",
-        "url": "https://shkspr.mobi/blog/2026/10/i-paid-people-to-try-and-follow-my-readme/",
-        "score": 365,
-        "comments": 187,
-        "hn_id": 50042219,
-        "published": "2026-10-11 11:47",
+        "title": "Meta has some Wonder Full new AI models",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+        "summary": "Meta is making up for lost time in the AI race. After launching Muse Spark, the first model from its revamped Superintelligence Labs division, and buzzy AI agent Muse, it's now launching two new models it claims can go toe-to-toe with the industry's best. The new models, Muse Wonder and Muse Wonder Full, are available [&#8230;]",
+        "published": "2026-10-12 17:00",
+        "source": "The Verge AI",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 10.018019721944444,
+        "lang": "en",
+        "hotness": 71.9,
+        "hotness_reasons": [
+          "HN関連(704pts)",
+          "はてブ関連(4ブクマ)",
+          "クロスソース:9社"
+        ],
+        "easy": "「Meta has some Wonder Full new AI models」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AI coding agents generate more code, but not more software",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+        "score": 314,
+        "comments": 275,
+        "hn_id": 50059523,
+        "published": "2026-10-12 17:14",
         "source": "Hacker News",
         "icon": "HN",
         "priority": 0,
         "hotness": 63.2,
         "hotness_reasons": [
-          "HN:365pts(注目)",
+          "HN:314pts(注目)",
+          "クロスソース:13社"
+        ],
+        "easy": "「AI coding agents generate more code, but not more software」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "staminade",
+            "text": "This is from March 2026, but it does match what I&#x27;ve encountered professionally. Code review was always a significant bottleneck and is even more so with agentic coding. We&#x27;ve had discussion",
+            "platform": "HN"
+          },
+          {
+            "user": "jefftk",
+            "text": "As is standard for academic papers, this is an attempt to describe the state of the world as of when they did the research.  But then it takes time to write it up and get it out, after which newspaper",
+            "platform": "HN"
+          },
+          {
+            "user": "jacquesm",
+            "text": "That and they do not necessarily generate better code. They tend to generate code that is repetitive. It misses opportunities for extraction and refactoring, the result is bloated and hard to read cod",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "Honeyjar offers AI tools to improve PR and comms at every company",
+        "url": "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
+        "summary": "Journalists, entrepreneurs, and even some public relations professionals will tell you that the PR process is broken. But could AI actually make things better?",
+        "published": "2026-10-12 15:45",
+        "source": "TechCrunch AI",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 11.267926194722222,
+        "lang": "en",
+        "hotness": 61.9,
+        "hotness_reasons": [
+          "HN関連(476pts)",
+          "クロスソース:5社"
+        ],
+        "easy": "「Honeyjar offers AI tools to improve PR and comms at every company」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Helping teens learn, plan, and shape the future of AI",
+        "url": "https://openai.com/index/teens-learn-and-plan",
+        "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+        "published": "2026-10-07 12:00",
+        "source": "OpenAI Blog",
+        "icon": "O",
+        "priority": 2,
+        "freshness": 135.0183402713889,
+        "lang": "en",
+        "hotness": 61.6,
+        "hotness_reasons": [
+          "HN関連(704pts)",
+          "はてブ関連(8ブクマ)",
+          "クロスソース:4社"
+        ],
+        "easy": "「Helping teens learn, plan, and shape the future of AI」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "This AI startup says it can generate permit-ready blueprints in minutes",
+        "url": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
+        "summary": "Blueprints AI, a bootstrapped startup based in Santa Monica, developed software that produces code-compliant construction blueprints from a photo, PDF, or sketch.",
+        "published": "2026-10-12 15:27",
+        "source": "TechCrunch AI",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 11.551537305833333,
+        "lang": "en",
+        "hotness": 57.6,
+        "hotness_reasons": [
+          "HN関連(314pts)",
+          "クロスソース:4社"
+        ],
+        "easy": "「This AI startup says it can generate permit-ready blueprints in minutes」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "QGIS enacts moratorium on AI contributions",
+        "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+        "score": 367,
+        "comments": 398,
+        "hn_id": 50054751,
+        "published": "2026-10-12 11:22",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 56.2,
+        "hotness_reasons": [
+          "HN:367pts(注目)",
+          "クロスソース:2社"
+        ],
+        "easy": "「QGIS enacts moratorium on AI contributions」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "Hendrikto",
+            "text": "For those who, like me, had no idea what QGIS was: It is a free Geographic Information System (GIS), which means that it deals with creating, managing, analyzing, storing, and visualizing geospatial i",
+            "platform": "HN"
+          },
+          {
+            "user": "mootothemax",
+            "text": "There’s something about geospatial work that seems to break LLMs. I’ve experienced it a lot with latest versions of both Fable and Opus, and it’s the classic nightmare of confidently-spoken-but-wrong.",
+            "platform": "HN"
+          },
+          {
+            "user": "robertclaus",
+            "text": "At Plotly we are dealing with similar issues. We&#x27;re doing our best to keep up, but it&#x27;s genuinely hard not to just cut our losses on passer-by community contributions. 3 page issue writeups ",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "Microsoft、第3世代AIチップ「Maia 300」を2027年に投入　GPU比で電力効率4割向上、自社サービスの主力推論基盤に",
+        "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002200/",
+        "summary": "Microsoftは、自社設計AIアクセラレータ「Maia 300」を発表した。TSMCの2nmプロセスを採用し、HBM4を288GB搭載。推論処理に特化し、GPU基盤比で電力効率を向上させて前世代比最大7倍の処理能力を実現した。数ギガワット規模で展開し、自社サービスの中核に据える。",
+        "published": "2026-10-13 00:24",
+        "source": "ITmedia AI+",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 2.6023701975,
+        "lang": "ja",
+        "hotness": 54.9,
+        "hotness_reasons": [
+          "はてブ関連(94ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "「Microsoft、第3世代AIチップ「Maia 300」を2027年に投入　GPU比で電力効率4割向上、自社サービスの主力推論基盤に」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Meta、同社最大のAIモデル「Muse Wonder」発表　記憶力と粘り強さを強化、AIエージェント「Muse」にも搭載へ",
+        "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002197/",
+        "summary": "Metaは、最大かつ最強と位置付ける新AIモデル「Muse Wonder」と上位モデル「Muse Wonde Full」を発表した。会話をまたいで記憶を保持する機能や粘り強くタスクを遂行する機能を備え、エージェント用途に最適化した。APIやコーディングツールで提供を始めたほか、個人向けAIエージェント「Muse」にも順次搭載していく。",
+        "published": "2026-10-12 22:06",
+        "source": "ITmedia AI+",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 4.9107035308333336,
+        "lang": "ja",
+        "hotness": 54.9,
+        "hotness_reasons": [
+          "はてブ関連(4ブクマ)",
+          "クロスソース:6社"
+        ],
+        "easy": "「Meta、同社最大のAIモデル「Muse Wonder」発表　記憶力と粘り強さを強化、AIエージェント「Muse」にも搭載へ」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
+        "url": "https://news.ycombinator.com/item?id=50059096",
+        "score": 112,
+        "comments": 73,
+        "hn_id": 50059096,
+        "published": "2026-10-12 16:46",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 53.2,
+        "hotness_reasons": [
+          "HN:112pts",
           "クロスソース:3社"
         ],
-        "easy": "「I paid people to try and follow my README」についてのニュースです。",
+        "easy": "「Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -27,262 +253,38 @@
         "impact": 50,
         "reactions": [
           {
-            "user": "bambax",
-            "text": "&gt; But it is really hard to ignore your own biases. Of course you know that certain commands require sudo and obviously when you wrote -foo you meant --foo and everyone knows that you have to reboot",
+            "user": "mparis",
+            "text": "Congrats on the launch! Very exciting!You guys are operating in a very competitive space. This stuff is fun to build, so a lot of engineers will end up building it. Not to discourage you, but I suspec",
             "platform": "HN"
           },
           {
-            "user": "andai",
-            "text": "&gt;I hadn&#x27;t actually explained what the software would do.Half the posts I see lately are like, &quot;Gleam 2.0. What we learned&quot; and then you go to the homepage and it&#x27;s &quot;Gleam i",
+            "user": "alasano",
+            "text": "I&#x27;ve been looking at offloading local work from my MacBook Pro (M1 Pro &#x2F; 32 GB) specifically because I&#x27;ve been working with a lot of Android apps and emulation is killing me on top of e",
             "platform": "HN"
           },
           {
-            "user": "bryanhogan",
-            "text": "This is very close to what you call usability testing in the field of UX design.The Nielson Norman Group has a good introduction to this: https:&#x2F;&#x2F;www.nngroup.com&#x2F;articles&#x2F;usability",
+            "user": "Bnjoroge",
+            "text": "Congrats on the launch! Can you speak on how you are able to keep the cost really low?",
             "platform": "HN"
           }
         ]
       },
       {
-        "title": "AI Is Getting Really Good at Messing With Cybercriminals",
-        "url": "https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/",
-        "summary": "Anti-cybercrime initiatives are increasingly using AI to scam the scammers by tricking them into talking to lifelike bots that they think are real victims.",
-        "published": "2026-10-10 12:00",
-        "source": "WIRED AI",
-        "icon": "WD",
-        "priority": 2,
-        "freshness": 37.29294518277777,
-        "lang": "en",
-        "hotness": 61.5,
-        "hotness_reasons": [
-          "HN関連(357pts)",
-          "はてブ関連(28ブクマ)",
-          "クロスソース:7社"
-        ],
-        "easy": "「AI Is Getting Really Good at Messing With Cybercriminals」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "The gap in shared understanding of LLM capability is widening",
-        "url": "https://twitter.com/karpathy/status/2109361546505966046",
-        "score": 230,
-        "comments": 368,
-        "hn_id": 50047422,
-        "published": "2026-10-11 20:20",
-        "source": "Hacker News",
-        "icon": "HN",
-        "priority": 0,
-        "hotness": 53.2,
-        "hotness_reasons": [
-          "HN:230pts",
-          "クロスソース:1社"
-        ],
-        "easy": "「The gap in shared understanding of LLM capability is widening」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": [
-          {
-            "user": "frereubu",
-            "text": "https:&#x2F;&#x2F;xxcancel.com&#x2F;karpathy&#x2F;status&#x2F;2109361546505966046",
-            "platform": "HN"
-          },
-          {
-            "user": "nsainsbury",
-            "text": "It&#x27;s actually sad how much AI has either not improved life at all or actively made it worse from the perspective of the average person:Your car is still the same.\nYour dishwasher is still the sam",
-            "platform": "HN"
-          },
-          {
-            "user": "rico735",
-            "text": "Don&#x27;t think the 0.2% really are in agreement that &quot;large, complex projects that used to take them weeks&#x2F;months can now be completed by agents with a prompt&quot;.The divide seems to be ",
-            "platform": "HN"
-          }
-        ]
-      },
-      {
-        "title": "500B tokens later: Letting AI agents decompile a first-person shooter",
-        "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
-        "score": 150,
-        "comments": 108,
-        "hn_id": 50039092,
-        "published": "2026-10-11 02:02",
-        "source": "Hacker News",
-        "icon": "HN",
-        "priority": 0,
-        "hotness": 53.2,
-        "hotness_reasons": [
-          "HN:150pts",
-          "クロスソース:10社"
-        ],
-        "easy": "「500B tokens later: Letting AI agents decompile a first-person shooter」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": [
-          {
-            "user": "sailingparrot",
-            "text": "500B Luna-equivalent tokens, just for a little fun experiment, which they&#x27;ll never be able to share widely for very obvious trademark reasons. Even if they could share, not sure exactly what the ",
-            "platform": "HN"
-          },
-          {
-            "user": "brandonpelfrey",
-            "text": "Unless you explicitly need byte-matching decompilation, there are significantly faster ways to produce a decompilation&#x2F;C which is functionally equivalent. I need to post about this. What&#x27;s b",
-            "platform": "HN"
-          },
-          {
-            "user": "aetherspawn",
-            "text": "The reason this cost so much is because the AI has the ridiculous goal of getting identical assembly output.The agents would have had to mess around with compiler versions, optimisation options, and t",
-            "platform": "HN"
-          }
-        ]
-      },
-      {
-        "title": "Multimodal open d1 decision models for the edge",
-        "url": "https://huggingface.co/blog/LiquidAI/open-d1",
-        "summary": "",
-        "published": "2026-10-07 16:54",
-        "source": "Hugging Face",
-        "icon": "HF",
-        "priority": 3,
-        "freshness": 104.38407658944445,
-        "lang": "en",
-        "hotness": 50.4,
-        "hotness_reasons": [
-          "HN関連(242pts)",
-          "はてブ関連(40ブクマ)",
-          "クロスソース:2社"
-        ],
-        "easy": "「Multimodal open d1 decision models for the edge」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "AI agent makers are promising privacy — will they deliver?",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
-        "summary": "At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking veiled shots at Meta's Muse, its primary competitor, for failing to keep users' data safe. [&#8230;]",
-        "published": "2026-10-10 13:00",
-        "source": "The Verge AI",
-        "icon": "TV",
-        "priority": 1,
-        "freshness": 36.29283497694444,
-        "lang": "en",
-        "hotness": 49.8,
-        "hotness_reasons": [
-          "HN関連(57pts)",
-          "はてブ関連(40ブクマ)",
-          "クロスソース:2社"
-        ],
-        "easy": "「AI agent makers are promising privacy — will they deliver?」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-        "url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-        "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next. Join senior AI reporter&#8230;",
-        "published": "2026-10-09 00:08",
-        "source": "MIT Tech Review",
-        "icon": "MT",
-        "priority": 2,
-        "freshness": 73.15299547527778,
-        "lang": "en",
-        "hotness": 49.5,
-        "hotness_reasons": [
-          "HN関連(357pts)",
-          "クロスソース:8社"
-        ],
-        "easy": "「Roundtables: A Conversation With the Creator of AI-Designed Viruses」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Microsoftも“判断特化”AIモデル「Microsoft-Decision-1」、Qwenベースで「Jev」と同価格",
-        "url": "https://www.itmedia.co.jp/aiplus/article/2610/12/2000002194/",
-        "summary": "Microsoftは、文章生成を行わず選択肢ごとの確率を返す判断特化AI「Microsoft-Decision-1」を発表した。「Qwen3.5-9B」を追加学習し、OpenAIの「GPT-6 Sol」の35倍の速度を実現。「Jev」と同じ入力100万トークン当たり0.042ドルで、分類やエージェントの行動判定向けに提供する。",
-        "published": "2026-10-12 00:39",
-        "source": "ITmedia AI+",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 0.6343827316666667,
-        "lang": "ja",
-        "hotness": 44.9,
-        "hotness_reasons": [
-          "クロスソース:4社"
-        ],
-        "easy": "「Microsoftも“判断特化”AIモデル「Microsoft-Decision-1」、Qwenベースで「Jev」と同価格」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "AnthropicのAI、未解決殺人事件で警察に虚偽の情報提供　米政権は「通知と是正は義務」と警告",
-        "url": "https://www.itmedia.co.jp/news/article/2610/12/2000002192/",
-        "summary": "Anthropicは、Claudeの評価試験中に、未解決殺人事件サイトへの架空情報送信や脆弱性悪用などの意図しない行動が生じたと発表した。警察は発見から報告までの遅れを批判。ホワイトハウスのSI Forceも、インシデントの迅速な通知と是正は国家安全保障上の義務であると警告した。",
-        "published": "2026-10-11 23:59",
-        "source": "ITmedia AI+",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 1.300216065,
-        "lang": "ja",
-        "hotness": 44.9,
-        "hotness_reasons": [
-          "クロスソース:4社"
-        ],
-        "easy": "「AnthropicのAI、未解決殺人事件で警察に虚偽の情報提供　米政権は「通知と是正は義務」と警告」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "AppleのスマートホームハブはA18チップ搭載＆壁掛けモデルも用意され「HomeView」という名称で11月出荷か",
-        "url": "https://gigazine.net/news/20261012-apple-smart-home-homeview/",
-        "summary": "Appleはスマートホーム関連デバイスを開発中で、10月13日開催予定の新製品発表会でこれらを発表すると目されています。そんなスマートホーム関連デバイスの中心となるスマートホームハブは、「HomeView」という名称になると報じられました。続きを読む...",
-        "published": "2026-10-12 01:00",
+        "title": "OpenAIやAnthropicの最先端モデルを上回る高性能AI「Muse Wonder」をMetaが発表、Museシリーズ登場から半年で最先端に追いつく",
+        "url": "https://gigazine.net/news/20261013-meta-ai-muse-wonder/",
+        "summary": "MetaがAIモデル「Muse Wonder」と「Muse Wonder Full」を現地時間の2026年10月12日に発表しました。どちらのモデルも各種ベンチマークテストでOpenAIやAnthropicの最先端モデルを上回るスコアを記録しています。続きを読む...",
+        "published": "2026-10-13 02:25",
         "source": "GIGAZINE",
         "icon": "JP",
         "priority": 2,
-        "freshness": 0.29359479361111107,
+        "freshness": 0.6021840825,
         "lang": "ja",
-        "hotness": 34.6,
+        "hotness": 51.6,
         "hotness_reasons": [
-          "クロスソース:2社"
+          "はてブ関連(4ブクマ)",
+          "クロスソース:9社"
         ],
-        "easy": "「AppleのスマートホームハブはA18チップ搭載＆壁掛けモデルも用意され「HomeView」という名称で11月出荷か」についてのニュースです。",
+        "easy": "「OpenAIやAnthropicの最先端モデルを上回る高性能AI「Muse Wonder」をMetaが発表、Museシリーズ登場から半年で最先端に追いつく」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -294,21 +296,21 @@
     ],
     "devtools": [
       {
-        "title": "Claude Code found my app’s shared contract in two MCP calls. Then the records ran out.",
-        "url": "https://thenewstack.io/claude-code-mcp-records/",
-        "summary": "Every Claude Code user has watched a new session start from zero. You open it on a system you built\nThe post Claude Code found my app’s shared contract in two MCP calls. Then the records ran out. appeared first on The New Stack.",
-        "published": "2026-10-11 14:00",
+        "title": "Coding agents made building easy. Platform teams that build from scratch are 3.5x more likely to lack a strategy.",
+        "url": "https://thenewstack.io/coding-agents-platform-teams/",
+        "summary": "Build-or-buy is usually framed as an engineering trade-off, where developer time is weighed against integration and migration overhead, and control\nThe post Coding agents made building easy. Platform teams that build from scratch are 3.5x more likely to lack a strategy. appeared first on The New Stack.",
+        "published": "2026-10-12 19:28",
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 11.294122747222223,
+        "freshness": 7.545255243333333,
         "lang": "en",
-        "hotness": 53.4,
+        "hotness": 57.6,
         "hotness_reasons": [
-          "HN関連(230pts)",
-          "クロスソース:4社"
+          "HN関連(314pts)",
+          "クロスソース:5社"
         ],
-        "easy": "「Claude Code found my app’s shared contract in two MCP calls. Then the records ran out.」についてのニュースです。",
+        "easy": "「Coding agents made building easy. Platform teams that build from scratch are 3.5x more likely to lack a strategy.」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -316,132 +318,6 @@
         ],
         "impact": 50,
         "reactions": []
-      },
-      {
-        "title": "Foresight AI Brings Gremlin Agents to Reliability Engineering",
-        "url": "https://www.infoq.com/news/2026/10/gremlin-foresight-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-        "summary": "Reliability management company Gremlin has announced the general availability of Foresight AI, an agentic product that analyses services for potential failures, recommends changes and reruns tests to check that a fix works. By Matt Saunders",
-        "published": "2026-10-11 09:00",
-        "source": "InfoQ",
-        "icon": "IQ",
-        "priority": 1,
-        "freshness": 16.294027625833333,
-        "lang": "en",
-        "hotness": 51.4,
-        "hotness_reasons": [
-          "HN関連(230pts)",
-          "クロスソース:9社"
-        ],
-        "easy": "「Foresight AI Brings Gremlin Agents to Reliability Engineering」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "How one bug bounty researcher chooses the features they investigate",
-        "url": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/",
-        "summary": "As we kick off Cybersecurity Awareness Month, the GitHub Bug Bounty team spotlights @vaib25vicky, exploring their methodology, techniques, and experiences hacking on GitHub.\nThe post How one bug bounty researcher chooses the features they investigate appeared first on The GitHub Blog.",
-        "published": "2026-10-08 17:02",
-        "source": "GitHub Blog",
-        "icon": "GH",
-        "priority": 1,
-        "freshness": 80.2466727261111,
-        "lang": "en",
-        "hotness": 46.0,
-        "hotness_reasons": [
-          "HN関連(23pts)",
-          "はてブ関連(10ブクマ)",
-          "クロスソース:4社"
-        ],
-        "easy": "「How one bug bounty researcher chooses the features they investigate」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Kubernetes on cgroup v1 is dead. Here’s what comes next.",
-        "url": "https://thenewstack.io/kubernetes-node-swap-ai/",
-        "summary": "Welcome back to another edition of Road to KubeCon, where we&#8217;re tracking the latest movements in the cloud-native ecosystem as\nThe post Kubernetes on cgroup v1 is dead. Here’s what comes next. appeared first on The New Stack.",
-        "published": "2026-10-09 20:15",
-        "source": "The New Stack",
-        "icon": "NS",
-        "priority": 1,
-        "freshness": 53.03134496944445,
-        "lang": "en",
-        "hotness": 44.9,
-        "hotness_reasons": [
-          "はてブ関連(10ブクマ)",
-          "クロスソース:4社"
-        ],
-        "easy": "「Kubernetes on cgroup v1 is dead. Here’s what comes next.」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Hack the World: Why hackathons are still the best place to learn to build",
-        "url": "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/",
-        "summary": "The barriers to building software have collapsed. Today, anyone can build. Hackathons are a great place to start learning.\nThe post Hack the World: Why hackathons are still the best place to learn to build appeared first on The GitHub Blog.",
-        "published": "2026-10-09 16:00",
-        "source": "GitHub Blog",
-        "icon": "GH",
-        "priority": 1,
-        "freshness": 57.29445050388889,
-        "lang": "en",
-        "hotness": 43.9,
-        "hotness_reasons": [
-          "HN関連(319pts)",
-          "クロスソース:2社"
-        ],
-        "easy": "「Hack the World: Why hackathons are still the best place to learn to build」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Safe SIMD in Rust, even on the inside",
-        "url": "https://shnatsel.github.io/safe-simd-in-rust-even-on-the-inside/",
-        "score": 28,
-        "comments": 1,
-        "hn_id": 50033601,
-        "published": "2026-10-10 14:56",
-        "source": "Hacker News",
-        "icon": "HN",
-        "priority": 0,
-        "hotness": 38.2,
-        "hotness_reasons": [
-          "クロスソース:8社"
-        ],
-        "easy": "「Safe SIMD in Rust, even on the inside」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": [
-          {
-            "user": "vlovich123",
-            "text": "This is a pretty old article. Fearless SIMD is now at 1.0",
-            "platform": "HN"
-          }
-        ]
       },
       {
         "title": "Secret protection must scale with software",
@@ -451,12 +327,13 @@
         "source": "GitHub Blog",
         "icon": "GH",
         "priority": 1,
-        "freshness": 103.53500605944444,
+        "freshness": 129.26032769138888,
         "lang": "en",
-        "hotness": 37.9,
+        "hotness": 56.8,
         "hotness_reasons": [
-          "HN関連(60pts)",
-          "クロスソース:8社"
+          "HN関連(238pts)",
+          "はてブ関連(8ブクマ)",
+          "クロスソース:6社"
         ],
         "easy": "「Secret protection must scale with software」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
@@ -468,117 +345,21 @@
         "reactions": []
       },
       {
-        "title": "Claude Codeに任せる範囲と止める仕組みの設計 〜計画モード・SessionStartフック・/loop・課金前確認の使い分け〜",
-        "url": "https://qiita.com/charge0315/items/fcec85cc5250e39bab97?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-        "summary": "AIに「全部任せる」と怖い。「全部確認する」と遅い。どっちも3日で疲れます😇\nしかも張り切って作った「ハーネスの仕様書」は、たった3時間で古くなってゴミ箱行きになりました。\n日本株のAI銘柄スクリーニング＆継続学習端末「ALPHA FORGE（アルファフォージ）」を、Cla...",
-        "published": "2026-10-10 23:33",
-        "source": "Qiita 人気",
-        "icon": "QT",
-        "priority": 1,
-        "freshness": 25.738890087222224,
-        "lang": "ja",
-        "hotness": 36.9,
-        "hotness_reasons": [
-          "クロスソース:1社"
-        ],
-        "easy": "「Claude Codeに任せる範囲と止める仕組みの設計 〜計画モード・SessionStartフック・/loop・課金前確認の使い分け〜」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "GitHub Actionsでよくある3つの『見えない』脆弱性を、自前の静的解析で検出してみた",
-        "url": "https://qiita.com/vakoya_village/items/f7a457e6f51ad9c8aa4c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-        "summary": "はじめに\nGitHub Actionsのワークフローは「動けばOK」で書かれがちですが、動いていても安全とは限りません。特に以下の3つは、レビューでも見落とされやすく、かつ実際のインシデント事例があるものです。\n\npermissions を明示していない（＝既定値のGI...",
-        "published": "2026-10-10 04:26",
-        "source": "Qiita 人気",
-        "icon": "QT",
-        "priority": 1,
-        "freshness": 44.857223420555556,
-        "lang": "ja",
-        "hotness": 31.9,
-        "hotness_reasons": [
-          "はてブ関連(56ブクマ)",
-          "クロスソース:1社"
-        ],
-        "easy": "「GitHub Actionsでよくある3つの『見えない』脆弱性を、自前の静的解析で検出してみた」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "「男は狩り、女は採集」はどこまで本当？　約8割で女性も狩り、乳児連れの例も　過去100年の狩猟採集社会を調査",
-        "url": "https://www.itmedia.co.jp/news/article/2610/10/2000002038/",
-        "summary": "米シアトル・パシフィック大学などに所属する研究者らが2023年に学術誌「PLOS ONE」で発表した論文「The Myth of Man the Hunter: Women’s contribution to the hunt across ethnographic contexts」は、世界の狩猟採集社会における女性の狩猟活動の実態を調査した研究報告だ。",
-        "published": "2026-10-10 03:00",
-        "source": "ITmedia News",
+        "title": "Deno開発元がCloudflareに合流。Denoの開発は終了へ、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力",
+        "url": "https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html",
+        "summary": "JavaScriptランタイム「Deno」の開発元であるDeno LandとCloudflareは、Deno LandがCloudflareに合流すると発表しました。CloudflareによるDeno Landの買収と見られます（Deno ...",
+        "published": "2026-10-12 15:46",
+        "source": "Publickey",
         "icon": "JP",
-        "priority": 2,
-        "freshness": 46.29490974583333,
+        "priority": 1,
+        "freshness": 11.238628758055555,
         "lang": "ja",
-        "hotness": 25.3,
+        "hotness": 51.9,
         "hotness_reasons": [
-          "はてブ関連(167ブクマ)"
+          "はてブ関連(89ブクマ)",
+          "クロスソース:1社"
         ],
-        "easy": "「「男は狩り、女は採集」はどこまで本当？　約8割で女性も狩り、乳児連れの例も　過去100年の狩猟採集社会を調査」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      }
-    ],
-    "data_dx": [
-      {
-        "title": "Announcing Workday Data Connect federation in Unity Catalog",
-        "url": "https://www.databricks.com/blog/announcing-workday-data-connect-federation-unity-catalog",
-        "summary": "We're excited to announce the publicly available Beta of the Workday Data Connect federation connector for Unity Catalog...",
-        "published": "2026-10-08 23:00",
-        "source": "Databricks",
-        "icon": "DB",
-        "priority": 2,
-        "freshness": 74.29571979250001,
-        "lang": "en",
-        "hotness": 51.6,
-        "hotness_reasons": [
-          "HN関連(550pts)",
-          "クロスソース:4社"
-        ],
-        "easy": "「Announcing Workday Data Connect federation in Unity Catalog」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Lakebase and Agentic SDLC: Branching Databases for Coding Agents",
-        "url": "https://www.databricks.com/blog/lakebase-and-agentic-sdlc-branching-databases-coding-agents",
-        "summary": "AI has changed how software gets built. As coding agents take on a growing share...",
-        "published": "2026-10-08 22:00",
-        "source": "Databricks",
-        "icon": "DB",
-        "priority": 2,
-        "freshness": 75.29571979250001,
-        "lang": "en",
-        "hotness": 41.6,
-        "hotness_reasons": [
-          "はてブ関連(40ブクマ)",
-          "クロスソース:5社"
-        ],
-        "easy": "「Lakebase and Agentic SDLC: Branching Databases for Coding Agents」についてのニュースです。",
+        "easy": "「Deno開発元がCloudflareに合流。Denoの開発は終了へ、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -595,11 +376,13 @@
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 33.29536014861111,
+        "freshness": 59.019421910000005,
         "lang": "en",
-        "hotness": 36.9,
+        "hotness": 49.2,
         "hotness_reasons": [
-          "クロスソース:10社"
+          "HN関連(86pts)",
+          "はてブ関連(33ブクマ)",
+          "クロスソース:6社"
         ],
         "easy": "「How to turn AI production feedback into better agents」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
@@ -611,20 +394,21 @@
         "reactions": []
       },
       {
-        "title": "Microsoft skipped OpenAI’s decision model and built its own on Alibaba’s Qwen",
-        "url": "https://thenewstack.io/microsoft-decision-model-foundry/",
-        "summary": "Microsoft on Friday launched Microsoft-Decision-1 in Foundry, three days after OpenAI opened its Decisions API to every developer in public\nThe post Microsoft skipped OpenAI’s decision model and built its own on Alibaba’s Qwen appeared first on The New Stack.",
-        "published": "2026-10-10 13:00",
+        "title": "Claude Code found my app’s shared contract in two MCP calls. Then the records ran out.",
+        "url": "https://thenewstack.io/claude-code-mcp-records/",
+        "summary": "Every Claude Code user has watched a new session start from zero. You open it on a system you built\nThe post Claude Code found my app’s shared contract in two MCP calls. Then the records ran out. appeared first on The New Stack.",
+        "published": "2026-10-11 14:00",
         "source": "The New Stack",
         "icon": "NS",
         "priority": 1,
-        "freshness": 36.29536014861111,
+        "freshness": 37.019421910000005,
         "lang": "en",
-        "hotness": 36.9,
+        "hotness": 46.9,
         "hotness_reasons": [
-          "クロスソース:3社"
+          "はてブ関連(8ブクマ)",
+          "クロスソース:7社"
         ],
-        "easy": "「Microsoft skipped OpenAI’s decision model and built its own on Alibaba’s Qwen」についてのニュースです。",
+        "easy": "「Claude Code found my app’s shared contract in two MCP calls. Then the records ran out.」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -634,21 +418,20 @@
         "reactions": []
       },
       {
-        "title": "With dbt State, stop rebuilding what didn't change",
-        "url": "https://www.getdbt.com/blog/dbt-state-stop-rebuilding",
-        "summary": "Learn how dbt State lets you reuse what hasn’t changed and cut data spend.",
-        "published": "2026-10-05 19:33",
-        "source": "dbt Blog",
-        "icon": "dbt",
-        "priority": 2,
-        "freshness": 149.74562756111112,
-        "lang": "en",
-        "hotness": 31.9,
+        "title": "AI エージェントに鍵を任せて大丈夫か — API キー操作5種類、Claude Code・Codex・Gemini に51 回頼み、危険・要注意・安全なやり方を分けた",
+        "url": "https://qiita.com/songchong/items/0d759f44eb26f332b897?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+        "summary": "AI エージェント（Claude Code・Codex・Gemini のように、パソコンの上でコマンドを実行しながら作業を進める AI）に外のサービスをつなぐ作業を頼むと、鍵（API キー・パスワードなど、システムに入るための文字列）が要ります。使う側が知りたいのは、その鍵...",
+        "published": "2026-10-12 19:10",
+        "source": "Qiita 人気",
+        "icon": "QT",
+        "priority": 1,
+        "freshness": 7.850648245,
+        "lang": "ja",
+        "hotness": 41.9,
         "hotness_reasons": [
-          "HN関連(5pts)",
           "クロスソース:5社"
         ],
-        "easy": "「With dbt State, stop rebuilding what didn't change」についてのニュースです。",
+        "easy": "「AI エージェントに鍵を任せて大丈夫か — API キー操作5種類、Claude Code・Codex・Gemini に51 回頼み、危険・要注意・安全なやり方を分けた」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -658,20 +441,20 @@
         "reactions": []
       },
       {
-        "title": "dbt now supports Amazon Redshift data sharing — and your pipelines just got a lot faster",
-        "url": "https://www.getdbt.com/blog/dbt-now-supports-amazon-redshift-data-sharing",
-        "summary": "dbt now supports Amazon Redshift data sharing: write across databases, isolate dev and CI, and run faster without copying data.",
-        "published": "2026-10-09 22:02",
-        "source": "dbt Blog",
-        "icon": "dbt",
-        "priority": 2,
-        "freshness": 51.26229422777778,
+        "title": "GPUs on Kubernetes are bring-your-own-everything, starting with the bill",
+        "url": "https://thenewstack.io/gpus-on-kubernetes/",
+        "summary": "If you run a Kubernetes platform, you&#8217;ve probably got at least one Grafana dashboard for resource visibility on your workloads.\nThe post GPUs on Kubernetes are bring-your-own-everything, starting with the bill appeared first on The New Stack.",
+        "published": "2026-10-12 20:48",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 6.2191441322222225,
         "lang": "en",
-        "hotness": 31.6,
+        "hotness": 41.9,
         "hotness_reasons": [
-          "クロスソース:2社"
+          "クロスソース:7社"
         ],
-        "easy": "「dbt now supports Amazon Redshift data sharing — and your pipelines just got a lot faster」についてのニュースです。",
+        "easy": "「GPUs on Kubernetes are bring-your-own-everything, starting with the bill」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -681,66 +464,44 @@
         "reactions": []
       },
       {
-        "title": "Solving defense supply chain visibility through governed data sharing",
-        "url": "https://www.databricks.com/blog/solving-defense-supply-chain-visibility-through-governed-data-sharing",
-        "summary": "When every tier of the defense supply chain can share governed data with the people who need it...",
-        "published": "2026-10-09 14:00",
-        "source": "Databricks",
-        "icon": "DB",
-        "priority": 2,
-        "freshness": 59.295719792499995,
+        "title": "Andrej Karpathy says only 5,000 people have seen what AI can really do",
+        "url": "https://thenewstack.io/karpathy-levie-ai-capability-gap/",
+        "summary": "OpenAI founding member Andrej Karpathy, who joined Anthropic in May, thinks most of the world has little idea of what\nThe post Andrej Karpathy says only 5,000 people have seen what AI can really do appeared first on The New Stack.",
+        "published": "2026-10-12 15:54",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 11.113866354444445,
         "lang": "en",
-        "hotness": 31.6,
+        "hotness": 41.9,
         "hotness_reasons": [
+          "クロスソース:6社"
+        ],
+        "easy": "「Andrej Karpathy says only 5,000 people have seen what AI can really do」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "How one bug bounty researcher chooses the features they investigate",
+        "url": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/",
+        "summary": "As we kick off Cybersecurity Awareness Month, the GitHub Bug Bounty team spotlights @vaib25vicky, exploring their methodology, techniques, and experiences hacking on GitHub.\nThe post How one bug bounty researcher chooses the features they investigate appeared first on The GitHub Blog.",
+        "published": "2026-10-08 17:02",
+        "source": "GitHub Blog",
+        "icon": "GH",
+        "priority": 1,
+        "freshness": 105.97199435805555,
+        "lang": "en",
+        "hotness": 41.7,
+        "hotness_reasons": [
+          "HN関連(136pts)",
           "クロスソース:4社"
         ],
-        "easy": "「Solving defense supply chain visibility through governed data sharing」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表",
-        "url": "https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html",
-        "summary": "Amazon Web Services（AWS）は、Amazon Aurora PostgreSQLにDuckDBを統合し、Apache Icebergなどで構築したデータレイクのデータを直接読み取って処理できるようになったことを発表しまし...",
-        "published": "2026-10-07 15:59",
-        "source": "Publickey",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 105.31127414194445,
-        "lang": "ja",
-        "hotness": 19.9,
-        "hotness_reasons": [
-          "クロスソース:1社"
-        ],
-        "easy": "「AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "マイクロソフト、VS CodeにAIモデルのオーケストレーションで高品質低コストなAIを実現する「HydraFusion」をプレビュー実装",
-        "url": "https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html",
-        "summary": "マイクロソフトは9月30日付けでリリースされたVisual Studio Code 1.140（以下、VS Code）で、複数のAIベンダから提供されているAIモデルをオーケストレーションすることでより高品質で低コストを実現するという「Hy...",
-        "published": "2026-10-06 15:47",
-        "source": "Publickey",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 129.4982185863889,
-        "lang": "ja",
-        "hotness": 19.9,
-        "hotness_reasons": [
-          "クロスソース:1社"
-        ],
-        "easy": "「マイクロソフト、VS CodeにAIモデルのオーケストレーションで高品質低コストなAIを実現する「HydraFusion」をプレビュー実装」についてのニュースです。",
+        "easy": "「How one bug bounty researcher chooses the features they investigate」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -757,10 +518,12 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 81.4793296975,
+        "freshness": 107.2030732025,
         "lang": "ja",
-        "hotness": 9.9,
-        "hotness_reasons": [],
+        "hotness": 34.9,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
         "easy": "「さくらインターネット、GPU専有によりトークン消費量を気にせず定額で利用できる「さくらのAI Engineプライベートエディション」提供開始を発表」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
@@ -771,63 +534,24 @@
         "reactions": []
       }
     ],
-    "cloud": [
+    "data_dx": [
       {
-        "title": "3rd Yandex Cloud Data Center Was Hit",
-        "url": "https://status.yandex.cloud/en/incidents/2136",
-        "score": 550,
-        "comments": 669,
-        "hn_id": 50040547,
-        "published": "2026-10-11 07:34",
-        "source": "Hacker News",
-        "icon": "HN",
-        "priority": 0,
-        "hotness": 68.2,
-        "hotness_reasons": [
-          "HN:550pts(超注目)",
-          "クロスソース:3社"
-        ],
-        "easy": "「3rd Yandex Cloud Data Center Was Hit」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": [
-          {
-            "user": "vld_chk",
-            "text": "For people who are “worried” that Ukraine targets data centers: Ukraine did not start it.For the entire September, Russia conducted 10+ strikes on all key telecom, and internet provider data centers i",
-            "platform": "HN"
-          },
-          {
-            "user": "defly",
-            "text": "If you want to help Ukraine, here is a list of the largest volunteer funds you can donate to:Come Back Alive - delivered the first deep-strike drones\nhttps:&#x2F;&#x2F;savelife.in.ua&#x2F;en&#x2F;Serh",
-            "platform": "HN"
-          },
-          {
-            "user": "entropyneur",
-            "text": "Russia used to be quite advanced in information technology. At one point they prided themselves on being one of only four nations with Internet-scale search engines IIRC. Their little military operati",
-            "platform": "HN"
-          }
-        ]
-      },
-      {
-        "title": "The keys to the Internet change on October 11. Are you ready?",
-        "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-        "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover.",
-        "published": "2026-10-06 17:50",
-        "source": "Cloudflare Blog",
-        "icon": "CF",
+        "title": "Introducing Funke: Native HL7v2 Parsing on Databricks",
+        "url": "https://www.databricks.com/blog/introducing-funke-native-hl7v2-parsing-databricks",
+        "summary": "The HL7v2 problem in the lakehouseHL7v2 is the messaging standard that quietly runs healthcare...",
+        "published": "2026-10-08 22:00",
+        "source": "Databricks",
+        "icon": "DB",
         "priority": 2,
-        "freshness": 127.46304102333333,
+        "freshness": 101.02099330083333,
         "lang": "en",
-        "hotness": 42.0,
+        "hotness": 55.2,
         "hotness_reasons": [
-          "HN関連(208pts)",
+          "HN関連(272pts)",
+          "はてブ関連(33ブクマ)",
           "クロスソース:4社"
         ],
-        "easy": "「The keys to the Internet change on October 11. Are you ready?」についてのニュースです。",
+        "easy": "「Introducing Funke: Native HL7v2 Parsing on Databricks」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -837,20 +561,71 @@
         "reactions": []
       },
       {
-        "title": "All the numbers: Amazon Prime Day 2026 powered by AWS",
-        "url": "https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/",
-        "summary": "Amazon Prime Day 2026 was exclusively for Prime members and ran June 23–26, 2026 with millions of deals across more than 35 categories. As part of our annual tradition of sharing how AWS powered Prime Day (2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, and 2025), I want to share the services and chart-topping metrics […]",
-        "published": "2026-10-06 16:09",
-        "source": "AWS Blog",
+        "title": "How Flo Health built safer, more useful open models with Databricks AI Runtime",
+        "url": "https://www.databricks.com/blog/how-flo-health-built-safer-more-useful-open-models-databricks-ai-runtime",
+        "summary": "For Flo Health, the bar for generative AI is unusually high. With 81 million monthly...",
+        "published": "2026-10-12 15:13",
+        "source": "Databricks",
+        "icon": "DB",
+        "priority": 2,
+        "freshness": 11.803215523055554,
+        "lang": "en",
+        "hotness": 44.1,
+        "hotness_reasons": [
+          "HN関連(111pts)",
+          "クロスソース:13社"
+        ],
+        "easy": "「How Flo Health built safer, more useful open models with Databricks AI Runtime」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Announcing Workday Data Connect federation in Unity Catalog",
+        "url": "https://www.databricks.com/blog/announcing-workday-data-connect-federation-unity-catalog",
+        "summary": "We're excited to announce the publicly available Beta of the Workday Data Connect federation connector for Unity Catalog...",
+        "published": "2026-10-08 23:00",
+        "source": "Databricks",
+        "icon": "DB",
+        "priority": 2,
+        "freshness": 100.02099330083333,
+        "lang": "en",
+        "hotness": 42.1,
+        "hotness_reasons": [
+          "HN関連(10pts)",
+          "はてブ関連(33ブクマ)",
+          "クロスソース:4社"
+        ],
+        "easy": "「Announcing Workday Data Connect federation in Unity Catalog」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Run an automated operational review with the Amazon Redshift MCP server",
+        "url": "https://aws.amazon.com/blogs/big-data/run-an-automated-operational-review-with-the-amazon-redshift-mcp-server/",
+        "summary": "Amazon Redshift automates much of its own tuning, but periodic operational reviews still pay off. Learn how the review_cluster tool in the open-source Amazon Redshift MCP server runs a full cluster diagnostic from one natural-language request, evaluating 12 diagnostic areas and returning prioritized, documentation-linked recommendations in minutes.",
+        "published": "2026-10-05 15:44",
+        "source": "AWS Big Data",
         "icon": "AW",
-        "priority": 1,
-        "freshness": 129.1367142586111,
+        "priority": 3,
+        "freshness": 179.27591420888888,
         "lang": "en",
-        "hotness": 34.9,
+        "hotness": 39.4,
         "hotness_reasons": [
+          "HN関連(22pts)",
+          "はてブ関連(33ブクマ)",
           "クロスソース:5社"
         ],
-        "easy": "「All the numbers: Amazon Prime Day 2026 powered by AWS」についてのニュースです。",
+        "easy": "「Run an automated operational review with the Amazon Redshift MCP server」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -860,89 +635,91 @@
         "reactions": []
       },
       {
-        "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
-        "url": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations/",
-        "summary": "The opportunity is bigger than making individual tasks faster. It’s to build a system that learns from how infrastructure is designed, sourced, and operated.\nThe post AI transformation across the infrastructure lifecycle: From supply chain to fleet operations appeared first on Microsoft Azure Blog.",
-        "published": "2026-10-07 15:00",
-        "source": "Azure Blog",
-        "icon": "AZ",
-        "priority": 2,
-        "freshness": 106.2993723175,
+        "title": "Bring data quality to your Amazon EMR workloads with Amazon EMR Data Quality built on AWS Glue Data Quality",
+        "url": "https://aws.amazon.com/blogs/big-data/bring-data-quality-to-your-amazon-emr-workloads-with-amazon-emr-data-quality-built-on-aws-glue-data-quality/",
+        "summary": "AWS Glue Data Quality is now available natively on Amazon EMR, bundled in AWS runtime for Apache Spark (emr-spark-8.1.0). Write the same DQDL rulesets you use in AWS Glue directly in your Amazon EMR Spark jobs. This post walks through two patterns: lightweight inline validation and an Apache Iceberg Write-Audit-Publish workflow with managed rulesets.",
+        "published": "2026-10-12 23:40",
+        "source": "AWS Big Data",
+        "icon": "AW",
+        "priority": 3,
+        "freshness": 3.347858653333333,
         "lang": "en",
-        "hotness": 31.6,
-        "hotness_reasons": [
-          "クロスソース:5社"
-        ],
-        "easy": "「AI transformation across the infrastructure lifecycle: From supply chain to fleet operations」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
-        "url": "https://blog.cloudflare.com/workers-on-demand-profiling/",
-        "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bottlenecks.",
-        "published": "2026-10-09 13:00",
-        "source": "Cloudflare Blog",
-        "icon": "CF",
-        "priority": 2,
-        "freshness": 60.29942991222222,
-        "lang": "en",
-        "hotness": 31.6,
-        "hotness_reasons": [
-          "クロスソース:5社"
-        ],
-        "easy": "「Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Deno is joining Cloudflare",
-        "url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
-        "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places.",
-        "published": "2026-10-09 12:50",
-        "source": "Cloudflare Blog",
-        "icon": "CF",
-        "priority": 2,
-        "freshness": 60.466096578888894,
-        "lang": "en",
-        "hotness": 31.6,
-        "hotness_reasons": [
-          "クロスソース:3社"
-        ],
-        "easy": "「Deno is joining Cloudflare」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
-        "url": "https://blog.cloudflare.com/radar-redesign/",
-        "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standardized components, we simplified navigation while preserving technical depth.",
-        "published": "2026-10-08 13:00",
-        "source": "Cloudflare Blog",
-        "icon": "CF",
-        "priority": 2,
-        "freshness": 84.29942991222222,
-        "lang": "en",
-        "hotness": 31.6,
+        "hotness": 38.3,
         "hotness_reasons": [
           "クロスソース:6社"
         ],
-        "easy": "「Bridging technical depth and usability: The story behind Radar’s redesign」についてのニュースです。",
+        "easy": "「Bring data quality to your Amazon EMR workloads with Amazon EMR Data Quality built on AWS Glue Data Quality」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Monitoring MWAA-orchestrated ETL pipelines with Amazon OpenSearch Service",
+        "url": "https://aws.amazon.com/blogs/big-data/monitoring-mwaa-orchestrated-etl-pipelines-with-amazon-opensearch-service/",
+        "summary": "Troubleshooting a multi-service, MWAA-orchestrated ETL pipeline often means hunting across scattered Amazon CloudWatch log groups. This post shows how to centralize your ETL logs in Amazon OpenSearch Service and query them in plain language through an MCP server on Amazon Bedrock AgentCore, so you find root causes faster.",
+        "published": "2026-10-06 16:17",
+        "source": "AWS Big Data",
+        "icon": "AW",
+        "priority": 3,
+        "freshness": 154.7256364311111,
+        "lang": "en",
+        "hotness": 38.3,
+        "hotness_reasons": [
+          "はてブ関連(33ブクマ)",
+          "クロスソース:3社"
+        ],
+        "easy": "「Monitoring MWAA-orchestrated ETL pipelines with Amazon OpenSearch Service」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Query across accounts and table formats with multi-catalog in Amazon EMR",
+        "url": "https://aws.amazon.com/blogs/big-data/query-across-accounts-and-table-formats-with-multi-catalog-in-amazon-emr/",
+        "summary": "Amazon EMR 8.1.0 adds multi-catalog support through the RedirectingSessionCatalog, so you can query Iceberg, Delta Lake, Hudi, and Hive tables through a single catalog and join data across AWS accounts without copying it. This post shows how to put these capabilities into practice on Amazon EMR Serverless.",
+        "published": "2026-10-06 16:05",
+        "source": "AWS Big Data",
+        "icon": "AW",
+        "priority": 3,
+        "freshness": 154.93091420888888,
+        "lang": "en",
+        "hotness": 38.3,
+        "hotness_reasons": [
+          "はてブ関連(33ブクマ)",
+          "クロスソース:3社"
+        ],
+        "easy": "「Query across accounts and table formats with multi-catalog in Amazon EMR」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "マイクロソフト、VS CodeにAIモデルのオーケストレーションで高品質低コストなAIを実現する「HydraFusion」をプレビュー実装",
+        "url": "https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html",
+        "summary": "マイクロソフトは9月30日付けでリリースされたVisual Studio Code 1.140（以下、VS Code）で、複数のAIベンダから提供されているAIモデルをオーケストレーションすることでより高品質で低コストを実現するという「Hy...",
+        "published": "2026-10-06 15:47",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 155.2237113775,
+        "lang": "ja",
+        "hotness": 34.9,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
+        "easy": "「マイクロソフト、VS CodeにAIモデルのオーケストレーションで高品質低コストなAIを実現する「HydraFusion」をプレビュー実装」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -959,11 +736,225 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 129.57418631055555,
+        "freshness": 155.29648915527775,
         "lang": "ja",
-        "hotness": 9.9,
-        "hotness_reasons": [],
+        "hotness": 27.9,
+        "hotness_reasons": [
+          "クロスソース:2社"
+        ],
         "easy": "「FDE（フォワードデプロイドエンジニアリング）によって開発されたAIエージェントの7割は使われず、FDEの名前で単なるコンサルティングが販売されるようになる危険が高まるとガートナーが予測」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表",
+        "url": "https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html",
+        "summary": "Amazon Web Services（AWS）は、Amazon Aurora PostgreSQLにDuckDBを統合し、Apache Icebergなどで構築したデータレイクのデータを直接読み取って処理できるようになったことを発表しまし...",
+        "published": "2026-10-07 15:59",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 131.03676693305556,
+        "lang": "ja",
+        "hotness": 19.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "「AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      }
+    ],
+    "cloud": [
+      {
+        "title": "Announcing AWS Lambda Web Functions",
+        "url": "https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/",
+        "summary": "AWS Lambda Web Functions is a serverless compute primitive that runs your HTTP framework natively, delivering fast, consistent responses through multi-concurrent execution and automated global distribution.",
+        "published": "2026-10-12 22:34",
+        "source": "AWS Blog",
+        "icon": "AW",
+        "priority": 1,
+        "freshness": 4.442562198611111,
+        "lang": "en",
+        "hotness": 54.9,
+        "hotness_reasons": [
+          "はてブ関連(33ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "「Announcing AWS Lambda Web Functions」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+        "url": "https://blog.cloudflare.com/agentic-security-operations/",
+        "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers grounded recommendations to Managed Defense Analysts.",
+        "published": "2026-10-07 16:30",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 130.51521395833333,
+        "lang": "en",
+        "hotness": 47.3,
+        "hotness_reasons": [
+          "HN関連(314pts)",
+          "クロスソース:4社"
+        ],
+        "easy": "「Building an evidence-grounded agentic security operations harness on Cloudflare」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "All the numbers: Amazon Prime Day 2026 powered by AWS",
+        "url": "https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/",
+        "summary": "Amazon Prime Day 2026 was exclusively for Prime members and ran June 23–26, 2026 with millions of deals across more than 35 categories. As part of our annual tradition of sharing how AWS powered Prime Day (2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, and 2025), I want to share the services and chart-topping metrics […]",
+        "published": "2026-10-06 16:09",
+        "source": "AWS Blog",
+        "icon": "AW",
+        "priority": 1,
+        "freshness": 154.86228442083333,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "はてブ関連(33ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "「All the numbers: Amazon Prime Day 2026 powered by AWS」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Deno is joining Cloudflare",
+        "url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+        "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places.",
+        "published": "2026-10-09 12:50",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 86.191880625,
+        "lang": "en",
+        "hotness": 44.1,
+        "hotness_reasons": [
+          "HN関連(251pts)",
+          "クロスソース:3社"
+        ],
+        "easy": "「Deno is joining Cloudflare」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+        "url": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+        "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bottlenecks.",
+        "published": "2026-10-09 13:00",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 86.02521395833334,
+        "lang": "en",
+        "hotness": 41.6,
+        "hotness_reasons": [
+          "はてブ関連(89ブクマ)",
+          "クロスソース:4社"
+        ],
+        "easy": "「Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AWS Weekly Roundup: Amazon Bedrock Managed Agents powered by OpenAI, Q3 service availability updates, Kiro workflows, and more (October 5, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/",
+        "summary": "Last week, we announced a public preview of Amazon Bedrock Managed Agents powered by OpenAI, built on a customized version of OpenAI’s Agents API engineered to be AWS-native and integrated with AWS resources. You can now build agents optimized for OpenAI models that run entirely inside AWS with the identities, permissions, and governance controls you […]",
+        "published": "2026-10-05 15:41",
+        "source": "AWS Blog",
+        "icon": "AW",
+        "priority": 1,
+        "freshness": 179.33367330972223,
+        "lang": "en",
+        "hotness": 34.9,
+        "hotness_reasons": [
+          "クロスソース:4社"
+        ],
+        "easy": "「AWS Weekly Roundup: Amazon Bedrock Managed Agents powered by OpenAI, Q3 service availability updates, Kiro workflows, and more (October 5, 2026)」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
+        "url": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations/",
+        "summary": "The opportunity is bigger than making individual tasks faster. It’s to build a system that learns from how infrastructure is designed, sourced, and operated.\nThe post AI transformation across the infrastructure lifecycle: From supply chain to fleet operations appeared first on Microsoft Azure Blog.",
+        "published": "2026-10-07 15:00",
+        "source": "Azure Blog",
+        "icon": "AZ",
+        "priority": 2,
+        "freshness": 132.0251583961111,
+        "lang": "en",
+        "hotness": 31.6,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
+        "easy": "「AI transformation across the infrastructure lifecycle: From supply chain to fleet operations」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "「情シスって楽しい」がテーマ。チームみらい安野党首、ひろゆき氏、OpenID Foundation崎村氏らが登壇。BTCONJP 2026［PR］",
+        "url": "https://www.publickey1.jp/blog/26/openid_foundationbtconjp2026.html",
+        "summary": "進化し続けるITを企業において最適な形で取り入れ続け、ビジネスと統合していく情報システム部門の役割は、AIの登場でビジネスそのものが大きな変革の波を受けざるを得ない現在、ますます重要さを増しています。 その情報システム部門に在籍している有志...",
+        "published": "2026-10-12 16:11",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 10.831671258888889,
+        "lang": "ja",
+        "hotness": 16.9,
+        "hotness_reasons": [],
+        "easy": "「「情シスって楽しい」がテーマ。チームみらい安野党首、ひろゆき氏、OpenID Foundation崎村氏らが登壇。BTCONJP 2026［PR］」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -980,7 +971,7 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 153.80140853277777,
+        "freshness": 179.52722681444445,
         "lang": "ja",
         "hotness": 9.9,
         "hotness_reasons": [],
@@ -1001,7 +992,7 @@
         "source": "Publickey",
         "icon": "JP",
         "priority": 1,
-        "freshness": 153.84418631055553,
+        "freshness": 179.57000459222223,
         "lang": "ja",
         "hotness": 9.9,
         "hotness_reasons": [],
@@ -1017,93 +1008,102 @@
     ],
     "security": [
       {
-        "title": "ARTEX AI, Claude agents used in cyberattacks on South Korean banks",
-        "url": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
-        "summary": "The cyberattacks that shook the South Korean financial sector earlier this month were launched by a Chinese hacker using the ARTEX AI penetration testing suite and Claude agents. [...]",
-        "published": "2026-10-10 14:16",
-        "source": "BleepingComputer",
-        "icon": "BC",
-        "priority": 1,
-        "freshness": 35.028327590555556,
-        "lang": "en",
-        "hotness": 45.6,
+        "title": "I Found a $90k Remote Code Execution Vulnerability in Google",
+        "url": "https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce",
+        "score": 186,
+        "comments": 96,
+        "hn_id": 50052638,
+        "published": "2026-10-12 07:28",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 63.2,
         "hotness_reasons": [
-          "HN関連(174pts)",
-          "クロスソース:10社"
-        ],
-        "easy": "「ARTEX AI, Claude agents used in cyberattacks on South Korean banks」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
-        "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
-        "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSecurity.",
-        "published": "2026-10-10 00:17",
-        "source": "Krebs on Security",
-        "icon": "KS",
-        "priority": 1,
-        "freshness": 49.00468882444445,
-        "lang": "en",
-        "hotness": 39.8,
-        "hotness_reasons": [
-          "HN関連(97pts)",
-          "クロスソース:4社"
-        ],
-        "easy": "「FBI Arrests Executive at Ransomware Negotiation Firm」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "FBI arrests another suspected ShinyHunters hacker after agency breach",
-        "url": "https://www.bleepingcomputer.com/news/security/fbi-arrests-another-suspected-shinyhunters-hacker-after-agency-breach/",
-        "summary": "The FBI has arrested another suspected member of the ShinyHunters extortion group believed to be involved in the recent breach of FBI systems, Director Kash Patel announced Friday. [...]",
-        "published": "2026-10-09 17:02",
-        "source": "BleepingComputer",
-        "icon": "BC",
-        "priority": 1,
-        "freshness": 56.25832759055555,
-        "lang": "en",
-        "hotness": 37.9,
-        "hotness_reasons": [
-          "HN関連(60pts)",
+          "HN:186pts",
+          "はてブ関連(33ブクマ)",
           "クロスソース:5社"
         ],
-        "easy": "「FBI arrests another suspected ShinyHunters hacker after agency breach」についてのニュースです。",
+        "easy": "「I Found a $90k Remote Code Execution Vulnerability in Google」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
           "ニュース"
         ],
         "impact": 50,
-        "reactions": []
+        "reactions": [
+          {
+            "user": "dualvariable",
+            "text": "&gt; &quot;Four things had to change, and they stack:&quot;When you write your blog post with claude, I start hitting these phrases and then start only skimming and looking for them, and stop reading ",
+            "platform": "HN"
+          },
+          {
+            "user": "option_greek",
+            "text": "how does something like this pass code and design reviews. is this code written by ai (the buggy code). Not only was the key that signs the cookie inside the cookie it self but it&#x27;s using pickle ",
+            "platform": "HN"
+          },
+          {
+            "user": "stonyrubbish",
+            "text": "Do you have any advice for aspiring bug-bounty hunters? Do you have some method for being able to find vulnerabilities like this, or lots of past experience?",
+            "platform": "HN"
+          }
+        ]
       },
       {
-        "title": "Social Engineering AI Agents: The New BEC for 2026",
-        "url": "https://www.darkreading.com/cybersecurity-operations/social-engineering-ai-agents-bec-2026",
-        "summary": "As AI agents gain authority over business systems, attackers can manipulate them like business email compromise (BEC) victims.",
-        "published": "2026-10-09 13:00",
+        "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+        "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+        "score": 476,
+        "comments": 680,
+        "hn_id": 50055304,
+        "published": "2026-10-12 12:16",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 56.2,
+        "hotness_reasons": [
+          "HN:476pts(注目)",
+          "クロスソース:2社"
+        ],
+        "easy": "「Hackers activate automatic defrosting in supermarket fridges across Europe」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "9x39",
+            "text": "If you believe some of the emerging comments out there - try &quot;Danfoss CVE&quot; - you&#x27;ll see that some of the suspects are 15-20 year old controllers like the Danfoss SM800 (EOS 2021) and SC",
+            "platform": "HN"
+          },
+          {
+            "user": "alexpotato",
+            "text": "Was just talking to a lab tech at a hospital.It seems that some of the newer lab machines require internet access because you can&#x27;t run lab tests unless you have a paid subscription to use the ma",
+            "platform": "HN"
+          },
+          {
+            "user": "renyicircle",
+            "text": "&gt; Connecting your case controller to the internet offers further opportunities to generate savings. If you can diagnose issues and control the case remotely, service engineers needn’t be called out",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "Prominent Ransomware Negotiator Faces Extortion Charges",
+        "url": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
+        "summary": "Edward Dubrovsky, a longtime cybersecurity executive, was arrested and charged in Pennsylvania last week under conspiracy to extort money.",
+        "published": "2026-10-12 20:00",
         "source": "Dark Reading",
         "icon": "DR",
         "priority": 1,
-        "freshness": 60.300139217222224,
+        "freshness": 7.01107543,
         "lang": "en",
-        "hotness": 37.8,
+        "hotness": 55.5,
         "hotness_reasons": [
-          "HN関連(57pts)",
-          "クロスソース:13社"
+          "HN関連(272pts)",
+          "クロスソース:3社"
         ],
-        "easy": "「Social Engineering AI Agents: The New BEC for 2026」についてのニュースです。",
+        "easy": "「Prominent Ransomware Negotiator Faces Extortion Charges」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1113,20 +1113,21 @@
         "reactions": []
       },
       {
-        "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
-        "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
-        "summary": "In environments studied for the 2026 State of Agent Security Report, roughly 1,280 third-party products now embed AI. About 282 of them sit behind single sign-on. The other thousand are invisible to identity infrastructure by default, not because anyone hid them, but because an identity stack can only govern what authenticates through it, and most agents never do.\n\nThat gap is the clearest",
-        "published": "2026-10-10 11:00",
+        "title": "Bring Your Own Agent: Your Employees' Assistants Are Already Logged In",
+        "url": "https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html",
+        "summary": "The personal AI agents rollout is going about as smoothly as expected: Amazon now blocks Meta's Muse because it doesn't identify itself as a bot while browsing; Instinct keeps raising privacy concerns; and the horror stories from pretty much every personal AI agent keep piling up.\n\nRegardless, the tech world is mesmerized by the capabilities and potential of these services. Less than a year",
+        "published": "2026-10-12 11:55",
         "source": "The Hacker News",
         "icon": "HN",
         "priority": 1,
-        "freshness": 38.299893876666665,
+        "freshness": 15.109064031388888,
         "lang": "en",
-        "hotness": 36.9,
+        "hotness": 46.7,
         "hotness_reasons": [
-          "クロスソース:14社"
+          "HN関連(136pts)",
+          "クロスソース:3社"
         ],
-        "easy": "「The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't」についてのニュースです。",
+        "easy": "「Bring Your Own Agent: Your Employees' Assistants Are Already Logged In」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1136,20 +1137,21 @@
         "reactions": []
       },
       {
-        "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
-        "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-        "summary": "Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites.\n\nThe AI company said it identified four broad categories of unintended model actions during evaluations and internal use of Claude -\n\n\n  Claude Mythos",
-        "published": "2026-10-10 09:18",
-        "source": "The Hacker News",
-        "icon": "HN",
+        "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
+        "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+        "summary": "Ledger has confirmed that some of its devices distributed through Southeast Asian reseller CryptoBilis were compromised with a hardware implant that drained users' cryptocurrency wallets. [...]",
+        "published": "2026-10-12 16:27",
+        "source": "BleepingComputer",
+        "icon": "BC",
         "priority": 1,
-        "freshness": 39.987393876666665,
+        "freshness": 10.56919802388889,
         "lang": "en",
-        "hotness": 36.9,
+        "hotness": 44.9,
         "hotness_reasons": [
-          "クロスソース:9社"
+          "はてブ関連(8ブクマ)",
+          "クロスソース:1社"
         ],
-        "easy": "「Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws」についてのニュースです。",
+        "easy": "「Ledger confirms spy chip implant behind wallet crypto thefts」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1159,21 +1161,22 @@
         "reactions": []
       },
       {
-        "title": "OpenAI Fires 3 Safety Researchers in Dispute Over AI Risks",
-        "url": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/",
-        "summary": "The ChatGPT maker said the researchers  \"violated clear policies on handling sensitive information.”\nThe post OpenAI Fires 3 Safety Researchers in Dispute Over AI Risks appeared first on SecurityWeek.",
-        "published": "2026-10-09 21:07",
+        "title": "Bricksforge WordPress Plugin Vulnerability Exploited in the Wild",
+        "url": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
+        "summary": "The vulnerability tracked as CVE-2026-85097 can allow threat actors to take control of the targeted WordPress websites.\nThe post Bricksforge WordPress Plugin Vulnerability Exploited in the Wild appeared first on SecurityWeek.",
+        "published": "2026-10-12 13:14",
         "source": "SecurityWeek",
         "icon": "SW",
         "priority": 1,
-        "freshness": 52.170767177500004,
+        "freshness": 13.782251997222223,
         "lang": "en",
-        "hotness": 35.5,
+        "hotness": 44.2,
         "hotness_reasons": [
-          "HN関連(12pts)",
-          "クロスソース:4社"
+          "HN関連(186pts)",
+          "はてブ関連(8ブクマ)",
+          "クロスソース:1社"
         ],
-        "easy": "「OpenAI Fires 3 Safety Researchers in Dispute Over AI Risks」についてのニュースです。",
+        "easy": "「Bricksforge WordPress Plugin Vulnerability Exploited in the Wild」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1183,62 +1186,89 @@
         "reactions": []
       },
       {
-        "title": "新スパコン「理究」が本格稼働へ。「ROQUO」で量子HPC連携も加速――理研が手掛ける計算基盤の最前線　CEATECのブース展示・講演で紹介～「AI for Science」の先にある「AI for Industry」も見えてくる",
-        "url": "https://internet.watch.impress.co.jp/docs/interview/2145454.html",
-        "summary": "国立研究開発法人理化学研究所（理研）計算科学研究センター（R-CCS）が、10月13日～16日に幕張メッセ（千葉市美浜区）で開催される「CEATEC 2026」に出展する。R-CCSとしての出展は3年連続となり、今年は「X（Transformation）パーク」エリア内にブースを構える（ホール6 ブース番号6H101）。",
-        "published": "2026-10-09 06:00",
+        "title": "Norway fines Microsoft ad firm $9.6 million over Grindr data sharing",
+        "url": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
+        "summary": "Norway's Data Protection Authority (Datatilsynet) has fined Microsoft-owned advertising company Xandr NOK 92 million ($9.6M) for unlawfully processing and sharing sensitive data belonging to Grindr users in the country. [...]",
+        "published": "2026-10-12 20:13",
+        "source": "BleepingComputer",
+        "icon": "BC",
+        "priority": 1,
+        "freshness": 6.794475801666667,
+        "lang": "en",
+        "hotness": 41.9,
+        "hotness_reasons": [
+          "クロスソース:5社"
+        ],
+        "easy": "「Norway fines Microsoft ad firm $9.6 million over Grindr data sharing」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "「法律も規制も必要ない」　NVIDIAのファン氏、Anthropicの“AI開発減速論”に異論",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2610/13/news025.html",
+        "summary": "AI開発は減速すべきか──。「Dreamforce 2026」に登壇したAnthropicのアモデイCEOは「完璧ではないはずだ」と業界の自省を促し、NVIDIAのフアンCEOは「法律も規制も必要ない」と言い切った。同じステージで割れた2人の主張とは。",
+        "published": "2026-10-13 00:10",
+        "source": "ITmedia エンタープライズ",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 2.8596726155555556,
+        "lang": "ja",
+        "hotness": 41.6,
+        "hotness_reasons": [
+          "クロスソース:4社"
+        ],
+        "easy": "「「法律も規制も必要ない」　NVIDIAのファン氏、Anthropicの“AI開発減速論”に異論」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "FDEが構築したAIエージェントの7割、企業が放棄へ　Gartner予測",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2610/09/news042.html",
+        "summary": "ベンダーのエンジニアと直接協力して構築したAIエージェントを、2028年までに企業の7割が放棄する――。Gartnerはそう予測する。しかも、原因は技術の未熟さではなく、案件の「構造」にあるという。何が企業をつまずかせ、どうすれば避けられるのか。",
+        "published": "2026-10-12 02:15",
+        "source": "ITmedia エンタープライズ",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 24.776339282222224,
+        "lang": "ja",
+        "hotness": 33.6,
+        "hotness_reasons": [
+          "クロスソース:2社"
+        ],
+        "easy": "「FDEが構築したAIエージェントの7割、企業が放棄へ　Gartner予測」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "「Microsoft Office」関連ソフトがAmazonプライム感謝祭で安い！　プライム会員限定、「Microsoft Office Home＆Business 2024」が3万5623円など",
+        "url": "https://internet.watch.impress.co.jp/docs/shopping/2147460.html",
+        "summary": "Amazon.co.jpでは10月16日からAmazonプライム会員向けのビッグセール「プライム感謝祭」を開催する。",
+        "published": "2026-10-13 02:00",
         "source": "INTERNET Watch",
         "icon": "JP",
         "priority": 1,
-        "freshness": 67.30047332416667,
+        "freshness": 1.0261503077777778,
         "lang": "ja",
-        "hotness": 19.9,
+        "hotness": 29.9,
         "hotness_reasons": [
           "クロスソース:1社"
         ],
-        "easy": "「新スパコン「理究」が本格稼働へ。「ROQUO」で量子HPC連携も加速――理研が手掛ける計算基盤の最前線　CEATECのブース展示・講演で紹介～「AI for Science」の先にある「AI for Industry」も見えてくる」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "コミュニティサービス「Commune」「Commune for Work」に不正アクセス、推計約30万人の個人情報が漏えい　ヤマハ、スズキ、湖池屋、青森県など、多くのコミュニティサイトに影響",
-        "url": "https://internet.watch.impress.co.jp/docs/news/2147291.html",
-        "summary": "コミュニティサービスを運営するコミューン株式会社は10月9日、同社が運営するコミュニティサービス「Commune」および社内向けコミュニティサービス「Commune for Work」が第三者による不正アクセスを受け、会員情報の一部が漏えいしたとして情報を公開した。",
-        "published": "2026-10-09 11:53",
-        "source": "INTERNET Watch",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 61.402139990833334,
-        "lang": "ja",
-        "hotness": 9.9,
-        "hotness_reasons": [],
-        "easy": "「コミュニティサービス「Commune」「Commune for Work」に不正アクセス、推計約30万人の個人情報が漏えい　ヤマハ、スズキ、湖池屋、青森県など、多くのコミュニティサイトに影響」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "国家サイバー統括室、「もはや情報システム部門だけの問題ではありません」と不正アクセス事案を踏まえ注意喚起　IPA、総務省、経産省、金融庁も注意喚起を実施",
-        "url": "https://internet.watch.impress.co.jp/docs/news/2147162.html",
-        "summary": "内閣官房国家サイバー統括室（NCO）は10月9日、不正アクセスによる漏えいなどの事案を踏まえた対応についての注意喚起を発表した。",
-        "published": "2026-10-09 08:50",
-        "source": "INTERNET Watch",
-        "icon": "JP",
-        "priority": 1,
-        "freshness": 64.46713999083333,
-        "lang": "ja",
-        "hotness": 9.9,
-        "hotness_reasons": [],
-        "easy": "「国家サイバー統括室、「もはや情報システム部門だけの問題ではありません」と不正アクセス事案を踏まえ注意喚起　IPA、総務省、経産省、金融庁も注意喚起を実施」についてのニュースです。",
+        "easy": "「「Microsoft Office」関連ソフトがAmazonプライム感謝祭で安い！　プライム会員限定、「Microsoft Office Home＆Business 2024」が3万5623円など」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1250,22 +1280,22 @@
     ],
     "hardware": [
       {
-        "title": "Valen's Memory Safety: A New Kind of Borrow Checking",
-        "url": "https://verdagon.dev/blog/valen-group-borrowing",
-        "score": 134,
-        "comments": 80,
-        "hn_id": 50042362,
-        "published": "2026-10-11 12:06",
+        "title": "Running the unmodified Linux amdgpu driver on an iPad",
+        "url": "https://github.com/Geramy/LemonSeed-Studio",
+        "score": 90,
+        "comments": 19,
+        "hn_id": 50041573,
+        "published": "2026-10-11 10:18",
         "source": "Hacker News",
         "icon": "HN",
         "priority": 0,
-        "hotness": 48.2,
+        "hotness": 56.2,
         "hotness_reasons": [
-          "HN:134pts",
-          "はてブ関連(40ブクマ)",
-          "クロスソース:1社"
+          "HN:90pts",
+          "はてブ関連(33ブクマ)",
+          "クロスソース:2社"
         ],
-        "easy": "「Valen's Memory Safety: A New Kind of Borrow Checking」についてのニュースです。",
+        "easy": "「Running the unmodified Linux amdgpu driver on an iPad」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1274,84 +1304,38 @@
         "impact": 50,
         "reactions": [
           {
-            "user": "zamalek",
-            "text": "&gt; Borrow checking has the &quot;shared-xor-mutable&quot; restriction: if you hold a reference to an object, nobody else can change the object.The article makes this sound like a problem. It isn&#x2",
+            "user": "skavi",
+            "text": "what&#x27;s with this driver being coupled to an IDE? is one the psychosis enabled bikeshed of the other?",
             "platform": "HN"
           },
           {
-            "user": "kvark",
-            "text": "It sounds more like &quot;path&quot; borrowing than &quot;group&quot; borrowing to me, but the idea is great! Quite eye opening!One minor thing is that I&#x27;m not sure why they had to have &quot;in&",
+            "user": "bsaul",
+            "text": "can someone explains\n this project ? i understand nothing about what it&#x27;s doing... Do iPads have amd gpus ??",
             "platform": "HN"
           },
           {
-            "user": "verdagon",
-            "text": "Also, as I was writing this, a couple things occurred to me:* We _could_ use the function parameter syntax `entities: &amp;world.entities[]` instead of `entities in world.entities[]`.* &quot;Groups&qu",
+            "user": "terhechte",
+            "text": "Why are there no screenshots of the &quot;IDE&quot;? Would love to see what it looks like, what features it has, etc.",
             "platform": "HN"
           }
         ]
       },
       {
-        "title": "The new Apple TV could have a built-in mic and a remote with a speaker",
-        "url": "https://www.theverge.com/tech/1009397/apple-tv-refresh-built-in-mic-remote-speaker",
-        "summary": "The latest rumors are that the new Apple TV will have a built-in microphone, while the upgraded remote will get a speaker. The mic would let users control the set-top box using Siri without having to speak into the remote or a connected HomePod device. That could also let the Apple TV serve as a [&#8230;]",
-        "published": "2026-10-11 17:31",
+        "title": "Android is the best and worst thing about Googlebooks",
+        "url": "https://www.theverge.com/tech/1008750/googlebooks-android-best-worst-notifications-app-cast-file-sharing",
+        "summary": "My first week with the new Android-powered laptops has been about as rocky as anyone's, but I've slowly learned to like them, even if love still feels a ways off. Every moment that's impressed me has been thanks to Android, whether I've been accessing a native version of a useful app or quickly checking my [&#8230;]",
+        "published": "2026-10-12 14:00",
         "source": "The Verge Tech",
         "icon": "TV",
         "priority": 1,
-        "freshness": 7.7822713475,
+        "freshness": 13.02653807888889,
         "lang": "en",
-        "hotness": 41.9,
+        "hotness": 52.4,
         "hotness_reasons": [
-          "クロスソース:4社"
-        ],
-        "easy": "「The new Apple TV could have a built-in mic and a remote with a speaker」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Will the HomeView be Apple’s first smart home success?",
-        "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
-        "summary": "Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now it seems the product has a name and a launch date.",
-        "published": "2026-10-11 21:14",
-        "source": "TechCrunch HW",
-        "icon": "TC",
-        "priority": 2,
-        "freshness": 4.0564596488888895,
-        "lang": "en",
-        "hotness": 41.6,
-        "hotness_reasons": [
-          "クロスソース:3社"
-        ],
-        "easy": "「Will the HomeView be Apple’s first smart home success?」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
-        "summary": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run powerful models locally to see what they're capable of. Is this tech so useful [&#8230;]",
-        "published": "2026-10-11 11:00",
-        "source": "The Verge Tech",
-        "icon": "TV",
-        "priority": 1,
-        "freshness": 14.30088245861111,
-        "lang": "en",
-        "hotness": 40.4,
-        "hotness_reasons": [
-          "HN関連(10pts)",
+          "HN関連(251pts)",
           "クロスソース:2社"
         ],
-        "easy": "「Learning to use local AI is exciting, overwhelming, and frustrating」についてのニュースです。",
+        "easy": "「Android is the best and worst thing about Googlebooks」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1361,20 +1345,70 @@
         "reactions": []
       },
       {
-        "title": "Developer turns classic Windows Minesweeper into hand-holding 'big-budget, Triple-A’ parody",
-        "url": "https://www.tomshardware.com/video-games/developer-turns-classic-windows-minesweeper-into-hand-holding-big-budget-triple-a-parody-browser-reboot-mocks-modern-gaming-with-chatty-npcs-internal-monologues-and-promised-loot-boxes",
-        "summary": "This reboot of Minesweeper makes it feel like a big budget game created by a massive game studio.",
-        "published": "2026-10-11 12:50",
+        "title": "The Social Reckoning is flopping at the box office",
+        "url": "https://www.theverge.com/entertainment/1009630/social-reckoning-box-office-other-mommy",
+        "summary": "As important as some of the messages in The Social Reckoning are, the movie has been drastically underperforming at the box office. Per Variety, Aaron's Sorkin's follow up to The Social Network only grossed a measly $5.5 million this past weekend against a budget that's somewhere within the $30-42 million range. That would make it [&#8230;]",
+        "published": "2026-10-12 21:20",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 5.6773714122222225,
+        "lang": "en",
+        "hotness": 52.1,
+        "hotness_reasons": [
+          "HN関連(84pts)",
+          "はてブ関連(8ブクマ)",
+          "クロスソース:2社"
+        ],
+        "easy": "「The Social Reckoning is flopping at the box office」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Elon Musk has donated over $276 million to Republican midterm efforts",
+        "url": "https://www.theverge.com/tech/1009604/elon-musk-2026-midterm-republican-donations",
+        "summary": "Elon Musk has handed out at least $276 million to Republican groups since July, The New York Times reports, making him both the party's top known donor and the biggest established midterm donor. $158 million of that money - one of the largest political donations in American history - has been funneled into the Senate [&#8230;]",
+        "published": "2026-10-12 16:52",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 10.144871412222223,
+        "lang": "en",
+        "hotness": 47.4,
+        "hotness_reasons": [
+          "HN関連(110pts)",
+          "クロスソース:3社"
+        ],
+        "easy": "「Elon Musk has donated over $276 million to Republican midterm efforts」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Intel's Crescent Island AI accelerator officially powers new GPU D-Series products",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/intels-crescent-island-ai-accelerator-officially-powers-new-gpu-d-series-products-chip-delivers-1-3-peak-pflops-of-fp8-compute-and-1-5-tb-s-of-memory-bandwidth",
+        "summary": "Intel's Crescent Island AI inference accelerator will come to market as the GPU D-Series family, promising 1.3 PFLOPS of FP8 compute alongside up to 480 GB of LPDDR5X delivering 1.5 TB/s of memory bandwidth.",
+        "published": "2026-10-12 19:48",
         "source": "Tom's Hardware",
         "icon": "TH",
         "priority": 1,
-        "freshness": 12.467406820277779,
+        "freshness": 7.222559275555556,
         "lang": "en",
-        "hotness": 39.9,
+        "hotness": 46.5,
         "hotness_reasons": [
+          "HN関連(92pts)",
           "クロスソース:3社"
         ],
-        "easy": "「Developer turns classic Windows Minesweeper into hand-holding 'big-budget, Triple-A’ parody」についてのニュースです。",
+        "easy": "「Intel's Crescent Island AI accelerator officially powers new GPU D-Series products」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1384,67 +1418,90 @@
         "reactions": []
       },
       {
-        "title": "A college in Illinois tried to cancel its Flock contact and it refused",
-        "url": "https://www.theverge.com/tech/1009411/elgin-community-college-flock-safety-cameras",
-        "summary": "In April of 2025, Elgin Community College had six Flock safety cameras installed to \"enhance the safety and security of students.\" But by September of that year, the school's administration grew concerned that Flock was sharing data with Customs and Border Patrol, that camera feeds were not properly secured, and that both law enforcement and [&#8230;]",
-        "published": "2026-10-11 20:06",
-        "source": "The Verge Tech",
-        "icon": "TV",
-        "priority": 1,
-        "freshness": 5.188938014166666,
-        "lang": "en",
-        "hotness": 39.9,
+        "title": "The baffling intelligence of a single cell (2024)",
+        "url": "https://jsomers.net/e-coli-chemotaxis/",
+        "score": 80,
+        "comments": 1,
+        "hn_id": 50041866,
+        "published": "2026-10-11 11:02",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 46.2,
         "hotness_reasons": [
-          "はてブ関連(10ブクマ)",
-          "クロスソース:1社"
+          "HN:80pts",
+          "クロスソース:2社"
         ],
-        "easy": "「A college in Illinois tried to cancel its Flock contact and it refused」についてのニュースです。",
+        "easy": "「The baffling intelligence of a single cell (2024)」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
           "ニュース"
         ],
         "impact": 50,
-        "reactions": []
+        "reactions": [
+          {
+            "user": "brudgers",
+            "text": "previous comments, https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=39777229",
+            "platform": "HN"
+          }
+        ]
       },
       {
-        "title": "What to expect from Apple’s ‘Welcome Home’ event",
-        "url": "https://www.theverge.com/tech/1009317/apple-what-to-expect-welcome-home",
-        "summary": "We are quickly coming up on Apple's \"Welcome Home\" launch event, where we expect a host of smart home-related announcements. We are expecting refreshes to Apple TV and HomePod Mini, as well as a brand new smart home hub. We could also see the debut of a new platform called homeOS, and some partner devices [&#8230;]",
-        "published": "2026-10-11 13:00",
-        "source": "The Verge Tech",
-        "icon": "TV",
-        "priority": 1,
-        "freshness": 12.30088245861111,
-        "lang": "en",
-        "hotness": 39.9,
+        "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+        "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+        "score": 92,
+        "comments": 36,
+        "hn_id": 50063365,
+        "published": "2026-10-12 21:35",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 46.2,
         "hotness_reasons": [
-          "クロスソース:5社"
+          "HN:92pts",
+          "クロスソース:4社"
         ],
-        "easy": "「What to expect from Apple’s ‘Welcome Home’ event」についてのニュースです。",
+        "easy": "「Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
           "ニュース"
         ],
         "impact": 50,
-        "reactions": []
+        "reactions": [
+          {
+            "user": "K0balt",
+            "text": "These are going to be so awesome to buy in 5-8 years!Right now I’m running 2x 3090 and 128 gb ram on 3.8 flash-next180b (the quant is 97gb) and it hums at120t&#x2F;s. It’s really a surprisingly good m",
+            "platform": "HN"
+          },
+          {
+            "user": "ismailmaj",
+            "text": "1.5 TB&#x2F;s 1.3 PFLOPS with no fast multi-GPU, it&#x27;s a consumer card that pretends to be a server card.It would work great on Qwen3.8-Flash-Next or GLM-5.3 as single user decode only hits a few ",
+            "platform": "HN"
+          },
+          {
+            "user": "suprjami",
+            "text": "With an impressive 1.5TB&#x2F;s RAM bandwidth you&#x27;d think they&#x27;d advertise that more.Marketing department asleep at the wheel.",
+            "platform": "HN"
+          }
+        ]
       },
       {
-        "title": "【やじうまミニレビュー】こういうのでいいんだよ……のはずだった。Amazonベーシック格安USB4ケーブル",
-        "url": "https://pc.watch.impress.co.jp/docs/column/yajiuma-mini-review/2147366.html",
-        "summary": "",
-        "published": "2026-10-11 21:02",
+        "title": "Fitbit初、バッテリ交換できるスマートバンド「Fitbit Edge」、2万6,800円",
+        "url": "https://pc.watch.impress.co.jp/docs/news/2147467.html",
+        "summary": "バッテリを自分で交換できるFitbitが登場した。Googleは、スマートバンド「Google Fitbit Edge」を10月27日に発売する。価格は2万6,800円で、Google Storeではすでに予約を受け付けている。",
+        "published": "2026-10-13 01:05",
         "source": "PC Watch",
         "icon": "JP",
         "priority": 1,
-        "freshness": 4.267889617777778,
+        "freshness": 1.9307529983333331,
         "lang": "ja",
-        "hotness": 29.9,
+        "hotness": 44.9,
         "hotness_reasons": [
-          "はてブ関連(15ブクマ)"
+          "クロスソース:2社"
         ],
-        "easy": "「【やじうまミニレビュー】こういうのでいいんだよ……のはずだった。Amazonベーシック格安USB4ケーブル」についてのニュースです。",
+        "easy": "「Fitbit初、バッテリ交換できるスマートバンド「Fitbit Edge」、2万6,800円」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1454,20 +1511,20 @@
         "reactions": []
       },
       {
-        "title": "CPUのみで動作するリアルタイム多言語音声認識「早耳」、GPUもクラウドAPIも使わずメモリ2GB未満でライブ字幕表示からブラウザ表示・話者ラベル付け・翻訳字幕まで可能",
-        "url": "https://gigazine.net/news/20261011-hayamimi/",
-        "summary": "「Hayamimi(早耳)」はGPUやクラウドAPIに依存せずCPUのみで動作する軽量なリアルタイム多言語音声認識システムです。メモリ2GB未満の環境でもライブ字幕表示・話者ラベル付け・翻訳字幕生成まで対応し、発話中から字幕が出始め話し終えて約100msで確定する高速性が特徴です。続きを読む...",
-        "published": "2026-10-11 03:00",
+        "title": "Googleが税込2万6800円の画面付きフィットネストラッカー「Google Fitbit Edge」を発表、バッテリーは充電1回で最大1週間持続",
+        "url": "https://gigazine.net/news/20261013-google-fitbit-edge/",
+        "summary": "Googleが新型スマートウォッチ「Google Fitbit Edge」を発表しました。多機能なスマートウォッチであるGoogle Pixel Watchと、シンプルで画面を持たないFitbit Airのちょうど中間にあたるスマートウォッチで、1回の充電で1週間持続するバッテリーの持ちが売りとなっています。価格は2万6800円で、発売日は10月27日です。続きを読む...",
+        "published": "2026-10-13 02:10",
         "source": "GIGAZINE",
         "icon": "JP",
         "priority": 2,
-        "freshness": 22.30138685361111,
+        "freshness": 0.8602182636111112,
         "lang": "ja",
-        "hotness": 28.0,
+        "hotness": 34.6,
         "hotness_reasons": [
-          "はてブ関連(164ブクマ)"
+          "クロスソース:2社"
         ],
-        "easy": "「CPUのみで動作するリアルタイム多言語音声認識「早耳」、GPUもクラウドAPIも使わずメモリ2GB未満でライブ字幕表示からブラウザ表示・話者ラベル付け・翻訳字幕まで可能」についてのニュースです。",
+        "easy": "「Googleが税込2万6800円の画面付きフィットネストラッカー「Google Fitbit Edge」を発表、バッテリーは充電1回で最大1週間持続」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1477,18 +1534,20 @@
         "reactions": []
       },
       {
-        "title": "【本日みつけたお買い得品】144Hzの23.8型モニターが1万693円！Amazonでセール中",
-        "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147404.html",
-        "summary": "Amazonで、Xiaomiのモニター4製品がセール価格で販売されている。23.8型フルHD(1,920×1,080ドット)の「A24i」は、直近価格から1,899円引きの1万693円で販売中だ。",
-        "published": "2026-10-11 21:32",
+        "title": "【本日みつけたお買い得品】HPのOffice付きノートが約7万円引き！Amazonプライム感謝祭先行セール",
+        "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147482.html",
+        "summary": "Amazonでは10月16日から19日にかけて、プライム感謝祭が開催されるが、現在はその先行セールを開催している。このセールにおいて、HPのOffice搭載15.6型ノートPC「15-fd」(BJ0M5PA-AAAI)が、直近価格から7万1,669円引きとなる10万9,800円で販売されている。なお、Officeなしモデルは12万4,800円で販売されており、価格が逆転している。",
+        "published": "2026-10-13 01:20",
         "source": "PC Watch",
         "icon": "JP",
         "priority": 1,
-        "freshness": 3.7678896177777776,
+        "freshness": 1.6904752205555555,
         "lang": "ja",
-        "hotness": 19.9,
-        "hotness_reasons": [],
-        "easy": "「【本日みつけたお買い得品】144Hzの23.8型モニターが1万693円！Amazonでセール中」についてのニュースです。",
+        "hotness": 29.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "「【本日みつけたお買い得品】HPのOffice付きノートが約7万円引き！Amazonプライム感謝祭先行セール」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1500,62 +1559,21 @@
     ],
     "funding": [
       {
-        "title": "Nitter: Update Oct 10th seeking funding and legal help",
-        "url": "https://nitter.net",
-        "score": 417,
-        "comments": 223,
-        "hn_id": 50041682,
-        "published": "2026-10-11 10:37",
-        "source": "Hacker News",
-        "icon": "HN",
-        "priority": 0,
-        "hotness": 63.2,
-        "hotness_reasons": [
-          "HN:417pts(注目)",
-          "クロスソース:3社"
-        ],
-        "easy": "「Nitter: Update Oct 10th seeking funding and legal help」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": [
-          {
-            "user": "medler",
-            "text": "This is very clearly an attempt by X to use the legal system to harass people doing perfectly legal things. The chilling effect on speech is the whole point",
-            "platform": "HN"
-          },
-          {
-            "user": "bhouston",
-            "text": "I don’t think nitter can run legally.  It would be like having a proxy for nytimes or cnn.  I think its (or systems like it) only possible future is to acknowledge it doesn’t have a legal future.",
-            "platform": "HN"
-          },
-          {
-            "user": "petcat",
-            "text": "It&#x27;s impossible to know what this &quot;legal advice&quot; was, but it was always a dubious claim.The software project itself is probably fine. The legal risk is always going to be with the perso",
-            "platform": "HN"
-          }
-        ]
-      },
-      {
-        "title": "Why Customer Workflows Are Becoming The Moat In The AI Era",
-        "url": "https://news.crunchbase.com/ma/customer-workflows-moat-ai-era-sagie/",
-        "summary": "AI companies can build durable moats by embedding their products in essential customer workflows, explains tech adviser Itay Sagie, who shares why founders should prioritize measurable customer dependence, while investors and acquirers should assess how integrations, trusted relationships and workflow access can strengthen retention and drive growth.",
-        "published": "2026-10-09 11:00",
-        "source": "Crunchbase News",
-        "icon": "CB",
-        "priority": 1,
-        "freshness": 62.29146367805556,
+        "title": "Efferon wants to eradicate the devastating toll of pediatric sepsis",
+        "url": "https://techcrunch.com/2026/10/11/efferon-wants-to-eradicate-the-devastating-toll-of-pediatric-sepsis/",
+        "summary": "This Battlefield 200 startup has developed blood-purification tech to save children.",
+        "published": "2026-10-11 15:00",
+        "source": "TechCrunch Startups",
+        "icon": "TC",
+        "priority": 2,
+        "freshness": 36.02705084722222,
         "lang": "en",
-        "hotness": 47.1,
+        "hotness": 53.6,
         "hotness_reasons": [
-          "HN関連(44pts)",
-          "はてブ関連(76ブクマ)",
-          "クロスソース:11社"
+          "HN関連(476pts)",
+          "クロスソース:5社"
         ],
-        "easy": "「Why Customer Workflows Are Becoming The Moat In The AI Era」についてのニュースです。",
+        "easy": "「Efferon wants to eradicate the devastating toll of pediatric sepsis」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1572,14 +1590,132 @@
         "source": "TechCrunch VC",
         "icon": "TC",
         "priority": 1,
-        "freshness": 85.30142041444444,
+        "freshness": 111.02690011083332,
         "lang": "en",
-        "hotness": 42.4,
+        "hotness": 50.6,
         "hotness_reasons": [
-          "HN関連(150pts)",
-          "クロスソース:5社"
+          "HN関連(314pts)",
+          "クロスソース:6社"
         ],
         "easy": "「Vesta raises $30M to bring swarms of agents to mortgage lenders」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "There Was Never An Easy AI Era, And Investors Are Raising The Bar",
+        "url": "https://news.crunchbase.com/venture/ai-startup-investors-raising-bar-ipo-farid-leo/",
+        "summary": "As AI IPOs bring greater scrutiny, argues guest author Maor Farid, founder and CEO of Leo AI, investors will increasingly prioritize customer spending growth, sustainable margins and deployment efficiency over rapid revenue growth alone.",
+        "published": "2026-10-07 11:00",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "priority": 1,
+        "freshness": 136.01086625305555,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "はてブ関連(8ブクマ)",
+          "クロスソース:8社"
+        ],
+        "easy": "「There Was Never An Easy AI Era, And Investors Are Raising The Bar」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "North America’s Startup Funding Falls In Q3 As AI Giants Eye The Public Markets",
+        "url": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/",
+        "summary": "In total, investors poured $92 billion into seed- through growth-stage rounds for U.S. and Canadian startups in the third quarter, per Crunchbase data. That’s a 35% decline from the prior quarter but up 50% from year-ago levels.",
+        "published": "2026-10-07 11:00",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "priority": 1,
+        "freshness": 136.02558847527777,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "はてブ関連(8ブクマ)",
+          "クロスソース:6社"
+        ],
+        "easy": "「North America’s Startup Funding Falls In Q3 As AI Giants Eye The Public Markets」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Why Customer Workflows Are Becoming The Moat In The AI Era",
+        "url": "https://news.crunchbase.com/ma/customer-workflows-moat-ai-era-sagie/",
+        "summary": "AI companies can build durable moats by embedding their products in essential customer workflows, explains tech adviser Itay Sagie, who shares why founders should prioritize measurable customer dependence, while investors and acquirers should assess how integrations, trusted relationships and workflow access can strengthen retention and drive growth.",
+        "published": "2026-10-09 11:00",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "priority": 1,
+        "freshness": 88.01697736416666,
+        "lang": "en",
+        "hotness": 40.5,
+        "hotness_reasons": [
+          "HN関連(111pts)",
+          "クロスソース:10社"
+        ],
+        "easy": "「Why Customer Workflows Are Becoming The Moat In The AI Era」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings",
+        "url": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
+        "summary": "Tomorrow at 8 a.m. PT, it all begins z— 10,000+ founders, investors, and tech operators will gather at San Francisco’s Moscone West for TechCrunch Disrupt 2026 for three days of ideas, connections, and startups shaping what comes next. This is your last 24 hours to secure ticket savings of up to $100, and get 50% off a second.",
+        "published": "2026-10-12 14:00",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 13.026900110833333,
+        "lang": "en",
+        "hotness": 39.9,
+        "hotness_reasons": [
+          "クロスソース:2社"
+        ],
+        "easy": "「TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "WindBorne wins a hefty US Air Force contract for its balloon data",
+        "url": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+        "summary": "A Silicon Valley startup that uses weather balloons and AI to predict the weather won a U.S. military contract worth almost $50 million.",
+        "published": "2026-10-12 17:19",
+        "source": "TechCrunch Startups",
+        "icon": "TC",
+        "priority": 2,
+        "freshness": 9.706495291666666,
+        "lang": "en",
+        "hotness": 38.6,
+        "hotness_reasons": [
+          "クロスソース:2社"
+        ],
+        "easy": "「WindBorne wins a hefty US Air Force contract for its balloon data」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1596,11 +1732,11 @@
         "source": "TechCrunch VC",
         "icon": "TC",
         "priority": 1,
-        "freshness": 6.301420414444444,
+        "freshness": 32.02690011083333,
         "lang": "en",
-        "hotness": 41.9,
+        "hotness": 36.9,
         "hotness_reasons": [
-          "クロスソース:4社"
+          "クロスソース:3社"
         ],
         "easy": "「48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
@@ -1619,9 +1755,9 @@
         "source": "TechCrunch VC",
         "icon": "TC",
         "priority": 1,
-        "freshness": 7.407809303333334,
+        "freshness": 33.13328899972222,
         "lang": "en",
-        "hotness": 41.9,
+        "hotness": 36.9,
         "hotness_reasons": [
           "クロスソース:3社"
         ],
@@ -1635,114 +1771,20 @@
         "reactions": []
       },
       {
-        "title": "The founder’s guide to TechCrunch Disrupt 2026: Everything you need to know",
-        "url": "https://techcrunch.com/2026/10/11/the-founders-guide-to-techcrunch-disrupt-2026-everything-you-need-to-know/",
-        "summary": "TechCrunch Disrupt 2026 is built around one question: How do you build an enduring company in the AI era? Our programming and speaker lineup reflect that.",
-        "published": "2026-10-12 00:59",
+        "title": "Smart ring maker Ultrahuman to roll out biological-age model across UAE",
+        "url": "https://techcrunch.com/2026/10/12/smart-ring-maker-ultrahuman-to-roll-out-biological-age-model-across-uae/",
+        "summary": "Ultrahuman and Abu Dhabi will spend the next two years working on research and clinical validation of the model.",
+        "published": "2026-10-12 14:09",
         "source": "TechCrunch Startups",
         "icon": "TC",
         "priority": 2,
-        "freshness": 0.3178984788888889,
+        "freshness": 12.867606402777778,
         "lang": "en",
-        "hotness": 41.6,
-        "hotness_reasons": [
-          "クロスソース:3社"
-        ],
-        "easy": "「The founder’s guide to TechCrunch Disrupt 2026: Everything you need to know」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Active Investors Kept Up The Deal Pace In Q3, Even As Funding Fell",
-        "url": "https://news.crunchbase.com/venture/q3-2026-active-investors-kept-deal-pace-a16z-insight-sequoia/",
-        "summary": "Active startup investors largely kept up or increased their dealmaking pace in the third quarter, even as overall venture funding declined with the absence of new record megarounds for AI leaders.",
-        "published": "2026-10-09 11:00",
-        "source": "Crunchbase News",
-        "icon": "CB",
-        "priority": 1,
-        "freshness": 62.285908122500004,
-        "lang": "en",
-        "hotness": 39.9,
-        "hotness_reasons": [
-          "HN関連(417pts)",
-          "クロスソース:1社"
-        ],
-        "easy": "「Active Investors Kept Up The Deal Pace In Q3, Even As Funding Fell」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "Dawn Myers is making it easier to style, detangle, and care for curly hair",
-        "url": "https://techcrunch.com/2026/10/11/dawn-myers-is-making-it-easier-to-style-detangle-and-care-for-curly-hair/",
-        "summary": "Richualist is one of TechCrunch's Battlefield 200 Companies!",
-        "published": "2026-10-11 16:00",
-        "source": "TechCrunch Startups",
-        "icon": "TC",
-        "priority": 2,
-        "freshness": 9.301509589999998,
-        "lang": "en",
-        "hotness": 38.6,
-        "hotness_reasons": [
-          "クロスソース:7社"
-        ],
-        "easy": "「Dawn Myers is making it easier to style, detangle, and care for curly hair」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "There Was Never An Easy AI Era, And Investors Are Raising The Bar",
-        "url": "https://news.crunchbase.com/venture/ai-startup-investors-raising-bar-ipo-farid-leo/",
-        "summary": "As AI IPOs bring greater scrutiny, argues guest author Maor Farid, founder and CEO of Leo AI, investors will increasingly prioritize customer spending growth, sustainable margins and deployment efficiency over rapid revenue growth alone.",
-        "published": "2026-10-07 11:00",
-        "source": "Crunchbase News",
-        "icon": "CB",
-        "priority": 1,
-        "freshness": 110.28535256694444,
-        "lang": "en",
-        "hotness": 37.1,
-        "hotness_reasons": [
-          "HN関連(44pts)",
-          "クロスソース:10社"
-        ],
-        "easy": "「There Was Never An Easy AI Era, And Investors Are Raising The Bar」についてのニュースです。",
-        "why": "テック業界の動向を把握するために注目されています。",
-        "glossary": [],
-        "tags": [
-          "ニュース"
-        ],
-        "impact": 50,
-        "reactions": []
-      },
-      {
-        "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
-        "url": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
-        "summary": "TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ sessions. Register before doors open to save up to $100 and get a second pass at 50% off.",
-        "published": "2026-10-10 15:00",
-        "source": "TechCrunch VC",
-        "icon": "TC",
-        "priority": 1,
-        "freshness": 34.30142041444444,
-        "lang": "en",
-        "hotness": 36.9,
+        "hotness": 36.6,
         "hotness_reasons": [
           "クロスソース:4社"
         ],
-        "easy": "「3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream」についてのニュースです。",
+        "easy": "「Smart ring maker Ultrahuman to roll out biological-age model across UAE」についてのニュースです。",
         "why": "テック業界の動向を把握するために注目されています。",
         "glossary": [],
         "tags": [
@@ -1755,81 +1797,43 @@
   },
   "hn_top": [
     {
-      "title": "Whatever became of holography? (2011)",
-      "url": "https://www.americanscientist.org/article/whatever-became-of-holography",
-      "score": 48,
-      "comments": 15,
-      "hn_id": 50049411,
-      "published": "2026-10-11 23:50",
+      "title": "Leaving Tech",
+      "url": "https://ryanbigg.com/2026/10/leaving-tech",
+      "score": 55,
+      "comments": 28,
+      "hn_id": 50065892,
+      "published": "2026-10-13 02:39",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
     },
     {
-      "title": "Total Annihilation, rebuilt for modern computers",
-      "url": "https://nanolathe.gg",
-      "score": 357,
-      "comments": 148,
-      "hn_id": 50045984,
-      "published": "2026-10-11 18:04",
+      "title": "GLM-Legal",
+      "url": "https://z.ai/blog/glm-legal",
+      "score": 460,
+      "comments": 259,
+      "hn_id": 50058507,
+      "published": "2026-10-12 16:11",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
     },
     {
-      "title": "Cartographers of North Korea (2019)",
-      "url": "https://cartographers-nk.wonyoung.so/",
-      "score": 174,
-      "comments": 31,
-      "hn_id": 50047091,
-      "published": "2026-10-11 19:46",
-      "source": "Hacker News",
-      "icon": "HN",
-      "priority": 0
-    },
-    {
-      "title": "Fingerprints Are the New Cookies",
-      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
-      "score": 57,
-      "comments": 21,
-      "hn_id": 50048642,
-      "published": "2026-10-11 22:33",
-      "source": "Hacker News",
-      "icon": "HN",
-      "priority": 0
-    },
-    {
-      "title": "Recursive self-improvement through collective intelligence",
-      "url": "https://pub.sakana.ai/mass/",
-      "score": 52,
-      "comments": 20,
-      "hn_id": 50048522,
-      "published": "2026-10-11 22:22",
+      "title": "The baffling intelligence of a single cell (2024)",
+      "url": "https://jsomers.net/e-coli-chemotaxis/",
+      "score": 80,
+      "comments": 1,
+      "hn_id": 50041866,
+      "published": "2026-10-11 11:02",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0,
-      "hotness": 39.2,
+      "hotness": 46.2,
       "hotness_reasons": [
-        "HN:52pts",
+        "HN:80pts",
         "クロスソース:2社"
-      ]
-    },
-    {
-      "title": "The gap in shared understanding of LLM capability is widening",
-      "url": "https://twitter.com/karpathy/status/2109361546505966046",
-      "score": 230,
-      "comments": 368,
-      "hn_id": 50047422,
-      "published": "2026-10-11 20:20",
-      "source": "Hacker News",
-      "icon": "HN",
-      "priority": 0,
-      "hotness": 53.2,
-      "hotness_reasons": [
-        "HN:230pts",
-        "クロスソース:1社"
       ],
-      "easy": "「The gap in shared understanding of LLM capability is widening」についてのニュースです。",
+      "easy": "「The baffling intelligence of a single cell (2024)」についてのニュースです。",
       "why": "テック業界の動向を把握するために注目されています。",
       "glossary": [],
       "tags": [
@@ -1838,78 +1842,164 @@
       "impact": 50,
       "reactions": [
         {
-          "user": "frereubu",
-          "text": "https:&#x2F;&#x2F;xxcancel.com&#x2F;karpathy&#x2F;status&#x2F;2109361546505966046",
-          "platform": "HN"
-        },
-        {
-          "user": "nsainsbury",
-          "text": "It&#x27;s actually sad how much AI has either not improved life at all or actively made it worse from the perspective of the average person:Your car is still the same.\nYour dishwasher is still the sam",
-          "platform": "HN"
-        },
-        {
-          "user": "rico735",
-          "text": "Don&#x27;t think the 0.2% really are in agreement that &quot;large, complex projects that used to take them weeks&#x2F;months can now be completed by agents with a prompt&quot;.The divide seems to be ",
+          "user": "brudgers",
+          "text": "previous comments, https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=39777229",
           "platform": "HN"
         }
       ]
     },
     {
-      "title": "Illustration Beyond Proof",
-      "url": "https://terrytao.wordpress.com/2026/10/11/illustration-beyond-proof/",
-      "score": 17,
-      "comments": 0,
-      "hn_id": 50049133,
-      "published": "2026-10-11 23:22",
+      "title": "Who is vfmaddrnd231pd?",
+      "url": "https://purplesyringa.moe/blog/who-is-vfmaddrnd231pd/",
+      "score": 133,
+      "comments": 13,
+      "hn_id": 50063138,
+      "published": "2026-10-12 21:12",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
     },
     {
-      "title": "Ask HN: Do you want a router that has DD-WRT pre-installed?",
-      "url": "https://news.ycombinator.com/item?id=50039291",
-      "score": 23,
-      "comments": 24,
-      "hn_id": 50039291,
-      "published": "2026-10-11 02:37",
+      "title": "A Modern Web App in C",
+      "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
+      "score": 421,
+      "comments": 172,
+      "hn_id": 50058528,
+      "published": "2026-10-12 16:13",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
     },
     {
-      "title": "Terence Tao: Math 2.0 [pdf]",
-      "url": "https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf",
-      "score": 315,
-      "comments": 368,
-      "hn_id": 50043026,
-      "published": "2026-10-11 13:16",
+      "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+      "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+      "score": 92,
+      "comments": 36,
+      "hn_id": 50063365,
+      "published": "2026-10-12 21:35",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 46.2,
+      "hotness_reasons": [
+        "HN:92pts",
+        "クロスソース:4社"
+      ],
+      "easy": "「Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X」についてのニュースです。",
+      "why": "テック業界の動向を把握するために注目されています。",
+      "glossary": [],
+      "tags": [
+        "ニュース"
+      ],
+      "impact": 50,
+      "reactions": [
+        {
+          "user": "K0balt",
+          "text": "These are going to be so awesome to buy in 5-8 years!Right now I’m running 2x 3090 and 128 gb ram on 3.8 flash-next180b (the quant is 97gb) and it hums at120t&#x2F;s. It’s really a surprisingly good m",
+          "platform": "HN"
+        },
+        {
+          "user": "ismailmaj",
+          "text": "1.5 TB&#x2F;s 1.3 PFLOPS with no fast multi-GPU, it&#x27;s a consumer card that pretends to be a server card.It would work great on Qwen3.8-Flash-Next or GLM-5.3 as single user decode only hits a few ",
+          "platform": "HN"
+        },
+        {
+          "user": "suprjami",
+          "text": "With an impressive 1.5TB&#x2F;s RAM bandwidth you&#x27;d think they&#x27;d advertise that more.Marketing department asleep at the wheel.",
+          "platform": "HN"
+        }
+      ]
+    },
+    {
+      "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+      "score": 476,
+      "comments": 680,
+      "hn_id": 50055304,
+      "published": "2026-10-12 12:16",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 56.2,
+      "hotness_reasons": [
+        "HN:476pts(注目)",
+        "クロスソース:2社"
+      ],
+      "easy": "「Hackers activate automatic defrosting in supermarket fridges across Europe」についてのニュースです。",
+      "why": "テック業界の動向を把握するために注目されています。",
+      "glossary": [],
+      "tags": [
+        "ニュース"
+      ],
+      "impact": 50,
+      "reactions": [
+        {
+          "user": "9x39",
+          "text": "If you believe some of the emerging comments out there - try &quot;Danfoss CVE&quot; - you&#x27;ll see that some of the suspects are 15-20 year old controllers like the Danfoss SM800 (EOS 2021) and SC",
+          "platform": "HN"
+        },
+        {
+          "user": "alexpotato",
+          "text": "Was just talking to a lab tech at a hospital.It seems that some of the newer lab machines require internet access because you can&#x27;t run lab tests unless you have a paid subscription to use the ma",
+          "platform": "HN"
+        },
+        {
+          "user": "renyicircle",
+          "text": "&gt; Connecting your case controller to the internet offers further opportunities to generate savings. If you can diagnose issues and control the case remotely, service engineers needn’t be called out",
+          "platform": "HN"
+        }
+      ]
+    },
+    {
+      "title": "Auto Research: Integer multiplication below n log n",
+      "url": "https://app.getsupers.com/auto-research",
+      "score": 24,
+      "comments": 3,
+      "hn_id": 50047664,
+      "published": "2026-10-11 20:48",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
     },
     {
-      "title": "So, You’d Like To Sell Your Print Issues Of The Onion?",
-      "url": "https://theonion.com/archivehunt/",
-      "score": 242,
-      "comments": 32,
-      "hn_id": 50047055,
-      "published": "2026-10-11 19:43",
+      "title": "Making big downloads resumable in Firefox",
+      "url": "https://lunarwatcher.codeberg.page/til/firefox/resumable-big-downloads.html",
+      "score": 110,
+      "comments": 42,
+      "hn_id": 50061791,
+      "published": "2026-10-12 19:36",
       "source": "Hacker News",
       "icon": "HN",
       "priority": 0
+    },
+    {
+      "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+      "url": "https://github.com/prabanta-dev/janas",
+      "score": 50,
+      "comments": 20,
+      "hn_id": 50063717,
+      "published": "2026-10-12 22:05",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 39.2,
+      "hotness_reasons": [
+        "HN:50pts",
+        "クロスソース:2社"
+      ]
     }
   ],
   "breaking": [
     {
-      "text": "「I paid people to try and follow my README」についてのニュースです。",
+      "text": "「Meta has some Wonder Full new AI models」についてのニュースです。",
       "level": "orange"
     },
     {
-      "text": "「AI Is Getting Really Good at Messing With Cybercriminals」についてのニュースです。",
+      "text": "「AI coding agents generate more code, but not more software」についてのニュースです。",
       "level": "orange"
     },
     {
-      "text": "「3rd Yandex Cloud Data Center Was Hit」についてのニュースです。",
+      "text": "「Honeyjar offers AI tools to improve PR and comms at every company」についてのニュースです。",
       "level": "orange"
     }
   ]
