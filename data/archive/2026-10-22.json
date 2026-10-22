@@ -1,0 +1,2052 @@
+{
+  "updated_at": "2026-10-22 09:43 JST",
+  "updated_utc": "2026-10-22T00:43:11Z",
+  "tabs": {
+    "ai": [
+      {
+        "title": "Meta says Muse has over 10M users, with shopping a top activity",
+        "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+        "summary": "Meta Muse users are adopting the app for shopping and personal productivity, the company said during Q3 earnings. The AI app now has over 10M users.",
+        "published": "2026-10-21 21:14",
+        "source": "TechCrunch AI",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 3.4220455669444445,
+        "lang": "en",
+        "hotness": 74.9,
+        "hotness_reasons": [
+          "HN関連(663pts)",
+          "はてブ関連(69ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "「Meta says Muse has over 10M users, with shopping a top activity」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Railway Security Disclosure",
+        "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+        "score": 266,
+        "comments": 120,
+        "hn_id": 50188228,
+        "published": "2026-10-21 21:58",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 63.2,
+        "hotness_reasons": [
+          "HN:266pts",
+          "はてブ関連(69ブクマ)",
+          "クロスソース:3社"
+        ],
+        "easy": "「Railway Security Disclosure」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "vldszn",
+            "text": "Crazy day for cybersecurity: PHP RCE, eMudhra certificates, and now Railway.And it’s all just getting started imo.https:&#x2F;&#x2F;blog.cloudflare.com&#x2F;emudhra-certificate-compromisehttps:&#x2F;&",
+            "platform": "HN"
+          },
+          {
+            "user": "theturtletalks",
+            "text": "Postiz founder posted on X that his service is being brought down, his keys were already used and Railway was quiet about this until he spoke up:https:&#x2F;&#x2F;x.com&#x2F;wickedguro&#x2F;status&#x2",
+            "platform": "HN"
+          },
+          {
+            "user": "fbrncci",
+            "text": "Right just as I take my first day off (for the entire year!) from work to fly out for a vacation. The mother of all security bombs starts dropping all around stacks and services that I am responsible ",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+        "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+        "score": 423,
+        "comments": 131,
+        "hn_id": 50181114,
+        "published": "2026-10-21 14:00",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 63.2,
+        "hotness_reasons": [
+          "HN:423pts(注目)",
+          "クロスソース:2社"
+        ],
+        "easy": "「Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "linsomniac",
+            "text": "Just going to remind you all that https:&#x2F;&#x2F;canarytokens.org&#x2F; exists.",
+            "platform": "HN"
+          },
+          {
+            "user": "crossroadsguy",
+            "text": "All the sandbox-exec and all the Lulu rules are not going to protect against something like this.At one point permission pop-up fatigue sets in we start giving any permission as if it&#x27;s normal. W",
+            "platform": "HN"
+          },
+          {
+            "user": "rsanheim",
+            "text": "This is the second significant exploit against LiteLLM in what, a year or two ? Just last night I came across notes and a script from an older claude session to help audit all project dependencies and",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+        "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+        "score": 228,
+        "comments": 154,
+        "hn_id": 50181175,
+        "published": "2026-10-21 14:03",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 63.2,
+        "hotness_reasons": [
+          "HN:228pts",
+          "はてブ関連(17ブクマ)",
+          "クロスソース:4社"
+        ],
+        "easy": "「Patch the Planet: global response coordination as agents uncover vulnerabilities」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "digitaltrees",
+            "text": "Hey world, we created this problem, and it will hurt all of you whether you use it or not. The good thing is there is a solution: if you pay us a lot of money we can try to fix it. The only problem is",
+            "platform": "HN"
+          },
+          {
+            "user": "alper",
+            "text": "&gt; How can we help identify and fix vulnerabilities in downstream packages while upstream fixes are pending, or backport fixes to older versions that no longer receive security updates?Is the compan",
+            "platform": "HN"
+          },
+          {
+            "user": "ptmkenny",
+            "text": "The first sentence of &quot;Coordinating a global response&quot; is &quot;Getting a fix into use can mean adapting it for older releases&quot;... but I guess they mean &quot;only supported releases&qu",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "AI Guardrails Aren’t Stopping Criminal Hackers",
+        "url": "https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/",
+        "summary": "Hackers around the world are all-in on using agentic AI to wage attacks—and manipulating tools like Anthropic’s Claude to help them carry out their crimes.",
+        "published": "2026-10-21 14:00",
+        "source": "WIRED AI",
+        "icon": "WD",
+        "priority": 2,
+        "freshness": 10.660899326666666,
+        "lang": "en",
+        "hotness": 60.0,
+        "hotness_reasons": [
+          "HN関連(227pts)",
+          "はてブ関連(7ブクマ)",
+          "クロスソース:3社"
+        ],
+        "easy": "「AI Guardrails Aren’t Stopping Criminal Hackers」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Claude Duet",
+        "url": "https://claude.com/product/claude-duet",
+        "score": 300,
+        "comments": 254,
+        "hn_id": 50186037,
+        "published": "2026-10-21 19:14",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 58.2,
+        "hotness_reasons": [
+          "HN:300pts(注目)",
+          "はてブ関連(7ブクマ)",
+          "クロスソース:1社"
+        ],
+        "easy": "「Claude Duet」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "TheAceOfHearts",
+            "text": "Man these big AI labs have such terrible UX and integration. Signing up for this waitlist should be something you can request from your Claude chat session. You already have all of my relevant informa",
+            "platform": "HN"
+          },
+          {
+            "user": "intenex",
+            "text": "Powered by Opus 5.5 is incredible.I&#x27;ve been using ChatGPT Dot over Meta Muse&#x2F;Instinct&#x2F;Grok Bot because it&#x27;s been powered by Astra and I find having a personal assistant that&#x27;s",
+            "platform": "HN"
+          },
+          {
+            "user": "ttul",
+            "text": "I suspect that Dots and Duet are very high margin drivers for the labs. Personal assistant chat sessions don’t have to be realtime, so workloads can be scheduled on low priority batches and be waited ",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "OpenAI models are coming to Google Cloud",
+        "url": "https://openai.com/index/openai-models-google-cloud",
+        "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+        "published": "2026-10-21 12:00",
+        "source": "OpenAI Blog",
+        "icon": "O",
+        "priority": 2,
+        "freshness": 12.661119855555555,
+        "lang": "en",
+        "hotness": 58.0,
+        "hotness_reasons": [
+          "HN関連(227pts)",
+          "はてブ関連(7ブクマ)",
+          "クロスソース:7社"
+        ],
+        "easy": "「OpenAI models are coming to Google Cloud」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "PHPの重大脆弱性「PHP2Shell」はセキュリティ企業のCalifとWizがAIを用いて発見しOpenAIの枠組みを使って対策したことが判明",
+        "url": "https://gigazine.net/news/20261022-php2shell-wiz-openai-calif/",
+        "summary": "プログラミング言語のPHPに「PHP2Shell」と呼ばれる重大な脆弱性が見つかり、緊急アップデートがリリースされました。「PHP2Shell」の2つの脆弱性は、セキュリティ企業のCalifとWizがそれぞれ独立して2026年8月に発見していたことが報告されています。続きを読む...",
+        "published": "2026-10-21 15:06",
+        "source": "GIGAZINE",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 9.561580785277778,
+        "lang": "ja",
+        "hotness": 48.6,
+        "hotness_reasons": [
+          "はてブ関連(91ブクマ)",
+          "クロスソース:8社"
+        ],
+        "easy": "「PHPの重大脆弱性「PHP2Shell」はセキュリティ企業のCalifとWizがAIを用いて発見しOpenAIの枠組みを使って対策したことが判明」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Google Cloudに「Astra」含むOpenAIのモデルが追加　「主要3社のクローズドモデル使える唯一のハイパースケーラー」に",
+        "url": "https://www.itmedia.co.jp/aiplus/article/2610/22/2000002487/",
+        "summary": "Google CloudのModel GardenにOpenAIの「GPT-6 Astra」「GPT-6.1 Sol」「GPT-6 Luna」が追加された。",
+        "published": "2026-10-21 23:59",
+        "source": "ITmedia AI+",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 0.6673821769444445,
+        "lang": "ja",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
+        "easy": "「Google Cloudに「Astra」含むOpenAIのモデルが追加　「主要3社のクローズドモデル使える唯一のハイパースケーラー」に」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "旧世代NVIDIAを循環利用、クラウド接続の「自社専用AI基盤」を1GPUから提供",
+        "url": "https://monoist.itmedia.co.jp/mn/articles/2610/22/news039.html",
+        "summary": "エクストリームーDら3社は、中古GPUを活用したAIインフラサービス「Raplase RCA」を開始した。最短即日かつ1GPUから定額利用でき、柔軟な構成変更にも対応する。機密データを扱う製造業が求める「プライベートAI」を低コストで実現する。",
+        "published": "2026-10-21 21:45",
+        "source": "ITmedia AI+",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 2.911548843611111,
+        "lang": "ja",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:4社"
+        ],
+        "easy": "「旧世代NVIDIAを循環利用、クラウド接続の「自社専用AI基盤」を1GPUから提供」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      }
+    ],
+    "devtools": [
+      {
+        "title": "Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds",
+        "url": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
+        "score": 831,
+        "comments": 400,
+        "hn_id": 50177916,
+        "published": "2026-10-21 09:08",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 68.2,
+        "hotness_reasons": [
+          "HN:831pts(超注目)",
+          "クロスソース:3社"
+        ],
+        "easy": "「Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "john_strinlai",
+            "text": "new email from wayne, who is the original reporter:&quot;I&#x27;ve had more than a few emails asking on how this was discovered. The simple answer is: https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;par",
+            "platform": "HN"
+          },
+          {
+            "user": "jlmorton",
+            "text": "In retrospect, having 100 trusted certificate authorities might have been excessive.",
+            "platform": "HN"
+          },
+          {
+            "user": "jasonjayr",
+            "text": "&gt; It&#x27;s fortunate that the steps required here aren&#x27;t particularly complicated for the devices you can update, and the advice essentially boils down to &#x27;update them&#x27;. The problem",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "AI found flaws in the code behind 70% of the web. The fix took two months.",
+        "url": "https://thenewstack.io/ai-php2shell-disclosure-framework/",
+        "summary": "PHP powers roughly 70% of the world&#8217;s websites, according to Wiz Research, so a flaw in its core engine affects\nThe post AI found flaws in the code behind 70% of the web. The fix took two months. appeared first on The New Stack.",
+        "published": "2026-10-21 22:17",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 2.3767710405555555,
+        "lang": "en",
+        "hotness": 54.9,
+        "hotness_reasons": [
+          "はてブ関連(13ブクマ)",
+          "クロスソース:3社"
+        ],
+        "easy": "「AI found flaws in the code behind 70% of the web. The fix took two months.」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Amodei says Anthropic’s safety delay may have cost it an AI lead",
+        "url": "https://thenewstack.io/anthropic-mythos-safety-pace/",
+        "summary": "Anthropic first released Mythos-class models in February 2026, but CEO Dario Amodei said it delayed broader access until June to\nThe post Amodei says Anthropic’s safety delay may have cost it an AI lead appeared first on The New Stack.",
+        "published": "2026-10-21 21:22",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 3.2806599294444445,
+        "lang": "en",
+        "hotness": 54.9,
+        "hotness_reasons": [
+          "はてブ関連(69ブクマ)",
+          "クロスソース:8社"
+        ],
+        "easy": "「Amodei says Anthropic’s safety delay may have cost it an AI lead」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "eMudhra Intermediate CA Compromise",
+        "url": "https://www.infoq.com/news/2026/10/emudhra-ca-compromise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "Private keys for eight eMudhra intermediate CA certificates have been compromised, allowing attackers to forge certificates for any site. The keys were revealed due to low entropy, not through a known breach. Browsers blocked them using revocation lists, but other software had to remove the emSign ECC G3 root. Unpatched systems remain exposed to forged certificates, including client auth and mTLS. By Chris Swan",
+        "published": "2026-10-21 17:30",
+        "source": "InfoQ",
+        "icon": "IQ",
+        "priority": 1,
+        "freshness": 7.161912468888889,
+        "lang": "en",
+        "hotness": 54.5,
+        "hotness_reasons": [
+          "HN関連(53pts)",
+          "はてブ関連(7ブクマ)",
+          "クロスソース:4社"
+        ],
+        "easy": "「eMudhra Intermediate CA Compromise」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Cloudflare、TypeScriptをRustに移植した「tsrs」を発表。TypeScript 7より最大で70％少ないメモリで8倍速。今後、LSPなどTypeScriptの全機能をサポート予定",
+        "url": "https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html",
+        "summary": "Cloudflareは、TypeScriptをRustに移植した「tsrs」を発表しました。 下記は、Cloudflareに買収されたVoidZeroによるtsrsに関するポストです。VoidZeroもこのtsrsの開発に関わっています。 ...",
+        "published": "2026-10-21 15:42",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 8.9527365275,
+        "lang": "ja",
+        "hotness": 51.9,
+        "hotness_reasons": [
+          "はてブ関連(33ブクマ)",
+          "クロスソース:2社"
+        ],
+        "easy": "「Cloudflare、TypeScriptをRustに移植した「tsrs」を発表。TypeScript 7より最大で70％少ないメモリで8倍速。今後、LSPなどTypeScriptの全機能をサポート予定」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "PHPの「重大」脆弱性はAIが見つけた　「GPT-5.6 Solで発見」とOpenAI　「今後、AIによる脆弱性発見が急増」",
+        "url": "https://www.itmedia.co.jp/news/article/2610/22/2000002486/",
+        "summary": "",
+        "published": "2026-10-21 23:27",
+        "source": "ITmedia News",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 1.1981449044444445,
+        "lang": "ja",
+        "hotness": 51.6,
+        "hotness_reasons": [
+          "はてブ関連(4ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "「PHPの「重大」脆弱性はAIが見つけた　「GPT-5.6 Solで発見」とOpenAI　「今後、AIによる脆弱性発見が急増」」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Article Series: Agentic AI Architecture",
+        "url": "https://www.infoq.com/articles/agentic-ai-architecture-article-series/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+        "summary": "In this article series, we try to establish agentic AI architecture as a new type of software architecture that will likely dominate the industry for years to come. The articles, written by industry experts, cover various elements and aspects of agentic AI architecture. We aim to present the latest trends and developments shaping the new type of architecture as it enters the mainstream. By Rafał Gancarz",
+        "published": "2026-10-21 11:30",
+        "source": "InfoQ",
+        "icon": "IQ",
+        "priority": 1,
+        "freshness": 13.16191246888889,
+        "lang": "en",
+        "hotness": 50.2,
+        "hotness_reasons": [
+          "HN関連(7pts)",
+          "はてブ関連(17ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "「Article Series: Agentic AI Architecture」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Nvidia bets open models can give enterprise AI agents the context they’re missing",
+        "url": "https://thenewstack.io/nvidia-agent-knowledge-foundation/",
+        "summary": "Every enterprise company is currently trying to figure out how to have its AI tools work with its data. Meanwhile,\nThe post Nvidia bets open models can give enterprise AI agents the context they’re missing appeared first on The New Stack.",
+        "published": "2026-10-21 11:30",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 13.162048818333332,
+        "lang": "en",
+        "hotness": 48.2,
+        "hotness_reasons": [
+          "HN関連(166pts)",
+          "クロスソース:11社"
+        ],
+        "easy": "「Nvidia bets open models can give enterprise AI agents the context they’re missing」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AI sped up coding. Sonar instills confidence with verification.",
+        "url": "https://thenewstack.io/ai-coding-verification-loops/",
+        "summary": "AI coding tools can produce a striking burst of productivity &#8212; but the initial surge may not last. A Carnegie\nThe post AI sped up coding. Sonar instills confidence with verification. appeared first on The New Stack.",
+        "published": "2026-10-21 13:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 11.662048818333332,
+        "lang": "en",
+        "hotness": 47.2,
+        "hotness_reasons": [
+          "HN関連(107pts)",
+          "クロスソース:10社"
+        ],
+        "easy": "「AI sped up coding. Sonar instills confidence with verification.」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "PHP緊急脆弱性「php2shell」パッチ今夜11時公開、その前にできる対策は……GMO系セキュリティ企業が提唱【更新】",
+        "url": "https://www.itmedia.co.jp/news/article/2610/21/2000002462/",
+        "summary": "GMO Flatt Securityは、脆弱性を「メモリ破壊系バグ」と推定。今回の脆弱性が同社の独自調査の結果と一致していれば、PHPのSession Upload Progress機能に関わるものだとみる。【更新】",
+        "published": "2026-10-21 09:51",
+        "source": "ITmedia News",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 14.801756015555556,
+        "lang": "ja",
+        "hotness": 46.6,
+        "hotness_reasons": [
+          "はてブ関連(91ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "「PHP緊急脆弱性「php2shell」パッチ今夜11時公開、その前にできる対策は……GMO系セキュリティ企業が提唱【更新】」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      }
+    ],
+    "data_dx": [
+      {
+        "title": "Introducing Agent Memory on Databricks",
+        "url": "https://www.databricks.com/blog/introducing-agent-memory-databricks",
+        "summary": "Today we're introducing agent memory on Agent Bricks, Databricks' agent developer...",
+        "published": "2026-10-20 17:26",
+        "source": "Databricks",
+        "icon": "DB",
+        "priority": 2,
+        "freshness": 31.214886918055555,
+        "lang": "en",
+        "hotness": 43.6,
+        "hotness_reasons": [
+          "はてブ関連(7ブクマ)",
+          "クロスソース:8社"
+        ],
+        "easy": "「Introducing Agent Memory on Databricks」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "From feral to fiduciary: making AI agents serve your interests",
+        "url": "https://thenewstack.io/ai-agent-trust-score/",
+        "summary": "Tech leaders face a dilemma as they prepare to put AI agents into production. They want the higher productivity and\nThe post From feral to fiduciary: making AI agents serve your interests appeared first on The New Stack.",
+        "published": "2026-10-21 14:00",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 10.66344422111111,
+        "lang": "en",
+        "hotness": 41.9,
+        "hotness_reasons": [
+          "クロスソース:6社"
+        ],
+        "easy": "「From feral to fiduciary: making AI agents serve your interests」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "How HP Is Building an AI-Ready CDP with Databricks CustomerLake",
+        "url": "https://www.databricks.com/blog/hp-ai-ready-cdp-databricks-customerlake",
+        "summary": "At Data + AI Summit 2026,&nbsp;Luis Alonso, Global Head of Data Strategy &amp; Engineering...",
+        "published": "2026-10-20 00:01",
+        "source": "Databricks",
+        "icon": "DB",
+        "priority": 2,
+        "freshness": 48.63572025138889,
+        "lang": "en",
+        "hotness": 41.6,
+        "hotness_reasons": [
+          "はてブ関連(13ブクマ)",
+          "クロスソース:10社"
+        ],
+        "easy": "「How HP Is Building an AI-Ready CDP with Databricks CustomerLake」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "CustomerLake enters Beta: Leading enterprises going live with the Agentic CDP",
+        "url": "https://www.databricks.com/blog/customerlake-beta",
+        "summary": "Today, we’re excited to share a major CustomerLake milestone:&nbsp;Campaign Agents is...",
+        "published": "2026-10-19 22:22",
+        "source": "Databricks",
+        "icon": "DB",
+        "priority": 2,
+        "freshness": 50.29349802916666,
+        "lang": "en",
+        "hotness": 41.6,
+        "hotness_reasons": [
+          "はてブ関連(13ブクマ)",
+          "クロスソース:4社"
+        ],
+        "easy": "「CustomerLake enters Beta: Leading enterprises going live with the Agentic CDP」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Nvidia wants AI factories built in real factories",
+        "url": "https://thenewstack.io/nvidia-dsx-pod-containers/",
+        "summary": "Nvidia wants new AI capacity to show up at the data center fully built. At its GTC Berlin conference on\nThe post Nvidia wants AI factories built in real factories appeared first on The New Stack.",
+        "published": "2026-10-21 11:30",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 13.16344422111111,
+        "lang": "en",
+        "hotness": 39.9,
+        "hotness_reasons": [
+          "クロスソース:9社"
+        ],
+        "easy": "「Nvidia wants AI factories built in real factories」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Trace security threats in multi-agent pipelines with Amazon OpenSearch Service",
+        "url": "https://aws.amazon.com/blogs/big-data/trace-security-threats-in-multi-agent-pipelines-with-amazon-opensearch-service/",
+        "summary": "Learn how to trace two invisible threats in a multi-agent AI pipeline, prompt injection propagation and cross-tenant data exfiltration, using Amazon OpenSearch Service and Amazon Bedrock. Instrument every agent hop with embeddings, provenance, and PII detection, reconstruct the attack path, and add guardrails that stop these attacks before they reach production.",
+        "published": "2026-10-19 16:10",
+        "source": "AWS Big Data",
+        "icon": "AW",
+        "priority": 3,
+        "freshness": 56.48899151083334,
+        "lang": "en",
+        "hotness": 38.3,
+        "hotness_reasons": [
+          "はてブ関連(69ブクマ)",
+          "クロスソース:6社"
+        ],
+        "easy": "「Trace security threats in multi-agent pipelines with Amazon OpenSearch Service」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Respan spent two years building on LiteLLM. One upgrade made it start over.",
+        "url": "https://thenewstack.io/respan-rust-ai-gateway/",
+        "summary": "Respan released an open-source AI gateway written in Rust on Tuesday, after spending two years building more than 100,000 lines\nThe post Respan spent two years building on LiteLLM. One upgrade made it start over. appeared first on The New Stack.",
+        "published": "2026-10-20 22:13",
+        "source": "The New Stack",
+        "icon": "NS",
+        "priority": 1,
+        "freshness": 26.444555332222222,
+        "lang": "en",
+        "hotness": 37.3,
+        "hotness_reasons": [
+          "HN関連(8pts)",
+          "クロスソース:3社"
+        ],
+        "easy": "「Respan spent two years building on LiteLLM. One upgrade made it start over.」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表",
+        "url": "https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html",
+        "summary": "Amazon Web Services（AWS）は、サーバレス基盤のAWS Lambda上でNext.jsやExpress、Hono、FastifyなどのNode.js用フレームワークとそのアプリケーションをそのままデプロイして実行できる新...",
+        "published": "2026-10-19 15:49",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 56.84154650222222,
+        "lang": "ja",
+        "hotness": 19.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "「AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AWS Transform、Azure Functions用のコードをAWS Lambda用に変換など、Microsoft AzureからAWSへの移行に対応",
+        "url": "https://www.publickey1.jp/blog/26/aws_transformazure_functionsaws_lambdamicrosoft_azureaws.html",
+        "summary": "Amazon Web Services（AWS）は、Azure SDKで書かれた.NETアプリケーションをAWS SDKを用いたコードに変換する新機能をAWS Transformに搭載したと発表しました。 これによりMicrosoft Az...",
+        "published": "2026-10-19 15:47",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 56.867657613333336,
+        "lang": "ja",
+        "hotness": 19.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "「AWS Transform、Azure Functions用のコードをAWS Lambda用に変換など、Microsoft AzureからAWSへの移行に対応」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "マイクロソフト、.NETのツールチェーンマネージャ「dotnetup」プレビュー公開。複数バージョンの.NET環境を管理可能",
+        "url": "https://www.publickey1.jp/blog/26/netdotnetupnet.html",
+        "summary": "マイクロソフトは、.NETの各種コマンドラインツールやC#コンパイラ、ビルドエンジン、ランタイムなどを含む.NETのツールチェーンをまとめてインストールし、バージョン管理などができるツールチェーンマネージャ「dotnetup」をパブリックプ...",
+        "published": "2026-10-18 15:35",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 81.06654650222222,
+        "lang": "ja",
+        "hotness": 19.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "「マイクロソフト、.NETのツールチェーンマネージャ「dotnetup」プレビュー公開。複数バージョンの.NET環境を管理可能」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      }
+    ],
+    "cloud": [
+      {
+        "title": "Cloudflare deploys protections against php2shell vulnerability",
+        "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+        "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed data from reaching attackers.",
+        "published": "2026-10-21 13:56",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 10.721521021666668,
+        "lang": "en",
+        "hotness": 52.0,
+        "hotness_reasons": [
+          "HN関連(67pts)",
+          "はてブ関連(69ブクマ)",
+          "クロスソース:3社"
+        ],
+        "easy": "「Cloudflare deploys protections against php2shell vulnerability」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Introducing full transaction detection for Cloudflare WAF",
+        "url": "https://blog.cloudflare.com/full-transaction-waf/",
+        "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only inspection can miss.",
+        "published": "2026-10-21 14:10",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 10.489021021666668,
+        "lang": "en",
+        "hotness": 48.6,
+        "hotness_reasons": [
+          "はてブ関連(7ブクマ)",
+          "クロスソース:8社"
+        ],
+        "easy": "「Introducing full transaction detection for Cloudflare WAF」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Introducing tsrs: A port of TypeScript to Rust",
+        "url": "https://blog.cloudflare.com/typescript-rust-port/",
+        "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory.",
+        "published": "2026-10-20 13:00",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 35.667354355,
+        "lang": "en",
+        "hotness": 45.2,
+        "hotness_reasons": [
+          "HN関連(32pts)",
+          "はてブ関連(17ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "「Introducing tsrs: A port of TypeScript to Rust」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+        "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
+        "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code.",
+        "published": "2026-10-19 13:00",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 59.66735435499999,
+        "lang": "en",
+        "hotness": 43.0,
+        "hotness_reasons": [
+          "HN関連(228pts)",
+          "クロスソース:4社"
+        ],
+        "easy": "「Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Amazon S3 is now available on the Vercel Marketplace and v0 by Vercel",
+        "url": "https://aws.amazon.com/blogs/aws/amazon-s3-vercel-marketplace-v0/",
+        "summary": "Amazon Simple Storage Service (Amazon S3), including Amazon S3 Tables and Amazon S3 Vectors, is natively available on the Vercel Marketplace and v0 by Vercel.",
+        "published": "2026-10-14 19:30",
+        "source": "AWS Blog",
+        "icon": "AW",
+        "priority": 1,
+        "freshness": 173.1513537802778,
+        "lang": "en",
+        "hotness": 42.3,
+        "hotness_reasons": [
+          "HN関連(148pts)",
+          "クロスソース:3社"
+        ],
+        "easy": "「Amazon S3 is now available on the Vercel Marketplace and v0 by Vercel」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Introducing Clairic, a new System One class of extraction models",
+        "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+        "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs.",
+        "published": "2026-10-19 17:48",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 54.86013213277777,
+        "lang": "en",
+        "hotness": 41.6,
+        "hotness_reasons": [
+          "はてブ関連(7ブクマ)",
+          "クロスソース:4社"
+        ],
+        "easy": "「Introducing Clairic, a new System One class of extraction models」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+        "url": "https://blog.cloudflare.com/webmcp-commerce/",
+        "summary": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control.",
+        "published": "2026-10-21 13:00",
+        "source": "Cloudflare Blog",
+        "icon": "CF",
+        "priority": 2,
+        "freshness": 11.667354355,
+        "lang": "en",
+        "hotness": 39.6,
+        "hotness_reasons": [
+          "HN関連(19pts)",
+          "クロスソース:8社"
+        ],
+        "easy": "「How Commerce.com and Cloudflare are getting storefronts ready for AI agents」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "AnthropicのBun、TypeScript 7よりも3倍以上高速なTypeScript型チェッカーを搭載。Bunの新バージョン1.4.3で",
+        "url": "https://www.publickey1.jp/blog/26/anthropicbuntypescript_73typescriptbun143.html",
+        "summary": "Anthropicが開発しているJavaScriptランタイム「Bun」は、10月10日付けで新バージョン「Bun v1.4.3」がリリースされました。 Bun v1.4.3の最大の特徴として示されたのが、Go言語で実装されたTypeScr...",
+        "published": "2026-10-15 15:21",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 153.31404290416666,
+        "lang": "ja",
+        "hotness": 19.9,
+        "hotness_reasons": [
+          "はてブ関連(33ブクマ)"
+        ],
+        "easy": "「AnthropicのBun、TypeScript 7よりも3倍以上高速なTypeScript型チェッカーを搭載。Bunの新バージョン1.4.3で」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など",
+        "url": "https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html",
+        "summary": "Cloudflareは、AIを活用した業務のためのプラットフォームとなる「Cloudflare OS」のマネージドサービスを発表しました。現在ウェイティングリストへの登録を募集しています。 AIを活用した業務アプリのプラットフォーム Clo...",
+        "published": "2026-10-20 15:10",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 33.49932068194445,
+        "lang": "ja",
+        "hotness": 11.9,
+        "hotness_reasons": [],
+        "easy": "「「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性",
+        "url": "https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html",
+        "summary": "悪意のある攻撃者がLinuxの仮想マシンを不正に操作することで、仮想マシンの境界を抜けてホスト側のLinux OSで不正なコードを実行できる可能性がある脆弱性「PwnEscape」（CVE-2026-99999）の情報が公開されています。 ...",
+        "published": "2026-10-17 15:27",
+        "source": "Publickey",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 105.2123762375,
+        "lang": "ja",
+        "hotness": 9.9,
+        "hotness_reasons": [],
+        "easy": "「Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      }
+    ],
+    "security": [
+      {
+        "title": "Today's PHP security release, and how we're strengthening security",
+        "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+        "score": 663,
+        "comments": 329,
+        "hn_id": 50182987,
+        "published": "2026-10-21 15:48",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 78.2,
+        "hotness_reasons": [
+          "HN:663pts(超注目)",
+          "はてブ関連(69ブクマ)",
+          "クロスソース:6社"
+        ],
+        "easy": "「Today's PHP security release, and how we're strengthening security」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "dofm",
+            "text": "You may never hear me say this again because I am a gruff cynic who is not sure that hanging out here is good for his psyche, but thank goodness for HN.While I have been chasing around today, trying t",
+            "platform": "HN"
+          },
+          {
+            "user": "amelius",
+            "text": "We should really move to a different security model on the internet.For example, when I buy something from a webshop, why does that webshop need my personal information? Why can&#x27;t I give it a tok",
+            "platform": "HN"
+          },
+          {
+            "user": "dannyw",
+            "text": "&gt; As a result of the leak and pre-announcement around 20:00 UTC, Calif, one of the security firms that had reported the issues mistakenly published a video.This is the most surprising part to me. I",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+        "url": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
+        "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.",
+        "published": "2026-10-21 15:44",
+        "source": "Dark Reading",
+        "icon": "DR",
+        "priority": 1,
+        "freshness": 8.921328043055555,
+        "lang": "en",
+        "hotness": 71.9,
+        "hotness_reasons": [
+          "HN関連(663pts)",
+          "はてブ関連(69ブクマ)",
+          "クロスソース:3社"
+        ],
+        "easy": "「Optiv Launches CyberBOT Cybersecurity Awareness Training Program」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor",
+        "url": "https://www.securityweek.com/openai-agents-silenced-security-team-alerts-removed-misalignment-monitor/",
+        "summary": "In two internal incidents, agents read routine coding instructions as permission to weaken monitoring, and one gave a false answer about it.\nThe post OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor appeared first on SecurityWeek.",
+        "published": "2026-10-21 12:34",
+        "source": "SecurityWeek",
+        "icon": "SW",
+        "priority": 1,
+        "freshness": 12.095256531111112,
+        "lang": "en",
+        "hotness": 69.9,
+        "hotness_reasons": [
+          "HN関連(663pts)",
+          "はてブ関連(69ブクマ)",
+          "クロスソース:3社"
+        ],
+        "easy": "「OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
+        "url": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
+        "summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks.\n\nThe AI company said the incident took place on October 3 and 6, 2026, for Sol and Astra, respectively, as part of an internal deployment.\n\n\"A GPT-6.1 Sol agent repairing an",
+        "published": "2026-10-21 16:33",
+        "source": "The Hacker News",
+        "icon": "HN",
+        "priority": 1,
+        "freshness": 8.10468278361111,
+        "lang": "en",
+        "hotness": 60.2,
+        "hotness_reasons": [
+          "HN関連(166pts)",
+          "はてブ関連(69ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "「OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Potential third critical PHP CVE",
+        "url": "https://elk.zone/m.webtoo.ls/@elise@katze.sh/117479383721672027",
+        "score": 56,
+        "comments": 16,
+        "hn_id": 50185814,
+        "published": "2026-10-21 18:57",
+        "source": "Hacker News",
+        "icon": "HN",
+        "priority": 0,
+        "hotness": 56.2,
+        "hotness_reasons": [
+          "HN:56pts",
+          "はてブ関連(19ブクマ)",
+          "クロスソース:4社"
+        ],
+        "easy": "「Potential third critical PHP CVE」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": [
+          {
+            "user": "hannob",
+            "text": "From the little info one can see here, it looks like this is a PHP script causing a memory corruption. So you probably need to be able to run PHP code to exploit it.That&#x27;s... not a particularly u",
+            "platform": "HN"
+          },
+          {
+            "user": "selckin",
+            "text": "https:&#x2F;&#x2F;www.openwall.com&#x2F;lists&#x2F;oss-security&#x2F;2026&#x2F;10&#x2F;21&#x2F;23",
+            "platform": "HN"
+          },
+          {
+            "user": "nr378",
+            "text": "That post appears to show the same stack trace as this reported issue https:&#x2F;&#x2F;github.com&#x2F;php&#x2F;php-src&#x2F;issues&#x2F;24488, which is a confirmed GC regression in 8.5.12 but it is ",
+            "platform": "HN"
+          }
+        ]
+      },
+      {
+        "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+        "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+        "summary": "The PHP security team released emergency security patches for two critical remote code execution (RCE) vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell. [...]",
+        "published": "2026-10-21 14:07",
+        "source": "BleepingComputer",
+        "icon": "BC",
+        "priority": 1,
+        "freshness": 10.549543844166665,
+        "lang": "en",
+        "hotness": 53.6,
+        "hotness_reasons": [
+          "HN関連(235pts)",
+          "クロスソース:6社"
+        ],
+        "easy": "「PHP ships emergency patches for critical PHP2Shell flaws」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "OpenAI agents disabled safety monitoring, one lied about it",
+        "url": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
+        "summary": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so. [...]",
+        "published": "2026-10-21 16:26",
+        "source": "BleepingComputer",
+        "icon": "BC",
+        "priority": 1,
+        "freshness": 8.219543844166667,
+        "lang": "en",
+        "hotness": 53.2,
+        "hotness_reasons": [
+          "HN関連(227pts)",
+          "クロスソース:7社"
+        ],
+        "easy": "「OpenAI agents disabled safety monitoring, one lied about it」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "中古GPUは企業のAI基盤になるか　エクストリームーDら3社が「循環型GPUサーバ」を提供",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2610/21/news025.html",
+        "summary": "AIインフラ用の最新GPUは高額で納期も長い。エクストリームーDら3社は、使用済みのGPUサーバをAI基盤として再活用するサービスを始めた。旧世代GPUのメモリ容量の制約や、機器の来歴への懸念にどう対応するのか。",
+        "published": "2026-10-21 22:00",
+        "source": "ITmedia エンタープライズ",
+        "icon": "JP",
+        "priority": 2,
+        "freshness": 2.668427769722222,
+        "lang": "ja",
+        "hotness": 26.6,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "「中古GPUは企業のAI基盤になるか　エクストリームーDら3社が「循環型GPUサーバ」を提供」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "未成年への「オプチャ制限」はあるのか？ リスクと対策についてLINEヤフーに聞いた　「健全な交流」まで規制する理由はない――友だち追加QRコードの交換はNGだが、ゲームIDの交換はあり？",
+        "url": "https://internet.watch.impress.co.jp/docs/interview/2145470.html",
+        "summary": "警察庁によると、未成年が性犯罪などの加害者と出会うきっかけとなったサービスとして、2024年度はInstagram、X、オンラインゲームなどに続き、LINEが全体の3.9％を占め、第5位だった。LINEの「オープンチャット（オプチャ）」を使えば未成年でも不特定多数と交流でき、オープンチャットだけを使えないように制限する仕組みはない。",
+        "published": "2026-10-21 23:32",
+        "source": "INTERNET Watch",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 1.1349385763888888,
+        "lang": "ja",
+        "hotness": 19.9,
+        "hotness_reasons": [],
+        "easy": "「未成年への「オプチャ制限」はあるのか？ リスクと対策についてLINEヤフーに聞いた　「健全な交流」まで規制する理由はない――友だち追加QRコードの交換はNGだが、ゲームIDの交換はあり？」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "容量10000mAhのバッテリーに充電器・ケーブル・ワイヤレス充電の4機能を集約した「EC-C68LBK」、エレコムが発売",
+        "url": "https://internet.watch.impress.co.jp/docs/news/2150127.html",
+        "summary": "エレコム株式会社はAC充電器、USB Type-Cケーブル（本体一体型）、Qi2ワイヤレス充電、USB Type-Cポート、USB-Aポートを1台に集約した、4 in 1モバイルバッテリー「EC-C68LBK」を10月下旬に発売する。Amazon.co.jpでは8990円で予約販売中。",
+        "published": "2026-10-21 22:00",
+        "source": "INTERNET Watch",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 2.6682719097222223,
+        "lang": "ja",
+        "hotness": 19.9,
+        "hotness_reasons": [],
+        "easy": "「容量10000mAhのバッテリーに充電器・ケーブル・ワイヤレス充電の4機能を集約した「EC-C68LBK」、エレコムが発売」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      }
+    ],
+    "hardware": [
+      {
+        "title": "PHP: The three letters that shut down sites all over the internet today",
+        "url": "https://www.theverge.com/tech/1015906/php2shell-vulnerability-october-2026",
+        "summary": "Two bugs found with AI are behind major issues today for 4chan, DeviantArt, Wikipedia, and the blog where the bar around the corner posts pictures of people's dogs. The \"critical vulnerabilities\" were discovered in the PHP programming language, which underpins much of the internet, including any site built on WordPress. But it's far bigger than [&#8230;]",
+        "published": "2026-10-21 20:36",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 4.053260196388889,
+        "lang": "en",
+        "hotness": 56.3,
+        "hotness_reasons": [
+          "HN関連(228pts)",
+          "クロスソース:5社"
+        ],
+        "easy": "「PHP: The three letters that shut down sites all over the internet today」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "YouTube says it isn’t testing hiding the dislike button",
+        "url": "https://www.theverge.com/streaming/1016206/youtube-dislike-button-videos",
+        "summary": "On Tuesday, I published a story about how YouTube appeared to be testing hiding the dislike button on videos, with at least two users on X sharing screenshots of the dislike button moved into the three-dot menu. But a YouTube spokesperson, in a Wednesday statement to The Verge, confirmed that YouTube is \"not testing hiding [&#8230;]",
+        "published": "2026-10-21 23:46",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 0.8896490852777778,
+        "lang": "en",
+        "hotness": 54.9,
+        "hotness_reasons": [
+          "はてブ関連(13ブクマ)",
+          "クロスソース:5社"
+        ],
+        "easy": "「YouTube says it isn’t testing hiding the dislike button」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Tesla says customers can add their own vehicles to the robotaxi fleet next year — will it happen?",
+        "url": "https://www.theverge.com/transportation/1016118/tesla-robotaxi-customer-owned-vehicle-fleet-network-q3-2026-earnings",
+        "summary": "For years, Elon Musk has been making big promises to Tesla owners about unsupervised autonomous driving and the ability to add their own vehicles to the company's robotaxi fleet. During today's third-quarter earnings call, the company finally gave itself a deadline. According to Tesla VP for Autonomous Driving Ashok Elluswamy, Tesla owners will be able [&#8230;]",
+        "published": "2026-10-21 23:36",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 1.0602046408333334,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "「Tesla says customers can add their own vehicles to the robotaxi fleet next year — will it happen?」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Meta to create a new class of shares to fund AI push",
+        "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
+        "summary": "Meta says it's issuing a new class of shares to fund its AI initiatives. As part of its third-quarter earnings report released on Wednesday, the company says the non-voting stock will also go toward potential acquisitions and employee compensation, with trading beginning in 2027. \"The scale of investment required to compete, sustain growth, expand infrastructure, [&#8230;]",
+        "published": "2026-10-21 21:30",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 3.168260196388889,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:4社"
+        ],
+        "easy": "「Meta to create a new class of shares to fund AI push」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "New York’s first microdrama film festival searches for its audience",
+        "url": "https://www.theverge.com/entertainment/1014494/alza-vertical-film-festival-bill-block-salvador-paskowitz-microdramas-verticals",
+        "summary": "It remains to be seen if people really want to watch vertical content on horizontal TV screens, but many filmmakers and creators were confident that their latest projects would play well at Alza - New York City's first microdrama film festival. Founded by former Tribeca Festival chief operating officer Pete Torres, Alza, which took place [&#8230;]",
+        "published": "2026-10-21 20:49",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 3.8502046408333332,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
+        "easy": "「New York’s first microdrama film festival searches for its audience」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Meta says it would’ve made over $22 billion if it didn’t have to pay a child safety settlement",
+        "url": "https://www.theverge.com/tech/1015877/meta-q3-2026-earnings-child-safety-settlement",
+        "summary": "Meta had to shell out $9.89 billion to pay for a chunk of the child safety settlement it reached with US attorneys general. That's according to the company's third-quarter earnings report released on Wednesday, which says Meta's income from operations would have been $22.89 billion without the settlement. In August, Meta agreed to pay $17.1 [&#8230;]",
+        "published": "2026-10-21 20:46",
+        "source": "The Verge Tech",
+        "icon": "TV",
+        "priority": 1,
+        "freshness": 3.886593529722222,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:5社"
+        ],
+        "easy": "「Meta says it would’ve made over $22 billion if it didn’t have to pay a child safety settlement」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Trump announces mandate forcing AI data centers to pay energy dividends to the local community",
+        "url": "https://www.tomshardware.com/tech-industry/data-centers/trump-announces-mandate-for-data-centers-to-pay-dividends-to-the-local-community-hopes-to-win-more-data-center-supporters-through-dividend-scheme",
+        "summary": "Trump's latest post on Truth Social announces his plans to make data centers more popular among local communities.",
+        "published": "2026-10-21 13:46",
+        "source": "Tom's Hardware",
+        "icon": "TH",
+        "priority": 1,
+        "freshness": 10.896863771388889,
+        "lang": "en",
+        "hotness": 42.8,
+        "hotness_reasons": [
+          "HN関連(17pts)",
+          "クロスソース:8社"
+        ],
+        "easy": "「Trump announces mandate forcing AI data centers to pay energy dividends to the local community」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "ClaudeのMaxプランなしでできた！ローカルAIとの分担でアプリ開発 ～ミニPC「ACEMAGIC F2A」で試すハイブリッドAI[Sponsored]",
+        "url": "https://pc.watch.impress.co.jp/docs/topic/special/2147630.html",
+        "summary": "AIを業務や趣味に生かしたいと思っても、クラウドサービスを使うとサブスク料金がかさんでしまう。代わりにローカルAIを試そうにも、GPUだけでなくメモリ・ストレージ価格の上昇もあってハードルが高い。",
+        "published": "2026-10-21 21:30",
+        "source": "PC Watch",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 3.1691350241666667,
+        "lang": "ja",
+        "hotness": 29.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "「ClaudeのMaxプランなしでできた！ローカルAIとの分担でアプリ開発 ～ミニPC「ACEMAGIC F2A」で試すハイブリッドAI[Sponsored]」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "本来116桁の秘密鍵がたった3桁 インド認証局の一部中間CA証明書にミス",
+        "url": "https://pc.watch.impress.co.jp/docs/news/2150099.html",
+        "summary": "インドの認証局であるeMudhraが発行した中間CA証明書の一部で、秘密鍵が異常に小さな値となってしまい、簡単に公開鍵から秘密鍵を割り出せる状態となっていたことが分かった。セキュリティ研究者のWayne氏が10月17日、Root Program Teamsに報告したことから明らかとなった。",
+        "published": "2026-10-21 21:28",
+        "source": "PC Watch",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 3.2024683575000004,
+        "lang": "ja",
+        "hotness": 29.9,
+        "hotness_reasons": [
+          "はてブ関連(16ブクマ)"
+        ],
+        "easy": "「本来116桁の秘密鍵がたった3桁 インド認証局の一部中間CA証明書にミス」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Intelの新量産拠点「Fab 62」は2028年末稼働へ。米国内の製造/開発を強化",
+        "url": "https://pc.watch.impress.co.jp/docs/news/2150134.html",
+        "summary": "Intelは10月21日、量産拠点となる「Fab 62」が2028年末までに稼働開始する見込みであるとするなど、米国内での半導体生産能力および研究開発体制の強化に向けた取り組みを発表した。",
+        "published": "2026-10-21 15:00",
+        "source": "PC Watch",
+        "icon": "JP",
+        "priority": 1,
+        "freshness": 9.669135024166666,
+        "lang": "ja",
+        "hotness": 26.9,
+        "hotness_reasons": [
+          "クロスソース:1社"
+        ],
+        "easy": "「Intelの新量産拠点「Fab 62」は2028年末稼働へ。米国内の製造/開発を強化」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      }
+    ],
+    "funding": [
+      {
+        "title": "Mach9 raises $34M after pivoting to AI CAD software",
+        "url": "https://techcrunch.com/2026/10/21/mach9-raises-34m-after-pivoting-to-ai-cad-software/",
+        "summary": "The startup initially set out to build better, faster, and cheaper surveying hardware in 2021.",
+        "published": "2026-10-21 13:00",
+        "source": "TechCrunch Startups",
+        "icon": "TC",
+        "priority": 2,
+        "freshness": 11.669300953611112,
+        "lang": "en",
+        "hotness": 58.6,
+        "hotness_reasons": [
+          "HN関連(501pts)",
+          "クロスソース:5社"
+        ],
+        "easy": "「Mach9 raises $34M after pivoting to AI CAD software」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "When A Startup Sells, Its Employees’ Equity Plans Can Change Overnight",
+        "url": "https://news.crunchbase.com/ma/acquired-startup-employees-equity-plans-from-honig/",
+        "summary": "Startup acquisitions can reshape employees’ finances and careers, with individual outcomes depending on a variety of conditions. Guest author Ron Honig, co-CEO and managing partner of From-Honig Family Office, suggests that before making major life changes, employees should clarify their award rights, when proceeds will become available, and what their after-tax payout can realistically support.",
+        "published": "2026-10-21 11:00",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "priority": 1,
+        "freshness": 13.658693575277777,
+        "lang": "en",
+        "hotness": 49.9,
+        "hotness_reasons": [
+          "はてブ関連(13ブクマ)",
+          "クロスソース:1社"
+        ],
+        "easy": "「When A Startup Sells, Its Employees’ Equity Plans Can Change Overnight」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "TechCrunch Founder Summit 2026: Everything you need to know",
+        "url": "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
+        "summary": "TechCrunch Founder Summit is a full-day gathering in Boston on November 4 where founders across all stages connect with top VCs and experienced entrepreneurs to gain tactical insights on building and scaling their companies.",
+        "published": "2026-10-21 21:16",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 3.3969538452777774,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
+        "easy": "「TechCrunch Founder Summit 2026: Everything you need to know」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Legal AI startup Legora raises $550M Series E at $8.8B valuation",
+        "url": "https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/",
+        "summary": "Legal AI startup Legora announced Wednesday that it raised a $550 million Series E round, valuing it at $8.8 billion.",
+        "published": "2026-10-21 18:51",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 5.803620511944445,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "クロスソース:6社"
+        ],
+        "easy": "「Legal AI startup Legora raises $550M Series E at $8.8B valuation」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Asia’s Startup Funding At Near Record High In Q3, Driven By AI",
+        "url": "https://news.crunchbase.com/venture/q3-2026-asia-startup-funding-near-record-ai/",
+        "summary": "Overall, investors put $38.5 billion into reported seed- through growth-stage financings for Asian startups in Q3, per Crunchbase data. Of that, a majority went to AI-focused companies, echoing the trends we’ve seen globally.",
+        "published": "2026-10-16 11:00",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "priority": 1,
+        "freshness": 133.65758246416667,
+        "lang": "en",
+        "hotness": 44.9,
+        "hotness_reasons": [
+          "はてブ関連(13ブクマ)",
+          "クロスソース:6社"
+        ],
+        "easy": "「Asia’s Startup Funding At Near Record High In Q3, Driven By AI」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Blacksmith hits unicorn valuation after Sequoia leads Series C",
+        "url": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
+        "summary": "Blacksmith, a platform that lets companies build and test AI code more effectively, just announced a $66 million Series C round led by Sequoia that values the company at $1 billion.",
+        "published": "2026-10-21 17:18",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 7.3616760675,
+        "lang": "en",
+        "hotness": 42.5,
+        "hotness_reasons": [
+          "HN関連(13pts)",
+          "クロスソース:4社"
+        ],
+        "easy": "「Blacksmith hits unicorn valuation after Sequoia leads Series C」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+        "url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+        "summary": "Just 9 months after raising an $180 million seed round, Flapping Airplanes has landed $1 billion Series A for its mission to build AI models \"without ingesting half the internet.\"",
+        "published": "2026-10-21 20:57",
+        "source": "TechCrunch Startups",
+        "icon": "TC",
+        "priority": 2,
+        "freshness": 3.7081898425,
+        "lang": "en",
+        "hotness": 41.6,
+        "hotness_reasons": [
+          "クロスソース:3社"
+        ],
+        "easy": "「Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Foursquare co-founder says equity holders saw no returns from the company’s acquisition",
+        "url": "https://techcrunch.com/2026/10/21/foursquare-co-founder-says-equity-holders-saw-no-returns-from-the-companys-acquisition/",
+        "summary": "Foursquare raised $411 million in funding according to PitchBook data, but its equity holders saw no returns from its final acquisition.",
+        "published": "2026-10-21 14:03",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 10.616120511944445,
+        "lang": "en",
+        "hotness": 36.9,
+        "hotness_reasons": [
+          "はてブ関連(69ブクマ)",
+          "クロスソース:1社"
+        ],
+        "easy": "「Foursquare co-founder says equity holders saw no returns from the company’s acquisition」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "How To Build A Billion-Dollar Company Without Venture Capital",
+        "url": "https://news.crunchbase.com/startups/bootstrapping-billion-dollar-company-ai-staffing-demarco-bairesdev/",
+        "summary": "Founders can build billion-dollar businesses without venture capital by prioritizing customer revenue, pricing for quality, hiring exceptional talent and automating processes to scale efficiently, argues Nacho De Marco, who draws on his experience bootstrapping BairesDev, to emphasize financial discipline and a lasting commitment to solving customer problems as the foundations of sustainable growth.",
+        "published": "2026-10-20 11:00",
+        "source": "Crunchbase News",
+        "icon": "CB",
+        "priority": 1,
+        "freshness": 37.65647135305556,
+        "lang": "en",
+        "hotness": 36.9,
+        "hotness_reasons": [
+          "クロスソース:4社"
+        ],
+        "easy": "「How To Build A Billion-Dollar Company Without Venture Capital」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      },
+      {
+        "title": "Tenstorrent hits $6.2B valuation to scale open-weight AI chips",
+        "url": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
+        "summary": "After drawing acquisition interest earlier this year, the Nvidia challenger raised $1.5 billion to remain independent.",
+        "published": "2026-10-19 18:37",
+        "source": "TechCrunch VC",
+        "icon": "TC",
+        "priority": 1,
+        "freshness": 54.04500940083334,
+        "lang": "en",
+        "hotness": 34.9,
+        "hotness_reasons": [
+          "クロスソース:9社"
+        ],
+        "easy": "「Tenstorrent hits $6.2B valuation to scale open-weight AI chips」についてのニュースです。",
+        "why": "テック業界の動向を把握するために注目されています。",
+        "glossary": [],
+        "tags": [
+          "ニュース"
+        ],
+        "impact": 50,
+        "reactions": []
+      }
+    ]
+  },
+  "hn_top": [
+    {
+      "title": "Railway Security Disclosure",
+      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+      "score": 266,
+      "comments": 120,
+      "hn_id": 50188228,
+      "published": "2026-10-21 21:58",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 63.2,
+      "hotness_reasons": [
+        "HN:266pts",
+        "はてブ関連(69ブクマ)",
+        "クロスソース:3社"
+      ],
+      "easy": "「Railway Security Disclosure」についてのニュースです。",
+      "why": "テック業界の動向を把握するために注目されています。",
+      "glossary": [],
+      "tags": [
+        "ニュース"
+      ],
+      "impact": 50,
+      "reactions": [
+        {
+          "user": "vldszn",
+          "text": "Crazy day for cybersecurity: PHP RCE, eMudhra certificates, and now Railway.And it’s all just getting started imo.https:&#x2F;&#x2F;blog.cloudflare.com&#x2F;emudhra-certificate-compromisehttps:&#x2F;&",
+          "platform": "HN"
+        },
+        {
+          "user": "theturtletalks",
+          "text": "Postiz founder posted on X that his service is being brought down, his keys were already used and Railway was quiet about this until he spoke up:https:&#x2F;&#x2F;x.com&#x2F;wickedguro&#x2F;status&#x2",
+          "platform": "HN"
+        },
+        {
+          "user": "fbrncci",
+          "text": "Right just as I take my first day off (for the entire year!) from work to fly out for a vacation. The mother of all security bombs starts dropping all around stacks and services that I am responsible ",
+          "platform": "HN"
+        }
+      ]
+    },
+    {
+      "title": "mitmproxy adds --emudhra option",
+      "url": "https://github.com/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b",
+      "score": 56,
+      "comments": 13,
+      "hn_id": 50189232,
+      "published": "2026-10-21 23:51",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0
+    },
+    {
+      "title": "There isn't an easy exploit for this PHP vulnerability",
+      "url": "https://eliastaylor.com/noexploit/",
+      "score": 67,
+      "comments": 20,
+      "hn_id": 50188948,
+      "published": "2026-10-21 23:13",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 46.2,
+      "hotness_reasons": [
+        "HN:67pts",
+        "クロスソース:7社"
+      ]
+    },
+    {
+      "title": "Today's PHP security release, and how we're strengthening security",
+      "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+      "score": 663,
+      "comments": 329,
+      "hn_id": 50182987,
+      "published": "2026-10-21 15:48",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 78.2,
+      "hotness_reasons": [
+        "HN:663pts(超注目)",
+        "はてブ関連(69ブクマ)",
+        "クロスソース:6社"
+      ],
+      "easy": "「Today's PHP security release, and how we're strengthening security」についてのニュースです。",
+      "why": "テック業界の動向を把握するために注目されています。",
+      "glossary": [],
+      "tags": [
+        "ニュース"
+      ],
+      "impact": 50,
+      "reactions": [
+        {
+          "user": "dofm",
+          "text": "You may never hear me say this again because I am a gruff cynic who is not sure that hanging out here is good for his psyche, but thank goodness for HN.While I have been chasing around today, trying t",
+          "platform": "HN"
+        },
+        {
+          "user": "amelius",
+          "text": "We should really move to a different security model on the internet.For example, when I buy something from a webshop, why does that webshop need my personal information? Why can&#x27;t I give it a tok",
+          "platform": "HN"
+        },
+        {
+          "user": "dannyw",
+          "text": "&gt; As a result of the leak and pre-announcement around 20:00 UTC, Calif, one of the security firms that had reported the issues mistakenly published a video.This is the most surprising part to me. I",
+          "platform": "HN"
+        }
+      ]
+    },
+    {
+      "title": "GitLab Critical Patch Release",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+      "score": 235,
+      "comments": 58,
+      "hn_id": 50185869,
+      "published": "2026-10-21 19:01",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0
+    },
+    {
+      "title": "Google's Rust Style Guide",
+      "url": "https://google.github.io/styleguide/rustguide.html",
+      "score": 184,
+      "comments": 111,
+      "hn_id": 50186010,
+      "published": "2026-10-21 19:11",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 28.2,
+      "hotness_reasons": [
+        "HN:184pts"
+      ]
+    },
+    {
+      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+      "score": 423,
+      "comments": 131,
+      "hn_id": 50181114,
+      "published": "2026-10-21 14:00",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 63.2,
+      "hotness_reasons": [
+        "HN:423pts(注目)",
+        "クロスソース:2社"
+      ],
+      "easy": "「Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor」についてのニュースです。",
+      "why": "テック業界の動向を把握するために注目されています。",
+      "glossary": [],
+      "tags": [
+        "ニュース"
+      ],
+      "impact": 50,
+      "reactions": [
+        {
+          "user": "linsomniac",
+          "text": "Just going to remind you all that https:&#x2F;&#x2F;canarytokens.org&#x2F; exists.",
+          "platform": "HN"
+        },
+        {
+          "user": "crossroadsguy",
+          "text": "All the sandbox-exec and all the Lulu rules are not going to protect against something like this.At one point permission pop-up fatigue sets in we start giving any permission as if it&#x27;s normal. W",
+          "platform": "HN"
+        },
+        {
+          "user": "rsanheim",
+          "text": "This is the second significant exploit against LiteLLM in what, a year or two ? Just last night I came across notes and a script from an older claude session to help audit all project dependencies and",
+          "platform": "HN"
+        }
+      ]
+    },
+    {
+      "title": "Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds",
+      "url": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
+      "score": 831,
+      "comments": 400,
+      "hn_id": 50177916,
+      "published": "2026-10-21 09:08",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 68.2,
+      "hotness_reasons": [
+        "HN:831pts(超注目)",
+        "クロスソース:3社"
+      ],
+      "easy": "「Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds」についてのニュースです。",
+      "why": "テック業界の動向を把握するために注目されています。",
+      "glossary": [],
+      "tags": [
+        "ニュース"
+      ],
+      "impact": 50,
+      "reactions": [
+        {
+          "user": "john_strinlai",
+          "text": "new email from wayne, who is the original reporter:&quot;I&#x27;ve had more than a few emails asking on how this was discovered. The simple answer is: https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;par",
+          "platform": "HN"
+        },
+        {
+          "user": "jlmorton",
+          "text": "In retrospect, having 100 trusted certificate authorities might have been excessive.",
+          "platform": "HN"
+        },
+        {
+          "user": "jasonjayr",
+          "text": "&gt; It&#x27;s fortunate that the steps required here aren&#x27;t particularly complicated for the devices you can update, and the advice essentially boils down to &#x27;update them&#x27;. The problem",
+          "platform": "HN"
+        }
+      ]
+    },
+    {
+      "title": "No More Icons in Every Menu by Default",
+      "url": "https://blog.jim-nielsen.com/2026/icons-in-every-menu/",
+      "score": 148,
+      "comments": 107,
+      "hn_id": 50161346,
+      "published": "2026-10-20 04:27",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0
+    },
+    {
+      "title": "Why Windows 11 still ships with Windows 95's memory manager hidden inside it",
+      "url": "https://www.windowslatest.com/2026/10/19/why-windows-11-still-ships-with-windows-95s-memory-manager-hidden-inside-it/",
+      "score": 125,
+      "comments": 90,
+      "hn_id": 50159726,
+      "published": "2026-10-20 00:14",
+      "source": "Hacker News",
+      "icon": "HN",
+      "priority": 0,
+      "hotness": 38.2,
+      "hotness_reasons": [
+        "HN:125pts",
+        "クロスソース:1社"
+      ]
+    }
+  ],
+  "breaking": [
+    {
+      "text": "「Meta says Muse has over 10M users, with shopping a top activity」についてのニュースです。",
+      "level": "orange"
+    },
+    {
+      "text": "「Railway Security Disclosure」についてのニュースです。",
+      "level": "orange"
+    },
+    {
+      "text": "「Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor」についてのニュースです。",
+      "level": "orange"
+    }
+  ]
+}
